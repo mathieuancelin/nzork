@@ -1,4 +1,4 @@
-# Zork Next
+# Zork in your browser
 
 **A fan tribute to Zork I: The Great Underground Empire (Infocom, 1980), playable in French in
 the browser, with the sights and sounds the original never had.**
