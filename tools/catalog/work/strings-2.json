@@ -1,0 +1,1095 @@
+[
+ {
+  "key": "s13092",
+  "en": "From the chain is suspended a basket.",
+  "uses": [
+   "LOWERED-BASKET.LDESC",
+   "table"
+  ],
+  "zil": "LOWERED-BASKET.LDESC (1dungeon.zil:133)"
+ },
+ {
+  "key": "s130aa",
+  "en": "Congratulations!\n\nYou are the privileged owner of ZORK I: The Great Underground Empire, a self-contained and self-maintaining universe. If used and maintained in accordance with normal operating practices for small universes, ZORK will provide many months of trouble-free operation.",
+  "uses": [
+   "OWNERS-MANUAL.TEXT"
+  ],
+  "zil": "OWNERS-MANUAL.TEXT (1dungeon.zil:1108)"
+ },
+ {
+  "key": "s1317e",
+  "en": "It's a long way...",
+  "uses": [
+   "ARAGAIN-FALLS.DOWN"
+  ],
+  "zil": "ARAGAIN-FALLS.DOWN (1dungeon.zil:2323)"
+ },
+ {
+  "key": "s1318a",
+  "en": "Well, you seem to have been brushing your teeth with some sort of glue. As a result, your mouth gets glued together (with your nose) and you die of respiratory failure.",
+  "uses": [
+   "routine TEETH-F"
+  ],
+  "zil": "TEETH-F (1actions.zil:54)"
+ },
+ {
+  "key": "s131ec",
+  "en": "Well, you really did it that time. Is suicide painless?",
+  "uses": [
+   "routine HERO-BLOW"
+  ],
+  "zil": "HERO-BLOW (1actions.zil:3498)"
+ },
+ {
+  "key": "s13248",
+  "en": "A battery-powered brass lantern is on the trophy case.",
+  "uses": [
+   "LAMP.FDESC"
+  ],
+  "zil": "LAMP.FDESC (1dungeon.zil:552)"
+ },
+ {
+  "key": "s1326c",
+  "en": "The prayer is inscribed in an ancient script, rarely used today. It seems to be a philippic against small insects, absent-mindedness, and the picking up and dropping of small objects. The final verse consigns trespassers to the land of the dead. All evidence indicates that the beliefs of the ancient Zorkers were obscure.",
+  "uses": [
+   "PRAYER.TEXT"
+  ],
+  "zil": "PRAYER.TEXT (1dungeon.zil:754)"
+ },
+ {
+  "key": "s13328",
+  "en": "The path is too narrow.",
+  "uses": [
+   "table"
+  ],
+  "zil": "WHITE-CLIFFS-SOUTH.NORTH (1dungeon.zil:2253)"
+ },
+ {
+  "key": "s13334",
+  "en": "Unfortunately, the magic boat doesn't provide protection from the rocks and boulders one meets at the bottom of waterfalls. Including this one.",
+  "uses": [
+   "routine I-RIVER"
+  ],
+  "zil": "I-RIVER (1actions.zil:2718)"
+ },
+ {
+  "key": "s133aa",
+  "en": "---> Frobozz Magic Gunk Company <---\n  All-Purpose Gunk",
+  "uses": [
+   "TUBE.TEXT",
+   "table"
+  ],
+  "zil": "TUBE.TEXT (1dungeon.zil:1073)"
+ },
+ {
+  "key": "s133e0",
+  "en": "Very good. Now you can go to the second grade.",
+  "uses": [
+   "table"
+  ],
+  "zil": "gverbs.zil:1273"
+ },
+ {
+  "key": "s133fc",
+  "en": "A booming voice says \"Wrong, cretin!\" and you notice that you have turned into a pile of dust. How, I can't imagine.",
+  "uses": [
+   "routine BLACK-BOOK"
+  ],
+  "zil": "BLACK-BOOK (1actions.zil:2204)"
+ },
+ {
+  "key": "s13452",
+  "en": "The rank undergrowth prevents eastward movement.",
+  "uses": [
+   "FOREST-3.EAST",
+   "table"
+  ],
+  "zil": "FOREST-3.EAST (1dungeon.zil:1355)"
+ },
+ {
+  "key": "s13472",
+  "en": "The river turns a corner here making it impossible to see the Dam. The White Cliffs loom on the east bank and large rocks prevent landing on the west.",
+  "uses": [
+   "RIVER-5.LDESC",
+   "table"
+  ],
+  "zil": "RIVER-2.LDESC (1dungeon.zil:2207)"
+ },
+ {
+  "key": "s134c0",
+  "en": "The river descends here into a valley. There is a narrow beach on the west shore below the cliffs. In the distance a faint rumbling can be heard.",
+  "uses": [
+   "RIVER-2.LDESC",
+   "table"
+  ],
+  "zil": "RIVER-3.LDESC (1dungeon.zil:2222)"
+ },
+ {
+  "key": "s1350c",
+  "en": "The river is running faster here and the sound ahead appears to be that of rushing water. On the east shore is a sandy beach. A small area of beach can also be seen below the cliffs on the west shore.",
+  "uses": [
+   "RIVER-4.LDESC"
+  ],
+  "zil": "RIVER-4.LDESC (1dungeon.zil:2261)"
+ },
+ {
+  "key": "s13574",
+  "en": "F",
+  "uses": [
+   "LOCAL-GLOBALS.FDESC",
+   "LOCAL-GLOBALS.LDESC",
+   "table"
+  ],
+  "zil": "LOCAL-GLOBALS.LDESC (gglobals.zil:19)"
+ },
+ {
+  "key": "s13576",
+  "en": "Kicking the ",
+  "uses": [
+   "routine V-KICK"
+  ],
+  "zil": "V-KICK (gverbs.zil:760)"
+ },
+ {
+  "key": "s1357e",
+  "en": "The room is full of water and cannot be entered.",
+  "uses": [
+   "routine I-MAINT-ROOM"
+  ],
+  "zil": "I-MAINT-ROOM (1actions.zil:1350)"
+ },
+ {
+  "key": "s13592",
+  "en": "The rising water carries the boat over the dam, down the river, and over the falls. Tsk, tsk.",
+  "uses": [
+   "routine I-MAINT-ROOM"
+  ],
+  "zil": "I-MAINT-ROOM (1actions.zil:1358)"
+ },
+ {
+  "key": "s136c8",
+  "en": "The solid-gold coffin used for the burial of Ramses II is here.",
+  "uses": [
+   "COFFIN.LDESC"
+  ],
+  "zil": "COFFIN.LDESC (1dungeon.zil:468)"
+ },
+ {
+  "key": "s136ee",
+  "en": "The stream emerges from a spot too small for you to enter.",
+  "uses": [
+   "STREAM-VIEW.WEST",
+   "table"
+  ],
+  "zil": "STREAM-VIEW.WEST (1dungeon.zil:1814)"
+ },
+ {
+  "key": "s1370c",
+  "en": "The sound of rushing water is nearly unbearable here. On the east shore is a large landing area.",
+  "uses": [
+   "RIVER-3.LDESC"
+  ],
+  "zil": "RIVER-5.LDESC (1dungeon.zil:2277)"
+ },
+ {
+  "key": "s13740",
+  "en": " isn't notably helpful.",
+  "uses": [
+   "table"
+  ],
+  "zil": "gverbs.zil:2035"
+ },
+ {
+  "key": "s13752",
+  "en": "The structural integrity of the rainbow is severely compromised, leaving you hanging in midair, supported only by water vapor. Bye.",
+  "uses": [
+   "routine SCEPTRE-FUNCTION"
+  ],
+  "zil": "SCEPTRE-FUNCTION (1actions.zil:2615)"
+ },
+ {
+  "key": "s137f6",
+  "en": "There is a silver chalice, intricately engraved, here.",
+  "uses": [
+   "CHALICE.LDESC",
+   "table"
+  ],
+  "zil": "CHALICE.LDESC (1dungeon.zil:362)"
+ },
+ {
+  "key": "s13816",
+  "en": "There is an enormous diamond (perfectly cut) here.",
+  "uses": [
+   "DIAMOND.LDESC",
+   "table"
+  ],
+  "zil": "DIAMOND.LDESC (1dungeon.zil:493)"
+ },
+ {
+  "key": "s13834",
+  "en": "There is an exquisite jade figurine here.",
+  "uses": [
+   "JADE.LDESC",
+   "table"
+  ],
+  "zil": "JADE.LDESC (1dungeon.zil:503)"
+ },
+ {
+  "key": "s1384c",
+  "en": "There is a brass lantern (battery-powered) here.",
+  "uses": [
+   "LAMP.LDESC",
+   "table"
+  ],
+  "zil": "LAMP.LDESC (1dungeon.zil:553)"
+ },
+ {
+  "key": "s1386a",
+  "en": "There is a matchbook whose cover says \"Visit Beautiful FCD#3\" here.",
+  "uses": [
+   "MATCH.LDESC"
+  ],
+  "zil": "MATCH.LDESC (1dungeon.zil:622)"
+ },
+ {
+  "key": "s13896",
+  "en": "There is a folded pile of plastic here which has a small valve attached.",
+  "uses": [
+   "INFLATABLE-BOAT.LDESC"
+  ],
+  "zil": "INFLATABLE-BOAT.LDESC (1dungeon.zil:721)"
+ },
+ {
+  "key": "s138ba",
+  "en": "There is a red buoy here (probably a warning).",
+  "uses": [
+   "BUOY.FDESC",
+   "table"
+  ],
+  "zil": "BUOY.FDESC (1dungeon.zil:788)"
+ },
+ {
+  "key": "s138d2",
+  "en": "There is a suspicious-looking individual, holding a large bag, leaning against one wall. He is armed with a deadly stiletto.",
+  "uses": [
+   "THIEF.LDESC"
+  ],
+  "zil": "THIEF.LDESC (1dungeon.zil:976)"
+ },
+ {
+  "key": "s1391a",
+  "en": "Some guidebooks entitled \"Flood Control Dam #3\" are on the reception desk.",
+  "uses": [
+   "GUIDE.FDESC",
+   "table"
+  ],
+  "zil": "GUIDE.FDESC (1dungeon.zil:1008)"
+ },
+ {
+  "key": "s1394e",
+  "en": "There is an old trunk here, bulging with assorted jewels.",
+  "uses": [
+   "TRUNK.LDESC"
+  ],
+  "zil": "TRUNK.LDESC (1dungeon.zil:1056)"
+ },
+ {
+  "key": "s1396e",
+  "en": "There is an object which looks like a tube of toothpaste here.",
+  "uses": [
+   "TUBE.LDESC",
+   "table"
+  ],
+  "zil": "TUBE.LDESC (1dungeon.zil:1069)"
+ },
+ {
+  "key": "s13990",
+  "en": "There are old engravings on the walls here.",
+  "uses": [
+   "ENGRAVINGS.LDESC"
+  ],
+  "zil": "ENGRAVINGS.LDESC (1dungeon.zil:1091)"
+ },
+ {
+  "key": "s139a6",
+  "en": "There is a somewhat ruined egg here.",
+  "uses": [
+   "BROKEN-EGG.LDESC"
+  ],
+  "zil": "BROKEN-EGG.LDESC (1dungeon.zil:1178)"
+ },
+ {
+  "key": "s139ba",
+  "en": "There is a golden clockwork canary nestled in the egg. It has ruby eyes and a silver beak. Through a crystal window below its left wing you can see intricate machinery inside. It appears to have wound down.",
+  "uses": [
+   "CANARY.FDESC"
+  ],
+  "zil": "CANARY.FDESC (1dungeon.zil:1198)"
+ },
+ {
+  "key": "s13a32",
+  "en": "There is a golden clockwork canary nestled in the egg. It seems to have recently had a bad experience. The mountings for its jewel-like eyes are empty, and its silver beak is crumpled. Through a cracked crystal window below its left wing you can see the remains of intricate machinery. It is not clear what result winding it would have, as the mainspring seems sprung.",
+  "uses": [
+   "BROKEN-CANARY.FDESC",
+   "table"
+  ],
+  "zil": "BROKEN-CANARY.FDESC (1dungeon.zil:1212)"
+ },
+ {
+  "key": "s13b0a",
+  "en": "There is no tree here suitable for climbing.",
+  "uses": [
+   "CLEARING.UP",
+   "FOREST-1.UP",
+   "FOREST-2.UP",
+   "FOREST-3.UP",
+   "table"
+  ],
+  "zil": "CLEARING.UP (1dungeon.zil:1416)"
+ },
+ {
+  "key": "s13b22",
+  "en": "The troll fends you off with a menacing gesture.",
+  "uses": [
+   "table"
+  ],
+  "zil": "TROLL-ROOM.WEST (1dungeon.zil:1490)"
+ },
+ {
+  "key": "s13b3c",
+  "en": "Some invisible force prevents you from passing through the gate.",
+  "uses": [
+   "table"
+  ],
+  "zil": "ENTRANCE-TO-HADES.SOUTH (1dungeon.zil:2034)"
+ },
+ {
+  "key": "s13b60",
+  "en": "There is no safe landing spot here.",
+  "uses": [
+   "RIVER-5.LAND"
+  ],
+  "zil": "RIVER-2.LAND (1dungeon.zil:2213)"
+ },
+ {
+  "key": "s13b74",
+  "en": "There is a suspicious-looking individual, holding a bag, leaning against one wall. He is armed with a vicious-looking stiletto.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:2087"
+ },
+ {
+  "key": "s13bbe",
+  "en": "There is a suspicious-looking individual lying unconscious on the ground.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:2091"
+ },
+ {
+  "key": "s13be8",
+  "en": "There is a worthless piece of canvas here.",
+  "uses": [
+   "routine PAINTING-FCN"
+  ],
+  "zil": "PAINTING-FCN (1actions.zil:2211)"
+ },
+ {
+  "key": "s14040",
+  "en": "A painting by a neglected genius is here.",
+  "uses": [
+   "PAINTING.LDESC",
+   "table"
+  ],
+  "zil": "PAINTING.LDESC (1dungeon.zil:665)"
+ },
+ {
+  "key": "s1405a",
+  "en": "Loosely attached to a wall is a small piece of paper.",
+  "uses": [
+   "OWNERS-MANUAL.FDESC",
+   "table"
+  ],
+  "zil": "OWNERS-MANUAL.FDESC (1dungeon.zil:1106)"
+ },
+ {
+  "key": "s14078",
+  "en": "A bottle is sitting on the table.",
+  "uses": [
+   "BOTTLE.FDESC",
+   "table"
+  ],
+  "zil": "BOTTLE.FDESC (1dungeon.zil:450)"
+ },
+ {
+  "key": "s1408c",
+  "en": "Sitting on the pedestal is a flaming torch, made of ivory.",
+  "uses": [
+   "TORCH.FDESC",
+   "table"
+  ],
+  "zil": "TORCH.FDESC (1dungeon.zil:996)"
+ },
+ {
+  "key": "s140b2",
+  "en": "A nasty-looking troll, brandishing a bloody axe, blocks all passages out of the room.",
+  "uses": [
+   "TROLL.LDESC",
+   "routine TROLL-FCN",
+   "table"
+  ],
+  "zil": "TROLL.LDESC (1dungeon.zil:1044)"
+ },
+ {
+  "key": "s140e0",
+  "en": "The voice of the guardian of the dungeon booms out from the darkness, \"Your disrespect costs you your life!\" and places your head on a sharp pole.",
+  "uses": [
+   "routine BODY-FUNCTION"
+  ],
+  "zil": "BODY-FUNCTION (1actions.zil:2183)"
+ },
+ {
+  "key": "s14154",
+  "en": "The windows are all boarded.",
+  "uses": [
+   "NORTH-OF-HOUSE.SOUTH",
+   "SOUTH-OF-HOUSE.NORTH",
+   "table"
+  ],
+  "zil": "SOUTH-OF-HOUSE.NORTH (1dungeon.zil:1291)"
+ },
+ {
+  "key": "s14166",
+  "en": "Playing in this way with the ",
+  "uses": [
+   "routine V-LOWER"
+  ],
+  "zil": "V-LOWER (gverbs.zil:902)"
+ },
+ {
+  "key": "s14174",
+  "en": "Do you expect me to applaud?",
+  "uses": [
+   "table"
+  ],
+  "zil": "gverbs.zil:1276"
+ },
+ {
+  "key": "s14186",
+  "en": "Waving the ",
+  "uses": [
+   "routine V-WAVE"
+  ],
+  "zil": "V-WAVE (gverbs.zil:1595)"
+ },
+ {
+  "key": "s1418e",
+  "en": "The window closes (more easily than it opened).",
+  "uses": [
+   "routine KITCHEN-WINDOW-F"
+  ],
+  "zil": "KITCHEN-WINDOW-F (1actions.zil:246)"
+ },
+ {
+  "key": "s141ae",
+  "en": "up to your ankles.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:1285"
+ },
+ {
+  "key": "s141b8",
+  "en": "up to your shin.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:1286"
+ },
+ {
+  "key": "s141c2",
+  "en": "up to your knees.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:1287"
+ },
+ {
+  "key": "s141cc",
+  "en": "up to your hips.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:1288"
+ },
+ {
+  "key": "s141d6",
+  "en": "up to your waist.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:1289"
+ },
+ {
+  "key": "s141e0",
+  "en": "up to your chest.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:1290"
+ },
+ {
+  "key": "s141ea",
+  "en": "up to your neck.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:1291"
+ },
+ {
+  "key": "s141f4",
+  "en": "Another pathetic sputter, this time from you, heralds your drowning.",
+  "uses": [
+   "routine RBOAT-FUNCTION"
+  ],
+  "zil": "RBOAT-FUNCTION (1actions.zil:2778)"
+ },
+ {
+  "key": "s1422c",
+  "en": "In other words, fighting the fierce currents of the Frigid River. You manage to hold your own for a bit, but then you are carried over a waterfall and into some nasty rocks. Ouch!",
+  "uses": [
+   "routine RBOAT-FUNCTION"
+  ],
+  "zil": "RBOAT-FUNCTION (1actions.zil:2781)"
+ },
+ {
+  "key": "s14340",
+  "en": "Nice view, lousy place to jump.",
+  "uses": [
+   "routine CANYON-VIEW-F",
+   "table"
+  ],
+  "zil": "CANYON-VIEW-F (1dungeon.zil:2410)"
+ },
+ {
+  "key": "s14356",
+  "en": "Hello.",
+  "uses": [
+   "table"
+  ],
+  "zil": "gverbs.zil:2199"
+ },
+ {
+  "key": "s1435c",
+  "en": "Nice weather we've been having lately.",
+  "uses": [
+   "table"
+  ],
+  "zil": "gverbs.zil:2201"
+ },
+ {
+  "key": "s1437e",
+  "en": "Geronimo...",
+  "uses": [
+   "table"
+  ],
+  "zil": "gverbs.zil:848"
+ },
+ {
+  "key": "s14388",
+  "en": "Fiddling with the ",
+  "uses": [
+   "routine V-RUB"
+  ],
+  "zil": "V-RUB (gverbs.zil:1165)"
+ },
+ {
+  "key": "s14392",
+  "en": "A sceptre, possibly that of ancient Egypt itself, is in the coffin. The sceptre is ornamented with colored enamel, and tapers to a sharp point.",
+  "uses": [
+   "SCEPTRE.FDESC"
+  ],
+  "zil": "SCEPTRE.FDESC (1dungeon.zil:249)"
+ },
+ {
+  "key": "s143e8",
+  "en": "A chasm runs southwest to northeast and the path follows it. You are on the south side of the chasm, where a crack opens into a passage.",
+  "uses": [
+   "CHASM-ROOM.LDESC"
+  ],
+  "zil": "CHASM-ROOM.LDESC (1dungeon.zil:2011)"
+ },
+ {
+  "key": "s1442e",
+  "en": "If you insist.... Poof, you're dead!",
+  "uses": [
+   "routine CRETIN-FCN"
+  ],
+  "zil": "CRETIN-FCN (gglobals.zil:239)"
+ },
+ {
+  "key": "s1444a",
+  "en": "An interesting idea...",
+  "uses": [
+   "table"
+  ],
+  "zil": "gverbs.zil:2210"
+ },
+ {
+  "key": "s144fa",
+  "en": "On a table is a nasty-looking knife.",
+  "uses": [
+   "KNIFE.FDESC",
+   "table"
+  ],
+  "zil": "KNIFE.FDESC (1dungeon.zil:514)"
+ },
+ {
+  "key": "s14510",
+  "en": "It is too narrow for most insects.",
+  "uses": [
+   "DAMP-CAVE.SOUTH"
+  ],
+  "zil": "DAMP-CAVE.SOUTH (1dungeon.zil:1984)"
+ },
+ {
+  "key": "s14520",
+  "en": "A pathetically babbling troll is here.",
+  "uses": [
+   "routine TROLL-FCN"
+  ],
+  "zil": "TROLL-FCN (1actions.zil:660)"
+ },
+ {
+  "key": "s14570",
+  "en": "Commandment #12592\n\nOh ye who go about saying unto each:  \"Hello sailor\":\nDost thou know the magnitude of thy sin before the gods?\nYea, verily, thou shalt be ground between two stones.\nShall the angry gods cast thy body into the whirlpool?\nSurely, thy eye shall be put out with a sharp stick!\nEven unto the ends of the earth shalt thou wander and\nUnto the land of the dead shalt thou be sent at last.\nSurely thou shalt repent of thy cunning.",
+  "uses": [
+   "BOOK.TEXT",
+   "table"
+  ],
+  "zil": "BOOK.TEXT (1dungeon.zil:222)"
+ },
+ {
+  "key": "s1468c",
+  "en": "As the knife approaches its victim, your mind is submerged by an overmastering will. Slowly, your hand turns, until the rusty blade is an inch from your neck. The knife seems to sing as it savagely slits your throat.",
+  "uses": [
+   "routine RUSTY-KNIFE-FCN",
+   "table"
+  ],
+  "zil": "RUSTY-KNIFE-FCN (1actions.zil:921)"
+ },
+ {
+  "key": "s14708",
+  "en": "I'm afraid that the leap you attempted has done you in.",
+  "uses": [
+   "routine DOME-ROOM-FCN"
+  ],
+  "zil": "DOME-ROOM-FCN (1actions.zil:1050)"
+ },
+ {
+  "key": "s14728",
+  "en": "I'm afraid you have done drowned yourself.",
+  "uses": [
+   "routine I-MAINT-ROOM"
+  ],
+  "zil": "I-MAINT-ROOM (1actions.zil:1354)"
+ },
+ {
+  "key": "s1474c",
+  "en": "  ",
+  "uses": [
+   "table"
+  ],
+  "zil": "HERO-BLOW (1actions.zil:3506)"
+ },
+ {
+  "key": "s1474e",
+  "en": "Good day.",
+  "uses": [
+   "table"
+  ],
+  "zil": "gverbs.zil:2200"
+ },
+ {
+  "key": "s14756",
+  "en": "Have your eyes checked.",
+  "uses": [
+   "table"
+  ],
+  "zil": "gverbs.zil:2217"
+ },
+ {
+  "key": "s1478a",
+  "en": "A small leaflet is on the ground.",
+  "uses": [
+   "ADVERTISEMENT.LDESC",
+   "table"
+  ],
+  "zil": "ADVERTISEMENT.LDESC (1dungeon.zil:571)"
+ },
+ {
+  "key": "s1479c",
+  "en": "You are standing in front of a massive barrow of stone. In the east face is a huge stone door which is open. You cannot see into the dark of the tomb.",
+  "uses": [
+   "STONE-BARROW.LDESC",
+   "table"
+  ],
+  "zil": "STONE-BARROW.LDESC (1dungeon.zil:1257)"
+ },
+ {
+  "key": "s147ea",
+  "en": "You are facing the north side of a white house. There is no door here, and all the windows are boarded up. To the north a narrow path winds through the trees.",
+  "uses": [
+   "NORTH-OF-HOUSE.LDESC"
+  ],
+  "zil": "NORTH-OF-HOUSE.LDESC (1dungeon.zil:1267)"
+ },
+ {
+  "key": "s14834",
+  "en": "You are facing the south side of a white house. There is no door here, and all the windows are boarded.",
+  "uses": [
+   "SOUTH-OF-HOUSE.LDESC",
+   "table"
+  ],
+  "zil": "SOUTH-OF-HOUSE.LDESC (1dungeon.zil:1283)"
+ },
+ {
+  "key": "s14868",
+  "en": "You are in a small clearing in a well marked forest path that extends to the east and west.",
+  "uses": [
+   "CLEARING.LDESC",
+   "table"
+  ],
+  "zil": "CLEARING.LDESC (1dungeon.zil:1413)"
+ },
+ {
+  "key": "s14896",
+  "en": "You are on the east edge of a chasm, the bottom of which cannot be seen. A narrow passage goes north, and the path you are on continues to the east.",
+  "uses": [
+   "EAST-OF-CHASM.LDESC",
+   "table"
+  ],
+  "zil": "EAST-OF-CHASM.LDESC (1dungeon.zil:1497)"
+ },
+ {
+  "key": "s148d8",
+  "en": "You are standing on a path beside a gently flowing stream. The path follows the stream, which flows from west to east.",
+  "uses": [
+   "STREAM-VIEW.LDESC"
+  ],
+  "zil": "STREAM-VIEW.LDESC (1dungeon.zil:1810)"
+ },
+ {
+  "key": "s14916",
+  "en": "You are on the gently flowing stream. The upstream route is too narrow to navigate, and the downstream route is invisible due to twisting walls. There is a narrow beach to land on.",
+  "uses": [
+   "IN-STREAM.LDESC",
+   "table"
+  ],
+  "zil": "IN-STREAM.LDESC (1dungeon.zil:1822)"
+ },
+ {
+  "key": "s14976",
+  "en": "You are at the base of Flood Control Dam #3, which looms above you and to the north. The river Frigid is flowing by here. Along the river are the White Cliffs which seem to form giant walls stretching from north to south along the shores of the river as it winds its way downstream.",
+  "uses": [
+   "DAM-BASE.LDESC"
+  ],
+  "zil": "DAM-BASE.LDESC (1dungeon.zil:2179)"
+ },
+ {
+  "key": "s14a0a",
+  "en": "You are on the Frigid River in the vicinity of the Dam. The river flows quietly here. There is a landing on the west shore.",
+  "uses": [
+   "RIVER-1.LDESC"
+  ],
+  "zil": "RIVER-1.LDESC (1dungeon.zil:2193)"
+ },
+ {
+  "key": "s14a46",
+  "en": "You are on a narrow strip of beach which runs along the base of the White Cliffs. There is a narrow path heading south along the Cliffs and a tight passage leading west into the cliffs themselves.",
+  "uses": [
+   "WHITE-CLIFFS-SOUTH.LDESC",
+   "table"
+  ],
+  "zil": "WHITE-CLIFFS-NORTH.LDESC (1dungeon.zil:2236)"
+ },
+ {
+  "key": "s14aa4",
+  "en": "You are on a rocky, narrow strip of beach beside the Cliffs. A narrow path leads north along the shore.",
+  "uses": [
+   "WHITE-CLIFFS-NORTH.LDESC"
+  ],
+  "zil": "WHITE-CLIFFS-SOUTH.LDESC (1dungeon.zil:2249)"
+ },
+ {
+  "key": "s14ad8",
+  "en": "You are on the east shore of the river. The water here seems somewhat treacherous. A path travels from north to south here, the south end quickly turning around a sharp corner.",
+  "uses": [
+   "SHORE.LDESC"
+  ],
+  "zil": "SHORE.LDESC (1dungeon.zil:2289)"
+ },
+ {
+  "key": "s14b2e",
+  "en": "You are on a large sandy beach on the east shore of the river, which is flowing quickly by. A path runs beside the river to the south here, and a passage is partially buried in sand to the northeast.",
+  "uses": [
+   "SANDY-BEACH.LDESC",
+   "table"
+  ],
+  "zil": "SANDY-BEACH.LDESC (1dungeon.zil:2302)"
+ },
+ {
+  "key": "s14b8e",
+  "en": "You are on top of a rainbow (I bet you never thought you would walk on a rainbow), with a magnificent view of the Falls. The rainbow travels east-west here.",
+  "uses": [
+   "ON-RAINBOW.LDESC"
+  ],
+  "zil": "ON-RAINBOW.LDESC (1dungeon.zil:2333)"
+ },
+ {
+  "key": "s14be8",
+  "en": "You are on a small, rocky beach on the continuation of the Frigid River past the Falls. The beach is narrow due to the presence of the White Cliffs. The river canyon opens here and sunlight shines in from above. A rainbow crosses over the falls to the east and a narrow path continues to the southwest.",
+  "uses": [
+   "END-OF-RAINBOW.LDESC"
+  ],
+  "zil": "END-OF-RAINBOW.LDESC (1dungeon.zil:2345)"
+ },
+ {
+  "key": "s14c84",
+  "en": "You are beneath the walls of the river canyon which may be climbable here. The lesser part of the runoff of Aragain Falls flows by below. To the north is a narrow path.",
+  "uses": [
+   "CANYON-BOTTOM.LDESC",
+   "table"
+  ],
+  "zil": "CANYON-BOTTOM.LDESC (1dungeon.zil:2361)"
+ },
+ {
+  "key": "s14cdc",
+  "en": "You are on a ledge about halfway up the wall of the river canyon. You can see from here that the main flow from Aragain Falls twists along a passage which it is impossible for you to enter. Below you is the canyon bottom. Above you is more cliff, which appears climbable.",
+  "uses": [
+   "CLIFF-MIDDLE.LDESC"
+  ],
+  "zil": "CLIFF-MIDDLE.LDESC (1dungeon.zil:2373)"
+ },
+ {
+  "key": "s14d5c",
+  "en": "You are at the top of the Great Canyon on its west wall. From here there is a marvelous view of the canyon and parts of the Frigid River upstream. Across the canyon, the walls of the White Cliffs join the mighty ramparts of the Flathead Mountains to the east. Following the Canyon upstream to the north, Aragain Falls may be seen, complete with rainbow. The mighty Frigid River flows out from a great dark cavern. To the west and south can be seen an immense forest, stretching for miles around. A path leads northwest. It is possible to climb down into the canyon from here.",
+  "uses": [
+   "CANYON-VIEW.LDESC"
+  ],
+  "zil": "CANYON-VIEW.LDESC (1dungeon.zil:2387)"
+ },
+ {
+  "key": "s14e9e",
+  "en": "You are standing at the entrance of what might have been a coal mine. The shaft enters the west wall, and there is another exit on the south end of the room.",
+  "uses": [
+   "MINE-ENTRANCE.LDESC",
+   "table"
+  ],
+  "zil": "MINE-ENTRANCE.LDESC (1dungeon.zil:2422)"
+ },
+ {
+  "key": "s14eec",
+  "en": "You are in a small room. Strange squeaky sounds may be heard coming from the passage at the north end. You may also escape to the east.",
+  "uses": [
+   "SQUEEKY-ROOM.LDESC"
+  ],
+  "zil": "SQUEEKY-ROOM.LDESC (1dungeon.zil:2434)"
+ },
+ {
+  "key": "s14f32",
+  "en": "      ",
+  "uses": [
+   "table"
+  ],
+  "zil": "HERO-BLOW (1actions.zil:3506)"
+ },
+ {
+  "key": "s14f36",
+  "en": "        ",
+  "uses": [
+   "table"
+  ],
+  "zil": "HERO-BLOW (1actions.zil:3506)"
+ },
+ {
+  "key": "s14f3c",
+  "en": "          ",
+  "uses": [
+   "table"
+  ],
+  "zil": "HERO-BLOW (1actions.zil:3506)"
+ },
+ {
+  "key": "s14f44",
+  "en": "You are lifted up by the rising river! You try to swim, but the currents are too strong. You come closer, closer to the awesome structure of Flood Control Dam #3. The dam beckons to you. The roar of the water nearly deafens you, but you remain conscious as you tumble over the dam toward your certain doom among the rocks at its base.",
+  "uses": [
+   "routine I-RFILL"
+  ],
+  "zil": "I-RFILL (1actions.zil:1241)"
+ },
+ {
+  "key": "s15004",
+  "en": "You are surrounded by a wall of sand on all sides.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:2874"
+ },
+ {
+  "key": "s1506e",
+  "en": "You cannot climb any higher.",
+  "uses": [
+   "UP-A-TREE.UP"
+  ],
+  "zil": "UP-A-TREE.UP (1dungeon.zil:1383)"
+ },
+ {
+  "key": "s1509a",
+  "en": "You cannot reach the rope.",
+  "uses": [
+   "TORCH-ROOM.UP"
+  ],
+  "zil": "TORCH-ROOM.UP (1dungeon.zil:2090)"
+ },
+ {
+  "key": "s150a6",
+  "en": "You cannot go upstream due to strong currents.",
+  "uses": [
+   "RIVER-1.UP",
+   "RIVER-2.UP",
+   "RIVER-3.UP",
+   "RIVER-4.UP",
+   "RIVER-5.UP",
+   "table"
+  ],
+  "zil": "RIVER-5.UP (1dungeon.zil:2280)"
+ },
+ {
+  "key": "s150c0",
+  "en": "You can land either to the east or the west.",
+  "uses": [
+   "RIVER-4.LAND"
+  ],
+  "zil": "RIVER-4.LAND (1dungeon.zil:2267)"
+ },
+ {
+  "key": "s150d6",
+  "en": "You cannot fit through this passage with that load.",
+  "uses": [
+   "table"
+  ],
+  "zil": "LOWER-SHAFT.EAST (1dungeon.zil:2549)"
+ },
+ {
+  "key": "s150e6",
+  "en": "You can't swim in the dungeon.",
+  "uses": [
+   "table"
+  ],
+  "zil": "gverbs.zil:2196"
+ },
+ {
+  "key": "s150f6",
+  "en": "You can't be serious.",
+  "uses": [
+   "table"
+  ],
+  "zil": "gverbs.zil:2208"
+ },
+ {
+  "key": "s15100",
+  "en": "high in your lungs.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:1293"
+ },
+ {
+  "key": "s15116",
+  "en": "Above the trophy case hangs an elvish sword of great antiquity.",
+  "uses": [
+   "SWORD.FDESC",
+   "table"
+  ],
+  "zil": "SWORD.FDESC (1dungeon.zil:923)"
+ },
+ {
+  "key": "s15140",
+  "en": "The White Cliffs prevent your landing here.",
+  "uses": [
+   "RIVER-1.EAST",
+   "RIVER-5.EAST",
+   "table"
+  ],
+  "zil": "RIVER-2.EAST (1dungeon.zil:2214)"
+ },
+ {
+  "key": "s1515a",
+  "en": " it at the time.",
+  "uses": [
+   "routine V-BURN"
+  ],
+  "zil": "V-BURN (gverbs.zil:268)"
+ },
+ {
+  "key": "s15178",
+  "en": "It appears that that last blow was too much for you. I'm afraid you are dead.",
+  "uses": [
+   "routine WINNER-RESULT"
+  ],
+  "zil": "WINNER-RESULT (1actions.zil:3561)"
+ },
+ {
+  "key": "s151a0",
+  "en": "Lying in one corner of the room is a beautifully carved crystal skull. It appears to be grinning at you rather nastily.",
+  "uses": [
+   "SKULL.FDESC",
+   "table"
+  ],
+  "zil": "SKULL.FDESC (1dungeon.zil:123)"
+ },
+ {
+  "key": "s151e4",
+  "en": "Lying half buried in the mud is an old trunk, bulging with jewels.",
+  "uses": [
+   "TRUNK.FDESC",
+   "table"
+  ],
+  "zil": "TRUNK.FDESC (1dungeon.zil:1055)"
+ },
+ {
+  "key": "s1520c",
+  "en": " doesn't seem to work.",
+  "uses": [
+   "table"
+  ],
+  "zil": "gverbs.zil:2034"
+ },
+ {
+  "key": "s15218",
+  "en": "In the trophy case is an ancient parchment which appears to be a map.",
+  "uses": [
+   "MAP.FDESC"
+  ],
+  "zil": "MAP.FDESC (1dungeon.zil:934)"
+ },
+ {
+  "key": "s1523e",
+  "en": "In the bird's nest is a large egg encrusted with precious jewels, apparently scavenged by a childless songbird. The egg is covered with fine gold inlay, and ornamented in lapis lazuli and mother-of-pearl. Unlike most eggs, this one is hinged and closed with a delicate looking clasp. The egg appears extremely fragile.",
+  "uses": [
+   "EGG.FDESC",
+   "table"
+  ],
+  "zil": "EGG.FDESC (1dungeon.zil:1165)"
+ },
+ {
+  "key": "s152f6",
+  "en": "In the movies, your life would be passing before your eyes.",
+  "uses": [
+   "table"
+  ],
+  "zil": "gverbs.zil:847"
+ }
+]

@@ -1,0 +1,961 @@
+[
+ {
+  "key": "gd1da",
+  "en": "The east wall, previously solid, now has a cyclops-sized opening in it.\n",
+  "args": [],
+  "routine": "CYCLOPS-ROOM-FCN",
+  "zil": "<TELL \"The east wall, previously solid, now has a cyclops-sized opening in it.\" CR>"
+ },
+ {
+  "key": "gd20b",
+  "en": "A cyclops, who looks prepared to eat horses (much less mere adventurers), blocks the staircase. From his state of health, and the bloodstains on the walls, you gather that he is not very friendly, though he likes people.\n",
+  "args": [],
+  "routine": "CYCLOPS-ROOM-FCN",
+  "zil": "<TELL \"A cyclops, who looks prepared to eat horses (much less mere adventurers), blocks the staircase. From his state of health, and the bloodstains on the walls, you gather that he is not very friendly, though he likes people.\" CR>"
+ },
+ {
+  "key": "gd299",
+  "en": "The cyclops is standing in the corner, eyeing you closely. I don't think he likes you very much. He looks extremely hungry, even for a cyclops.\n",
+  "args": [],
+  "routine": "CYCLOPS-ROOM-FCN",
+  "zil": "<TELL \"The cyclops is standing in the corner, eyeing you closely. I don't think he likes you very much. He looks extremely hungry, even for a cyclops.\" CR>"
+ },
+ {
+  "key": "gd2ee",
+  "en": "The cyclops, having eaten the hot peppers, appears to be gasping. His enflamed tongue protrudes from his man-sized mouth.\n",
+  "args": [],
+  "routine": "CYCLOPS-ROOM-FCN",
+  "zil": "<TELL \"The cyclops, having eaten the hot peppers, appears to be gasping. His enflamed tongue protrudes from his man-sized mouth.\" CR>"
+ },
+ {
+  "key": "gd356",
+  "en": "This is a large room with a ceiling which cannot be detected from the ground. There is a narrow passage from east to west and a stone stairway leading upward.",
+  "args": [],
+  "routine": "LOUD-ROOM-FCN",
+  "zil": "<TELL \"This is a large room with a ceiling which cannot be detected from the ground. There is a narrow passage from east to west and a stone stairway leading upward.\">"
+ },
+ {
+  "key": "gd3a0",
+  "en": " The room is eerie in its quietness.\n",
+  "args": [],
+  "routine": "LOUD-ROOM-FCN",
+  "zil": "<TELL \" The room is eerie in its quietness.\">"
+ },
+ {
+  "key": "gd3b5",
+  "en": " The room is deafeningly loud with an undetermined rushing sound. The sound seems to reverberate from all of the walls, making it difficult even to think.\n",
+  "args": [],
+  "routine": "LOUD-ROOM-FCN",
+  "zil": "<TELL \" The room is deafeningly loud with an undetermined rushing sound. The sound seems to reverberate from all of the walls, making it difficult even to think.\">"
+ },
+ {
+  "key": "gd41b",
+  "en": "It is unbearably loud here, with an ear-splitting roar seeming to come from all around you. There is a pounding in your head which won't stop. With a tremendous effort, you scramble out of the room.\n\n",
+  "args": [],
+  "routine": "LOUD-ROOM-FCN",
+  "zil": "<TELL \"It is unbearably loud here, with an ear-splitting roar seeming to come from all around you. There is a pounding in your head which won't stop. With a tremendous effort, you scramble out of the room.\" CR CR>"
+ },
+ {
+  "key": "gd4b4",
+  "en": "The rest of your commands have been lost in the noise.\n",
+  "args": [],
+  "routine": "LOUD-ROOM-FCN",
+  "zil": "<TELL \"The rest of your commands have been lost in the noise.\" CR>"
+ },
+ {
+  "key": "gd4e9",
+  "en": "I beg your pardon?\n",
+  "args": [],
+  "routine": "LOUD-ROOM-FCN",
+  "zil": "<TELL \"I beg your pardon?\" CR>"
+ },
+ {
+  "key": "gd578",
+  "en": "That's only your opinion.\n",
+  "args": [],
+  "routine": "LOUD-ROOM-FCN",
+  "zil": "<TELL \"That's only your opinion.\" CR>"
+ },
+ {
+  "key": "gd59b",
+  "en": "The acoustics of the room change subtly.\n",
+  "args": [],
+  "routine": "LOUD-ROOM-FCN",
+  "zil": "<TELL \"The acoustics of the room change subtly.\" CR>"
+ },
+ {
+  "key": "gd5c7",
+  "en": "You are on the south edge of a deep canyon. Passages lead off to the east, northwest and southwest. A stairway leads down.",
+  "args": [],
+  "routine": "DEEP-CANYON-F",
+  "zil": "<TELL \"You are on the south edge of a deep canyon. Passages lead off to the east, northwest and southwest. A stairway leads down.\">"
+ },
+ {
+  "key": "gd614",
+  "en": " You can hear a loud roaring sound, like that of rushing water, from below.\n",
+  "args": [],
+  "routine": "DEEP-CANYON-F",
+  "zil": "<TELL \" You can hear a loud roaring sound, like that of rushing water, from below.\">"
+ },
+ {
+  "key": "gd649",
+  "en": " You can hear the sound of flowing water from below.\n",
+  "args": [],
+  "routine": "DEEP-CANYON-F",
+  "zil": "<TELL \" You can hear the sound of flowing water from below.\">"
+ },
+ {
+  "key": "gd68e",
+  "en": "Someone carrying a large bag is casually leaning against one of the walls here. He does not speak, but it is clear from his aspect that the bag will be taken only over his dead body.\n",
+  "args": [],
+  "routine": "THIEF-VS-ADVENTURER",
+  "zil": "<TELL \"Someone carrying a large bag is casually leaning against one of the walls here. He does not speak, but it is clear from his aspect that the bag will be taken only over his dead body.\" CR>"
+ },
+ {
+  "key": "gd70d",
+  "en": "Your opponent, determining discretion to be the better part of valor, decides to terminate this little contretemps. With a rueful nod of his head, he steps backward into the gloom and disappears.\n",
+  "args": [],
+  "routine": "THIEF-VS-ADVENTURER",
+  "zil": "<TELL \"Your opponent, determining discretion to be the better part of valor, decides to terminate this little contretemps. With a rueful nod of his head, he steps backward into the gloom and disappears.\" CR>"
+ },
+ {
+  "key": "gd7aa",
+  "en": "The holder of the large bag just left, looking disgusted. Fortunately, he took nothing.\n",
+  "args": [],
+  "routine": "THIEF-VS-ADVENTURER",
+  "zil": "<TELL \"The holder of the large bag just left, looking disgusted. Fortunately, he took nothing.\" CR>"
+ },
+ {
+  "key": "gd815",
+  "en": "A seedy-looking individual with a large bag just wandered through the room. On the way through, he quietly abstracted some valuables from ",
+  "args": [],
+  "routine": "THIEF-VS-ADVENTURER",
+  "zil": "<TELL \"A seedy-looking individual with a large bag just wandered through the room. On the way through, he quietly abstracted some valuables from \">"
+ },
+ {
+  "key": "gd866",
+  "en": "the room",
+  "args": [],
+  "routine": "THIEF-VS-ADVENTURER",
+  "zil": "<TELL \"the room\">"
+ },
+ {
+  "key": "gd86e",
+  "en": "your possession",
+  "args": [],
+  "routine": "THIEF-VS-ADVENTURER",
+  "zil": "<TELL \"your possession\">"
+ },
+ {
+  "key": "gd877",
+  "en": ", mumbling something about \"Doing unto others before...\"\n",
+  "args": [],
+  "routine": "THIEF-VS-ADVENTURER",
+  "zil": "<TELL \", mumbling something about \\\"Doing unto others before...\\\"\" CR>"
+ },
+ {
+  "key": "gd8b2",
+  "en": "The thief just left, still carrying his large bag. You may not have noticed that he ",
+  "args": [],
+  "routine": "THIEF-VS-ADVENTURER",
+  "zil": "<TELL \"The thief just left, still carrying his large bag. You may not have noticed that he \">"
+ },
+ {
+  "key": "gd8e1",
+  "en": "robbed you blind first.",
+  "args": [],
+  "routine": "THIEF-VS-ADVENTURER",
+  "zil": "<TELL \"robbed you blind first.\">"
+ },
+ {
+  "key": "gd8f5",
+  "en": "appropriated the valuables in the room.",
+  "args": [],
+  "routine": "THIEF-VS-ADVENTURER",
+  "zil": "<TELL \"appropriated the valuables in the room.\">"
+ },
+ {
+  "key": "gd915",
+  "en": "The thief, finding nothing of value, left disgusted.\n",
+  "args": [],
+  "routine": "THIEF-VS-ADVENTURER",
+  "zil": "<TELL \"The thief, finding nothing of value, left disgusted.\" CR>"
+ },
+ {
+  "key": "gd93c",
+  "en": "A \"lean and hungry\" gentleman just wandered through, carrying a large bag. Finding nothing of value, he left disgruntled.\n",
+  "args": [],
+  "routine": "THIEF-VS-ADVENTURER",
+  "zil": "<TELL \"A \\\"lean and hungry\\\" gentleman just wandered through, carrying a large bag. Finding nothing of value, he left disgruntled.\" CR>"
+ },
+ {
+  "key": "gd9b4",
+  "en": "The thief just left, still carrying his large bag. You may not have noticed that he ",
+  "args": [],
+  "routine": "THIEF-VS-ADVENTURER",
+  "zil": "<TELL \"The thief just left, still carrying his large bag. You may not have noticed that he \">"
+ },
+ {
+  "key": "gd9e3",
+  "en": "robbed you blind first.",
+  "args": [],
+  "routine": "THIEF-VS-ADVENTURER",
+  "zil": "<TELL \"robbed you blind first.\">"
+ },
+ {
+  "key": "gd9f7",
+  "en": "appropriated the valuables in the room.",
+  "args": [],
+  "routine": "THIEF-VS-ADVENTURER",
+  "zil": "<TELL \"appropriated the valuables in the room.\">"
+ },
+ {
+  "key": "gda17",
+  "en": "The thief, finding nothing of value, left disgusted.\n",
+  "args": [],
+  "routine": "THIEF-VS-ADVENTURER",
+  "zil": "<TELL \"The thief, finding nothing of value, left disgusted.\" CR>"
+ },
+ {
+  "key": "gda56",
+  "en": "The thief seems to have left you in the dark.\n",
+  "args": [],
+  "routine": "STOLE-LIGHT?",
+  "zil": "<TELL \"The thief seems to have left you in the dark.\" CR>"
+ },
+ {
+  "key": "gdae7",
+  "en": "You hear, off in the distance, someone saying \"My, I wonder what this fine {0} is doing here.\"\n",
+  "args": [
+   "o"
+  ],
+  "routine": "ROB-MAZE",
+  "zil": "<TELL \"You hear, off in the distance, someone saying \\\"My, I wonder what this fine \" D .X \" is doing here.\\\"\" CR>"
+ },
+ {
+  "key": "gdb4b",
+  "en": "The thief is a strong, silent type.\n",
+  "args": [],
+  "routine": "ROBBER-FUNCTION",
+  "zil": "<TELL \"The thief is a strong, silent type.\" CR>"
+ },
+ {
+  "key": "gdb78",
+  "en": "The thief, being temporarily incapacitated, is unable to acknowledge your greeting with his usual graciousness.\n",
+  "args": [],
+  "routine": "ROBBER-FUNCTION",
+  "zil": "<TELL \"The thief, being temporarily incapacitated, is unable to acknowledge your greeting with his usual graciousness.\" CR>"
+ },
+ {
+  "key": "gdbd9",
+  "en": "You evidently frightened the robber, though you didn't hit him. He flees",
+  "args": [],
+  "routine": "ROBBER-FUNCTION",
+  "zil": "<TELL \"You evidently frightened the robber, though you didn't hit him. He flees\">"
+ },
+ {
+  "key": "gdc21",
+  "en": ", but the contents of his bag fall on the floor.",
+  "args": [],
+  "routine": "ROBBER-FUNCTION",
+  "zil": "<TELL \", but the contents of his bag fall on the floor.\">"
+ },
+ {
+  "key": "gdc50",
+  "en": "You missed. The thief makes no attempt to take the knife, though it would be a fine addition to the collection in his bag. He does seem angered by your attempt.\n",
+  "args": [],
+  "routine": "ROBBER-FUNCTION",
+  "zil": "<TELL \"You missed. The thief makes no attempt to take the knife, though it would be a fine addition to the collection in his bag. He does seem angered by your attempt.\" CR>"
+ },
+ {
+  "key": "gdcf1",
+  "en": "Your proposed victim suddenly recovers consciousness.\n",
+  "args": [],
+  "routine": "ROBBER-FUNCTION",
+  "zil": "<TELL \"Your proposed victim suddenly recovers consciousness.\" CR>"
+ },
+ {
+  "key": "gdd24",
+  "en": "The thief is taken aback by your unexpected generosity, but accepts the {0} and stops to admire its beauty.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "ROBBER-FUNCTION",
+  "zil": "<TELL \"The thief is taken aback by your unexpected generosity, but accepts the \" D ,PRSO \" and stops to admire its beauty.\" CR>"
+ },
+ {
+  "key": "gdd64",
+  "en": "The thief places the {0} in his bag and thanks you politely.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "ROBBER-FUNCTION",
+  "zil": "<TELL \"The thief places the \" D ,PRSO \" in his bag and thanks you politely.\" CR>"
+ },
+ {
+  "key": "gdd8a",
+  "en": "Once you got him, what would you do with him?\n",
+  "args": [],
+  "routine": "ROBBER-FUNCTION",
+  "zil": "<TELL \"Once you got him, what would you do with him?\" CR>"
+ },
+ {
+  "key": "gddaa",
+  "en": "The thief is a slippery character with beady eyes that flit back and forth. He carries, along with an unmistakable arrogance, a large bag over his shoulder and a vicious stiletto, whose blade is aimed menacingly in your direction. I'd watch out if I were you.\n",
+  "args": [],
+  "routine": "ROBBER-FUNCTION",
+  "zil": "<TELL \"The thief is a slippery character with beady eyes that flit back and forth. He carries, along with an unmistakable arrogance, a large bag over his shoulder and a vicious stiletto, whose blade is aimed menacingly in your direction. I'd watch out if I were you.\" CR>"
+ },
+ {
+  "key": "gde45",
+  "en": "The thief says nothing, as you have not been formally introduced.\n",
+  "args": [],
+  "routine": "ROBBER-FUNCTION",
+  "zil": "<TELL \"The thief says nothing, as you have not been formally introduced.\" CR>"
+ },
+ {
+  "key": "gde84",
+  "en": "The robber, somewhat surprised at this turn of events, nimbly retrieves his stiletto.\n",
+  "args": [],
+  "routine": "ROBBER-FUNCTION",
+  "zil": "<TELL \"The robber, somewhat surprised at this turn of events, nimbly retrieves his stiletto.\" CR>"
+ },
+ {
+  "key": "gded6",
+  "en": "The chalice is now safe to take.\n",
+  "args": [],
+  "routine": "ROBBER-FUNCTION",
+  "zil": "<TELL \"The chalice is now safe to take.\" CR>"
+ },
+ {
+  "key": "gdf00",
+  "en": "As the thief dies, the power of his magic decreases, and his treasures reappear:\n",
+  "args": [],
+  "routine": "ROBBER-FUNCTION",
+  "zil": "<TELL \"As the thief dies, the power of his magic decreases, and his treasures reappear:\" CR>"
+ },
+ {
+  "key": "gdf30",
+  "en": "  A {0}",
+  "args": [
+   "o"
+  ],
+  "routine": "ROBBER-FUNCTION",
+  "zil": "<TELL \"  A \" D .X>"
+ },
+ {
+  "key": "gdf44",
+  "en": ", with ",
+  "args": [],
+  "routine": "ROBBER-FUNCTION",
+  "zil": "<TELL \", with \">"
+ },
+ {
+  "key": "gdf5b",
+  "en": "His booty remains.\n",
+  "args": [],
+  "routine": "ROBBER-FUNCTION",
+  "zil": "<TELL \"His booty remains.\" CR>"
+ },
+ {
+  "key": "gdfc0",
+  "en": "The robber revives, briefly feigning continued unconsciousness, and, when he sees his moment, scrambles away from you.\n",
+  "args": [],
+  "routine": "ROBBER-FUNCTION",
+  "zil": "<TELL \"The robber revives, briefly feigning continued unconsciousness, and, when he sees his moment, scrambles away from you.\" CR>"
+ },
+ {
+  "key": "ge034",
+  "en": "Sadly for you, the robber collapsed on top of the bag. Trying to take it would wake him.\n",
+  "args": [],
+  "routine": "LARGE-BAG-F",
+  "zil": "<TELL \"Sadly for you, the robber collapsed on top of the bag. Trying to take it would wake him.\" CR>"
+ },
+ {
+  "key": "ge069",
+  "en": "The bag will be taken over his dead body.\n",
+  "args": [],
+  "routine": "LARGE-BAG-F",
+  "zil": "<TELL \"The bag will be taken over his dead body.\" CR>"
+ },
+ {
+  "key": "ge08a",
+  "en": "It would be a good trick.\n",
+  "args": [],
+  "routine": "LARGE-BAG-F",
+  "zil": "<TELL \"It would be a good trick.\" CR>"
+ },
+ {
+  "key": "ge09f",
+  "en": "Getting close enough would be a good trick.\n",
+  "args": [],
+  "routine": "LARGE-BAG-F",
+  "zil": "<TELL \"Getting close enough would be a good trick.\" CR>"
+ },
+ {
+  "key": "ge0c2",
+  "en": "The bag is underneath the thief, so one can't say what, if anything, is inside.\n",
+  "args": [],
+  "routine": "LARGE-BAG-F",
+  "zil": "<TELL \"The bag is underneath the thief, so one can't say what, if anything, is inside.\" CR>"
+ },
+ {
+  "key": "ge131",
+  "en": "You'd be stabbed in the back first.\n",
+  "args": [],
+  "routine": "CHALICE-FCN",
+  "zil": "<TELL \"You'd be stabbed in the back first.\" CR>"
+ },
+ {
+  "key": "ge152",
+  "en": "You can't. It's not a very good chalice, is it?\n",
+  "args": [],
+  "routine": "CHALICE-FCN",
+  "zil": "<TELL \"You can't. It's not a very good chalice, is it?\" CR>"
+ },
+ {
+  "key": "ge196",
+  "en": "You hear a scream of anguish as you violate the robber's hideaway. Using passages unknown to you, he rushes to its defense.\n",
+  "args": [],
+  "routine": "TREASURE-ROOM-FCN",
+  "zil": "<TELL \"You hear a scream of anguish as you violate the robber's hideaway. Using passages unknown to you, he rushes to its defense.\" CR>"
+ },
+ {
+  "key": "ge202",
+  "en": "The thief gestures mysteriously, and the treasures in the room suddenly vanish.\n\n",
+  "args": [],
+  "routine": "THIEF-IN-TREASURE",
+  "zil": "<TELL \"The thief gestures mysteriously, and the treasures in the room suddenly vanish.\" CR CR>"
+ },
+ {
+  "key": "ge24b",
+  "en": "The door cannot be opened.\n",
+  "args": [],
+  "routine": "FRONT-DOOR-FCN",
+  "zil": "<TELL \"The door cannot be opened.\" CR>"
+ },
+ {
+  "key": "ge25c",
+  "en": "You cannot burn this door.\n",
+  "args": [],
+  "routine": "FRONT-DOOR-FCN",
+  "zil": "<TELL \"You cannot burn this door.\" CR>"
+ },
+ {
+  "key": "ge26d",
+  "en": "You can't seem to damage the door.\n",
+  "args": [],
+  "routine": "FRONT-DOOR-FCN",
+  "zil": "<TELL \"You can't seem to damage the door.\" CR>"
+ },
+ {
+  "key": "ge284",
+  "en": "It won't open.\n",
+  "args": [],
+  "routine": "FRONT-DOOR-FCN",
+  "zil": "<TELL \"It won't open.\" CR>"
+ },
+ {
+  "key": "ge293",
+  "en": "A force keeps you from taking the bodies.\n",
+  "args": [],
+  "routine": "BODY-FUNCTION",
+  "zil": "<TELL \"A force keeps you from taking the bodies.\" CR>"
+ },
+ {
+  "key": "ge2bf",
+  "en": "The book is already open to page 569.\n",
+  "args": [],
+  "routine": "BLACK-BOOK",
+  "zil": "<TELL \"The book is already open to page 569.\" CR>"
+ },
+ {
+  "key": "ge2da",
+  "en": "As hard as you try, the book cannot be closed.\n",
+  "args": [],
+  "routine": "BLACK-BOOK",
+  "zil": "<TELL \"As hard as you try, the book cannot be closed.\" CR>"
+ },
+ {
+  "key": "ge308",
+  "en": "Beside page 569, there is only one other page with any legible printing on it. Most of it is unreadable, but the subject seems to be the banishment of evil. Apparently, certain noises, lights, and prayers are efficacious in this regard.\n",
+  "args": [],
+  "routine": "BLACK-BOOK",
+  "zil": "<TELL \"Beside page 569, there is only one other page with any legible printing on it. Most of it is unreadable, but the subject seems to be the banishment of evil. Apparently, certain noises, lights, and prayers are efficacious in this regard.\" CR>"
+ },
+ {
+  "key": "ge3b6",
+  "en": "Congratulations! Unlike the other vandals, who merely stole the artist's masterpieces, you have destroyed one.\n",
+  "args": [],
+  "routine": "PAINTING-FCN",
+  "zil": "<TELL \"Congratulations! Unlike the other vandals, who merely stole the artist's masterpieces, you have destroyed one.\" CR>"
+ },
+ {
+  "key": "ge401",
+  "en": "The lamp has smashed into the floor, and the light has gone out.\n",
+  "args": [],
+  "routine": "LANTERN",
+  "zil": "<TELL \"The lamp has smashed into the floor, and the light has gone out.\" CR>"
+ },
+ {
+  "key": "ge443",
+  "en": "A burned-out lamp won't light.\n",
+  "args": [],
+  "routine": "LANTERN",
+  "zil": "<TELL \"A burned-out lamp won't light.\" CR>"
+ },
+ {
+  "key": "ge46b",
+  "en": "The lamp has already burned out.\n",
+  "args": [],
+  "routine": "LANTERN",
+  "zil": "<TELL \"The lamp has already burned out.\" CR>"
+ },
+ {
+  "key": "ge48d",
+  "en": "The lamp ",
+  "args": [],
+  "routine": "LANTERN",
+  "zil": "<TELL \"The lamp \">"
+ },
+ {
+  "key": "ge498",
+  "en": "has burned out.\n",
+  "args": [],
+  "routine": "LANTERN",
+  "zil": "<TELL \"has burned out.\">"
+ },
+ {
+  "key": "ge4a7",
+  "en": "is on.\n",
+  "args": [],
+  "routine": "LANTERN",
+  "zil": "<TELL \"is on.\">"
+ },
+ {
+  "key": "ge4ac",
+  "en": "is turned off.\n",
+  "args": [],
+  "routine": "LANTERN",
+  "zil": "<TELL \"is turned off.\">"
+ },
+ {
+  "key": "ge4c1",
+  "en": "It is securely anchored.\n",
+  "args": [],
+  "routine": "MAILBOX-F",
+  "zil": "<TELL \"It is securely anchored.\" CR>"
+ },
+ {
+  "key": "ge4eb",
+  "en": "I'm afraid that you have run out of matches.\n",
+  "args": [],
+  "routine": "MATCH-FUNCTION",
+  "zil": "<TELL \"I'm afraid that you have run out of matches.\" CR>"
+ },
+ {
+  "key": "ge50a",
+  "en": "This room is drafty, and the match goes out instantly.\n",
+  "args": [],
+  "routine": "MATCH-FUNCTION",
+  "zil": "<TELL \"This room is drafty, and the match goes out instantly.\" CR>"
+ },
+ {
+  "key": "ge53a",
+  "en": "One of the matches starts to burn.\n",
+  "args": [],
+  "routine": "MATCH-FUNCTION",
+  "zil": "<TELL \"One of the matches starts to burn.\" CR>"
+ },
+ {
+  "key": "ge566",
+  "en": "The match is out.\n",
+  "args": [],
+  "routine": "MATCH-FUNCTION",
+  "zil": "<TELL \"The match is out.\" CR>"
+ },
+ {
+  "key": "ge581",
+  "en": "It's pitch black in here!\n",
+  "args": [],
+  "routine": "MATCH-FUNCTION",
+  "zil": "<TELL \"It's pitch black in here!\" CR>"
+ },
+ {
+  "key": "ge5a0",
+  "en": "You have ",
+  "args": [],
+  "routine": "MATCH-FUNCTION",
+  "zil": "<TELL \"You have \">"
+ },
+ {
+  "key": "ge5ad",
+  "en": "no",
+  "args": [],
+  "routine": "MATCH-FUNCTION",
+  "zil": "<TELL \"no\">"
+ },
+ {
+  "key": "ge5b6",
+  "en": " match",
+  "args": [],
+  "routine": "MATCH-FUNCTION",
+  "zil": "<TELL \" match\">"
+ },
+ {
+  "key": "ge5bf",
+  "en": "es.\n",
+  "args": [],
+  "routine": "MATCH-FUNCTION",
+  "zil": "<TELL \"es.\">"
+ },
+ {
+  "key": "ge5c4",
+  "en": ".\n",
+  "args": [],
+  "routine": "MATCH-FUNCTION",
+  "zil": "<TELL \".\">"
+ },
+ {
+  "key": "ge5cf",
+  "en": "The match is burning.\n",
+  "args": [],
+  "routine": "MATCH-FUNCTION",
+  "zil": "<TELL \"The match is burning.\">"
+ },
+ {
+  "key": "ge5de",
+  "en": "The matchbook isn't very interesting, except for what's written on it.\n",
+  "args": [],
+  "routine": "MATCH-FUNCTION",
+  "zil": "<TELL \"The matchbook isn't very interesting, except for what's written on it.\">"
+ },
+ {
+  "key": "ge60f",
+  "en": "The match has gone out.\n",
+  "args": [],
+  "routine": "I-MATCH",
+  "zil": "<TELL \"The match has gone out.\" CR>"
+ },
+ {
+  "key": "ge6a4",
+  "en": "You'd better have more light than from the {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "LIGHT-INT",
+  "zil": "<TELL \"You'd better have more light than from the \" D .OBJ \".\" CR>"
+ },
+ {
+  "key": "ge6f8",
+  "en": "Alas, there's not much left of the candles. Certainly not enough to burn.\n",
+  "args": [],
+  "routine": "CANDLES-FCN",
+  "zil": "<TELL \"Alas, there's not much left of the candles. Certainly not enough to burn.\" CR>"
+ },
+ {
+  "key": "ge72e",
+  "en": "(with the match)\n",
+  "args": [],
+  "routine": "CANDLES-FCN",
+  "zil": "<TELL \"(with the match)\" CR>"
+ },
+ {
+  "key": "ge743",
+  "en": "You should say what to light them with.\n",
+  "args": [],
+  "routine": "CANDLES-FCN",
+  "zil": "<TELL \"You should say what to light them with.\" CR>"
+ },
+ {
+  "key": "ge769",
+  "en": "The candles are ",
+  "args": [],
+  "routine": "CANDLES-FCN",
+  "zil": "<TELL \"The candles are \">"
+ },
+ {
+  "key": "ge772",
+  "en": "already lit.\n",
+  "args": [],
+  "routine": "CANDLES-FCN",
+  "zil": "<TELL \"already lit.\" CR>"
+ },
+ {
+  "key": "ge77c",
+  "en": "lit.\n",
+  "args": [],
+  "routine": "CANDLES-FCN",
+  "zil": "<TELL \"lit.\" CR>"
+ },
+ {
+  "key": "ge798",
+  "en": "You realize, just in time, that the candles are already lighted.\n",
+  "args": [],
+  "routine": "CANDLES-FCN",
+  "zil": "<TELL \"You realize, just in time, that the candles are already lighted.\" CR>"
+ },
+ {
+  "key": "ge7b7",
+  "en": "The heat from the torch is so intense that the candles are vaporized.\n",
+  "args": [],
+  "routine": "CANDLES-FCN",
+  "zil": "<TELL \"The heat from the torch is so intense that the candles are vaporized.\" CR>"
+ },
+ {
+  "key": "ge7e2",
+  "en": "You have to light them with something that's burning, you know.\n",
+  "args": [],
+  "routine": "CANDLES-FCN",
+  "zil": "<TELL \"You have to light them with something that's burning, you know.\" CR>"
+ },
+ {
+  "key": "ge80b",
+  "en": "Let's see, how many objects in a pair? Don't tell me, I'll get it.\n",
+  "args": [],
+  "routine": "CANDLES-FCN",
+  "zil": "<TELL \"Let's see, how many objects in a pair? Don't tell me, I'll get it.\" CR>"
+ },
+ {
+  "key": "ge853",
+  "en": "The flame is extinguished.",
+  "args": [],
+  "routine": "CANDLES-FCN",
+  "zil": "<TELL \"The flame is extinguished.\">"
+ },
+ {
+  "key": "ge873",
+  "en": " It's really dark in here....\n",
+  "args": [],
+  "routine": "CANDLES-FCN",
+  "zil": "<TELL \" It's really dark in here....\">"
+ },
+ {
+  "key": "ge888",
+  "en": "The candles are not lighted.\n",
+  "args": [],
+  "routine": "CANDLES-FCN",
+  "zil": "<TELL \"The candles are not lighted.\" CR>"
+ },
+ {
+  "key": "ge89d",
+  "en": "That wouldn't be smart.\n",
+  "args": [],
+  "routine": "CANDLES-FCN",
+  "zil": "<TELL \"That wouldn't be smart.\" CR>"
+ },
+ {
+  "key": "ge8b4",
+  "en": "The candles are ",
+  "args": [],
+  "routine": "CANDLES-FCN",
+  "zil": "<TELL \"The candles are \">"
+ },
+ {
+  "key": "ge8bd",
+  "en": "burning.\n",
+  "args": [],
+  "routine": "CANDLES-FCN",
+  "zil": "<TELL \"burning.\">"
+ },
+ {
+  "key": "ge8c4",
+  "en": "out.\n",
+  "args": [],
+  "routine": "CANDLES-FCN",
+  "zil": "<TELL \"out.\">"
+ },
+ {
+  "key": "ge8f1",
+  "en": "A gust of wind blows out your candles!\n",
+  "args": [],
+  "routine": "CAVE2-ROOM",
+  "zil": "<TELL \"A gust of wind blows out your candles!\" CR>"
+ },
+ {
+  "key": "ge912",
+  "en": "It is now completely dark.\n",
+  "args": [],
+  "routine": "CAVE2-ROOM",
+  "zil": "<TELL \"It is now completely dark.\" CR>"
+ },
+ {
+  "key": "ge94c",
+  "en": "Your sword is glowing with a faint blue glow.\n",
+  "args": [],
+  "routine": "SWORD-FCN",
+  "zil": "<TELL \"Your sword is glowing with a faint blue glow.\" CR>"
+ },
+ {
+  "key": "ge96b",
+  "en": "Your sword is glowing very brightly.\n",
+  "args": [],
+  "routine": "SWORD-FCN",
+  "zil": "<TELL \"Your sword is glowing very brightly.\" CR>"
+ },
+ {
+  "key": "ge9cc",
+  "en": "How sad for an aspiring adventurer to light a {0} in a room which reeks of gas. Fortunately, there is justice in the world.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "BOOM-ROOM",
+  "zil": "<TELL \"How sad for an aspiring adventurer to light a \" D ,PRSO \" in a room which reeks of gas. Fortunately, there is justice in the world.\" CR>"
+ },
+ {
+  "key": "gea14",
+  "en": "Oh dear. It appears that the smell coming from this room was coal gas. I would have thought twice about carrying flaming objects in here.\n",
+  "args": [],
+  "routine": "BOOM-ROOM",
+  "zil": "<TELL \"Oh dear. It appears that the smell coming from this room was coal gas. I would have thought twice about carrying flaming objects in here.\" CR>"
+ },
+ {
+  "key": "gea71",
+  "en": "In the corner of the room on the ceiling is a large vampire bat who is obviously deranged and holding his nose.\n",
+  "args": [],
+  "routine": "BAT-D",
+  "zil": "<TELL \"In the corner of the room on the ceiling is a large vampire bat who is obviously deranged and holding his nose.\" CR>"
+ },
+ {
+  "key": "geab0",
+  "en": "A large vampire bat, hanging from the ceiling, swoops down at you!\n",
+  "args": [],
+  "routine": "BAT-D",
+  "zil": "<TELL \"A large vampire bat, hanging from the ceiling, swoops down at you!\" CR>"
+ },
+ {
+  "key": "geae1",
+  "en": "You are in a small room which has doors only to the east and south.\n",
+  "args": [],
+  "routine": "BATS-ROOM",
+  "zil": "<TELL \"You are in a small room which has doors only to the east and south.\" CR>"
+ },
+ {
+  "key": "geb21",
+  "en": "This is a large, cold room whose sole exit is to the north. In one corner there is a machine which is reminiscent of a clothes dryer. On its face is a switch which is labelled \"START\". The switch does not appear to be manipulable by any human hand (unless the fingers are about 1/16 by 1/4 inch). On the front of the machine is a large lid, which is ",
+  "args": [],
+  "routine": "MACHINE-ROOM-FCN",
+  "zil": "<TELL \"This is a large, cold room whose sole exit is to the north. In one corner there is a machine which is reminiscent of a clothes dryer. On its face is a switch which is labelled \\\"START\\\". The switch does not appear to be manipulable by any human hand (unless the fingers are about 1/16 by 1/4 inch). On the front of the machine is a large lid, which is \">"
+ },
+ {
+  "key": "gebf4",
+  "en": "open.\n",
+  "args": [],
+  "routine": "MACHINE-ROOM-FCN",
+  "zil": "<TELL \"open.\">"
+ },
+ {
+  "key": "gebf9",
+  "en": "closed.\n",
+  "args": [],
+  "routine": "MACHINE-ROOM-FCN",
+  "zil": "<TELL \"closed.\">"
+ },
+ {
+  "key": "gec07",
+  "en": "It is far too large to carry.\n",
+  "args": [],
+  "routine": "MACHINE-F",
+  "zil": "<TELL \"It is far too large to carry.\" CR>"
+ },
+ {
+  "key": "gec2d",
+  "en": "The lid opens, revealing ",
+  "args": [],
+  "routine": "MACHINE-F",
+  "zil": "<TELL \"The lid opens, revealing \">"
+ },
+ {
+  "key": "gec4c",
+  "en": "The lid opens.\n",
+  "args": [],
+  "routine": "MACHINE-F",
+  "zil": "<TELL \"The lid opens.\" CR>"
+ },
+ {
+  "key": "gec64",
+  "en": "The lid closes.\n",
+  "args": [],
+  "routine": "MACHINE-F",
+  "zil": "<TELL \"The lid closes.\" CR>"
+ },
+ {
+  "key": "gec85",
+  "en": "It's not clear how to turn it on with your bare hands.\n",
+  "args": [],
+  "routine": "MACHINE-F",
+  "zil": "<TELL \"It's not clear how to turn it on with your bare hands.\" CR>"
+ },
+ {
+  "key": "gecba",
+  "en": "The machine doesn't seem to want to do anything.\n",
+  "args": [],
+  "routine": "MSWITCH-FUNCTION",
+  "zil": "<TELL \"The machine doesn't seem to want to do anything.\" CR>"
+ },
+ {
+  "key": "gecd5",
+  "en": "The machine comes to life (figuratively) with a dazzling display of colored lights and bizarre noises. After a few moments, the excitement abates.\n",
+  "args": [],
+  "routine": "MSWITCH-FUNCTION",
+  "zil": "<TELL \"The machine comes to life (figuratively) with a dazzling display of colored lights and bizarre noises. After a few moments, the excitement abates.\" CR>"
+ },
+ {
+  "key": "ged54",
+  "en": "It seems that a {0} won't do.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "MSWITCH-FUNCTION",
+  "zil": "<TELL \"It seems that a \" D ,PRSI \" won't do.\" CR>"
+ },
+ {
+  "key": "ged6b",
+  "en": "The slag was rather insubstantial, and crumbles into dust at your touch.\n",
+  "args": [],
+  "routine": "GUNK-FUNCTION",
+  "zil": "<TELL \"The slag was rather insubstantial, and crumbles into dust at your touch.\" CR>"
+ },
+ {
+  "key": "gee11",
+  "en": "Suddenly, the rainbow appears to become solid and, I venture, walkable (I think the giveaway was the stairs and bannister).\n",
+  "args": [],
+  "routine": "SCEPTRE-FUNCTION",
+  "zil": "<TELL \"Suddenly, the rainbow appears to become solid and, I venture, walkable (I think the giveaway was the stairs and bannister).\" CR>"
+ },
+ {
+  "key": "gee63",
+  "en": "A shimmering pot of gold appears at the end of the rainbow.\n",
+  "args": [],
+  "routine": "SCEPTRE-FUNCTION",
+  "zil": "<TELL \"A shimmering pot of gold appears at the end of the rainbow.\" CR>"
+ },
+ {
+  "key": "gee91",
+  "en": "The rainbow seems to have become somewhat run-of-the-mill.\n",
+  "args": [],
+  "routine": "SCEPTRE-FUNCTION",
+  "zil": "<TELL \"The rainbow seems to have become somewhat run-of-the-mill.\" CR>"
+ },
+ {
+  "key": "geeca",
+  "en": "A dazzling display of color briefly emanates from the sceptre.\n",
+  "args": [],
+  "routine": "SCEPTRE-FUNCTION",
+  "zil": "<TELL \"A dazzling display of color briefly emanates from the sceptre.\" CR>"
+ },
+ {
+  "key": "geef9",
+  "en": "You are at the top of Aragain Falls, an enormous waterfall with a drop of about 450 feet. The only path here is on the north end.\n",
+  "args": [],
+  "routine": "FALLS-ROOM",
+  "zil": "<TELL \"You are at the top of Aragain Falls, an enormous waterfall with a drop of about 450 feet. The only path here is on the north end.\" CR>"
+ },
+ {
+  "key": "gef42",
+  "en": "A solid rainbow spans the falls.\n",
+  "args": [],
+  "routine": "FALLS-ROOM",
+  "zil": "<TELL \"A solid rainbow spans the falls.\">"
+ }
+]

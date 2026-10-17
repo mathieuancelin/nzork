@@ -1,0 +1,74 @@
+# Commandes variées pour relire les messages (erreurs, cas limites)
+regarde
+inventaire
+prends la maison
+ouvre la boîte aux lettres
+prends le prospectus
+lis-le
+mange le prospectus
+pose le prospectus
+prends tout
+prends
+ouvre
+mets le prospectus dans
+attaque la boîte aux lettres
+saute
+crie
+dis bonjour
+prie
+nage
+dors
+xyzzy
+schtroumpf la boîte
+ferme la boîte aux lettres
+ouvre la porte
+sud
+est
+ouvre la fenêtre
+entre
+prends tout
+ouvre le sac
+prends l'ail
+mange le casse-croûte
+bois l'eau
+prends la bouteille
+ouvre la bouteille
+bois l'eau
+o
+prends l'épée
+prends la lanterne
+allume la lanterne
+éteins la lanterne
+pousse le tapis
+regarde sous le tapis
+déplace le tapis
+ouvre la trappe
+lis la porte
+ouvre la porte en bois
+examine la vitrine
+mets l'épée dans la vitrine
+prends l'épée
+diagnostic
+score
+monte
+e
+monte
+prends la corde
+prends le couteau
+regarde la corde
+descends
+o
+allume la lanterne
+descends
+n
+tue le troll
+attaque le troll avec la corde
+tue le troll avec l'épée
+tue le troll avec l'épée
+tue le troll avec l'épée
+tue le troll avec l'épée
+tue le troll avec l'épée
+tue le troll avec l'épée
+i
+quitter
+non

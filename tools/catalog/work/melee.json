@@ -1,0 +1,482 @@
+[
+ {
+  "key": "m4ca6",
+  "en": "Your {wep} misses the {def} by an inch.",
+  "table": "HERO-MELEE[0]"
+ },
+ {
+  "key": "m4cb2",
+  "en": "A good slash, but it misses the {def} by a mile.",
+  "table": "HERO-MELEE[0]"
+ },
+ {
+  "key": "m4cba",
+  "en": "You charge, but the {def} jumps nimbly aside.",
+  "table": "HERO-MELEE[0]"
+ },
+ {
+  "key": "m4cc2",
+  "en": "Clang! Crash! The {def} parries.",
+  "table": "HERO-MELEE[0]"
+ },
+ {
+  "key": "m4cca",
+  "en": "A quick stroke, but the {def} is on guard.",
+  "table": "HERO-MELEE[0]"
+ },
+ {
+  "key": "m4cd2",
+  "en": "A good stroke, but it's too slow; the {def} dodges.",
+  "table": "HERO-MELEE[0]"
+ },
+ {
+  "key": "m4ce8",
+  "en": "Your {wep} crashes down, knocking the {def} into dreamland.",
+  "table": "HERO-MELEE[1]"
+ },
+ {
+  "key": "m4cf4",
+  "en": "The {def} is battered into unconsciousness.",
+  "table": "HERO-MELEE[1]"
+ },
+ {
+  "key": "m4cfc",
+  "en": "A furious exchange, and the {def} is knocked out!",
+  "table": "HERO-MELEE[1]"
+ },
+ {
+  "key": "m4d04",
+  "en": "The haft of your {wep} knocks out the {def}.",
+  "table": "HERO-MELEE[1]"
+ },
+ {
+  "key": "m4d10",
+  "en": "The {def} is knocked out!",
+  "table": "HERO-MELEE[1]"
+ },
+ {
+  "key": "m4d24",
+  "en": "It's curtains for the {def} as your {wep} removes his head.",
+  "table": "HERO-MELEE[2]"
+ },
+ {
+  "key": "m4d30",
+  "en": "The fatal blow strikes the {def} square in the heart: He dies.",
+  "table": "HERO-MELEE[2]"
+ },
+ {
+  "key": "m4d38",
+  "en": "The {def} takes a fatal blow and slumps to the floor dead.",
+  "table": "HERO-MELEE[2]"
+ },
+ {
+  "key": "m4d48",
+  "en": "The {def} is struck on the arm; blood begins to trickle down.",
+  "table": "HERO-MELEE[3]"
+ },
+ {
+  "key": "m4d50",
+  "en": "Your {wep} pinks the {def} on the wrist, but it's not serious.",
+  "table": "HERO-MELEE[3]"
+ },
+ {
+  "key": "m4d5c",
+  "en": "Your stroke lands, but it was only the flat of the blade.",
+  "table": "HERO-MELEE[3]"
+ },
+ {
+  "key": "m4d60",
+  "en": "The blow lands, making a shallow gash in the {def}'s arm!",
+  "table": "HERO-MELEE[3]"
+ },
+ {
+  "key": "m4d72",
+  "en": "The {def} receives a deep gash in his side.",
+  "table": "HERO-MELEE[4]"
+ },
+ {
+  "key": "m4d7a",
+  "en": "A savage blow on the thigh! The {def} is stunned but can still fight!",
+  "table": "HERO-MELEE[4]"
+ },
+ {
+  "key": "m4d82",
+  "en": "Slash! Your blow lands! That one hit an artery, it could be serious!",
+  "table": "HERO-MELEE[4]"
+ },
+ {
+  "key": "m4d86",
+  "en": "Slash! Your stroke connects! This could be serious!",
+  "table": "HERO-MELEE[4]"
+ },
+ {
+  "key": "m4d94",
+  "en": "The {def} is staggered, and drops to his knees.",
+  "table": "HERO-MELEE[5]"
+ },
+ {
+  "key": "m4d9c",
+  "en": "The {def} is momentarily disoriented and can't fight back.",
+  "table": "HERO-MELEE[5]"
+ },
+ {
+  "key": "m4da4",
+  "en": "The force of your blow knocks the {def} back, stunned.",
+  "table": "HERO-MELEE[5]"
+ },
+ {
+  "key": "m4dac",
+  "en": "The {def} is confused and can't fight back.",
+  "table": "HERO-MELEE[5]"
+ },
+ {
+  "key": "m4db4",
+  "en": "The quickness of your thrust knocks the {def} back, stunned.",
+  "table": "HERO-MELEE[5]"
+ },
+ {
+  "key": "m4dc8",
+  "en": "The {def}'s weapon is knocked to the floor, leaving him unarmed.",
+  "table": "HERO-MELEE[6]"
+ },
+ {
+  "key": "m4dd0",
+  "en": "The {def} is disarmed by a subtle feint past his guard.",
+  "table": "HERO-MELEE[6]"
+ },
+ {
+  "key": "m4e6c",
+  "en": "The troll swings his axe, but it misses.",
+  "table": "TROLL-MELEE[0]"
+ },
+ {
+  "key": "m4e70",
+  "en": "The troll's axe barely misses your ear.",
+  "table": "TROLL-MELEE[0]"
+ },
+ {
+  "key": "m4e74",
+  "en": "The axe sweeps past as you jump aside.",
+  "table": "TROLL-MELEE[0]"
+ },
+ {
+  "key": "m4e78",
+  "en": "The axe crashes against the rock, throwing sparks!",
+  "table": "TROLL-MELEE[0]"
+ },
+ {
+  "key": "m4e86",
+  "en": "The flat of the troll's axe hits you delicately on the head, knocking you out.",
+  "table": "TROLL-MELEE[1]"
+ },
+ {
+  "key": "m4e8e",
+  "en": "The troll neatly removes your head.",
+  "table": "TROLL-MELEE[2]"
+ },
+ {
+  "key": "m4e92",
+  "en": "The troll's axe stroke cleaves you from the nave to the chops.",
+  "table": "TROLL-MELEE[2]"
+ },
+ {
+  "key": "m4e96",
+  "en": "The troll's axe removes your head.",
+  "table": "TROLL-MELEE[2]"
+ },
+ {
+  "key": "m4ea2",
+  "en": "The axe gets you right in the side. Ouch!",
+  "table": "TROLL-MELEE[3]"
+ },
+ {
+  "key": "m4ea6",
+  "en": "The flat of the troll's axe skins across your forearm.",
+  "table": "TROLL-MELEE[3]"
+ },
+ {
+  "key": "m4eaa",
+  "en": "The troll's swing almost knocks you over as you barely parry in time.",
+  "table": "TROLL-MELEE[3]"
+ },
+ {
+  "key": "m4eae",
+  "en": "The troll swings his axe, and it nicks your arm as you dodge.",
+  "table": "TROLL-MELEE[3]"
+ },
+ {
+  "key": "m4ebc",
+  "en": "The troll charges, and his axe slashes you on your {wep} arm.",
+  "table": "TROLL-MELEE[4]"
+ },
+ {
+  "key": "m4ec4",
+  "en": "An axe stroke makes a deep wound in your leg.",
+  "table": "TROLL-MELEE[4]"
+ },
+ {
+  "key": "m4ec8",
+  "en": "The troll's axe swings down, gashing your shoulder.",
+  "table": "TROLL-MELEE[4]"
+ },
+ {
+  "key": "m4ed4",
+  "en": "The troll hits you with a glancing blow, and you are momentarily stunned.",
+  "table": "TROLL-MELEE[5]"
+ },
+ {
+  "key": "m4ed8",
+  "en": "The troll swings; the blade turns on your armor but crashes broadside into your head.",
+  "table": "TROLL-MELEE[5]"
+ },
+ {
+  "key": "m4edc",
+  "en": "You stagger back under a hail of axe strokes.",
+  "table": "TROLL-MELEE[5]"
+ },
+ {
+  "key": "m4ee0",
+  "en": "The troll's mighty blow drops you to your knees.",
+  "table": "TROLL-MELEE[5]"
+ },
+ {
+  "key": "m4eee",
+  "en": "The axe hits your {wep} and knocks it spinning.",
+  "table": "TROLL-MELEE[6]"
+ },
+ {
+  "key": "m4ef6",
+  "en": "The troll swings, you parry, but the force of his blow knocks your {wep} away.",
+  "table": "TROLL-MELEE[6]"
+ },
+ {
+  "key": "m4efe",
+  "en": "The axe knocks your {wep} out of your hand. It falls to the floor.",
+  "table": "TROLL-MELEE[6]"
+ },
+ {
+  "key": "m4f0e",
+  "en": "The troll hesitates, fingering his axe.",
+  "table": "TROLL-MELEE[7]"
+ },
+ {
+  "key": "m4f12",
+  "en": "The troll scratches his head ruminatively:  Might you be magically protected, he wonders?",
+  "table": "TROLL-MELEE[7]"
+ },
+ {
+  "key": "m4f1c",
+  "en": "Conquering his fears, the troll puts you to death.",
+  "table": "TROLL-MELEE[8]"
+ },
+ {
+  "key": "m4f36",
+  "en": "The thief stabs nonchalantly with his stiletto and misses.",
+  "table": "THIEF-MELEE[0]"
+ },
+ {
+  "key": "m4f3a",
+  "en": "You dodge as the thief comes in low.",
+  "table": "THIEF-MELEE[0]"
+ },
+ {
+  "key": "m4f3e",
+  "en": "You parry a lightning thrust, and the thief salutes you with a grim nod.",
+  "table": "THIEF-MELEE[0]"
+ },
+ {
+  "key": "m4f42",
+  "en": "The thief tries to sneak past your guard, but you twist away.",
+  "table": "THIEF-MELEE[0]"
+ },
+ {
+  "key": "m4f50",
+  "en": "Shifting in the midst of a thrust, the thief knocks you unconscious with the haft of his stiletto.",
+  "table": "THIEF-MELEE[1]"
+ },
+ {
+  "key": "m4f54",
+  "en": "The thief knocks you out.",
+  "table": "THIEF-MELEE[1]"
+ },
+ {
+  "key": "m4f5e",
+  "en": "Finishing you off, the thief inserts his blade into your heart.",
+  "table": "THIEF-MELEE[2]"
+ },
+ {
+  "key": "m4f62",
+  "en": "The thief comes in from the side, feints, and inserts the blade into your ribs.",
+  "table": "THIEF-MELEE[2]"
+ },
+ {
+  "key": "m4f66",
+  "en": "The thief bows formally, raises his stiletto, and with a wry grin, ends the battle and your life.",
+  "table": "THIEF-MELEE[2]"
+ },
+ {
+  "key": "m4f72",
+  "en": "A quick thrust pinks your left arm, and blood starts to trickle down.",
+  "table": "THIEF-MELEE[3]"
+ },
+ {
+  "key": "m4f76",
+  "en": "The thief draws blood, raking his stiletto across your arm.",
+  "table": "THIEF-MELEE[3]"
+ },
+ {
+  "key": "m4f7a",
+  "en": "The stiletto flashes faster than you can follow, and blood wells from your leg.",
+  "table": "THIEF-MELEE[3]"
+ },
+ {
+  "key": "m4f7e",
+  "en": "The thief slowly approaches, strikes like a snake, and leaves you wounded.",
+  "table": "THIEF-MELEE[3]"
+ },
+ {
+  "key": "m4f8c",
+  "en": "The thief strikes like a snake! The resulting wound is serious.",
+  "table": "THIEF-MELEE[4]"
+ },
+ {
+  "key": "m4f90",
+  "en": "The thief stabs a deep cut in your upper arm.",
+  "table": "THIEF-MELEE[4]"
+ },
+ {
+  "key": "m4f94",
+  "en": "The stiletto touches your forehead, and the blood obscures your vision.",
+  "table": "THIEF-MELEE[4]"
+ },
+ {
+  "key": "m4f98",
+  "en": "The thief strikes at your wrist, and suddenly your grip is slippery with blood.",
+  "table": "THIEF-MELEE[4]"
+ },
+ {
+  "key": "m4fa6",
+  "en": "The butt of his stiletto cracks you on the skull, and you stagger back.",
+  "table": "THIEF-MELEE[5]"
+ },
+ {
+  "key": "m4faa",
+  "en": "The thief rams the haft of his blade into your stomach, leaving you out of breath.",
+  "table": "THIEF-MELEE[5]"
+ },
+ {
+  "key": "m4fae",
+  "en": "The thief attacks, and you fall back desperately.",
+  "table": "THIEF-MELEE[5]"
+ },
+ {
+  "key": "m4fba",
+  "en": "A long, theatrical slash. You catch it on your {wep}, but the thief twists his knife, and the {wep} goes flying.",
+  "table": "THIEF-MELEE[6]"
+ },
+ {
+  "key": "m4fc6",
+  "en": "The thief neatly flips your {wep} out of your hands, and it drops to the floor.",
+  "table": "THIEF-MELEE[6]"
+ },
+ {
+  "key": "m4fce",
+  "en": "You parry a low thrust, and your {wep} slips out of your hand.",
+  "table": "THIEF-MELEE[6]"
+ },
+ {
+  "key": "m4fde",
+  "en": "The thief, a man of superior breeding, pauses for a moment to consider the propriety of finishing you off.",
+  "table": "THIEF-MELEE[7]"
+ },
+ {
+  "key": "m4fe2",
+  "en": "The thief amuses himself by searching your pockets.",
+  "table": "THIEF-MELEE[7]"
+ },
+ {
+  "key": "m4fe6",
+  "en": "The thief entertains himself by rifling your pack.",
+  "table": "THIEF-MELEE[7]"
+ },
+ {
+  "key": "m4ff2",
+  "en": "The thief, forgetting his essentially genteel upbringing, cuts your throat.",
+  "table": "THIEF-MELEE[8]"
+ },
+ {
+  "key": "m4ff6",
+  "en": "The thief, a pragmatist, dispatches you as a threat to his livelihood.",
+  "table": "THIEF-MELEE[8]"
+ },
+ {
+  "key": "m4dec",
+  "en": "The Cyclops misses, but the backwash almost knocks you over.",
+  "table": "CYCLOPS-MELEE[0]"
+ },
+ {
+  "key": "m4df0",
+  "en": "The Cyclops rushes you, but runs into the wall.",
+  "table": "CYCLOPS-MELEE[0]"
+ },
+ {
+  "key": "m4dfa",
+  "en": "The Cyclops sends you crashing to the floor, unconscious.",
+  "table": "CYCLOPS-MELEE[1]"
+ },
+ {
+  "key": "m4e02",
+  "en": "The Cyclops breaks your neck with a massive smash.",
+  "table": "CYCLOPS-MELEE[2]"
+ },
+ {
+  "key": "m4e0a",
+  "en": "A quick punch, but it was only a glancing blow.",
+  "table": "CYCLOPS-MELEE[3]"
+ },
+ {
+  "key": "m4e0e",
+  "en": "A glancing blow from the Cyclops' fist.",
+  "table": "CYCLOPS-MELEE[3]"
+ },
+ {
+  "key": "m4e18",
+  "en": "The monster smashes his huge fist into your chest, breaking several ribs.",
+  "table": "CYCLOPS-MELEE[4]"
+ },
+ {
+  "key": "m4e1c",
+  "en": "The Cyclops almost knocks the wind out of you with a quick punch.",
+  "table": "CYCLOPS-MELEE[4]"
+ },
+ {
+  "key": "m4e26",
+  "en": "The Cyclops lands a punch that knocks the wind out of you.",
+  "table": "CYCLOPS-MELEE[5]"
+ },
+ {
+  "key": "m4e2a",
+  "en": "Heedless of your weapons, the Cyclops tosses you against the rock wall of the room.",
+  "table": "CYCLOPS-MELEE[5]"
+ },
+ {
+  "key": "m4e34",
+  "en": "The Cyclops grabs your {wep}, tastes it, and throws it to the ground in disgust.",
+  "table": "CYCLOPS-MELEE[6]"
+ },
+ {
+  "key": "m4e3c",
+  "en": "The monster grabs you on the wrist, squeezes, and you drop your {wep} in pain.",
+  "table": "CYCLOPS-MELEE[6]"
+ },
+ {
+  "key": "m4e4a",
+  "en": "The Cyclops seems unable to decide whether to broil or stew his dinner.",
+  "table": "CYCLOPS-MELEE[7]"
+ },
+ {
+  "key": "m4e52",
+  "en": "The Cyclops, no sportsman, dispatches his unconscious victim.",
+  "table": "CYCLOPS-MELEE[8]"
+ }
+]

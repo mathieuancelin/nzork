@@ -1,0 +1,1067 @@
+[
+ {
+  "key": "g9bdd",
+  "en": "The {0} leaves the room.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "GOTO",
+  "zil": "<TELL \"The \" D ,WINNER \" leaves the room.\" CR>"
+ },
+ {
+  "key": "g9bf5",
+  "en": "Oh, no! A lurking grue slithered into the ",
+  "args": [],
+  "routine": "GOTO",
+  "zil": "<TELL \"Oh, no! A lurking grue slithered into the \">"
+ },
+ {
+  "key": "g9c1f",
+  "en": "room",
+  "args": [],
+  "routine": "GOTO",
+  "zil": "<TELL \"room\">"
+ },
+ {
+  "key": "g9d05",
+  "en": "You are standing in an open field west of a white house, with a boarded front door.",
+  "args": [],
+  "routine": "WEST-HOUSE",
+  "zil": "<TELL \"You are standing in an open field west of a white house, with a boarded front door.\">"
+ },
+ {
+  "key": "g9d39",
+  "en": " A secret path leads southwest into the forest.\n",
+  "args": [],
+  "routine": "WEST-HOUSE",
+  "zil": "<TELL \" A secret path leads southwest into the forest.\">"
+ },
+ {
+  "key": "g9d5d",
+  "en": "You are behind the white house. A path leads into the forest to the east. In one corner of the house there is a small window which is ",
+  "args": [],
+  "routine": "EAST-HOUSE",
+  "zil": "<TELL \"You are behind the white house. A path leads into the forest to the east. In one corner of the house there is a small window which is \">"
+ },
+ {
+  "key": "g9da6",
+  "en": "open.\n",
+  "args": [],
+  "routine": "EAST-HOUSE",
+  "zil": "<TELL \"open.\">"
+ },
+ {
+  "key": "g9dab",
+  "en": "slightly ajar.\n",
+  "args": [],
+  "routine": "EAST-HOUSE",
+  "zil": "<TELL \"slightly ajar.\">"
+ },
+ {
+  "key": "g9df9",
+  "en": "The boards are securely fastened.\n",
+  "args": [],
+  "routine": "BOARD-F",
+  "zil": "<TELL \"The boards are securely fastened.\" CR>"
+ },
+ {
+  "key": "g9e2a",
+  "en": "Dental hygiene is highly recommended, but I'm not sure what you want to brush them with.\n",
+  "args": [],
+  "routine": "TEETH-F",
+  "zil": "<TELL \"Dental hygiene is highly recommended, but I'm not sure what you want to brush them with.\" CR>"
+ },
+ {
+  "key": "g9e63",
+  "en": "A nice idea, but with a {0}?\n",
+  "args": [
+   "o"
+  ],
+  "routine": "TEETH-F",
+  "zil": "<TELL \"A nice idea, but with a \" D ,PRSI \"?\" CR>"
+ },
+ {
+  "key": "g9e81",
+  "en": "The west wall is solid granite here.\n",
+  "args": [],
+  "routine": "GRANITE-WALL-F",
+  "zil": "<TELL \"The west wall is solid granite here.\" CR>"
+ },
+ {
+  "key": "g9e9b",
+  "en": "It's solid granite.\n",
+  "args": [],
+  "routine": "GRANITE-WALL-F",
+  "zil": "<TELL \"It's solid granite.\" CR>"
+ },
+ {
+  "key": "g9eb0",
+  "en": "The east wall is solid granite here.\n",
+  "args": [],
+  "routine": "GRANITE-WALL-F",
+  "zil": "<TELL \"The east wall is solid granite here.\" CR>"
+ },
+ {
+  "key": "g9eca",
+  "en": "It's solid granite.\n",
+  "args": [],
+  "routine": "GRANITE-WALL-F",
+  "zil": "<TELL \"It's solid granite.\" CR>"
+ },
+ {
+  "key": "g9ee1",
+  "en": "It only SAYS \"Granite Wall\".\n",
+  "args": [],
+  "routine": "GRANITE-WALL-F",
+  "zil": "<TELL \"It only SAYS \\\"Granite Wall\\\".\" CR>"
+ },
+ {
+  "key": "g9efa",
+  "en": "The wall isn't granite.\n",
+  "args": [],
+  "routine": "GRANITE-WALL-F",
+  "zil": "<TELL \"The wall isn't granite.\" CR>"
+ },
+ {
+  "key": "g9f09",
+  "en": "There is no granite wall here.\n",
+  "args": [],
+  "routine": "GRANITE-WALL-F",
+  "zil": "<TELL \"There is no granite wall here.\" CR>"
+ },
+ {
+  "key": "g9f1f",
+  "en": "The songbird is not here but is probably nearby.\n",
+  "args": [],
+  "routine": "SONGBIRD-F",
+  "zil": "<TELL \"The songbird is not here but is probably nearby.\" CR>"
+ },
+ {
+  "key": "g9f3a",
+  "en": "You can't hear the songbird now.\n",
+  "args": [],
+  "routine": "SONGBIRD-F",
+  "zil": "<TELL \"You can't hear the songbird now.\" CR>"
+ },
+ {
+  "key": "g9f51",
+  "en": "It can't be followed.\n",
+  "args": [],
+  "routine": "SONGBIRD-F",
+  "zil": "<TELL \"It can't be followed.\" CR>"
+ },
+ {
+  "key": "g9f5e",
+  "en": "You can't see any songbird here.\n",
+  "args": [],
+  "routine": "SONGBIRD-F",
+  "zil": "<TELL \"You can't see any songbird here.\" CR>"
+ },
+ {
+  "key": "g9f7e",
+  "en": "Why not find your brains?\n",
+  "args": [],
+  "routine": "WHITE-HOUSE-F",
+  "zil": "<TELL \"Why not find your brains?\" CR>"
+ },
+ {
+  "key": "g9faf",
+  "en": "It seems to be to the west.\n",
+  "args": [],
+  "routine": "WHITE-HOUSE-F",
+  "zil": "<TELL \"It seems to be to the west.\" CR>"
+ },
+ {
+  "key": "g9fbc",
+  "en": "It was here just a minute ago....\n",
+  "args": [],
+  "routine": "WHITE-HOUSE-F",
+  "zil": "<TELL \"It was here just a minute ago....\" CR>"
+ },
+ {
+  "key": "g9fd3",
+  "en": "You're not at the house.\n",
+  "args": [],
+  "routine": "WHITE-HOUSE-F",
+  "zil": "<TELL \"You're not at the house.\" CR>"
+ },
+ {
+  "key": "g9fe4",
+  "en": "It's right here! Are you blind or something?\n",
+  "args": [],
+  "routine": "WHITE-HOUSE-F",
+  "zil": "<TELL \"It's right here! Are you blind or something?\" CR>"
+ },
+ {
+  "key": "ga011",
+  "en": "The house is a beautiful colonial house which is painted white. It is clear that the owners must have been extremely wealthy.\n",
+  "args": [],
+  "routine": "WHITE-HOUSE-F",
+  "zil": "<TELL \"The house is a beautiful colonial house which is painted white. It is clear that the owners must have been extremely wealthy.\" CR>"
+ },
+ {
+  "key": "ga06f",
+  "en": "The window is closed.\n",
+  "args": [],
+  "routine": "WHITE-HOUSE-F",
+  "zil": "<TELL \"The window is closed.\" CR>"
+ },
+ {
+  "key": "ga082",
+  "en": "I can't see how to get in from here.\n",
+  "args": [],
+  "routine": "WHITE-HOUSE-F",
+  "zil": "<TELL \"I can't see how to get in from here.\" CR>"
+ },
+ {
+  "key": "ga099",
+  "en": "You must be joking.\n",
+  "args": [],
+  "routine": "WHITE-HOUSE-F",
+  "zil": "<TELL \"You must be joking.\" CR>"
+ },
+ {
+  "key": "ga0d0",
+  "en": "You aren't even in the forest.\n",
+  "args": [],
+  "routine": "FOREST-F",
+  "zil": "<TELL \"You aren't even in the forest.\" CR>"
+ },
+ {
+  "key": "ga0ef",
+  "en": "You will have to specify a direction.\n",
+  "args": [],
+  "routine": "FOREST-F",
+  "zil": "<TELL \"You will have to specify a direction.\" CR>"
+ },
+ {
+  "key": "ga10a",
+  "en": "You cannot see the forest for the trees.\n",
+  "args": [],
+  "routine": "FOREST-F",
+  "zil": "<TELL \"You cannot see the forest for the trees.\" CR>"
+ },
+ {
+  "key": "ga123",
+  "en": "The pines and the hemlocks seem to be murmuring.\n",
+  "args": [],
+  "routine": "FOREST-F",
+  "zil": "<TELL \"The pines and the hemlocks seem to be murmuring.\" CR>"
+ },
+ {
+  "key": "ga148",
+  "en": "Don't you believe me? The mountains are impassable!\n",
+  "args": [],
+  "routine": "MOUNTAIN-RANGE-F",
+  "zil": "<TELL \"Don't you believe me? The mountains are impassable!\" CR>"
+ },
+ {
+  "key": "ga1f9",
+  "en": "There is now a puddle in the bottom of the {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "WATER-F",
+  "zil": "<TELL \"There is now a puddle in the bottom of the \" D .AV \".\" CR>"
+ },
+ {
+  "key": "ga227",
+  "en": "The water leaks out of the {0} and evaporates immediately.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "WATER-F",
+  "zil": "<TELL \"The water leaks out of the \" D ,PRSI \" and evaporates immediately.\" CR>"
+ },
+ {
+  "key": "ga25a",
+  "en": "The bottle is closed.\n",
+  "args": [],
+  "routine": "WATER-F",
+  "zil": "<TELL \"The bottle is closed.\" CR>"
+ },
+ {
+  "key": "ga274",
+  "en": "The bottle is now full of water.\n",
+  "args": [],
+  "routine": "WATER-F",
+  "zil": "<TELL \"The bottle is now full of water.\" CR>"
+ },
+ {
+  "key": "ga289",
+  "en": "The water slips through your fingers.\n",
+  "args": [],
+  "routine": "WATER-F",
+  "zil": "<TELL \"The water slips through your fingers.\" CR>"
+ },
+ {
+  "key": "ga2a5",
+  "en": "It's in the bottle. Perhaps you should take that instead.\n",
+  "args": [],
+  "routine": "WATER-F",
+  "zil": "<TELL \"It's in the bottle. Perhaps you should take that instead.\" CR>"
+ },
+ {
+  "key": "ga2c6",
+  "en": "The water slips through your fingers.\n",
+  "args": [],
+  "routine": "WATER-F",
+  "zil": "<TELL \"The water slips through your fingers.\" CR>"
+ },
+ {
+  "key": "ga2f1",
+  "en": "Nice try.\n",
+  "args": [],
+  "routine": "WATER-F",
+  "zil": "<TELL \"Nice try.\" CR>"
+ },
+ {
+  "key": "ga30d",
+  "en": "The bottle is closed.\n",
+  "args": [],
+  "routine": "WATER-F",
+  "zil": "<TELL \"The bottle is closed.\" CR>"
+ },
+ {
+  "key": "ga321",
+  "en": "There is now a puddle in the bottom of the {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "WATER-F",
+  "zil": "<TELL \"There is now a puddle in the bottom of the \" D .AV \".\" CR>"
+ },
+ {
+  "key": "ga342",
+  "en": "The water spills to the floor and evaporates immediately.\n",
+  "args": [],
+  "routine": "WATER-F",
+  "zil": "<TELL \"The water spills to the floor and evaporates immediately.\" CR>"
+ },
+ {
+  "key": "ga36f",
+  "en": "The water splashes on the walls and evaporates immediately.\n",
+  "args": [],
+  "routine": "WATER-F",
+  "zil": "<TELL \"The water splashes on the walls and evaporates immediately.\" CR>"
+ },
+ {
+  "key": "ga3b6",
+  "en": "The window is slightly ajar, but not enough to allow entry.\n",
+  "args": [],
+  "routine": "KITCHEN-WINDOW-F",
+  "zil": "<TELL \"The window is slightly ajar, but not enough to allow entry.\" CR>"
+ },
+ {
+  "key": "ga3f8",
+  "en": "You can see ",
+  "args": [],
+  "routine": "KITCHEN-WINDOW-F",
+  "zil": "<TELL \"You can see \">"
+ },
+ {
+  "key": "ga403",
+  "en": "a clear area leading towards a forest.\n",
+  "args": [],
+  "routine": "KITCHEN-WINDOW-F",
+  "zil": "<TELL \"a clear area leading towards a forest.\" CR>"
+ },
+ {
+  "key": "ga41a",
+  "en": "what appears to be a kitchen.\n",
+  "args": [],
+  "routine": "KITCHEN-WINDOW-F",
+  "zil": "<TELL \"what appears to be a kitchen.\" CR>"
+ },
+ {
+  "key": "ga431",
+  "en": "The spirits jeer loudly and ignore you.\n",
+  "args": [],
+  "routine": "GHOSTS-F",
+  "zil": "<TELL \"The spirits jeer loudly and ignore you.\" CR>"
+ },
+ {
+  "key": "ga454",
+  "en": "Only the ceremony itself has any effect.\n",
+  "args": [],
+  "routine": "GHOSTS-F",
+  "zil": "<TELL \"Only the ceremony itself has any effect.\" CR>"
+ },
+ {
+  "key": "ga479",
+  "en": "How can you attack a spirit with material objects?\n",
+  "args": [],
+  "routine": "GHOSTS-F",
+  "zil": "<TELL \"How can you attack a spirit with material objects?\" CR>"
+ },
+ {
+  "key": "ga498",
+  "en": "You seem unable to interact with these spirits.\n",
+  "args": [],
+  "routine": "GHOSTS-F",
+  "zil": "<TELL \"You seem unable to interact with these spirits.\" CR>"
+ },
+ {
+  "key": "ga4d7",
+  "en": "The basket is raised to the top of the shaft.\n",
+  "args": [],
+  "routine": "BASKET-F",
+  "zil": "<TELL \"The basket is raised to the top of the shaft.\" CR>"
+ },
+ {
+  "key": "ga510",
+  "en": "The basket is lowered to the bottom of the shaft.\n",
+  "args": [],
+  "routine": "BASKET-F",
+  "zil": "<TELL \"The basket is lowered to the bottom of the shaft.\" CR>"
+ },
+ {
+  "key": "ga53d",
+  "en": "It is now pitch black.\n",
+  "args": [],
+  "routine": "BASKET-F",
+  "zil": "<TELL \"It is now pitch black.\" CR>"
+ },
+ {
+  "key": "ga554",
+  "en": "The basket is at the other end of the chain.\n",
+  "args": [],
+  "routine": "BASKET-F",
+  "zil": "<TELL \"The basket is at the other end of the chain.\" CR>"
+ },
+ {
+  "key": "ga575",
+  "en": "The cage is securely fastened to the iron chain.\n",
+  "args": [],
+  "routine": "BASKET-F",
+  "zil": "<TELL \"The cage is securely fastened to the iron chain.\" CR>"
+ },
+ {
+  "key": "ga5b2",
+  "en": "You can't reach him; he's on the ceiling.\n",
+  "args": [],
+  "routine": "BAT-F",
+  "zil": "<TELL \"You can't reach him; he's on the ceiling.\" CR>"
+ },
+ {
+  "key": "ga5db",
+  "en": "The bat grabs you by the scruff of your neck and lifts you away....\n\n",
+  "args": [],
+  "routine": "FLY-ME",
+  "zil": "<TELL \"The bat grabs you by the scruff of your neck and lifts you away....\" CR CR>"
+ },
+ {
+  "key": "ga623",
+  "en": "    Fweep!\n",
+  "args": [],
+  "routine": "FWEEP",
+  "zil": "<TELL \"    Fweep!\" CR>"
+ },
+ {
+  "key": "ga640",
+  "en": "Ding, dong.\n",
+  "args": [],
+  "routine": "BELL-F",
+  "zil": "<TELL \"Ding, dong.\" CR>"
+ },
+ {
+  "key": "ga651",
+  "en": "The bell is very hot and cannot be taken.\n",
+  "args": [],
+  "routine": "HOT-BELL-F",
+  "zil": "<TELL \"The bell is very hot and cannot be taken.\" CR>"
+ },
+ {
+  "key": "ga679",
+  "en": "The {0} burns and is consumed.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "HOT-BELL-F",
+  "zil": "<TELL \"The \" D ,PRSI \" burns and is consumed.\" CR>"
+ },
+ {
+  "key": "ga699",
+  "en": "The bell is too hot to touch.\n",
+  "args": [],
+  "routine": "HOT-BELL-F",
+  "zil": "<TELL \"The bell is too hot to touch.\" CR>"
+ },
+ {
+  "key": "ga6aa",
+  "en": "The heat from the bell is too intense.\n",
+  "args": [],
+  "routine": "HOT-BELL-F",
+  "zil": "<TELL \"The heat from the bell is too intense.\" CR>"
+ },
+ {
+  "key": "ga6c9",
+  "en": "The water cools the bell and is evaporated.\n",
+  "args": [],
+  "routine": "HOT-BELL-F",
+  "zil": "<TELL \"The water cools the bell and is evaporated.\" CR>"
+ },
+ {
+  "key": "ga6f3",
+  "en": "The bell is too hot to reach.\n",
+  "args": [],
+  "routine": "HOT-BELL-F",
+  "zil": "<TELL \"The bell is too hot to reach.\" CR>"
+ },
+ {
+  "key": "ga709",
+  "en": "The windows are boarded and can't be opened.\n",
+  "args": [],
+  "routine": "BOARDED-WINDOW-FCN",
+  "zil": "<TELL \"The windows are boarded and can't be opened.\" CR>"
+ },
+ {
+  "key": "ga726",
+  "en": "You can't break the windows open.\n",
+  "args": [],
+  "routine": "BOARDED-WINDOW-FCN",
+  "zil": "<TELL \"You can't break the windows open.\" CR>"
+ },
+ {
+  "key": "ga73f",
+  "en": "The nails, deeply imbedded in the door, cannot be removed.\n",
+  "args": [],
+  "routine": "NAILS-PSEUDO",
+  "zil": "<TELL \"The nails, deeply imbedded in the door, cannot be removed.\" CR>"
+ },
+ {
+  "key": "ga765",
+  "en": "You can't fit through the crack.\n",
+  "args": [],
+  "routine": "CRACK-FCN",
+  "zil": "<TELL \"You can't fit through the crack.\" CR>"
+ },
+ {
+  "key": "ga77a",
+  "en": "You are in the kitchen of the white house. A table seems to have been used recently for the preparation of food. A passage leads to the west and a dark staircase can be seen leading upward. A dark chimney leads down and to the east is a small window which is ",
+  "args": [],
+  "routine": "KITCHEN-FCN",
+  "zil": "<TELL \"You are in the kitchen of the white house. A table seems to have been used recently for the preparation of food. A passage leads to the west and a dark staircase can be seen leading upward. A dark chimney leads down and to the east is a small window which is \">"
+ },
+ {
+  "key": "ga7fb",
+  "en": "open.\n",
+  "args": [],
+  "routine": "KITCHEN-FCN",
+  "zil": "<TELL \"open.\" CR>"
+ },
+ {
+  "key": "ga800",
+  "en": "slightly ajar.\n",
+  "args": [],
+  "routine": "KITCHEN-FCN",
+  "zil": "<TELL \"slightly ajar.\" CR>"
+ },
+ {
+  "key": "ga826",
+  "en": "There are no stairs leading down.\n",
+  "args": [],
+  "routine": "KITCHEN-FCN",
+  "zil": "<TELL \"There are no stairs leading down.\" CR>"
+ },
+ {
+  "key": "ga855",
+  "en": "Inside the Barrow\nAs you enter the barrow, the door closes inexorably behind you. Around you it is dark, but ahead is an enormous cavern, brightly lit. Through its center runs a wide stream. Spanning the stream is a small wooden footbridge, and beyond a path leads into a dark tunnel. Above the bridge, floating in the air, is a large sign. It reads:  All ye who stand before this bridge have completed a great and perilous adventure which has tested your wit and courage. You have mastered",
+  "args": [],
+  "routine": "STONE-BARROW-FCN",
+  "zil": "<TELL \"Inside the Barrow\\n As you enter the barrow, the door closes inexorably behind you. Around you it is dark, but ahead is an enormous cavern, brightly lit. Through its center runs a wide stream. Spanning the stream is a small wooden footbridge, and beyond a path leads into a dark tunnel. Above the bridge, floating in the air, is a large sign. It reads:  All ye who stand before this bridge have completed a great and perilous adventure which has tested your wit and courage. You have mastered\">"
+ },
+ {
+  "key": "ga979",
+  "en": " the first part of the ZORK trilogy. Those who pass over this bridge must be prepared to undertake an even greater adventure that will severely test your skill and bravery!\n\nThe ZORK trilogy continues with \"ZORK II: The Wizard of Frobozz\" and is completed in \"ZORK III: The Dungeon Master.\"\n",
+  "args": [],
+  "routine": "STONE-BARROW-FCN",
+  "zil": "<TELL \" the first part of the ZORK trilogy. Those who pass over this bridge must be prepared to undertake an even greater adventure that will severely test your skill and bravery!\\n \\n The ZORK trilogy continues with \\\"ZORK II: The Wizard of Frobozz\\\" and is completed in \\\"ZORK III: The Dungeon Master.\\\"\" CR>"
+ },
+ {
+  "key": "gaa40",
+  "en": " ZORK: The Great Underground Empire.\n\n",
+  "args": [],
+  "routine": "STONE-BARROW-FCN",
+  "zil": "<TELL \" ZORK: The Great Underground Empire.\\n\" CR>"
+ },
+ {
+  "key": "gaa6b",
+  "en": "The door is too heavy.\n",
+  "args": [],
+  "routine": "BARROW-DOOR-FCN",
+  "zil": "<TELL \"The door is too heavy.\" CR>"
+ },
+ {
+  "key": "gaa8b",
+  "en": "The trophy case is securely fastened to the wall.\n",
+  "args": [],
+  "routine": "TROPHY-CASE-FCN",
+  "zil": "<TELL \"The trophy case is securely fastened to the wall.\" CR>"
+ },
+ {
+  "key": "gaab6",
+  "en": "You are in the living room. There is a doorway to the east",
+  "args": [],
+  "routine": "LIVING-ROOM-FCN",
+  "zil": "<TELL \"You are in the living room. There is a doorway to the east\">"
+ },
+ {
+  "key": "gaad7",
+  "en": ". To the west is a cyclops-shaped opening in an old wooden door, above which is some strange gothic lettering, ",
+  "args": [],
+  "routine": "LIVING-ROOM-FCN",
+  "zil": "<TELL \". To the west is a cyclops-shaped opening in an old wooden door, above which is some strange gothic lettering, \">"
+ },
+ {
+  "key": "gab1f",
+  "en": ", a wooden door with strange gothic lettering to the west, which appears to be nailed shut, ",
+  "args": [],
+  "routine": "LIVING-ROOM-FCN",
+  "zil": "<TELL \", a wooden door with strange gothic lettering to the west, which appears to be nailed shut, \">"
+ },
+ {
+  "key": "gab50",
+  "en": "a trophy case, ",
+  "args": [],
+  "routine": "LIVING-ROOM-FCN",
+  "zil": "<TELL \"a trophy case, \">"
+ },
+ {
+  "key": "gab65",
+  "en": "and a rug lying beside an open trap door.\n",
+  "args": [],
+  "routine": "LIVING-ROOM-FCN",
+  "zil": "<TELL \"and a rug lying beside an open trap door.\">"
+ },
+ {
+  "key": "gab83",
+  "en": "and a closed trap door at your feet.\n",
+  "args": [],
+  "routine": "LIVING-ROOM-FCN",
+  "zil": "<TELL \"and a closed trap door at your feet.\">"
+ },
+ {
+  "key": "gab9a",
+  "en": "and an open trap door at your feet.\n",
+  "args": [],
+  "routine": "LIVING-ROOM-FCN",
+  "zil": "<TELL \"and an open trap door at your feet.\">"
+ },
+ {
+  "key": "gabad",
+  "en": "and a large oriental rug in the center of the room.\n",
+  "args": [],
+  "routine": "LIVING-ROOM-FCN",
+  "zil": "<TELL \"and a large oriental rug in the center of the room.\">"
+ },
+ {
+  "key": "gac6c",
+  "en": "You see a rickety staircase descending into darkness.\n",
+  "args": [],
+  "routine": "TRAP-DOOR-FCN",
+  "zil": "<TELL \"You see a rickety staircase descending into darkness.\" CR>"
+ },
+ {
+  "key": "gac89",
+  "en": "It's closed.\n",
+  "args": [],
+  "routine": "TRAP-DOOR-FCN",
+  "zil": "<TELL \"It's closed.\" CR>"
+ },
+ {
+  "key": "gac9c",
+  "en": "The door is locked from above.\n",
+  "args": [],
+  "routine": "TRAP-DOOR-FCN",
+  "zil": "<TELL \"The door is locked from above.\" CR>"
+ },
+ {
+  "key": "gacbb",
+  "en": "The door closes and locks.\n",
+  "args": [],
+  "routine": "TRAP-DOOR-FCN",
+  "zil": "<TELL \"The door closes and locks.\" CR>"
+ },
+ {
+  "key": "gace2",
+  "en": "You are in a dark and damp cellar with a narrow passageway leading north, and a crawlway to the south. On the west is the bottom of a steep metal ramp which is unclimbable.\n",
+  "args": [],
+  "routine": "CELLAR-FCN",
+  "zil": "<TELL \"You are in a dark and damp cellar with a narrow passageway leading north, and a crawlway to the south. On the west is the bottom of a steep metal ramp which is unclimbable.\" CR>"
+ },
+ {
+  "key": "gad4f",
+  "en": "The trap door crashes shut, and you hear someone barring it.\n\n",
+  "args": [],
+  "routine": "CELLAR-FCN",
+  "zil": "<TELL \"The trap door crashes shut, and you hear someone barring it.\" CR CR>"
+ },
+ {
+  "key": "gad7d",
+  "en": "The chimney leads ",
+  "args": [],
+  "routine": "CHIMNEY-F",
+  "zil": "<TELL \"The chimney leads \">"
+ },
+ {
+  "key": "gad8e",
+  "en": "down",
+  "args": [],
+  "routine": "CHIMNEY-F",
+  "zil": "<TELL \"down\">"
+ },
+ {
+  "key": "gad96",
+  "en": "up",
+  "args": [],
+  "routine": "CHIMNEY-F",
+  "zil": "<TELL \"up\">"
+ },
+ {
+  "key": "gad99",
+  "en": "ward, and looks climbable.\n",
+  "args": [],
+  "routine": "CHIMNEY-F",
+  "zil": "<TELL \"ward, and looks climbable.\" CR>"
+ },
+ {
+  "key": "gadb3",
+  "en": "Going up empty-handed is a bad idea.\n",
+  "args": [],
+  "routine": "UP-CHIMNEY-FUNCTION",
+  "zil": "<TELL \"Going up empty-handed is a bad idea.\" CR>"
+ },
+ {
+  "key": "gade5",
+  "en": "You can't get up there with what you're carrying.\n",
+  "args": [],
+  "routine": "UP-CHIMNEY-FUNCTION",
+  "zil": "<TELL \"You can't get up there with what you're carrying.\" CR>"
+ },
+ {
+  "key": "gae0c",
+  "en": "The trap door is closed.\n",
+  "args": [],
+  "routine": "TRAP-DOOR-EXIT",
+  "zil": "<TELL \"The trap door is closed.\" CR>"
+ },
+ {
+  "key": "gae1f",
+  "en": "You can't go that way.\n",
+  "args": [],
+  "routine": "TRAP-DOOR-EXIT",
+  "zil": "<TELL \"You can't go that way.\" CR>"
+ },
+ {
+  "key": "gae32",
+  "en": "The rug is too heavy to lift",
+  "args": [],
+  "routine": "RUG-FCN",
+  "zil": "<TELL \"The rug is too heavy to lift\">"
+ },
+ {
+  "key": "gae46",
+  "en": ".\n",
+  "args": [],
+  "routine": "RUG-FCN",
+  "zil": "<TELL \".\" CR>"
+ },
+ {
+  "key": "gae49",
+  "en": ", but in trying to take it you have noticed an irregularity beneath it.\n",
+  "args": [],
+  "routine": "RUG-FCN",
+  "zil": "<TELL \", but in trying to take it you have noticed an irregularity beneath it.\" CR>"
+ },
+ {
+  "key": "gae7e",
+  "en": "Having moved the carpet previously, you find it impossible to move it again.\n",
+  "args": [],
+  "routine": "RUG-FCN",
+  "zil": "<TELL \"Having moved the carpet previously, you find it impossible to move it again.\" CR>"
+ },
+ {
+  "key": "gaea9",
+  "en": "With a great effort, the rug is moved to one side of the room, revealing the dusty cover of a closed trap door.\n",
+  "args": [],
+  "routine": "RUG-FCN",
+  "zil": "<TELL \"With a great effort, the rug is moved to one side of the room, revealing the dusty cover of a closed trap door.\" CR>"
+ },
+ {
+  "key": "gaefd",
+  "en": "The rug is extremely heavy and cannot be carried.\n",
+  "args": [],
+  "routine": "RUG-FCN",
+  "zil": "<TELL \"The rug is extremely heavy and cannot be carried.\" CR>"
+ },
+ {
+  "key": "gaf26",
+  "en": "Underneath the rug is a closed trap door. As you drop the corner of the rug, the trap door is once again concealed from view.\n",
+  "args": [],
+  "routine": "RUG-FCN",
+  "zil": "<TELL \"Underneath the rug is a closed trap door. As you drop the corner of the rug, the trap door is once again concealed from view.\" CR>"
+ },
+ {
+  "key": "gaf7a",
+  "en": "As you sit, you notice an irregularity underneath it. Rather than be uncomfortable, you stand up again.\n",
+  "args": [],
+  "routine": "RUG-FCN",
+  "zil": "<TELL \"As you sit, you notice an irregularity underneath it. Rather than be uncomfortable, you stand up again.\" CR>"
+ },
+ {
+  "key": "gafbb",
+  "en": "I suppose you think it's a magic carpet?\n",
+  "args": [],
+  "routine": "RUG-FCN",
+  "zil": "<TELL \"I suppose you think it's a magic carpet?\" CR>"
+ },
+ {
+  "key": "gaffb",
+  "en": "The {0} swings it out of your reach.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "WEAPON-FUNCTION",
+  "zil": "<TELL \"The \" D .V \" swings it out of your reach.\" CR>"
+ },
+ {
+  "key": "gb011",
+  "en": "The {0} seems white-hot. You can't hold on to it.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "WEAPON-FUNCTION",
+  "zil": "<TELL \"The \" D .W \" seems white-hot. You can't hold on to it.\" CR>"
+ },
+ {
+  "key": "gb038",
+  "en": "The troll isn't much of a conversationalist.\n",
+  "args": [],
+  "routine": "TROLL-FCN",
+  "zil": "<TELL \"The troll isn't much of a conversationalist.\" CR>"
+ },
+ {
+  "key": "gb07e",
+  "en": "The troll, angered and humiliated, recovers his weapon. He appears to have an axe to grind with you.\n",
+  "args": [],
+  "routine": "TROLL-FCN",
+  "zil": "<TELL \"The troll, angered and humiliated, recovers his weapon. He appears to have an axe to grind with you.\" CR>"
+ },
+ {
+  "key": "gb0bf",
+  "en": "The troll, disarmed, cowers in terror, pleading for his life in the guttural tongue of the trolls.\n",
+  "args": [],
+  "routine": "TROLL-FCN",
+  "zil": "<TELL \"The troll, disarmed, cowers in terror, pleading for his life in the guttural tongue of the trolls.\" CR>"
+ },
+ {
+  "key": "gb137",
+  "en": "The troll stirs, quickly resuming a fighting stance.\n",
+  "args": [],
+  "routine": "TROLL-FCN",
+  "zil": "<TELL \"The troll stirs, quickly resuming a fighting stance.\" CR>"
+ },
+ {
+  "key": "gb1d3",
+  "en": "The troll scratches his head in confusion, then takes the axe.\n",
+  "args": [],
+  "routine": "TROLL-FCN",
+  "zil": "<TELL \"The troll scratches his head in confusion, then takes the axe.\" CR>"
+ },
+ {
+  "key": "gb206",
+  "en": "You would have to get the {0} first, and that seems unlikely.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "TROLL-FCN",
+  "zil": "<TELL \"You would have to get the \" D ,PRSO \" first, and that seems unlikely.\" CR>"
+ },
+ {
+  "key": "gb228",
+  "en": "The troll, who is remarkably coordinated, catches the {0}",
+  "args": [
+   "o"
+  ],
+  "routine": "TROLL-FCN",
+  "zil": "<TELL \"The troll, who is remarkably coordinated, catches the \" D ,PRSO>"
+ },
+ {
+  "key": "gb250",
+  "en": "The troll, who is not overly proud, graciously accepts the gift",
+  "args": [],
+  "routine": "TROLL-FCN",
+  "zil": "<TELL \"The troll, who is not overly proud, graciously accepts the gift\">"
+ },
+ {
+  "key": "gb28e",
+  "en": " and eats it hungrily. Poor troll, he dies from an internal hemorrhage and his carcass disappears in a sinister black fog.\n",
+  "args": [],
+  "routine": "TROLL-FCN",
+  "zil": "<TELL \" and eats it hungrily. Poor troll, he dies from an internal hemorrhage and his carcass disappears in a sinister black fog.\" CR>"
+ },
+ {
+  "key": "gb2f7",
+  "en": " and, being for the moment sated, throws it back. Fortunately, the troll has poor control, and the {0} falls to the floor. He does not look pleased.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "TROLL-FCN",
+  "zil": "<TELL \" and, being for the moment sated, throws it back. Fortunately, the troll has poor control, and the \" D ,PRSO \" falls to the floor. He does not look pleased.\" CR>"
+ },
+ {
+  "key": "gb350",
+  "en": " and not having the most discriminating tastes, gleefully eats it.\n",
+  "args": [],
+  "routine": "TROLL-FCN",
+  "zil": "<TELL \" and not having the most discriminating tastes, gleefully eats it.\" CR>"
+ },
+ {
+  "key": "gb389",
+  "en": "The troll spits in your face, grunting \"Better luck next time\" in a rather barbarous accent.\n",
+  "args": [],
+  "routine": "TROLL-FCN",
+  "zil": "<TELL \"The troll spits in your face, grunting \\\"Better luck next time\\\" in a rather barbarous accent.\" CR>"
+ },
+ {
+  "key": "gb3c8",
+  "en": "The troll laughs at your puny gesture.\n",
+  "args": [],
+  "routine": "TROLL-FCN",
+  "zil": "<TELL \"The troll laughs at your puny gesture.\" CR>"
+ },
+ {
+  "key": "gb3e1",
+  "en": "Every so often the troll says something, probably uncomplimentary, in his guttural tongue.\n",
+  "args": [],
+  "routine": "TROLL-FCN",
+  "zil": "<TELL \"Every so often the troll says something, probably uncomplimentary, in his guttural tongue.\" CR>"
+ },
+ {
+  "key": "gb41d",
+  "en": "Unfortunately, the troll can't hear you.\n",
+  "args": [],
+  "routine": "TROLL-FCN",
+  "zil": "<TELL \"Unfortunately, the troll can't hear you.\" CR>"
+ },
+ {
+  "key": "gb43a",
+  "en": "In disturbing the pile of leaves, a grating is revealed.\n",
+  "args": [],
+  "routine": "LEAVES-APPEAR",
+  "zil": "<TELL \"In disturbing the pile of leaves, a grating is revealed.\" CR>"
+ },
+ {
+  "key": "gb45f",
+  "en": "With the leaves moved, a grating is revealed.\n",
+  "args": [],
+  "routine": "LEAVES-APPEAR",
+  "zil": "<TELL \"With the leaves moved, a grating is revealed.\" CR>"
+ },
+ {
+  "key": "gb487",
+  "en": "There are 69,105 leaves here.\n",
+  "args": [],
+  "routine": "LEAF-PILE",
+  "zil": "<TELL \"There are 69,105 leaves here.\" CR>"
+ },
+ {
+  "key": "gb4af",
+  "en": "The leaves burn.\n",
+  "args": [],
+  "routine": "LEAF-PILE",
+  "zil": "<TELL \"The leaves burn.\" CR>"
+ },
+ {
+  "key": "gb4c6",
+  "en": "You rustle the leaves around, making quite a mess.\n",
+  "args": [],
+  "routine": "LEAF-PILE",
+  "zil": "<TELL \"You rustle the leaves around, making quite a mess.\" CR>"
+ },
+ {
+  "key": "gb4f8",
+  "en": "Done.\n",
+  "args": [],
+  "routine": "LEAF-PILE",
+  "zil": "<TELL \"Done.\" CR>"
+ },
+ {
+  "key": "gb514",
+  "en": "Underneath the pile of leaves is a grating. As you release the leaves, the grating is once again concealed from view.\n",
+  "args": [],
+  "routine": "LEAF-PILE",
+  "zil": "<TELL \"Underneath the pile of leaves is a grating. As you release the leaves, the grating is once again concealed from view.\" CR>"
+ },
+ {
+  "key": "gb56a",
+  "en": "You are in a clearing, with a forest surrounding you on all sides. A path leads south.",
+  "args": [],
+  "routine": "CLEARING-FCN",
+  "zil": "<TELL \"You are in a clearing, with a forest surrounding you on all sides. A path leads south.\">"
+ },
+ {
+  "key": "gb5a1",
+  "en": "\nThere is an open grating, descending into darkness.\n",
+  "args": [],
+  "routine": "CLEARING-FCN",
+  "zil": "<TELL \"There is an open grating, descending into darkness.\">"
+ },
+ {
+  "key": "gb5c4",
+  "en": "\nThere is a grating securely fastened into the ground.\n",
+  "args": [],
+  "routine": "CLEARING-FCN",
+  "zil": "<TELL \"There is a grating securely fastened into the ground.\">"
+ },
+ {
+  "key": "gb5f1",
+  "en": "You are in a small room near the maze. There are twisty passages in the immediate vicinity.\n",
+  "args": [],
+  "routine": "MAZE-11-FCN",
+  "zil": "<TELL \"You are in a small room near the maze. There are twisty passages in the immediate vicinity.\" CR>"
+ },
+ {
+  "key": "gb621",
+  "en": "Above you is an open grating with sunlight pouring in.\n",
+  "args": [],
+  "routine": "MAZE-11-FCN",
+  "zil": "<TELL \"Above you is an open grating with sunlight pouring in.\">"
+ },
+ {
+  "key": "gb643",
+  "en": "Above you is a grating.\n",
+  "args": [],
+  "routine": "MAZE-11-FCN",
+  "zil": "<TELL \"Above you is a grating.\">"
+ },
+ {
+  "key": "gb654",
+  "en": "Above you is a grating locked with a skull-and-crossbones lock.\n",
+  "args": [],
+  "routine": "MAZE-11-FCN",
+  "zil": "<TELL \"Above you is a grating locked with a skull-and-crossbones lock.\">"
+ },
+ {
+  "key": "gb699",
+  "en": "The grate is locked.\n",
+  "args": [],
+  "routine": "GRATE-FUNCTION",
+  "zil": "<TELL \"The grate is locked.\" CR>"
+ },
+ {
+  "key": "gb6aa",
+  "en": "You can't lock it from this side.\n",
+  "args": [],
+  "routine": "GRATE-FUNCTION",
+  "zil": "<TELL \"You can't lock it from this side.\" CR>"
+ },
+ {
+  "key": "gb6ce",
+  "en": "The grate is unlocked.\n",
+  "args": [],
+  "routine": "GRATE-FUNCTION",
+  "zil": "<TELL \"The grate is unlocked.\" CR>"
+ }
+]

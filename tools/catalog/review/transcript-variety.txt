@@ -1,0 +1,341 @@
+⟦g7609⟧ZORK I : Le Grand Empire Souterrain
+Fiction interactive Infocom - un récit fantastique
+Copyright (c) 1981, 1982, 1983, 1984, 1985, 1986 Infocom, Inc. Tous droits réservés.
+ZORK est une marque déposée d'Infocom, Inc.
+Version ⟦g76c9⟧119 / Numéro de série 880429
+
+À l'ouest de la maison
+⟦g9d05⟧Vous vous tenez au milieu d'un champ, à l'ouest d'une maison blanche dont la porte d'entrée est condamnée par des planches.
+⟦g95de⟧Il y a une petite boîte aux lettres ici.
+
+
+> regarde
+À l'ouest de la maison
+⟦g9d05⟧Vous vous tenez au milieu d'un champ, à l'ouest d'une maison blanche dont la porte d'entrée est condamnée par des planches.
+⟦g95de⟧Il y a une petite boîte aux lettres ici.
+
+
+> inventaire
+⟦g742c⟧Vous avez les mains vides.
+
+
+> prends la maison
+⟦s12942⟧Une bien vaillante tentative.
+
+
+> ouvre la boîte aux lettres
+⟦g88a0⟧En ouvrant la petite boîte aux lettres, vous découvrez ⟦g9695⟧un prospectus⟦g88b8⟧.
+
+
+> prends le prospectus
+⟦g9070⟧Pris.
+
+
+> lis-le
+⟦s12750⟧« BIENVENUE DANS ZORK !
+
+ZORK est un jeu d'aventure, de danger et de basse ruse. Vous y explorerez certains des territoires les plus extraordinaires que des mortels aient jamais vus. Aucun ordinateur ne devrait s'en passer ! »
+
+
+> mange le prospectus
+⟦g7f80⟧Je crains que le prospectus ne vous reste sur l'estomac.
+
+
+> pose le prospectus
+⟦g7e7f⟧Posé.
+
+
+> prends tout
+prospectus⟦g58cd⟧ : ⟦g9070⟧Pris.
+petite boîte aux lettres⟦g58cd⟧ : ⟦ge4c1⟧Elle est solidement ancrée au sol.
+
+
+> prends
+(prospectus)
+⟦g8fd6⟧Vous l'avez déjà !
+
+
+> ouvre
+(porte)
+⟦ge24b⟧Impossible d'ouvrir la porte.
+
+
+> mets le prospectus dans
+⟦g67e2⟧Que voulez-vous mettre ⟦g6999⟧le prospectus dans ?
+
+
+> attaque la boîte aux lettres
+⟦g67e2⟧Que voulez-vous attaquer ⟦g6999⟧la boîte aux lettres avec ?
+
+
+> saute
+⟦s12c24⟧Vous vous amusez bien ?
+
+
+> crie
+⟦g8caa⟧Dire quoi ?
+
+
+> dis bonjour
+⟦g65f6⟧Il ne se passe rien.
+
+
+> prie
+⟦g8a28⟧Si vous priez suffisamment, vos prières seront peut-être exaucées.
+
+
+> nage
+⟦g8f9c⟧Allez donc vous jeter à l'eau !
+
+
+> dors
+⟦g6605⟧Je ne connais pas le mot « dors⟦g662d⟧ ».
+
+
+> xyzzy
+⟦g7759⟧Une voix caverneuse dit : « Imbécile. »
+
+
+> schtroumpf la boîte
+⟦g66ba⟧Il n'y avait pas de verbe dans cette phrase !
+
+
+> ferme la boîte aux lettres
+⟦g7bbb⟧Fermé.
+
+
+> ouvre la porte
+⟦ge24b⟧Impossible d'ouvrir la porte.
+
+
+> sud
+Au sud de la maison
+⟦s14834⟧Vous êtes face au côté sud d'une maison blanche. Il n'y a pas de porte ici, et toutes les fenêtres sont condamnées par des planches.
+
+
+> est
+Derrière la maison
+⟦g9d5d⟧Vous êtes derrière la maison blanche. Un sentier s'enfonce dans la forêt vers l'est. Dans un coin de la maison, il y a une petite fenêtre qui est ⟦g9dab⟧entrouverte.
+
+
+> ouvre la fenêtre
+⟦s11638⟧Au prix d'un gros effort, vous ouvrez la fenêtre suffisamment pour pouvoir passer.
+
+
+> entre
+Cuisine
+⟦ga77a⟧Vous êtes dans la cuisine de la maison blanche. Une table semble avoir servi récemment à préparer à manger. Un passage mène vers l'ouest et l'on distingue un escalier sombre qui monte. Une cheminée sombre descend et, à l'est, se trouve une petite fenêtre qui est ⟦ga7fb⟧ouverte.
+⟦s14078⟧Une bouteille est posée sur la table.
+⟦g984b⟧La bouteille en verre contient :
+⟦g9605⟧ Une quantité d'eau
+⟦s1158a⟧Sur la table se trouve un sac brun allongé, qui sent le piment fort.
+
+
+> prends tout
+bouteille en verre⟦g58cd⟧ : ⟦g9070⟧Pris.
+sac brun⟦g58cd⟧ : ⟦g9070⟧Pris.
+
+
+> ouvre le sac
+⟦g88a0⟧En ouvrant le sac brun, vous découvrez ⟦g9695⟧une gousse d'ail⟦g968c⟧, ⟦g9692⟧et ⟦g9695⟧un casse-croûte⟦g88b8⟧.
+
+
+> prends l'ail
+⟦g9070⟧Pris.
+
+
+> mange le casse-croûte
+⟦g7ed2⟧Merci beaucoup. Ça fait du bien par où ça passe.
+
+
+> bois l'eau
+⟦g7f5c⟧Il faudra d'abord ouvrir la bouteille en verre.
+
+
+> prends la bouteille
+⟦g8fd6⟧Vous l'avez déjà !
+
+
+> ouvre la bouteille
+⟦g8875⟧C'est ouvert.
+
+
+> bois l'eau
+⟦g7fad⟧Merci beaucoup. J'avais plutôt soif (à force de parler, sans doute).
+
+
+> o
+Salon
+⟦gaab6⟧Vous êtes dans le salon. Il y a un passage à l'est⟦gab1f⟧, à l'ouest une porte en bois ornée d'étranges lettres gothiques, qui semble condamnée par des clous, ⟦gab50⟧une vitrine à trophées ⟦gabad⟧et un grand tapis oriental au centre de la pièce.
+⟦s15116⟧Au-dessus de la vitrine à trophées est accrochée une épée elfique d'une grande ancienneté.
+⟦s13248⟧Une lanterne en laiton à piles est posée sur la vitrine à trophées.
+
+
+> prends l'épée
+⟦g9070⟧Pris.
+
+
+> prends la lanterne
+⟦g9070⟧Pris.
+
+
+> allume la lanterne
+⟦g8437⟧La lanterne en laiton est maintenant allumée.
+
+
+> éteins la lanterne
+⟦g83f4⟧La lanterne en laiton est maintenant éteinte.
+
+
+> pousse le tapis
+⟦gaea9⟧Au prix d'un gros effort, le tapis est poussé sur le côté de la pièce, révélant le battant poussiéreux d'une trappe fermée.
+
+
+> regarde sous le tapis
+⟦g86a1⟧Il n'y a là que de la poussière.
+
+
+> déplace le tapis
+⟦gae7e⟧Ayant déjà déplacé le tapis, vous constatez que vous ne pouvez pas le déplacer à nouveau.
+
+
+> ouvre la trappe
+⟦s12950⟧La trappe s'ouvre à contrecœur, révélant un escalier branlant qui s'enfonce dans les ténèbres.
+
+
+> lis la porte
+⟦g6f08⟧Quand vous dites « porte⟦g6f46⟧ », voulez-vous dire ⟦g6f55⟧la porte en bois⟦g6f65⟧ ou ⟦g6f55⟧la trappe⟦g6f79⟧ ?
+
+
+> ouvre la porte en bois
+⟦ge24b⟧Impossible d'ouvrir la porte.
+
+
+> examine la vitrine
+⟦g8655⟧La vitrine à trophées est vide.
+
+
+> mets l'épée dans la vitrine
+⟦g8ace⟧La vitrine à trophées n'est pas ouverte.
+
+
+> prends l'épée
+⟦g8fd6⟧Vous l'avez déjà !
+
+
+> diagnostic
+⟦g10b46⟧Vous êtes en parfaite santé.⟦g10bdf⟧
+Vous pouvez ⟦g10c1a⟧être tué par une blessure grave.
+
+
+> score
+⟦g10c8b⟧Votre score est de 10 (sur un total de 350 points), en 44⟦g10cbd⟧ tours.⟦g10cc4⟧
+Cela vous vaut le rang de ⟦g10d5e⟧Débutant.
+
+
+> monte
+⟦g93d4⟧Vous ne pouvez pas aller par là.
+
+
+> e
+Cuisine
+
+
+> monte
+⟦g9ba9⟧Vous avez pénétré dans un endroit obscur.
+⟦g94ca⟧Il fait noir comme dans un four.⟦g94da⟧ Vous risquez fort d'être dévoré par un grue.
+
+
+> prends la corde
+⟦g6ed1⟧Il fait trop sombre pour y voir !
+
+
+> prends le couteau
+⟦g6ed1⟧Il fait trop sombre pour y voir !
+
+
+> regarde la corde
+⟦g6ed1⟧Il fait trop sombre pour y voir !
+
+
+> descends
+Cuisine
+
+
+> o
+Salon
+
+
+> allume la lanterne
+⟦g8437⟧La lanterne en laiton est maintenant allumée.
+
+
+> descends
+⟦gad4f⟧La trappe se referme avec fracas, et vous entendez quelqu'un la barricader.
+
+Cave
+⟦gace2⟧Vous êtes dans une cave sombre et humide. Un étroit passage part vers le nord et un boyau vers le sud. À l'ouest se dresse le bas d'une rampe métallique abrupte, impossible à escalader.
+⟦g108a4⟧Votre épée émet une faible lueur bleue.
+
+
+> n
+Salle du troll
+⟦s11b88⟧Vous êtes dans une petite salle d'où partent des passages vers l'est et vers le sud, ainsi qu'un trou menaçant qui s'ouvre vers l'ouest. Des taches de sang et de profondes entailles (peut-être faites par une hache) balafrent les murs.
+⟦s140b2⟧Un troll à la mine patibulaire, brandissant une hache ensanglantée, bloque toutes les issues de la salle.
+⟦g10881⟧Votre épée s'est mise à briller très vivement.
+
+
+> tue le troll
+(avec ⟦g6b11⟧l'épée)
+⟦m4cba⟧Vous chargez, mais le troll fait prestement un bond de côté.
+⟦m4e6c⟧Le troll fait tournoyer sa hache, mais vous manque.
+
+
+> attaque le troll avec la corde
+⟦g71bf⟧Vous n'avez pas ça !
+
+
+> tue le troll avec l'épée
+⟦m4cfc⟧Un échange furieux... et le troll est mis K.-O. !
+
+
+> tue le troll avec l'épée
+⟦g1048d⟧Puisqu'il est ⟦g10494⟧inconscient⟦g104a7⟧, le troll ne peut pas se défendre : il meurt.
+⟦g1062b⟧À peine le troll a-t-il rendu son dernier soupir qu'un nuage de sinistre brouillard noir l'enveloppe ; lorsque le brouillard se dissipe, la carcasse a disparu.
+⟦g108c6⟧Votre épée ne brille plus.
+
+
+> tue le troll avec l'épée
+⟦g51ae⟧Vous ne voyez pas de troll⟦g51bd⟧ ici !
+
+
+> tue le troll avec l'épée
+⟦g51ae⟧Vous ne voyez pas de troll⟦g51bd⟧ ici !
+
+
+> tue le troll avec l'épée
+⟦g51ae⟧Vous ne voyez pas de troll⟦g51bd⟧ ici !
+
+
+> tue le troll avec l'épée
+⟦g51ae⟧Vous ne voyez pas de troll⟦g51bd⟧ ici !
+
+
+> i
+⟦g9808⟧Vous avez sur vous :
+⟦g9605⟧ Une lanterne en laiton⟦g9610⟧ (allumée)
+⟦g9605⟧ Une épée
+⟦g9605⟧ Une gousse d'ail
+⟦g9605⟧ Un sac brun
+⟦g9605⟧ Une bouteille en verre
+⟦g9605⟧ Un prospectus
+
+
+> quitter
+⟦g10c8b⟧Votre score est de 35 (sur un total de 350 points), en 60⟦g10cbd⟧ tours.⟦g10cc4⟧
+Cela vous vaut le rang de ⟦g10d4c⟧Aventurier amateur.
+⟦g7502⟧Voulez-vous vraiment quitter la partie ? (O signifie oui) : 
+
+> non
+⟦g752f⟧D'accord.
+

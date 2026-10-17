@@ -1,0 +1,377 @@
+# Zork I — solution à 350 points, commandes en français (formes variées : impératif, infinitif)
+# "until /regex/ :: commande" répète la commande jusqu'à ce que la sortie corresponde.
+
+# --- La maison blanche
+nord
+n
+monter
+prendre l'œuf
+descendre
+s
+est
+ouvre la fenêtre
+ouest
+ouvre le sac
+prends la gousse d'ail
+o
+prends la lanterne
+prends l'épée
+ouvre la vitrine
+déplace le tapis
+ouvre la trappe
+allume la lanterne
+e
+monte
+prends la corde
+prends le couteau
+descends
+o
+
+# --- Le troll
+descendre
+nord
+until /carcasse a disparu|ne voyez pas de troll/ :: tue le troll avec l'épée
+
+# --- Le labyrinthe, les pièces, le cyclope
+o
+s
+e
+h
+prends la bourse
+prends la clé
+so
+e
+s
+se
+ulysse
+e
+e
+mets la bourse dans la vitrine
+
+# --- Le tableau
+pose tout sauf la lanterne
+ouvre la trappe
+descends
+s
+e
+prends le tableau
+n
+monte
+o
+mets le tableau dans la vitrine
+prends l'œuf
+prends le couteau
+prends la corde
+
+# --- La salle bruyante
+bas
+nord
+est
+est
+est
+écho
+prends le lingot
+o
+o
+o
+sud
+haut
+mets le lingot dans la vitrine
+
+# --- Le dôme, la torche, le temple, le cercueil
+b
+n
+e
+e
+se
+e
+attache la corde à la rampe
+descends
+prends la torche
+éteins la lanterne
+s
+pose le couteau
+pose l'œuf
+pose la lanterne
+e
+prends le cercueil
+o
+s
+prie
+e
+s
+e
+o
+o
+ouvre le cercueil
+prends le sceptre
+mets le cercueil dans la vitrine
+mets le sceptre dans la vitrine
+
+# --- Le barrage
+d
+n
+e
+e
+n
+ne
+e
+n
+prends les allumettes
+n
+prends la clé à molette
+prends le tournevis
+appuie sur le bouton jaune
+s
+s
+tourne le boulon avec la clé à molette
+pose la clé à molette
+o
+attends
+attends
+n
+prends la malle
+n
+prends la pompe
+n
+prends le trident
+
+# --- Retour par le toboggan
+monte
+n
+n
+o
+descends
+monte
+mets la malle dans la vitrine
+mets le trident dans la vitrine
+prends le sceptre
+
+# --- La rivière glaciale
+d
+n
+e
+e
+n
+ne
+e
+d
+gonfle le tas de plastique avec la pompe
+pose la pompe
+mets le sceptre dans le bateau
+monte dans le bateau
+lance le bateau
+until /bouée/ :: attends
+prends la bouée
+est
+débarque
+prends le sceptre
+prends la pelle
+ne
+creuse dans le sable avec la pelle
+creuse dans le sable avec la pelle
+creuse dans le sable avec la pelle
+creuse dans le sable avec la pelle
+prends le scarabée
+pose la pelle
+so
+s
+ouvre la bouée
+prends l'émeraude
+pose la bouée
+s
+agite le sceptre
+o
+o
+prends le pot d'or
+so
+monte
+monte
+no
+o
+o
+o
+mets l'émeraude dans la vitrine
+mets le scarabée dans la vitrine
+mets le pot dans la vitrine
+mets le sceptre dans la vitrine
+
+# --- Les Enfers
+pose le tournevis
+d
+n
+e
+e
+se
+e
+d
+s
+prends la cloche
+prends la lanterne
+prends l'œuf
+s
+prends le livre
+prends les bougies
+d
+d
+sonne la cloche
+prends les bougies
+allume une allumette
+allume les bougies avec l'allumette
+lis le livre
+s
+prends le crâne
+n
+monte
+n
+n
+n
+o
+o
+s
+monte
+mets le crâne dans la vitrine
+
+# --- La mine
+pose le livre
+pose les bougies
+pose les allumettes
+pose l'œuf
+prends l'ail
+prends le tournevis
+d
+n
+e
+e
+s
+s
+frotte le miroir
+n
+o
+n
+o
+n
+prends la figurine
+e
+mets la torche dans le panier
+mets le tournevis dans le panier
+allume la lanterne
+n
+d
+prends le bracelet
+e
+ne
+se
+so
+d
+d
+s
+prends le charbon
+n
+monte
+monte
+n
+e
+s
+n
+monte
+s
+mets le charbon dans le panier
+descends le panier
+n
+d
+e
+ne
+se
+so
+d
+d
+o
+pose tout
+o
+prends le charbon
+prends le tournevis
+prends la torche
+s
+ouvre le couvercle
+mets le charbon dans la machine
+ferme le couvercle
+tourne l'interrupteur avec le tournevis
+ouvre le couvercle
+prends le diamant
+n
+mets le diamant dans le panier
+mets la torche dans le panier
+mets le tournevis dans le panier
+e
+prends tout
+e
+monte
+monte
+n
+e
+s
+n
+monte
+s
+hisse le panier
+prends le diamant
+prends la torche
+éteins la lanterne
+o
+s
+e
+s
+descends
+monte
+mets la figurine dans la vitrine
+mets le bracelet dans la vitrine
+mets le diamant dans la vitrine
+
+# --- Le voleur
+pose la poutre
+pose l'ail
+prends l'œuf
+prends l'épée
+o
+o
+monte
+donne l'œuf au voleur
+until /voleur expire|butin|calice sans risque/ :: tue le voleur avec l'épée
+pose l'épée
+prends le calice
+prends le bracelet
+prends la figurine
+prends l'œuf
+descends
+e
+e
+mets le calice dans la vitrine
+mets le bracelet dans la vitrine
+mets la figurine dans la vitrine
+
+# --- Le canari chante dans la forêt
+prends le canari
+e
+e
+n
+n
+remonte le canari
+prends la babiole
+s
+e
+o
+o
+mets le canari dans la vitrine
+mets la babiole dans la vitrine
+mets l'œuf dans la vitrine
+mets la torche dans la vitrine
+
+# --- Le dernier secret
+prends la carte
+e
+e
+s
+o
+so
+entre dans le tumulus

@@ -1,0 +1,1557 @@
+[
+ {
+  "key": "g81b6",
+  "en": "Within six feet of your head, assuming you haven't left that somewhere.\n",
+  "args": [],
+  "routine": "V-FIND",
+  "zil": "<TELL \"Within six feet of your head, assuming you haven't left that somewhere.\" CR>"
+ },
+ {
+  "key": "g81e5",
+  "en": "You're around here somewhere...\n",
+  "args": [],
+  "routine": "V-FIND",
+  "zil": "<TELL \"You're around here somewhere...\" CR>"
+ },
+ {
+  "key": "g81fa",
+  "en": "You find it.\n",
+  "args": [],
+  "routine": "V-FIND",
+  "zil": "<TELL \"You find it.\" CR>"
+ },
+ {
+  "key": "g8207",
+  "en": "You have it.\n",
+  "args": [],
+  "routine": "V-FIND",
+  "zil": "<TELL \"You have it.\" CR>"
+ },
+ {
+  "key": "g8220",
+  "en": "It's right here.\n",
+  "args": [],
+  "routine": "V-FIND",
+  "zil": "<TELL \"It's right here.\" CR>"
+ },
+ {
+  "key": "g822d",
+  "en": "The {0} has it.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-FIND",
+  "zil": "<TELL \"The \" D .L \" has it.\" CR>"
+ },
+ {
+  "key": "g823d",
+  "en": "It's on the {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-FIND",
+  "zil": "<TELL \"It's on the \" D .L \".\" CR>"
+ },
+ {
+  "key": "g824b",
+  "en": "It's in the {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-FIND",
+  "zil": "<TELL \"It's in the \" D .L \".\" CR>"
+ },
+ {
+  "key": "g8255",
+  "en": "Beats me.\n",
+  "args": [],
+  "routine": "V-FIND",
+  "zil": "<TELL \"Beats me.\" CR>"
+ },
+ {
+  "key": "g825f",
+  "en": "You're nuts!\n",
+  "args": [],
+  "routine": "V-FOLLOW",
+  "zil": "<TELL \"You're nuts!\" CR>"
+ },
+ {
+  "key": "g8267",
+  "en": "The FROBOZZ Corporation created, owns, and operates this dungeon.\n",
+  "args": [],
+  "routine": "V-FROBOZZ",
+  "zil": "<TELL \"The FROBOZZ Corporation created, owns, and operates this dungeon.\" CR>"
+ },
+ {
+  "key": "g829e",
+  "en": "That's easy for you to say since you don't even have the {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "PRE-GIVE",
+  "zil": "<TELL \"That's easy for you to say since you don't even have the \" D ,PRSO \".\" CR>"
+ },
+ {
+  "key": "g82c7",
+  "en": "You can't give a {0} to a {1}!\n",
+  "args": [
+   "o",
+   "o"
+  ],
+  "routine": "V-GIVE",
+  "zil": "<TELL \"You can't give a \" D ,PRSO \" to a \" D ,PRSI \"!\" CR>"
+ },
+ {
+  "key": "g82dc",
+  "en": "The {0} refuses it politely.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-GIVE",
+  "zil": "<TELL \"The \" D ,PRSI \" refuses it politely.\" CR>"
+ },
+ {
+  "key": "g82f1",
+  "en": "Bizarre!\n",
+  "args": [],
+  "routine": "V-HATCH",
+  "zil": "<TELL \"Bizarre!\" CR>"
+ },
+ {
+  "key": "g8303",
+  "en": "The {0} bows his head to you in greeting.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-HELLO",
+  "zil": "<TELL \"The \" D ,PRSO \" bows his head to you in greeting.\" CR>"
+ },
+ {
+  "key": "g831d",
+  "en": "It's a well known fact that only schizophrenics say \"Hello\" to a {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-HELLO",
+  "zil": "<TELL \"It's a well known fact that only schizophrenics say \\\"Hello\\\" to a \" D ,PRSO \".\" CR>"
+ },
+ {
+  "key": "g8359",
+  "en": "The incantation echoes back faintly, but nothing else happens.\n",
+  "args": [],
+  "routine": "V-INCANT",
+  "zil": "<TELL \"The incantation echoes back faintly, but nothing else happens.\" CR>"
+ },
+ {
+  "key": "g8387",
+  "en": "How can you inflate that?\n",
+  "args": [],
+  "routine": "V-INFLATE",
+  "zil": "<TELL \"How can you inflate that?\" CR>"
+ },
+ {
+  "key": "g83a1",
+  "en": "I'd sooner kiss a pig.\n",
+  "args": [],
+  "routine": "V-KISS",
+  "zil": "<TELL \"I'd sooner kiss a pig.\" CR>"
+ },
+ {
+  "key": "g83b9",
+  "en": "Nobody's home.\n",
+  "args": [],
+  "routine": "V-KNOCK",
+  "zil": "<TELL \"Nobody's home.\" CR>"
+ },
+ {
+  "key": "g83c6",
+  "en": "Why knock on a {0}?\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-KNOCK",
+  "zil": "<TELL \"Why knock on a \" D ,PRSO \"?\" CR>"
+ },
+ {
+  "key": "g83df",
+  "en": "It is already off.\n",
+  "args": [],
+  "routine": "V-LAMP-OFF",
+  "zil": "<TELL \"It is already off.\" CR>"
+ },
+ {
+  "key": "g83f4",
+  "en": "The {0} is now off.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-LAMP-OFF",
+  "zil": "<TELL \"The \" D ,PRSO \" is now off.\" CR>"
+ },
+ {
+  "key": "g8406",
+  "en": "It is now pitch black.\n",
+  "args": [],
+  "routine": "V-LAMP-OFF",
+  "zil": "<TELL \"It is now pitch black.\" CR>"
+ },
+ {
+  "key": "g8415",
+  "en": "You can't turn that off.\n",
+  "args": [],
+  "routine": "V-LAMP-OFF",
+  "zil": "<TELL \"You can't turn that off.\" CR>"
+ },
+ {
+  "key": "g842b",
+  "en": "It is already on.\n",
+  "args": [],
+  "routine": "V-LAMP-ON",
+  "zil": "<TELL \"It is already on.\" CR>"
+ },
+ {
+  "key": "g8437",
+  "en": "The {0} is now on.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-LAMP-ON",
+  "zil": "<TELL \"The \" D ,PRSO \" is now on.\" CR>"
+ },
+ {
+  "key": "g845a",
+  "en": "If you wish to burn the {0}, you should say so.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-LAMP-ON",
+  "zil": "<TELL \"If you wish to burn the \" D ,PRSO \", you should say so.\" CR>"
+ },
+ {
+  "key": "g847a",
+  "en": "You can't turn that on.\n",
+  "args": [],
+  "routine": "V-LAMP-ON",
+  "zil": "<TELL \"You can't turn that on.\" CR>"
+ },
+ {
+  "key": "g848b",
+  "en": "You can't launch that by saying \"launch\"!\n",
+  "args": [],
+  "routine": "V-LAUNCH",
+  "zil": "<TELL \"You can't launch that by saying \\\"launch\\\"!\" CR>"
+ },
+ {
+  "key": "g84a4",
+  "en": "That's pretty weird.\n",
+  "args": [],
+  "routine": "V-LAUNCH",
+  "zil": "<TELL \"That's pretty weird.\" CR>"
+ },
+ {
+  "key": "g84b7",
+  "en": "Getting tired?\n",
+  "args": [],
+  "routine": "V-LEAN-ON",
+  "zil": "<TELL \"Getting tired?\" CR>"
+ },
+ {
+  "key": "g84d4",
+  "en": "The {0} is too big to jump over.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-LEAP",
+  "zil": "<TELL \"The \" D ,PRSO \" is too big to jump over.\" CR>"
+ },
+ {
+  "key": "g84f0",
+  "en": "That would be a good trick.\n",
+  "args": [],
+  "routine": "V-LEAP",
+  "zil": "<TELL \"That would be a good trick.\" CR>"
+ },
+ {
+  "key": "g851e",
+  "en": "This was not a very safe place to try jumping.\n",
+  "args": [],
+  "routine": "V-LEAP",
+  "zil": "<TELL \"This was not a very safe place to try jumping.\" CR>"
+ },
+ {
+  "key": "g854e",
+  "en": "In a feat of unaccustomed daring, you manage to land on your feet without killing yourself.\n\n",
+  "args": [],
+  "routine": "V-LEAP",
+  "zil": "<TELL \"In a feat of unaccustomed daring, you manage to land on your feet without killing yourself.\" CR CR>"
+ },
+ {
+  "key": "g85a3",
+  "en": "The {0} makes no sound.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-LISTEN",
+  "zil": "<TELL \"The \" D ,PRSO \" makes no sound.\" CR>"
+ },
+ {
+  "key": "g85b7",
+  "en": "It doesn't seem to work.\n",
+  "args": [],
+  "routine": "V-LOCK",
+  "zil": "<TELL \"It doesn't seem to work.\" CR>"
+ },
+ {
+  "key": "g85d7",
+  "en": "There is nothing behind the {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-LOOK-BEHIND",
+  "zil": "<TELL \"There is nothing behind the \" D ,PRSO \".\" CR>"
+ },
+ {
+  "key": "g85f1",
+  "en": "The {0} is open, but I can't tell what's beyond it.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-LOOK-INSIDE",
+  "zil": "<TELL \"The \" D ,PRSO \" is open, but I can't tell what's beyond it.\">"
+ },
+ {
+  "key": "g8611",
+  "en": "The {0} is closed.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-LOOK-INSIDE",
+  "zil": "<TELL \"The \" D ,PRSO \" is closed.\">"
+ },
+ {
+  "key": "g8626",
+  "en": "There is nothing special to be seen.\n",
+  "args": [],
+  "routine": "V-LOOK-INSIDE",
+  "zil": "<TELL \"There is nothing special to be seen.\" CR>"
+ },
+ {
+  "key": "g8655",
+  "en": "The {0} is empty.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-LOOK-INSIDE",
+  "zil": "<TELL \"The \" D ,PRSO \" is empty.\" CR>"
+ },
+ {
+  "key": "g8663",
+  "en": "The {0} is closed.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-LOOK-INSIDE",
+  "zil": "<TELL \"The \" D ,PRSO \" is closed.\">"
+ },
+ {
+  "key": "g866f",
+  "en": "You can't look inside a {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-LOOK-INSIDE",
+  "zil": "<TELL \"You can't look inside a \" D ,PRSO \".\" CR>"
+ },
+ {
+  "key": "g868f",
+  "en": "Look on a {0}???\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-LOOK-ON",
+  "zil": "<TELL \"Look on a \" D ,PRSO \"???\" CR>"
+ },
+ {
+  "key": "g86a1",
+  "en": "There is nothing but dust there.\n",
+  "args": [],
+  "routine": "V-LOOK-UNDER",
+  "zil": "<TELL \"There is nothing but dust there.\" CR>"
+ },
+ {
+  "key": "g86b9",
+  "en": "You can't do that.\n",
+  "args": [],
+  "routine": "V-MAKE",
+  "zil": "<TELL \"You can't do that.\" CR>"
+ },
+ {
+  "key": "g86c3",
+  "en": "It's not clear that a {0} can be melted.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-MELT",
+  "zil": "<TELL \"It's not clear that a \" D ,PRSO \" can be melted.\" CR>"
+ },
+ {
+  "key": "g86e6",
+  "en": "You aren't an accomplished enough juggler.\n",
+  "args": [],
+  "routine": "PRE-MOVE",
+  "zil": "<TELL \"You aren't an accomplished enough juggler.\" CR>"
+ },
+ {
+  "key": "g8709",
+  "en": "Moving the {0} reveals nothing.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-MOVE",
+  "zil": "<TELL \"Moving the \" D ,PRSO \" reveals nothing.\" CR>"
+ },
+ {
+  "key": "g8721",
+  "en": "You can't move the {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-MOVE",
+  "zil": "<TELL \"You can't move the \" D ,PRSO \".\" CR>"
+ },
+ {
+  "key": "g8731",
+  "en": "You'll have to speak up if you expect me to hear you!\n",
+  "args": [],
+  "routine": "V-MUMBLE",
+  "zil": "<TELL \"You'll have to speak up if you expect me to hear you!\" CR>"
+ },
+ {
+  "key": "g8764",
+  "en": "Trying to destroy the {0} with ",
+  "args": [
+   "o"
+  ],
+  "routine": "PRE-MUNG",
+  "zil": "<TELL \"Trying to destroy the \" D ,PRSO \" with \">"
+ },
+ {
+  "key": "g877b",
+  "en": "your bare hands",
+  "args": [],
+  "routine": "PRE-MUNG",
+  "zil": "<TELL \"your bare hands\">"
+ },
+ {
+  "key": "g8787",
+  "en": "a {0}",
+  "args": [
+   "o"
+  ],
+  "routine": "PRE-MUNG",
+  "zil": "<TELL \"a \" D ,PRSI>"
+ },
+ {
+  "key": "g878c",
+  "en": " is futile.\n",
+  "args": [],
+  "routine": "PRE-MUNG",
+  "zil": "<TELL \" is futile.\" CR>"
+ },
+ {
+  "key": "g87a3",
+  "en": "Nice try.\n",
+  "args": [],
+  "routine": "V-MUNG",
+  "zil": "<TELL \"Nice try.\" CR>"
+ },
+ {
+  "key": "g87ca",
+  "en": "The cyclops, hearing the name of his father's deadly nemesis, flees the room by knocking down the wall on the east of the room.\n",
+  "args": [],
+  "routine": "V-ODYSSEUS",
+  "zil": "<TELL \"The cyclops, hearing the name of his father's deadly nemesis, flees the room by knocking down the wall on the east of the room.\" CR>"
+ },
+ {
+  "key": "g881d",
+  "en": "Wasn't he a sailor?\n",
+  "args": [],
+  "routine": "V-ODYSSEUS",
+  "zil": "<TELL \"Wasn't he a sailor?\" CR>"
+ },
+ {
+  "key": "g882f",
+  "en": "You probably put spinach in your gas tank, too.\n",
+  "args": [],
+  "routine": "V-OIL",
+  "zil": "<TELL \"You probably put spinach in your gas tank, too.\" CR>"
+ },
+ {
+  "key": "g885e",
+  "en": "It is already open.\n",
+  "args": [],
+  "routine": "V-OPEN",
+  "zil": "<TELL \"It is already open.\" CR>"
+ },
+ {
+  "key": "g8875",
+  "en": "Opened.\n",
+  "args": [],
+  "routine": "V-OPEN",
+  "zil": "<TELL \"Opened.\" CR>"
+ },
+ {
+  "key": "g888f",
+  "en": "The {0} opens.\n{1}\n",
+  "args": [
+   "o",
+   "s"
+  ],
+  "routine": "V-OPEN",
+  "zil": "<TELL \"The \" D ,PRSO \" opens.\" CR>"
+ },
+ {
+  "key": "g88a0",
+  "en": "Opening the {0} reveals ",
+  "args": [
+   "o"
+  ],
+  "routine": "V-OPEN",
+  "zil": "<TELL \"Opening the \" D ,PRSO \" reveals \">"
+ },
+ {
+  "key": "g88b8",
+  "en": ".\n",
+  "args": [],
+  "routine": "V-OPEN",
+  "zil": "<TELL \".\" CR>"
+ },
+ {
+  "key": "g88c3",
+  "en": "It is already open.\n",
+  "args": [],
+  "routine": "V-OPEN",
+  "zil": "<TELL \"It is already open.\" CR>"
+ },
+ {
+  "key": "g88cc",
+  "en": "The {0} opens.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-OPEN",
+  "zil": "<TELL \"The \" D ,PRSO \" opens.\" CR>"
+ },
+ {
+  "key": "g88dd",
+  "en": "You must tell me how to do that to a {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-OPEN",
+  "zil": "<TELL \"You must tell me how to do that to a \" D ,PRSO \".\" CR>"
+ },
+ {
+  "key": "g890c",
+  "en": "Ahoy -- {0} overboard!\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-OVERBOARD",
+  "zil": "<TELL \"Ahoy -- \" D ,PRSO \" overboard!\" CR>"
+ },
+ {
+  "key": "g8920",
+  "en": "You're not in anything!\n",
+  "args": [],
+  "routine": "V-OVERBOARD",
+  "zil": "<TELL \"You're not in anything!\" CR>"
+ },
+ {
+  "key": "g893c",
+  "en": "Huh?\n",
+  "args": [],
+  "routine": "V-OVERBOARD",
+  "zil": "<TELL \"Huh?\" CR>"
+ },
+ {
+  "key": "g8943",
+  "en": "You can't pick that.\n",
+  "args": [],
+  "routine": "V-PICK",
+  "zil": "<TELL \"You can't pick that.\" CR>"
+ },
+ {
+  "key": "g8954",
+  "en": "You become so engrossed in the role of the {0} that you kill yourself, just as he might have done!\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-PLAY",
+  "zil": "<TELL \"You become so engrossed in the role of the \" D ,PRSO \" that you kill yourself, just as he might have done!\" CR>"
+ },
+ {
+  "key": "g8997",
+  "en": "That's silly!\n",
+  "args": [],
+  "routine": "V-PLAY",
+  "zil": "<TELL \"That's silly!\" CR>"
+ },
+ {
+  "key": "g89a5",
+  "en": "This has no effect.\n",
+  "args": [],
+  "routine": "V-PLUG",
+  "zil": "<TELL \"This has no effect.\" CR>"
+ },
+ {
+  "key": "g89c4",
+  "en": "The {0} is extinguished.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-POUR-ON",
+  "zil": "<TELL \"The \" D ,PRSI \" is extinguished.\" CR>"
+ },
+ {
+  "key": "g89e3",
+  "en": "The water spills over the {0}, to the floor, and evaporates.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-POUR-ON",
+  "zil": "<TELL \"The water spills over the \" D ,PRSI \", to the floor, and evaporates.\" CR>"
+ },
+ {
+  "key": "g8a10",
+  "en": "You can't pour that.\n",
+  "args": [],
+  "routine": "V-POUR-ON",
+  "zil": "<TELL \"You can't pour that.\" CR>"
+ },
+ {
+  "key": "g8a28",
+  "en": "If you pray enough, your prayers may be answered.\n",
+  "args": [],
+  "routine": "V-PRAY",
+  "zil": "<TELL \"If you pray enough, your prayers may be answered.\" CR>"
+ },
+ {
+  "key": "g8a50",
+  "en": "Pump it up with a {0}?\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-PUMP",
+  "zil": "<TELL \"Pump it up with a \" D ,PRSI \"?\" CR>"
+ },
+ {
+  "key": "g8a6d",
+  "en": "It's really not clear how.\n",
+  "args": [],
+  "routine": "V-PUMP",
+  "zil": "<TELL \"It's really not clear how.\" CR>"
+ },
+ {
+  "key": "g8a89",
+  "en": "You can't push things to that.\n",
+  "args": [],
+  "routine": "V-PUSH-TO",
+  "zil": "<TELL \"You can't push things to that.\" CR>"
+ },
+ {
+  "key": "g8ac1",
+  "en": "You can't do that.\n",
+  "args": [],
+  "routine": "V-PUT",
+  "zil": "<TELL \"You can't do that.\" CR>"
+ },
+ {
+  "key": "g8ace",
+  "en": "The {0} isn't open.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-PUT",
+  "zil": "<TELL \"The \" D ,PRSI \" isn't open.\" CR>"
+ },
+ {
+  "key": "g8aea",
+  "en": "How can you do that?\n",
+  "args": [],
+  "routine": "V-PUT",
+  "zil": "<TELL \"How can you do that?\" CR>"
+ },
+ {
+  "key": "g8afb",
+  "en": "The {0} is already in the {1}.\n",
+  "args": [
+   "o",
+   "o"
+  ],
+  "routine": "V-PUT",
+  "zil": "<TELL \"The \" D ,PRSO \" is already in the \" D ,PRSI \".\" CR>"
+ },
+ {
+  "key": "g8b2c",
+  "en": "There's no room.\n",
+  "args": [],
+  "routine": "V-PUT",
+  "zil": "<TELL \"There's no room.\" CR>"
+ },
+ {
+  "key": "g8b44",
+  "en": "You don't have the {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-PUT",
+  "zil": "<TELL \"You don't have the \" D ,PRSO \".\" CR>"
+ },
+ {
+  "key": "g8b6d",
+  "en": "Done.\n",
+  "args": [],
+  "routine": "V-PUT",
+  "zil": "<TELL \"Done.\" CR>"
+ },
+ {
+  "key": "g8b75",
+  "en": "That hiding place is too obvious.\n",
+  "args": [],
+  "routine": "V-PUT-BEHIND",
+  "zil": "<TELL \"That hiding place is too obvious.\" CR>"
+ },
+ {
+  "key": "g8ba3",
+  "en": "There's no good surface on the {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-PUT-ON",
+  "zil": "<TELL \"There's no good surface on the \" D ,PRSI \".\" CR>"
+ },
+ {
+  "key": "g8bbf",
+  "en": "You can't do that.\n",
+  "args": [],
+  "routine": "V-PUT-UNDER",
+  "zil": "<TELL \"You can't do that.\" CR>"
+ },
+ {
+  "key": "g8bd1",
+  "en": "What a (ahem!) strange idea.\n",
+  "args": [],
+  "routine": "V-RAPE",
+  "zil": "<TELL \"What a (ahem!) strange idea.\" CR>"
+ },
+ {
+  "key": "g8bec",
+  "en": "It is impossible to read in the dark.\n",
+  "args": [],
+  "routine": "PRE-READ",
+  "zil": "<TELL \"It is impossible to read in the dark.\" CR>"
+ },
+ {
+  "key": "g8c04",
+  "en": "How does one look through a {0}?\n",
+  "args": [
+   "o"
+  ],
+  "routine": "PRE-READ",
+  "zil": "<TELL \"How does one look through a \" D ,PRSI \"?\" CR>"
+ },
+ {
+  "key": "g8c1f",
+  "en": "How does one read a {0}?\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-READ",
+  "zil": "<TELL \"How does one read a \" D ,PRSO \"?\" CR>"
+ },
+ {
+  "key": "g8c47",
+  "en": "It could very well be too late!\n",
+  "args": [],
+  "routine": "V-REPENT",
+  "zil": "<TELL \"It could very well be too late!\" CR>"
+ },
+ {
+  "key": "g8c5d",
+  "en": "It is hardly likely that the {0} is interested.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-REPLY",
+  "zil": "<TELL \"It is hardly likely that the \" D ,PRSO \" is interested.\" CR>"
+ },
+ {
+  "key": "g8c85",
+  "en": "How, exactly, can you ring that?\n",
+  "args": [],
+  "routine": "V-RING",
+  "zil": "<TELL \"How, exactly, can you ring that?\" CR>"
+ },
+ {
+  "key": "g8caa",
+  "en": "Say what?\n",
+  "args": [],
+  "routine": "V-SAY",
+  "zil": "<TELL \"Say what?\" CR>"
+ },
+ {
+  "key": "g8cc0",
+  "en": "You must address the {0} directly.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-SAY",
+  "zil": "<TELL \"You must address the \" D .V \" directly.\" CR>"
+ },
+ {
+  "key": "g8cea",
+  "en": "Talking to yourself is a sign of impending mental collapse.\n",
+  "args": [],
+  "routine": "V-SAY",
+  "zil": "<TELL \"Talking to yourself is a sign of impending mental collapse.\" CR>"
+ },
+ {
+  "key": "g8d15",
+  "en": "You find nothing unusual.\n",
+  "args": [],
+  "routine": "V-SEARCH",
+  "zil": "<TELL \"You find nothing unusual.\" CR>"
+ },
+ {
+  "key": "g8d27",
+  "en": "Why would you send for the {0}?\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-SEND",
+  "zil": "<TELL \"Why would you send for the \" D ,PRSO \"?\" CR>"
+ },
+ {
+  "key": "g8d39",
+  "en": "That doesn't make sends.\n",
+  "args": [],
+  "routine": "V-SEND",
+  "zil": "<TELL \"That doesn't make sends.\" CR>"
+ },
+ {
+  "key": "g8d53",
+  "en": "Foo!\n",
+  "args": [],
+  "routine": "V-SGIVE",
+  "zil": "<TELL \"Foo!\" CR>"
+ },
+ {
+  "key": "g8d5d",
+  "en": "This seems to have no effect.\n",
+  "args": [],
+  "routine": "V-SHAKE",
+  "zil": "<TELL \"This seems to have no effect.\" CR>"
+ },
+ {
+  "key": "g8d70",
+  "en": "You can't take it; thus, you can't shake it!\n",
+  "args": [],
+  "routine": "V-SHAKE",
+  "zil": "<TELL \"You can't take it; thus, you can't shake it!\" CR>"
+ },
+ {
+  "key": "g8d9c",
+  "en": "The contents of the {0} spill ",
+  "args": [
+   "o"
+  ],
+  "routine": "V-SHAKE",
+  "zil": "<TELL \"The contents of the \" D, PRSO \" spill \">"
+ },
+ {
+  "key": "g8db4",
+  "en": "out and disappears",
+  "args": [],
+  "routine": "V-SHAKE",
+  "zil": "<TELL \"out and disappears\">"
+ },
+ {
+  "key": "g8dc2",
+  "en": "to the ground",
+  "args": [],
+  "routine": "V-SHAKE",
+  "zil": "<TELL \"to the ground\">"
+ },
+ {
+  "key": "g8dcb",
+  "en": ".\n",
+  "args": [],
+  "routine": "V-SHAKE",
+  "zil": "<TELL \".\" CR>"
+ },
+ {
+  "key": "g8dce",
+  "en": "Shaken.\n",
+  "args": [],
+  "routine": "V-SHAKE",
+  "zil": "<TELL \"Shaken.\" CR>"
+ },
+ {
+  "key": "g8dd9",
+  "en": "It sounds like there is something inside the {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-SHAKE",
+  "zil": "<TELL \"It sounds like there is something inside the \" D ,PRSO \".\" CR>"
+ },
+ {
+  "key": "g8df9",
+  "en": "The {0} sounds empty.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-SHAKE",
+  "zil": "<TELL \"The \" D, PRSO \" sounds empty.\" CR>"
+ },
+ {
+  "key": "g8e09",
+  "en": "Shaken.\n",
+  "args": [],
+  "routine": "V-SHAKE",
+  "zil": "<TELL \"Shaken.\" CR>"
+ },
+ {
+  "key": "g8e45",
+  "en": "It smells like a {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-SMELL",
+  "zil": "<TELL \"It smells like a \" D ,PRSO \".\" CR>"
+ },
+ {
+  "key": "g8e59",
+  "en": "You can't spin that!\n",
+  "args": [],
+  "routine": "V-SPIN",
+  "zil": "<TELL \"You can't spin that!\" CR>"
+ },
+ {
+  "key": "g8e6f",
+  "en": "The {0} does not understand this.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-SQUEEZE",
+  "zil": "<TELL \"The \" D ,PRSO \" does not understand this.\">"
+ },
+ {
+  "key": "g8e85",
+  "en": "How singularly useless.\n",
+  "args": [],
+  "routine": "V-SQUEEZE",
+  "zil": "<TELL \"How singularly useless.\">"
+ },
+ {
+  "key": "g8eb7",
+  "en": "No doubt you propose to stab the {0} with your pinky?\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-STAB",
+  "zil": "<TELL \"No doubt you propose to stab the \" D ,PRSO \" with your pinky?\" CR>"
+ },
+ {
+  "key": "g8eeb",
+  "en": "You are already standing, I think.\n",
+  "args": [],
+  "routine": "V-STAND",
+  "zil": "<TELL \"You are already standing, I think.\" CR>"
+ },
+ {
+  "key": "g8eff",
+  "en": "You will be lost without me!\n",
+  "args": [],
+  "routine": "V-STAY",
+  "zil": "<TELL \"You will be lost without me!\" CR>"
+ },
+ {
+  "key": "g8f16",
+  "en": "Since you aren't versed in hand-to-hand combat, you'd better attack the {0} with a weapon.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-STRIKE",
+  "zil": "<TELL \"Since you aren't versed in hand-to-hand combat, you'd better attack the \" D ,PRSO \" with a weapon.\" CR>"
+ },
+ {
+  "key": "g8f67",
+  "en": "Swimming isn't usually allowed in the ",
+  "args": [],
+  "routine": "V-SWIM"
+ },
+ {
+  "key": "g8f88",
+  "en": "{0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-SWIM"
+ },
+ {
+  "key": "g8f8d",
+  "en": "dungeon.\n",
+  "args": [],
+  "routine": "V-SWIM"
+ },
+ {
+  "key": "g8f9c",
+  "en": "Go jump in a lake!\n",
+  "args": [],
+  "routine": "V-SWIM",
+  "zil": "<TELL \"Go jump in a lake!\" CR>"
+ },
+ {
+  "key": "g8fb0",
+  "en": "Whoosh!\n",
+  "args": [],
+  "routine": "V-SWING",
+  "zil": "<TELL \"Whoosh!\" CR>"
+ },
+ {
+  "key": "g8fc9",
+  "en": "You are already wearing it.\n",
+  "args": [],
+  "routine": "PRE-TAKE",
+  "zil": "<TELL \"You are already wearing it.\" CR>"
+ },
+ {
+  "key": "g8fd6",
+  "en": "You already have that!\n",
+  "args": [],
+  "routine": "PRE-TAKE",
+  "zil": "<TELL \"You already have that!\" CR>"
+ },
+ {
+  "key": "g8fed",
+  "en": "You can't reach something that's inside a closed container.\n",
+  "args": [],
+  "routine": "PRE-TAKE",
+  "zil": "<TELL \"You can't reach something that's inside a closed container.\" CR>"
+ },
+ {
+  "key": "g9027",
+  "en": "The {0} isn't in the {1}.\n",
+  "args": [
+   "o",
+   "o"
+  ],
+  "routine": "PRE-TAKE",
+  "zil": "<TELL \"The \" D ,PRSO \" isn't in the \" D ,PRSI \".\" CR>"
+ },
+ {
+  "key": "g9045",
+  "en": "You're inside of it!\n",
+  "args": [],
+  "routine": "PRE-TAKE",
+  "zil": "<TELL \"You're inside of it!\" CR>"
+ },
+ {
+  "key": "g905e",
+  "en": "You are now wearing the {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-TAKE",
+  "zil": "<TELL \"You are now wearing the \" D ,PRSO \".\" CR>"
+ },
+ {
+  "key": "g9070",
+  "en": "Taken.\n",
+  "args": [],
+  "routine": "V-TAKE",
+  "zil": "<TELL \"Taken.\" CR>"
+ },
+ {
+  "key": "g9089",
+  "en": "The {0} pauses for a moment, perhaps thinking that you should reread the manual.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-TELL",
+  "zil": "<TELL \"The \" D ,PRSO \" pauses for a moment, perhaps thinking that you should reread the manual.\" CR>"
+ },
+ {
+  "key": "g90bb",
+  "en": "You can't talk to the {0}!\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-TELL",
+  "zil": "<TELL \"You can't talk to the \" D ,PRSO \"!\" CR>"
+ },
+ {
+  "key": "g9108",
+  "en": "You hit your head against the {0} as you attempt this feat.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-THROUGH",
+  "zil": "<TELL \"You hit your head against the \" D ,PRSO \" as you attempt this feat.\" CR>"
+ },
+ {
+  "key": "g9130",
+  "en": "That would involve quite a contortion!\n",
+  "args": [],
+  "routine": "V-THROUGH",
+  "zil": "<TELL \"That would involve quite a contortion!\" CR>"
+ },
+ {
+  "key": "g9162",
+  "en": "A terrific throw! The {0}",
+  "args": [
+   "o"
+  ],
+  "routine": "V-THROW",
+  "zil": "<TELL \"A terrific throw! The \" D ,PRSO>"
+ },
+ {
+  "key": "g9185",
+  "en": "The {0} ducks as the {1} flies by and crashes to the ground.\n",
+  "args": [
+   "o",
+   "o"
+  ],
+  "routine": "V-THROW",
+  "zil": "<TELL \"The \" D ,PRSI \" ducks as the \" D ,PRSO \" flies by and crashes to the ground.\" CR>"
+ },
+ {
+  "key": "g91ac",
+  "en": "Thrown.\n",
+  "args": [],
+  "routine": "V-THROW",
+  "zil": "<TELL \"Thrown.\" CR>"
+ },
+ {
+  "key": "g91b3",
+  "en": "Huh?\n",
+  "args": [],
+  "routine": "V-THROW",
+  "zil": "<TELL \"Huh?\" CR>"
+ },
+ {
+  "key": "g91b9",
+  "en": "You can't throw anything off of that!\n",
+  "args": [],
+  "routine": "V-THROW-OFF",
+  "zil": "<TELL \"You can't throw anything off of that!\" CR>"
+ },
+ {
+  "key": "g91d3",
+  "en": "You can't tie anything to yourself.\n",
+  "args": [],
+  "routine": "V-TIE",
+  "zil": "<TELL \"You can't tie anything to yourself.\" CR>"
+ },
+ {
+  "key": "g91e8",
+  "en": "You can't tie the {0} to that.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-TIE",
+  "zil": "<TELL \"You can't tie the \" D ,PRSO \" to that.\" CR>"
+ },
+ {
+  "key": "g91fb",
+  "en": "You could certainly never tie it with that!\n",
+  "args": [],
+  "routine": "V-TIE-UP",
+  "zil": "<TELL \"You could certainly never tie it with that!\" CR>"
+ },
+ {
+  "key": "g922b",
+  "en": "Nothing happens.\n",
+  "args": [],
+  "routine": "V-TREASURE",
+  "zil": "<TELL \"Nothing happens.\" CR>"
+ },
+ {
+  "key": "g9243",
+  "en": "Your bare hands don't appear to be enough.\n",
+  "args": [],
+  "routine": "PRE-TURN",
+  "zil": "<TELL \"Your bare hands don't appear to be enough.\" CR>"
+ },
+ {
+  "key": "g925e",
+  "en": "You can't turn that!\n",
+  "args": [],
+  "routine": "PRE-TURN",
+  "zil": "<TELL \"You can't turn that!\" CR>"
+ },
+ {
+  "key": "g926b",
+  "en": "This has no effect.\n",
+  "args": [],
+  "routine": "V-TURN",
+  "zil": "<TELL \"This has no effect.\" CR>"
+ },
+ {
+  "key": "g927f",
+  "en": "This cannot be tied, so it cannot be untied!\n",
+  "args": [],
+  "routine": "V-UNTIE",
+  "zil": "<TELL \"This cannot be tied, so it cannot be untied!\" CR>"
+ },
+ {
+  "key": "g9297",
+  "en": "Time passes...\n",
+  "args": [],
+  "routine": "V-WAIT",
+  "zil": "<TELL \"Time passes...\" CR>"
+ },
+ {
+  "key": "g933a",
+  "en": "You can't go that way.\n",
+  "args": [],
+  "routine": "V-WALK",
+  "zil": "<TELL \"You can't go that way.\" CR>"
+ },
+ {
+  "key": "g936b",
+  "en": "The {0} is closed.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-WALK",
+  "zil": "<TELL \"The \" D .OBJ \" is closed.\" CR>"
+ },
+ {
+  "key": "g939a",
+  "en": "There are odd noises in the darkness, and there is no exit in that direction.\n",
+  "args": [],
+  "routine": "V-WALK",
+  "zil": "<TELL \"There are odd noises in the darkness, and there is no exit in that direction.\" CR>"
+ },
+ {
+  "key": "g93d4",
+  "en": "You can't go that way.\n",
+  "args": [],
+  "routine": "V-WALK",
+  "zil": "<TELL \"You can't go that way.\" CR>"
+ },
+ {
+  "key": "g93e3",
+  "en": "Use compass directions for movement.\n",
+  "args": [],
+  "routine": "V-WALK-AROUND",
+  "zil": "<TELL \"Use compass directions for movement.\" CR>"
+ },
+ {
+  "key": "g940e",
+  "en": "It's here!\n",
+  "args": [],
+  "routine": "V-WALK-TO",
+  "zil": "<TELL \"It's here!\" CR>"
+ },
+ {
+  "key": "g9413",
+  "en": "You should supply a direction!\n",
+  "args": [],
+  "routine": "V-WALK-TO",
+  "zil": "<TELL \"You should supply a direction!\" CR>"
+ },
+ {
+  "key": "g9437",
+  "en": "You can't wear the {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-WEAR",
+  "zil": "<TELL \"You can't wear the \" D ,PRSO \".\" CR>"
+ },
+ {
+  "key": "g944f",
+  "en": "Naturally!\n",
+  "args": [],
+  "routine": "V-WIN",
+  "zil": "<TELL \"Naturally!\" CR>"
+ },
+ {
+  "key": "g9459",
+  "en": "You cannot wind up a {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-WIND",
+  "zil": "<TELL \"You cannot wind up a \" D ,PRSO \".\" CR>"
+ },
+ {
+  "key": "g946b",
+  "en": "With luck, your wish will come true.\n",
+  "args": [],
+  "routine": "V-WISH",
+  "zil": "<TELL \"With luck, your wish will come true.\" CR>"
+ },
+ {
+  "key": "g9485",
+  "en": "Aaaarrrrgggghhhh!\n",
+  "args": [],
+  "routine": "V-YELL",
+  "zil": "<TELL \"Aaaarrrrgggghhhh!\" CR>"
+ },
+ {
+  "key": "g9495",
+  "en": "At your service!\n",
+  "args": [],
+  "routine": "V-ZORK",
+  "zil": "<TELL \"At your service!\" CR>"
+ },
+ {
+  "key": "g94ca",
+  "en": "It is pitch black.",
+  "args": [],
+  "routine": "DESCRIBE-ROOM",
+  "zil": "<TELL \"It is pitch black.\">"
+ },
+ {
+  "key": "g94da",
+  "en": " You are likely to be eaten by a grue.",
+  "args": [],
+  "routine": "DESCRIBE-ROOM",
+  "zil": "<TELL \" You are likely to be eaten by a grue.\">"
+ },
+ {
+  "key": "g9516",
+  "en": ", in the {0}",
+  "args": [
+   "o"
+  ],
+  "routine": "DESCRIBE-ROOM",
+  "zil": "<TELL \", in the \" D .AV>"
+ },
+ {
+  "key": "g9582",
+  "en": "Only bats can see in the dark. And you're not one.\n",
+  "args": [],
+  "routine": "DESCRIBE-OBJECTS",
+  "zil": "<TELL \"Only bats can see in the dark. And you're not one.\" CR>"
+ },
+ {
+  "key": "g95de",
+  "en": "There is a {0} here",
+  "args": [
+   "o"
+  ],
+  "routine": "DESCRIBE-OBJECT",
+  "zil": "<TELL \"There is a \" D .OBJ \" here\">"
+ },
+ {
+  "key": "g95ec",
+  "en": " (providing light)",
+  "args": [],
+  "routine": "DESCRIBE-OBJECT",
+  "zil": "<TELL \" (providing light)\">"
+ },
+ {
+  "key": "g9605",
+  "en": "{0}A {1}",
+  "args": [
+   "s",
+   "o"
+  ],
+  "routine": "DESCRIBE-OBJECT",
+  "zil": "<TELL \"A \" D .OBJ>"
+ },
+ {
+  "key": "g9610",
+  "en": " (providing light)",
+  "args": [],
+  "routine": "DESCRIBE-OBJECT",
+  "zil": "<TELL \" (providing light)\">"
+ },
+ {
+  "key": "g962a",
+  "en": " (being worn)",
+  "args": [],
+  "routine": "DESCRIBE-OBJECT",
+  "zil": "<TELL \" (being worn)\">"
+ },
+ {
+  "key": "g9647",
+  "en": " (outside the {0})",
+  "args": [
+   "o"
+  ],
+  "routine": "DESCRIBE-OBJECT",
+  "zil": "<TELL \" (outside the \" D .AV \")\">"
+ },
+ {
+  "key": "g968c",
+  "en": ", ",
+  "args": [],
+  "routine": "PRINT-CONTENTS",
+  "zil": "<TELL \", \">"
+ },
+ {
+  "key": "g9692",
+  "en": "and ",
+  "args": [],
+  "routine": "PRINT-CONTENTS",
+  "zil": "<TELL \"and \">"
+ },
+ {
+  "key": "g9695",
+  "en": "a {0}",
+  "args": [
+   "o"
+  ],
+  "routine": "PRINT-CONTENTS",
+  "zil": "<TELL \"a \" D .F>"
+ },
+ {
+  "key": "g97e9",
+  "en": "Your collection of treasures consists of:\n",
+  "args": [],
+  "routine": "FIRSTER",
+  "zil": "<TELL \"Your collection of treasures consists of:\" CR>"
+ },
+ {
+  "key": "g9808",
+  "en": "You are carrying:\n",
+  "args": [],
+  "routine": "FIRSTER",
+  "zil": "<TELL \"You are carrying:\" CR>"
+ },
+ {
+  "key": "g9825",
+  "en": "Sitting on the {0} is: \n",
+  "args": [
+   "o"
+  ],
+  "routine": "FIRSTER",
+  "zil": "<TELL \"Sitting on the \" D .OBJ \" is: \" CR>"
+ },
+ {
+  "key": "g983b",
+  "en": "The {0} is holding: \n",
+  "args": [
+   "o"
+  ],
+  "routine": "FIRSTER",
+  "zil": "<TELL \"The \" D .OBJ \" is holding: \" CR>"
+ },
+ {
+  "key": "g984b",
+  "en": "The {0} contains:\n",
+  "args": [
+   "o"
+  ],
+  "routine": "FIRSTER",
+  "zil": "<TELL \"The \" D .OBJ \" contains:\" CR>"
+ },
+ {
+  "key": "g9887",
+  "en": "An almost inaudible voice whispers in your ear, \"Look to your treasures for the final secret.\"\n",
+  "args": [],
+  "routine": "SCORE-UPD",
+  "zil": "<TELL \"An almost inaudible voice whispers in your ear, \\\"Look to your treasures for the final secret.\\\"\" CR>"
+ },
+ {
+  "key": "g9901",
+  "en": "Your hand passes through its object.\n",
+  "args": [],
+  "routine": "ITAKE",
+  "zil": "<TELL \"Your hand passes through its object.\" CR>"
+ },
+ {
+  "key": "g995c",
+  "en": "Your load is too heavy",
+  "args": [],
+  "routine": "ITAKE",
+  "zil": "<TELL \"Your load is too heavy\">"
+ },
+ {
+  "key": "g996d",
+  "en": ", especially in light of your condition.",
+  "args": [],
+  "routine": "ITAKE",
+  "zil": "<TELL \", especially in light of your condition.\">"
+ },
+ {
+  "key": "g99a9",
+  "en": "You're holding too many things already!\n",
+  "args": [],
+  "routine": "ITAKE",
+  "zil": "<TELL \"You're holding too many things already!\" CR>"
+ },
+ {
+  "key": "g99e4",
+  "en": "You're not carrying the {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "IDROP",
+  "zil": "<TELL \"You're not carrying the \" D ,PRSO \".\" CR>"
+ },
+ {
+  "key": "g9a01",
+  "en": "The {0} is closed.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "IDROP",
+  "zil": "<TELL \"The \" D ,PRSO \" is closed.\" CR>"
+ },
+ {
+  "key": "g9a6e",
+  "en": "The {0} isn't here!\n",
+  "args": [
+   "o"
+  ],
+  "routine": "HACK-HACK",
+  "zil": "<TELL \"The \" D ,PRSO \" isn't here!\" CR>"
+ },
+ {
+  "key": "g9a92",
+  "en": "You can't go there in a {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "NO-GO-TELL",
+  "zil": "<TELL \"You can't go there in a \" D .WLOC \".\">"
+ },
+ {
+  "key": "g9aa2",
+  "en": "You can't go there without a vehicle.\n",
+  "args": [],
+  "routine": "NO-GO-TELL",
+  "zil": "<TELL \"You can't go there without a vehicle.\">"
+ },
+ {
+  "key": "g9b37",
+  "en": "The {0} comes to a rest on the shore.\n\n",
+  "args": [
+   "o"
+  ],
+  "routine": "GOTO",
+  "zil": "<TELL \"The \" D .WLOC \" comes to a rest on the shore.\" CR CR>"
+ },
+ {
+  "key": "g9b78",
+  "en": "There are sinister gurgling noises in the darkness all around you!\n",
+  "args": [],
+  "routine": "GOTO",
+  "zil": "<TELL \"There are sinister gurgling noises in the darkness all around you!\" CR>"
+ },
+ {
+  "key": "g9ba9",
+  "en": "You have moved into a dark place.\n",
+  "args": [],
+  "routine": "GOTO",
+  "zil": "<TELL \"You have moved into a dark place.\" CR>"
+ }
+]

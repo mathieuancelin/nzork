@@ -1,0 +1,805 @@
+[
+ {
+  "key": "gb6e5",
+  "en": "You can't reach the lock from here.\n",
+  "args": [],
+  "routine": "GRATE-FUNCTION",
+  "zil": "<TELL \"You can't reach the lock from here.\" CR>"
+ },
+ {
+  "key": "gb6f6",
+  "en": "Can you unlock a grating with a {0}?\n",
+  "args": [
+   "o"
+  ],
+  "routine": "GRATE-FUNCTION",
+  "zil": "<TELL \"Can you unlock a grating with a \" D ,PRSI \"?\" CR>"
+ },
+ {
+  "key": "gb70e",
+  "en": "You can't pick the lock.\n",
+  "args": [],
+  "routine": "GRATE-FUNCTION",
+  "zil": "<TELL \"You can't pick the lock.\" CR>"
+ },
+ {
+  "key": "gb749",
+  "en": "A pile of leaves falls onto your head and to the ground.\n",
+  "args": [],
+  "routine": "GRATE-FUNCTION",
+  "zil": "<TELL \"A pile of leaves falls onto your head and to the ground.\" CR>"
+ },
+ {
+  "key": "gb779",
+  "en": "The grating is locked.\n",
+  "args": [],
+  "routine": "GRATE-FUNCTION",
+  "zil": "<TELL \"The grating is locked.\" CR>"
+ },
+ {
+  "key": "gb794",
+  "en": "It won't fit through the grating.\n",
+  "args": [],
+  "routine": "GRATE-FUNCTION",
+  "zil": "<TELL \"It won't fit through the grating.\" CR>"
+ },
+ {
+  "key": "gb7a6",
+  "en": "The {0} goes through the grating into the darkness below.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "GRATE-FUNCTION",
+  "zil": "<TELL \"The \" D ,PRSO \" goes through the grating into the darkness below.\" CR>"
+ },
+ {
+  "key": "gb7c3",
+  "en": "You won't be able to get back up to the tunnel you are going through when it gets to the next room.\n\n",
+  "args": [],
+  "routine": "MAZE-DIODES",
+  "zil": "<TELL \"You won't be able to get back up to the tunnel you are going through when it gets to the next room.\" CR CR>"
+ },
+ {
+  "key": "gb81a",
+  "en": "As you touch the rusty knife, your sword gives a single pulse of blinding blue light.\n",
+  "args": [],
+  "routine": "RUSTY-KNIFE-FCN",
+  "zil": "<TELL \"As you touch the rusty knife, your sword gives a single pulse of blinding blue light.\" CR>"
+ },
+ {
+  "key": "gb894",
+  "en": "A ghost appears in the room and is appalled at your desecration of the remains of a fellow adventurer. He casts a curse on your valuables and banishes them to the Land of the Living Dead. The ghost leaves, muttering obscenities.\n",
+  "args": [],
+  "routine": "SKELETON",
+  "zil": "<TELL \"A ghost appears in the room and is appalled at your desecration of the remains of a fellow adventurer. He casts a curse on your valuables and banishes them to the Land of the Living Dead. The ghost leaves, muttering obscenities.\" CR>"
+ },
+ {
+  "key": "gb92d",
+  "en": "The torch is burning.\n",
+  "args": [],
+  "routine": "TORCH-OBJECT",
+  "zil": "<TELL \"The torch is burning.\" CR>"
+ },
+ {
+  "key": "gb944",
+  "en": "The water evaporates before it gets close.\n",
+  "args": [],
+  "routine": "TORCH-OBJECT",
+  "zil": "<TELL \"The water evaporates before it gets close.\" CR>"
+ },
+ {
+  "key": "gb963",
+  "en": "You nearly burn your hand trying to extinguish the flame.\n",
+  "args": [],
+  "routine": "TORCH-OBJECT",
+  "zil": "<TELL \"You nearly burn your hand trying to extinguish the flame.\" CR>"
+ },
+ {
+  "key": "gb98b",
+  "en": "You are in a large square room with tall ceilings. On the south wall is an enormous mirror which fills the entire wall. There are exits on the other three sides of the room.\n",
+  "args": [],
+  "routine": "MIRROR-ROOM",
+  "zil": "<TELL \"You are in a large square room with tall ceilings. On the south wall is an enormous mirror which fills the entire wall. There are exits on the other three sides of the room.\" CR>"
+ },
+ {
+  "key": "gb9e2",
+  "en": "Unfortunately, the mirror has been destroyed by your recklessness.\n",
+  "args": [],
+  "routine": "MIRROR-ROOM",
+  "zil": "<TELL \"Unfortunately, the mirror has been destroyed by your recklessness.\" CR>"
+ },
+ {
+  "key": "gba1f",
+  "en": "You feel a faint tingling transmitted through the {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "MIRROR-MIRROR",
+  "zil": "<TELL \"You feel a faint tingling transmitted through the \" D ,PRSI \".\" CR>"
+ },
+ {
+  "key": "gba77",
+  "en": "There is a rumble from deep within the earth and the room shakes.\n",
+  "args": [],
+  "routine": "MIRROR-MIRROR",
+  "zil": "<TELL \"There is a rumble from deep within the earth and the room shakes.\" CR>"
+ },
+ {
+  "key": "gbaa1",
+  "en": "The mirror is broken into many pieces.\n",
+  "args": [],
+  "routine": "MIRROR-MIRROR",
+  "zil": "<TELL \"The mirror is broken into many pieces.\">"
+ },
+ {
+  "key": "gbab8",
+  "en": "There is an ugly person staring back at you.\n",
+  "args": [],
+  "routine": "MIRROR-MIRROR",
+  "zil": "<TELL \"There is an ugly person staring back at you.\">"
+ },
+ {
+  "key": "gbad7",
+  "en": "The mirror is many times your size. Give up.\n",
+  "args": [],
+  "routine": "MIRROR-MIRROR",
+  "zil": "<TELL \"The mirror is many times your size. Give up.\" CR>"
+ },
+ {
+  "key": "gbafe",
+  "en": "Haven't you done enough damage already?\n",
+  "args": [],
+  "routine": "MIRROR-MIRROR",
+  "zil": "<TELL \"Haven't you done enough damage already?\" CR>"
+ },
+ {
+  "key": "gbb21",
+  "en": "You have broken the mirror. I hope you have a seven years' supply of good luck handy.\n",
+  "args": [],
+  "routine": "MIRROR-MIRROR",
+  "zil": "<TELL \"You have broken the mirror. I hope you have a seven years' supply of good luck handy.\" CR>"
+ },
+ {
+  "key": "gbb5b",
+  "en": "This is a large room with a prominent doorway leading to a down staircase. Above you is a large dome. Up around the edge of the dome (20 feet up) is a wooden railing. In the center of the room sits a white marble pedestal.\n",
+  "args": [],
+  "routine": "TORCH-ROOM-FCN",
+  "zil": "<TELL \"This is a large room with a prominent doorway leading to a down staircase. Above you is a large dome. Up around the edge of the dome (20 feet up) is a wooden railing. In the center of the room sits a white marble pedestal.\" CR>"
+ },
+ {
+  "key": "gbbde",
+  "en": "A piece of rope descends from the railing above, ending some five feet above your head.\n",
+  "args": [],
+  "routine": "TORCH-ROOM-FCN",
+  "zil": "<TELL \"A piece of rope descends from the railing above, ending some five feet above your head.\" CR>"
+ },
+ {
+  "key": "gbc1e",
+  "en": "You are at the periphery of a large dome, which forms the ceiling of another room below. Protecting you from a precipitous drop is a wooden railing which circles the dome.\n",
+  "args": [],
+  "routine": "DOME-ROOM-FCN",
+  "zil": "<TELL \"You are at the periphery of a large dome, which forms the ceiling of another room below. Protecting you from a precipitous drop is a wooden railing which circles the dome.\" CR>"
+ },
+ {
+  "key": "gbc7f",
+  "en": "Hanging down from the railing is a rope which ends about ten feet from the floor below.\n",
+  "args": [],
+  "routine": "DOME-ROOM-FCN",
+  "zil": "<TELL \"Hanging down from the railing is a rope which ends about ten feet from the floor below.\" CR>"
+ },
+ {
+  "key": "gbcb8",
+  "en": "As you enter the dome you feel a strong pull as if from a wind drawing you over the railing and down.\n",
+  "args": [],
+  "routine": "DOME-ROOM-FCN",
+  "zil": "<TELL \"As you enter the dome you feel a strong pull as if from a wind drawing you over the railing and down.\" CR>"
+ },
+ {
+  "key": "gbd10",
+  "en": "You are outside a large gateway, on which is inscribed\n\n  Abandon every hope all ye who enter here!\n\nThe gate is open; through it you can see a desolation, with a pile of mangled bodies in one corner. Thousands of voices, lamenting some hideous fate, can be heard.\n",
+  "args": [],
+  "routine": "LLD-ROOM",
+  "zil": "<TELL \"You are outside a large gateway, on which is inscribed\\n\\n   Abandon every hope all ye who enter here!\\n\\n The gate is open; through it you can see a desolation, with a pile of mangled bodies in one corner. Thousands of voices, lamenting some hideous fate, can be heard.\" CR>"
+ },
+ {
+  "key": "gbdb6",
+  "en": "The way through the gate is barred by evil spirits, who jeer at your attempts to pass.\n",
+  "args": [],
+  "routine": "LLD-ROOM",
+  "zil": "<TELL \"The way through the gate is barred by evil spirits, who jeer at your attempts to pass.\" CR>"
+ },
+ {
+  "key": "gbdff",
+  "en": "You must perform the ceremony.\n",
+  "args": [],
+  "routine": "LLD-ROOM",
+  "zil": "<TELL \"You must perform the ceremony.\" CR>"
+ },
+ {
+  "key": "gbe12",
+  "en": "You aren't equipped for an exorcism.\n",
+  "args": [],
+  "routine": "LLD-ROOM",
+  "zil": "<TELL \"You aren't equipped for an exorcism.\" CR>"
+ },
+ {
+  "key": "gbe49",
+  "en": "The bell suddenly becomes red hot and falls to the ground. The wraiths, as if paralyzed, stop their jeering and slowly turn to face you. On their ashen faces, the expression of a long-forgotten terror takes shape.\n",
+  "args": [],
+  "routine": "LLD-ROOM",
+  "zil": "<TELL \"The bell suddenly becomes red hot and falls to the ground. The wraiths, as if paralyzed, stop their jeering and slowly turn to face you. On their ashen faces, the expression of a long-forgotten terror takes shape.\" CR>"
+ },
+ {
+  "key": "gbed5",
+  "en": "In your confusion, the candles drop to the ground (and they are out).\n",
+  "args": [],
+  "routine": "LLD-ROOM",
+  "zil": "<TELL \"In your confusion, the candles drop to the ground (and they are out).\" CR>"
+ },
+ {
+  "key": "gbf34",
+  "en": "Each word of the prayer reverberates through the hall in a deafening confusion. As the last word fades, a voice, loud and commanding, speaks: \"Begone, fiends!\" A heart-stopping scream fills the cavern, and the spirits, sensing a greater power, flee through the walls.\n",
+  "args": [],
+  "routine": "LLD-ROOM",
+  "zil": "<TELL \"Each word of the prayer reverberates through the hall in a deafening confusion. As the last word fades, a voice, loud and commanding, speaks: \\\"Begone, fiends!\\\" A heart-stopping scream fills the cavern, and the spirits, sensing a greater power, flee through the walls.\" CR>"
+ },
+ {
+  "key": "gc005",
+  "en": "The flames flicker wildly and appear to dance. The earth beneath your feet trembles, and your legs nearly buckle beneath you. The spirits cower at your unearthly power.\n",
+  "args": [],
+  "routine": "LLD-ROOM",
+  "zil": "<TELL \"The flames flicker wildly and appear to dance. The earth beneath your feet trembles, and your legs nearly buckle beneath you. The spirits cower at your unearthly power.\" CR>"
+ },
+ {
+  "key": "gc090",
+  "en": "The tension of this ceremony is broken, and the wraiths, amused but shaken at your clumsy attempt, resume their hideous jeering.\n",
+  "args": [],
+  "routine": "I-XB",
+  "zil": "<TELL \"The tension of this ceremony is broken, and the wraiths, amused but shaken at your clumsy attempt, resume their hideous jeering.\" CR>"
+ },
+ {
+  "key": "gc0fc",
+  "en": "The bell appears to have cooled down.\n",
+  "args": [],
+  "routine": "I-XBH",
+  "zil": "<TELL \"The bell appears to have cooled down.\" CR>"
+ },
+ {
+  "key": "gc117",
+  "en": "You are standing on the top of the Flood Control Dam #3, which was quite a tourist attraction in times far distant. There are paths to the north, south, and west, and a scramble down.\n",
+  "args": [],
+  "routine": "DAM-ROOM-FCN",
+  "zil": "<TELL \"You are standing on the top of the Flood Control Dam #3, which was quite a tourist attraction in times far distant. There are paths to the north, south, and west, and a scramble down.\" CR>"
+ },
+ {
+  "key": "gc18d",
+  "en": "The water level behind the dam is low: The sluice gates have been opened. Water rushes through the dam and downstream.\n",
+  "args": [],
+  "routine": "DAM-ROOM-FCN",
+  "zil": "<TELL \"The water level behind the dam is low: The sluice gates have been opened. Water rushes through the dam and downstream.\" CR>"
+ },
+ {
+  "key": "gc1d3",
+  "en": "The sluice gates are open, and water rushes through the dam. The water level behind the dam is still high.\n",
+  "args": [],
+  "routine": "DAM-ROOM-FCN",
+  "zil": "<TELL \"The sluice gates are open, and water rushes through the dam. The water level behind the dam is still high.\" CR>"
+ },
+ {
+  "key": "gc20f",
+  "en": "The sluice gates are closed. The water level in the reservoir is quite low, but the level is rising quickly.\n",
+  "args": [],
+  "routine": "DAM-ROOM-FCN",
+  "zil": "<TELL \"The sluice gates are closed. The water level in the reservoir is quite low, but the level is rising quickly.\" CR>"
+ },
+ {
+  "key": "gc248",
+  "en": "The sluice gates on the dam are closed. Behind the dam, there can be seen a wide reservoir. Water is pouring over the top of the now abandoned dam.\n",
+  "args": [],
+  "routine": "DAM-ROOM-FCN",
+  "zil": "<TELL \"The sluice gates on the dam are closed. Behind the dam, there can be seen a wide reservoir. Water is pouring over the top of the now abandoned dam.\" CR>"
+ },
+ {
+  "key": "gc29c",
+  "en": "There is a control panel here, on which a large metal bolt is mounted. Directly above the bolt is a small green plastic bubble",
+  "args": [],
+  "routine": "DAM-ROOM-FCN",
+  "zil": "<TELL \"There is a control panel here, on which a large metal bolt is mounted. Directly above the bolt is a small green plastic bubble\">"
+ },
+ {
+  "key": "gc2e6",
+  "en": " which is glowing serenely",
+  "args": [],
+  "routine": "DAM-ROOM-FCN",
+  "zil": "<TELL \" which is glowing serenely\">"
+ },
+ {
+  "key": "gc2f5",
+  "en": ".\n",
+  "args": [],
+  "routine": "DAM-ROOM-FCN",
+  "zil": "<TELL \".\" CR>"
+ },
+ {
+  "key": "gc314",
+  "en": "The sluice gates close and water starts to collect behind the dam.\n",
+  "args": [],
+  "routine": "BOLT-F",
+  "zil": "<TELL \"The sluice gates close and water starts to collect behind the dam.\" CR>"
+ },
+ {
+  "key": "gc355",
+  "en": "The sluice gates open and water pours through the dam.\n",
+  "args": [],
+  "routine": "BOLT-F",
+  "zil": "<TELL \"The sluice gates open and water pours through the dam.\" CR>"
+ },
+ {
+  "key": "gc387",
+  "en": "The bolt won't turn with your best effort.\n",
+  "args": [],
+  "routine": "BOLT-F",
+  "zil": "<TELL \"The bolt won't turn with your best effort.\" CR>"
+ },
+ {
+  "key": "gc39e",
+  "en": "The bolt won't turn using the {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "BOLT-F",
+  "zil": "<TELL \"The bolt won't turn using the \" D ,PRSI \".\" CR>"
+ },
+ {
+  "key": "gc3c2",
+  "en": "Hmm. It appears the tube contained glue, not oil. Turning the bolt won't get any easier....\n",
+  "args": [],
+  "routine": "BOLT-F",
+  "zil": "<TELL \"Hmm. It appears the tube contained glue, not oil. Turning the bolt won't get any easier....\" CR>"
+ },
+ {
+  "key": "gc407",
+  "en": "It is an integral part of the control panel.\n",
+  "args": [],
+  "routine": "INTEGRAL-PART",
+  "zil": "<TELL \"It is an integral part of the control panel.\" CR>"
+ },
+ {
+  "key": "gc444",
+  "en": "The boat lifts gently out of the mud and is now floating on the reservoir.\n",
+  "args": [],
+  "routine": "I-RFILL",
+  "zil": "<TELL \"The boat lifts gently out of the mud and is now floating on the reservoir.\" CR>"
+ },
+ {
+  "key": "gc47b",
+  "en": "A sound, like that of flowing water, starts to come from below.\n",
+  "args": [],
+  "routine": "I-RFILL",
+  "zil": "<TELL \"A sound, like that of flowing water, starts to come from below.\" CR>"
+ },
+ {
+  "key": "gc4a7",
+  "en": "All of a sudden, an alarmingly loud roaring sound fills the room. Filled with fear, you scramble away.\n",
+  "args": [],
+  "routine": "I-RFILL",
+  "zil": "<TELL \"All of a sudden, an alarmingly loud roaring sound fills the room. Filled with fear, you scramble away.\" CR>"
+ },
+ {
+  "key": "gc4fc",
+  "en": "You notice that the water level has risen to the point that it is impossible to cross.\n",
+  "args": [],
+  "routine": "I-RFILL",
+  "zil": "<TELL \"You notice that the water level has risen to the point that it is impossible to cross.\" CR>"
+ },
+ {
+  "key": "gc541",
+  "en": "The water level has dropped to the point at which the boat can no longer stay afloat. It sinks into the mud.\n",
+  "args": [],
+  "routine": "I-REMPTY",
+  "zil": "<TELL \"The water level has dropped to the point at which the boat can no longer stay afloat. It sinks into the mud.\" CR>"
+ },
+ {
+  "key": "gc57c",
+  "en": "The roar of rushing water is quieter now.\n",
+  "args": [],
+  "routine": "I-REMPTY",
+  "zil": "<TELL \"The roar of rushing water is quieter now.\" CR>"
+ },
+ {
+  "key": "gc59b",
+  "en": "The water level is now quite low here and you could easily cross over to the other side.\n",
+  "args": [],
+  "routine": "I-REMPTY",
+  "zil": "<TELL \"The water level is now quite low here and you could easily cross over to the other side.\" CR>"
+ },
+ {
+  "key": "gc5cb",
+  "en": "They're greek to you.\n",
+  "args": [],
+  "routine": "BUTTON-F",
+  "zil": "<TELL \"They're greek to you.\" CR>"
+ },
+ {
+  "key": "gc5ec",
+  "en": "There is a rumbling sound and a stream of water appears to burst from the east wall of the room (apparently, a leak has occurred in a pipe).\n",
+  "args": [],
+  "routine": "BUTTON-F",
+  "zil": "<TELL \"There is a rumbling sound and a stream of water appears to burst from the east wall of the room (apparently, a leak has occurred in a pipe).\" CR>"
+ },
+ {
+  "key": "gc646",
+  "en": "The blue button appears to be jammed.\n",
+  "args": [],
+  "routine": "BUTTON-F",
+  "zil": "<TELL \"The blue button appears to be jammed.\" CR>"
+ },
+ {
+  "key": "gc65d",
+  "en": "The lights within the room ",
+  "args": [],
+  "routine": "BUTTON-F",
+  "zil": "<TELL \"The lights within the room \">"
+ },
+ {
+  "key": "gc673",
+  "en": "shut off.\n",
+  "args": [],
+  "routine": "BUTTON-F",
+  "zil": "<TELL \"shut off.\" CR>"
+ },
+ {
+  "key": "gc67f",
+  "en": "come on.\n",
+  "args": [],
+  "routine": "BUTTON-F",
+  "zil": "<TELL \"come on.\" CR>"
+ },
+ {
+  "key": "gc690",
+  "en": "Click.\n",
+  "args": [],
+  "routine": "BUTTON-F",
+  "zil": "<TELL \"Click.\" CR>"
+ },
+ {
+  "key": "gc6a1",
+  "en": "Click.\n",
+  "args": [],
+  "routine": "BUTTON-F",
+  "zil": "<TELL \"Click.\" CR>"
+ },
+ {
+  "key": "gc6ad",
+  "en": "The chests are all empty.\n",
+  "args": [],
+  "routine": "TOOL-CHEST-FCN",
+  "zil": "<TELL \"The chests are all empty.\" CR>"
+ },
+ {
+  "key": "gc6cb",
+  "en": "The chests are so rusty and corroded that they crumble when you touch them.\n",
+  "args": [],
+  "routine": "TOOL-CHEST-FCN",
+  "zil": "<TELL \"The chests are so rusty and corroded that they crumble when you touch them.\" CR>"
+ },
+ {
+  "key": "gc6fc",
+  "en": "The chests are already open.\n",
+  "args": [],
+  "routine": "TOOL-CHEST-FCN",
+  "zil": "<TELL \"The chests are already open.\" CR>"
+ },
+ {
+  "key": "gc722",
+  "en": "The water level here is now ",
+  "args": [],
+  "routine": "I-MAINT-ROOM",
+  "zil": "<TELL \"The water level here is now \">"
+ },
+ {
+  "key": "gc7a4",
+  "en": "By some miracle of Zorkian technology, you have managed to stop the leak in the dam.\n",
+  "args": [],
+  "routine": "FIX-MAINT-LEAK",
+  "zil": "<TELL \"By some miracle of Zorkian technology, you have managed to stop the leak in the dam.\" CR>"
+ },
+ {
+  "key": "gc7e9",
+  "en": "The all-purpose gunk isn't a lubricant.\n",
+  "args": [],
+  "routine": "PUTTY-FCN",
+  "zil": "<TELL \"The all-purpose gunk isn't a lubricant.\" CR>"
+ },
+ {
+  "key": "gc80f",
+  "en": "The tube refuses to accept anything.\n",
+  "args": [],
+  "routine": "TUBE-FUNCTION",
+  "zil": "<TELL \"The tube refuses to accept anything.\" CR>"
+ },
+ {
+  "key": "gc835",
+  "en": "The viscous material oozes into your hand.\n",
+  "args": [],
+  "routine": "TUBE-FUNCTION",
+  "zil": "<TELL \"The viscous material oozes into your hand.\" CR>"
+ },
+ {
+  "key": "gc852",
+  "en": "The tube is apparently empty.\n",
+  "args": [],
+  "routine": "TUBE-FUNCTION",
+  "zil": "<TELL \"The tube is apparently empty.\" CR>"
+ },
+ {
+  "key": "gc865",
+  "en": "The tube is closed.\n",
+  "args": [],
+  "routine": "TUBE-FUNCTION",
+  "zil": "<TELL \"The tube is closed.\" CR>"
+ },
+ {
+  "key": "gc875",
+  "en": "Sounds reasonable, but this isn't how.\n",
+  "args": [],
+  "routine": "DAM-FUNCTION",
+  "zil": "<TELL \"Sounds reasonable, but this isn't how.\" CR>"
+ },
+ {
+  "key": "gc896",
+  "en": "Are you the little Dutch boy, then? Sorry, this is a big dam.\n",
+  "args": [],
+  "routine": "DAM-FUNCTION",
+  "zil": "<TELL \"Are you the little Dutch boy, then? Sorry, this is a big dam.\" CR>"
+ },
+ {
+  "key": "gc8bf",
+  "en": "With a {0}? Do you know how big this dam is? You could only stop a tiny leak with that.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "DAM-FUNCTION",
+  "zil": "<TELL \"With a \" D ,PRSI \"? Do you know how big this dam is? You could only stop a tiny leak with that.\" CR>"
+ },
+ {
+  "key": "gc8fb",
+  "en": "With a {0}?\n",
+  "args": [
+   "o"
+  ],
+  "routine": "WITH-TELL",
+  "zil": "<TELL \"With a \" D .OBJ \"?\" CR>"
+ },
+ {
+  "key": "gc917",
+  "en": "You are in a long room, to the north of which was formerly a lake. However, with the water level lowered, there is merely a wide stream running through the center of the room.",
+  "args": [],
+  "routine": "RESERVOIR-SOUTH-FCN",
+  "zil": "<TELL \"You are in a long room, to the north of which was formerly a lake. However, with the water level lowered, there is merely a wide stream running through the center of the room.\">"
+ },
+ {
+  "key": "gc975",
+  "en": "You are in a long room. To the north is a large lake, too deep to cross. You notice, however, that the water level appears to be dropping at a rapid rate. Before long, it might be possible to cross to the other side from here.",
+  "args": [],
+  "routine": "RESERVOIR-SOUTH-FCN",
+  "zil": "<TELL \"You are in a long room. To the north is a large lake, too deep to cross. You notice, however, that the water level appears to be dropping at a rapid rate. Before long, it might be possible to cross to the other side from here.\">"
+ },
+ {
+  "key": "gc9ef",
+  "en": "You are in a long room, to the north of which is a wide area which was formerly a reservoir, but now is merely a stream. You notice, however, that the level of the stream is rising quickly and that before long it will be impossible to cross here.",
+  "args": [],
+  "routine": "RESERVOIR-SOUTH-FCN",
+  "zil": "<TELL \"You are in a long room, to the north of which is a wide area which was formerly a reservoir, but now is merely a stream. You notice, however, that the level of the stream is rising quickly and that before long it will be impossible to cross here.\">"
+ },
+ {
+  "key": "gca6d",
+  "en": "You are in a long room on the south shore of a large lake, far too deep and wide for crossing.",
+  "args": [],
+  "routine": "RESERVOIR-SOUTH-FCN",
+  "zil": "<TELL \"You are in a long room on the south shore of a large lake, far too deep and wide for crossing.\">"
+ },
+ {
+  "key": "gca9c",
+  "en": "\nThere is a path along the stream to the east or west, a steep pathway climbing southwest along the edge of a chasm, and a path leading into a canyon to the southeast.\n",
+  "args": [],
+  "routine": "RESERVOIR-SOUTH-FCN",
+  "zil": "<TELL \"There is a path along the stream to the east or west, a steep pathway climbing southwest along the edge of a chasm, and a path leading into a canyon to the southeast.\" CR>"
+ },
+ {
+  "key": "gcb0c",
+  "en": "You notice that the water level here is rising rapidly. The currents are also becoming stronger. Staying here seems quite perilous!\n",
+  "args": [],
+  "routine": "RESERVOIR-FCN",
+  "zil": "<TELL \"You notice that the water level here is rising rapidly. The currents are also becoming stronger. Staying here seems quite perilous!\" CR>"
+ },
+ {
+  "key": "gcb5a",
+  "en": "You are on what used to be a large lake, but which is now a large mud pile. There are \"shores\" to the north and south.\n",
+  "args": [],
+  "routine": "RESERVOIR-FCN",
+  "zil": "<TELL \"You are on what used to be a large lake, but which is now a large mud pile. There are \\\"shores\\\" to the north and south.\">"
+ },
+ {
+  "key": "gcb93",
+  "en": "You are on the lake. Beaches can be seen north and south. Upstream a small stream enters the lake through a narrow cleft in the rocks. The dam can be seen downstream.\n",
+  "args": [],
+  "routine": "RESERVOIR-FCN",
+  "zil": "<TELL \"You are on the lake. Beaches can be seen north and south. Upstream a small stream enters the lake through a narrow cleft in the rocks. The dam can be seen downstream.\">"
+ },
+ {
+  "key": "gcbf9",
+  "en": "You are in a large cavernous room, the south of which was formerly a lake. However, with the water level lowered, there is merely a wide stream running through there.",
+  "args": [],
+  "routine": "RESERVOIR-NORTH-FCN",
+  "zil": "<TELL \"You are in a large cavernous room, the south of which was formerly a lake. However, with the water level lowered, there is merely a wide stream running through there.\">"
+ },
+ {
+  "key": "gcc50",
+  "en": "You are in a large cavernous area. To the south is a wide lake, whose water level appears to be falling rapidly.",
+  "args": [],
+  "routine": "RESERVOIR-NORTH-FCN",
+  "zil": "<TELL \"You are in a large cavernous area. To the south is a wide lake, whose water level appears to be falling rapidly.\">"
+ },
+ {
+  "key": "gcc90",
+  "en": "You are in a cavernous area, to the south of which is a very wide stream. The level of the stream is rising rapidly, and it appears that before long it will be impossible to cross to the other side.",
+  "args": [],
+  "routine": "RESERVOIR-NORTH-FCN",
+  "zil": "<TELL \"You are in a cavernous area, to the south of which is a very wide stream. The level of the stream is rising rapidly, and it appears that before long it will be impossible to cross to the other side.\">"
+ },
+ {
+  "key": "gccee",
+  "en": "You are in a large cavernous room, north of a large lake.",
+  "args": [],
+  "routine": "RESERVOIR-NORTH-FCN",
+  "zil": "<TELL \"You are in a large cavernous room, north of a large lake.\">"
+ },
+ {
+  "key": "gcd09",
+  "en": "\nThere is a slimy stairway leaving the room to the north.\n",
+  "args": [],
+  "routine": "RESERVOIR-NORTH-FCN",
+  "zil": "<TELL \"There is a slimy stairway leaving the room to the north.\" CR>"
+ },
+ {
+  "key": "gcd3e",
+  "en": "The bottle hits the far wall and shatters.\n",
+  "args": [],
+  "routine": "BOTTLE-FUNCTION",
+  "zil": "<TELL \"The bottle hits the far wall and shatters.\" CR>"
+ },
+ {
+  "key": "gcd68",
+  "en": "A brilliant maneuver destroys the bottle.\n",
+  "args": [],
+  "routine": "BOTTLE-FUNCTION",
+  "zil": "<TELL \"A brilliant maneuver destroys the bottle.\" CR>"
+ },
+ {
+  "key": "gcd9f",
+  "en": "The water spills to the floor and evaporates.\n",
+  "args": [],
+  "routine": "BOTTLE-FUNCTION",
+  "zil": "<TELL \"The water spills to the floor and evaporates.\" CR>"
+ },
+ {
+  "key": "gcdd2",
+  "en": "No use talking to him. He's fast asleep.\n",
+  "args": [],
+  "routine": "CYCLOPS-FCN",
+  "zil": "<TELL \"No use talking to him. He's fast asleep.\" CR>"
+ },
+ {
+  "key": "gcdff",
+  "en": "The cyclops prefers eating to making conversation.\n",
+  "args": [],
+  "routine": "CYCLOPS-FCN",
+  "zil": "<TELL \"The cyclops prefers eating to making conversation.\" CR>"
+ },
+ {
+  "key": "gce24",
+  "en": "The cyclops is sleeping like a baby, albeit a very ugly one.\n",
+  "args": [],
+  "routine": "CYCLOPS-FCN",
+  "zil": "<TELL \"The cyclops is sleeping like a baby, albeit a very ugly one.\" CR>"
+ },
+ {
+  "key": "gce54",
+  "en": "The cyclops yawns and stares at the thing that woke him up.\n",
+  "args": [],
+  "routine": "CYCLOPS-FCN",
+  "zil": "<TELL \"The cyclops yawns and stares at the thing that woke him up.\" CR>"
+ },
+ {
+  "key": "gce8d",
+  "en": "A hungry cyclops is standing at the foot of the stairs.\n",
+  "args": [],
+  "routine": "CYCLOPS-FCN",
+  "zil": "<TELL \"A hungry cyclops is standing at the foot of the stairs.\" CR>"
+ },
+ {
+  "key": "gcec6",
+  "en": "The cyclops says \"Mmm Mmm. I love hot peppers! But oh, could I use a drink. Perhaps I could drink the blood of that thing.\"  From the gleam in his eye, it could be surmised that you are \"that thing\".\n",
+  "args": [],
+  "routine": "CYCLOPS-FCN",
+  "zil": "<TELL \"The cyclops says \\\"Mmm Mmm. I love hot peppers! But oh, could I use a drink. Perhaps I could drink the blood of that thing.\\\"  From the gleam in his eye, it could be surmised that you are \\\"that thing\\\".\" CR>"
+ },
+ {
+  "key": "gcf7d",
+  "en": "The cyclops takes the bottle, checks that it's open, and drinks the water. A moment later, he lets out a yawn that nearly blows you over, and then falls fast asleep (what did you put in that drink, anyway?).\n",
+  "args": [],
+  "routine": "CYCLOPS-FCN",
+  "zil": "<TELL \"The cyclops takes the bottle, checks that it's open, and drinks the water. A moment later, he lets out a yawn that nearly blows you over, and then falls fast asleep (what did you put in that drink, anyway?).\" CR>"
+ },
+ {
+  "key": "gcffc",
+  "en": "The cyclops apparently is not thirsty and refuses your generous offer.\n",
+  "args": [],
+  "routine": "CYCLOPS-FCN",
+  "zil": "<TELL \"The cyclops apparently is not thirsty and refuses your generous offer.\" CR>"
+ },
+ {
+  "key": "gd027",
+  "en": "The cyclops may be hungry, but there is a limit.\n",
+  "args": [],
+  "routine": "CYCLOPS-FCN",
+  "zil": "<TELL \"The cyclops may be hungry, but there is a limit.\" CR>"
+ },
+ {
+  "key": "gd03e",
+  "en": "The cyclops is not so stupid as to eat THAT!\n",
+  "args": [],
+  "routine": "CYCLOPS-FCN",
+  "zil": "<TELL \"The cyclops is not so stupid as to eat THAT!\" CR>"
+ },
+ {
+  "key": "gd073",
+  "en": "\"Do you think I'm as stupid as my father was?\", he says, dodging.\n",
+  "args": [],
+  "routine": "CYCLOPS-FCN",
+  "zil": "<TELL \"\\\"Do you think I'm as stupid as my father was?\\\", he says, dodging.\" CR>"
+ },
+ {
+  "key": "gd0a0",
+  "en": "The cyclops shrugs but otherwise ignores your pitiful attempt.\n",
+  "args": [],
+  "routine": "CYCLOPS-FCN",
+  "zil": "<TELL \"The cyclops shrugs but otherwise ignores your pitiful attempt.\" CR>"
+ },
+ {
+  "key": "gd0d0",
+  "en": "The cyclops doesn't take kindly to being grabbed.\n",
+  "args": [],
+  "routine": "CYCLOPS-FCN",
+  "zil": "<TELL \"The cyclops doesn't take kindly to being grabbed.\" CR>"
+ },
+ {
+  "key": "gd0ed",
+  "en": "You cannot tie the cyclops, though he is fit to be tied.\n",
+  "args": [],
+  "routine": "CYCLOPS-FCN",
+  "zil": "<TELL \"You cannot tie the cyclops, though he is fit to be tied.\" CR>"
+ },
+ {
+  "key": "gd110",
+  "en": "You can hear his stomach rumbling.\n",
+  "args": [],
+  "routine": "CYCLOPS-FCN",
+  "zil": "<TELL \"You can hear his stomach rumbling.\" CR>"
+ },
+ {
+  "key": "gd194",
+  "en": "This room has an exit on the northwest, and a staircase leading up.\n",
+  "args": [],
+  "routine": "CYCLOPS-ROOM-FCN",
+  "zil": "<TELL \"This room has an exit on the northwest, and a staircase leading up.\" CR>"
+ },
+ {
+  "key": "gd1b6",
+  "en": "The cyclops is sleeping blissfully at the foot of the stairs.\n",
+  "args": [],
+  "routine": "CYCLOPS-ROOM-FCN",
+  "zil": "<TELL \"The cyclops is sleeping blissfully at the foot of the stairs.\" CR>"
+ }
+]

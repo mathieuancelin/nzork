@@ -1,0 +1,1913 @@
+⟦g7609⟧ZORK I : Le Grand Empire Souterrain
+Fiction interactive Infocom - un récit fantastique
+Copyright (c) 1981, 1982, 1983, 1984, 1985, 1986 Infocom, Inc. Tous droits réservés.
+ZORK est une marque déposée d'Infocom, Inc.
+Version ⟦g76c9⟧119 / Numéro de série 880429
+
+À l'ouest de la maison
+⟦g9d05⟧Vous vous tenez au milieu d'un champ, à l'ouest d'une maison blanche dont la porte d'entrée est condamnée par des planches.
+⟦g95de⟧Il y a une petite boîte aux lettres ici.
+
+
+> nord
+Au nord de la maison
+⟦s147ea⟧Vous êtes face au côté nord d'une maison blanche. Il n'y a pas de porte ici, et toutes les fenêtres sont condamnées par des planches. Au nord, un étroit sentier serpente entre les arbres.
+
+
+> n
+Sentier forestier
+⟦s11b12⟧Ce sentier serpente à travers une forêt plongée dans la pénombre. Ici, il suit un axe nord-sud. Un arbre particulièrement grand, aux branches basses, se dresse au bord du chemin.
+
+
+> monter
+Dans un arbre
+⟦gf576⟧Vous êtes à environ 3 mètres du sol, niché parmi de grosses branches. La branche la plus proche au-dessus de vous est hors de portée.
+⟦s12e1e⟧À côté de vous, sur la branche, se trouve un petit nid d'oiseau.
+⟦s1523e⟧Dans le nid repose un gros œuf incrusté de joyaux, sans doute chapardé par un oiseau chanteur en mal d'enfants. L'œuf est couvert de fines incrustations d'or et orné de lapis-lazuli et de nacre. Contrairement à la plupart des œufs, celui-ci est monté sur charnière et se ferme par un fermoir d'apparence délicate. L'œuf semble extrêmement fragile.
+
+
+> prendre l'œuf
+⟦g9070⟧Pris.
+
+
+> descendre
+Sentier forestier
+
+
+> s
+Au nord de la maison
+
+
+> est
+Derrière la maison
+⟦g9d5d⟧Vous êtes derrière la maison blanche. Un sentier s'enfonce dans la forêt vers l'est. Dans un coin de la maison, il y a une petite fenêtre qui est ⟦g9dab⟧entrouverte.
+
+
+> ouvre la fenêtre
+⟦s11638⟧Au prix d'un gros effort, vous ouvrez la fenêtre suffisamment pour pouvoir passer.
+
+
+> ouest
+Cuisine
+⟦ga77a⟧Vous êtes dans la cuisine de la maison blanche. Une table semble avoir servi récemment à préparer à manger. Un passage mène vers l'ouest et l'on distingue un escalier sombre qui monte. Une cheminée sombre descend et, à l'est, se trouve une petite fenêtre qui est ⟦ga7fb⟧ouverte.
+⟦s14078⟧Une bouteille est posée sur la table.
+⟦g984b⟧La bouteille en verre contient :
+⟦g9605⟧ Une quantité d'eau
+⟦s1158a⟧Sur la table se trouve un sac brun allongé, qui sent le piment fort.
+
+
+> ouvre le sac
+⟦g88a0⟧En ouvrant le sac brun, vous découvrez ⟦g9695⟧une gousse d'ail⟦g968c⟧, ⟦g9692⟧et ⟦g9695⟧un casse-croûte⟦g88b8⟧.
+
+
+> prends la gousse d'ail
+⟦g9070⟧Pris.
+
+
+> o
+Salon
+⟦gaab6⟧Vous êtes dans le salon. Il y a un passage à l'est⟦gab1f⟧, à l'ouest une porte en bois ornée d'étranges lettres gothiques, qui semble condamnée par des clous, ⟦gab50⟧une vitrine à trophées ⟦gabad⟧et un grand tapis oriental au centre de la pièce.
+⟦s15116⟧Au-dessus de la vitrine à trophées est accrochée une épée elfique d'une grande ancienneté.
+⟦s13248⟧Une lanterne en laiton à piles est posée sur la vitrine à trophées.
+
+
+> prends la lanterne
+⟦g9070⟧Pris.
+
+
+> prends l'épée
+⟦g9070⟧Pris.
+
+
+> ouvre la vitrine
+⟦g8875⟧C'est ouvert.
+
+
+> déplace le tapis
+⟦gaea9⟧Au prix d'un gros effort, le tapis est poussé sur le côté de la pièce, révélant le battant poussiéreux d'une trappe fermée.
+
+
+> ouvre la trappe
+⟦s12950⟧La trappe s'ouvre à contrecœur, révélant un escalier branlant qui s'enfonce dans les ténèbres.
+
+
+> allume la lanterne
+⟦g8437⟧La lanterne en laiton est maintenant allumée.
+
+
+> e
+Cuisine
+⟦s14078⟧Une bouteille est posée sur la table.
+⟦g984b⟧La bouteille en verre contient :
+⟦g9605⟧ Une quantité d'eau
+⟦g95de⟧Il y a un sac brun ici.
+⟦g984b⟧Le sac brun contient :
+⟦g9605⟧ Un casse-croûte
+
+
+> monte
+Grenier
+⟦s11b6a⟧Vous êtes au grenier. La seule issue est un escalier qui descend.
+⟦s12e96⟧Un gros rouleau de corde traîne dans un coin.
+⟦s144fa⟧Sur une table traîne un vilain couteau.
+
+
+> prends la corde
+⟦g9070⟧Pris.
+
+
+> prends le couteau
+⟦g9070⟧Pris.
+
+
+> descends
+Cuisine
+⟦s14078⟧Une bouteille est posée sur la table.
+⟦g984b⟧La bouteille en verre contient :
+⟦g9605⟧ Une quantité d'eau
+⟦g95de⟧Il y a un sac brun ici.
+⟦g984b⟧Le sac brun contient :
+⟦g9605⟧ Un casse-croûte
+
+
+> o
+Salon
+
+
+> descendre
+⟦gad4f⟧La trappe se referme avec fracas, et vous entendez quelqu'un la barricader.
+
+Cave
+⟦gace2⟧Vous êtes dans une cave sombre et humide. Un étroit passage part vers le nord et un boyau vers le sud. À l'ouest se dresse le bas d'une rampe métallique abrupte, impossible à escalader.
+⟦g108a4⟧Votre épée émet une faible lueur bleue.
+
+
+> nord
+Salle du troll
+⟦s11b88⟧Vous êtes dans une petite salle d'où partent des passages vers l'est et vers le sud, ainsi qu'un trou menaçant qui s'ouvre vers l'ouest. Des taches de sang et de profondes entailles (peut-être faites par une hache) balafrent les murs.
+⟦s140b2⟧Un troll à la mine patibulaire, brandissant une hache ensanglantée, bloque toutes les issues de la salle.
+⟦g10881⟧Votre épée s'est mise à briller très vivement.
+
+
+> tue le troll avec l'épée
+⟦m4cba⟧Vous chargez, mais le troll fait prestement un bond de côté.
+⟦m4ee0⟧Le coup formidable du troll vous fait tomber à genoux.
+
+
+> tue le troll avec l'épée
+⟦g1040d⟧Vous ne vous êtes pas encore remis du dernier coup : votre attaque est sans effet.
+⟦m4e78⟧La hache s'écrase contre la roche dans une gerbe d'étincelles !
+
+
+> tue le troll avec l'épée
+⟦m4ce8⟧Votre épée s'abat avec fracas et expédie le troll au pays des rêves.
+
+
+> tue le troll avec l'épée
+⟦g1048d⟧Puisqu'il est ⟦g10494⟧inconscient⟦g104a7⟧, le troll ne peut pas se défendre : il meurt.
+⟦g1062b⟧À peine le troll a-t-il rendu son dernier soupir qu'un nuage de sinistre brouillard noir l'enveloppe ; lorsque le brouillard se dissipe, la carcasse a disparu.
+⟦g108c6⟧Votre épée ne brille plus.
+
+
+> o
+Labyrinthe
+⟦s11d20⟧Vous êtes dans un dédale de petits passages tortueux, tous semblables.
+
+
+> s
+Labyrinthe
+⟦s11d20⟧Vous êtes dans un dédale de petits passages tortueux, tous semblables.
+
+
+> e
+Labyrinthe
+⟦s11d20⟧Vous êtes dans un dédale de petits passages tortueux, tous semblables.
+
+
+> h
+Labyrinthe
+⟦s11d46⟧Vous êtes dans un dédale de petits passages tortueux, tous semblables. Un squelette, sans doute les restes d'un aventurier malchanceux, gît ici.
+⟦s12e06⟧À côté du squelette gît un couteau rouillé.
+⟦s12730⟧La lanterne inutile de l'aventurier défunt se trouve ici.
+⟦g95de⟧Il y a un passe-partout ici.
+⟦s1121c⟧Une vieille bourse de cuir, gonflée de pièces, se trouve ici.
+
+
+> prends la bourse
+⟦g9070⟧Pris.
+
+
+> prends la clé
+⟦g995c⟧Votre fardeau est trop lourd.
+
+
+> so
+Labyrinthe
+⟦s11d20⟧Vous êtes dans un dédale de petits passages tortueux, tous semblables.
+
+
+> e
+Labyrinthe
+⟦s11d20⟧Vous êtes dans un dédale de petits passages tortueux, tous semblables.
+
+
+> s
+Labyrinthe
+⟦s11d20⟧Vous êtes dans un dédale de petits passages tortueux, tous semblables.
+⟦g108a4⟧Votre épée émet une faible lueur bleue.
+
+
+> se
+Salle du cyclope
+⟦gd194⟧Cette salle possède une sortie au nord-ouest et un escalier qui monte.
+⟦gd20b⟧Un cyclope, qui semble avoir une faim à manger un cheval (et a fortiori un simple aventurier), bloque l'escalier. À en juger par sa santé resplendissante et par les taches de sang sur les murs, vous devinez qu'il n'est pas très aimable, bien qu'il raffole des gens.
+⟦g10881⟧Votre épée s'est mise à briller très vivement.
+
+
+> ulysse
+⟦g87ca⟧Le cyclope, en entendant le nom de l'ennemi juré de son père, s'enfuit en défonçant le mur est de la salle.
+⟦g108c6⟧Votre épée ne brille plus.
+
+
+> e
+Passage étrange
+⟦s11daa⟧Vous êtes dans un long passage. À l'ouest se trouve une entrée. À l'est, une vieille porte en bois est percée d'une grande ouverture (à peu près à la taille d'un cyclope).
+
+
+> e
+Salon
+
+
+> mets la bourse dans la vitrine
+⟦g8b6d⟧C'est fait.
+
+
+> pose tout sauf la lanterne
+vilain couteau⟦g58cd⟧ : ⟦g7e7f⟧Posé.
+corde⟦g58cd⟧ : ⟦g7e7f⟧Posé.
+épée⟦g58cd⟧ : ⟦g7e7f⟧Posé.
+gousse d'ail⟦g58cd⟧ : ⟦g7e7f⟧Posé.
+œuf incrusté de joyaux⟦g58cd⟧ : ⟦g7e7f⟧Posé.
+
+
+> ouvre la trappe
+⟦s12950⟧La trappe s'ouvre à contrecœur, révélant un escalier branlant qui s'enfonce dans les ténèbres.
+
+
+> descends
+Cave
+
+
+> s
+À l'est du gouffre
+⟦s14896⟧Vous êtes au bord est d'un gouffre dont on ne voit pas le fond. Un étroit passage part vers le nord, et le sentier sur lequel vous vous trouvez continue vers l'est.
+
+
+> e
+Galerie
+⟦s11bfa⟧Vous êtes dans une galerie d'art. La plupart des tableaux ont été volés par des vandales au goût exquis. Les vandales sont repartis soit par la sortie nord, soit par la sortie ouest.
+⟦s12dc8⟧Heureusement, il vous reste une chance de jouer les vandales : sur le mur du fond est accroché un tableau d'une beauté sans égale.
+
+
+> prends le tableau
+⟦g9070⟧Pris.
+
+
+> n
+Atelier
+⟦s11c4e⟧Cette pièce semble avoir été l'atelier d'un artiste. Les murs et le sol sont éclaboussés de peinture de 69 couleurs différentes. Curieusement, rien de valeur n'est accroché ici. À l'extrémité sud de la pièce se trouve une porte ouverte (elle aussi couverte de peinture). Un conduit de cheminée sombre et étroit monte depuis l'âtre ; vous pourriez peut-être y grimper, mais il semble peu probable que vous puissiez en redescendre.
+⟦s1405a⟧Un petit bout de papier est sommairement fixé à un mur.
+
+
+> monte
+Cuisine
+⟦s14078⟧Une bouteille est posée sur la table.
+⟦g984b⟧La bouteille en verre contient :
+⟦g9605⟧ Une quantité d'eau
+⟦g95de⟧Il y a un sac brun ici.
+⟦g984b⟧Le sac brun contient :
+⟦g9605⟧ Un casse-croûte
+
+
+> o
+Salon
+⟦g95de⟧Il y a un œuf incrusté de joyaux ici.
+⟦g95de⟧Il y a une gousse d'ail ici.
+⟦g95de⟧Il y a une épée ici.
+⟦g95de⟧Il y a une corde ici.
+⟦g95de⟧Il y a un vilain couteau ici.
+⟦g97e9⟧Votre collection de trésors comprend :
+⟦g9605⟧ Une bourse de cuir pleine de pièces
+
+
+> mets le tableau dans la vitrine
+⟦g8b6d⟧C'est fait.
+
+
+> prends l'œuf
+⟦g9070⟧Pris.
+
+
+> prends le couteau
+⟦g9070⟧Pris.
+
+
+> prends la corde
+⟦g9070⟧Pris.
+
+
+> bas
+Cave
+
+
+> nord
+Salle du troll
+⟦g95de⟧Il y a une hache ensanglantée ici.
+
+
+> est
+Passage est-ouest
+⟦s11f78⟧Vous êtes dans un étroit passage est-ouest. À l'extrémité nord de la salle, un escalier étroit descend.
+
+
+> est
+Salle ronde
+⟦s11fa8⟧Vous êtes dans une salle circulaire en pierre d'où partent des passages dans toutes les directions. Plusieurs d'entre eux ont malheureusement été obstrués par des éboulements.
+
+
+> est
+Salle bruyante
+⟦gd356⟧Vous êtes dans une vaste salle dont le plafond reste invisible depuis le sol. Un passage étroit la traverse d'est en ouest et un escalier de pierre monte vers les hauteurs.⟦gd3b5⟧ Un grondement indéfinissable emplit la salle d'un vacarme assourdissant. Le son semble se répercuter sur tous les murs, au point qu'il devient difficile ne serait-ce que de penser.
+⟦s11606⟧Sur le sol gît un gros lingot de platine.
+
+
+> écho
+⟦gd59b⟧L'acoustique de la salle change subtilement.
+
+Salle bruyante
+⟦s11606⟧Sur le sol gît un gros lingot de platine.
+
+
+> prends le lingot
+⟦g9070⟧Pris.
+
+
+> o
+Salle ronde
+
+
+> o
+Passage est-ouest
+
+
+> o
+Salle du troll
+⟦g95de⟧Il y a une hache ensanglantée ici.
+
+
+> sud
+Cave
+
+
+> haut
+Salon
+⟦g95de⟧Il y a une gousse d'ail ici.
+⟦g95de⟧Il y a une épée ici.
+⟦g97e9⟧Votre collection de trésors comprend :
+⟦g9605⟧ Un tableau
+⟦g9605⟧ Une bourse de cuir pleine de pièces
+
+
+> mets le lingot dans la vitrine
+⟦g8b6d⟧C'est fait.
+
+
+> b
+Cave
+
+
+> n
+Salle du troll
+⟦g95de⟧Il y a une hache ensanglantée ici.
+
+
+> e
+Passage est-ouest
+
+
+> e
+Salle ronde
+
+
+> se
+Grotte aux gravures
+⟦s11472⟧Vous êtes entré dans une grotte basse d'où partent des passages vers le nord-ouest et vers l'est.
+⟦s13990⟧D'anciennes gravures ornent les murs.
+
+
+> e
+Salle du dôme
+⟦gbc1e⟧Vous êtes au bord d'un vaste dôme, qui forme le plafond d'une autre salle en contrebas. Une rampe en bois qui fait le tour du dôme vous préserve d'une chute vertigineuse.
+
+
+> attache la corde à la rampe
+⟦gfb16⟧La corde tombe dans le vide et s'arrête à trois mètres du sol.
+
+
+> descends
+Salle de la torche
+⟦gbb5b⟧C'est une grande salle dotée d'une porte imposante qui donne sur un escalier descendant. Au-dessus de vous s'élève un vaste dôme. Tout autour du bord du dôme (à six mètres de haut) court une rampe en bois. Au centre de la salle trône un piédestal de marbre blanc.
+⟦gbbde⟧Un bout de corde pend de la rampe, là-haut, et s'arrête à un mètre et demi au-dessus de votre tête.
+⟦s1408c⟧Sur le piédestal repose une torche enflammée, taillée dans l'ivoire.
+
+
+> prends la torche
+⟦g9070⟧Pris.
+
+
+> éteins la lanterne
+⟦g83f4⟧La lanterne en laiton est maintenant éteinte.
+
+
+> s
+Temple
+⟦s12080⟧Vous êtes à l'extrémité nord d'un vaste temple. Sur le mur est figure une inscription antique, sans doute une prière dans une langue depuis longtemps oubliée. Sous la prière, un escalier descend. Le mur ouest est en granit massif. Au nord, on sort de la salle en passant entre d'immenses piliers de marbre.
+⟦g95de⟧Il y a une cloche en laiton ici.
+
+
+> pose le couteau
+⟦g7e7f⟧Posé.
+
+
+> pose l'œuf
+⟦g7e7f⟧Posé.
+
+
+> pose la lanterne
+⟦g7e7f⟧Posé.
+
+
+> e
+Salle égyptienne
+⟦s12054⟧Cette salle ressemble à un tombeau égyptien. Un escalier monte vers l'ouest.
+⟦s136c8⟧Le cercueil en or massif qui servit à l'inhumation de Ramsès II est ici.
+
+
+> prends le cercueil
+⟦g9070⟧Pris.
+
+
+> o
+Temple
+⟦s1384c⟧Il y a ici une lanterne en laiton (à piles).
+⟦g95de⟧Il y a un œuf incrusté de joyaux ici.
+⟦g95de⟧Il y a un vilain couteau ici.
+⟦g95de⟧Il y a une cloche en laiton ici.
+
+
+> s
+Autel
+⟦s12108⟧Vous êtes à l'extrémité sud d'un vaste temple. Devant vous se dresse ce qui semble être un autel. Dans un coin, un petit trou dans le sol s'enfonce dans les ténèbres. Vous ne pourriez sans doute pas remonter par là.
+⟦s115d6⟧Aux deux extrémités de l'autel brûlent des bougies.
+⟦s11568⟧Sur l'autel repose un grand livre noir, ouvert à la page 569.
+
+
+> prie
+Forêt
+⟦s11ac4⟧Vous êtes dans une forêt, cerné d'arbres dans toutes les directions. À l'est, la lumière du soleil semble percer.
+
+
+> e
+Sentier forestier
+
+
+> s
+Au nord de la maison
+
+
+> e
+Derrière la maison
+
+
+> o
+Cuisine
+⟦s14078⟧Une bouteille est posée sur la table.
+⟦g984b⟧La bouteille en verre contient :
+⟦g9605⟧ Une quantité d'eau
+⟦g95de⟧Il y a un sac brun ici.
+⟦g984b⟧Le sac brun contient :
+⟦g9605⟧ Un casse-croûte
+
+
+> o
+Salon
+⟦g95de⟧Il y a une gousse d'ail ici.
+⟦g95de⟧Il y a une épée ici.
+⟦g97e9⟧Votre collection de trésors comprend :
+⟦g9605⟧ Un lingot de platine
+⟦g9605⟧ Un tableau
+⟦g9605⟧ Une bourse de cuir pleine de pièces
+
+
+> ouvre le cercueil
+⟦g888f⟧Le cercueil en or s'ouvre.
+Un sceptre, peut-être celui de l'Égypte ancienne en personne, repose dans le cercueil. Il est orné d'émaux colorés et s'effile en une pointe acérée.
+
+
+> prends le sceptre
+⟦g9070⟧Pris.
+
+
+> mets le cercueil dans la vitrine
+⟦g8b6d⟧C'est fait.
+
+
+> mets le sceptre dans la vitrine
+⟦g8b6d⟧C'est fait.
+
+
+> d
+Cave
+
+
+> n
+Salle du troll
+⟦g95de⟧Il y a une hache ensanglantée ici.
+
+
+> e
+Passage est-ouest
+
+
+> e
+Salle ronde
+
+
+> n
+Passage nord-sud
+⟦s12030⟧Vous êtes dans un haut passage nord-sud, qui bifurque vers le nord-est.
+
+
+> ne
+Canyon profond
+⟦gd5c7⟧Vous êtes au bord sud d'un canyon profond. Des passages partent vers l'est, le nord-ouest et le sud-ouest. Un escalier descend.⟦gd649⟧ Vous entendez, en contrebas, le bruit d'une eau qui coule.
+
+
+> e
+Barrage
+⟦gc117⟧Vous vous tenez au sommet du Barrage n° 3 de régulation des crues, qui fut, en des temps fort lointains, une attraction touristique très courue. Des chemins partent vers le nord, le sud et l'ouest, et l'on peut descendre en jouant des pieds et des mains.
+⟦gc248⟧Les vannes du barrage sont fermées. Derrière le barrage s'étend un vaste réservoir. L'eau déborde par-dessus le sommet du barrage, aujourd'hui abandonné.
+⟦gc29c⟧Il y a ici un panneau de commande sur lequel est monté un gros boulon métallique. Juste au-dessus du boulon se trouve une petite bulle en plastique vert⟦gc2f5⟧.
+
+
+> n
+Hall du barrage
+⟦s1216a⟧Cette pièce semble avoir servi de salle d'attente aux groupes qui visitaient le barrage. Des portes ouvertes marquées « Privé » mènent au nord et à l'est et un chemin part vers le sud en longeant le sommet du barrage.
+⟦s1391a⟧Quelques guides intitulés « Barrage n° 3 de régulation des crues » sont posés sur le comptoir d'accueil.
+⟦s1386a⟧Il y a ici une pochette d'allumettes dont la couverture proclame : « Visitez le magnifique BRC n° 3 ».
+
+
+> prends les allumettes
+⟦g9070⟧Pris.
+
+
+> n
+Salle de maintenance
+⟦s121c4⟧Cette pièce semble avoir été la salle de maintenance du Barrage n° 3 de régulation des crues. Elle a manifestement été mise à sac récemment, car la plupart des équipements de valeur ont disparu. Sur le mur, devant vous, se trouve une rangée de boutons : un bleu, un jaune, un brun et un rouge. Des portes s'ouvrent à l'ouest et au sud.
+⟦g95de⟧Il y a une clé à molette ici.
+⟦s1396e⟧Il y a ici un objet qui ressemble à un tube de dentifrice.
+⟦g95de⟧Il y a un tournevis ici.
+⟦g95de⟧Il y a un ensemble de caisses à outils ici.
+
+
+> prends la clé à molette
+⟦g9070⟧Pris.
+
+
+> prends le tournevis
+⟦g9070⟧Pris.
+
+
+> appuie sur le bouton jaune
+⟦gc6a1⟧Clic.
+
+
+> s
+Hall du barrage
+⟦s1391a⟧Quelques guides intitulés « Barrage n° 3 de régulation des crues » sont posés sur le comptoir d'accueil.
+
+
+> s
+Barrage
+⟦gc117⟧Vous vous tenez au sommet du Barrage n° 3 de régulation des crues, qui fut, en des temps fort lointains, une attraction touristique très courue. Des chemins partent vers le nord, le sud et l'ouest, et l'on peut descendre en jouant des pieds et des mains.
+⟦gc248⟧Les vannes du barrage sont fermées. Derrière le barrage s'étend un vaste réservoir. L'eau déborde par-dessus le sommet du barrage, aujourd'hui abandonné.
+⟦gc29c⟧Il y a ici un panneau de commande sur lequel est monté un gros boulon métallique. Juste au-dessus du boulon se trouve une petite bulle en plastique vert⟦gc2e6⟧, qui luit paisiblement⟦gc2f5⟧.
+
+
+> tourne le boulon avec la clé à molette
+⟦gc355⟧Les vannes s'ouvrent et l'eau se déverse à travers le barrage.
+
+
+> pose la clé à molette
+⟦g7e7f⟧Posé.
+
+
+> o
+Réservoir sud
+⟦gc975⟧Vous êtes dans une longue salle. Au nord s'étend un grand lac, trop profond pour être traversé. Vous remarquez cependant que le niveau de l'eau semble baisser à vive allure. Bientôt, il sera peut-être possible de rejoindre l'autre rive à partir d'ici.⟦gca9c⟧
+Un sentier longe le ruisseau vers l'est ou l'ouest, un chemin escarpé grimpe vers le sud-ouest au bord d'un gouffre et un sentier s'enfonce dans un canyon au sud-est.
+
+
+> attends
+⟦g9297⟧Le temps passe...
+
+
+> attends
+⟦g9297⟧Le temps passe...
+⟦gc59b⟧Le niveau de l'eau est maintenant assez bas ici, et vous pourriez facilement passer de l'autre côté.
+
+
+> n
+Réservoir
+⟦gcb5a⟧Vous êtes sur ce qui était autrefois un grand lac, et qui n'est plus qu'un vaste tas de boue. Il y a des « rives » au nord et au sud.
+⟦s151e4⟧À demi enfouie dans la boue gît une vieille malle qui regorge de bijoux.
+
+
+> prends la malle
+⟦g9070⟧Pris.
+
+
+> n
+Réservoir nord
+⟦gcbf9⟧Vous êtes dans une vaste salle caverneuse, dont la partie sud était autrefois un lac. Mais depuis que le niveau de l'eau a baissé, il n'y coule plus qu'un large ruisseau.⟦gcd09⟧
+Un escalier gluant quitte la salle vers le nord.
+⟦g95de⟧Il y a une pompe à air manuelle ici.
+
+
+> prends la pompe
+⟦g9070⟧Pris.
+
+
+> n
+Salle de l'Atlantide
+⟦s11f4c⟧Vous êtes dans une salle antique, longtemps engloutie sous les eaux. Une sortie s'ouvre au sud et un escalier monte.
+⟦s115b4⟧Sur le rivage repose le trident de cristal de Poséidon en personne.
+
+
+> prends le trident
+⟦g9070⟧Pris.
+
+
+> monte
+Grotte
+⟦s11e60⟧Vous êtes dans une minuscule grotte, avec des entrées à l'ouest et au nord et un escalier qui descend.
+
+
+> n
+Salle du miroir
+⟦gb98b⟧Vous êtes dans une grande salle carrée au plafond très haut. Sur le mur sud se dresse un immense miroir qui occupe le mur tout entier. Des issues s'ouvrent sur les trois autres côtés de la salle.
+
+
+> n
+Passage froid
+⟦s11eb4⟧Vous êtes dans un couloir froid et humide, où un long passage est-ouest se transforme en un chemin qui part vers le sud.
+
+
+> o
+Salle du toboggan
+⟦s1250c⟧Vous êtes dans une petite salle qui semble avoir fait partie d'une mine de charbon. Sur le mur sud, les mots « Mur de granit » sont gravés dans la roche. À l'est s'étend un long passage et un toboggan métallique abrupt descend en spirale. Au nord, il y a une petite ouverture.
+
+
+> descends
+Cave
+
+
+> monte
+Salon
+⟦g95de⟧Il y a une gousse d'ail ici.
+⟦g95de⟧Il y a une épée ici.
+⟦g97e9⟧Votre collection de trésors comprend :
+⟦g9605⟧ Un sceptre
+⟦g9605⟧ Un cercueil en or
+⟦g9605⟧ Un lingot de platine
+⟦g9605⟧ Un tableau
+⟦g9605⟧ Une bourse de cuir pleine de pièces
+
+
+> mets la malle dans la vitrine
+⟦g8b6d⟧C'est fait.
+
+
+> mets le trident dans la vitrine
+⟦g8b6d⟧C'est fait.
+
+
+> prends le sceptre
+⟦g9070⟧Pris.
+
+
+> d
+Cave
+
+
+> n
+Salle du troll
+⟦g95de⟧Il y a une hache ensanglantée ici.
+
+
+> e
+Passage est-ouest
+
+
+> e
+Salle ronde
+
+
+> n
+Passage nord-sud
+
+
+> ne
+Canyon profond
+⟦gd5c7⟧Vous êtes au bord sud d'un canyon profond. Des passages partent vers l'est, le nord-ouest et le sud-ouest. Un escalier descend.⟦gd649⟧ Vous entendez, en contrebas, le bruit d'une eau qui coule.
+
+
+> e
+Barrage
+⟦g95de⟧Il y a une clé à molette ici.
+
+
+> d
+Pied du barrage
+⟦s14976⟧Vous êtes au pied du Barrage n° 3 de régulation des crues, qui vous domine au nord. La Rivière glaciale coule ici. Le long de la rivière se dressent les falaises blanches, qui semblent former des murailles géantes s'étirant du nord au sud sur ses rives, tandis qu'elle serpente vers l'aval.
+⟦s13896⟧Il y a ici un tas de plastique plié, muni d'une petite valve.
+
+
+> gonfle le tas de plastique avec la pompe
+⟦gf465⟧Le bateau se gonfle et semble en état de naviguer.
+⟦gf481⟧Une étiquette beige traîne au fond du bateau.
+
+
+> pose la pompe
+⟦g7e7f⟧Posé.
+
+
+> mets le sceptre dans le bateau
+⟦g8b6d⟧C'est fait.
+
+
+> monte dans le bateau
+⟦g7945⟧Vous êtes maintenant dans le bateau magique.
+
+
+> lance le bateau
+Rivière glaciale⟦g9516⟧, dans le bateau magique
+⟦s14a0a⟧Vous êtes sur la Rivière glaciale, à proximité du barrage. Ici, la rivière coule paisiblement. Il y a un point d'accostage sur la rive ouest.
+⟦g984b⟧Le bateau magique contient :
+⟦g9605⟧ Un sceptre
+⟦g9605⟧ Une étiquette beige
+
+
+> attends
+⟦g9297⟧Le temps passe...
+⟦gf15d⟧Le courant vous emporte vers l'aval.
+
+Rivière glaciale⟦g9516⟧, dans le bateau magique
+⟦s13472⟧La rivière fait un coude ici, ce qui empêche de voir le barrage. Les falaises blanches se dressent sur la rive est, et de gros rochers interdisent d'accoster sur la rive ouest.
+⟦g984b⟧Le bateau magique contient :
+⟦g9605⟧ Un sceptre
+⟦g9605⟧ Une étiquette beige
+
+
+> attends
+⟦g9297⟧Le temps passe...
+
+
+> attends
+⟦g9297⟧Le temps passe...
+⟦gf15d⟧Le courant vous emporte vers l'aval.
+
+Rivière glaciale⟦g9516⟧, dans le bateau magique
+⟦s134c0⟧La rivière descend ici dans une vallée. Une étroite plage borde la rive ouest, au pied des falaises. Au loin, on entend un faible grondement.
+⟦g984b⟧Le bateau magique contient :
+⟦g9605⟧ Un sceptre
+⟦g9605⟧ Une étiquette beige
+
+
+> attends
+⟦g9297⟧Le temps passe...
+⟦gf15d⟧Le courant vous emporte vers l'aval.
+
+Rivière glaciale⟦g9516⟧, dans le bateau magique
+⟦s1350c⟧Le courant est plus rapide ici, et le bruit qui monte devant vous ressemble à celui d'eaux tumultueuses. Sur la rive est s'étend une plage de sable. On distingue aussi un petit bout de plage au pied des falaises, sur la rive ouest.
+⟦s138ba⟧Il y a ici une bouée rouge (sans doute un avertissement).
+⟦g984b⟧Le bateau magique contient :
+⟦g9605⟧ Un sceptre
+⟦g9605⟧ Une étiquette beige
+
+
+> prends la bouée
+⟦g9070⟧Pris.
+
+
+> est
+⟦g9b37⟧Le bateau magique s'immobilise sur le rivage.
+
+Plage de sable⟦g9516⟧, dans le bateau magique
+⟦s14b2e⟧Vous êtes sur une vaste plage de sable, sur la rive est de la rivière, qui coule ici à vive allure. Un sentier longe la rivière vers le sud, et au nord-est, un passage est à demi enseveli sous le sable.
+⟦g95de⟧Il y a une pelle ici.⟦g9647⟧ (hors du bateau magique)
+⟦s1474c⟧ ⟦g984b⟧Le bateau magique contient :
+⟦g9605⟧ Un sceptre
+⟦g9605⟧ Une étiquette beige
+
+
+> débarque
+(bateau magique)
+⟦g7e12⟧Vous voilà de nouveau sur vos deux pieds.
+
+
+> prends le sceptre
+⟦g9070⟧Pris.
+
+
+> prends la pelle
+⟦g9070⟧Pris.
+
+
+> ne
+Grotte sablonneuse
+⟦s1226c⟧Vous êtes dans une grotte remplie de sable, dont la sortie se trouve au sud-ouest.
+
+
+> creuse dans le sable avec la pelle
+⟦s12b4e⟧On dirait que vous êtes en train de creuser un trou.
+
+
+> creuse dans le sable avec la pelle
+⟦s12d06⟧Le trou s'approfondit, mais c'est à peu près tout.
+
+
+> creuse dans le sable avec la pelle
+⟦s15004⟧Vous êtes cerné de toutes parts par une muraille de sable.
+
+
+> creuse dans le sable avec la pelle
+⟦gf543⟧Vous apercevez un scarabée, là, dans le sable.
+
+
+> prends le scarabée
+⟦g9070⟧Pris.
+
+
+> pose la pelle
+⟦g7e7f⟧Posé.
+
+
+> so
+Plage de sable
+⟦g95de⟧Il y a un bateau magique ici.
+⟦g984b⟧Le bateau magique contient :
+⟦g9605⟧ Une étiquette beige
+
+
+> s
+Rivage
+⟦s14ad8⟧Vous êtes sur la rive est de la rivière. L'eau semble ici quelque peu traîtresse. Un sentier va du nord au sud, son extrémité sud disparaissant vite derrière un coude serré.
+
+
+> ouvre la bouée
+⟦g88a0⟧En ouvrant la bouée rouge, vous découvrez ⟦g9695⟧une grosse émeraude⟦g88b8⟧.
+
+
+> prends l'émeraude
+⟦g9070⟧Pris.
+
+
+> pose la bouée
+⟦g7e7f⟧Posé.
+
+
+> s
+Chutes d'Aragain
+⟦geef9⟧Vous êtes au sommet des chutes d'Aragain, une cascade gigantesque d'environ 140 mètres de haut. Le seul chemin part de l'extrémité nord.
+⟦gef59⟧Un splendide arc-en-ciel se dessine au-dessus des chutes, vers l'ouest.
+
+
+> agite le sceptre
+⟦gee11⟧Soudain, l'arc-en-ciel semble se solidifier et devenir, j'ose l'avancer, praticable à pied (je crois que ce sont l'escalier et la rampe qui m'ont mis la puce à l'oreille).
+
+
+> o
+Sur l'arc-en-ciel
+⟦s14b8e⟧Vous êtes au sommet d'un arc-en-ciel (je parie que vous n'auriez jamais cru marcher un jour sur un arc-en-ciel), avec une vue magnifique sur les chutes. Ici, l'arc-en-ciel s'étend d'est en ouest.
+
+
+> o
+Pied de l'arc-en-ciel
+⟦s14be8⟧Vous êtes sur une petite plage rocailleuse, là où la Rivière glaciale poursuit son cours au-delà des chutes. La plage est étroite, coincée par les falaises blanches. Le canyon de la rivière s'ouvre ici, et la lumière du soleil y tombe d'en haut. À l'est, un arc-en-ciel enjambe les chutes et un étroit sentier continue vers le sud-ouest.
+⟦s1161a⟧Au pied de l'arc-en-ciel se trouve un pot d'or.
+
+
+> prends le pot d'or
+⟦g9070⟧Pris.
+
+
+> so
+Fond du canyon
+⟦s14c84⟧Vous êtes au pied des parois du canyon de la rivière, qui semblent ici pouvoir s'escalader. En contrebas s'écoule la plus faible part des eaux des chutes d'Aragain. Au nord part un sentier étroit.
+
+
+> monte
+Corniche rocheuse
+⟦s14cdc⟧Vous êtes sur une corniche, à mi-hauteur de la paroi du canyon de la rivière. D'ici, vous voyez que le flot principal des chutes d'Aragain serpente dans un passage où il vous est impossible de pénétrer. Sous vos pieds s'étend le fond du canyon. Au-dessus de vous, la falaise continue et semble pouvoir s'escalader.
+
+
+> monte
+Vue sur le canyon
+⟦s14d5c⟧Vous êtes au sommet du Grand Canyon, sur sa paroi ouest. D'ici, la vue est merveilleuse sur le canyon et sur une partie de la Rivière glaciale, en amont. De l'autre côté du canyon, à l'est, les parois des falaises blanches rejoignent les puissants remparts des monts Flathead. En remontant le canyon vers le nord, on aperçoit les chutes d'Aragain, arc-en-ciel compris. La puissante Rivière glaciale jaillit d'une vaste caverne obscure. À l'ouest et au sud s'étend une immense forêt, sur des lieues à la ronde. Un sentier mène vers le nord-ouest. On peut descendre dans le canyon depuis cet endroit.
+
+
+> no
+Clairière
+⟦s14868⟧Vous êtes dans une petite clairière, sur un sentier forestier bien tracé qui s'étend vers l'est et vers l'ouest.
+
+
+> o
+Derrière la maison
+
+
+> o
+Cuisine
+⟦s14078⟧Une bouteille est posée sur la table.
+⟦g984b⟧La bouteille en verre contient :
+⟦g9605⟧ Une quantité d'eau
+⟦g95de⟧Il y a un sac brun ici.
+⟦g984b⟧Le sac brun contient :
+⟦g9605⟧ Un casse-croûte
+
+
+> o
+Salon
+⟦g95de⟧Il y a une gousse d'ail ici.
+⟦g95de⟧Il y a une épée ici.
+⟦g97e9⟧Votre collection de trésors comprend :
+⟦g9605⟧ Un trident de cristal
+⟦g9605⟧ Une malle de bijoux
+⟦g9605⟧ Un cercueil en or
+⟦g9605⟧ Un lingot de platine
+⟦g9605⟧ Un tableau
+⟦g9605⟧ Une bourse de cuir pleine de pièces
+
+
+> mets l'émeraude dans la vitrine
+⟦g8b6d⟧C'est fait.
+
+
+> mets le scarabée dans la vitrine
+⟦g8b6d⟧C'est fait.
+
+
+> mets le pot dans la vitrine
+⟦g8b6d⟧C'est fait.
+
+
+> mets le sceptre dans la vitrine
+⟦g8b6d⟧C'est fait.
+
+
+> pose le tournevis
+⟦g7e7f⟧Posé.
+
+
+> d
+Cave
+
+
+> n
+Salle du troll
+⟦g95de⟧Il y a une hache ensanglantée ici.
+
+
+> e
+Passage est-ouest
+
+
+> e
+Salle ronde
+
+
+> se
+Grotte aux gravures
+⟦s13990⟧D'anciennes gravures ornent les murs.
+
+
+> e
+Salle du dôme
+
+
+> d
+Salle de la torche
+
+
+> s
+Temple
+⟦s1384c⟧Il y a ici une lanterne en laiton (à piles).
+⟦g95de⟧Il y a un œuf incrusté de joyaux ici.
+⟦g95de⟧Il y a un vilain couteau ici.
+⟦g95de⟧Il y a une cloche en laiton ici.
+
+
+> prends la cloche
+⟦g9070⟧Pris.
+
+
+> prends la lanterne
+⟦g9070⟧Pris.
+
+
+> prends l'œuf
+⟦g9070⟧Pris.
+
+
+> s
+Autel
+⟦s115d6⟧Aux deux extrémités de l'autel brûlent des bougies.
+⟦s11568⟧Sur l'autel repose un grand livre noir, ouvert à la page 569.
+
+
+> prends le livre
+⟦g9070⟧Pris.
+
+
+> prends les bougies
+⟦g9070⟧Pris.
+
+
+> d
+Grotte
+⟦s11e84⟧Vous êtes dans une minuscule grotte, avec des entrées à l'ouest et au nord et un escalier sombre et inquiétant qui descend.
+
+
+> d
+Entrée des Enfers
+⟦gbd10⟧Vous vous trouvez devant un vaste portail, sur lequel on peut lire :
+
+  Laissez toute espérance, vous qui entrez ici !
+
+La porte est ouverte ; au-delà, vous apercevez un paysage de désolation, avec dans un coin un monceau de corps mutilés. On entend des milliers de voix se lamenter sur quelque destin hideux.
+⟦gbdb6⟧Des esprits maléfiques barrent le passage de la porte et accueillent par des ricanements vos tentatives pour le franchir.
+
+
+> sonne la cloche
+⟦gbe49⟧La cloche, soudain chauffée au rouge, vous échappe et tombe par terre. Les spectres, comme paralysés, cessent leurs railleries et se tournent lentement vers vous. Sur leurs visages livides se dessine l'expression d'une terreur depuis longtemps oubliée.
+⟦gbed5⟧Dans la confusion, les bougies vous échappent et tombent par terre (elles se sont éteintes).
+
+
+> prends les bougies
+⟦g9070⟧Pris.
+
+
+> allume une allumette
+⟦ge53a⟧L'une des allumettes s'enflamme.
+
+
+> allume les bougies avec l'allumette
+⟦ge769⟧Les bougies sont ⟦ge77c⟧allumées.
+⟦gc005⟧Les flammes vacillent follement et semblent danser. La terre tremble sous vos pieds, et vos jambes manquent de se dérober. Les esprits se recroquevillent devant votre pouvoir surnaturel.
+⟦ge60f⟧L'allumette s'est éteinte.
+
+
+> lis le livre
+⟦gbf34⟧Chaque mot de la prière se répercute dans la salle en un vacarme assourdissant. Alors que le dernier mot s'éteint, une voix puissante et impérieuse retentit : « Arrière, démons ! » Un hurlement à vous glacer le sang emplit la caverne, et les esprits, sentant une puissance supérieure, s'enfuient à travers les murs.
+
+
+> s
+Pays des morts
+⟦s113e8⟧Vous voici au Pays des morts-vivants. On entend des milliers d'âmes perdues pleurer et gémir. Dans un coin s'entassent les restes de dizaines d'aventuriers qui vous ont précédé, moins chanceux que vous. Un passage part vers le nord.
+⟦s151a0⟧Dans un coin de la salle gît un crâne de cristal magnifiquement sculpté. Il semble vous adresser un sourire plutôt mauvais.
+
+
+> prends le crâne
+⟦g9070⟧Pris.
+
+
+> n
+Entrée des Enfers
+⟦s11556⟧Sur le sol gît une cloche chauffée au rouge.
+
+
+> monte
+Grotte
+⟦ge8f1⟧Une rafale de vent souffle vos bougies !
+
+
+> n
+Salle du miroir
+⟦gb98b⟧Vous êtes dans une grande salle carrée au plafond très haut. Sur le mur sud se dresse un immense miroir qui occupe le mur tout entier. Des issues s'ouvrent sur les trois autres côtés de la salle.
+
+
+> n
+Passage étroit
+⟦s11eec⟧Vous êtes dans un couloir long et étroit, où un long passage nord-sud se resserre encore sur une courte distance.
+
+
+> n
+Salle ronde
+
+
+> o
+Passage est-ouest
+
+
+> o
+Salle du troll
+⟦g95de⟧Il y a une hache ensanglantée ici.
+
+
+> s
+Cave
+
+
+> monte
+Salon
+⟦g95de⟧Il y a un tournevis ici.
+⟦g95de⟧Il y a une gousse d'ail ici.
+⟦g95de⟧Il y a une épée ici.
+⟦g97e9⟧Votre collection de trésors comprend :
+⟦g9605⟧ Un sceptre
+⟦g9605⟧ Un pot d'or
+⟦g9605⟧ Un beau scarabée orné de joyaux
+⟦g9605⟧ Une grosse émeraude
+⟦g9605⟧ Un trident de cristal
+⟦g9605⟧ Une malle de bijoux
+⟦g9605⟧ Un cercueil en or
+⟦g9605⟧ Un lingot de platine
+⟦g9605⟧ Un tableau
+⟦g9605⟧ Une bourse de cuir pleine de pièces
+
+
+> mets le crâne dans la vitrine
+⟦g8b6d⟧C'est fait.
+
+
+> pose le livre
+⟦g7e7f⟧Posé.
+
+
+> pose les bougies
+⟦g7e7f⟧Posé.
+
+
+> pose les allumettes
+⟦g7e7f⟧Posé.
+
+
+> pose l'œuf
+⟦g7e7f⟧Posé.
+
+
+> prends l'ail
+⟦g9070⟧Pris.
+
+
+> prends le tournevis
+⟦g9070⟧Pris.
+
+
+> d
+Cave
+
+
+> n
+Salle du troll
+⟦g95de⟧Il y a une hache ensanglantée ici.
+
+
+> e
+Passage est-ouest
+
+
+> e
+Salle ronde
+
+
+> s
+Passage étroit
+
+
+> s
+Salle du miroir
+
+
+> frotte le miroir
+⟦gba77⟧Un grondement monte des profondeurs de la terre et la salle tremble.
+
+
+> n
+Passage froid
+
+
+> o
+Salle du toboggan
+
+
+> n
+Entrée de la mine
+⟦s14e9e⟧Vous vous tenez à l'entrée de ce qui fut peut-être une mine de charbon. Le puits s'enfonce dans la paroi ouest et une autre sortie se trouve à l'extrémité sud de la salle.
+
+
+> o
+Salle grinçante
+⟦s14eec⟧Vous êtes dans une petite salle. D'étranges couinements proviennent du passage, à l'extrémité nord. Vous pouvez aussi vous échapper vers l'est.
+
+
+> n
+Salle des chauves-souris
+⟦geae1⟧Vous êtes dans une petite pièce dont les seules portes donnent à l'est et au sud.
+⟦s13834⟧Il y a ici une exquise figurine de jade.
+⟦gea71⟧Dans un coin de la pièce, accrochée au plafond, se trouve une grande chauve-souris vampire, visiblement dérangée, qui se bouche le nez.
+
+
+> prends la figurine
+⟦g9070⟧Pris.
+
+
+> e
+Salle du puits
+⟦s1228e⟧Vous êtes dans une vaste salle au centre de laquelle un petit puits s'enfonce à travers le sol, vers les ténèbres. Des sorties s'ouvrent à l'ouest et au nord. Au-dessus du puits a été construite une armature métallique, à laquelle est fixée une lourde chaîne de fer.
+⟦s11540⟧Au bout de la chaîne est accroché un panier.
+
+
+> mets la torche dans le panier
+⟦g8b6d⟧C'est fait.
+
+
+> mets le tournevis dans le panier
+⟦g8b6d⟧C'est fait.
+
+
+> allume la lanterne
+⟦g8437⟧La lanterne en laiton est maintenant allumée.
+
+
+> n
+Salle nauséabonde
+⟦s1230e⟧Vous êtes dans une petite pièce quelconque. Pourtant, une odeur infecte semble monter d'un petit escalier qui descend. Au sud s'ouvre un tunnel étroit.
+
+
+> d
+Salle du gaz
+⟦s1235a⟧Vous êtes dans une petite pièce qui empeste le gaz de houille. Quelques marches permettent de monter et un tunnel étroit part vers l'est.
+⟦g95de⟧Il y a un bracelet incrusté de saphirs ici.
+
+
+> prends le bracelet
+⟦g9070⟧Pris.
+
+
+> e
+Mine de charbon
+⟦s124f2⟧Vous êtes dans une partie quelconque d'une mine de charbon.
+
+
+> ne
+Mine de charbon
+⟦s124f2⟧Vous êtes dans une partie quelconque d'une mine de charbon.
+
+
+> se
+Mine de charbon
+⟦s124f2⟧Vous êtes dans une partie quelconque d'une mine de charbon.
+
+
+> so
+Mine de charbon
+⟦s124f2⟧Vous êtes dans une partie quelconque d'une mine de charbon.
+
+
+> d
+Haut de l'échelle
+⟦s1239a⟧Vous êtes dans une toute petite pièce. Dans un coin, une échelle en bois branlante descend. Il n'est peut-être pas trop risqué de l'emprunter. Il y a aussi un escalier qui monte.
+
+
+> d
+Bas de l'échelle
+⟦s123ea⟧Vous êtes dans une pièce assez large. D'un côté se trouve le pied d'une étroite échelle en bois. Des passages quittent la pièce vers l'ouest et vers le sud.
+
+
+> s
+Cul-de-sac
+⟦s114b0⟧Vous êtes arrivé dans un cul-de-sac de la mine.
+⟦g95de⟧Il y a un petit tas de charbon ici.
+
+
+> prends le charbon
+⟦g9070⟧Pris.
+
+
+> n
+Bas de l'échelle
+
+
+> monte
+Haut de l'échelle
+
+
+> monte
+Mine de charbon
+
+
+> n
+Mine de charbon
+
+
+> e
+Mine de charbon
+
+
+> s
+Mine de charbon
+
+
+> n
+Salle du gaz
+
+
+> monte
+Salle nauséabonde
+
+
+> s
+Salle du puits
+⟦s11540⟧Au bout de la chaîne est accroché un panier.
+⟦g984b⟧Le panier contient :
+⟦g9605⟧ Un tournevis
+⟦g9605⟧ Une torche⟦g9610⟧ (allumée)
+⟦gd815⟧Un individu peu recommandable, muni d'un grand sac, vient de traverser la pièce. Au passage, il a discrètement subtilisé quelques objets de valeur ⟦gd86e⟧en votre possession⟦gd877⟧, en marmonnant quelque chose comme « Faire à autrui avant qu'autrui... »
+
+
+> mets le charbon dans le panier
+⟦g8b6d⟧C'est fait.
+
+
+> descends le panier
+⟦ga510⟧Le panier descend jusqu'au fond du puits.
+
+
+> n
+Salle nauséabonde
+
+
+> d
+Salle du gaz
+
+
+> e
+Mine de charbon
+
+
+> ne
+Mine de charbon
+
+
+> se
+Mine de charbon
+
+
+> so
+Mine de charbon
+
+
+> d
+Haut de l'échelle
+
+
+> d
+Bas de l'échelle
+
+
+> o
+Salle des poutres
+⟦s1242c⟧Vous êtes dans un passage long et étroit, encombré de poutres brisées. Un large passage arrive de l'est et se transforme, à l'extrémité ouest de la salle, en un boyau très étroit. Un fort courant d'air souffle de l'ouest.
+⟦g95de⟧Il y a une poutre brisée ici.
+
+
+> pose tout
+gousse d'ail⟦g58cd⟧ : ⟦g7e7f⟧Posé.
+lanterne en laiton⟦g58cd⟧ : ⟦g7e7f⟧Posé.
+
+
+> o
+Salle des courants d'air
+⟦s12496⟧Vous êtes dans une petite pièce pleine de courants d'air, où aboutit le fond d'un long puits. Au sud part un couloir et, à l'est, un passage très étroit. Dans le puits, on aperçoit une lourde chaîne de fer.
+⟦s11540⟧Au bout de la chaîne est accroché un panier.
+⟦g984b⟧Le panier contient :
+⟦g9605⟧ Un petit tas de charbon
+⟦g9605⟧ Un tournevis
+⟦g9605⟧ Une torche⟦g9610⟧ (allumée)
+
+
+> prends le charbon
+⟦g9070⟧Pris.
+
+
+> prends le tournevis
+⟦g9070⟧Pris.
+
+
+> prends la torche
+⟦g9070⟧Pris.
+
+
+> s
+Salle de la machine
+⟦geb21⟧Vous êtes dans une grande pièce froide dont l'unique sortie se trouve au nord. Dans un coin se dresse une machine qui évoque un sèche-linge. Sur sa façade, un interrupteur porte l'inscription « MARCHE ». Cet interrupteur ne semble manipulable par aucune main humaine (à moins d'avoir des doigts d'environ 2 millimètres sur 6). L'avant de la machine est muni d'un grand couvercle, actuellement ⟦gebf9⟧fermé.
+
+
+> ouvre le couvercle
+⟦gec4c⟧Le couvercle s'ouvre.
+
+
+> mets le charbon dans la machine
+⟦g8b6d⟧C'est fait.
+
+
+> ferme le couvercle
+⟦gec64⟧Le couvercle se referme.
+
+
+> tourne l'interrupteur avec le tournevis
+⟦gecd5⟧La machine prend vie (au sens figuré) dans un déploiement éblouissant de lumières colorées et de bruits étranges. Au bout de quelques instants, l'agitation retombe.
+
+
+> ouvre le couvercle
+⟦gec2d⟧Le couvercle s'ouvre et révèle ⟦g9695⟧un énorme diamant.
+
+
+> prends le diamant
+⟦g9070⟧Pris.
+
+
+> n
+Salle des courants d'air
+⟦s11540⟧Au bout de la chaîne est accroché un panier.
+
+
+> mets le diamant dans le panier
+⟦g8b6d⟧C'est fait.
+
+
+> mets la torche dans le panier
+⟦g8b6d⟧C'est fait.
+
+
+> mets le tournevis dans le panier
+⟦g8b6d⟧C'est fait.
+
+
+> e
+Salle des poutres
+⟦s1384c⟧Il y a ici une lanterne en laiton (à piles).
+⟦g95de⟧Il y a une gousse d'ail ici.
+⟦g95de⟧Il y a une poutre brisée ici.
+
+
+> prends tout
+lanterne en laiton⟦g58cd⟧ : ⟦g9070⟧Pris.
+gousse d'ail⟦g58cd⟧ : ⟦g9070⟧Pris.
+poutre brisée⟦g58cd⟧ : ⟦g9070⟧Pris.
+
+
+> e
+Bas de l'échelle
+
+
+> monte
+Haut de l'échelle
+
+
+> monte
+Mine de charbon
+
+
+> n
+Mine de charbon
+
+
+> e
+Mine de charbon
+
+
+> s
+Mine de charbon
+
+
+> n
+Salle du gaz
+
+
+> monte
+Salle nauséabonde
+
+
+> s
+Salle du puits
+⟦s13092⟧Au bout de la chaîne pend un panier.
+
+
+> hisse le panier
+⟦ga4d7⟧Le panier remonte jusqu'en haut du puits.
+
+
+> prends le diamant
+⟦g9070⟧Pris.
+
+
+> prends la torche
+⟦g9070⟧Pris.
+
+
+> éteins la lanterne
+⟦g83f4⟧La lanterne en laiton est maintenant éteinte.
+
+
+> o
+Salle des chauves-souris
+⟦gea71⟧Dans un coin de la pièce, accrochée au plafond, se trouve une grande chauve-souris vampire, visiblement dérangée, qui se bouche le nez.
+
+
+> s
+Salle grinçante
+
+
+> e
+Entrée de la mine
+
+
+> s
+Salle du toboggan
+
+
+> descends
+Cave
+
+
+> monte
+Salon
+⟦g95de⟧Il y a un œuf incrusté de joyaux ici.
+⟦s1386a⟧Il y a ici une pochette d'allumettes dont la couverture proclame : « Visitez le magnifique BRC n° 3 ».
+⟦g95de⟧Il y a une paire de bougies ici.
+⟦g95de⟧Il y a un livre noir ici.
+⟦g95de⟧Il y a une épée ici.
+⟦g97e9⟧Votre collection de trésors comprend :
+⟦g9605⟧ Un crâne de cristal
+⟦g9605⟧ Un sceptre
+⟦g9605⟧ Un pot d'or
+⟦g9605⟧ Un beau scarabée orné de joyaux
+⟦g9605⟧ Une grosse émeraude
+⟦g9605⟧ Un trident de cristal
+⟦g9605⟧ Une malle de bijoux
+⟦g9605⟧ Un cercueil en or
+⟦g9605⟧ Un lingot de platine
+⟦g9605⟧ Un tableau
+⟦g9605⟧ Une bourse de cuir pleine de pièces
+
+
+> mets la figurine dans la vitrine
+⟦g71bf⟧Vous n'avez pas ça !
+
+
+> mets le bracelet dans la vitrine
+⟦g71bf⟧Vous n'avez pas ça !
+
+
+> mets le diamant dans la vitrine
+⟦g8b6d⟧C'est fait.
+
+
+> pose la poutre
+⟦g7e7f⟧Posé.
+
+
+> pose l'ail
+⟦g7e7f⟧Posé.
+
+
+> prends l'œuf
+⟦g9070⟧Pris.
+
+
+> prends l'épée
+⟦g9070⟧Pris.
+
+
+> o
+Passage étrange
+
+
+> o
+Salle du cyclope
+
+
+> monte
+⟦ge196⟧Un cri d'angoisse retentit tandis que vous profanez le repaire du bandit. Par des passages dont vous ignorez tout, il accourt pour le défendre.
+⟦ge202⟧Le voleur fait un geste mystérieux, et les trésors de la pièce disparaissent soudain.
+
+Salle du trésor
+⟦s11df2⟧Vous êtes dans une vaste salle dont le mur, à l'est, est en granit massif. Des sacs abandonnés, qui tombent en poussière dès que vous les touchez, sont éparpillés sur le sol. Un escalier permet de sortir en descendant.
+⟦s138d2⟧Un individu à l'air louche, tenant un grand sac, est adossé contre un mur. Il est armé d'un stylet meurtrier.
+⟦s137f6⟧Il y a ici un calice en argent, finement ciselé.
+⟦g10881⟧Votre épée s'est mise à briller très vivement.
+⟦m4f3a⟧Le voleur attaque par en dessous, mais vous esquivez.
+
+
+> donne l'œuf au voleur
+⟦gdd24⟧Le voleur est décontenancé par votre générosité inattendue, mais il accepte l'œuf incrusté de joyaux et prend le temps d'en admirer la beauté.
+
+
+> tue le voleur avec l'épée
+⟦m4d94⟧Le voleur chancelle et tombe à genoux.
+⟦g1027a⟧Le voleur se remet lentement sur pied.
+
+
+> tue le voleur avec l'épée
+⟦m4dac⟧Le voleur ne sait plus où donner de la tête et ne peut pas riposter.
+⟦g1027a⟧Le voleur se remet lentement sur pied.
+
+
+> tue le voleur avec l'épée
+⟦m4d9c⟧Le voleur, momentanément désorienté, est incapable de riposter.
+⟦g1027a⟧Le voleur se remet lentement sur pied.
+
+
+> tue le voleur avec l'épée
+⟦m4d7a⟧Un coup sauvage à la cuisse ! Le voleur est sonné, mais peut encore se battre !
+⟦m4f36⟧Le voleur pique nonchalamment de son stylet et vous manque.
+
+
+> tue le voleur avec l'épée
+⟦m4d48⟧Le voleur est touché au bras ; un filet de sang se met à couler.
+⟦m4f7e⟧Le voleur s'approche lentement, frappe comme un serpent et vous laisse blessé.
+
+
+> tue le voleur avec l'épée
+⟦m4db4⟧La vivacité de votre estocade fait reculer le voleur, étourdi.
+⟦g1027a⟧Le voleur se remet lentement sur pied.
+
+
+> tue le voleur avec l'épée
+⟦m4cba⟧Vous chargez, mais le voleur fait prestement un bond de côté.
+⟦m4f7e⟧Le voleur s'approche lentement, frappe comme un serpent et vous laisse blessé.
+
+
+> tue le voleur avec l'épée
+⟦m4db4⟧La vivacité de votre estocade fait reculer le voleur, étourdi.
+⟦g1027a⟧Le voleur se remet lentement sur pied.
+
+
+> tue le voleur avec l'épée
+⟦m4d48⟧Le voleur est touché au bras ; un filet de sang se met à couler.
+⟦m4f42⟧Le voleur tente de se glisser sous votre garde, mais vous vous dérobez d'une contorsion.
+
+
+> tue le voleur avec l'épée
+⟦m4cd2⟧Beau coup, mais trop lent : le voleur l'esquive.
+⟦m4fa6⟧Le pommeau de son stylet vous cogne le crâne, et vous reculez en titubant.
+
+
+> tue le voleur avec l'épée
+⟦g1040d⟧Vous ne vous êtes pas encore remis du dernier coup : votre attaque est sans effet.
+⟦m4f42⟧Le voleur tente de se glisser sous votre garde, mais vous vous dérobez d'une contorsion.
+
+
+> tue le voleur avec l'épée
+⟦m4d9c⟧Le voleur, momentanément désorienté, est incapable de riposter.
+⟦g1027a⟧Le voleur se remet lentement sur pied.
+
+
+> tue le voleur avec l'épée
+⟦m4dac⟧Le voleur ne sait plus où donner de la tête et ne peut pas riposter.
+⟦g1027a⟧Le voleur se remet lentement sur pied.
+
+
+> tue le voleur avec l'épée
+⟦m4db4⟧La vivacité de votre estocade fait reculer le voleur, étourdi.
+⟦g1027a⟧Le voleur se remet lentement sur pied.
+
+
+> tue le voleur avec l'épée
+⟦m4d10⟧Le voleur est assommé !
+
+
+> tue le voleur avec l'épée
+⟦g1048d⟧Puisqu'il est ⟦g10494⟧inconscient⟦g104a7⟧, le voleur ne peut pas se défendre : il meurt.
+⟦g1062b⟧À peine le voleur a-t-il rendu son dernier soupir qu'un nuage de sinistre brouillard noir l'enveloppe ; lorsque le brouillard se dissipe, la carcasse a disparu.
+⟦gdf00⟧Tandis que le voleur expire, le pouvoir de sa magie faiblit, et ses trésors réapparaissent :
+⟦gdf30⟧ Un œuf incrusté de joyaux⟦gdf44⟧, contenant ⟦g9695⟧un canari mécanique en or
+⟦gdf30⟧ Un stylet
+⟦gdf30⟧ Un bracelet incrusté de saphirs
+⟦gdf30⟧ Une figurine de jade
+⟦gded6⟧Vous pouvez désormais prendre le calice sans risque.
+⟦g108c6⟧Votre épée ne brille plus.
+
+
+> pose l'épée
+⟦g7e7f⟧Posé.
+
+
+> prends le calice
+⟦g9070⟧Pris.
+
+
+> prends le bracelet
+⟦g9070⟧Pris.
+
+
+> prends la figurine
+⟦g9070⟧Pris.
+
+
+> prends l'œuf
+⟦g9070⟧Pris.
+
+
+> descends
+Salle du cyclope
+
+
+> e
+Passage étrange
+
+
+> e
+Salon
+⟦g95de⟧Il y a une gousse d'ail ici.
+⟦g95de⟧Il y a une poutre brisée ici.
+⟦s1386a⟧Il y a ici une pochette d'allumettes dont la couverture proclame : « Visitez le magnifique BRC n° 3 ».
+⟦g95de⟧Il y a une paire de bougies ici.
+⟦g95de⟧Il y a un livre noir ici.
+⟦g97e9⟧Votre collection de trésors comprend :
+⟦g9605⟧ Un énorme diamant
+⟦g9605⟧ Un crâne de cristal
+⟦g9605⟧ Un sceptre
+⟦g9605⟧ Un pot d'or
+⟦g9605⟧ Un beau scarabée orné de joyaux
+⟦g9605⟧ Une grosse émeraude
+⟦g9605⟧ Un trident de cristal
+⟦g9605⟧ Une malle de bijoux
+⟦g9605⟧ Un cercueil en or
+⟦g9605⟧ Un lingot de platine
+⟦g9605⟧ Un tableau
+⟦g9605⟧ Une bourse de cuir pleine de pièces
+
+
+> mets le calice dans la vitrine
+⟦g8b6d⟧C'est fait.
+
+
+> mets le bracelet dans la vitrine
+⟦g8b6d⟧C'est fait.
+
+
+> mets la figurine dans la vitrine
+⟦g8b6d⟧C'est fait.
+
+
+> prends le canari
+⟦g9070⟧Pris.
+
+
+> e
+Cuisine
+⟦s14078⟧Une bouteille est posée sur la table.
+⟦g984b⟧La bouteille en verre contient :
+⟦g9605⟧ Une quantité d'eau
+⟦g95de⟧Il y a un sac brun ici.
+⟦g984b⟧Le sac brun contient :
+⟦g9605⟧ Un casse-croûte
+
+
+> e
+Derrière la maison
+
+
+> n
+Au nord de la maison
+
+
+> n
+Sentier forestier
+
+
+> remonte le canari
+⟦gf8a5⟧Le canari gazouille, un rien faux, un air tiré d'un opéra oublié. Des frondaisons surgit un ravissant oiseau chanteur. Il se perche sur une branche juste au-dessus de votre tête et ouvre le bec pour chanter. Ce faisant, il laisse tomber une magnifique babiole en laiton, qui rebondit sur le sommet de votre crâne et atterrit, scintillante, dans l'herbe. Tandis que le canari arrive au bout de son remontoir, l'oiseau chanteur s'envole.
+
+
+> prends la babiole
+⟦g9070⟧Pris.
+
+
+> s
+Au nord de la maison
+
+
+> e
+Derrière la maison
+
+
+> o
+Cuisine
+⟦s14078⟧Une bouteille est posée sur la table.
+⟦g984b⟧La bouteille en verre contient :
+⟦g9605⟧ Une quantité d'eau
+⟦g95de⟧Il y a un sac brun ici.
+⟦g984b⟧Le sac brun contient :
+⟦g9605⟧ Un casse-croûte
+
+
+> o
+Salon
+⟦g95de⟧Il y a une gousse d'ail ici.
+⟦g95de⟧Il y a une poutre brisée ici.
+⟦s1386a⟧Il y a ici une pochette d'allumettes dont la couverture proclame : « Visitez le magnifique BRC n° 3 ».
+⟦g95de⟧Il y a une paire de bougies ici.
+⟦g95de⟧Il y a un livre noir ici.
+⟦g97e9⟧Votre collection de trésors comprend :
+⟦g9605⟧ Une figurine de jade
+⟦g9605⟧ Un bracelet incrusté de saphirs
+⟦g9605⟧ Un calice
+⟦g9605⟧ Un énorme diamant
+⟦g9605⟧ Un crâne de cristal
+⟦g9605⟧ Un sceptre
+⟦g9605⟧ Un pot d'or
+⟦g9605⟧ Un beau scarabée orné de joyaux
+⟦g9605⟧ Une grosse émeraude
+⟦g9605⟧ Un trident de cristal
+⟦g9605⟧ Une malle de bijoux
+⟦g9605⟧ Un cercueil en or
+⟦g9605⟧ Un lingot de platine
+⟦g9605⟧ Un tableau
+⟦g9605⟧ Une bourse de cuir pleine de pièces
+
+
+> mets le canari dans la vitrine
+⟦g8b6d⟧C'est fait.
+
+
+> mets la babiole dans la vitrine
+⟦g8b6d⟧C'est fait.
+
+
+> mets l'œuf dans la vitrine
+⟦g8b6d⟧C'est fait.
+
+
+> mets la torche dans la vitrine
+⟦g8b6d⟧C'est fait.
+⟦g9887⟧Une voix presque inaudible vous murmure à l'oreille : « C'est dans vos trésors que se cache l'ultime secret. »
+
+
+> prends la carte
+⟦g9070⟧Pris.
+
+
+> e
+Cuisine
+⟦s14078⟧Une bouteille est posée sur la table.
+⟦g984b⟧La bouteille en verre contient :
+⟦g9605⟧ Une quantité d'eau
+⟦g95de⟧Il y a un sac brun ici.
+⟦g984b⟧Le sac brun contient :
+⟦g9605⟧ Un casse-croûte
+
+
+> e
+Derrière la maison
+
+
+> s
+Au sud de la maison
+⟦s14834⟧Vous êtes face au côté sud d'une maison blanche. Il n'y a pas de porte ici, et toutes les fenêtres sont condamnées par des planches.
+
+
+> o
+À l'ouest de la maison
+⟦g9d05⟧Vous vous tenez au milieu d'un champ, à l'ouest d'une maison blanche dont la porte d'entrée est condamnée par des planches.⟦g9d39⟧ Un sentier secret s'enfonce dans la forêt vers le sud-ouest.
+⟦g95de⟧Il y a une petite boîte aux lettres ici.
+
+
+> so
+Tumulus de pierre
+⟦s1479c⟧Vous vous tenez devant un massif tumulus de pierre. Dans sa face est s'ouvre une immense porte de pierre, grande ouverte. Vous ne distinguez rien dans l'obscurité de la tombe.
+
+
+> entre dans le tumulus
+⟦ga855⟧Dans le tumulus
+Alors que vous pénétrez dans le tumulus, la porte se referme inexorablement derrière vous. Autour de vous règne l'obscurité, mais devant vous s'étend une immense caverne, brillamment éclairée. En son centre coule un large ruisseau, qu'enjambe une petite passerelle de bois ; au-delà, un sentier s'enfonce dans un tunnel obscur. Au-dessus du pont, flottant dans les airs, un grand panneau proclame : Ô vous qui vous tenez devant ce pont, vous avez mené à bien une grande et périlleuse aventure qui a mis à l'épreuve votre esprit et votre courage. Vous avez maîtrisé⟦ga979⟧ le premier volet de la trilogie ZORK. Ceux qui franchiront ce pont doivent s'apprêter à vivre une aventure plus grande encore, qui mettra rudement à l'épreuve leur adresse et leur bravoure !
+
+La trilogie ZORK se poursuit avec « ZORK II : Le Sorcier de Frobozz » et s'achève avec « ZORK III : Le Maître du donjon ».
+⟦g10c8b⟧Votre score est de 350 (sur un total de 350 points), en 373⟦g10cbd⟧ tours.⟦g10cc4⟧
+Cela vous vaut le rang de ⟦g10cda⟧Maître aventurier.
+⟦g7444⟧
+Voulez-vous recommencer la partie depuis le début, charger une partie sauvegardée ou mettre fin à cette séance de jeu ?
+(Tapez RECOMMENCER, CHARGER ou QUITTER) :

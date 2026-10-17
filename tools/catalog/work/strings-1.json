@@ -1,0 +1,1076 @@
+[
+ {
+  "key": "s1121c",
+  "en": "An old leather bag, bulging with coins, is here.",
+  "uses": [
+   "BAG-OF-COINS.LDESC"
+  ],
+  "zil": "BAG-OF-COINS.LDESC (1dungeon.zil:539)"
+ },
+ {
+  "key": "s1123a",
+  "en": "\n(Close cover before striking)\n\nYOU too can make BIG MONEY in the exciting field of PAPER SHUFFLING!\n\nMr. Anderson of Muddle, Mass. says: \"Before I took this course I was a lowly bit twiddler. Now with what I learned at GUE Tech I feel really important and can obfuscate and confuse with the best.\"\n\nDr. Blank had this to say: \"Ten short days ago all I could look forward to was a dead-end job as a doctor. Now I have a promising future and make really big Zorkmids.\"\n\nGUE Tech can't promise these fantastic results to everyone. But when you earn your degree from GUE Tech, your future will be brighter.",
+  "uses": [
+   "MATCH.TEXT",
+   "table"
+  ],
+  "zil": "MATCH.TEXT (1dungeon.zil:625)"
+ },
+ {
+  "key": "s113d2",
+  "en": "You have come to a dead end in the maze.",
+  "uses": [
+   "DEAD-END-1.LDESC",
+   "DEAD-END-2.LDESC",
+   "DEAD-END-3.LDESC",
+   "DEAD-END-4.LDESC",
+   "table"
+  ],
+  "zil": "DEAD-END-4.LDESC (1dungeon.zil:1691)"
+ },
+ {
+  "key": "s113e8",
+  "en": "You have entered the Land of the Living Dead. Thousands of lost souls can be heard weeping and moaning. In the corner are stacked the remains of dozens of previous adventurers less fortunate than yourself. A passage exits to the north.",
+  "uses": [
+   "LAND-OF-LIVING-DEAD.LDESC"
+  ],
+  "zil": "LAND-OF-LIVING-DEAD.LDESC (1dungeon.zil:2043)"
+ },
+ {
+  "key": "s11472",
+  "en": "You have entered a low cave with passages leading northwest and east.",
+  "uses": [
+   "ENGRAVINGS-CAVE.LDESC",
+   "table"
+  ],
+  "zil": "ENGRAVINGS-CAVE.LDESC (1dungeon.zil:2060)"
+ },
+ {
+  "key": "s11490",
+  "en": "You haven't a prayer of getting the coffin down there.",
+  "uses": [
+   "table"
+  ],
+  "zil": "SOUTH-TEMPLE.DOWN (1dungeon.zil:2127)"
+ },
+ {
+  "key": "s114b0",
+  "en": "You have come to a dead end in the mine.",
+  "uses": [
+   "DEAD-END-5.LDESC",
+   "table"
+  ],
+  "zil": "DEAD-END-5.LDESC (1dungeon.zil:2517)"
+ },
+ {
+  "key": "s114c6",
+  "en": " has no effect.",
+  "uses": [
+   "routine V-PLAY",
+   "table"
+  ],
+  "zil": "gverbs.zil:2036"
+ },
+ {
+  "key": "s114d0",
+  "en": "You have two choices: 1. Leave  2. Become dinner.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:1652"
+ },
+ {
+  "key": "s114f2",
+  "en": "over your head.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:1292"
+ },
+ {
+  "key": "s114fa",
+  "en": "Storm-tossed trees block your way.",
+  "uses": [
+   "CANYON-VIEW.SOUTH",
+   "FOREST-3.SOUTH"
+  ],
+  "zil": "CANYON-VIEW.SOUTH (1dungeon.zil:2401)"
+ },
+ {
+  "key": "s11512",
+  "en": "Oh, no! You have walked into the slavering fangs of a lurking grue!",
+  "uses": [
+   "routine V-WALK"
+  ],
+  "zil": "V-WALK (gverbs.zil:1578)"
+ },
+ {
+  "key": "s11540",
+  "en": "At the end of the chain is a basket.",
+  "uses": [
+   "RAISED-BASKET.LDESC",
+   "table"
+  ],
+  "zil": "RAISED-BASKET.LDESC (1dungeon.zil:144)"
+ },
+ {
+  "key": "s11556",
+  "en": "On the ground is a red hot bell.",
+  "uses": [
+   "HOT-BELL.LDESC"
+  ],
+  "zil": "HOT-BELL.LDESC (1dungeon.zil:178)"
+ },
+ {
+  "key": "s11568",
+  "en": "On the altar is a large black book, open to page 569.",
+  "uses": [
+   "BOOK.FDESC"
+  ],
+  "zil": "BOOK.FDESC (1dungeon.zil:219)"
+ },
+ {
+  "key": "s1158a",
+  "en": "On the table is an elongated brown sack, smelling of hot peppers.",
+  "uses": [
+   "SANDWICH-BAG.FDESC",
+   "table"
+  ],
+  "zil": "SANDWICH-BAG.FDESC (1dungeon.zil:293)"
+ },
+ {
+  "key": "s115b4",
+  "en": "On the shore lies Poseidon's own crystal trident.",
+  "uses": [
+   "TRIDENT.FDESC",
+   "table"
+  ],
+  "zil": "TRIDENT.FDESC (1dungeon.zil:382)"
+ },
+ {
+  "key": "s115d6",
+  "en": "On the two ends of the altar are burning candles.",
+  "uses": [
+   "CANDLES.FDESC",
+   "table"
+  ],
+  "zil": "CANDLES.FDESC (1dungeon.zil:677)"
+ },
+ {
+  "key": "s115f4",
+  "en": "On the ground is a pile of leaves.",
+  "uses": [
+   "LEAVES.LDESC",
+   "table"
+  ],
+  "zil": "LEAVES.LDESC (1dungeon.zil:702)"
+ },
+ {
+  "key": "s11606",
+  "en": "On the ground is a large platinum bar.",
+  "uses": [
+   "BAR.LDESC",
+   "table"
+  ],
+  "zil": "BAR.LDESC (1dungeon.zil:731)"
+ },
+ {
+  "key": "s1161a",
+  "en": "At the end of the rainbow is a pot of gold.",
+  "uses": [
+   "POT-OF-GOLD.FDESC",
+   "table"
+  ],
+  "zil": "POT-OF-GOLD.FDESC (1dungeon.zil:742)"
+ },
+ {
+  "key": "s11634",
+  "en": "    ",
+  "uses": [
+   "table"
+  ],
+  "zil": "HERO-BLOW (1actions.zil:3506)"
+ },
+ {
+  "key": "s11638",
+  "en": "With great effort, you open the window far enough to allow entry.",
+  "uses": [
+   "routine KITCHEN-WINDOW-F"
+  ],
+  "zil": "KITCHEN-WINDOW-F (1actions.zil:245)"
+ },
+ {
+  "key": "s1166a",
+  "en": " and devoured you!",
+  "uses": [
+   "routine GOTO"
+  ],
+  "zil": "GOTO (gverbs.zil:2115)"
+ },
+ {
+  "key": "s11676",
+  "en": "Too late for that.",
+  "uses": [
+   "table"
+  ],
+  "zil": "gverbs.zil:2216"
+ },
+ {
+  "key": "s1169e",
+  "en": "An ornamented sceptre, tapering to a sharp point, is here.",
+  "uses": [
+   "SCEPTRE.LDESC",
+   "table"
+  ],
+  "zil": "SCEPTRE.LDESC (1dungeon.zil:247)"
+ },
+ {
+  "key": "s116c4",
+  "en": "\"Flood Control Dam #3\n\nFCD#3 was constructed in year 783 of the Great Underground Empire to harness the mighty Frigid River. This work was supported by a grant of 37 million zorkmids from your omnipotent local tyrant Lord Dimwit Flathead the Excessive. This impressive structure is composed of 370,000 cubic feet of concrete, is 256 feet tall at the center, and 193 feet wide at the top. The lake created behind the dam has a volume of 1.7 billion cubic feet, an area of 12 million square feet, and a shore line of 36 thousand feet.\n\nThe construction of FCD#3 took 112 days from ground breaking to the dedication. It required a work force of 384 slaves, 34 slave drivers, 12 engineers, 2 turtle doves, and a partridge in a pear tree. The work was managed by a command team composed of 2345 bureaucrats, 2347 secretaries (at least two of whom could type), 12,256 paper shufflers, 52,469 rubber stampers, 245,193 red tape processors, and nearly one million dead trees.\n\nWe will now point out some of the more interesting features of FCD#3 as we conduct you on a guided tour of the facilities:\n\n        1) You start your tour here in the Dam Lobby. You will notice on your right that....",
+  "uses": [
+   "GUIDE.TEXT"
+  ]
+ },
+ {
+  "key": "s119d6",
+  "en": "That was just a bit too far down.",
+  "uses": [
+   "routine TREE-ROOM"
+  ],
+  "zil": "TREE-ROOM (1actions.zil:2916)"
+ },
+ {
+  "key": "s11a6c",
+  "en": "A hot pepper sandwich is here.",
+  "uses": [
+   "LUNCH.LDESC",
+   "table"
+  ],
+  "zil": "LUNCH.LDESC (1dungeon.zil:153)"
+ },
+ {
+  "key": "s11ac4",
+  "en": "This is a forest, with trees in all directions. To the east, there appears to be sunlight.",
+  "uses": [
+   "FOREST-2.LDESC"
+  ],
+  "zil": "FOREST-1.LDESC (1dungeon.zil:1312)"
+ },
+ {
+  "key": "s11af4",
+  "en": "This is a dimly lit forest, with large trees all around.",
+  "uses": [
+   "FOREST-1.LDESC",
+   "FOREST-3.LDESC",
+   "table"
+  ],
+  "zil": "FOREST-3.LDESC (1dungeon.zil:1351)"
+ },
+ {
+  "key": "s11b12",
+  "en": "This is a path winding through a dimly lit forest. The path heads north-south here. One particularly large tree with some low branches stands at the edge of the path.",
+  "uses": [
+   "PATH.LDESC"
+  ],
+  "zil": "PATH.LDESC (1dungeon.zil:1366)"
+ },
+ {
+  "key": "s11b6a",
+  "en": "This is the attic. The only exit is a stairway leading down.",
+  "uses": [
+   "ATTIC.LDESC"
+  ],
+  "zil": "ATTIC.LDESC (1dungeon.zil:1445)"
+ },
+ {
+  "key": "s11b88",
+  "en": "This is a small room with passages to the east and south and a forbidding hole leading west. Bloodstains and deep scratches (perhaps made by an axe) mar the walls.",
+  "uses": [
+   "TROLL-ROOM.LDESC"
+  ],
+  "zil": "TROLL-ROOM.LDESC (1dungeon.zil:1482)"
+ },
+ {
+  "key": "s11bda",
+  "en": "The chasm probably leads straight to the infernal regions.",
+  "uses": [
+   "EAST-OF-CHASM.DOWN"
+  ],
+  "zil": "EAST-OF-CHASM.DOWN (1dungeon.zil:1503)"
+ },
+ {
+  "key": "s11bfa",
+  "en": "This is an art gallery. Most of the paintings have been stolen by vandals with exceptional taste. The vandals left through either the north or west exits.",
+  "uses": [
+   "GALLERY.LDESC",
+   "table"
+  ],
+  "zil": "GALLERY.LDESC (1dungeon.zil:1510)"
+ },
+ {
+  "key": "s11c4e",
+  "en": "This appears to have been an artist's studio. The walls and floors are splattered with paints of 69 different colors. Strangely enough, nothing of value is hanging here. At the south end of the room is an open door (also covered with paint). A dark and narrow chimney leads up from a fireplace; although you might be able to get up it, it seems unlikely you could get back down.",
+  "uses": [
+   "STUDIO.LDESC",
+   "table"
+  ],
+  "zil": "STUDIO.LDESC (1dungeon.zil:1521)"
+ },
+ {
+  "key": "s11d20",
+  "en": "This is part of a maze of twisty little passages, all alike.",
+  "uses": [
+   "MAZE-1.LDESC",
+   "MAZE-10.LDESC",
+   "MAZE-11.LDESC",
+   "MAZE-12.LDESC",
+   "MAZE-13.LDESC",
+   "MAZE-14.LDESC",
+   "MAZE-15.LDESC",
+   "MAZE-2.LDESC",
+   "MAZE-3.LDESC",
+   "MAZE-4.LDESC",
+   "MAZE-6.LDESC",
+   "MAZE-7.LDESC",
+   "MAZE-8.LDESC",
+   "MAZE-9.LDESC",
+   "table"
+  ],
+  "zil": "MAZE-15.LDESC (1dungeon.zil:1717)"
+ },
+ {
+  "key": "s11d46",
+  "en": "This is part of a maze of twisty little passages, all alike. A skeleton, probably the remains of a luckless adventurer, lies here.",
+  "uses": [
+   "MAZE-5.LDESC",
+   "table"
+  ],
+  "zil": "MAZE-5.LDESC (1dungeon.zil:1584)"
+ },
+ {
+  "key": "s11daa",
+  "en": "This is a long passage. To the west is one entrance. On the east there is an old wooden door, with a large opening in it (about cyclops sized).",
+  "uses": [
+   "STRANGE-PASSAGE.LDESC"
+  ],
+  "zil": "STRANGE-PASSAGE.LDESC (1dungeon.zil:1743)"
+ },
+ {
+  "key": "s11df2",
+  "en": "This is a large room, whose east wall is solid granite. A number of discarded bags, which crumble at your touch, are scattered about on the floor. There is an exit down a staircase.",
+  "uses": [
+   "TREASURE-ROOM.LDESC"
+  ],
+  "zil": "TREASURE-ROOM.LDESC (1dungeon.zil:1755)"
+ },
+ {
+  "key": "s11e50",
+  "en": "The channel is too narrow.",
+  "uses": [
+   "IN-STREAM.WEST",
+   "IN-STREAM.UP",
+   "table"
+  ],
+  "zil": "IN-STREAM.WEST (1dungeon.zil:1827)"
+ },
+ {
+  "key": "s11e60",
+  "en": "This is a tiny cave with entrances west and north, and a staircase leading down.",
+  "uses": [
+   "SMALL-CAVE.LDESC",
+   "table"
+  ],
+  "zil": "SMALL-CAVE.LDESC (1dungeon.zil:1860)"
+ },
+ {
+  "key": "s11e84",
+  "en": "This is a tiny cave with entrances west and north, and a dark, forbidding staircase leading down.",
+  "uses": [
+   "TINY-CAVE.LDESC",
+   "table"
+  ],
+  "zil": "TINY-CAVE.LDESC (1dungeon.zil:1873)"
+ },
+ {
+  "key": "s11eb4",
+  "en": "This is a cold and damp corridor where a long east-west passageway turns into a southward path.",
+  "uses": [
+   "COLD-PASSAGE.LDESC",
+   "table"
+  ],
+  "zil": "COLD-PASSAGE.LDESC (1dungeon.zil:1886)"
+ },
+ {
+  "key": "s11eec",
+  "en": "This is a long and narrow corridor where a long north-south passageway briefly narrows even further.",
+  "uses": [
+   "NARROW-PASSAGE.LDESC",
+   "table"
+  ],
+  "zil": "NARROW-PASSAGE.LDESC (1dungeon.zil:1896)"
+ },
+ {
+  "key": "s11f24",
+  "en": "This is a winding passage. It seems that there are only exits on the east and north.",
+  "uses": [
+   "TWISTING-PASSAGE.LDESC",
+   "WINDING-PASSAGE.LDESC",
+   "table"
+  ],
+  "zil": "TWISTING-PASSAGE.LDESC (1dungeon.zil:1916)"
+ },
+ {
+  "key": "s11f4c",
+  "en": "This is an ancient room, long under water. There is an exit to the south and a staircase leading up.",
+  "uses": [
+   "ATLANTIS-ROOM.LDESC",
+   "table"
+  ],
+  "zil": "ATLANTIS-ROOM.LDESC (1dungeon.zil:1926)"
+ },
+ {
+  "key": "s11f78",
+  "en": "This is a narrow east-west passageway. There is a narrow stairway leading down at the north end of the room.",
+  "uses": [
+   "EW-PASSAGE.LDESC",
+   "table"
+  ],
+  "zil": "EW-PASSAGE.LDESC (1dungeon.zil:1941)"
+ },
+ {
+  "key": "s11fa8",
+  "en": "This is a circular stone room with passages in all directions. Several of them have unfortunately been blocked by cave-ins.",
+  "uses": [
+   "ROUND-ROOM.LDESC"
+  ],
+  "zil": "ROUND-ROOM.LDESC (1dungeon.zil:1955)"
+ },
+ {
+  "key": "s11fee",
+  "en": "This cave has exits to the west and east, and narrows to a crack toward the south. The earth is particularly damp here.",
+  "uses": [
+   "DAMP-CAVE.LDESC",
+   "table"
+  ],
+  "zil": "DAMP-CAVE.LDESC (1dungeon.zil:1979)"
+ },
+ {
+  "key": "s12030",
+  "en": "This is a high north-south passage, which forks to the northeast.",
+  "uses": [
+   "NS-PASSAGE.LDESC",
+   "table"
+  ],
+  "zil": "NS-PASSAGE.LDESC (1dungeon.zil:2001)"
+ },
+ {
+  "key": "s12054",
+  "en": "This is a room which looks like an Egyptian tomb. There is an ascending staircase to the west.",
+  "uses": [
+   "EGYPT-ROOM.LDESC"
+  ],
+  "zil": "EGYPT-ROOM.LDESC (1dungeon.zil:2069)"
+ },
+ {
+  "key": "s12080",
+  "en": "This is the north end of a large temple. On the east wall is an ancient inscription, probably a prayer in a long-forgotten language. Below the prayer is a staircase leading down. The west wall is solid granite. The exit to the north end of the room is through huge marble pillars.",
+  "uses": [
+   "NORTH-TEMPLE.LDESC",
+   "table"
+  ],
+  "zil": "NORTH-TEMPLE.LDESC (1dungeon.zil:2101)"
+ },
+ {
+  "key": "s12108",
+  "en": "This is the south end of a large temple. In front of you is what appears to be an altar. In one corner is a small hole in the floor which leads into darkness. You probably could not get back up it.",
+  "uses": [
+   "SOUTH-TEMPLE.LDESC",
+   "table"
+  ],
+  "zil": "SOUTH-TEMPLE.LDESC (1dungeon.zil:2120)"
+ },
+ {
+  "key": "s1216a",
+  "en": "This room appears to have been the waiting room for groups touring the dam. There are open doorways here to the north and east marked \"Private\", and there is a path leading south over the top of the dam.",
+  "uses": [
+   "DAM-LOBBY.LDESC",
+   "table"
+  ],
+  "zil": "DAM-LOBBY.LDESC (1dungeon.zil:2150)"
+ },
+ {
+  "key": "s121c4",
+  "en": "This is what appears to have been the maintenance room for Flood Control Dam #3. Apparently, this room has been ransacked recently, for most of the valuable equipment is gone. On the wall in front of you is a group of buttons colored blue, yellow, brown, and red. There are doorways to the west and south.",
+  "uses": [
+   "MAINTENANCE-ROOM.LDESC",
+   "table"
+  ],
+  "zil": "MAINTENANCE-ROOM.LDESC (1dungeon.zil:2162)"
+ },
+ {
+  "key": "s1226c",
+  "en": "This is a sand-filled cave whose exit is to the southwest.",
+  "uses": [
+   "SANDY-CAVE.LDESC"
+  ],
+  "zil": "SANDY-CAVE.LDESC (1dungeon.zil:2314)"
+ },
+ {
+  "key": "s1228e",
+  "en": "This is a large room, in the middle of which is a small shaft descending through the floor into darkness below. To the west and the north are exits from this room. Constructed over the top of the shaft is a metal framework to which a heavy iron chain is attached.",
+  "uses": [
+   "SHAFT-ROOM.LDESC",
+   "table"
+  ],
+  "zil": "SHAFT-ROOM.LDESC (1dungeon.zil:2452)"
+ },
+ {
+  "key": "s1230e",
+  "en": "This is a small nondescript room. However, from the direction of a small descending staircase a foul odor can be detected. To the south is a narrow tunnel.",
+  "uses": [
+   "SMELLY-ROOM.LDESC"
+  ],
+  "zil": "SMELLY-ROOM.LDESC (1dungeon.zil:2466)"
+ },
+ {
+  "key": "s1235a",
+  "en": "This is a small room which smells strongly of coal gas. There is a short climb up some stairs and a narrow tunnel leading east.",
+  "uses": [
+   "GAS-ROOM.LDESC"
+  ],
+  "zil": "GAS-ROOM.LDESC (1dungeon.zil:2479)"
+ },
+ {
+  "key": "s1239a",
+  "en": "This is a very small room. In the corner is a rickety wooden ladder, leading downward. It might be safe to descend. There is also a staircase leading upward.",
+  "uses": [
+   "LADDER-TOP.LDESC",
+   "table"
+  ],
+  "zil": "LADDER-TOP.LDESC (1dungeon.zil:2492)"
+ },
+ {
+  "key": "s123ea",
+  "en": "This is a rather wide room. On one side is the bottom of a narrow wooden ladder. To the west and the south are passages leaving the room.",
+  "uses": [
+   "LADDER-BOTTOM.LDESC",
+   "table"
+  ],
+  "zil": "LADDER-BOTTOM.LDESC (1dungeon.zil:2504)"
+ },
+ {
+  "key": "s1242c",
+  "en": "This is a long and narrow passage, which is cluttered with broken timbers. A wide passage comes from the east and turns at the west end of the room into a very narrow passageway. From the west comes a strong draft.",
+  "uses": [
+   "TIMBER-ROOM.LDESC"
+  ],
+  "zil": "TIMBER-ROOM.LDESC (1dungeon.zil:2524)"
+ },
+ {
+  "key": "s12496",
+  "en": "This is a small drafty room in which is the bottom of a long shaft. To the south is a passageway and to the east a very narrow passage. In the shaft can be seen a heavy iron chain.",
+  "uses": [
+   "LOWER-SHAFT.LDESC",
+   "table"
+  ],
+  "zil": "LOWER-SHAFT.LDESC (1dungeon.zil:2539)"
+ },
+ {
+  "key": "s124f2",
+  "en": "This is a nondescript part of a coal mine.",
+  "uses": [
+   "MINE-1.LDESC",
+   "MINE-2.LDESC",
+   "MINE-3.LDESC",
+   "MINE-4.LDESC"
+  ],
+  "zil": "MINE-4.LDESC (1dungeon.zil:2594)"
+ },
+ {
+  "key": "s1250c",
+  "en": "This is a small chamber, which appears to have been part of a coal mine. On the south wall of the chamber the letters \"Granite Wall\" are etched in the rock. To the east is a long passage, and there is a steep metal slide twisting downward. To the north is a small opening.",
+  "uses": [
+   "SLIDE-ROOM.LDESC",
+   "table"
+  ],
+  "zil": "SLIDE-ROOM.LDESC (1dungeon.zil:2604)"
+ },
+ {
+  "key": "s1259c",
+  "en": "Wheeeeeeeeee!!!!!",
+  "uses": [
+   "table"
+  ],
+  "zil": "gverbs.zil:1275"
+ },
+ {
+  "key": "s125ac",
+  "en": "What a concept!",
+  "uses": [
+   "table"
+  ],
+  "zil": "gverbs.zil:2211"
+ },
+ {
+  "key": "s125b8",
+  "en": "The cyclops, tired of all of your games and trickery, grabs you firmly. As he licks his chops, he says \"Mmm. Just like Mom used to make 'em.\" It's nice to be appreciated.",
+  "uses": [
+   "routine I-CYCLOPS"
+  ],
+  "zil": "I-CYCLOPS (1actions.zil:1604)"
+ },
+ {
+  "key": "s12624",
+  "en": "The cyclops seems somewhat agitated.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:1646"
+ },
+ {
+  "key": "s12636",
+  "en": "The cyclops appears to be getting more agitated.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:1647"
+ },
+ {
+  "key": "s1264c",
+  "en": "The cyclops is moving about the room, looking for something.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:1648"
+ },
+ {
+  "key": "s12664",
+  "en": "The cyclops was looking for salt and pepper. No doubt they are condiments for his upcoming snack.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:1649"
+ },
+ {
+  "key": "s12696",
+  "en": "The cyclops is moving toward you in an unfriendly manner.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:1651"
+ },
+ {
+  "key": "s126b4",
+  "en": "The candles grow shorter.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:2409"
+ },
+ {
+  "key": "s126c0",
+  "en": "The candles are becoming quite short.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:2411"
+ },
+ {
+  "key": "s126d4",
+  "en": "The candles won't last long now.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:2413"
+ },
+ {
+  "key": "s12730",
+  "en": "The deceased adventurer's useless lantern is here.",
+  "uses": [
+   "BURNED-OUT-LANTERN.FDESC"
+  ],
+  "zil": "BURNED-OUT-LANTERN.FDESC (1dungeon.zil:530)"
+ },
+ {
+  "key": "s12750",
+  "en": "\"WELCOME TO ZORK!\n\nZORK is a game of adventure, danger, and low cunning. In it you will explore some of the most amazing territory ever seen by mortals. No computer should be without one!\"",
+  "uses": [
+   "ADVERTISEMENT.TEXT"
+  ],
+  "zil": "ADVERTISEMENT.TEXT (1dungeon.zil:573)"
+ },
+ {
+  "key": "s127d6",
+  "en": "  !!!!FROBOZZ MAGIC BOAT COMPANY!!!!\n\nHello, Sailor!\n\nInstructions for use:\n\n   To get into a body of water, say \"Launch\".\n   To get to shore, say \"Land\" or the direction in which you want to maneuver the boat.\n\nWarranty:\n\n  This boat is guaranteed against all defects for a period of 76 milliseconds from date of purchase or until first used, whichever comes first.\n\nWarning:\n   This boat is made of thin plastic.\n   Good Luck!",
+  "uses": [
+   "BOAT-LABEL.TEXT",
+   "table"
+  ],
+  "zil": "BOAT-LABEL.TEXT (1dungeon.zil:949)"
+ },
+ {
+  "key": "s1290c",
+  "en": "The door is boarded and you can't remove the boards.",
+  "uses": [
+   "WEST-OF-HOUSE.EAST"
+  ],
+  "zil": "WEST-OF-HOUSE.EAST (1dungeon.zil:1247)"
+ },
+ {
+  "key": "s12934",
+  "en": "The dam blocks your way.",
+  "uses": [
+   "RESERVOIR.DOWN",
+   "table"
+  ],
+  "zil": "RESERVOIR.DOWN (1dungeon.zil:1790)"
+ },
+ {
+  "key": "s12942",
+  "en": "A valiant attempt.",
+  "uses": [
+   "table"
+  ],
+  "zil": "gverbs.zil:2207"
+ },
+ {
+  "key": "s12950",
+  "en": "The door reluctantly opens to reveal a rickety staircase descending into darkness.",
+  "uses": [
+   "routine TRAP-DOOR-FCN"
+  ],
+  "zil": "TRAP-DOOR-FCN (1actions.zil:511)"
+ },
+ {
+  "key": "s1297c",
+  "en": "The door swings shut and closes.",
+  "uses": [
+   "routine TRAP-DOOR-FCN"
+  ],
+  "zil": "TRAP-DOOR-FCN (1actions.zil:513)"
+ },
+ {
+  "key": "s12994",
+  "en": "The engravings translate to \"This space intentionally left blank.\"",
+  "uses": [
+   "WOODEN-DOOR.TEXT"
+  ],
+  "zil": "WOODEN-DOOR.TEXT (1dungeon.zil:913)"
+ },
+ {
+  "key": "s129be",
+  "en": "The engravings were incised in the living rock of the cave wall by an unknown hand. They depict, in symbolic form, the beliefs of the ancient Zorkers. Skillfully interwoven with the bas reliefs are excerpts illustrating the major religious tenets of that time. Unfortunately, a later age seems to have considered them blasphemous and just as skillfully excised them.",
+  "uses": [
+   "ENGRAVINGS.TEXT",
+   "table"
+  ],
+  "zil": "ENGRAVINGS.TEXT (1dungeon.zil:1093)"
+ },
+ {
+  "key": "s12a92",
+  "en": "The east wall is solid rock.",
+  "uses": [
+   "table"
+  ],
+  "zil": "CYCLOPS-ROOM.EAST (1dungeon.zil:1733)"
+ },
+ {
+  "key": "s12ac4",
+  "en": "jewels",
+  "uses": [
+   "routine TRUNK-F"
+  ],
+  "zil": "TRUNK-F (1actions.zil:4141)"
+ },
+ {
+  "key": "s12ac8",
+  "en": "The forest becomes impenetrable to the north.",
+  "uses": [
+   "FOREST-1.NORTH",
+   "GRATING-CLEARING.NORTH"
+  ],
+  "zil": "GRATING-CLEARING.NORTH (1dungeon.zil:1391)"
+ },
+ {
+  "key": "s12ae4",
+  "en": "The forest thins out, revealing impassable mountains.",
+  "uses": [
+   "MOUNTAINS.LDESC",
+   "table"
+  ],
+  "zil": "MOUNTAINS.LDESC (1dungeon.zil:1339)"
+ },
+ {
+  "key": "s12b08",
+  "en": "You should have looked before you leaped.",
+  "uses": [
+   "table"
+  ],
+  "zil": "gverbs.zil:846"
+ },
+ {
+  "key": "s12b1c",
+  "en": "Goodbye.",
+  "uses": [
+   "table"
+  ],
+  "zil": "gverbs.zil:2202"
+ },
+ {
+  "key": "s12b24",
+  "en": "You splash around for a while, fighting the current, then you drown.",
+  "uses": [
+   "routine RIVER-FUNCTION"
+  ],
+  "zil": "RIVER-FUNCTION (1actions.zil:2674)"
+ },
+ {
+  "key": "s12b4e",
+  "en": "You seem to be digging a hole here.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:2872"
+ },
+ {
+  "key": "s12be4",
+  "en": "You try to ascend the ramp, but it is impossible, and you slide back down.",
+  "uses": [
+   "CELLAR.WEST",
+   "table"
+  ],
+  "zil": "CELLAR.WEST (1dungeon.zil:1473)"
+ },
+ {
+  "key": "s12c0e",
+  "en": "The grating is closed.",
+  "uses": [
+   "routine GRATE-FUNCTION",
+   "table"
+  ],
+  "zil": "GRATING-ROOM.UP (1dungeon.zil:1672)"
+ },
+ {
+  "key": "s12c16",
+  "en": "Are you out of your mind?",
+  "uses": [
+   "CHASM-ROOM.DOWN",
+   "table"
+  ],
+  "zil": "CHASM-ROOM.DOWN (1dungeon.zil:2018)"
+ },
+ {
+  "key": "s12c24",
+  "en": "Are you enjoying yourself?",
+  "uses": [
+   "table"
+  ],
+  "zil": "gverbs.zil:1274"
+ },
+ {
+  "key": "s12c36",
+  "en": " hits you squarely in the head. Normally, this wouldn't do much damage, but by incredible mischance, you fall over backwards trying to duck, and break your neck, justice being swift and merciful in the Great Underground Empire.",
+  "uses": [
+   "routine V-THROW"
+  ],
+  "zil": "V-THROW (gverbs.zil:1451)"
+ },
+ {
+  "key": "s12cbe",
+  "en": "The grating opens.",
+  "uses": [
+   "routine GRATE-FUNCTION"
+  ],
+  "zil": "GRATE-FUNCTION (1actions.zil:876)"
+ },
+ {
+  "key": "s12cc6",
+  "en": "The grating opens to reveal trees above you.",
+  "uses": [
+   "routine GRATE-FUNCTION"
+  ],
+  "zil": "GRATE-FUNCTION (1actions.zil:878)"
+ },
+ {
+  "key": "s12cee",
+  "en": "The hole collapses, smothering you.",
+  "uses": [
+   "routine SAND-FUNCTION"
+  ],
+  "zil": "SAND-FUNCTION (1actions.zil:2861)"
+ },
+ {
+  "key": "s12d06",
+  "en": "The hole is getting deeper, but that's about it.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:2873"
+ },
+ {
+  "key": "s12d96",
+  "en": "Look around.",
+  "uses": [
+   "table"
+  ],
+  "zil": "gverbs.zil:2215"
+ },
+ {
+  "key": "s12da0",
+  "en": "\n      ** BOOOOOOOOOOOM **",
+  "uses": [
+   "routine BOOM-ROOM"
+  ],
+  "zil": "BOOM-ROOM (1actions.zil:2466)"
+ },
+ {
+  "key": "s12dc8",
+  "en": "Fortunately, there is still one chance for you to be a vandal, for on the far wall is a painting of unparalleled beauty.",
+  "uses": [
+   "PAINTING.FDESC"
+  ],
+  "zil": "PAINTING.FDESC (1dungeon.zil:663)"
+ },
+ {
+  "key": "s12e06",
+  "en": "Beside the skeleton is a rusty knife.",
+  "uses": [
+   "RUSTY-KNIFE.FDESC",
+   "table"
+  ],
+  "zil": "RUSTY-KNIFE.FDESC (1dungeon.zil:814)"
+ },
+ {
+  "key": "s12e1e",
+  "en": "Beside you on the branch is a small bird's nest.",
+  "uses": [
+   "NEST.FDESC"
+  ],
+  "zil": "NEST.FDESC (1dungeon.zil:1151)"
+ },
+ {
+  "key": "s12e3a",
+  "en": "You would need a machete to go further west.",
+  "uses": [
+   "FOREST-2.WEST",
+   "table"
+  ],
+  "zil": "FOREST-1.WEST (1dungeon.zil:1319)"
+ },
+ {
+  "key": "s12e54",
+  "en": "You would drown.",
+  "uses": [
+   "table"
+  ],
+  "zil": "RESERVOIR-NORTH.SOUTH (1dungeon.zil:1801)"
+ },
+ {
+  "key": "s12e5c",
+  "en": "You wouldn't fit and would die if you could.",
+  "uses": [
+   "SHAFT-ROOM.DOWN"
+  ],
+  "zil": "SHAFT-ROOM.DOWN (1dungeon.zil:2457)"
+ },
+ {
+  "key": "s12e74",
+  "en": "Pushing the ",
+  "uses": [
+   "routine V-PUSH"
+  ],
+  "zil": "V-PUSH (gverbs.zil:1070)"
+ },
+ {
+  "key": "s12e7c",
+  "en": "coins",
+  "uses": [
+   "routine BAG-OF-COINS-F"
+  ],
+  "zil": "BAG-OF-COINS-F (1actions.zil:4138)"
+ },
+ {
+  "key": "s12e96",
+  "en": "A large coil of rope is lying in the corner.",
+  "uses": [
+   "ROPE.FDESC",
+   "table"
+  ],
+  "zil": "ROPE.FDESC (1dungeon.zil:804)"
+ },
+ {
+  "key": "s12eae",
+  "en": "Just in time you steer away from the rocks.",
+  "uses": [
+   "RIVER-5.WEST"
+  ],
+  "zil": "RIVER-2.WEST (1dungeon.zil:2215)"
+ },
+ {
+  "key": "s12ec8",
+  "en": "A troll is here.",
+  "uses": [
+   "routine TROLL-FCN"
+  ],
+  "zil": "TROLL-FCN (1actions.zil:699)"
+ },
+ {
+  "key": "s12ed0",
+  "en": "The leaves burn, and so do you.",
+  "uses": [
+   "routine LEAF-PILE"
+  ],
+  "zil": "LEAF-PILE (1actions.zil:797)"
+ },
+ {
+  "key": "s12ee4",
+  "en": "The lamp appears a bit dimmer.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:2223"
+ },
+ {
+  "key": "s12ef4",
+  "en": "The lamp is definitely dimmer now.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:2225"
+ },
+ {
+  "key": "s12f0a",
+  "en": "The lamp is nearly out.",
+  "uses": [
+   "table"
+  ],
+  "zil": "1actions.zil:2227"
+ },
+ {
+  "key": "s12f2c",
+  "en": "The map shows a forest with three clearings. The largest clearing contains a house. Three paths leave the large clearing. One of these paths, leading southwest, is marked \"To Stone Barrow\".",
+  "uses": [
+   "MAP.TEXT",
+   "table"
+  ],
+  "zil": "MAP.TEXT (1dungeon.zil:937)"
+ },
+ {
+  "key": "s12fa2",
+  "en": "The mountains are impassable.",
+  "uses": [
+   "MOUNTAINS.EAST",
+   "MOUNTAINS.UP",
+   "table"
+  ],
+  "zil": "MOUNTAINS.EAST (1dungeon.zil:1343)"
+ },
+ {
+  "key": "s12fb4",
+  "en": "An unconscious troll is sprawled on the floor. All passages out of the room are open.",
+  "uses": [
+   "routine TROLL-FCN"
+  ],
+  "zil": "TROLL-FCN (1actions.zil:678)"
+ }
+]

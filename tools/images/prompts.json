@@ -1,0 +1,293 @@
+{
+ "style": "Detailed hand-crafted pixel art scene from an early-1990s VGA point-and-click adventure game (LucasArts / Sierra style), 256-color look, limited palette, subtle dithering, painterly pixel shading, crisp edges, first-person view at eye level, wide 16:9 composition with a framing foreground, atmospheric lighting, no characters, no text, no letters, no UI, no border.",
+ "negative": "text, letters, words, inscription, watermark, signature, logo, UI, frame, border, photograph, photorealistic, 3D render, smooth gradients, blur, bokeh, anime, modern objects, people, player character, hands, gore",
+ "scenes": {
+  "west-of-house": {
+   "prompt": "An open grassy field facing the west side of a modest two-story white clapboard farmhouse with a dark shingled roof, a brick chimney and weathered, peeling paint. Its front door, in the center, is boarded shut with rough planks nailed across it. In the foreground, beside a worn dirt track, stands a small dented mailbox on a wooden post. Old dark-green forest crowds around the house. Soft hazy daylight under a grey cloudy sky, muted greens, beige and weathered white, quiet and inviting.",
+   "keystone": true
+  },
+  "north-of-house": {
+   "prompt": "An angled view along the north side of a white clapboard farmhouse under a grey overcast sky: a long plain wall with no door, every window boarded up with weathered planks nailed across. Moss and tall grass grow along the stone foundation, the house running down the left of the frame. On the right, a narrow dirt path winds away north into a dark wall of tall trees. Overhanging branches frame the foreground. Soft diffuse daylight, muted forest greens, weathered white paint, quiet and a little ominous."
+  },
+  "south-of-house": {
+   "prompt": "Facing the south side of a white clapboard farmhouse under a grey overcast sky: a plain wall with no door, its windows boarded shut with weathered planks nailed across. Tall wild grass and a few mossy stones line the foundation; at both corners the trampled grass continues around the house to the east and west. Dark-green forest edges the scene on both sides and rises behind the roof. Foreground framed by tall grass and a leaning fence post. Soft diffuse daylight, muted greens, weathered white and beige, calm."
+  },
+  "behind-house": {
+   "prompt": "Behind a white clapboard farmhouse under a grey overcast sky. The weathered back wall fills the left of the frame; in its near corner a small window stands slightly ajar, a dark gap showing between sash and frame, just within reach. On the right, a dirt path leads away east into the forest, disappearing between tall dark trees. Tall grass along the stone foundation, overhanging branches framing the foreground. Soft diffuse daylight, muted greens, weathered white and beige, a quiet hint of temptation."
+  },
+  "stone-barrow": {
+   "prompt": "A massive ancient barrow of huge stacked grey stone blocks rising from a grassy mound at the edge of a forest, under a pale overcast sky. In its east face, at the center of the image, a huge stone door stands open, revealing only impenetrable darkness inside the tomb. Lichen and moss streak the weathered stones; a few standing stones and wildflowers flank the entrance. Foreground framed by tall grass and a leaning menhir. Soft daylight, muted greens and cold greys, solemn, final and mysterious atmosphere."
+  },
+  "forest": {
+   "prompt": "Deep inside a dimly lit old forest, large gnarled trees in every direction, their thick mossy trunks and twisted roots receding into green gloom. A dense canopy lets through only a few thin shafts of pale light; on one side a brighter glow of sunlight filters faintly between distant trunks. Ferns, fallen leaves and undergrowth cover the ground, with no clear path anywhere. Foreground framed by a massive trunk and hanging branches. Muted greens and browns, soft hazy daylight, quiet and slightly disorienting."
+  },
+  "forest-mountains": {
+   "prompt": "The edge of a forest where the trees thin out: a few last pines and birches frame the foreground, and beyond a slope of scrub, boulders and scree rises a wall of high, jagged, impassable grey mountains, their snow-dusted peaks fading into an overcast sky. No path climbs the sheer cliffs. Soft diffuse daylight, muted greens and earthy browns in the foreground, cool blue-grey distant mountains, a feeling of having reached the end of the world."
+  },
+  "forest-path": {
+   "prompt": "A narrow dirt path winding north-south through a dimly lit forest, running from the foreground into the green gloom ahead. At the edge of the path stands one particularly large old tree, its massive gnarled trunk dominating the middle ground, with thick low branches within easy reach, inviting a climb. Surrounding trees, ferns and twisted roots crowd the path. Pale shafts of overcast daylight through the canopy, muted greens and browns, peaceful but secretive."
+  },
+  "up-a-tree": {
+   "prompt": "View from about ten feet up inside a large old tree, nestled among thick, mossy branches. Heavy limbs and clusters of leaves frame the whole image; the next branch overhead is clearly out of reach. Looking down through a gap in the foliage, the dirt forest path, ferns and roots are visible on the ground below. Surrounding treetops of the dim forest, dappled pale daylight filtering through the leaves. Muted greens, warm bark browns, a gentle sense of height."
+  },
+  "clearing-grating": {
+   "prompt": "A small forest clearing surrounded on all sides by tall dark trees, under a grey overcast sky. In the middle of the grassy ground lies a heavy rusted iron grating set flat into the earth, closed and half-hidden under a thick scattering of dry brown leaves. A faint path leads away south between the trees. Ferns and a few stones, foreground framed by low branches. Soft diffuse daylight, muted greens and autumn browns, a hint of secrecy beneath the leaves."
+  },
+  "clearing": {
+   "prompt": "A small clearing on a well-marked forest path that crosses the image from left to right, extending east and west into the trees. Tall old trees ring the clearing; short grass, wildflowers, a mossy stump and a few rocks in the open space. Foreground framed by a leaning trunk and leafy branches. Soft hazy daylight breaking through grey clouds, muted greens and earthy browns, peaceful and open after the dark woods."
+  },
+  "canyon-view": {
+   "prompt": "A breathtaking panorama from the rim of the west wall of a great canyon. Far below, a mighty river winds between sheer rock walls; to the north it pours over a huge waterfall crowned by a rainbow in the spray, and upstream the river emerges from a great dark cavern mouth. Across the canyon, gleaming white cliffs join the ramparts of rugged mountains. To the sides an immense forest stretches for miles. Foreground: rocky rim with scrub, a path leading northwest and rough footholds going down. Hazy daylight, ochres, greens, blue distance."
+  },
+  "rocky-ledge": {
+   "prompt": "Standing on a narrow rocky ledge about halfway up the wall of a deep river canyon. The ledge juts out in the foreground with crumbling edges; below, a dizzying drop to the canyon bottom. Opposite, the main flow of a great waterfall's river twists away into an impassable cleft between sheer rock walls. Above, more cliff rises, its cracks and handholds looking climbable. Hazy daylight from the strip of grey sky above, ochre and grey rock, blue-green water, vertiginous mood."
+  },
+  "canyon-bottom": {
+   "prompt": "At the bottom of a river canyon, beneath towering ochre and grey rock walls rough enough to climb. A modest stream, the lesser runoff of a great waterfall, flows past over smooth stones in the middle ground. A narrow path leads away north along the canyon floor between boulders. Ferns and moss cling to the damp rocks. A strip of overcast sky far above, soft light filtering down, cool blue-green water and earthy rock, sheltered and quiet."
+  },
+  "end-of-rainbow": {
+   "prompt": "A small, narrow rocky beach on the bank of a wide river just below a huge waterfall, hemmed in by tall gleaming white cliffs. The canyon opens here and sunlight pours down from above, sparkling on the water. To the east a shimmering, translucent rainbow arches over the falls through the drifting spray, beautiful but clearly immaterial. A narrow path continues southwest along the shore between pebbles and boulders. Blue-green water, bright white cliffs, soft warm sunlight, a sense of wonder."
+  },
+  "end-of-rainbow--rainbow": {
+   "prompt": "A small, narrow rocky beach on the bank of a wide river just below a huge waterfall, hemmed in by tall gleaming white cliffs, with sunlight pouring down from above and sparkling on the water. Rising from the beach, the rainbow has become solid: a broad, opaque arch of glowing red, yellow, green, blue and violet bands, with wide shallow steps at its foot, spanning eastward over the falls like a bridge firm enough to walk on. Spray drifts around it. A narrow path continues southwest along the shore. Blue-green water, white cliffs, vivid magical colors."
+  },
+  "on-rainbow": {
+   "prompt": "Standing on top of a solid rainbow high above a great river canyon: a broad band of glowing red, orange, yellow, green, blue and violet stripes stretches ahead like a bridge running east-west, curving down toward distant white cliffs. To one side, a magnificent view of an enormous waterfall plunging into white mist far below, framed by canyon walls and forest. Wisps of cloud drift nearby. Bright hazy sunlight, vivid rainbow colors over blue-green water and earthy rock, dizzying and magical."
+  },
+  "aragain-falls": {
+   "prompt": "At the top of an enormous waterfall where a broad river suddenly plunges about 450 feet into a misty gorge. Seen from the rocky north bank, the brink of the falls curves away in foaming water and rising spray. Below and to the west, a beautiful translucent rainbow shimmers in the mist, ethereal and immaterial. Wet boulders and the end of a narrow path frame the foreground. Hazy daylight, blue-green water, white foam, ochre canyon rock, roaring grandeur."
+  },
+  "aragain-falls--rainbow": {
+   "prompt": "At the top of an enormous waterfall where a broad river plunges about 450 feet into a misty gorge, seen from the rocky north bank, wet boulders and the end of a narrow path framing the foreground. From the brink, the rainbow has become solid: a broad, opaque arch of glowing colored bands, with wide shallow steps at its base, spanning the falls westward like a magical bridge strong enough to walk on, its far end lost in the spray. Hazy daylight, blue-green water, white foam, ochre canyon rock, vivid rainbow colors, wonder."
+  },
+  "kitchen": {
+   "prompt": "The kitchen of an old white farmhouse. A sturdy wooden table in the center, dusted with flour and crumbs, looks recently used for preparing food. On the far wall a small window stands slightly ajar, letting in grey daylight. In a back corner a dark wooden staircase leads upward into shadow, and beside it the sooty black mouth of a chimney leads down. A doorway passage opens to the west. Worn plank floor, beige plaster, old wallpaper, a cast-iron stove. Wood browns and beige, homely but strangely empty."
+  },
+  "attic": {
+   "prompt": "A cramped, dusty attic under steep sloping roof beams, lit only by the warm glow of the viewer's lantern from the front, fading into deep darkness at the edges. Bare warped floorboards, thick cobwebs strung between the rafters, and a plain old wooden table standing empty in the middle. In the foreground, the top of a narrow stairway descends through an opening in the floor, the only exit. Wood browns and faded beige, dust motes floating in the light, stuffy and forgotten."
+  },
+  "living-room": {
+   "prompt": "The living room of an old white farmhouse in soft daylight entering through a doorway on the east. Against one wall stands a large handsome trophy case of polished dark wood and glass, its shelves empty. To the west, an old wooden door nailed shut, crowned by a band of strange ornate gothic carvings. A large oriental rug with deep red and gold patterns covers the center of the plank floor. Faded floral wallpaper, wood wainscoting, an old armchair. Warm beige, wood browns, muted reds, cozy yet mysterious.",
+   "keystone": true
+  },
+  "living-room--trapdoor": {
+   "prompt": "The living room of an old white farmhouse in soft daylight entering through a doorway on the east. A large handsome trophy case of polished dark wood and glass stands against one wall. To the west, an old wooden door nailed shut, crowned by strange ornate gothic carvings. The large red and gold oriental rug has been dragged aside and lies rumpled by the wall; where it lay, a square wooden trap door stands open in the floorboards, revealing rickety stairs descending into pitch darkness. Faded wallpaper, warm beige and wood browns, ominous."
+  },
+  "cellar": {
+   "prompt": "A dark, damp stone cellar lit only by the warm glow of the viewer's lantern from the front, fading into blackness at the edges. Rough wet stone walls glisten with moisture, water stains and patches of mold. On the west side, the bottom of a steep, smooth metal ramp rises into darkness, impossible to climb. Ahead, a narrow passageway leads north; low on the south wall a cramped crawlway opens. Overhead, the underside of a closed wooden trap door. Browns, greys, ochre, cold and oppressive."
+  },
+  "troll-room": {
+   "prompt": "A small, rough-hewn underground chamber lit only by the warm glow of the viewer's lantern, its edges sinking into darkness. Old dark-brown bloodstains and deep gouges, as if made by an axe, mar the rocky walls. Dark passages open to the east and south, and on the west side a forbidding jagged hole gapes into blackness. Scattered rubble and gravel on the dirt floor. Browns, greys and ochre, an empty room holding a tense, threatening silence."
+  },
+  "troll-room--troll": {
+   "prompt": "A small, rough-hewn underground chamber lit by the warm glow of the viewer's lantern, its edges sinking into darkness. Old dark bloodstains and deep axe gouges mar the rocky walls; passages lead east and south, and a forbidding jagged hole gapes to the west. In the center, blocking every exit, looms a single massive, menacing troll: hulking grey-green body, warty hide, jutting tusks, small furious eyes, brandishing a huge blood-stained battle axe. Browns, greys, ochre and sickly green, threatening but not gory.",
+   "keystone": true,
+   "creatures": true
+  },
+  "east-of-chasm": {
+   "prompt": "Standing on the east edge of a vast underground chasm whose bottom cannot be seen, lit by the warm glow of the viewer's lantern, which fades out over the black void. The rocky ground breaks off sharply in the foreground; across the abyss the far wall is barely visible. On the right a narrow passage opens north into the rock, while the path underfoot continues back east. Cold air rising, grey and ochre rock, deep shadows, vertiginous."
+  },
+  "gallery": {
+   "prompt": "An abandoned underground art gallery with dark wood-panelled walls and a faded red runner on the stone floor, lit by a few old brass wall sconces casting a dim amber glow. The walls are almost bare: empty hooks, small picture lamps shining on nothing, and pale unfaded rectangles where paintings once hung. Dark doorways lead out to the north and west. Dust and cobwebs. Browns, faded crimson, dull gold, melancholic and faintly comic emptiness."
+  },
+  "studio": {
+   "prompt": "An abandoned artist's studio lit only by the warm glow of the viewer's lantern from the front, fading into darkness at the edges. Walls and floorboards are splattered with countless drips and splashes of paint in dozens of vivid colors; the walls are bare. A broken, empty easel leans in a corner. At the south end an open door, itself covered in paint. A stone fireplace with a dark, narrow chimney leading upward. Bright paint over brown wood and grey stone, whimsical."
+  },
+  "maze": {
+   "prompt": "Part of an underground maze of twisty little passages, all alike, lit only by the warm glow of the viewer's lantern, quickly swallowed by darkness. Several identical narrow tunnels of rough brown and grey rock branch off at odd angles, curving out of sight, some sloping up, some down. Uneven floor of packed earth and pebbles, low irregular ceiling. No distinguishing features at all, perfectly repetitive and confusing. Browns, greys, ochre, claustrophobic."
+  },
+  "maze-skeleton": {
+   "prompt": "Part of an underground maze of twisty little passages, all alike, lit by the warm glow of the viewer's lantern, quickly swallowed by darkness. Identical narrow rock tunnels branch off at odd angles. Slumped against the wall in the foreground lie the old, bleached bones of a skeleton, the remains of a luckless adventurer, half covered in dust and cobwebs, empty-handed. Uneven earthen floor, low irregular ceiling. Brown and grey rock, ochre dust, eerie and melancholic but not gory."
+  },
+  "dead-end": {
+   "prompt": "A dead end deep inside an underground maze of twisty passages: a narrow rock tunnel ends abruptly in a blank wall of rough brown and grey stone, lit by the warm glow of the viewer's lantern, the light pooling on the wall ahead while the edges fall into darkness. Uneven earthen floor with pebbles, low irregular ceiling, a few hanging roots and drips of water. The only way out is back. Browns, greys, ochre, frustrating and claustrophobic."
+  },
+  "grating-room": {
+   "prompt": "A small underground room of rough rock near the maze, seen with a slight upward tilt and lit by the warm glow of the viewer's lantern. Several twisty, identical passages branch away into darkness around it. Set into the ceiling is a heavy rusted iron grating secured by a lock shaped like a skull and crossbones; a few dead leaves are caught in its bars and the faintest grey hint of daylight seeps through from above. Browns, greys, ochre, a cool glimmer overhead."
+  },
+  "cyclops-room": {
+   "prompt": "An underground stone chamber lit by the warm glow of the viewer's lantern. A worn stone staircase leads up at the back, and a dark exit opens to the northwest. The east wall, once solid, has been smashed through: a huge jagged hole the size and shape of a cyclops, with rubble and broken blocks scattered on the floor before it and darkness beyond. Old bloodstains streak the walls. Browns, greys, ochre, the empty aftermath of brute force."
+  },
+  "cyclops-room--cyclops": {
+   "prompt": "An underground stone chamber lit by the warm glow of the viewer's lantern. The east wall is solid and intact; a dark exit opens to the northwest; old bloodstains streak the walls. At the foot of a worn stone staircase leading up stands a gigantic one-eyed cyclops, blocking the stairs entirely: huge muscular body, ragged loincloth, a single bulging eye, wide hungry mouth, looking ready to eat horses, let alone adventurers. Browns, greys, ochre, menacing yet slightly comical.",
+   "creatures": true
+  },
+  "strange-passage": {
+   "prompt": "A long, rough stone passage lit by the warm glow of the viewer's lantern, its walls stretching from the foreground toward the east. At the far end stands an old wooden door with a huge ragged hole smashed through it, about the size of a cyclops; through the opening a faint warm daylight glows from the house beyond. Splintered wood on the floor, cracked walls, the western entrance lost in shadow at the edges. Browns, greys, wood tones, a hint of home."
+  },
+  "treasure-room": {
+   "prompt": "A large underground room, a thief's secret hideaway, lit by the warm glow of the viewer's lantern. The east wall is a sheer face of solid speckled granite. Scattered across the dusty floor lie many old discarded sacks and bags, rotting and crumbling to shreds. In one corner a stone staircase leads down into darkness. Rough walls with shadowy niches, an atmosphere of secrecy and long-past plunder. Browns, grey granite, ochre, tense and watchful."
+  },
+  "reservoir-south": {
+   "prompt": "A long underground room on the south shore of a large, dark lake, far too deep and wide to cross, lit by the warm glow of the viewer's lantern which glints on the still water. A path runs along the shore to the east and west; a steep pathway climbs southwest along the edge of a chasm; another path leads into a canyon to the southeast. The far shore is lost in darkness. Deep blue-green water, wet grey and ochre rock, vast and silent."
+  },
+  "reservoir-south--drained": {
+   "prompt": "A long underground room on what was once the south shore of a large lake, lit by the warm glow of the viewer's lantern. The reservoir has been drained: a wide expanse of glistening brown mud, puddles and stranded rocks stretches away, with only a thin stream winding through its center. Old waterline stains mark the rock walls. A path runs east and west along the old shore; a steep pathway climbs southwest along a chasm, another leads into a canyon to the southeast. Muddy browns, grey rock, dull blue-green trickle."
+  },
+  "reservoir": {
+   "prompt": "Seen from just above the surface, in the middle of a large dark underground lake, lit by the warm glow of the viewer's lantern reflecting on gently rippling blue-green water. Pebbly beaches are faintly visible to the north and south. Upstream, a small stream enters the lake through a narrow cleft in the rocks; downstream, the massive silhouette of a concrete dam rises out of the gloom. The cavern ceiling is lost in darkness. Deep blue-greens, grey rock, quiet and eerie."
+  },
+  "reservoir--drained": {
+   "prompt": "Standing in the middle of what used to be a large underground lake, now a vast expanse of glistening brown mud, lit by the warm glow of the viewer's lantern. Puddles, ripple patterns and stranded rocks cover the old lakebed; a thin stream trickles through a channel. The former shores rise to the north and south, marked by waterline stains, and downstream the massive dark wall of a concrete dam looms. Upstream, a narrow cleft in the rocks. Muddy browns, grey rock, dull blue-green, desolate."
+  },
+  "reservoir-north": {
+   "prompt": "A large cavernous underground room on the north shore of a wide, dark lake stretching away into blackness, seen at a slight upward angle and lit by the warm glow of the viewer's lantern glinting on the water. Wet boulders and a pebbly beach fill the foreground. On one side, a slimy stone stairway coated in green algae climbs away north into the rock. The vast ceiling is lost in darkness. Deep blue-green water, wet grey and ochre stone, echoing and cold."
+  },
+  "reservoir-north--drained": {
+   "prompt": "A large cavernous underground room, seen at a slight upward angle and lit by the warm glow of the viewer's lantern. To the south, where a lake once lay, stretches a broad bed of glistening brown mud, puddles and stranded rocks, crossed by a wide but shallow stream. Waterline stains ring the walls. Wet boulders and a pebbly old beach fill the foreground; on one side a slimy stone stairway coated in green algae climbs away north. Muddy browns, grey rock, dull blue-green water."
+  },
+  "stream-view": {
+   "prompt": "An underground path running along the bank of a gently flowing stream, lit by the warm glow of the viewer's lantern which sparkles on the clear water. The stream flows from west to east between water-carved rock walls, the path following it until both vanish into darkness. Smooth wet stones, moss and pale ferns, small eddies; water-polished boulders frame the foreground. A low cavern ceiling with slow drips. Blue-greens, grey and ochre rock, peaceful and calm."
+  },
+  "stream": {
+   "prompt": "Low viewpoint just above the water on a gently flowing underground stream, lit by the warm glow of the viewer's lantern. Upstream the channel narrows to a crack too tight to pass; downstream it disappears around twisting rock walls. To one side a narrow strip of pebbly beach offers a place to land. Water-carved walls, drips, rippling reflections dancing on the low ceiling. Deep blue-green water, grey and ochre rock, intimate and mysterious."
+  },
+  "mirror-room": {
+   "prompt": "A large square underground room with tall ceilings, lit by the warm glow of the viewer's lantern. The entire south wall is an enormous ancient mirror in a heavy carved stone frame, seen at an oblique angle so that it reflects only the dim room and its far archways, doubling the space into an uncanny twin. Dark arched exits open in the other three walls. Smooth flagstone floor, dust. Greys, ochre, silvery reflections, strange and magical."
+  },
+  "cave": {
+   "prompt": "A tiny rocky cave lit by the warm glow of the viewer's lantern, which barely reaches the walls. Rough brown and grey rock closes in; dark entrances lead off to the west and north. In the floor, a dark and forbidding staircase cut into the stone leads steeply down into blackness, a cold draft rising from it and stirring the dust. Uneven floor, small stalactites, damp patches. Browns, greys, ochre, cramped and uneasy."
+  },
+  "cold-passage": {
+   "prompt": "A cold, damp underground corridor lit by the warm glow of the viewer's lantern. A long east-west passageway bends here and turns into a path heading south. Water drips from the ceiling, the walls glisten with moisture and patches of pale frost, and a faint mist of cold breath-like vapor hangs in the light. Slick uneven stone floor with icy puddles. Cool greys, blue-tinged shadows, ochre rock, chilly and dreary."
+  },
+  "narrow-passage": {
+   "prompt": "A long, narrow underground corridor running north-south, lit by the warm glow of the viewer's lantern. Ahead the rock walls close in even further, squeezing the passage into a tight slit before it widens again into darkness beyond. Rough grey and brown stone with jagged protrusions, a low ceiling, gravel and dust on the floor. Browns, greys, ochre, a claustrophobic squeeze deep underground."
+  },
+  "winding-passage": {
+   "prompt": "A winding underground passage lit by the warm glow of the viewer's lantern, curving away so that only a short stretch is visible. Openings lead off to the east and north, and nowhere else. Smooth, sinuous rock walls in browns and greys, worn as if by ancient water, uneven floor with pebbles. The light fades into darkness around the bends. Browns, greys, ochre, quietly mysterious."
+  },
+  "atlantis-room": {
+   "prompt": "An ancient underground chamber that lay long under water, lit by the warm glow of the viewer's lantern. Weathered carved columns and arches are encrusted with barnacles, shells and dried seaweed; pools of seawater lie on the cracked flagstones; coral-like growths creep over the walls. A stone staircase leads up at the back, and an exit opens to the south. Sunken, timeless grandeur. Deep blue-greens, sandy ochre, pale stone, mysterious."
+  },
+  "ew-passage": {
+   "prompt": "A narrow underground east-west passageway lit by the warm glow of the viewer's lantern, the rough grey and ochre rock walls running off to the left and right into darkness. At the north end of the room, a narrow stone stairway leads down into blackness. Dusty floor, cracks and old drip stains in the walls, a low uneven ceiling. Browns, greys, ochre, quiet and still."
+  },
+  "round-room": {
+   "prompt": "A circular underground room of fitted stone, lit by the warm glow of the viewer's lantern. Arched passages open in all directions around its curved walls, but several of them are blocked by cave-ins: heaps of fallen rock and broken beams. The center of the floor is worn smooth, as if by many travelers. A domed ceiling disappears into shadow. Browns, greys, ochre, a crossroads deep underground."
+  },
+  "deep-canyon": {
+   "prompt": "Standing on the south edge of a deep underground canyon, lit by the warm glow of the viewer's lantern. The ground drops away into a dark gorge from which mist rises, carrying the loud roar of rushing water from below. A narrow stone stairway leads down along the canyon wall. Passages lead off to the east, northwest and southwest. Jagged rock and wet ledges. Browns, greys, ochre, blue-grey mist below, imposing."
+  },
+  "damp-cave": {
+   "prompt": "A damp underground cave lit by the warm glow of the viewer's lantern. Exits open to the west and east, and toward the south the cave narrows to a thin crack in the rock. The earth here is particularly wet: muddy floor, puddles, dripping water, glistening walls with patches of moss and pale fungus. Browns, greys, ochre, moist and heavy air."
+  },
+  "loud-room": {
+   "prompt": "A large underground hall whose ceiling cannot be seen, seen at a slight upward angle, the walls soaring up into blackness, lit by the warm glow of the viewer's lantern. The rock walls are curved and ribbed like the inside of a giant shell, as if shaped to echo. A narrow passage crosses the room from east to west, and a stone stairway leads upward. Smooth worn floor, droplets of water trembling in the air. Browns, greys, ochre, eerie and resonant."
+  },
+  "ns-passage": {
+   "prompt": "A high north-south underground passage lit by the warm glow of the viewer's lantern, its lofty ceiling barely visible. Ahead the passage forks, a second branch veering off to the northeast into darkness. Tall rough walls rise on both sides with vertical cracks and mineral streaks, narrowing toward a slit of darkness overhead; a dusty floor of packed earth and loose pebbles leads ahead. Browns, greys, ochre, cavernous and calm."
+  },
+  "chasm": {
+   "prompt": "A path running along the south side of a deep chasm that cuts through the cavern from southwest to northeast, lit by the warm glow of the viewer's lantern. The rocky edge falls away into black emptiness on one side; on the other, a crack in the wall opens into a passage. Loose stones near the brink, the far side faintly visible. Browns, greys, ochre, vertiginous."
+  },
+  "entrance-to-hades": {
+   "prompt": "Before a huge, ominous gateway of black stone and wrought iron set into a cavern wall, its arch covered in worn, illegible carvings. The gate stands open; beyond it lies a desolate red-lit wasteland, with a dark heap of old bones in a corner. Barring the way, a throng of translucent, jeering evil spirits and wailing wraiths swirls in the opening. Lit by the viewer's lantern and a hellish glow from beyond. Dark reds, purples, ashen whites, terrifying but not gory.",
+   "creatures": true
+  },
+  "entrance-to-hades--open": {
+   "prompt": "Before a huge, ominous gateway of black stone and wrought iron set into a cavern wall, its arch covered in worn, illegible carvings. The gate stands open and the way is clear: the spirits have fled, leaving only a few fading wisps of pale mist. Beyond lies a desolate red-lit wasteland, with a dark heap of old bones in a corner. Lit by the viewer's lantern and a hellish glow from beyond. Dark reds, purples, ashen greys, dread and silence."
+  },
+  "land-of-the-dead": {
+   "prompt": "The Land of the Living Dead: a vast, desolate underworld cavern under a dim blood-red glow. Pale wisps of mist drift like lost souls through the gloom. In one corner are stacked the remains of dozens of fallen adventurers, old bones and rusted armor, tangled and dusty. Cracked ash-grey ground, jagged black rock. A passage exits to the north. Dark reds, violets, ashen greys, mournful and eerie, never gory."
+  },
+  "engravings-cave": {
+   "prompt": "A low underground cave with a sagging ceiling, lit by the warm glow of the viewer's lantern. One wall is covered with ancient engravings: carved pictographs of strange figures, animals and abstract symbols, worn smooth by time, catching the light. Passages lead off to the northwest and east. Rough brown and ochre rock, dust on the floor. Browns, ochre, grey, mysterious and archaic."
+  },
+  "egyptian-room": {
+   "prompt": "A chamber built like an ancient Egyptian tomb, lit by the warm glow of the viewer's lantern, which gleams on gilded details. Walls of pale sandstone painted with faded friezes of stylized figures, animals and processions; carved columns with lotus capitals; an empty stone dais in the center. An ascending staircase leads up to the west. Drifts of sand on the floor. Pale stone, ochre, gold and lapis-blue accents, solemn and ancient."
+  },
+  "dome-room": {
+   "prompt": "At the periphery of a huge stone dome, standing on a narrow ledge behind a circular wooden railing, lit by the warm glow of the viewer's lantern. The dome forms the ceiling of another room far below: beyond the railing, a precipitous drop of about twenty feet to a marble floor where a white marble pedestal faintly glimmers. The curved masonry vault arches overhead. A strange draft seems to pull toward the edge. Pale stone, wood browns, ochre, deep shadows, vertigo."
+  },
+  "dome-room--rope": {
+   "prompt": "At the periphery of a huge stone dome, standing on a narrow ledge behind a circular wooden railing, lit by the warm glow of the viewer's lantern. The dome forms the ceiling of another room far below, where a white marble pedestal faintly glimmers on the marble floor. A rope is firmly tied to the railing and hangs down into the void, ending about ten feet above the floor below. The curved masonry vault arches overhead. Pale stone, wood browns, ochre, deep shadows, vertigo."
+  },
+  "torch-room": {
+   "prompt": "A large stone chamber beneath a great dome, seen at a slight upward angle and lit by the warm glow of the viewer's lantern. In the center sits a white marble pedestal, its top bare. About twenty feet up, a wooden railing runs around the edge of the dome. A prominent carved doorway leads to a staircase going down. Polished floor, fluted pilasters. Pale stone, white marble, ochre, golden accents, temple-like and solemn."
+  },
+  "temple": {
+   "prompt": "The north end of a vast ancient temple of pale stone, seen at a slight upward angle, lit by the viewer's lantern and a soft golden glow that seems to emanate from the stone itself. On the east wall, a large panel of weathered relief carvings, an ancient prayer worn into abstract patterns eroded beyond legibility; beneath it a staircase leads down into darkness. The west wall is solid granite. To the north, the exit passes between huge fluted marble pillars. Pale stone, gold leaf accents, deep shadows, sacred mystery.",
+   "keystone": true
+  },
+  "altar": {
+   "prompt": "The south end of a vast ancient temple of pale stone and marble, lit by the viewer's lantern and a soft golden glow. Directly ahead stands a massive carved stone altar, bare, its edges trimmed with tarnished gold ornaments. In one corner of the floor, a small dark hole drops into blackness. Tall pillars and arches recede into shadow on either side. Pale stone, gold, deep shadows, solemn and sacred."
+  },
+  "dam": {
+   "prompt": "Standing on top of a massive old concrete flood control dam spanning a vast underground cavern, once a tourist attraction, long abandoned. A walkway with an iron railing stretches along the crest. Behind the dam lies a wide dark reservoir; the sluice gates are closed and water spills over the top in a glistening sheet. In the foreground stands a control panel with a large metal bolt, above which a small green plastic bubble glows serenely. Paths lead north, south and west; a rough scramble leads down. Lit by the viewer's lantern. Deep blue-greens, grey concrete, rust.",
+   "keystone": true
+  },
+  "dam--open": {
+   "prompt": "Standing on top of a massive old concrete flood control dam spanning a vast underground cavern, long abandoned. A walkway with an iron railing runs along the crest. The sluice gates are wide open: torrents of white foaming water roar through them and thunder downstream in clouds of spray, while the reservoir behind drops. In the foreground, a control panel with a large metal bolt and a small glowing green plastic bubble. Paths lead north, south and west; a scramble leads down. Lit by the viewer's lantern. Blue-greens, white foam, grey concrete, rust."
+  },
+  "dam-lobby": {
+   "prompt": "The old waiting room for tours of a flood control dam, deep underground and long deserted, lit by a single flickering ceiling lamp and the viewer's lantern. Rows of worn wooden benches, a dusty reception counter, faded framed pictures of the dam, peeling institutional paint. Open doorways lead north and east into staff areas; another opening leads south onto a path over the top of the dam. Beige, faded green, grey and rust, nostalgic and eerie."
+  },
+  "maintenance-room": {
+   "prompt": "The ransacked maintenance room of an old flood control dam, lit by the warm glow of the viewer's lantern. On the wall ahead, a metal panel holds four large buttons colored blue, yellow, brown and red. Pipes and gauges run along the concrete walls, emptied metal tool chests stand with their lids open, and loose wires dangle where equipment was ripped out. Doorways lead west and south. Grey concrete, rust and oily blacks, with the four colored buttons standing out."
+  },
+  "dam-base": {
+   "prompt": "At the base of a massive concrete dam that looms above and to the north, filling the upper part of the image and rising into the gloom of a vast cavern. A cold, dark river flows past in the foreground. Along its shores rise towering white cliffs, giant pale walls stretching north to south as the river winds downstream. Pale grey light filters in from downstream, plus the warm glow of the viewer's lantern. Blue-green water, chalk-white cliffs, grey concrete, imposing."
+  },
+  "river": {
+   "prompt": "Low viewpoint just above the surface of a wide, quiet river flowing through a deep gorge under a narrow strip of pale overcast sky. Tall chalk-white cliffs loom along the east bank; large boulders line the west shore, with a narrow beach below the cliffs and a small landing further along. The river curves out of sight ahead, and a faint mist hangs far downstream. Soft diffuse light, reflections on the calm water. Deep blue-greens, chalk white, grey rock, serene."
+  },
+  "river-rapids": {
+   "prompt": "Low viewpoint just above the surface of a wide river running faster here, the water roughening into white-capped rapids between the walls of a deep gorge. Ahead, mist rises and the roar of rushing water grows. On the east shore stretches a sandy beach with a large landing area; a small patch of beach lies below the white cliffs on the west. Soft diffuse light from a strip of grey sky, spray glittering. Deep blue-greens, white foam, chalk cliffs, tense and urgent."
+  },
+  "white-cliffs": {
+   "prompt": "A narrow strip of rocky beach running along the base of towering white cliffs, beside a dark flowing river. The chalky pale cliff face rises sheer above, streaked with grey and ochre. A narrow path follows the shore along the cliffs, and a tight dark passage leads into the cliffs themselves. Pebbles, bleached driftwood, damp rocks at the waterline. Soft diffuse light from a strip of grey sky far above. Chalk white, blue-green water, grey stone, lonely."
+  },
+  "shore": {
+   "prompt": "The east shore of a swift river at the bottom of a deep gorge, where the water churns treacherously over hidden rocks. A path runs from north to south along the bank, its south end quickly turning around a sharp corner of rock. Wet stones, eddies and foam at the waterline, steep rocky walls behind. Soft diffuse light from a strip of grey sky far above. Blue-greens, white foam, grey and ochre rock, wary mood."
+  },
+  "sandy-beach": {
+   "prompt": "A large sandy beach on the east shore of a river that flows quickly by, at the bottom of a deep gorge. Smooth pale sand with wind ripples and small dunes, bleached driftwood, scattered pebbles. A path runs south beside the river, and to the northeast the dark mouth of a passage is partially buried in drifting sand. Soft diffuse light from a strip of grey sky above. Sandy ochre, blue-green water, grey rock, quiet and open."
+  },
+  "sandy-cave": {
+   "prompt": "A small cave filled with soft sand, lit by the warm glow of the viewer's lantern. Drifts and dunes of pale sand slope up against the rough rock walls and cover the whole floor, rippled by old currents, deep enough to dig in. The only exit is an opening to the southwest, through which a faint grey light seeps. Sandy ochre, browns, grey rock, hushed and secretive."
+  },
+  "mine-entrance": {
+   "prompt": "The entrance of an abandoned coal mine deep underground, lit by the warm glow of the viewer's lantern. In the west wall a shaft framed by heavy old timber props opens into blackness, with rusted rails disappearing inside. Another exit leads off at the south end of the room. Coal dust, soot-blackened walls, broken planks nailed across a support. Coal blacks, rust, dark browns, foreboding."
+  },
+  "squeaky-room": {
+   "prompt": "A small, rough underground room lit by the warm glow of the viewer's lantern. A dark passage at the north end seems to rustle with faint squeaky sounds, and pale streaks of droppings stain the floor near it. Another exit leads east. Rough rock walls with soot and mineral streaks, a low ceiling. Coal-dark rock, rust and dark browns, uneasy and watchful."
+  },
+  "bat-room": {
+   "prompt": "A small underground room with dark doorways only to the east and south, lit by the warm glow of the viewer's lantern. The rough ceiling is pitted with roosting crevices and hanging stalactites, and pale guano streaks the walls and floor. Stale, heavy air, dust drifting in the light, the rocky floor uneven and slippery. Coal blacks, rust and dark browns, creepy and cramped."
+  },
+  "shaft-room": {
+   "prompt": "A large underground room in an old coal mine, lit by the warm glow of the viewer's lantern. In the middle, a small square shaft drops through the floor into darkness. Constructed over it is a sturdy riveted metal framework with a pulley, from which a heavy iron chain hangs, holding a large basket suspended above the opening. Exits lead west and north. Coal-black walls, rust and iron greys, industrial and gloomy."
+  },
+  "smelly-room": {
+   "prompt": "A small nondescript room deep in a mine, lit by the warm glow of the viewer's lantern. A small staircase descends into darkness, and a faint sickly greenish-yellow haze seems to rise from it, carrying a foul odor. To the south a narrow tunnel opens. Rough sooty walls, coal dust on the floor. Coal blacks, rust and sickly green tints, unpleasant."
+  },
+  "gas-room": {
+   "prompt": "A small room in a coal mine reeking of coal gas, lit by the steady warm glow of the viewer's lantern. A faint yellowish haze hangs in the air, softening the far walls. A short flight of stairs climbs up, and a narrow tunnel leads east. Sooty walls with glistening black coal seams, scattered rubble. Coal blacks, rust, sickly yellow-green, quietly dangerous."
+  },
+  "coal-mine": {
+   "prompt": "A nondescript tunnel in an old coal mine, lit by the warm glow of the viewer's lantern. Low ceiling braced with old timber props and crossbeams, glistening black coal seams in the walls, passages branching off into darkness in several directions, all looking alike. Rubble, coal dust and puddles on the floor. Coal blacks, rust and dark browns, oppressive and disorienting."
+  },
+  "ladder-top": {
+   "prompt": "A very small room in an old mine, lit by the warm glow of the viewer's lantern. In the corner, the top of a rickety wooden ladder leads down through a hole in the floor into darkness, its rungs worn and uneven. A rough staircase cut into the rock leads upward on the other side. Coal-black walls, rust, dark browns, cramped and precarious."
+  },
+  "ladder-bottom": {
+   "prompt": "A rather wide room deep in a coal mine, lit by the warm glow of the viewer's lantern. On one side, a narrow, rickety wooden ladder descends from a dark hole in the ceiling. Passages leave the room to the west and south. Timber props, black coal seams, gravel and coal dust on the floor. Coal blacks, rust and dark browns, gloomy."
+  },
+  "mine-dead-end": {
+   "prompt": "A dead end in an old coal mine: the narrow tunnel ends in a rough wall of black coal and rock, lit by the warm glow of the viewer's lantern, the light pooling on the glistening seam ahead. Pick marks scar the wall, an old timber frame braces the ceiling, coal dust covers the floor. Coal blacks, rust and dark browns, airless and final."
+  },
+  "timber-room": {
+   "prompt": "A long, narrow mine passage cluttered with broken timbers: collapsed props and splintered beams lie across the floor and lean against the walls, lit by the warm glow of the viewer's lantern. A wide passage comes from the east and, at the west end of the room, turns into a very narrow passageway, from which a strong draft blows, stirring the coal dust. Coal blacks, rust, splintered wood browns, precarious."
+  },
+  "drafty-room": {
+   "prompt": "A small, drafty room at the bottom of a long vertical shaft, lit by the warm glow of the viewer's lantern. A heavy iron chain hangs down the shaft from darkness far above. A passageway leads south, and a very narrow passage opens to the east. Coal dust swirls in the draft. Rough black walls, rusted iron fittings. Coal blacks, rust, iron greys, cold and gloomy."
+  },
+  "machine-room": {
+   "prompt": "A large, cold room deep in a mine, lit by the warm glow of the viewer's lantern, its sole exit to the north. In one corner stands a strange machine reminiscent of an old clothes dryer: a riveted metal cabinet with a large round lid on its front, closed, and a tiny switch on its face. Pipes, bolts and a little frost on the walls. Iron greys, rust, coal black, cold blue shadows, curious."
+  },
+  "slide-room": {
+   "prompt": "A small chamber that was once part of a coal mine, lit by the warm glow of the viewer's lantern. The south wall is a smooth slab of grey granite. A long passage leads off to the east, a small opening to the north, and a steep, polished metal slide twists downward into darkness through the floor. Coal dust, timber props, rusty fittings. Coal blacks, rust and grey granite, inviting and risky."
+  }
+ }
+}

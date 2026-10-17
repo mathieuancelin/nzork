@@ -1,0 +1,943 @@
+{
+ "scenes": [
+  {
+   "id": "west-of-house",
+   "rooms": [
+    "WEST-OF-HOUSE"
+   ],
+   "palette": {
+    "sky": "#5f87b0",
+    "ground": "#3d5a2a"
+   }
+  },
+  {
+   "id": "north-of-house",
+   "rooms": [
+    "NORTH-OF-HOUSE"
+   ],
+   "palette": {
+    "sky": "#5f87b0",
+    "ground": "#3d5a2a"
+   }
+  },
+  {
+   "id": "south-of-house",
+   "rooms": [
+    "SOUTH-OF-HOUSE"
+   ],
+   "palette": {
+    "sky": "#5f87b0",
+    "ground": "#3d5a2a"
+   }
+  },
+  {
+   "id": "behind-house",
+   "rooms": [
+    "EAST-OF-HOUSE"
+   ],
+   "palette": {
+    "sky": "#5f87b0",
+    "ground": "#3d5a2a"
+   }
+  },
+  {
+   "id": "stone-barrow",
+   "rooms": [
+    "STONE-BARROW"
+   ],
+   "palette": {
+    "sky": "#5f87b0",
+    "ground": "#3d5a2a"
+   }
+  },
+  {
+   "id": "forest",
+   "rooms": [
+    "FOREST-1",
+    "FOREST-2",
+    "FOREST-3"
+   ],
+   "palette": {
+    "sky": "#2f4a3a",
+    "ground": "#253421"
+   }
+  },
+  {
+   "id": "forest-mountains",
+   "rooms": [
+    "MOUNTAINS"
+   ],
+   "palette": {
+    "sky": "#2f4a3a",
+    "ground": "#253421"
+   }
+  },
+  {
+   "id": "forest-path",
+   "rooms": [
+    "PATH"
+   ],
+   "palette": {
+    "sky": "#2f4a3a",
+    "ground": "#253421"
+   }
+  },
+  {
+   "id": "up-a-tree",
+   "rooms": [
+    "UP-A-TREE"
+   ],
+   "palette": {
+    "sky": "#2f4a3a",
+    "ground": "#253421"
+   }
+  },
+  {
+   "id": "clearing-grating",
+   "rooms": [
+    "GRATING-CLEARING"
+   ],
+   "palette": {
+    "sky": "#2f4a3a",
+    "ground": "#253421"
+   }
+  },
+  {
+   "id": "clearing",
+   "rooms": [
+    "CLEARING"
+   ],
+   "palette": {
+    "sky": "#2f4a3a",
+    "ground": "#253421"
+   }
+  },
+  {
+   "id": "canyon-view",
+   "rooms": [
+    "CANYON-VIEW"
+   ],
+   "palette": {
+    "sky": "#5f87b0",
+    "ground": "#3d5a2a"
+   }
+  },
+  {
+   "id": "rocky-ledge",
+   "rooms": [
+    "CLIFF-MIDDLE"
+   ],
+   "palette": {
+    "sky": "#5f87b0",
+    "ground": "#3d5a2a"
+   }
+  },
+  {
+   "id": "canyon-bottom",
+   "rooms": [
+    "CANYON-BOTTOM"
+   ],
+   "palette": {
+    "sky": "#5f87b0",
+    "ground": "#3d5a2a"
+   }
+  },
+  {
+   "id": "end-of-rainbow",
+   "rooms": [
+    "END-OF-RAINBOW"
+   ],
+   "palette": {
+    "sky": "#5b6fa8",
+    "ground": "#3b4a5e"
+   },
+   "variants": [
+    {
+     "id": "end-of-rainbow--rainbow",
+     "when": {
+      "flag": "RAINBOW-FLAG"
+     }
+    }
+   ]
+  },
+  {
+   "id": "on-rainbow",
+   "rooms": [
+    "ON-RAINBOW"
+   ],
+   "palette": {
+    "sky": "#5b6fa8",
+    "ground": "#3b4a5e"
+   }
+  },
+  {
+   "id": "aragain-falls",
+   "rooms": [
+    "ARAGAIN-FALLS"
+   ],
+   "palette": {
+    "sky": "#5b6fa8",
+    "ground": "#3b4a5e"
+   },
+   "variants": [
+    {
+     "id": "aragain-falls--rainbow",
+     "when": {
+      "flag": "RAINBOW-FLAG"
+     }
+    }
+   ]
+  },
+  {
+   "id": "kitchen",
+   "rooms": [
+    "KITCHEN"
+   ],
+   "palette": {
+    "sky": "#4a3a2a",
+    "ground": "#2c2118"
+   }
+  },
+  {
+   "id": "attic",
+   "rooms": [
+    "ATTIC"
+   ],
+   "palette": {
+    "sky": "#4a3a2a",
+    "ground": "#2c2118"
+   }
+  },
+  {
+   "id": "living-room",
+   "rooms": [
+    "LIVING-ROOM"
+   ],
+   "palette": {
+    "sky": "#4a3a2a",
+    "ground": "#2c2118"
+   },
+   "variants": [
+    {
+     "id": "living-room--trapdoor",
+     "when": {
+      "flag": "RUG-MOVED"
+     }
+    }
+   ]
+  },
+  {
+   "id": "cellar",
+   "rooms": [
+    "CELLAR"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   }
+  },
+  {
+   "id": "troll-room",
+   "rooms": [
+    "TROLL-ROOM"
+   ],
+   "palette": {
+    "sky": "#3a1d14",
+    "ground": "#241410"
+   },
+   "variants": [
+    {
+     "id": "troll-room--troll",
+     "when": {
+      "objectIn": [
+       "TROLL",
+       "TROLL-ROOM"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "east-of-chasm",
+   "rooms": [
+    "EAST-OF-CHASM"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   }
+  },
+  {
+   "id": "gallery",
+   "rooms": [
+    "GALLERY"
+   ],
+   "palette": {
+    "sky": "#4a3a2a",
+    "ground": "#2c2118"
+   }
+  },
+  {
+   "id": "studio",
+   "rooms": [
+    "STUDIO"
+   ],
+   "palette": {
+    "sky": "#4a3a2a",
+    "ground": "#2c2118"
+   }
+  },
+  {
+   "id": "maze",
+   "rooms": [
+    "MAZE-1",
+    "MAZE-2",
+    "MAZE-3",
+    "MAZE-4",
+    "MAZE-6",
+    "MAZE-7",
+    "MAZE-8",
+    "MAZE-9",
+    "MAZE-10",
+    "MAZE-11",
+    "MAZE-12",
+    "MAZE-13",
+    "MAZE-14",
+    "MAZE-15"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   }
+  },
+  {
+   "id": "maze-skeleton",
+   "rooms": [
+    "MAZE-5"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   }
+  },
+  {
+   "id": "dead-end",
+   "rooms": [
+    "DEAD-END-1",
+    "DEAD-END-2",
+    "DEAD-END-3",
+    "DEAD-END-4"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   }
+  },
+  {
+   "id": "grating-room",
+   "rooms": [
+    "GRATING-ROOM"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   }
+  },
+  {
+   "id": "cyclops-room",
+   "rooms": [
+    "CYCLOPS-ROOM"
+   ],
+   "palette": {
+    "sky": "#3a1d14",
+    "ground": "#241410"
+   },
+   "variants": [
+    {
+     "id": "cyclops-room--cyclops",
+     "when": {
+      "notFlag": "MAGIC-FLAG"
+     }
+    }
+   ]
+  },
+  {
+   "id": "strange-passage",
+   "rooms": [
+    "STRANGE-PASSAGE"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   }
+  },
+  {
+   "id": "treasure-room",
+   "rooms": [
+    "TREASURE-ROOM"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   }
+  },
+  {
+   "id": "reservoir-south",
+   "rooms": [
+    "RESERVOIR-SOUTH"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   },
+   "variants": [
+    {
+     "id": "reservoir-south--drained",
+     "when": {
+      "flag": "LOW-TIDE"
+     }
+    }
+   ]
+  },
+  {
+   "id": "reservoir",
+   "rooms": [
+    "RESERVOIR"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   },
+   "variants": [
+    {
+     "id": "reservoir--drained",
+     "when": {
+      "flag": "LOW-TIDE"
+     }
+    }
+   ]
+  },
+  {
+   "id": "reservoir-north",
+   "rooms": [
+    "RESERVOIR-NORTH"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   },
+   "variants": [
+    {
+     "id": "reservoir-north--drained",
+     "when": {
+      "flag": "LOW-TIDE"
+     }
+    }
+   ]
+  },
+  {
+   "id": "stream-view",
+   "rooms": [
+    "STREAM-VIEW"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   }
+  },
+  {
+   "id": "stream",
+   "rooms": [
+    "IN-STREAM"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   }
+  },
+  {
+   "id": "mirror-room",
+   "rooms": [
+    "MIRROR-ROOM-1",
+    "MIRROR-ROOM-2"
+   ],
+   "palette": {
+    "sky": "#141a2a",
+    "ground": "#1c1c22"
+   }
+  },
+  {
+   "id": "cave",
+   "rooms": [
+    "SMALL-CAVE",
+    "TINY-CAVE"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   }
+  },
+  {
+   "id": "cold-passage",
+   "rooms": [
+    "COLD-PASSAGE"
+   ],
+   "palette": {
+    "sky": "#141a2a",
+    "ground": "#1c1c22"
+   }
+  },
+  {
+   "id": "narrow-passage",
+   "rooms": [
+    "NARROW-PASSAGE"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   }
+  },
+  {
+   "id": "winding-passage",
+   "rooms": [
+    "WINDING-PASSAGE",
+    "TWISTING-PASSAGE"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   }
+  },
+  {
+   "id": "atlantis-room",
+   "rooms": [
+    "ATLANTIS-ROOM"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   }
+  },
+  {
+   "id": "ew-passage",
+   "rooms": [
+    "EW-PASSAGE"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   }
+  },
+  {
+   "id": "round-room",
+   "rooms": [
+    "ROUND-ROOM"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   }
+  },
+  {
+   "id": "deep-canyon",
+   "rooms": [
+    "DEEP-CANYON"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   }
+  },
+  {
+   "id": "damp-cave",
+   "rooms": [
+    "DAMP-CAVE"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   }
+  },
+  {
+   "id": "loud-room",
+   "rooms": [
+    "LOUD-ROOM"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   }
+  },
+  {
+   "id": "ns-passage",
+   "rooms": [
+    "NS-PASSAGE"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   }
+  },
+  {
+   "id": "chasm",
+   "rooms": [
+    "CHASM-ROOM"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   }
+  },
+  {
+   "id": "entrance-to-hades",
+   "rooms": [
+    "ENTRANCE-TO-HADES"
+   ],
+   "palette": {
+    "sky": "#3a1d14",
+    "ground": "#241410"
+   },
+   "variants": [
+    {
+     "id": "entrance-to-hades--open",
+     "when": {
+      "flag": "LLD-FLAG"
+     }
+    }
+   ]
+  },
+  {
+   "id": "land-of-the-dead",
+   "rooms": [
+    "LAND-OF-LIVING-DEAD"
+   ],
+   "palette": {
+    "sky": "#3a1d14",
+    "ground": "#241410"
+   }
+  },
+  {
+   "id": "engravings-cave",
+   "rooms": [
+    "ENGRAVINGS-CAVE"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   }
+  },
+  {
+   "id": "egyptian-room",
+   "rooms": [
+    "EGYPT-ROOM"
+   ],
+   "palette": {
+    "sky": "#2a2433",
+    "ground": "#3a3326"
+   }
+  },
+  {
+   "id": "dome-room",
+   "rooms": [
+    "DOME-ROOM"
+   ],
+   "palette": {
+    "sky": "#2a2433",
+    "ground": "#3a3326"
+   },
+   "variants": [
+    {
+     "id": "dome-room--rope",
+     "when": {
+      "flag": "DOME-FLAG"
+     }
+    }
+   ]
+  },
+  {
+   "id": "torch-room",
+   "rooms": [
+    "TORCH-ROOM"
+   ],
+   "palette": {
+    "sky": "#2a2433",
+    "ground": "#3a3326"
+   }
+  },
+  {
+   "id": "temple",
+   "rooms": [
+    "NORTH-TEMPLE"
+   ],
+   "palette": {
+    "sky": "#2a2433",
+    "ground": "#3a3326"
+   }
+  },
+  {
+   "id": "altar",
+   "rooms": [
+    "SOUTH-TEMPLE"
+   ],
+   "palette": {
+    "sky": "#2a2433",
+    "ground": "#3a3326"
+   }
+  },
+  {
+   "id": "dam",
+   "rooms": [
+    "DAM-ROOM"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   },
+   "variants": [
+    {
+     "id": "dam--open",
+     "when": {
+      "flag": "GATES-OPEN"
+     }
+    }
+   ]
+  },
+  {
+   "id": "dam-lobby",
+   "rooms": [
+    "DAM-LOBBY"
+   ],
+   "palette": {
+    "sky": "#4a3a2a",
+    "ground": "#2c2118"
+   }
+  },
+  {
+   "id": "maintenance-room",
+   "rooms": [
+    "MAINTENANCE-ROOM"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   }
+  },
+  {
+   "id": "dam-base",
+   "rooms": [
+    "DAM-BASE"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   }
+  },
+  {
+   "id": "river",
+   "rooms": [
+    "RIVER-1",
+    "RIVER-2",
+    "RIVER-3"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   }
+  },
+  {
+   "id": "river-rapids",
+   "rooms": [
+    "RIVER-4",
+    "RIVER-5"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   }
+  },
+  {
+   "id": "white-cliffs",
+   "rooms": [
+    "WHITE-CLIFFS-NORTH",
+    "WHITE-CLIFFS-SOUTH"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   }
+  },
+  {
+   "id": "shore",
+   "rooms": [
+    "SHORE"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   }
+  },
+  {
+   "id": "sandy-beach",
+   "rooms": [
+    "SANDY-BEACH"
+   ],
+   "palette": {
+    "sky": "#5f87b0",
+    "ground": "#3d5a2a"
+   }
+  },
+  {
+   "id": "sandy-cave",
+   "rooms": [
+    "SANDY-CAVE"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   }
+  },
+  {
+   "id": "mine-entrance",
+   "rooms": [
+    "MINE-ENTRANCE"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   }
+  },
+  {
+   "id": "squeaky-room",
+   "rooms": [
+    "SQUEEKY-ROOM"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   }
+  },
+  {
+   "id": "bat-room",
+   "rooms": [
+    "BAT-ROOM"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   }
+  },
+  {
+   "id": "shaft-room",
+   "rooms": [
+    "SHAFT-ROOM"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   }
+  },
+  {
+   "id": "smelly-room",
+   "rooms": [
+    "SMELLY-ROOM"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   }
+  },
+  {
+   "id": "gas-room",
+   "rooms": [
+    "GAS-ROOM"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   }
+  },
+  {
+   "id": "coal-mine",
+   "rooms": [
+    "MINE-1",
+    "MINE-2",
+    "MINE-3",
+    "MINE-4"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   }
+  },
+  {
+   "id": "ladder-top",
+   "rooms": [
+    "LADDER-TOP"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   }
+  },
+  {
+   "id": "ladder-bottom",
+   "rooms": [
+    "LADDER-BOTTOM"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   }
+  },
+  {
+   "id": "mine-dead-end",
+   "rooms": [
+    "DEAD-END-5"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   }
+  },
+  {
+   "id": "timber-room",
+   "rooms": [
+    "TIMBER-ROOM"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   }
+  },
+  {
+   "id": "drafty-room",
+   "rooms": [
+    "LOWER-SHAFT"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   }
+  },
+  {
+   "id": "machine-room",
+   "rooms": [
+    "MACHINE-ROOM"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   }
+  },
+  {
+   "id": "slide-room",
+   "rooms": [
+    "SLIDE-ROOM"
+   ],
+   "palette": {
+    "sky": "#141a2a",
+    "ground": "#1c1c22"
+   }
+  }
+ ]
+}

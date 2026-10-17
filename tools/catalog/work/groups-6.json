@@ -1,0 +1,1150 @@
+[
+ {
+  "key": "gef59",
+  "en": "A beautiful rainbow can be seen over the falls and to the west.\n",
+  "args": [],
+  "routine": "FALLS-ROOM",
+  "zil": "<TELL \"A beautiful rainbow can be seen over the falls and to the west.\">"
+ },
+ {
+  "key": "gef88",
+  "en": "From here?!?\n",
+  "args": [],
+  "routine": "RAINBOW-FCN",
+  "zil": "<TELL \"From here?!?\" CR>"
+ },
+ {
+  "key": "gefac",
+  "en": "You'll have to say which way...\n",
+  "args": [],
+  "routine": "RAINBOW-FCN",
+  "zil": "<TELL \"You'll have to say which way...\" CR>"
+ },
+ {
+  "key": "gefc1",
+  "en": "Can you walk on water vapor?\n",
+  "args": [],
+  "routine": "RAINBOW-FCN",
+  "zil": "<TELL \"Can you walk on water vapor?\" CR>"
+ },
+ {
+  "key": "gefd6",
+  "en": "The Frigid River flows under the rainbow.\n",
+  "args": [],
+  "routine": "RAINBOW-FCN",
+  "zil": "<TELL \"The Frigid River flows under the rainbow.\" CR>"
+ },
+ {
+  "key": "gf007",
+  "en": "No chance. Some moron punctured it.\n",
+  "args": [],
+  "routine": "DBOAT-FUNCTION",
+  "zil": "<TELL \"No chance. Some moron punctured it.\" CR>"
+ },
+ {
+  "key": "gf039",
+  "en": "Well done. The boat is repaired.\n",
+  "args": [],
+  "routine": "FIX-BOAT",
+  "zil": "<TELL \"Well done. The boat is repaired.\" CR>"
+ },
+ {
+  "key": "gf078",
+  "en": "You should get in the boat then launch it.\n",
+  "args": [],
+  "routine": "RIVER-FUNCTION",
+  "zil": "<TELL \"You should get in the boat then launch it.\" CR>"
+ },
+ {
+  "key": "gf09d",
+  "en": "The {0} floats for a moment, then sinks.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "RIVER-FUNCTION",
+  "zil": "<TELL \"The \" D ,PRSO \" floats for a moment, then sinks.\" CR>"
+ },
+ {
+  "key": "gf0bf",
+  "en": "The {0} splashes into the water and is gone forever.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "RIVER-FUNCTION",
+  "zil": "<TELL \"The \" D ,PRSO \" splashes into the water and is gone forever.\" CR>"
+ },
+ {
+  "key": "gf0e3",
+  "en": "A look before leaping reveals that the river is wide and dangerous, with swift currents and large, half-hidden rocks. You decide to forgo your swim.\n",
+  "args": [],
+  "routine": "RIVER-FUNCTION",
+  "zil": "<TELL \"A look before leaping reveals that the river is wide and dangerous, with swift currents and large, half-hidden rocks. You decide to forgo your swim.\" CR>"
+ },
+ {
+  "key": "gf15d",
+  "en": "The flow of the river carries you downstream.\n\n",
+  "args": [],
+  "routine": "I-RIVER",
+  "zil": "<TELL \"The flow of the river carries you downstream.\" CR CR>"
+ },
+ {
+  "key": "gf1ca",
+  "en": "Read the label for the boat's instructions.\n",
+  "args": [],
+  "routine": "RBOAT-FUNCTION",
+  "zil": "<TELL \"Read the label for the boat's instructions.\" CR>"
+ },
+ {
+  "key": "gf1fa",
+  "en": "You are on the ",
+  "args": [],
+  "routine": "RBOAT-FUNCTION",
+  "zil": "<TELL \"You are on the \">"
+ },
+ {
+  "key": "gf205",
+  "en": "reservoir",
+  "args": [],
+  "routine": "RBOAT-FUNCTION",
+  "zil": "<TELL \"reservoir\">"
+ },
+ {
+  "key": "gf213",
+  "en": "stream",
+  "args": [],
+  "routine": "RBOAT-FUNCTION",
+  "zil": "<TELL \"stream\">"
+ },
+ {
+  "key": "gf21b",
+  "en": "river",
+  "args": [],
+  "routine": "RBOAT-FUNCTION",
+  "zil": "<TELL \"river\">"
+ },
+ {
+  "key": "gf220",
+  "en": ", or have you forgotten?\n",
+  "args": [],
+  "routine": "RBOAT-FUNCTION",
+  "zil": "<TELL \", or have you forgotten?\" CR>"
+ },
+ {
+  "key": "gf252",
+  "en": "You can't launch it here.\n",
+  "args": [],
+  "routine": "RBOAT-FUNCTION",
+  "zil": "<TELL \"You can't launch it here.\" CR>"
+ },
+ {
+  "key": "gf292",
+  "en": "It seems that the ",
+  "args": [],
+  "routine": "RBOAT-FUNCTION",
+  "zil": "<TELL \"It seems that the \">"
+ },
+ {
+  "key": "gf2a6",
+  "en": " didn't agree with the boat, as evidenced by the loud hissing noise issuing therefrom. With a pathetic sputter, the boat deflates, leaving you without.\n",
+  "args": [],
+  "routine": "RBOAT-FUNCTION",
+  "zil": "<TELL \" didn't agree with the boat, as evidenced by the loud hissing noise issuing therefrom. With a pathetic sputter, the boat deflates, leaving you without.\" CR>"
+ },
+ {
+  "key": "gf325",
+  "en": "You're not in the boat!\n",
+  "args": [],
+  "routine": "RBOAT-FUNCTION",
+  "zil": "<TELL \"You're not in the boat!\" CR>"
+ },
+ {
+  "key": "gf34d",
+  "en": "Oops! Something sharp seems to have slipped and punctured the boat. The boat deflates to the sounds of hissing, sputtering, and cursing.\n",
+  "args": [],
+  "routine": "RBOAT-FUNCTION",
+  "zil": "<TELL \"Oops! Something sharp seems to have slipped and punctured the boat. The boat deflates to the sounds of hissing, sputtering, and cursing.\" CR>"
+ },
+ {
+  "key": "gf3b5",
+  "en": "Inflating it further would probably burst it.\n",
+  "args": [],
+  "routine": "RBOAT-FUNCTION",
+  "zil": "<TELL \"Inflating it further would probably burst it.\" CR>"
+ },
+ {
+  "key": "gf3d9",
+  "en": "You can't deflate the boat while you're in it.\n",
+  "args": [],
+  "routine": "RBOAT-FUNCTION",
+  "zil": "<TELL \"You can't deflate the boat while you're in it.\" CR>"
+ },
+ {
+  "key": "gf3f8",
+  "en": "The boat must be on the ground to be deflated.\n",
+  "args": [],
+  "routine": "RBOAT-FUNCTION",
+  "zil": "<TELL \"The boat must be on the ground to be deflated.\" CR>"
+ },
+ {
+  "key": "gf411",
+  "en": "The boat deflates.\n",
+  "args": [],
+  "routine": "RBOAT-FUNCTION",
+  "zil": "<TELL \"The boat deflates.\" CR>"
+ },
+ {
+  "key": "gf447",
+  "en": "The boat must be on the ground to be inflated.\n",
+  "args": [],
+  "routine": "IBOAT-FUNCTION",
+  "zil": "<TELL \"The boat must be on the ground to be inflated.\" CR>"
+ },
+ {
+  "key": "gf465",
+  "en": "The boat inflates and appears seaworthy.\n",
+  "args": [],
+  "routine": "IBOAT-FUNCTION",
+  "zil": "<TELL \"The boat inflates and appears seaworthy.\" CR>"
+ },
+ {
+  "key": "gf481",
+  "en": "A tan label is lying inside the boat.\n",
+  "args": [],
+  "routine": "IBOAT-FUNCTION",
+  "zil": "<TELL \"A tan label is lying inside the boat.\" CR>"
+ },
+ {
+  "key": "gf4b2",
+  "en": "You don't have enough lung power to inflate it.\n",
+  "args": [],
+  "routine": "IBOAT-FUNCTION",
+  "zil": "<TELL \"You don't have enough lung power to inflate it.\" CR>"
+ },
+ {
+  "key": "gf4cd",
+  "en": "With a {0}? Surely you jest!\n",
+  "args": [
+   "o"
+  ],
+  "routine": "IBOAT-FUNCTION",
+  "zil": "<TELL \"With a \" D ,PRSI \"? Surely you jest!\" CR>"
+ },
+ {
+  "key": "gf4f4",
+  "en": "You notice something funny about the feel of the buoy.\n",
+  "args": [],
+  "routine": "RIVR4-ROOM",
+  "zil": "<TELL \"You notice something funny about the feel of the buoy.\" CR>"
+ },
+ {
+  "key": "gf543",
+  "en": "You can see a scarab here in the sand.\n",
+  "args": [],
+  "routine": "SAND-FUNCTION",
+  "zil": "<TELL \"You can see a scarab here in the sand.\" CR>"
+ },
+ {
+  "key": "gf576",
+  "en": "You are about 10 feet above the ground nestled among some large branches. The nearest branch above you is above your reach.\n",
+  "args": [],
+  "routine": "TREE-ROOM",
+  "zil": "<TELL \"You are about 10 feet above the ground nestled among some large branches. The nearest branch above you is above your reach.\" CR>"
+ },
+ {
+  "key": "gf5c2",
+  "en": "On the ground below you can see:  ",
+  "args": [],
+  "routine": "TREE-ROOM",
+  "zil": "<TELL \"On the ground below you can see:  \">"
+ },
+ {
+  "key": "gf5db",
+  "en": ".\n",
+  "args": [],
+  "routine": "TREE-ROOM",
+  "zil": "<TELL \".\" CR>"
+ },
+ {
+  "key": "gf61a",
+  "en": "The nest falls to the ground, and the egg spills out of it, seriously damaged.\n",
+  "args": [],
+  "routine": "TREE-ROOM",
+  "zil": "<TELL \"The nest falls to the ground, and the egg spills out of it, seriously damaged.\" CR>"
+ },
+ {
+  "key": "gf658",
+  "en": "The egg falls to the ground and springs open, seriously damaged.",
+  "args": [],
+  "routine": "TREE-ROOM",
+  "zil": "<TELL \"The egg falls to the ground and springs open, seriously damaged.\">"
+ },
+ {
+  "key": "gf690",
+  "en": "The {0} falls to the ground.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "TREE-ROOM",
+  "zil": "<TELL \"The \" D ,PRSO \" falls to the ground.\" CR>"
+ },
+ {
+  "key": "gf6d5",
+  "en": "The egg is already open.\n",
+  "args": [],
+  "routine": "EGG-OBJECT",
+  "zil": "<TELL \"The egg is already open.\" CR>"
+ },
+ {
+  "key": "gf6e5",
+  "en": "You have neither the tools nor the expertise.\n",
+  "args": [],
+  "routine": "EGG-OBJECT",
+  "zil": "<TELL \"You have neither the tools nor the expertise.\" CR>"
+ },
+ {
+  "key": "gf704",
+  "en": "I doubt you could do that without damaging it.\n",
+  "args": [],
+  "routine": "EGG-OBJECT",
+  "zil": "<TELL \"I doubt you could do that without damaging it.\" CR>"
+ },
+ {
+  "key": "gf72e",
+  "en": "The egg is now open, but the clumsiness of your attempt has seriously compromised its esthetic appeal.",
+  "args": [],
+  "routine": "EGG-OBJECT",
+  "zil": "<TELL \"The egg is now open, but the clumsiness of your attempt has seriously compromised its esthetic appeal.\">"
+ },
+ {
+  "key": "gf776",
+  "en": "Not to say that using the {0} isn't original too...\n",
+  "args": [
+   "o"
+  ],
+  "routine": "EGG-OBJECT",
+  "zil": "<TELL \"Not to say that using the \" D ,PRSI \" isn't original too...\" CR>"
+ },
+ {
+  "key": "gf79a",
+  "en": "The concept of using a {0} is certainly original.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "EGG-OBJECT",
+  "zil": "<TELL \"The concept of using a \" D ,PRSI \" is certainly original.\" CR>"
+ },
+ {
+  "key": "gf7c8",
+  "en": "There is a noticeable crunch from beneath you, and inspection reveals that the egg is lying open, badly damaged.",
+  "args": [],
+  "routine": "EGG-OBJECT",
+  "zil": "<TELL \"There is a noticeable crunch from beneath you, and inspection reveals that the egg is lying open, badly damaged.\">"
+ },
+ {
+  "key": "gf81e",
+  "en": "Your rather indelicate handling of the egg has caused it some damage, although you have succeeded in opening it.",
+  "args": [],
+  "routine": "EGG-OBJECT",
+  "zil": "<TELL \"Your rather indelicate handling of the egg has caused it some damage, although you have succeeded in opening it.\">"
+ },
+ {
+  "key": "gf8a5",
+  "en": "The canary chirps, slightly off-key, an aria from a forgotten opera. From out of the greenery flies a lovely songbird. It perches on a limb just over your head and opens its beak to sing. As it does so a beautiful brass bauble drops from its mouth, bounces off the top of your head, and lands glimmering in the grass. As the canary winds down, the songbird flies away.\n",
+  "args": [],
+  "routine": "CANARY-OBJECT",
+  "zil": "<TELL \"The canary chirps, slightly off-key, an aria from a forgotten opera. From out of the greenery flies a lovely songbird. It perches on a limb just over your head and opens its beak to sing. As it does so a beautiful brass bauble drops from its mouth, bounces off the top of your head, and lands glimmering in the grass. As the canary winds down, the songbird flies away.\" CR>"
+ },
+ {
+  "key": "gf999",
+  "en": "The canary chirps blithely, if somewhat tinnily, for a short time.\n",
+  "args": [],
+  "routine": "CANARY-OBJECT",
+  "zil": "<TELL \"The canary chirps blithely, if somewhat tinnily, for a short time.\" CR>"
+ },
+ {
+  "key": "gf9c4",
+  "en": "There is an unpleasant grinding noise from inside the canary.\n",
+  "args": [],
+  "routine": "CANARY-OBJECT",
+  "zil": "<TELL \"There is an unpleasant grinding noise from inside the canary.\" CR>"
+ },
+ {
+  "key": "gfa16",
+  "en": "You hear in the distance the chirping of a song bird.\n",
+  "args": [],
+  "routine": "I-FOREST-ROOM",
+  "zil": "<TELL \"You hear in the distance the chirping of a song bird.\" CR>"
+ },
+ {
+  "key": "gfa6c",
+  "en": "The cliff is too steep for climbing.\n",
+  "args": [],
+  "routine": "WCLIF-OBJECT",
+  "zil": "<TELL \"The cliff is too steep for climbing.\" CR>"
+ },
+ {
+  "key": "gfa8f",
+  "en": "That would be very unwise. Perhaps even fatal.\n",
+  "args": [],
+  "routine": "CLIFF-OBJECT",
+  "zil": "<TELL \"That would be very unwise. Perhaps even fatal.\" CR>"
+ },
+ {
+  "key": "gfab8",
+  "en": "The {0} tumbles into the river and is seen no more.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "CLIFF-OBJECT",
+  "zil": "<TELL \"The \" D ,PRSO \" tumbles into the river and is seen no more.\" CR>"
+ },
+ {
+  "key": "gfaea",
+  "en": "You can't tie the rope to that.\n",
+  "args": [],
+  "routine": "ROPE-FUNCTION",
+  "zil": "<TELL \"You can't tie the rope to that.\" CR>"
+ },
+ {
+  "key": "gfb05",
+  "en": "The rope is already tied to it.\n",
+  "args": [],
+  "routine": "ROPE-FUNCTION",
+  "zil": "<TELL \"The rope is already tied to it.\" CR>"
+ },
+ {
+  "key": "gfb16",
+  "en": "The rope drops over the side and comes within ten feet of the floor.\n",
+  "args": [],
+  "routine": "ROPE-FUNCTION",
+  "zil": "<TELL \"The rope drops over the side and comes within ten feet of the floor.\" CR>"
+ },
+ {
+  "key": "gfb7d",
+  "en": "Your attempt to tie up the {0} awakens him.",
+  "args": [
+   "o"
+  ],
+  "routine": "ROPE-FUNCTION",
+  "zil": "<TELL \"Your attempt to tie up the \" D ,PRSO \" awakens him.\">"
+ },
+ {
+  "key": "gfba0",
+  "en": "The {0} struggles and you cannot tie him up.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "ROPE-FUNCTION",
+  "zil": "<TELL \"The \" D ,PRSO \" struggles and you cannot tie him up.\" CR>"
+ },
+ {
+  "key": "gfbba",
+  "en": "Why would you tie up a {0}?\n",
+  "args": [
+   "o"
+  ],
+  "routine": "ROPE-FUNCTION",
+  "zil": "<TELL \"Why would you tie up a \" D ,PRSO \"?\" CR>"
+ },
+ {
+  "key": "gfbd9",
+  "en": "The rope is now untied.\n",
+  "args": [],
+  "routine": "ROPE-FUNCTION",
+  "zil": "<TELL \"The rope is now untied.\" CR>"
+ },
+ {
+  "key": "gfbe8",
+  "en": "It is not tied to anything.\n",
+  "args": [],
+  "routine": "ROPE-FUNCTION",
+  "zil": "<TELL \"It is not tied to anything.\" CR>"
+ },
+ {
+  "key": "gfc07",
+  "en": "The rope drops gently to the floor below.\n",
+  "args": [],
+  "routine": "ROPE-FUNCTION",
+  "zil": "<TELL \"The rope drops gently to the floor below.\" CR>"
+ },
+ {
+  "key": "gfc29",
+  "en": "The rope is tied to the railing.\n",
+  "args": [],
+  "routine": "ROPE-FUNCTION",
+  "zil": "<TELL \"The rope is tied to the railing.\" CR>"
+ },
+ {
+  "key": "gfc50",
+  "en": "It's not attached to that!\n",
+  "args": [],
+  "routine": "UNTIE-FROM",
+  "zil": "<TELL \"It's not attached to that!\" CR>"
+ },
+ {
+  "key": "gfc7f",
+  "en": "You tumble down the slide....\n",
+  "args": [],
+  "routine": "SLIDE-FUNCTION",
+  "zil": "<TELL \"You tumble down the slide....\" CR>"
+ },
+ {
+  "key": "gfcaf",
+  "en": "The {0} falls into the slide and is gone.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "SLIDER",
+  "zil": "<TELL \"The \" D .OBJ \" falls into the slide and is gone.\" CR>"
+ },
+ {
+  "key": "gfceb",
+  "en": "It smells of hot peppers.\n",
+  "args": [],
+  "routine": "SANDWICH-BAG-FCN",
+  "zil": "<TELL \"It smells of hot peppers.\" CR>"
+ },
+ {
+  "key": "gfd0d",
+  "en": "You cannot enter in your condition.\n",
+  "args": [],
+  "routine": "DEAD-FUNCTION",
+  "zil": "<TELL \"You cannot enter in your condition.\" CR>"
+ },
+ {
+  "key": "gfd3f",
+  "en": "All such attacks are vain in your condition.\n",
+  "args": [],
+  "routine": "DEAD-FUNCTION",
+  "zil": "<TELL \"All such attacks are vain in your condition.\" CR>"
+ },
+ {
+  "key": "gfd75",
+  "en": "Even such an action is beyond your capabilities.\n",
+  "args": [],
+  "routine": "DEAD-FUNCTION",
+  "zil": "<TELL \"Even such an action is beyond your capabilities.\" CR>"
+ },
+ {
+  "key": "gfd98",
+  "en": "Might as well. You've got an eternity.\n",
+  "args": [],
+  "routine": "DEAD-FUNCTION",
+  "zil": "<TELL \"Might as well. You've got an eternity.\" CR>"
+ },
+ {
+  "key": "gfdb9",
+  "en": "You need no light to guide you.\n",
+  "args": [],
+  "routine": "DEAD-FUNCTION",
+  "zil": "<TELL \"You need no light to guide you.\" CR>"
+ },
+ {
+  "key": "gfdd2",
+  "en": "You're dead! How can you think of your score?\n",
+  "args": [],
+  "routine": "DEAD-FUNCTION",
+  "zil": "<TELL \"You're dead! How can you think of your score?\" CR>"
+ },
+ {
+  "key": "gfdef",
+  "en": "Your hand passes through its object.\n",
+  "args": [],
+  "routine": "DEAD-FUNCTION",
+  "zil": "<TELL \"Your hand passes through its object.\" CR>"
+ },
+ {
+  "key": "gfe09",
+  "en": "You have no possessions.\n",
+  "args": [],
+  "routine": "DEAD-FUNCTION",
+  "zil": "<TELL \"You have no possessions.\" CR>"
+ },
+ {
+  "key": "gfe1c",
+  "en": "You are dead.\n",
+  "args": [],
+  "routine": "DEAD-FUNCTION",
+  "zil": "<TELL \"You are dead.\" CR>"
+ },
+ {
+  "key": "gfe2a",
+  "en": "The room looks strange and unearthly",
+  "args": [],
+  "routine": "DEAD-FUNCTION",
+  "zil": "<TELL \"The room looks strange and unearthly\">"
+ },
+ {
+  "key": "gfe49",
+  "en": " and objects appear indistinct.",
+  "args": [],
+  "routine": "DEAD-FUNCTION",
+  "zil": "<TELL \" and objects appear indistinct.\">"
+ },
+ {
+  "key": "gfe63",
+  "en": "Although there is no light, the room seems dimly illuminated.\n",
+  "args": [],
+  "routine": "DEAD-FUNCTION",
+  "zil": "<TELL \"Although there is no light, the room seems dimly illuminated.\" CR>"
+ },
+ {
+  "key": "gfea8",
+  "en": "From the distance the sound of a lone trumpet is heard. The room becomes very bright and you feel disembodied. In a moment, the brightness fades and you find yourself rising as if from a long sleep, deep in the woods. In the distance you can faintly hear a songbird and the sounds of the forest.\n\n",
+  "args": [],
+  "routine": "DEAD-FUNCTION",
+  "zil": "<TELL \"From the distance the sound of a lone trumpet is heard. The room becomes very bright and you feel disembodied. In a moment, the brightness fades and you find yourself rising as if from a long sleep, deep in the woods. In the distance you can faintly hear a songbird and the sounds of the forest.\" CR CR>"
+ },
+ {
+  "key": "gff60",
+  "en": "Your prayers are not heard.\n",
+  "args": [],
+  "routine": "DEAD-FUNCTION",
+  "zil": "<TELL \"Your prayers are not heard.\" CR>"
+ },
+ {
+  "key": "gff6f",
+  "en": "You can't even do that.\n",
+  "args": [],
+  "routine": "DEAD-FUNCTION",
+  "zil": "<TELL \"You can't even do that.\" CR>"
+ },
+ {
+  "key": "gff86",
+  "en": "There's not much lake left....\n",
+  "args": [],
+  "routine": "LAKE-PSEUDO",
+  "zil": "<TELL \"There's not much lake left....\" CR>"
+ },
+ {
+  "key": "gffa1",
+  "en": "It's too wide to cross.\n",
+  "args": [],
+  "routine": "LAKE-PSEUDO",
+  "zil": "<TELL \"It's too wide to cross.\" CR>"
+ },
+ {
+  "key": "gffb2",
+  "en": "You can't swim in this lake.\n",
+  "args": [],
+  "routine": "LAKE-PSEUDO",
+  "zil": "<TELL \"You can't swim in this lake.\" CR>"
+ },
+ {
+  "key": "gffc9",
+  "en": "You can't swim in the stream.\n",
+  "args": [],
+  "routine": "STREAM-PSEUDO",
+  "zil": "<TELL \"You can't swim in the stream.\" CR>"
+ },
+ {
+  "key": "gffdc",
+  "en": "The other side is a sheer rock cliff.\n",
+  "args": [],
+  "routine": "STREAM-PSEUDO",
+  "zil": "<TELL \"The other side is a sheer rock cliff.\" CR>"
+ },
+ {
+  "key": "g10001",
+  "en": "You look before leaping, and realize that you would never survive.\n",
+  "args": [],
+  "routine": "CHASM-PSEUDO",
+  "zil": "<TELL \"You look before leaping, and realize that you would never survive.\" CR>"
+ },
+ {
+  "key": "g10028",
+  "en": "It's too far to jump, and there's no bridge.\n",
+  "args": [],
+  "routine": "CHASM-PSEUDO",
+  "zil": "<TELL \"It's too far to jump, and there's no bridge.\" CR>"
+ },
+ {
+  "key": "g1004b",
+  "en": "The {0} drops out of sight into the chasm.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "CHASM-PSEUDO",
+  "zil": "<TELL \"The \" D ,PRSO \" drops out of sight into the chasm.\" CR>"
+ },
+ {
+  "key": "g10073",
+  "en": "No.\n",
+  "args": [],
+  "routine": "DOME-PSEUDO",
+  "zil": "<TELL \"No.\" CR>"
+ },
+ {
+  "key": "g10084",
+  "en": "The gate is protected by an invisible force. It makes your teeth ache to touch it.\n",
+  "args": [],
+  "routine": "GATE-PSEUDO",
+  "zil": "<TELL \"The gate is protected by an invisible force. It makes your teeth ache to touch it.\" CR>"
+ },
+ {
+  "key": "g100bf",
+  "en": "The door won't budge.\n",
+  "args": [],
+  "routine": "DOOR-PSEUDO",
+  "zil": "<TELL \"The door won't budge.\" CR>"
+ },
+ {
+  "key": "g100db",
+  "en": "Some paint chips away, revealing more paint.\n",
+  "args": [],
+  "routine": "PAINT-PSEUDO",
+  "zil": "<TELL \"Some paint chips away, revealing more paint.\" CR>"
+ },
+ {
+  "key": "g10101",
+  "en": "There is too much gas to blow away.\n",
+  "args": [],
+  "routine": "GAS-PSEUDO",
+  "zil": "<TELL \"There is too much gas to blow away.\" CR>"
+ },
+ {
+  "key": "g1011a",
+  "en": "It smells like coal gas in here.\n",
+  "args": [],
+  "routine": "GAS-PSEUDO",
+  "zil": "<TELL \"It smells like coal gas in here.\" CR>"
+ },
+ {
+  "key": "g1027a",
+  "en": "The {0} slowly regains his feet.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "VILLAIN-BLOW",
+  "zil": "<TELL \"The \" D .VILLAIN \" slowly regains his feet.\" CR>"
+ },
+ {
+  "key": "g103b7",
+  "en": "Fortunately, you still have a {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "VILLAIN-BLOW",
+  "zil": "<TELL \"Fortunately, you still have a \" D .NWEAPON \".\" CR>"
+ },
+ {
+  "key": "g1040d",
+  "en": "You are still recovering from that last blow, so your attack is ineffective.\n",
+  "args": [],
+  "routine": "HERO-BLOW",
+  "zil": "<TELL \"You are still recovering from that last blow, so your attack is ineffective.\" CR>"
+ },
+ {
+  "key": "g10468",
+  "en": "Attacking the {0} is pointless.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "HERO-BLOW",
+  "zil": "<TELL \"Attacking the \" D .VILLAIN \" is pointless.\" CR>"
+ },
+ {
+  "key": "g1048d",
+  "en": "The ",
+  "args": [],
+  "routine": "HERO-BLOW",
+  "zil": "<TELL \"The \">"
+ },
+ {
+  "key": "g10494",
+  "en": "unconscious",
+  "args": [],
+  "routine": "HERO-BLOW",
+  "zil": "<TELL \"unconscious\">"
+ },
+ {
+  "key": "g104a0",
+  "en": "unarmed",
+  "args": [],
+  "routine": "HERO-BLOW",
+  "zil": "<TELL \"unarmed\">"
+ },
+ {
+  "key": "g104a7",
+  "en": " {0} cannot defend himself: He dies.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "HERO-BLOW",
+  "zil": "<TELL \" \" D .VILLAIN \" cannot defend himself: He dies.\" CR>"
+ },
+ {
+  "key": "g1062b",
+  "en": "Almost as soon as the {0} breathes his last breath, a cloud of sinister black fog envelops him, and when the fog lifts, the carcass has disappeared.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "VILLAIN-RESULT",
+  "zil": "<TELL \"Almost as soon as the \" D .VILLAIN \" breathes his last breath, a cloud of sinister black fog envelops him, and when the fog lifts, the carcass has disappeared.\" CR>"
+ },
+ {
+  "key": "g10881",
+  "en": "Your sword has begun to glow very brightly.\n",
+  "args": [],
+  "routine": "I-SWORD",
+  "zil": "<TELL \"Your sword has begun to glow very brightly.\" CR>"
+ },
+ {
+  "key": "g108a4",
+  "en": "Your sword is glowing with a faint blue glow.\n",
+  "args": [],
+  "routine": "I-SWORD",
+  "zil": "<TELL \"Your sword is glowing with a faint blue glow.\" CR>"
+ },
+ {
+  "key": "g108c6",
+  "en": "Your sword is no longer glowing.\n",
+  "args": [],
+  "routine": "I-SWORD",
+  "zil": "<TELL \"Your sword is no longer glowing.\" CR>"
+ },
+ {
+  "key": "g10a12",
+  "en": "The robber, rummaging through his bag, dropped a few items he found valueless.\n",
+  "args": [],
+  "routine": "DROP-JUNK",
+  "zil": "<TELL \"The robber, rummaging through his bag, dropped a few items he found valueless.\" CR>"
+ },
+ {
+  "key": "g10aa6",
+  "en": "You suddenly notice that the {0} vanished.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "STEAL-JUNK",
+  "zil": "<TELL \"You suddenly notice that the \" D .X \" vanished.\" CR>"
+ },
+ {
+  "key": "g10b46",
+  "en": "You are in perfect health.",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"You are in perfect health.\">"
+ },
+ {
+  "key": "g10b5a",
+  "en": "You have ",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"You have \">"
+ },
+ {
+  "key": "g10b63",
+  "en": "a light wound,",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"a light wound,\">"
+ },
+ {
+  "key": "g10b75",
+  "en": "a serious wound,",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"a serious wound,\">"
+ },
+ {
+  "key": "g10b89",
+  "en": "several wounds,",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"several wounds,\">"
+ },
+ {
+  "key": "g10b9d",
+  "en": "serious wounds,",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"serious wounds,\">"
+ },
+ {
+  "key": "g10bad",
+  "en": " which will be cured after ",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \" which will be cured after \">"
+ },
+ {
+  "key": "g10bd5",
+  "en": "{0} moves.",
+  "args": [
+   "n"
+  ],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \" moves.\">"
+ },
+ {
+  "key": "g10bdf",
+  "en": "\nYou can ",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"You can \">"
+ },
+ {
+  "key": "g10be8",
+  "en": "expect death soon",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"expect death soon\">"
+ },
+ {
+  "key": "g10bfc",
+  "en": "be killed by one more light wound",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"be killed by one more light wound\">"
+ },
+ {
+  "key": "g10c1a",
+  "en": "be killed by a serious wound",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"be killed by a serious wound\">"
+ },
+ {
+  "key": "g10c34",
+  "en": "survive one serious wound",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"survive one serious wound\">"
+ },
+ {
+  "key": "g10c4e",
+  "en": "survive several wounds",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"survive several wounds\">"
+ },
+ {
+  "key": "g10c66",
+  "en": "You have been killed ",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"You have been killed \">"
+ },
+ {
+  "key": "g10c77",
+  "en": "once",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"once\">"
+ },
+ {
+  "key": "g10c7f",
+  "en": "twice",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"twice\">"
+ },
+ {
+  "key": "g10c84",
+  "en": ".\n",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \".\" CR>"
+ },
+ {
+  "key": "g10c8b",
+  "en": "Your score is {0} (total of 350 points), in {1}",
+  "args": [
+   "n",
+   "n"
+  ],
+  "routine": "V-SCORE",
+  "zil": "<TELL \"Your score is \">"
+ },
+ {
+  "key": "g10cb3",
+  "en": " move.",
+  "args": [],
+  "routine": "V-SCORE",
+  "zil": "<TELL \" move.\">"
+ },
+ {
+  "key": "g10cbd",
+  "en": " moves.",
+  "args": [],
+  "routine": "V-SCORE",
+  "zil": "<TELL \" moves.\">"
+ },
+ {
+  "key": "g10cc4",
+  "en": "\nThis gives you the rank of ",
+  "args": [],
+  "routine": "V-SCORE",
+  "zil": "<TELL \"This gives you the rank of \">"
+ },
+ {
+  "key": "g10cda",
+  "en": "Master Adventurer",
+  "args": [],
+  "routine": "V-SCORE",
+  "zil": "<TELL \"Master Adventurer\">"
+ },
+ {
+  "key": "g10cf2",
+  "en": "Wizard",
+  "args": [],
+  "routine": "V-SCORE",
+  "zil": "<TELL \"Wizard\">"
+ },
+ {
+  "key": "g10d02",
+  "en": "Master",
+  "args": [],
+  "routine": "V-SCORE",
+  "zil": "<TELL \"Master\">"
+ },
+ {
+  "key": "g10d10",
+  "en": "Adventurer",
+  "args": [],
+  "routine": "V-SCORE",
+  "zil": "<TELL \"Adventurer\">"
+ },
+ {
+  "key": "g10d20",
+  "en": "Junior Adventurer",
+  "args": [],
+  "routine": "V-SCORE",
+  "zil": "<TELL \"Junior Adventurer\">"
+ },
+ {
+  "key": "g10d36",
+  "en": "Novice Adventurer",
+  "args": [],
+  "routine": "V-SCORE",
+  "zil": "<TELL \"Novice Adventurer\">"
+ },
+ {
+  "key": "g10d4c",
+  "en": "Amateur Adventurer",
+  "args": [],
+  "routine": "V-SCORE",
+  "zil": "<TELL \"Amateur Adventurer\">"
+ },
+ {
+  "key": "g10d5e",
+  "en": "Beginner",
+  "args": [],
+  "routine": "V-SCORE",
+  "zil": "<TELL \"Beginner\">"
+ },
+ {
+  "key": "g10d78",
+  "en": "\nIt takes a talented person to be killed while already dead. YOU are such a talent. Unfortunately, it takes a talented person to deal with it. I am not such a talent. Sorry.\n",
+  "args": [],
+  "routine": "JIGS-UP",
+  "zil": "<TELL \"\\n It takes a talented person to be killed while already dead. YOU are such a talent. Unfortunately, it takes a talented person to deal with it. I am not such a talent. Sorry.\" CR>"
+ },
+ {
+  "key": "g10de9",
+  "en": "Bad luck, huh?\n",
+  "args": [],
+  "routine": "JIGS-UP",
+  "zil": "<TELL \"Bad luck, huh?\" CR>"
+ },
+ {
+  "key": "g10dfe",
+  "en": " \n    ****  You have died  **** \n\n",
+  "args": [],
+  "routine": "JIGS-UP",
+  "zil": "<TELL \" \\n    ****  You have died  **** \\n \\n\">"
+ },
+ {
+  "key": "g10e34",
+  "en": "You clearly are a suicidal maniac. We don't allow psychotics in the cave, since they may harm other adventurers. Your remains will be installed in the Land of the Living Dead, where your fellow adventurers may gloat over them.\n",
+  "args": [],
+  "routine": "JIGS-UP",
+  "zil": "<TELL \"You clearly are a suicidal maniac.  We don't allow psychotics in the cave, since they may harm other adventurers.  Your remains will be installed in the Land of the Living Dead, where your fellow adventurers may gloat over them.\" CR>"
+ },
+ {
+  "key": "g10ec8",
+  "en": "As you take your last breath, you feel relieved of your burdens. The feeling passes as you find yourself before the gates of Hell, where the spirits jeer at you and deny you entry. Your senses are disturbed. The objects in the dungeon appear indistinct, bleached of color, even unreal.\n\n",
+  "args": [],
+  "routine": "JIGS-UP",
+  "zil": "<TELL \"As you take your last breath, you feel relieved of your burdens. The feeling passes as you find yourself before the gates of Hell, where the spirits jeer at you and deny you entry.  Your senses are disturbed.  The objects in the dungeon appear indistinct, bleached of color, even unreal.\" CR CR>"
+ },
+ {
+  "key": "g10f85",
+  "en": "Now, let's take a look here... Well, you probably deserve another chance. I can't quite fix you up completely, but you can't have everything.\n\n",
+  "args": [],
+  "routine": "JIGS-UP",
+  "zil": "<TELL \"Now, let's take a look here... Well, you probably deserve another chance.  I can't quite fix you up completely, but you can't have everything.\" CR CR>"
+ },
+ {
+  "key": "g110dd",
+  "en": "The {0} are safely inside; there's no need to do that.\n",
+  "args": [
+   "s"
+  ],
+  "routine": "STUPID-CONTAINER",
+  "zil": "<TELL \"The \" .STR \" are safely inside; there's no need to do that.\" CR>"
+ },
+ {
+  "key": "g11107",
+  "en": "There are lots of {0} in there.\n",
+  "args": [
+   "s"
+  ],
+  "routine": "STUPID-CONTAINER",
+  "zil": "<TELL \"There are lots of \" .STR \" in there.\" CR>"
+ },
+ {
+  "key": "g11121",
+  "en": "Don't be silly. It wouldn't be a {0} anymore.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "STUPID-CONTAINER",
+  "zil": "<TELL \"Don't be silly. It wouldn't be a \" D .OBJ \" anymore.\" CR>"
+ },
+ {
+  "key": "g1114c",
+  "en": "You can't do that.\n",
+  "args": [],
+  "routine": "DUMB-CONTAINER",
+  "zil": "<TELL \"You can't do that.\" CR>"
+ },
+ {
+  "key": "g11159",
+  "en": "It looks pretty much like a {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "DUMB-CONTAINER",
+  "zil": "<TELL \"It looks pretty much like a \" D ,PRSO \".\" CR>"
+ },
+ {
+  "key": "g1117d",
+  "en": "What the heck! You won't make friends this way, but nobody around here is too friendly anyhow. Gulp!\n",
+  "args": [],
+  "routine": "GARLIC-F",
+  "zil": "<TELL \"What the heck! You won't make friends this way, but nobody around here is too friendly anyhow. Gulp!\" CR>"
+ },
+ {
+  "key": "g111bf",
+  "en": "The chain is secure.\n",
+  "args": [],
+  "routine": "CHAIN-PSEUDO",
+  "zil": "<TELL \"The chain is secure.\" CR>"
+ },
+ {
+  "key": "g111d2",
+  "en": "Perhaps you should do that to the basket.\n",
+  "args": [],
+  "routine": "CHAIN-PSEUDO",
+  "zil": "<TELL \"Perhaps you should do that to the basket.\" CR>"
+ },
+ {
+  "key": "g111ef",
+  "en": "The chain secures a basket within the shaft.\n",
+  "args": [],
+  "routine": "CHAIN-PSEUDO",
+  "zil": "<TELL \"The chain secures a basket within the shaft.\" CR>"
+ }
+]

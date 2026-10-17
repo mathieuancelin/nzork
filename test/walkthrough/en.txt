@@ -1,0 +1,378 @@
+# Zork I — 350 point solution (English commands)
+# "until /regex/ :: command" repeats the command until the output matches (random fights).
+
+# --- The white house
+n
+n
+u
+take egg
+d
+s
+e
+open window
+w
+open sack
+take garlic
+w
+take lamp
+take sword
+open case
+move rug
+open trap door
+turn on lamp
+e
+u
+take rope
+take knife
+d
+w
+
+# --- The troll
+d
+n
+until /carcass has disappeared|can't see any troll/ :: kill troll with sword
+
+# --- The maze: coins and key, then the cyclops
+w
+s
+e
+u
+take coins
+take key
+sw
+e
+s
+se
+ulysses
+e
+e
+put coins in case
+
+# --- The painting (only the lamp can go up the chimney with it)
+drop all except lamp
+open trap door
+d
+s
+e
+take painting
+n
+u
+w
+put painting in case
+take egg
+take knife
+take rope
+
+# --- The loud room (platinum bar), before the dam is opened
+d
+n
+e
+e
+e
+echo
+take bar
+w
+w
+w
+s
+u
+put bar in case
+
+# --- The dome, the torch, the temple and the coffin
+d
+n
+e
+e
+se
+e
+tie rope to railing
+d
+take torch
+turn off lamp
+s
+drop knife
+drop egg
+drop lamp
+e
+take coffin
+w
+s
+pray
+# back to the house from the forest
+e
+s
+e
+w
+w
+open coffin
+take sceptre
+put coffin in case
+put sceptre in case
+
+# --- The dam: open the sluice gates to drain the reservoir
+d
+n
+e
+e
+n
+ne
+e
+n
+take matchbook
+n
+take wrench
+take screwdriver
+push yellow button
+s
+s
+turn bolt with wrench
+drop wrench
+w
+wait
+wait
+n
+take trunk
+n
+take pump
+n
+take trident
+
+# --- Back home through the mirror room and the slide
+u
+n
+n
+w
+d
+u
+put trunk in case
+put trident in case
+take sceptre
+
+# --- The frigid river: buoy (emerald), sandy cave (scarab), rainbow (pot of gold)
+d
+n
+e
+e
+n
+ne
+e
+d
+inflate plastic with pump
+drop pump
+put sceptre in boat
+board boat
+launch
+until /red buoy/ :: wait
+take buoy
+e
+disembark
+take sceptre
+take shovel
+ne
+dig in sand with shovel
+dig in sand with shovel
+dig in sand with shovel
+dig in sand with shovel
+take scarab
+drop shovel
+sw
+s
+open buoy
+take emerald
+drop buoy
+s
+wave sceptre
+w
+w
+take pot
+sw
+u
+u
+nw
+w
+w
+w
+put emerald in case
+put scarab in case
+put pot in case
+put sceptre in case
+
+# --- Hades: bell, book and candles (exorcism), crystal skull
+drop screwdriver
+d
+n
+e
+e
+se
+e
+d
+s
+take bell
+take lamp
+take egg
+s
+take book
+take candles
+d
+d
+ring bell
+take candles
+light match
+light candles with match
+read book
+s
+take skull
+n
+u
+n
+n
+n
+w
+w
+s
+u
+put skull in case
+
+# --- The coal mine: jade (bat room, garlic), bracelet (gas room, no flame), diamond
+drop book
+drop candles
+drop matchbook
+drop egg
+take garlic
+take screwdriver
+d
+n
+e
+e
+s
+s
+rub mirror
+n
+w
+n
+w
+n
+take jade
+e
+put torch in basket
+put screwdriver in basket
+turn on lamp
+n
+d
+take bracelet
+e
+ne
+se
+sw
+d
+d
+s
+take coal
+n
+u
+u
+n
+e
+s
+n
+u
+s
+put coal in basket
+lower basket
+n
+d
+e
+ne
+se
+sw
+d
+d
+w
+drop all
+w
+take coal
+take screwdriver
+take torch
+s
+open lid
+put coal in machine
+close lid
+turn switch with screwdriver
+open lid
+take diamond
+n
+put diamond in basket
+put torch in basket
+put screwdriver in basket
+e
+take all
+e
+u
+u
+n
+e
+s
+n
+u
+s
+raise basket
+take diamond
+take torch
+turn off lamp
+w
+s
+e
+s
+d
+u
+put jade in case
+put bracelet in case
+put diamond in case
+
+# --- The thief: give him the egg (he opens it when he dies), then fight
+drop timber
+drop garlic
+take egg
+take sword
+w
+w
+u
+give egg to thief
+until /thief dies|booty remains|is now safe to take/ :: kill thief with sword
+drop sword
+take chalice
+take bracelet
+take jade
+take egg
+d
+e
+e
+put chalice in case
+put bracelet in case
+put jade in case
+
+# --- The canary sings in the forest: the songbird drops a brass bauble
+take canary
+e
+e
+n
+n
+wind canary
+take bauble
+s
+e
+w
+w
+put canary in case
+put bauble in case
+put egg in case
+put torch in case
+
+# --- The final secret: the map leads to the stone barrow
+take map
+e
+e
+s
+w
+sw
+enter barrow

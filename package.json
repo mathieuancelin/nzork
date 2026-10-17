@@ -1,0 +1,42 @@
+{
+  "name": "zork-next",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A fan tribute to Zork I: the original game in a TypeScript Z-machine, in French, in the browser, with pixel-art illustrations and beginner modes",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "play": "tsx src/cli.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "images:generate": "tsx tools/images/generate.ts",
+    "images:review": "tsx tools/images/review.ts",
+    "images:postprocess": "tsx tools/images/postprocess.ts",
+    "images:palette": "tsx tools/images/postprocess.ts --palette",
+    "catalog:extract": "tsx tools/catalog/extract.ts",
+    "catalog:merge": "tsx tools/catalog/merge.ts && tsx tools/catalog/validate.ts",
+    "symbols": "tsx tools/symbols/build.ts",
+    "bot": "tsx tools/bot.ts"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "image-q": "^4.0.0",
+    "sharp": "^0.35.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.5"
+  }
+}
