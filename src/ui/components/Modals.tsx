@@ -279,6 +279,8 @@ function SettingsModal() {
       <Toggle label={t(lang, 'typewriter')} value={settings.typewriter} onChange={(v) => set('typewriter', v)} />
       <Toggle label={t(lang, 'crt')} value={settings.crt} onChange={(v) => set('crt', v)} />
       <Toggle label={t(lang, 'undoSetting')} value={settings.undo} onChange={(v) => set('undo', v)} />
+      <Toggle label={t(lang, 'sidebarSetting')} value={settings.sidebar} onChange={(v) => set('sidebar', v)} />
+      <Toggle label={t(lang, 'treasureSetting')} value={settings.treasures} onChange={(v) => set('treasures', v)} />
       <Toggle label={t(lang, 'sound')} value={settings.sound} onChange={(v) => set('sound', v)} />
       <div className="setting">
         <span>{t(lang, 'volume')}</span>

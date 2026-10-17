@@ -80,3 +80,107 @@ export async function buildPalette(images: Buffer[], colors = 64): Promise<strin
     .getPointArray()
     .map((p) => '#' + [p.r, p.g, p.b].map((v) => v.toString(16).padStart(2, '0')).join(''))
 }
+
+// ------------------------------------------------------------------ item icons
+
+/** Side of the item icons, in pixels (shown 1:1 in the game). */
+export const ITEM_SIZE = 48
+
+const dist = (d: Uint8Array | Uint8ClampedArray, i: number, c: number[]) => Math.hypot(d[i] - c[0], d[i + 1] - c[1], d[i + 2] - c[2])
+
+/**
+ * Makes the background transparent, unless the image already has one: the background is the
+ * color of the corners, removed by flood fill from the edges, then the fringe the object's
+ * anti-aliasing leaves against it is eaten away.
+ */
+export function removeBackground(px: Uint8Array, w: number, h: number, tolerance = 60): void {
+  const corners = [0, w - 1, (h - 1) * w, h * w - 1]
+  if (corners.every((p) => px[p * 4 + 3] < 16)) return
+  const bg = [0, 1, 2].map((c) => corners.reduce((sum, p) => sum + px[p * 4 + c], 0) / 4)
+  const seen = new Uint8Array(w * h)
+  const queue = new Int32Array(w * h)
+  let head = 0
+  let tail = 0
+  const push = (p: number) => {
+    if (seen[p] || dist(px, p * 4, bg) > tolerance) return
+    seen[p] = 1
+    queue[tail++] = p
+  }
+  for (let x = 0; x < w; x++) {
+    push(x)
+    push((h - 1) * w + x)
+  }
+  for (let y = 0; y < h; y++) {
+    push(y * w)
+    push(y * w + w - 1)
+  }
+  while (head < tail) {
+    const p = queue[head++]
+    const x = p % w
+    if (x > 0) push(p - 1)
+    if (x < w - 1) push(p + 1)
+    if (p >= w) push(p - w)
+    if (p < (h - 1) * w) push(p + w)
+  }
+  for (let p = 0; p < w * h; p++) if (seen[p]) px[p * 4 + 3] = 0
+  // fringe: opaque pixels next to the background that are still close to its color
+  for (let pass = 0; pass < 2; pass++) {
+    const fringe: number[] = []
+    for (let p = 0; p < w * h; p++) {
+      if (px[p * 4 + 3] === 0 || dist(px, p * 4, bg) > tolerance * 1.8) continue
+      const x = p % w
+      const near = (x > 0 && px[(p - 1) * 4 + 3] === 0) || (x < w - 1 && px[(p + 1) * 4 + 3] === 0) || (p >= w && px[(p - w) * 4 + 3] === 0) || (p < (h - 1) * w && px[(p + w) * 4 + 3] === 0)
+      if (near) fringe.push(p)
+    }
+    for (const p of fringe) px[p * 4 + 3] = 0
+  }
+}
+
+/** Icon of an object: background removed, trimmed, fitted in a square, mapped to the palette, transparent around. */
+export async function pixelizeItem(input: Buffer, palette: string[], dither: Dither = 'nearest'): Promise<Buffer> {
+  const { data, info } = await sharp(input).ensureAlpha().raw().toBuffer({ resolveWithObject: true })
+  const { width: w, height: h } = info
+  const px = new Uint8Array(data)
+  removeBackground(px, w, h)
+  let x0 = w, y0 = h, x1 = -1, y1 = -1
+  for (let y = 0; y < h; y++)
+    for (let x = 0; x < w; x++)
+      if (px[(y * w + x) * 4 + 3] >= 128) {
+        x0 = Math.min(x0, x)
+        x1 = Math.max(x1, x)
+        y0 = Math.min(y0, y)
+        y1 = Math.max(y1, y)
+      }
+  if (x1 < 0) throw new Error('Nothing left once the background is removed')
+  // a small margin around the object, centered in a square
+  const bw = x1 - x0 + 1
+  const bh = y1 - y0 + 1
+  const side = Math.ceil(Math.max(bw, bh) * 1.08)
+  const padX = side - bw
+  const padY = side - bh
+  // two pipelines: sharp would otherwise resize before extending
+  const square = await sharp(Buffer.from(px), { raw: { width: w, height: h, channels: 4 } })
+    .extract({ left: x0, top: y0, width: bw, height: bh })
+    .extend({ left: padX >> 1, right: padX - (padX >> 1), top: padY >> 1, bottom: padY - (padY >> 1), background: { r: 0, g: 0, b: 0, alpha: 0 } })
+    .raw()
+    .toBuffer()
+  const { data: small } = await sharp(square, { raw: { width: side, height: side, channels: 4 } })
+    .resize(ITEM_SIZE, ITEM_SIZE, { kernel: 'lanczos3' })
+    .raw()
+    .toBuffer({ resolveWithObject: true })
+  // pixels are either opaque or transparent; colors are quantized on their own
+  const rgba = new Uint8Array(small)
+  const opaque = new Uint8Array(ITEM_SIZE * ITEM_SIZE)
+  for (let p = 0; p < opaque.length; p++) {
+    opaque[p] = rgba[p * 4 + 3] >= 110 ? 1 : 0
+    rgba[p * 4 + 3] = 255
+  }
+  const points = iq.utils.PointContainer.fromUint8Array(rgba, ITEM_SIZE, ITEM_SIZE)
+  const out = iq
+    .applyPaletteSync(points, toPalette(palette), { imageQuantization: dither === 'nearest' ? 'nearest' : dither, colorDistanceFormula: 'euclidean-bt709' })
+    .toUint8Array()
+  for (let p = 0; p < opaque.length; p++) out[p * 4 + 3] = opaque[p] ? 255 : 0
+  return sharp(Buffer.from(out), { raw: { width: ITEM_SIZE, height: ITEM_SIZE, channels: 4 } })
+    .png({ palette: true, colours: 64, compressionLevel: 9, effort: 10 })
+    .toBuffer()
+}

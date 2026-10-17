@@ -6,7 +6,7 @@ import { StatusBar } from './components/StatusBar'
 import { Scene } from './components/Scene'
 import { Transcript } from './components/Transcript'
 import { CommandBar } from './components/CommandBar'
-import { ChoicePanel } from './components/ChoicePanel'
+import { SidePanel } from './components/SidePanel'
 import { Modals } from './components/Modals'
 import { t } from './i18n'
 import { useSoundtrack } from './sound/useSoundtrack'
@@ -41,9 +41,9 @@ function App() {
 
   if (!ready) return <div className="app" style={{ alignItems: 'center', justifyContent: 'center' }}>{t(settings.lang, 'loading')}</div>
 
-  const withChoices = settings.mode !== 'classic'
+  const withSide = settings.sidebar
   return (
-    <div className={`app ${settings.crt ? 'crt' : ''} ${withChoices ? 'with-choices' : ''}`}>
+    <div className={`app ${settings.crt ? 'crt' : ''} ${withSide ? 'with-side' : ''} ${settings.mode !== 'classic' ? 'with-choices' : ''}`}>
       <StatusBar />
       <div className="layout">
         <div className="main">
@@ -53,11 +53,7 @@ function App() {
             <CommandBar />
           </section>
         </div>
-        {withChoices && (
-          <aside className="side">
-            <ChoicePanel />
-          </aside>
-        )}
+        {withSide && <SidePanel />}
       </div>
       <Modals />
       {toast && <div className="toast" role="status">{toast}</div>}

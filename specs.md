@@ -213,6 +213,22 @@ currently wins 24 games out of 30 seeds and ends 3 more between 330 and 340 poin
 are the lamp running out after the thief takes the torch, and deaths in combat. In the browser,
 undo gets the player out of these.
 
+### Side panel
+
+The panel next to the text has up to three tabs, and can be hidden from the status bar:
+
+- **Actions** (noob modes): the choices above.
+- **Inventory**: what the player carries, read from the game state (no turn spent), with the
+  visible contents of open or transparent containers, an icon per object and a glow on a lit
+  light source. In the noob modes, clicking an object lists the choices about it (each choice
+  knows its object); in hyper noob mode the object holding the circled answer is circled too.
+- **Treasures**: 19 slots and a counter ("7 / 19 in the trophy case"). A treasure stays a "?"
+  until the player has touched it (TOUCHBIT) and as long as it is shut inside a closed, opaque
+  container: the game touches what is inside a treasure put in the case, and the canary in the
+  closed egg must not give itself away. Damaged versions (broken egg, broken canary) take the
+  slot once they are in play. The tracker never says where a treasure is, and can be turned off
+  in the settings.
+
 ## 6. Saves
 
 - **10 slots** + **1 autosave** (at every room change).
@@ -279,11 +295,27 @@ images**, all generated and published in `public/scenes/`.
 The game stays fully playable without images: a placeholder (gradient and place name) is shown
 while a scene is missing, and images can be turned off in the settings.
 
+### Object icons
+
+The 60 objects that can be taken get **48×48 icons**, shown pixel for pixel in the side panel:
+
+- the same pipeline with `--items`: prompts in `tools/images/item-prompts.json` (written from
+  the original descriptions, `describe.ts --items`), `src/data/items.json` mapping the objects
+  to their icon, the "Objets" tab of the review page, `public/items/` and its manifest;
+- 4 keystone objects (lantern, sword, egg, sack) become the style references of the others;
+- square images on a transparent background (OpenAI), or on plain magenta that the
+  post-processing removes (flood fill from the edges, then the anti-aliasing fringe);
+- post-processing: trim, center in a square with a small margin, reduce to 48×48, map to the
+  shared 64-color palette without dithering, pixels either opaque or transparent;
+- until an icon is approved, a 12×12 pixel glyph of the object's kind (treasure, light,
+  weapon, paper, food, container, tool, thing) stands in, scaled ×4.
+
 ### Cost
 
 ~90 images × 3–4 candidates ≈ 350 generations. Depending on the model, from ~0.003 USD to
 ~0.05 USD per image, that is **between ~2 and ~20 USD in total** (up to ~60 USD with the most
-expensive models). **Images are not the expensive part.**
+expensive models). The 60 icons add about 180 generations, ~7 USD. **Images are not the
+expensive part.**
 
 ## 8. What about 3D?
 
@@ -354,7 +386,8 @@ the mailbox offers its actions): the point & click spirit without the 3D.
 | 5 | **Images** | ✅ Style bible, 82 scenes + 11 state variants, 93 prompts, OpenAI / OpenRouter generation with cost estimate, 480×270 post-processing with a 64-color palette, review page. **All 93 images generated and chosen** |
 | 6 | **Deployment** | ✅ GitHub Pages workflow (tests with `dfrotz`, build, deploy), offline PWA |
 | 7 | **Soundtrack** | ✅ Procedural Web Audio ambiences per place, darkness and danger overlays, cues, sound lab |
-| 8 | **Bonus** | To do: 2.5D parallax, clickable hotspots |
+| 8 | **Side panel** | ✅ Tabs for actions, inventory and treasure tracker; object icon pipeline and 60 prompts. **Icons to generate** (placeholders until then) |
+| 9 | **Bonus** | To do: 2.5D parallax, clickable hotspots |
 
 ## 12. Decisions
 
@@ -366,3 +399,4 @@ the mailbox offers its actions): the point & click spirit without the 3D.
 5. **The grue**: « un grue », masculine.
 6. **Original sources**: a git submodule (`vendor/zork1`), not a copy; the compiled story file
    is kept in the repository with its license, so the game builds without the submodule.
+7. **Treasure tracker**: spoiler-free (unknown treasures are "?", no locations), optional.

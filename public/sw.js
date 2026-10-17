@@ -14,8 +14,8 @@ self.addEventListener('activate', (e) => {
 self.addEventListener('fetch', (e) => {
   const url = new URL(e.request.url)
   if (e.request.method !== 'GET' || url.origin !== location.origin) return
-  // the page and the list of illustrations must stay fresh: network first
-  if (e.request.mode === 'navigate' || url.pathname.endsWith('/scenes/manifest.json')) {
+  // the page and the lists of illustrations must stay fresh: network first
+  if (e.request.mode === 'navigate' || url.pathname.endsWith('/manifest.json')) {
     e.respondWith(fetch(e.request).then((r) => { const copy = r.clone(); caches.open(CACHE).then((c) => c.put(e.request, copy)); return r }).catch(() => caches.match(e.request).then((r) => r || caches.match('./'))))
     return
   }

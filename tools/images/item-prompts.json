@@ -1,0 +1,190 @@
+{
+ "style": "Single object rendered as a detailed hand-crafted pixel art inventory icon from an early-1990s VGA point-and-click adventure game (LucasArts / Sierra style), 256-color look, limited palette, subtle dithering, crisp dark outline, painterly pixel shading, soft light from the upper left, three-quarter view, the whole object centered and filling most of the frame, isolated on a transparent background, no cast shadow, no ground, no scenery, no text, no letters, no frame, no border.",
+ "negative": "text, letters, words, inscription, watermark, signature, logo, UI, frame, border, background scenery, floor, table, cast shadow, several objects, hands, people, photograph, photorealistic, 3D render, smooth gradients, blur, anime, modern objects",
+ "items": {
+  "egg": {
+   "prompt": "A large jewel-encrusted egg standing upright, hinged and closed with a delicate golden clasp, covered with fine gold inlay and ornamented with lapis lazuli and mother-of-pearl.",
+   "keystone": true
+  },
+  "egg-broken": {
+   "prompt": "The same jewel-encrusted golden egg, now ruined: its hinged shell cracked open and dented, gold inlay bent, a few gems missing."
+  },
+  "canary": {
+   "prompt": "A small golden clockwork songbird perched upright, ruby eyes, silver beak, a little winding key in its back, a tiny crystal window under its left wing showing gears."
+  },
+  "canary-broken": {
+   "prompt": "A battered golden clockwork songbird: empty eye sockets, crumpled silver beak, cracked crystal window under its wing with broken gears and a sprung spring poking out."
+  },
+  "bauble": {
+   "prompt": "A beautiful brass bauble: a polished ornamental sphere with engraved patterns and a small loop on top, gleaming."
+  },
+  "painting": {
+   "prompt": "A small oil painting of unparalleled beauty in an ornate gilded frame, seen at a slight angle, a luminous dreamlike landscape in rich colors."
+  },
+  "bar": {
+   "prompt": "A large heavy bar of platinum, a gleaming silvery-white ingot with beveled edges."
+  },
+  "torch": {
+   "prompt": "An ivory torch with a carved handle, burning with a bright orange flame on top."
+  },
+  "sceptre": {
+   "prompt": "An ornate ancient Egyptian sceptre decorated with colored enamel bands of blue, red and gold, tapering to a sharp point, shown diagonally."
+  },
+  "pot-of-gold": {
+   "prompt": "A small black iron pot overflowing with shiny gold coins."
+  },
+  "trunk": {
+   "prompt": "An old wooden trunk with iron bands, lid open, bulging with assorted jewels, pearls and gold necklaces, a little dried mud on its sides."
+  },
+  "coffin": {
+   "prompt": "A solid gold Egyptian coffin with a carved pharaoh face and decorative patterns without any readable signs, small enough to carry, seen at an angle."
+  },
+  "jade": {
+   "prompt": "An exquisite small green jade figurine of a seated sage, carved in fine detail, glossy."
+  },
+  "skull": {
+   "prompt": "A beautifully carved crystal skull, translucent with pale blue highlights, grinning rather nastily."
+  },
+  "coins": {
+   "prompt": "An old brown leather drawstring bag bulging with coins, a few gold and silver coins spilling out."
+  },
+  "bracelet": {
+   "prompt": "A gold bracelet encrusted with deep blue sapphires, a closed bangle seen at an angle."
+  },
+  "diamond": {
+   "prompt": "An enormous perfectly cut diamond, brilliant cut, sparkling with white and pale blue facets."
+  },
+  "emerald": {
+   "prompt": "A large faceted emerald, deep green, glowing slightly."
+  },
+  "scarab": {
+   "prompt": "A beautiful jeweled scarab beetle carved in gold and turquoise, set with colored gems on its back."
+  },
+  "trident": {
+   "prompt": "Poseidon's crystal trident: a three-pronged spear made of translucent sea-blue crystal, shown diagonally."
+  },
+  "chalice": {
+   "prompt": "A silver chalice, intricately engraved, with a tall stem and a wide cup."
+  },
+  "lamp": {
+   "prompt": "A battery-powered brass lantern: an old-fashioned lantern with a glass globe and a wire handle on top, glowing with warm yellow light.",
+   "keystone": true
+  },
+  "lamp-broken": {
+   "prompt": "A smashed brass lantern: dented brass body, shattered glass globe, light out."
+  },
+  "lantern-old": {
+   "prompt": "An old burned-out lantern, tarnished and dull, cracked glass, unlit, covered with dust."
+  },
+  "candles": {
+   "prompt": "A pair of tall white wax candles burning with small flames, wax dripping down their sides."
+  },
+  "matches": {
+   "prompt": "A small paper matchbook, cover slightly open on a row of red-tipped matches, the cover decorated with a tiny drawing of a dam and illegible scribbles instead of text."
+  },
+  "sword": {
+   "prompt": "An elvish sword of great antiquity: a long slender blade with faint engraved runes, an ornate crossguard and a wrapped hilt, shown diagonally, a faint blue glint on the blade.",
+   "keystone": true
+  },
+  "knife": {
+   "prompt": "A nasty-looking knife: a crude sharp blade with a dark rough wooden handle."
+  },
+  "rusty-knife": {
+   "prompt": "A rusty knife: an old blade corroded with orange rust, a worn handle."
+  },
+  "stiletto": {
+   "prompt": "A thin vicious stiletto dagger with a narrow pointed blade and a dark hilt."
+  },
+  "axe": {
+   "prompt": "A heavy bloody axe: a large battle axe with a chipped iron blade stained dark red and a thick wooden haft."
+  },
+  "leaflet": {
+   "prompt": "A small folded paper leaflet, cream-colored, with lines of illegible scribbles instead of text."
+  },
+  "book": {
+   "prompt": "A large black leather-bound book lying open, yellowed pages covered with illegible scribbles instead of text."
+  },
+  "guide": {
+   "prompt": "A small tour guidebook with a pale blue cover showing a tiny drawing of a dam, illegible scribbles instead of text."
+  },
+  "manual": {
+   "prompt": "A small sheet of paper, slightly crumpled, with illegible typewritten scribbles instead of text."
+  },
+  "map": {
+   "prompt": "An ancient parchment map, partly unrolled, showing a forest with three clearings and a little white house, worn edges."
+  },
+  "boat-label": {
+   "prompt": "A small tan cloth label with stitched edges and illegible scribbles instead of text."
+  },
+  "lunch": {
+   "prompt": "A hot pepper sandwich: thick slices of bread with red and green peppers sticking out."
+  },
+  "garlic": {
+   "prompt": "A single clove of garlic, white and papery with a pinkish tint."
+  },
+  "water": {
+   "prompt": "A splash of clear water: a small floating blob of water with droplets, bluish and shiny."
+  },
+  "bottle": {
+   "prompt": "A clear glass bottle with a cork stopper, half full of water."
+  },
+  "sack": {
+   "prompt": "An elongated brown paper sack, folded at the top, slightly greasy, smelling of hot peppers.",
+   "keystone": true
+  },
+  "nest": {
+   "prompt": "A small bird's nest made of twigs and straw."
+  },
+  "buoy": {
+   "prompt": "A red buoy: a round red floating marker with a metal ring on top."
+  },
+  "rope": {
+   "prompt": "A large coil of thick hemp rope."
+  },
+  "keys": {
+   "prompt": "A skeleton key: a large ornate antique iron key."
+  },
+  "shovel": {
+   "prompt": "A shovel with a wooden handle and a worn iron blade, shown diagonally."
+  },
+  "wrench": {
+   "prompt": "A large adjustable steel wrench, shown diagonally."
+  },
+  "screwdriver": {
+   "prompt": "A screwdriver with a wooden handle and a steel shaft, shown diagonally."
+  },
+  "pump": {
+   "prompt": "A hand-held air pump: a small brass and wood pump with a short hose."
+  },
+  "tube": {
+   "prompt": "A squeezed tube that looks like a tube of toothpaste, with a screw cap and a label of illegible scribbles instead of text."
+  },
+  "putty": {
+   "prompt": "A blob of viscous grey-green gunk, glossy and sticky."
+  },
+  "boat-folded": {
+   "prompt": "A folded pile of yellow plastic with a small valve attached: a deflated inflatable boat."
+  },
+  "boat": {
+   "prompt": "A small yellow inflatable rubber boat, fully inflated, seen in three-quarter view."
+  },
+  "boat-punctured": {
+   "prompt": "A small yellow inflatable rubber boat, half deflated and sagging, with a visible tear."
+  },
+  "bell": {
+   "prompt": "A small brass hand bell with a wooden handle."
+  },
+  "coal": {
+   "prompt": "A small pile of black lumps of coal."
+  },
+  "gunk": {
+   "prompt": "A small piece of vitreous slag: a glassy dark lump with a greenish sheen."
+  },
+  "timbers": {
+   "prompt": "A broken wooden timber beam, splintered at one end."
+  },
+  "leaves": {
+   "prompt": "A pile of dry autumn leaves, brown, orange and yellow."
+  }
+ }
+}

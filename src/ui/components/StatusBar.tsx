@@ -10,6 +10,9 @@ export function StatusBar() {
   const undoAllowed = useGame((s) => s.settings.undo)
   const undo = useGame((s) => s.undo)
   const openModal = useGame((s) => s.openModal)
+  const sidebar = useGame((s) => s.settings.sidebar)
+  const setSetting = useGame((s) => s.setSetting)
+  const sideLabel = t(lang, sidebar ? 'hideSide' : 'showSide')
   return (
     <header className="statusbar">
       <span className="brand">ZORK I</span>
@@ -27,6 +30,11 @@ export function StatusBar() {
           ↶
         </button>
       )}
+      <button className="icon-btn" onClick={() => setSetting('sidebar', !sidebar)} aria-label={sideLabel} aria-pressed={sidebar} title={sideLabel}>
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="square" aria-hidden="true">
+          <path d={sidebar ? 'M1 2h14v12H1zM10 2v12' : 'M1 2h14v12H1z'} />
+        </svg>
+      </button>
       <FullscreenButton lang={lang} />
       <button className="icon-btn" onClick={() => openModal('menu')} aria-label={t(lang, 'menu')} title={t(lang, 'menu')}>
         ☰

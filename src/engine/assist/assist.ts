@@ -15,6 +15,8 @@ export interface Choice {
   /** Canonical (English) command sent to the game. */
   command: string
   group: ChoiceGroup
+  /** The object the choice is about (to list its actions in the inventory). */
+  obj?: number
 }
 
 export interface Assist {
@@ -60,18 +62,18 @@ export function computeAssist(game: Game, withHint: boolean): Assist {
       if (weapon) add({ label: L.action('attack', n, 'with', weapon), command: `attack ${word(n)} with ${word(weapon)}`, group: 'action' })
       continue
     }
-    if (!held && w.attrOf(n, 'TAKEBIT')) add({ label: L.action('take', n), command: cmd('take'), group })
+    if (!held && w.attrOf(n, 'TAKEBIT')) add({ label: L.action('take', n), command: cmd('take'), group, obj: n })
     if ((w.attrOf(n, 'CONTBIT') || w.attrOf(n, 'DOORBIT')) && !w.attrOf(n, 'SURFACEBIT')) {
       if (w.attrOf(n, 'OPENBIT')) {
-        if (w.attrOf(n, 'DOORBIT')) add({ label: L.action('close', n), command: cmd('close'), group })
-      } else add({ label: L.action('open', n), command: cmd('open'), group })
+        if (w.attrOf(n, 'DOORBIT')) add({ label: L.action('close', n), command: cmd('close'), group, obj: n })
+      } else add({ label: L.action('open', n), command: cmd('open'), group, obj: n })
     }
-    if (w.attrOf(n, 'READBIT')) add({ label: L.action('read', n), command: cmd('read'), group })
-    if (w.attrOf(n, 'LIGHTBIT') && held) add({ label: L.action(w.attrOf(n, 'ONBIT') ? 'turn off' : 'turn on', n), command: cmd(w.attrOf(n, 'ONBIT') ? 'turn off' : 'turn on'), group })
-    if (w.attrOf(n, 'FOODBIT')) add({ label: L.action('eat', n), command: cmd('eat'), group })
-    if (w.attrOf(n, 'DRINKBIT')) add({ label: L.action('drink', n), command: cmd('drink'), group })
-    if (held && w.vm.parent(n) === winner) add({ label: L.action('drop', n), command: cmd('drop'), group: 'inventory' })
-    add({ label: L.action('examine', n), command: cmd('examine'), group: 'examine' })
+    if (w.attrOf(n, 'READBIT')) add({ label: L.action('read', n), command: cmd('read'), group, obj: n })
+    if (w.attrOf(n, 'LIGHTBIT') && held) add({ label: L.action(w.attrOf(n, 'ONBIT') ? 'turn off' : 'turn on', n), command: cmd(w.attrOf(n, 'ONBIT') ? 'turn off' : 'turn on'), group, obj: n })
+    if (w.attrOf(n, 'FOODBIT')) add({ label: L.action('eat', n), command: cmd('eat'), group, obj: n })
+    if (w.attrOf(n, 'DRINKBIT')) add({ label: L.action('drink', n), command: cmd('drink'), group, obj: n })
+    if (held && w.vm.parent(n) === winner) add({ label: L.action('drop', n), command: cmd('drop'), group: 'inventory', obj: n })
+    add({ label: L.action('examine', n), command: cmd('examine'), group: 'examine', obj: n })
   }
 
   // --- meta

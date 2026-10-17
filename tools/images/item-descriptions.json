@@ -1,0 +1,624 @@
+[
+ {
+  "id": "egg",
+  "objects": [
+   {
+    "object": "EGG",
+    "name": "jewel-encrusted egg",
+    "firstSeen": "In the bird's nest is a large egg encrusted with precious jewels, apparently scavenged by a childless songbird. The egg is covered with fine gold inlay, and ornamented in lapis lazuli and mother-of-pearl. Unlike most eggs, this one is hinged and closed with a delicate looking clasp. The egg appears extremely fragile.",
+    "routineTexts": "The egg is already open.\n You have neither the tools nor the expertise.\n I doubt you could do that without damaging it.\n The egg is now open, but the clumsiness of your attempt has seriously compromised its esthetic appeal. Not to say that using the {0} isn't original too...\n The concept of using a {0} is certainly original.\n There is a noticeable crunch from beneath you, and inspection reveals that the egg is lying open, badly damaged. Your rather indelicate handling of the egg has caused it some damage, although you have succeeded in opening it."
+   }
+  ]
+ },
+ {
+  "id": "egg-broken",
+  "objects": [
+   {
+    "object": "BROKEN-EGG",
+    "name": "broken jewel-encrusted egg",
+    "lying": "There is a somewhat ruined egg here."
+   }
+  ]
+ },
+ {
+  "id": "canary",
+  "objects": [
+   {
+    "object": "CANARY",
+    "name": "golden clockwork canary",
+    "firstSeen": "There is a golden clockwork canary nestled in the egg. It has ruby eyes and a silver beak. Through a crystal window below its left wing you can see intricate machinery inside. It appears to have wound down.",
+    "routineTexts": "The canary chirps, slightly off-key, an aria from a forgotten opera. From out of the greenery flies a lovely songbird. It perches on a limb just over your head and opens its beak to sing. As it does so a beautiful brass bauble drops from its mouth, bounces off the top of your head, and lands glimmering in the grass. As the canary winds down, the songbird flies away.\n The canary chirps blithely, if somewhat tinnily, for a short time.\n There is an unpleasant grinding noise from inside the canary.\n"
+   }
+  ]
+ },
+ {
+  "id": "canary-broken",
+  "objects": [
+   {
+    "object": "BROKEN-CANARY",
+    "name": "broken clockwork canary",
+    "firstSeen": "There is a golden clockwork canary nestled in the egg. It seems to have recently had a bad experience. The mountings for its jewel-like eyes are empty, and its silver beak is crumpled. Through a cracked crystal window below its left wing you can see the remains of intricate machinery. It is not clear what result winding it would have, as the mainspring seems sprung.",
+    "routineTexts": "The canary chirps, slightly off-key, an aria from a forgotten opera. From out of the greenery flies a lovely songbird. It perches on a limb just over your head and opens its beak to sing. As it does so a beautiful brass bauble drops from its mouth, bounces off the top of your head, and lands glimmering in the grass. As the canary winds down, the songbird flies away.\n The canary chirps blithely, if somewhat tinnily, for a short time.\n There is an unpleasant grinding noise from inside the canary.\n"
+   }
+  ]
+ },
+ {
+  "id": "bauble",
+  "objects": [
+   {
+    "object": "BAUBLE",
+    "name": "beautiful brass bauble"
+   }
+  ]
+ },
+ {
+  "id": "painting",
+  "objects": [
+   {
+    "object": "PAINTING",
+    "name": "painting",
+    "firstSeen": "Fortunately, there is still one chance for you to be a vandal, for on the far wall is a painting of unparalleled beauty.",
+    "lying": "A painting by a neglected genius is here.",
+    "routineTexts": "Congratulations! Unlike the other vandals, who merely stole the artist's masterpieces, you have destroyed one.\n"
+   }
+  ]
+ },
+ {
+  "id": "bar",
+  "objects": [
+   {
+    "object": "BAR",
+    "name": "platinum bar",
+    "lying": "On the ground is a large platinum bar."
+   }
+  ]
+ },
+ {
+  "id": "torch",
+  "objects": [
+   {
+    "object": "TORCH",
+    "name": "torch",
+    "firstSeen": "Sitting on the pedestal is a flaming torch, made of ivory.",
+    "routineTexts": "The torch is burning.\n The water evaporates before it gets close.\n You nearly burn your hand trying to extinguish the flame.\n"
+   }
+  ]
+ },
+ {
+  "id": "sceptre",
+  "objects": [
+   {
+    "object": "SCEPTRE",
+    "name": "sceptre",
+    "firstSeen": "A sceptre, possibly that of ancient Egypt itself, is in the coffin. The sceptre is ornamented with colored enamel, and tapers to a sharp point.",
+    "lying": "An ornamented sceptre, tapering to a sharp point, is here.",
+    "routineTexts": "Suddenly, the rainbow appears to become solid and, I venture, walkable (I think the giveaway was the stairs and bannister).\n A shimmering pot of gold appears at the end of the rainbow.\n The rainbow seems to have become somewhat run-of-the-mill.\n A dazzling display of color briefly emanates from the sceptre.\n"
+   }
+  ]
+ },
+ {
+  "id": "pot-of-gold",
+  "objects": [
+   {
+    "object": "POT-OF-GOLD",
+    "name": "pot of gold",
+    "firstSeen": "At the end of the rainbow is a pot of gold."
+   }
+  ]
+ },
+ {
+  "id": "trunk",
+  "objects": [
+   {
+    "object": "TRUNK",
+    "name": "trunk of jewels",
+    "firstSeen": "Lying half buried in the mud is an old trunk, bulging with jewels.",
+    "lying": "There is an old trunk here, bulging with assorted jewels.",
+    "routineTexts": ""
+   }
+  ]
+ },
+ {
+  "id": "coffin",
+  "objects": [
+   {
+    "object": "COFFIN",
+    "name": "gold coffin",
+    "lying": "The solid-gold coffin used for the burial of Ramses II is here."
+   }
+  ]
+ },
+ {
+  "id": "jade",
+  "objects": [
+   {
+    "object": "JADE",
+    "name": "jade figurine",
+    "lying": "There is an exquisite jade figurine here."
+   }
+  ]
+ },
+ {
+  "id": "skull",
+  "objects": [
+   {
+    "object": "SKULL",
+    "name": "crystal skull",
+    "firstSeen": "Lying in one corner of the room is a beautifully carved crystal skull. It appears to be grinning at you rather nastily."
+   }
+  ]
+ },
+ {
+  "id": "coins",
+  "objects": [
+   {
+    "object": "BAG-OF-COINS",
+    "name": "leather bag of coins",
+    "lying": "An old leather bag, bulging with coins, is here.",
+    "routineTexts": ""
+   }
+  ]
+ },
+ {
+  "id": "bracelet",
+  "objects": [
+   {
+    "object": "BRACELET",
+    "name": "sapphire-encrusted bracelet"
+   }
+  ]
+ },
+ {
+  "id": "diamond",
+  "objects": [
+   {
+    "object": "DIAMOND",
+    "name": "huge diamond",
+    "lying": "There is an enormous diamond (perfectly cut) here."
+   }
+  ]
+ },
+ {
+  "id": "emerald",
+  "objects": [
+   {
+    "object": "EMERALD",
+    "name": "large emerald"
+   }
+  ]
+ },
+ {
+  "id": "scarab",
+  "objects": [
+   {
+    "object": "SCARAB",
+    "name": "beautiful jeweled scarab"
+   }
+  ]
+ },
+ {
+  "id": "trident",
+  "objects": [
+   {
+    "object": "TRIDENT",
+    "name": "crystal trident",
+    "firstSeen": "On the shore lies Poseidon's own crystal trident."
+   }
+  ]
+ },
+ {
+  "id": "chalice",
+  "objects": [
+   {
+    "object": "CHALICE",
+    "name": "chalice",
+    "lying": "There is a silver chalice, intricately engraved, here.",
+    "routineTexts": "You'd be stabbed in the back first.\n You can't. It's not a very good chalice, is it?\n"
+   }
+  ]
+ },
+ {
+  "id": "lamp",
+  "objects": [
+   {
+    "object": "LAMP",
+    "name": "brass lantern",
+    "firstSeen": "A battery-powered brass lantern is on the trophy case.",
+    "lying": "There is a brass lantern (battery-powered) here.",
+    "routineTexts": "The lamp has smashed into the floor, and the light has gone out.\n A burned-out lamp won't light.\n The lamp has already burned out.\n The lamp  has burned out.\n is on.\n is turned off.\n"
+   }
+  ]
+ },
+ {
+  "id": "lamp-broken",
+  "objects": [
+   {
+    "object": "BROKEN-LAMP",
+    "name": "broken lantern"
+   }
+  ]
+ },
+ {
+  "id": "lantern-old",
+  "objects": [
+   {
+    "object": "BURNED-OUT-LANTERN",
+    "name": "burned-out lantern",
+    "firstSeen": "The deceased adventurer's useless lantern is here."
+   }
+  ]
+ },
+ {
+  "id": "candles",
+  "objects": [
+   {
+    "object": "CANDLES",
+    "name": "pair of candles",
+    "firstSeen": "On the two ends of the altar are burning candles.",
+    "routineTexts": "Alas, there's not much left of the candles. Certainly not enough to burn.\n (with the match)\n You should say what to light them with.\n The candles are  already lit.\n lit.\n You realize, just in time, that the candles are already lighted.\n The heat from the torch is so intense that the candles are vaporized.\n You have to light them with something that's burning, you know.\n Let's see, how many objects in a pair? Don't tell me, I'll get it.\n The flame is extinguished.  It's really dark in here....\n The candles are not lighted.\n That wouldn't be smart.\n The candles are  burning.\n out.\n"
+   }
+  ]
+ },
+ {
+  "id": "matches",
+  "objects": [
+   {
+    "object": "MATCH",
+    "name": "matchbook",
+    "lying": "There is a matchbook whose cover says \"Visit Beautiful FCD#3\" here.",
+    "writing": "\n(Close cover before striking)\n\nYOU too can make BIG MONEY in the exciting field of PAPER SHUFFLING!\n\nMr. Anderson of Muddle, Mass. says: \"Before I took this course I was a lowly bit twiddler. Now with what I learned at GUE Tech I feel really important and can obfuscate and confuse with the best.\"\n\nDr. Blank had this to say: \"Ten short days ago all I could look forward to was a dead-end job as a doctor. Now I have a promising future and make really big Zorkmids.\"\n\nGUE Tech can't promise these fantastic results to everyone. But when you earn your degree from GUE Tech, your future will be brighter.",
+    "routineTexts": "I'm afraid that you have run out of matches.\n This room is drafty, and the match goes out instantly.\n One of the matches starts to burn.\n The match is out.\n It's pitch black in here!\n You have  no  match es.\n .\n The match is burning.\n The matchbook isn't very interesting, except for what's written on it.\n"
+   }
+  ]
+ },
+ {
+  "id": "sword",
+  "objects": [
+   {
+    "object": "SWORD",
+    "name": "sword",
+    "firstSeen": "Above the trophy case hangs an elvish sword of great antiquity.",
+    "routineTexts": "Your sword is glowing with a faint blue glow.\n Your sword is glowing very brightly.\n"
+   }
+  ]
+ },
+ {
+  "id": "knife",
+  "objects": [
+   {
+    "object": "KNIFE",
+    "name": "nasty knife",
+    "firstSeen": "On a table is a nasty-looking knife.",
+    "routineTexts": ""
+   }
+  ]
+ },
+ {
+  "id": "rusty-knife",
+  "objects": [
+   {
+    "object": "RUSTY-KNIFE",
+    "name": "rusty knife",
+    "firstSeen": "Beside the skeleton is a rusty knife.",
+    "routineTexts": "As you touch the rusty knife, your sword gives a single pulse of blinding blue light.\n"
+   }
+  ]
+ },
+ {
+  "id": "stiletto",
+  "objects": [
+   {
+    "object": "STILETTO",
+    "name": "stiletto",
+    "routineTexts": ""
+   }
+  ]
+ },
+ {
+  "id": "axe",
+  "objects": [
+   {
+    "object": "AXE",
+    "name": "bloody axe",
+    "routineTexts": ""
+   }
+  ]
+ },
+ {
+  "id": "leaflet",
+  "objects": [
+   {
+    "object": "ADVERTISEMENT",
+    "name": "leaflet",
+    "lying": "A small leaflet is on the ground.",
+    "writing": "\"WELCOME TO ZORK!\n\nZORK is a game of adventure, danger, and low cunning. In it you will explore some of the most amazing territory ever seen by mortals. No computer should be without one!\""
+   }
+  ]
+ },
+ {
+  "id": "book",
+  "objects": [
+   {
+    "object": "BOOK",
+    "name": "black book",
+    "firstSeen": "On the altar is a large black book, open to page 569.",
+    "writing": "Commandment #12592\n\nOh ye who go about saying unto each:  \"Hello sailor\":\nDost thou know the magnitude of thy sin before the gods?\nYea, verily, thou shalt be ground between two stones.\nShall the angry gods cast thy body into the whirlpool?\nSurely, thy eye shall be put out with a sharp stick!\nEven unto the ends of the earth shalt thou wander and\nUnto the land of the dead shalt thou be sent at last.\nSurely thou shalt repent of thy cunning.",
+    "routineTexts": "The book is already open to page 569.\n As hard as you try, the book cannot be closed.\n Beside page 569, there is only one other page with any legible printing on it. Most of it is unreadable, but the subject seems to be the banishment of evil. Apparently, certain noises, lights, and prayers are efficacious in this regard.\n"
+   }
+  ]
+ },
+ {
+  "id": "guide",
+  "objects": [
+   {
+    "object": "GUIDE",
+    "name": "tour guidebook",
+    "firstSeen": "Some guidebooks entitled \"Flood Control Dam #3\" are on the reception desk.",
+    "writing": "\"Flood Control Dam #3\n\nFCD#3 was constructed in year 783 of the Great Underground Empire to harness the mighty Frigid River. This work was supported by a grant of 37 million zorkmids from your omnipotent local tyrant Lord Dimwit Flathead the Excessive. This impressive structure is composed of 370,000 cubic feet of concrete, is 256 feet tall at the center, and 193 feet wide at the top. The lake created behind the dam has a volume of 1.7 billion cubic feet, an area of 12 million square feet, and a shore line of 36 thousand feet.\n\nThe construction of FCD#3 took 112 days from ground breaking to the dedication. It required a work force of 384 slaves, 34 slave drivers, 12 engineers, 2 turtle doves, and a partridge in a pear tree. The work was managed by a command team composed of 2345 bureaucrats, 2347 secretaries (at least two of whom could type), 12,256 paper shufflers, 52,469 rubber stampers, 245,193 red tape processors, and nearly one million dead trees.\n\nWe will now point out some of the more interesting features of FCD#3 as we conduct you on a guided tour of the facilities:\n\n        1) You start your tour here in the Dam Lobby. You will notice on your right that...."
+   }
+  ]
+ },
+ {
+  "id": "manual",
+  "objects": [
+   {
+    "object": "OWNERS-MANUAL",
+    "name": "ZORK owner's manual",
+    "firstSeen": "Loosely attached to a wall is a small piece of paper.",
+    "writing": "Congratulations!\n\nYou are the privileged owner of ZORK I: The Great Underground Empire, a self-contained and self-maintaining universe. If used and maintained in accordance with normal operating practices for small universes, ZORK will provide many months of trouble-free operation."
+   }
+  ]
+ },
+ {
+  "id": "map",
+  "objects": [
+   {
+    "object": "MAP",
+    "name": "ancient map",
+    "firstSeen": "In the trophy case is an ancient parchment which appears to be a map.",
+    "writing": "The map shows a forest with three clearings. The largest clearing contains a house. Three paths leave the large clearing. One of these paths, leading southwest, is marked \"To Stone Barrow\"."
+   }
+  ]
+ },
+ {
+  "id": "boat-label",
+  "objects": [
+   {
+    "object": "BOAT-LABEL",
+    "name": "tan label",
+    "writing": "  !!!!FROBOZZ MAGIC BOAT COMPANY!!!!\n\nHello, Sailor!\n\nInstructions for use:\n\n   To get into a body of water, say \"Launch\".\n   To get to shore, say \"Land\" or the direction in which you want to maneuver the boat.\n\nWarranty:\n\n  This boat is guaranteed against all defects for a period of 76 milliseconds from date of purchase or until first used, whichever comes first.\n\nWarning:\n   This boat is made of thin plastic.\n   Good Luck!"
+   }
+  ]
+ },
+ {
+  "id": "lunch",
+  "objects": [
+   {
+    "object": "LUNCH",
+    "name": "lunch",
+    "lying": "A hot pepper sandwich is here."
+   }
+  ]
+ },
+ {
+  "id": "garlic",
+  "objects": [
+   {
+    "object": "GARLIC",
+    "name": "clove of garlic",
+    "routineTexts": "What the heck! You won't make friends this way, but nobody around here is too friendly anyhow. Gulp!\n"
+   }
+  ]
+ },
+ {
+  "id": "water",
+  "objects": [
+   {
+    "object": "WATER",
+    "name": "quantity of water",
+    "routineTexts": "There is now a puddle in the bottom of the {0}.\n The water leaks out of the {0} and evaporates immediately.\n The bottle is closed.\n The bottle is now full of water.\n The water slips through your fingers.\n It's in the bottle. Perhaps you should take that instead.\n The water slips through your fingers.\n Nice try.\n The bottle is closed.\n There is now a puddle in the bottom of the {0}.\n The water spills to the floor and evaporates immediately.\n The water splashes on the walls and evaporates immediately.\n"
+   }
+  ]
+ },
+ {
+  "id": "bottle",
+  "objects": [
+   {
+    "object": "BOTTLE",
+    "name": "glass bottle",
+    "firstSeen": "A bottle is sitting on the table.",
+    "routineTexts": "The bottle hits the far wall and shatters.\n A brilliant maneuver destroys the bottle.\n The water spills to the floor and evaporates.\n"
+   }
+  ]
+ },
+ {
+  "id": "sack",
+  "objects": [
+   {
+    "object": "SANDWICH-BAG",
+    "name": "brown sack",
+    "firstSeen": "On the table is an elongated brown sack, smelling of hot peppers.",
+    "routineTexts": "It smells of hot peppers.\n"
+   }
+  ]
+ },
+ {
+  "id": "nest",
+  "objects": [
+   {
+    "object": "NEST",
+    "name": "bird's nest",
+    "firstSeen": "Beside you on the branch is a small bird's nest."
+   }
+  ]
+ },
+ {
+  "id": "buoy",
+  "objects": [
+   {
+    "object": "BUOY",
+    "name": "red buoy",
+    "firstSeen": "There is a red buoy here (probably a warning).",
+    "routineTexts": ""
+   }
+  ]
+ },
+ {
+  "id": "rope",
+  "objects": [
+   {
+    "object": "ROPE",
+    "name": "rope",
+    "firstSeen": "A large coil of rope is lying in the corner.",
+    "routineTexts": "You can't tie the rope to that.\n The rope is already tied to it.\n The rope drops over the side and comes within ten feet of the floor.\n Your attempt to tie up the {0} awakens him. The {0} struggles and you cannot tie him up.\n Why would you tie up a {0}?\n The rope is now untied.\n It is not tied to anything.\n The rope drops gently to the floor below.\n The rope is tied to the railing.\n"
+   }
+  ]
+ },
+ {
+  "id": "keys",
+  "objects": [
+   {
+    "object": "KEYS",
+    "name": "skeleton key"
+   }
+  ]
+ },
+ {
+  "id": "shovel",
+  "objects": [
+   {
+    "object": "SHOVEL",
+    "name": "shovel"
+   }
+  ]
+ },
+ {
+  "id": "wrench",
+  "objects": [
+   {
+    "object": "WRENCH",
+    "name": "wrench"
+   }
+  ]
+ },
+ {
+  "id": "screwdriver",
+  "objects": [
+   {
+    "object": "SCREWDRIVER",
+    "name": "screwdriver"
+   }
+  ]
+ },
+ {
+  "id": "pump",
+  "objects": [
+   {
+    "object": "PUMP",
+    "name": "hand-held air pump"
+   }
+  ]
+ },
+ {
+  "id": "tube",
+  "objects": [
+   {
+    "object": "TUBE",
+    "name": "tube",
+    "lying": "There is an object which looks like a tube of toothpaste here.",
+    "writing": "---> Frobozz Magic Gunk Company <---\n  All-Purpose Gunk",
+    "routineTexts": "The tube refuses to accept anything.\n The viscous material oozes into your hand.\n The tube is apparently empty.\n The tube is closed.\n"
+   }
+  ]
+ },
+ {
+  "id": "putty",
+  "objects": [
+   {
+    "object": "PUTTY",
+    "name": "viscous material",
+    "routineTexts": "The all-purpose gunk isn't a lubricant.\n"
+   }
+  ]
+ },
+ {
+  "id": "boat-folded",
+  "objects": [
+   {
+    "object": "INFLATABLE-BOAT",
+    "name": "pile of plastic",
+    "lying": "There is a folded pile of plastic here which has a small valve attached.",
+    "routineTexts": "The boat must be on the ground to be inflated.\n The boat inflates and appears seaworthy.\n A tan label is lying inside the boat.\n You don't have enough lung power to inflate it.\n With a {0}? Surely you jest!\n"
+   }
+  ]
+ },
+ {
+  "id": "boat",
+  "objects": [
+   {
+    "object": "INFLATED-BOAT",
+    "name": "magic boat",
+    "routineTexts": "Read the label for the boat's instructions.\n You are on the  reservoir stream river , or have you forgotten?\n You can't launch it here.\n It seems that the   didn't agree with the boat, as evidenced by the loud hissing noise issuing therefrom. With a pathetic sputter, the boat deflates, leaving you without.\n You're not in the boat!\n Oops! Something sharp seems to have slipped and punctured the boat. The boat deflates to the sounds of hissing, sputtering, and cursing.\n Inflating it further would probably burst it.\n You can't deflate the boat while you're in it.\n The boat must be on the ground to be deflated.\n The boat deflates.\n"
+   }
+  ]
+ },
+ {
+  "id": "boat-punctured",
+  "objects": [
+   {
+    "object": "PUNCTURED-BOAT",
+    "name": "punctured boat",
+    "routineTexts": "No chance. Some moron punctured it.\n"
+   }
+  ]
+ },
+ {
+  "id": "bell",
+  "objects": [
+   {
+    "object": "BELL",
+    "name": "brass bell",
+    "routineTexts": "Ding, dong.\n"
+   }
+  ]
+ },
+ {
+  "id": "coal",
+  "objects": [
+   {
+    "object": "COAL",
+    "name": "small pile of coal"
+   }
+  ]
+ },
+ {
+  "id": "gunk",
+  "objects": [
+   {
+    "object": "GUNK",
+    "name": "small piece of vitreous slag",
+    "routineTexts": "The slag was rather insubstantial, and crumbles into dust at your touch.\n"
+   }
+  ]
+ },
+ {
+  "id": "timbers",
+  "objects": [
+   {
+    "object": "TIMBERS",
+    "name": "broken timber"
+   }
+  ]
+ },
+ {
+  "id": "leaves",
+  "objects": [
+   {
+    "object": "LEAVES",
+    "name": "pile of leaves",
+    "lying": "On the ground is a pile of leaves.",
+    "routineTexts": "There are 69,105 leaves here.\n The leaves burn.\n You rustle the leaves around, making quite a mess.\n Done.\n Underneath the pile of leaves is a grating. As you release the leaves, the grating is once again concealed from view.\n"
+   }
+  ]
+ }
+]

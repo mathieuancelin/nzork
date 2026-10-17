@@ -1,15 +1,18 @@
 // Local review page for the generated candidates:  npm run images:review  → http://localhost:5180
-// One foldable block per scene: the prompt, the current image, the candidates (raw and
-// pixelized). Choosing a candidate publishes it in public/scenes/, folds the scene and opens
-// the next one still to choose, without reloading the page.
+// Two tabs: the scenes and the object icons (/?kind=items). One foldable block per image: the
+// prompt, the current image, the candidates (raw and pixelized). Choosing a candidate publishes
+// it in public/scenes/ (or public/items/), folds the block and opens the next one still to
+// choose, without reloading the page.
 import { createServer } from 'node:http'
 import { copyFileSync, existsSync, readFileSync, statSync, unlinkSync, writeFileSync } from 'node:fs'
 import { join, resolve } from 'node:path'
-import { APPROVED, OUT, PUBLIC, REFERENCES, candidates, ensureDir, loadPrompts, readManifest, writeManifest } from './lib/common'
-import { loadPalette, pixelize } from './lib/pixel'
+import { KINDS, candidates, ensureDir, loadPrompts, readManifest, writeManifest, type Kind, type KindName } from './lib/common'
+import { loadPalette, pixelize, pixelizeItem } from './lib/pixel'
 
 const PORT = Number(process.env.PORT ?? 5180)
-const ALLOWED = [OUT, PUBLIC, APPROVED].map((d) => resolve(d))
+const ALLOWED = Object.values(KINDS).flatMap((k) => [k.out, k.public, k.approved].map((d) => resolve(d)))
+const kindOf = (name: string | null | undefined): Kind => KINDS[(name === 'items' ? 'items' : 'scenes') as KindName]
+const pixelizeFor = (kind: Kind) => (kind.name === 'items' ? pixelizeItem : pixelize)
 
 function safe(path: string): string | null {
   const p = resolve(path)
@@ -19,35 +22,36 @@ function safe(path: string): string | null {
 const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!)
 const fileUrl = (p: string) => `/file?path=${encodeURIComponent(p)}`
 
-/** The candidate that was approved for a scene (same bytes as the approved copy). */
-function chosenCandidate(id: string, cands: string[]): string | null {
-  const approved = join(APPROVED, `${id}.png`)
+/** The candidate that was approved (same bytes as the approved copy). */
+function chosenCandidate(kind: Kind, id: string, cands: string[]): string | null {
+  const approved = join(kind.approved, `${id}.png`)
   if (!existsSync(approved)) return null
   const size = statSync(approved).size
   const bytes = readFileSync(approved)
   return cands.find((c) => statSync(c).size === size && readFileSync(c).equals(bytes)) ?? null
 }
 
-function page(): string {
-  const prompts = loadPrompts()
-  const done = readManifest()
-  const ids = Object.keys(prompts.scenes).sort((a, b) => Number(!!prompts.scenes[b].keystone) - Number(!!prompts.scenes[a].keystone))
+function page(kind: Kind): string {
+  const items = kind.name === 'items'
+  const prompts = loadPrompts(kind)
+  const done = readManifest(kind)
+  const ids = Object.keys(prompts.entries).sort((a, b) => Number(!!prompts.entries[b].keystone) - Number(!!prompts.entries[a].keystone))
   const now = Date.now()
-  // only the first scene still to choose is open: the others open one after the other
-  const firstPending = ids.find((id) => !done.has(id) && candidates(id).length)
+  // only the first block still to choose is open: the others open one after the other
+  const firstPending = ids.find((id) => !done.has(id) && candidates(id, kind).length)
   const blocks = ids
     .map((id) => {
-      const s = prompts.scenes[id]
-      const cands = candidates(id)
+      const s = prompts.entries[id]
+      const cands = candidates(id, kind)
       const isDone = done.has(id)
-      const chosen = isDone ? chosenCandidate(id, cands) : null
-      const finalUrl = `${fileUrl(join(PUBLIC, id + '.png'))}&t=${now}`
+      const chosen = isDone ? chosenCandidate(kind, id, cands) : null
+      const finalUrl = `${fileUrl(join(kind.public, id + '.png'))}&t=${now}`
       return `<details class="scene" id="${id}" data-done="${isDone}" data-count="${cands.length}"${id === firstPending ? ' open' : ''}>
   <summary>
     <span class="chev">▸</span>
     <img class="thumb" ${isDone ? `src="${finalUrl}"` : ''} alt="">
     <span class="name">${esc(id)}</span>
-    ${s.keystone ? '<span class="key">scène clé</span>' : ''}
+    ${s.keystone ? `<span class="key">${items ? 'objet clé' : 'scène clé'}</span>` : ''}
     <span class="status"></span>
   </summary>
   <div class="body">
@@ -57,14 +61,14 @@ function page(): string {
       .map(
         (c) => `<figure${c === chosen ? ' class="chosen"' : ''} data-path="${encodeURIComponent(c)}">
         <img src="${fileUrl(c)}" loading="lazy" alt="">
-        <img class="px" src="/preview?path=${encodeURIComponent(c)}" loading="lazy" title="Aperçu après post-traitement" alt="">
+        <img class="px" src="/preview?kind=${kind.name}&path=${encodeURIComponent(c)}" loading="lazy" title="Aperçu après post-traitement" alt="">
         <figcaption>
           <button class="choose">${c === chosen ? '✓ Choisie' : 'Choisir'}</button>
           <button class="del">Supprimer</button>
         </figcaption></figure>`,
       )
       .join('')}</div>
-    ${cands.length ? '' : `<p class="none">Aucun candidat : npm run images:generate -- --scenes ${id}</p>`}
+    ${cands.length ? '' : `<p class="none">Aucun candidat : npm run images:generate -- ${items ? '--items ' : ''}--ids ${id}</p>`}
   </div>
 </details>`
     })
@@ -104,23 +108,29 @@ button.del{border-color:#d9685f;color:#d9685f}
 figure.chosen button.choose{border-color:#8fc47f;color:#8fc47f}
 .none{color:#6f6552}
 body.hide-done details[data-done="true"]{display:none}
+nav a{color:#a39679;text-decoration:none;padding:4px 10px;border:1px solid #3b3226;border-radius:6px}nav a.on{color:#f4c96b;border-color:#e3a83c}
+.items .grid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
+.items .thumb{width:54px;height:54px;object-fit:contain}
+.items img.px,.items .current img{width:192px;max-width:192px;background:repeating-conic-gradient(#2b241c 0 25%,#1d1912 0 50%) 0 0/16px 16px;border-radius:4px}
 label{cursor:pointer;color:#a39679}
 .toast{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:#1d1912;border:1px solid #e3a83c;border-radius:8px;padding:8px 14px;display:none}
-</style></head><body>
+</style></head><body class="${kind.name}">
 <header>
   <h1>Atelier des illustrations</h1>
+  <nav><a href="/" class="${items ? '' : 'on'}">Scènes</a> <a href="/?kind=items" class="${items ? 'on' : ''}">Objets</a></nav>
   <div class="progress"><span id="count"></span><div class="bar"><i id="bar"></i></div></div>
-  <label><input type="checkbox" id="hide"> Masquer les scènes choisies</label>
-  <button id="next">Scène suivante à choisir ↓</button>
+  <label><input type="checkbox" id="hide"> Masquer ${items ? 'les objets choisis' : 'les scènes choisies'}</label>
+  <button id="next">${items ? 'Objet suivant à choisir' : 'Scène suivante à choisir'} ↓</button>
 </header>
 <main>
-<p class="palette">Palette : ${loadPalette().length} couleurs. Chaque candidat montre l'image brute puis l'aperçu pixelisé (480×270, palette commune). Choisir une image la publie, replie la scène et ouvre la suivante.</p>
+<p class="palette">Palette : ${loadPalette().length} couleurs. Chaque candidat montre l'image brute puis l'aperçu pixelisé (${items ? 'icône 48×48 détourée, agrandie ×4' : '480×270'}, palette commune). Choisir une image la publie, replie le bloc et ouvre le suivant.</p>
 ${blocks}
 </main>
 <div class="toast" id="toast"></div>
 <script>
 const scenes = [...document.querySelectorAll('details.scene')]
-const PUBLIC = ${JSON.stringify(PUBLIC)}
+const PUBLIC = ${JSON.stringify(kind.public)}
+const KIND = ${JSON.stringify(kind.name)}
 
 function status(d) {
   const n = d.querySelectorAll('figure').length
@@ -142,7 +152,7 @@ function nextPending(after) {
 }
 
 function goTo(d) {
-  if (!d) { toast('Toutes les scènes avec des candidats sont choisies.'); return }
+  if (!d) { toast('Tout ce qui a des candidats est choisi.'); return }
   d.open = true
   d.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
@@ -156,7 +166,7 @@ function toast(text) {
 }
 
 async function post(kind, id, path) {
-  const r = await fetch('/' + kind, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id, path }) })
+  const r = await fetch('/' + kind, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id, path, kind: KIND }) })
   if (!r.ok) throw new Error(await r.text())
 }
 
@@ -218,32 +228,33 @@ createServer(async (req, res) => {
     const url = new URL(req.url ?? '/', `http://localhost:${PORT}`)
     if (url.pathname === '/') {
       res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' })
-      return res.end(page())
+      return res.end(page(kindOf(url.searchParams.get('kind'))))
     }
     if (url.pathname === '/file' || url.pathname === '/preview') {
       const p = safe(url.searchParams.get('path') ?? '')
       if (!p) return res.writeHead(404).end()
-      const body = url.pathname === '/file' ? readFileSync(p) : await pixelize(readFileSync(p), loadPalette())
+      const body = url.pathname === '/file' ? readFileSync(p) : await pixelizeFor(kindOf(url.searchParams.get('kind')))(readFileSync(p), loadPalette())
       res.writeHead(200, { 'Content-Type': 'image/png', 'Cache-Control': 'no-store' })
       return res.end(body)
     }
     if (req.method === 'POST' && (url.pathname === '/approve' || url.pathname === '/reject')) {
       let raw = ''
       for await (const chunk of req) raw += chunk
-      const { id, path } = JSON.parse(raw) as { id: string; path: string }
+      const { id, path, kind: kindName } = JSON.parse(raw) as { id: string; path: string; kind?: string }
+      const kind = kindOf(kindName)
       const p = safe(path)
       if (!p || !/^[a-z0-9-]+$/.test(id)) return res.writeHead(400).end('bad request')
       if (url.pathname === '/reject') {
         unlinkSync(p)
         return res.writeHead(200).end('ok')
       }
-      copyFileSync(p, join(ensureDir(APPROVED), `${id}.png`))
-      ensureDir(PUBLIC)
-      writeFileSync(join(PUBLIC, `${id}.png`), await pixelize(readFileSync(p), loadPalette()))
-      const manifest = readManifest()
+      copyFileSync(p, join(ensureDir(kind.approved), `${id}.png`))
+      ensureDir(kind.public)
+      writeFileSync(join(kind.public, `${id}.png`), await pixelizeFor(kind)(readFileSync(p), loadPalette()))
+      const manifest = readManifest(kind)
       manifest.add(id)
-      writeManifest(manifest)
-      if (loadPrompts().scenes[id]?.keystone) copyFileSync(p, join(ensureDir(REFERENCES), `${id}.png`))
+      writeManifest(manifest, kind)
+      if (loadPrompts(kind).entries[id]?.keystone) copyFileSync(p, join(ensureDir(kind.references), `${id}.png`))
       return res.writeHead(200).end('ok')
     }
     res.writeHead(404).end()

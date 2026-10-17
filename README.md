@@ -49,6 +49,11 @@ exactly where Infocom left them.
   | Hyper noob | Same choices, and the right one is circled in gold, with a "Why?" that explains it. A goal-based guide adapts to the thief and to fights. |
 
   You can switch modes at any time, even in the middle of a game.
+- **Inventory and treasures at a glance.** A side panel shows what you carry, with a pixel-art
+  icon for each object and the contents of open containers; in the Noob modes, click an object
+  to see what you can do with it. The treasure tracker has 19 slots that reveal themselves as you
+  find the treasures and turn gold once they are in the trophy case. It never tells you where to
+  look, and can be turned off.
 - **Saves and undo.** 10 save slots plus an autosave, export and import of a save file, and
   **undo** (Ctrl+Z), on by default.
 - **Retro touches, modern comfort.** Optional CRT scanlines and typewriter effect, adjustable
@@ -171,10 +176,35 @@ and the prompts are in [tools/images/prompts.json](tools/images/prompts.json).
    Then go back to step 3 to choose. The game shows an image as soon as it is published in
    `public/scenes/`; until then, a colored placeholder stands in for the scene.
 
-Providers: `openai` (model `gpt-image-1` by default, `ZORK_OPENAI_MODEL` to change it) and
-`openrouter` (model `google/gemini-2.5-flash-image` by default, `ZORK_OPENROUTER_MODEL`). Expect
-a few cents per image, around 10 to 30 USD for the full set with several candidates per scene
-(check current prices with the provider).
+Providers: `openai` (model `gpt-image-1` by default, `ZORK_OPENAI_MODEL` to change it,
+`ZORK_OPENAI_QUALITY` for the quality) and `openrouter` (model `google/gemini-2.5-flash-image` by
+default, `ZORK_OPENROUTER_MODEL`). Expect a few cents per image, around 10 to 30 USD for the full
+set with several candidates per scene (check current prices with the provider).
+
+### Object icons
+
+The 60 objects you can take get 48×48 icons on a transparent background, with the same palette
+as the scenes. Their prompts are in [tools/images/item-prompts.json](tools/images/item-prompts.json)
+(written from the original descriptions, gathered by `npx tsx tools/images/describe.ts --items`),
+and [src/data/items.json](src/data/items.json) maps the game's objects to their icon. The steps
+are the same, with `--items`:
+
+```bash
+npm run images:generate -- --items --provider openai --keystones --count 3 --yes
+```
+
+Choose them in the "Objets" tab of the review page (`npm run images:review`, then
+http://localhost:5180/?kind=items): the 4 keystone objects (lantern, sword, egg, sack) become the
+style references of the others.
+
+```bash
+npm run images:generate -- --items --provider openai --missing --count 3 --yes
+```
+
+OpenAI draws the icons on a transparent background; other models draw them on a plain magenta
+background, which the post-processing removes. After a palette change,
+`npm run images:postprocess -- --items` publishes them again. Until an icon exists, a small pixel
+glyph of the object's kind stands in for it. Count about 7 USD for 3 candidates of each object.
 
 ## Soundtrack
 
@@ -214,7 +244,7 @@ git submodule update --init
 | `src/engine/story/` | `zork1.z3` and its symbol table (ZIL names of objects, attributes, globals, routines) |
 | `src/engine/i18n/` | text rendering: templates, French grammar, catalog in `fr/catalog.json` |
 | `src/engine/input/` | French command parser |
-| `src/engine/assist/` | clickable choices and the Hyper noob guide |
+| `src/engine/assist/` | clickable choices, the Hyper noob guide, the inventory and the treasure tracker |
 | `src/ui/` | the React application |
 | `tools/` | symbols, catalog extraction and merge, `dfrotz` oracle, images, bot |
 | `vendor/zork1/` | the original ZIL sources (git submodule) |

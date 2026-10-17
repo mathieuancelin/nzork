@@ -1,0 +1,364 @@
+{
+ "items": [
+  {
+   "id": "egg",
+   "objects": [
+    "EGG"
+   ]
+  },
+  {
+   "id": "egg-broken",
+   "objects": [
+    "BROKEN-EGG"
+   ]
+  },
+  {
+   "id": "canary",
+   "objects": [
+    "CANARY"
+   ]
+  },
+  {
+   "id": "canary-broken",
+   "objects": [
+    "BROKEN-CANARY"
+   ]
+  },
+  {
+   "id": "bauble",
+   "objects": [
+    "BAUBLE"
+   ]
+  },
+  {
+   "id": "painting",
+   "objects": [
+    "PAINTING"
+   ]
+  },
+  {
+   "id": "bar",
+   "objects": [
+    "BAR"
+   ]
+  },
+  {
+   "id": "torch",
+   "objects": [
+    "TORCH"
+   ]
+  },
+  {
+   "id": "sceptre",
+   "objects": [
+    "SCEPTRE"
+   ]
+  },
+  {
+   "id": "pot-of-gold",
+   "objects": [
+    "POT-OF-GOLD"
+   ]
+  },
+  {
+   "id": "trunk",
+   "objects": [
+    "TRUNK"
+   ]
+  },
+  {
+   "id": "coffin",
+   "objects": [
+    "COFFIN"
+   ]
+  },
+  {
+   "id": "jade",
+   "objects": [
+    "JADE"
+   ]
+  },
+  {
+   "id": "skull",
+   "objects": [
+    "SKULL"
+   ]
+  },
+  {
+   "id": "coins",
+   "objects": [
+    "BAG-OF-COINS"
+   ]
+  },
+  {
+   "id": "bracelet",
+   "objects": [
+    "BRACELET"
+   ]
+  },
+  {
+   "id": "diamond",
+   "objects": [
+    "DIAMOND"
+   ]
+  },
+  {
+   "id": "emerald",
+   "objects": [
+    "EMERALD"
+   ]
+  },
+  {
+   "id": "scarab",
+   "objects": [
+    "SCARAB"
+   ]
+  },
+  {
+   "id": "trident",
+   "objects": [
+    "TRIDENT"
+   ]
+  },
+  {
+   "id": "chalice",
+   "objects": [
+    "CHALICE"
+   ]
+  },
+  {
+   "id": "lamp",
+   "objects": [
+    "LAMP"
+   ]
+  },
+  {
+   "id": "lamp-broken",
+   "objects": [
+    "BROKEN-LAMP"
+   ]
+  },
+  {
+   "id": "lantern-old",
+   "objects": [
+    "BURNED-OUT-LANTERN"
+   ]
+  },
+  {
+   "id": "candles",
+   "objects": [
+    "CANDLES"
+   ]
+  },
+  {
+   "id": "matches",
+   "objects": [
+    "MATCH"
+   ]
+  },
+  {
+   "id": "sword",
+   "objects": [
+    "SWORD"
+   ]
+  },
+  {
+   "id": "knife",
+   "objects": [
+    "KNIFE"
+   ]
+  },
+  {
+   "id": "rusty-knife",
+   "objects": [
+    "RUSTY-KNIFE"
+   ]
+  },
+  {
+   "id": "stiletto",
+   "objects": [
+    "STILETTO"
+   ]
+  },
+  {
+   "id": "axe",
+   "objects": [
+    "AXE"
+   ]
+  },
+  {
+   "id": "leaflet",
+   "objects": [
+    "ADVERTISEMENT"
+   ]
+  },
+  {
+   "id": "book",
+   "objects": [
+    "BOOK"
+   ]
+  },
+  {
+   "id": "guide",
+   "objects": [
+    "GUIDE"
+   ]
+  },
+  {
+   "id": "manual",
+   "objects": [
+    "OWNERS-MANUAL"
+   ]
+  },
+  {
+   "id": "map",
+   "objects": [
+    "MAP"
+   ]
+  },
+  {
+   "id": "boat-label",
+   "objects": [
+    "BOAT-LABEL"
+   ]
+  },
+  {
+   "id": "lunch",
+   "objects": [
+    "LUNCH"
+   ]
+  },
+  {
+   "id": "garlic",
+   "objects": [
+    "GARLIC"
+   ]
+  },
+  {
+   "id": "water",
+   "objects": [
+    "WATER"
+   ]
+  },
+  {
+   "id": "bottle",
+   "objects": [
+    "BOTTLE"
+   ]
+  },
+  {
+   "id": "sack",
+   "objects": [
+    "SANDWICH-BAG"
+   ]
+  },
+  {
+   "id": "nest",
+   "objects": [
+    "NEST"
+   ]
+  },
+  {
+   "id": "buoy",
+   "objects": [
+    "BUOY"
+   ]
+  },
+  {
+   "id": "rope",
+   "objects": [
+    "ROPE"
+   ]
+  },
+  {
+   "id": "keys",
+   "objects": [
+    "KEYS"
+   ]
+  },
+  {
+   "id": "shovel",
+   "objects": [
+    "SHOVEL"
+   ]
+  },
+  {
+   "id": "wrench",
+   "objects": [
+    "WRENCH"
+   ]
+  },
+  {
+   "id": "screwdriver",
+   "objects": [
+    "SCREWDRIVER"
+   ]
+  },
+  {
+   "id": "pump",
+   "objects": [
+    "PUMP"
+   ]
+  },
+  {
+   "id": "tube",
+   "objects": [
+    "TUBE"
+   ]
+  },
+  {
+   "id": "putty",
+   "objects": [
+    "PUTTY"
+   ]
+  },
+  {
+   "id": "boat-folded",
+   "objects": [
+    "INFLATABLE-BOAT"
+   ]
+  },
+  {
+   "id": "boat",
+   "objects": [
+    "INFLATED-BOAT"
+   ]
+  },
+  {
+   "id": "boat-punctured",
+   "objects": [
+    "PUNCTURED-BOAT"
+   ]
+  },
+  {
+   "id": "bell",
+   "objects": [
+    "BELL"
+   ]
+  },
+  {
+   "id": "coal",
+   "objects": [
+    "COAL"
+   ]
+  },
+  {
+   "id": "gunk",
+   "objects": [
+    "GUNK"
+   ]
+  },
+  {
+   "id": "timbers",
+   "objects": [
+    "TIMBERS"
+   ]
+  },
+  {
+   "id": "leaves",
+   "objects": [
+    "LEAVES"
+   ]
+  }
+ ]
+}

@@ -4,6 +4,7 @@ import type { Game, Lang, Status } from '../engine/game'
 import { createGame, loadStory } from './engine'
 import { AUTOSAVE, SLOT_COUNT, allSlots, deleteSlot, readPref, readSlot, writePref, writeSlot, type SlotData, type TranscriptEntry } from './saves'
 import { computeAssist, type Assist, type Choice } from '../engine/assist/assist'
+import { inventoryOf, treasuresOf, type Item, type Treasures } from '../engine/assist/items'
 import { t } from './i18n'
 import { sceneFor, roomTitles, type SceneInfo } from './scenes'
 import { moodFor, turnCue, type Mood } from './sound/mood'
@@ -11,6 +12,7 @@ import type { CueKind } from './sound/presets'
 
 export type Mode = 'classic' | 'noob' | 'hypernoob'
 export type Modal = null | 'menu' | 'saves' | 'settings' | 'help' | 'about' | 'welcome'
+export type SideTab = 'actions' | 'inventory' | 'treasures'
 
 export interface Settings {
   lang: Lang
@@ -23,6 +25,10 @@ export interface Settings {
   sound: boolean
   /** Soundtrack volume, 0..1. */
   volume: number
+  /** Side panel (choices, inventory, treasures). */
+  sidebar: boolean
+  /** Treasure tracker tab. */
+  treasures: boolean
 }
 
 const DEFAULT_SETTINGS: Settings = {
@@ -35,6 +41,8 @@ const DEFAULT_SETTINGS: Settings = {
   images: true,
   sound: true,
   volume: 0.6,
+  sidebar: true,
+  treasures: true,
 }
 
 interface State {
@@ -47,6 +55,9 @@ interface State {
   mood: Mood | null
   /** Last short sound to play (score, death, victory). */
   cue: { id: number; kind: CueKind } | null
+  /** What the side panel shows: inventory and treasures. */
+  side: { items: Item[]; treasures: Treasures } | null
+  sideTab: SideTab
   titles: Set<string>
   waitingFor: 'command' | 'yesno' | 'other'
   over: boolean
@@ -71,6 +82,7 @@ interface State {
   setSetting<K extends keyof Settings>(key: K, value: Settings[K]): void
   openModal(m: Modal, tab?: 'save' | 'load'): void
   showToast(text: string): void
+  setSideTab(tab: SideTab): void
 }
 
 let game: Game | null = null
@@ -83,6 +95,8 @@ let turnMarks: number[] = []
 const entry = (kind: TranscriptEntry['kind'], text: string): TranscriptEntry => ({ id: nextId++, kind, text })
 
 const MAX_TRANSCRIPT = 400
+
+const sideOf = (g: Game) => ({ items: inventoryOf(g), treasures: treasuresOf(g) })
 
 export const useGame = create<State>((set, get) => {
   const persistAuto = () => {
@@ -113,6 +127,7 @@ export const useGame = create<State>((set, get) => {
       transcript: [...s.transcript, ...(text ? [entry('out', text)] : [])].slice(-MAX_TRANSCRIPT),
       status: st,
       scene: sceneFor(g),
+      side: sideOf(g),
       mood,
       ...(cue ? { cue: { id: nextId++, kind: cue } } : {}),
       waitingFor: g.state === 'quit' ? 'other' : turnWaiting(g),
@@ -131,6 +146,8 @@ export const useGame = create<State>((set, get) => {
     scene: null,
     mood: null,
     cue: null,
+    side: null,
+    sideTab: readPref<SideTab>('sideTab', 'actions'),
     titles: new Set(),
     waitingFor: 'command',
     over: false,
@@ -215,6 +232,7 @@ export const useGame = create<State>((set, get) => {
         transcript: [...(mark !== undefined ? st.transcript.slice(0, mark) : st.transcript), entry('sys', t(st.settings.lang, 'undone'))],
         status,
         scene: sceneFor(game!),
+        side: sideOf(game!),
         mood: moodFor(game!),
         over: false,
         waitingFor: 'command',
@@ -256,6 +274,7 @@ export const useGame = create<State>((set, get) => {
         transcript: [...data.transcript, ...(slot === AUTOSAVE ? [] : [entry('sys', t(lang, 'loaded', data.name))])],
         status: game.status(),
         scene: sceneFor(game),
+        side: sideOf(game),
         mood: moodFor(game),
         waitingFor: turnWaiting(game),
         over: false,
@@ -283,7 +302,7 @@ export const useGame = create<State>((set, get) => {
         const snap = game.save('')
         game = createGame(story, value as Lang)
         game.load(snap)
-        set({ status: game.status(), titles: roomTitles(game) })
+        set({ status: game.status(), titles: roomTitles(game), side: sideOf(game) })
         persistAuto()
       }
       if (key === 'mode' || key === 'lang') refreshAssist()
@@ -293,6 +312,11 @@ export const useGame = create<State>((set, get) => {
     openModal(m, tab) {
       if (m === 'saves') get().refreshSlots()
       set({ modal: m, ...(tab ? { savesTab: tab } : {}) })
+    },
+
+    setSideTab(tab) {
+      writePref('sideTab', tab)
+      set({ sideTab: tab })
     },
 
     showToast(text) {
