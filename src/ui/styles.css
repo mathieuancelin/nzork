@@ -146,6 +146,12 @@ button {
   cursor: default;
 }
 
+.icon-btn svg {
+  width: 0.7em;
+  height: 0.7em;
+  vertical-align: -0.05em;
+}
+
 /* ------------------------------------------------------------ scene */
 
 .scene {
