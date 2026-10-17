@@ -1,18 +1,20 @@
 # Zork Next
 
 **A fan tribute to Zork I: The Great Underground Empire (Infocom, 1980), playable in French in
-the browser, with a visual touch the original never had.**
+the browser, with the sights and sounds the original never had.**
 
 ![West of House, in Hyper noob mode: the pixel-art scene, the French text and the suggested action circled in gold](docs/screenshot.jpg)
 
-You are standing in an open field west of a white house… and this time you can see it.
+You are standing in an open field west of a white house… and this time you can see it, and
+hear the wind in the trees.
 
 **[Play it online](https://mathieuancelin.github.io/nzork/)**
 
 Zork Next does not remake Zork. It runs the **original 1980s story file**, untouched, and wraps
 it in what a modern browser can offer: a complete French translation, pixel-art illustrations
-in the spirit of the VGA adventure games, help modes for newcomers, and save slots. Every puzzle,
-every grue and every one of the 350 points is exactly where Infocom left them.
+in the spirit of the VGA adventure games, an eerie soundtrack composed live as you play, help
+modes for newcomers, and save slots. Every puzzle, every grue and every one of the 350 points is
+exactly where Infocom left them.
 
 > **Unofficial fan project.** Zork Next is a non-commercial tribute, made out of love for the
 > game. It is not affiliated with, endorsed by or sponsored by Infocom, Activision or
@@ -31,10 +33,13 @@ every grue and every one of the 350 points is exactly where Infocom left them.
   shared 64-color palette, including state variants (the troll in his room, the drained
   reservoir, the rainbow made solid…). Dark rooms stay dark, except for two eyes that light up
   if you linger.
-- **A soundtrack.** Low, uneasy drones generated live by the browser (Web Audio, no audio
-  files): one ambience per kind of place (forest, house, caves, mine, water, temples, Hades,
-  maze), a heartbeat and something breathing in the dark, a war drum when a villain is in the
-  room, and short cues for points, death and victory. Mixed low, with its own volume setting.
+- **A soundtrack that gets under your skin.** Go down the trap door and the wind gives way to a
+  deep drone and water dripping somewhere in the dark. Let your lantern die and a heartbeat
+  rises while something breathes close by. Walk into the troll's room and a war drum starts. The
+  music follows the game: one ambience per kind of place (forest, house, caves, mine, river and
+  dam, temples, Hades, the maze), darkness and danger on top of it, and short cues for points,
+  death and victory. It is generated live by the browser, never loops, and stays low under the
+  text. Headphones recommended.
 - **Three ways to play.**
 
   | Mode | How you play |
@@ -172,6 +177,14 @@ a few cents per image, around 10 to 30 USD for the full set with several candida
 (check current prices with the provider).
 
 ## Soundtrack
+
+There is not a single audio file in the game. Everything you hear is synthesized on the fly with
+the Web Audio API: detuned oscillators drifting through slow filters, filtered noise for the
+wind, the water and the rumbles, a generated cave reverb, and short sounds played at random
+moments (drops, creaking wood, far bells, whispers, rolling pebbles, metal, birds, breathing).
+Each ambience crossfades into the next as you move, and the mood reacts to what happens: no
+light, a villain in the room, a treasure in the case, a death. The whole thing weighs a few
+kilobytes.
 
 The ambiences are data in [src/ui/sound/presets.ts](src/ui/sound/presets.ts); each scene of
 [src/data/scenes.json](src/data/scenes.json) names its ambience. To tune them by ear, run
