@@ -9,6 +9,7 @@ import { CommandBar } from './components/CommandBar'
 import { ChoicePanel } from './components/ChoicePanel'
 import { Modals } from './components/Modals'
 import { t } from './i18n'
+import { useSoundtrack } from './sound/useSoundtrack'
 
 function App() {
   const ready = useGame((s) => s.ready)
@@ -16,6 +17,7 @@ function App() {
   const settings = useGame((s) => s.settings)
   const toast = useGame((s) => s.toast)
   const undo = useGame((s) => s.undo)
+  useSoundtrack()
 
   useEffect(() => {
     init()

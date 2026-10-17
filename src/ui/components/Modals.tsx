@@ -279,6 +279,11 @@ function SettingsModal() {
       <Toggle label={t(lang, 'typewriter')} value={settings.typewriter} onChange={(v) => set('typewriter', v)} />
       <Toggle label={t(lang, 'crt')} value={settings.crt} onChange={(v) => set('crt', v)} />
       <Toggle label={t(lang, 'undoSetting')} value={settings.undo} onChange={(v) => set('undo', v)} />
+      <Toggle label={t(lang, 'sound')} value={settings.sound} onChange={(v) => set('sound', v)} />
+      <div className="setting">
+        <span>{t(lang, 'volume')}</span>
+        <input type="range" min={0} max={1} step={0.05} value={settings.volume} disabled={!settings.sound} onChange={(e) => set('volume', Number(e.target.value))} aria-label={t(lang, 'volume')} />
+      </div>
     </Modal>
   )
 }

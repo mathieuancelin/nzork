@@ -31,6 +31,10 @@ every grue and every one of the 350 points is exactly where Infocom left them.
   shared 64-color palette, including state variants (the troll in his room, the drained
   reservoir, the rainbow made solid…). Dark rooms stay dark, except for two eyes that light up
   if you linger.
+- **A soundtrack.** Low, uneasy drones generated live by the browser (Web Audio, no audio
+  files): one ambience per kind of place (forest, house, caves, mine, water, temples, Hades,
+  maze), a heartbeat and something breathing in the dark, a war drum when a villain is in the
+  room, and short cues for points, death and victory. Mixed low, with its own volume setting.
 - **Three ways to play.**
 
   | Mode | How you play |
@@ -166,6 +170,13 @@ Providers: `openai` (model `gpt-image-1` by default, `ZORK_OPENAI_MODEL` to chan
 `openrouter` (model `google/gemini-2.5-flash-image` by default, `ZORK_OPENROUTER_MODEL`). Expect
 a few cents per image, around 10 to 30 USD for the full set with several candidates per scene
 (check current prices with the provider).
+
+## Soundtrack
+
+The ambiences are data in [src/ui/sound/presets.ts](src/ui/sound/presets.ts); each scene of
+[src/data/scenes.json](src/data/scenes.json) names its ambience. To tune them by ear, run
+`npm run dev` and open `/sound-lab.html`: it plays each ambience with sliders for its settings,
+measures the levels, balances them, and copies the result back as JSON.
 
 ## The original sources
 

@@ -8,7 +8,8 @@
    "palette": {
     "sky": "#5f87b0",
     "ground": "#3d5a2a"
-   }
+   },
+   "ambience": "surface"
   },
   {
    "id": "north-of-house",
@@ -18,7 +19,8 @@
    "palette": {
     "sky": "#5f87b0",
     "ground": "#3d5a2a"
-   }
+   },
+   "ambience": "surface"
   },
   {
    "id": "south-of-house",
@@ -28,7 +30,8 @@
    "palette": {
     "sky": "#5f87b0",
     "ground": "#3d5a2a"
-   }
+   },
+   "ambience": "surface"
   },
   {
    "id": "behind-house",
@@ -38,7 +41,8 @@
    "palette": {
     "sky": "#5f87b0",
     "ground": "#3d5a2a"
-   }
+   },
+   "ambience": "surface"
   },
   {
    "id": "stone-barrow",
@@ -48,7 +52,8 @@
    "palette": {
     "sky": "#5f87b0",
     "ground": "#3d5a2a"
-   }
+   },
+   "ambience": "surface"
   },
   {
    "id": "forest",
@@ -60,7 +65,8 @@
    "palette": {
     "sky": "#2f4a3a",
     "ground": "#253421"
-   }
+   },
+   "ambience": "surface"
   },
   {
    "id": "forest-mountains",
@@ -70,7 +76,8 @@
    "palette": {
     "sky": "#2f4a3a",
     "ground": "#253421"
-   }
+   },
+   "ambience": "surface"
   },
   {
    "id": "forest-path",
@@ -80,7 +87,8 @@
    "palette": {
     "sky": "#2f4a3a",
     "ground": "#253421"
-   }
+   },
+   "ambience": "surface"
   },
   {
    "id": "up-a-tree",
@@ -90,7 +98,8 @@
    "palette": {
     "sky": "#2f4a3a",
     "ground": "#253421"
-   }
+   },
+   "ambience": "surface"
   },
   {
    "id": "clearing-grating",
@@ -100,7 +109,8 @@
    "palette": {
     "sky": "#2f4a3a",
     "ground": "#253421"
-   }
+   },
+   "ambience": "surface"
   },
   {
    "id": "clearing",
@@ -110,7 +120,8 @@
    "palette": {
     "sky": "#2f4a3a",
     "ground": "#253421"
-   }
+   },
+   "ambience": "surface"
   },
   {
    "id": "canyon-view",
@@ -120,7 +131,8 @@
    "palette": {
     "sky": "#5f87b0",
     "ground": "#3d5a2a"
-   }
+   },
+   "ambience": "surface"
   },
   {
    "id": "rocky-ledge",
@@ -130,7 +142,8 @@
    "palette": {
     "sky": "#5f87b0",
     "ground": "#3d5a2a"
-   }
+   },
+   "ambience": "surface"
   },
   {
    "id": "canyon-bottom",
@@ -140,7 +153,8 @@
    "palette": {
     "sky": "#5f87b0",
     "ground": "#3d5a2a"
-   }
+   },
+   "ambience": "surface"
   },
   {
    "id": "end-of-rainbow",
@@ -158,7 +172,8 @@
       "flag": "RAINBOW-FLAG"
      }
     }
-   ]
+   ],
+   "ambience": "surface"
   },
   {
    "id": "on-rainbow",
@@ -168,7 +183,8 @@
    "palette": {
     "sky": "#5b6fa8",
     "ground": "#3b4a5e"
-   }
+   },
+   "ambience": "surface"
   },
   {
    "id": "aragain-falls",
@@ -186,7 +202,8 @@
       "flag": "RAINBOW-FLAG"
      }
     }
-   ]
+   ],
+   "ambience": "water"
   },
   {
    "id": "kitchen",
@@ -196,7 +213,8 @@
    "palette": {
     "sky": "#4a3a2a",
     "ground": "#2c2118"
-   }
+   },
+   "ambience": "house"
   },
   {
    "id": "attic",
@@ -206,7 +224,8 @@
    "palette": {
     "sky": "#4a3a2a",
     "ground": "#2c2118"
-   }
+   },
+   "ambience": "house"
   },
   {
    "id": "living-room",
@@ -224,7 +243,8 @@
       "flag": "RUG-MOVED"
      }
     }
-   ]
+   ],
+   "ambience": "house"
   },
   {
    "id": "cellar",
@@ -234,7 +254,8 @@
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "cave"
   },
   {
    "id": "troll-room",
@@ -255,7 +276,8 @@
       ]
      }
     }
-   ]
+   ],
+   "ambience": "cave"
   },
   {
    "id": "east-of-chasm",
@@ -265,7 +287,8 @@
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "cave"
   },
   {
    "id": "gallery",
@@ -275,7 +298,8 @@
    "palette": {
     "sky": "#4a3a2a",
     "ground": "#2c2118"
-   }
+   },
+   "ambience": "cave"
   },
   {
    "id": "studio",
@@ -285,7 +309,8 @@
    "palette": {
     "sky": "#4a3a2a",
     "ground": "#2c2118"
-   }
+   },
+   "ambience": "cave"
   },
   {
    "id": "maze",
@@ -308,7 +333,8 @@
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "maze"
   },
   {
    "id": "maze-skeleton",
@@ -318,7 +344,8 @@
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "maze"
   },
   {
    "id": "dead-end",
@@ -331,7 +358,8 @@
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "maze"
   },
   {
    "id": "grating-room",
@@ -341,7 +369,8 @@
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "cave"
   },
   {
    "id": "cyclops-room",
@@ -359,7 +388,8 @@
       "notFlag": "MAGIC-FLAG"
      }
     }
-   ]
+   ],
+   "ambience": "cave"
   },
   {
    "id": "strange-passage",
@@ -369,7 +399,8 @@
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "cave"
   },
   {
    "id": "treasure-room",
@@ -379,7 +410,8 @@
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "cave"
   },
   {
    "id": "reservoir-south",
@@ -397,7 +429,8 @@
       "flag": "LOW-TIDE"
      }
     }
-   ]
+   ],
+   "ambience": "water"
   },
   {
    "id": "reservoir",
@@ -415,7 +448,8 @@
       "flag": "LOW-TIDE"
      }
     }
-   ]
+   ],
+   "ambience": "water"
   },
   {
    "id": "reservoir-north",
@@ -433,7 +467,8 @@
       "flag": "LOW-TIDE"
      }
     }
-   ]
+   ],
+   "ambience": "water"
   },
   {
    "id": "stream-view",
@@ -443,7 +478,8 @@
    "palette": {
     "sky": "#1d3442",
     "ground": "#243a45"
-   }
+   },
+   "ambience": "water"
   },
   {
    "id": "stream",
@@ -453,7 +489,8 @@
    "palette": {
     "sky": "#1d3442",
     "ground": "#243a45"
-   }
+   },
+   "ambience": "water"
   },
   {
    "id": "mirror-room",
@@ -464,7 +501,8 @@
    "palette": {
     "sky": "#141a2a",
     "ground": "#1c1c22"
-   }
+   },
+   "ambience": "cave"
   },
   {
    "id": "cave",
@@ -475,7 +513,8 @@
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "cave"
   },
   {
    "id": "cold-passage",
@@ -485,7 +524,8 @@
    "palette": {
     "sky": "#141a2a",
     "ground": "#1c1c22"
-   }
+   },
+   "ambience": "cave"
   },
   {
    "id": "narrow-passage",
@@ -495,7 +535,8 @@
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "cave"
   },
   {
    "id": "winding-passage",
@@ -506,7 +547,8 @@
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "cave"
   },
   {
    "id": "atlantis-room",
@@ -516,7 +558,8 @@
    "palette": {
     "sky": "#1d3442",
     "ground": "#243a45"
-   }
+   },
+   "ambience": "water"
   },
   {
    "id": "ew-passage",
@@ -526,7 +569,8 @@
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "cave"
   },
   {
    "id": "round-room",
@@ -536,7 +580,8 @@
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "cave"
   },
   {
    "id": "deep-canyon",
@@ -546,7 +591,8 @@
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "water"
   },
   {
    "id": "damp-cave",
@@ -556,7 +602,8 @@
    "palette": {
     "sky": "#1d3442",
     "ground": "#243a45"
-   }
+   },
+   "ambience": "cave"
   },
   {
    "id": "loud-room",
@@ -566,7 +613,8 @@
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "water"
   },
   {
    "id": "ns-passage",
@@ -576,7 +624,8 @@
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "cave"
   },
   {
    "id": "chasm",
@@ -586,7 +635,8 @@
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "cave"
   },
   {
    "id": "entrance-to-hades",
@@ -604,7 +654,8 @@
       "flag": "LLD-FLAG"
      }
     }
-   ]
+   ],
+   "ambience": "hades"
   },
   {
    "id": "land-of-the-dead",
@@ -614,7 +665,8 @@
    "palette": {
     "sky": "#3a1d14",
     "ground": "#241410"
-   }
+   },
+   "ambience": "hades"
   },
   {
    "id": "engravings-cave",
@@ -624,7 +676,8 @@
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "sacred"
   },
   {
    "id": "egyptian-room",
@@ -634,7 +687,8 @@
    "palette": {
     "sky": "#2a2433",
     "ground": "#3a3326"
-   }
+   },
+   "ambience": "sacred"
   },
   {
    "id": "dome-room",
@@ -652,7 +706,8 @@
       "flag": "DOME-FLAG"
      }
     }
-   ]
+   ],
+   "ambience": "sacred"
   },
   {
    "id": "torch-room",
@@ -662,7 +717,8 @@
    "palette": {
     "sky": "#2a2433",
     "ground": "#3a3326"
-   }
+   },
+   "ambience": "sacred"
   },
   {
    "id": "temple",
@@ -672,7 +728,8 @@
    "palette": {
     "sky": "#2a2433",
     "ground": "#3a3326"
-   }
+   },
+   "ambience": "sacred"
   },
   {
    "id": "altar",
@@ -682,7 +739,8 @@
    "palette": {
     "sky": "#2a2433",
     "ground": "#3a3326"
-   }
+   },
+   "ambience": "sacred"
   },
   {
    "id": "dam",
@@ -700,7 +758,8 @@
       "flag": "GATES-OPEN"
      }
     }
-   ]
+   ],
+   "ambience": "water"
   },
   {
    "id": "dam-lobby",
@@ -710,7 +769,8 @@
    "palette": {
     "sky": "#4a3a2a",
     "ground": "#2c2118"
-   }
+   },
+   "ambience": "mine"
   },
   {
    "id": "maintenance-room",
@@ -720,7 +780,8 @@
    "palette": {
     "sky": "#141210",
     "ground": "#262019"
-   }
+   },
+   "ambience": "mine"
   },
   {
    "id": "dam-base",
@@ -730,7 +791,8 @@
    "palette": {
     "sky": "#1d3442",
     "ground": "#243a45"
-   }
+   },
+   "ambience": "water"
   },
   {
    "id": "river",
@@ -742,7 +804,8 @@
    "palette": {
     "sky": "#1d3442",
     "ground": "#243a45"
-   }
+   },
+   "ambience": "water"
   },
   {
    "id": "river-rapids",
@@ -753,7 +816,8 @@
    "palette": {
     "sky": "#1d3442",
     "ground": "#243a45"
-   }
+   },
+   "ambience": "water"
   },
   {
    "id": "white-cliffs",
@@ -764,7 +828,8 @@
    "palette": {
     "sky": "#1d3442",
     "ground": "#243a45"
-   }
+   },
+   "ambience": "water"
   },
   {
    "id": "shore",
@@ -774,7 +839,8 @@
    "palette": {
     "sky": "#1d3442",
     "ground": "#243a45"
-   }
+   },
+   "ambience": "water"
   },
   {
    "id": "sandy-beach",
@@ -784,7 +850,8 @@
    "palette": {
     "sky": "#5f87b0",
     "ground": "#3d5a2a"
-   }
+   },
+   "ambience": "water"
   },
   {
    "id": "sandy-cave",
@@ -794,7 +861,8 @@
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "cave"
   },
   {
    "id": "mine-entrance",
@@ -804,7 +872,8 @@
    "palette": {
     "sky": "#141210",
     "ground": "#262019"
-   }
+   },
+   "ambience": "mine"
   },
   {
    "id": "squeaky-room",
@@ -814,7 +883,8 @@
    "palette": {
     "sky": "#141210",
     "ground": "#262019"
-   }
+   },
+   "ambience": "mine"
   },
   {
    "id": "bat-room",
@@ -824,7 +894,8 @@
    "palette": {
     "sky": "#141210",
     "ground": "#262019"
-   }
+   },
+   "ambience": "mine"
   },
   {
    "id": "shaft-room",
@@ -834,7 +905,8 @@
    "palette": {
     "sky": "#141210",
     "ground": "#262019"
-   }
+   },
+   "ambience": "mine"
   },
   {
    "id": "smelly-room",
@@ -844,7 +916,8 @@
    "palette": {
     "sky": "#141210",
     "ground": "#262019"
-   }
+   },
+   "ambience": "mine"
   },
   {
    "id": "gas-room",
@@ -854,7 +927,8 @@
    "palette": {
     "sky": "#141210",
     "ground": "#262019"
-   }
+   },
+   "ambience": "mine"
   },
   {
    "id": "coal-mine",
@@ -867,7 +941,8 @@
    "palette": {
     "sky": "#141210",
     "ground": "#262019"
-   }
+   },
+   "ambience": "mine"
   },
   {
    "id": "ladder-top",
@@ -877,7 +952,8 @@
    "palette": {
     "sky": "#141210",
     "ground": "#262019"
-   }
+   },
+   "ambience": "mine"
   },
   {
    "id": "ladder-bottom",
@@ -887,7 +963,8 @@
    "palette": {
     "sky": "#141210",
     "ground": "#262019"
-   }
+   },
+   "ambience": "mine"
   },
   {
    "id": "mine-dead-end",
@@ -897,7 +974,8 @@
    "palette": {
     "sky": "#141210",
     "ground": "#262019"
-   }
+   },
+   "ambience": "mine"
   },
   {
    "id": "timber-room",
@@ -907,7 +985,8 @@
    "palette": {
     "sky": "#141210",
     "ground": "#262019"
-   }
+   },
+   "ambience": "mine"
   },
   {
    "id": "drafty-room",
@@ -917,7 +996,8 @@
    "palette": {
     "sky": "#141210",
     "ground": "#262019"
-   }
+   },
+   "ambience": "mine"
   },
   {
    "id": "machine-room",
@@ -927,7 +1007,8 @@
    "palette": {
     "sky": "#141210",
     "ground": "#262019"
-   }
+   },
+   "ambience": "mine"
   },
   {
    "id": "slide-room",
@@ -937,7 +1018,8 @@
    "palette": {
     "sky": "#141a2a",
     "ground": "#1c1c22"
-   }
+   },
+   "ambience": "mine"
   }
  ]
 }

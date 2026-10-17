@@ -6,6 +6,8 @@ import { AUTOSAVE, SLOT_COUNT, allSlots, deleteSlot, readPref, readSlot, writePr
 import { computeAssist, type Assist, type Choice } from '../engine/assist/assist'
 import { t } from './i18n'
 import { sceneFor, roomTitles, type SceneInfo } from './scenes'
+import { moodFor, turnCue, type Mood } from './sound/mood'
+import type { CueKind } from './sound/presets'
 
 export type Mode = 'classic' | 'noob' | 'hypernoob'
 export type Modal = null | 'menu' | 'saves' | 'settings' | 'help' | 'about' | 'welcome'
@@ -18,6 +20,9 @@ export interface Settings {
   fontSize: 's' | 'm' | 'l'
   undo: boolean
   images: boolean
+  sound: boolean
+  /** Soundtrack volume, 0..1. */
+  volume: number
 }
 
 const DEFAULT_SETTINGS: Settings = {
@@ -28,6 +33,8 @@ const DEFAULT_SETTINGS: Settings = {
   fontSize: 'm',
   undo: true,
   images: true,
+  sound: true,
+  volume: 0.6,
 }
 
 interface State {
@@ -36,6 +43,10 @@ interface State {
   transcript: TranscriptEntry[]
   status: Status | null
   scene: SceneInfo | null
+  /** What the soundtrack plays. */
+  mood: Mood | null
+  /** Last short sound to play (score, death, victory). */
+  cue: { id: number; kind: CueKind } | null
   titles: Set<string>
   waitingFor: 'command' | 'yesno' | 'other'
   over: boolean
@@ -96,10 +107,14 @@ export const useGame = create<State>((set, get) => {
     const g = game
     const st = g.status()
     const over = g.state === 'quit' || g.inputRoutineName() === 'FINISH'
+    const mood = moodFor(g)
+    const cue = turnCue(get().mood, mood, over && !get().over)
     set((s) => ({
       transcript: [...s.transcript, ...(text ? [entry('out', text)] : [])].slice(-MAX_TRANSCRIPT),
       status: st,
       scene: sceneFor(g),
+      mood,
+      ...(cue ? { cue: { id: nextId++, kind: cue } } : {}),
       waitingFor: g.state === 'quit' ? 'other' : turnWaiting(g),
       over,
       canUndo: s.settings.undo && g.canUndo(),
@@ -114,6 +129,8 @@ export const useGame = create<State>((set, get) => {
     transcript: [],
     status: null,
     scene: null,
+    mood: null,
+    cue: null,
     titles: new Set(),
     waitingFor: 'command',
     over: false,
@@ -198,6 +215,7 @@ export const useGame = create<State>((set, get) => {
         transcript: [...(mark !== undefined ? st.transcript.slice(0, mark) : st.transcript), entry('sys', t(st.settings.lang, 'undone'))],
         status,
         scene: sceneFor(game!),
+        mood: moodFor(game!),
         over: false,
         waitingFor: 'command',
         canUndo: game!.canUndo(),
@@ -238,6 +256,7 @@ export const useGame = create<State>((set, get) => {
         transcript: [...data.transcript, ...(slot === AUTOSAVE ? [] : [entry('sys', t(lang, 'loaded', data.name))])],
         status: game.status(),
         scene: sceneFor(game),
+        mood: moodFor(game),
         waitingFor: turnWaiting(game),
         over: false,
         modal: null,

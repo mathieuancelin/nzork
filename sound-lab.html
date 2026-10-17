@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atelier sonore — Zork Next</title>
+    <style>
+      :root {
+        --bg: #0c0a07;
+        --panel: #15120d;
+        --border: #3b3226;
+        --text: #eadfc4;
+        --muted: #a39679;
+        --accent: #e3a83c;
+        color-scheme: dark;
+      }
+      body {
+        margin: 0;
+        padding: 16px;
+        background: var(--bg);
+        color: var(--text);
+        font: 14px ui-monospace, Menlo, Consolas, monospace;
+      }
+      h1 {
+        font-size: 20px;
+        margin: 0 0 4px;
+        color: var(--accent);
+      }
+      section {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 12px;
+        margin: 12px 0;
+      }
+      h2 {
+        font-size: 14px;
+        margin: 0 0 10px;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      button,
+      select {
+        background: #1d1912;
+        color: var(--text);
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 6px 10px;
+        font: inherit;
+        cursor: pointer;
+        margin: 0 6px 6px 0;
+      }
+      button.on {
+        border-color: var(--accent);
+        color: var(--accent);
+      }
+      label {
+        margin-right: 14px;
+      }
+      .params {
+        display: grid;
+        grid-template-columns: minmax(180px, max-content) minmax(120px, 360px) 90px;
+        gap: 4px 12px;
+        align-items: center;
+      }
+      .params .group {
+        grid-column: 1 / -1;
+        color: var(--accent);
+        margin-top: 8px;
+      }
+      .params input[type='number'] {
+        width: 90px;
+        background: #1d1912;
+        color: var(--text);
+        border: 1px solid var(--border);
+        border-radius: 4px;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        padding: 3px 12px 3px 0;
+        text-align: left;
+      }
+      textarea {
+        width: 100%;
+        height: 160px;
+        background: #1d1912;
+        color: var(--text);
+        border: 1px solid var(--border);
+        font: 12px ui-monospace, monospace;
+      }
+      .cues {
+        margin-top: 8px;
+      }
+      .hint {
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Atelier sonore</h1>
+    <p class="hint">Le son démarre au premier clic. Les réglages modifiés ici ne sont pas enregistrés : copiez-les pour les reporter dans src/ui/sound/presets.ts.</p>
+    <div id="lab"></div>
+    <script type="module" src="/src/ui/sound/lab.ts"></script>
+  </body>
+</html>

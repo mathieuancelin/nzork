@@ -4,6 +4,7 @@
 import scenes from '../data/scenes.json'
 import type { Game } from '../engine/game'
 import { World } from '../engine/assist/world'
+import type { PlaceId } from './sound/presets'
 
 type Condition = { flag?: string; notFlag?: string; objectIn?: [string, string] }
 
@@ -11,6 +12,7 @@ interface SceneDef {
   id: string
   rooms: string[]
   palette?: { sky: string; ground: string }
+  ambience?: string
   variants?: { id: string; when: Condition }[]
 }
 
@@ -44,6 +46,11 @@ export function sceneFor(game: Game): SceneInfo {
     if (v) id = v.id
   }
   return { id, base, sky: s?.palette?.sky ?? '#1b2130', ground: s?.palette?.ground ?? '#2a2016' }
+}
+
+/** The soundtrack's ambience for a room. */
+export function ambienceFor(roomId: string): PlaceId {
+  return (byRoom.get(roomId)?.ambience as PlaceId | undefined) ?? 'cave'
 }
 
 import symbols from '../engine/story/symbols.json'

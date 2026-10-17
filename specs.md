@@ -322,7 +322,25 @@ the mailbox offers its actions): the point & click spirit without the 3D.
   adjustable size.
 - Settings: game mode, language (fr/en), font size, images, typewriter effect, CRT effect
   (scanlines), undo.
-- Dark theme (it is a cave…), layout adapted to phones, keyboard shortcuts.
+- Dark theme (it is a cave…), layout adapted to phones, keyboard shortcuts, full screen button.
+
+### Soundtrack
+
+- **Generated live** with the Web Audio API, no audio files: detuned drones through moving
+  filters, filtered noise (wind, water, rumble), a generated reverb, and short sounds at random
+  moments (drops, creaks, bells, whispers, pebbles, metal, birds, breath).
+- **Eight ambiences** chosen per scene (`ambience` in `scenes.json`): surface, house, caves,
+  mine, water, sacred places, Hades, maze. Two overlays follow the state rather than the place:
+  **darkness** (beating sub-drone, high tension, heartbeat, the grue breathing) and **danger**
+  (tremolo cluster and war drum while the troll, the thief or the cyclops is in the room).
+  A dead adventurer wandering as a spirit hears Hades.
+- **Cues**: a chime when the score goes up, a descending growl on death, a chord on victory.
+- **Mix**: each ambience is balanced to about −23 LUFS (measured offline), then the player's
+  volume (0.6 by default, on a perceptual curve) brings it well under the text. Crossfades of
+  3.5 s; the sound starts on the first click or key (browser rule) and pauses when the tab is
+  hidden.
+- **Sound lab** (`/sound-lab.html`, development only): every ambience with sliders, level
+  measurement and balancing, export of the tuned values.
 
 ## 11. Status (2026-10-17)
 
@@ -335,7 +353,8 @@ the mailbox offers its actions): the point & click spirit without the 3D.
 | 4 | **Noob and hyper noob modes** | ✅ Choices generated from the state (checked by simulation), goal-based guide: **the bot that plays only the circled answer wins 24 games out of 30 and ends 3 more between 330 and 340 points** |
 | 5 | **Images** | ✅ Style bible, 82 scenes + 11 state variants, 93 prompts, OpenAI / OpenRouter generation with cost estimate, 480×270 post-processing with a 64-color palette, review page. **All 93 images generated and chosen** |
 | 6 | **Deployment** | ✅ GitHub Pages workflow (tests with `dfrotz`, build, deploy), offline PWA |
-| 7 | **Bonus** | To do: 2.5D parallax, clickable hotspots, ambient sounds |
+| 7 | **Soundtrack** | ✅ Procedural Web Audio ambiences per place, darkness and danger overlays, cues, sound lab |
+| 8 | **Bonus** | To do: 2.5D parallax, clickable hotspots |
 
 ## 12. Decisions
 
