@@ -13,6 +13,10 @@ export function SidePanel() {
   const side = useGame((s) => s.side)
   const tab = useGame((s) => s.sideTab)
   const setTab = useGame((s) => s.setSideTab)
+  const collapsed = useGame((s) => s.sideCollapsed)
+  const setCollapsed = useGame((s) => s.setSideCollapsed)
+  // folding only exists on small screens, where the panel sits under the text
+  const fold = () => window.matchMedia('(max-width: 900px)').matches && setCollapsed(!collapsed)
 
   const tabs: SideTab[] = [...(mode !== 'classic' ? (['actions'] as const) : []), 'inventory', ...(showTreasures ? (['treasures'] as const) : [])]
   const current = tabs.includes(tab) ? tab : tabs[0]
@@ -23,16 +27,17 @@ export function SidePanel() {
   }
 
   return (
-    <aside className="side">
-      {tabs.length > 1 && (
-        <div className="tabs" role="tablist">
-          {tabs.map((k) => (
-            <button key={k} role="tab" aria-selected={k === current} className={`tab ${k === current ? 'on' : ''}`} onClick={() => setTab(k)}>
-              {label(k)}
-            </button>
-          ))}
-        </div>
-      )}
+    <aside className={`side ${collapsed ? 'collapsed' : ''}`}>
+      <div className="tabs" role="tablist">
+        {tabs.map((k) => (
+          <button key={k} role="tab" aria-selected={k === current} className={`tab ${k === current ? 'on' : ''}`} onClick={() => (k === current ? fold() : setTab(k))}>
+            {label(k)}
+          </button>
+        ))}
+        <button className="tab fold" onClick={fold} aria-expanded={!collapsed} aria-label={t(lang, collapsed ? 'expandSide' : 'collapseSide')} title={t(lang, collapsed ? 'expandSide' : 'collapseSide')}>
+          {collapsed ? '▴' : '▾'}
+        </button>
+      </div>
       <div className="tab-body" role="tabpanel">
         {current === 'actions' ? <ChoicePanel /> : current === 'inventory' ? <Inventory /> : <TreasureTracker />}
       </div>

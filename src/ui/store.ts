@@ -58,6 +58,8 @@ interface State {
   /** What the side panel shows: inventory and treasures. */
   side: { items: Item[]; treasures: Treasures } | null
   sideTab: SideTab
+  /** On small screens, the side panel can fold down to its tabs. */
+  sideCollapsed: boolean
   titles: Set<string>
   waitingFor: 'command' | 'yesno' | 'other'
   over: boolean
@@ -83,6 +85,7 @@ interface State {
   openModal(m: Modal, tab?: 'save' | 'load'): void
   showToast(text: string): void
   setSideTab(tab: SideTab): void
+  setSideCollapsed(collapsed: boolean): void
 }
 
 let game: Game | null = null
@@ -148,6 +151,7 @@ export const useGame = create<State>((set, get) => {
     cue: null,
     side: null,
     sideTab: readPref<SideTab>('sideTab', 'actions'),
+    sideCollapsed: readPref<boolean>('sideCollapsed', false),
     titles: new Set(),
     waitingFor: 'command',
     over: false,
@@ -317,6 +321,12 @@ export const useGame = create<State>((set, get) => {
     setSideTab(tab) {
       writePref('sideTab', tab)
       set({ sideTab: tab })
+      get().setSideCollapsed(false)
+    },
+
+    setSideCollapsed(collapsed) {
+      writePref('sideCollapsed', collapsed)
+      set({ sideCollapsed: collapsed })
     },
 
     showToast(text) {

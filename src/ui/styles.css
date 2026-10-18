@@ -125,6 +125,11 @@ button {
   border-color: var(--border);
 }
 
+.tab.fold {
+  display: none;
+  margin-left: auto;
+}
+
 .empty {
   color: var(--muted);
   font-style: italic;
@@ -784,12 +789,25 @@ kbd {
     width: auto;
     border-left: none;
     border-top: 1px solid var(--border);
-    max-height: 42vh;
-  }
-  .with-choices .scene {
-    max-height: 22vh;
+    max-height: 34vh;
   }
   .app:not(.with-choices) .side {
+    max-height: 28vh;
+  }
+  .side.collapsed .tab-body {
+    display: none;
+  }
+  .side.collapsed .tabs {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+  .tab.fold {
+    display: block;
+  }
+  .with-side .scene {
+    max-height: 20vh;
+  }
+  .side-collapsed .scene {
     max-height: 30vh;
   }
 }
@@ -812,7 +830,30 @@ kbd {
   .controls {
     padding: 8px 12px 10px;
   }
+  .side {
+    padding: 6px 12px 10px;
+  }
+  .tabs {
+    margin-bottom: 8px;
+  }
+  .tab {
+    font-size: 17px;
+    padding: 3px 8px;
+  }
   .choices {
-    max-height: 40vh;
+    gap: 8px;
+  }
+  .choice-group h3,
+  details.examine summary {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  .choice {
+    padding: 4px 11px;
+    font-size: 0.86em;
+  }
+  .choice.move {
+    font-size: 17px;
+    padding: 2px 11px;
   }
 }

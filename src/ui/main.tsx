@@ -17,6 +17,7 @@ function App() {
   const settings = useGame((s) => s.settings)
   const toast = useGame((s) => s.toast)
   const undo = useGame((s) => s.undo)
+  const sideCollapsed = useGame((s) => s.sideCollapsed)
   useSoundtrack()
 
   useEffect(() => {
@@ -43,7 +44,7 @@ function App() {
 
   const withSide = settings.sidebar
   return (
-    <div className={`app ${settings.crt ? 'crt' : ''} ${withSide ? 'with-side' : ''} ${settings.mode !== 'classic' ? 'with-choices' : ''}`}>
+    <div className={`app ${settings.crt ? 'crt' : ''} ${withSide ? 'with-side' : ''} ${withSide && sideCollapsed ? 'side-collapsed' : ''} ${settings.mode !== 'classic' ? 'with-choices' : ''}`}>
       <StatusBar />
       <div className="layout">
         <div className="main">
