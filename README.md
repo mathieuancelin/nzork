@@ -55,7 +55,9 @@ status bar). Each game keeps its own game in progress, its ten save slots and it
   deep drone and water dripping somewhere in the dark. Let your lantern die and a heartbeat
   rises while something breathes close by. Walk into the troll's room and a war drum starts. The
   music follows the game: one ambience per kind of place (forest, house, caves, mine, river and
-  dam, temples, Hades, the maze), darkness and danger on top of it, and short cues for points,
+  dam, temples, Hades, the maze, and in the sequels the gardens, the volcano, the ocean, the icy
+  lake, the Land of Shadow, the museum, the Wizard's magic, the dungeon), darkness and danger on
+  top of it, and short cues for points,
   death and victory. It is generated live by the browser, never loops, and stays low under the
   text. Headphones recommended.
 - **Three ways to play.**
@@ -284,17 +286,18 @@ glyph of the object's kind stands in for it. Count about 7 USD for 3 candidates 
 There is not a single audio file in the game. Everything you hear is synthesized on the fly with
 the Web Audio API: detuned oscillators drifting through slow filters, filtered noise for the
 wind, the water and the rumbles, a generated cave reverb, and short sounds played at random
-moments (drops, creaking wood, far bells, whispers, rolling pebbles, metal, birds, breathing).
+moments (drops, creaking wood, far bells, whispers, rolling pebbles, metal, birds, breathing,
+waves, crackling fire, glassy chimes).
 Each ambience crossfades into the next as you move, and the mood reacts to what happens: no
 light, a villain in the room, a treasure in the case, a death. The whole thing weighs a few
 kilobytes.
 
 The ambiences are data in [src/ui/sound/presets.ts](src/ui/sound/presets.ts); each scene of
 [src/data/zork1/scenes.json](src/data/zork1/scenes.json) names its ambience (and each room of
-Zork II in [src/data/zork2/scenes.json](src/data/zork2/scenes.json): gardens, the river and the
-well, the Wizard's house and the bank, the machinery, the crypt, the afterlife, the maze; and of
-Zork III: the sunlit cliff, the lake and the ocean, the Land of Shadow, the museum, the Royal
-Puzzle, the Dungeon). To tune them by ear, run
+Zork II in [src/data/zork2/scenes.json](src/data/zork2/scenes.json): the gardens, the river and
+the well, the Wizard's magic, the volcano, the Bank of Zork, the machinery, the crypt, the
+afterlife, the maze; and of Zork III: the sunlit cliff, the icy lake and the ocean, the Land of
+Shadow, the museum, the Royal Puzzle, the Dungeon and its flaming pit). To tune them by ear, run
 `npm run dev` and open `/sound-lab.html`: it plays each ambience with sliders for its settings,
 measures the levels, balances them, and copies the result back as JSON.
 

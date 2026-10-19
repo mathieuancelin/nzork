@@ -20,7 +20,8 @@ function haloStyle(s: SceneInfo): CSSProperties {
   return { background: `radial-gradient(ellipse 78% 100% at 50% 62%, transparent ${clear}%, rgba(8,5,2,${(dark * 0.6).toFixed(2)}) ${edge}%, rgba(3,2,1,${dark.toFixed(2)}) 100%)` }
 }
 
-const DUSTY = new Set<PlaceId>(['house', 'cave', 'mine', 'maze', 'hades', 'sacred'])
+// dust in the air (embers over the fire, sparkles in the magic places: see styles.css)
+const DUSTY = new Set<PlaceId>(['house', 'cave', 'mine', 'maze', 'hades', 'sacred', 'museum', 'dungeon', 'shadow', 'fire', 'magic'])
 
 /** Motes of dust drifting slowly, always at the same places for a given scene. */
 function Motes({ seed }: { seed: string }) {

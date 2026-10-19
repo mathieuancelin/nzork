@@ -298,6 +298,43 @@ export const VOICES: Record<EventKind, Voice> = {
     a.gain.linearRampToValueAtTime(0, t + inhale + 0.3 + exhale)
     src.connect(lp).connect(a).connect(out)
   },
+  // a wave that rises, breaks and draws back over the sand
+  wave(ctx, out, t, g) {
+    const rise = rand(1, 1.8)
+    const fall = rand(2.5, 4)
+    const src = noiseBurst(ctx, 'pink', t, rise + fall + 0.2)
+    const lp = ctx.createBiquadFilter()
+    lp.type = 'lowpass'
+    lp.frequency.setValueAtTime(300, t)
+    lp.frequency.linearRampToValueAtTime(rand(1800, 2600), t + rise)
+    lp.frequency.exponentialRampToValueAtTime(350, t + rise + fall)
+    const a = gain(ctx, 0)
+    a.gain.setValueAtTime(0, t)
+    a.gain.linearRampToValueAtTime(g, t + rise)
+    a.gain.exponentialRampToValueAtTime(0.0001, t + rise + fall)
+    src.connect(lp).connect(a).connect(out)
+  },
+  // wood burning: a burst of dry pops, now and then a louder one
+  crackle(ctx, out, t, g) {
+    let at = t
+    for (let i = 0, n = Math.floor(rand(4, 12)); i < n; i++) {
+      const loud = rand(0, 1) < 0.15
+      const src = noiseBurst(ctx, 'white', at, 0.02)
+      const bp = ctx.createBiquadFilter()
+      bp.type = 'bandpass'
+      bp.frequency.value = loud ? rand(700, 1400) : rand(2500, 6000)
+      bp.Q.value = 1.5
+      const a = gain(ctx, 0)
+      envelope(a.gain, at, loud ? g : g * rand(0.25, 0.6), 0.0005, loud ? 0.04 : 0.012)
+      src.connect(bp).connect(a).connect(out)
+      at += rand(0.02, 0.18)
+    }
+  },
+  // a glassy chime, high in the air
+  chime(ctx, out, t, g) {
+    const f = [880, 987.8, 1174.7, 1318.5, 1568][Math.floor(rand(0, 5))]
+    partials(ctx, out, t, g, f, [1, 2.01, 3.02, 4.2], rand(1.5, 2.5))
+  },
 }
 
 /** A low thump with some harmonics, so that small speakers play it too. */

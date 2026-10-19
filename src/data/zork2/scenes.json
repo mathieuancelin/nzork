@@ -86,7 +86,7 @@
      }
     }
    ],
-   "ambience": "surface"
+   "ambience": "garden"
   },
   {
    "id": "zork2-gazebo",
@@ -97,7 +97,7 @@
     "sky": "#5f7f78",
     "ground": "#3d5a2a"
    },
-   "ambience": "surface"
+   "ambience": "garden"
   },
   {
    "id": "zork2-formal-garden",
@@ -108,7 +108,7 @@
     "sky": "#5f7f78",
     "ground": "#3d5a2a"
    },
-   "ambience": "surface"
+   "ambience": "garden"
   },
   {
    "id": "zork2-topiary",
@@ -119,7 +119,7 @@
     "sky": "#5f7f78",
     "ground": "#3d5a2a"
    },
-   "ambience": "surface"
+   "ambience": "garden"
   },
   {
    "id": "zork2-stream-path",
@@ -292,7 +292,7 @@
     "sky": "#2a1a14",
     "ground": "#3a2418"
    },
-   "ambience": "cave"
+   "ambience": "fire"
   },
   {
    "id": "zork2-cobwebby-corridor",
@@ -514,7 +514,7 @@
     "sky": "#2a2233",
     "ground": "#2a2018"
    },
-   "ambience": "house"
+   "ambience": "magic"
   },
   {
    "id": "zork2-wizards-workroom",
@@ -536,7 +536,7 @@
      }
     }
    ],
-   "ambience": "house"
+   "ambience": "magic"
   },
   {
    "id": "zork2-trophy-room",
@@ -581,7 +581,7 @@
      }
     }
    ],
-   "ambience": "sacred"
+   "ambience": "magic"
   },
   {
    "id": "zork2-aquarium-room",
@@ -634,7 +634,7 @@
     "sky": "#2a2233",
     "ground": "#2a2018"
    },
-   "ambience": "house"
+   "ambience": "magic"
   },
   {
    "id": "zork2-riddle-room",
@@ -788,7 +788,7 @@
     "sky": "#34362c",
     "ground": "#2a2622"
    },
-   "ambience": "house"
+   "ambience": "museum"
   },
   {
    "id": "zork2-teller-room",
@@ -800,7 +800,7 @@
     "sky": "#34362c",
     "ground": "#2a2622"
    },
-   "ambience": "house"
+   "ambience": "museum"
   },
   {
    "id": "zork2-viewing-room",
@@ -820,7 +820,7 @@
      }
     }
    ],
-   "ambience": "house"
+   "ambience": "museum"
   },
   {
    "id": "zork2-small-room",
@@ -839,7 +839,7 @@
      }
     }
    ],
-   "ambience": "house"
+   "ambience": "museum"
   },
   {
    "id": "zork2-vault",
@@ -850,7 +850,7 @@
     "sky": "#34362c",
     "ground": "#2a2622"
    },
-   "ambience": "house"
+   "ambience": "museum"
   },
   {
    "id": "zork2-depository",
@@ -861,7 +861,7 @@
     "sky": "#34362c",
     "ground": "#2a2622"
    },
-   "ambience": "house"
+   "ambience": "museum"
   },
   {
    "id": "zork2-chairmans-office",
@@ -872,7 +872,7 @@
     "sky": "#34362c",
     "ground": "#2a2622"
    },
-   "ambience": "house"
+   "ambience": "museum"
   },
   {
    "id": "zork2-dreary-room",
@@ -916,7 +916,7 @@
      }
     }
    ],
-   "ambience": "cave"
+   "ambience": "fire"
   },
   {
    "id": "zork2-volcano-core",
@@ -927,7 +927,7 @@
     "sky": "#6a7f9a",
     "ground": "#2e1f1a"
    },
-   "ambience": "surface"
+   "ambience": "fire"
   },
   {
    "id": "zork2-volcano-small-ledge",
@@ -938,7 +938,7 @@
     "sky": "#6a7f9a",
     "ground": "#2e1f1a"
    },
-   "ambience": "surface"
+   "ambience": "fire"
   },
   {
    "id": "zork2-volcano-viewing-ledge",
@@ -949,7 +949,7 @@
     "sky": "#6a7f9a",
     "ground": "#2e1f1a"
    },
-   "ambience": "surface"
+   "ambience": "fire"
   },
   {
    "id": "zork2-volcano-wide-ledge",
@@ -960,7 +960,7 @@
     "sky": "#6a7f9a",
     "ground": "#2e1f1a"
    },
-   "ambience": "surface"
+   "ambience": "fire"
   },
   {
    "id": "zork2-narrow-ledge",
@@ -988,7 +988,7 @@
      }
     }
    ],
-   "ambience": "cave"
+   "ambience": "fire"
   },
   {
    "id": "zork2-library",
@@ -1010,7 +1010,7 @@
     "sky": "#4a4a52",
     "ground": "#2e1f1a"
    },
-   "ambience": "cave"
+   "ambience": "fire"
   },
   {
    "id": "zork2-wide-ledge",
@@ -1038,7 +1038,7 @@
      }
     }
    ],
-   "ambience": "cave"
+   "ambience": "fire"
   },
   {
    "id": "zork2-dusty-room",
@@ -1068,7 +1068,7 @@
     "sky": "#2a1a14",
     "ground": "#3a2418"
    },
-   "ambience": "cave"
+   "ambience": "fire"
   },
   {
    "id": "zork2-red-mist",

@@ -856,7 +856,9 @@ button.item[aria-expanded='true'] {
   100% { transform: translate(var(--dx), var(--dy)); opacity: 0; }
 }
 
-.fx-water::before {
+.fx-water::before,
+.fx-lake::before,
+.fx-ocean::before {
   content: '';
   position: absolute;
   left: 0;
@@ -873,9 +875,41 @@ button.item[aria-expanded='true'] {
   to { transform: translateY(7px); }
 }
 
+/* the surf comes and goes faster than the still lake */
+.fx-ocean::before {
+  animation-duration: 2.2s;
+}
+
+/* embers over the fire, sparkles in the air of the magic places */
+.fx-fire .mote {
+  background: rgba(255, 140, 50, 0.85);
+}
+
+.fx-magic .mote {
+  background: rgba(190, 215, 255, 0.85);
+}
+
+/* the mist of the Land of Shadow drifting across the hills */
+.fx-shadow::before {
+  content: '';
+  position: absolute;
+  inset: 30% -40% 0 -40%;
+  background: radial-gradient(ellipse 30% 40% at 30% 60%, rgba(200, 205, 215, 0.12), transparent 70%),
+    radial-gradient(ellipse 25% 35% at 70% 70%, rgba(200, 205, 215, 0.1), transparent 70%);
+  animation: mist 24s ease-in-out infinite alternate;
+}
+
+@keyframes mist {
+  from { transform: translateX(-12%); }
+  to { transform: translateX(12%); }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .mote,
   .fx-water::before,
+  .fx-lake::before,
+  .fx-ocean::before,
+  .fx-shadow::before,
   .light-flame .halo::after,
   .failing img {
     animation: none;

@@ -7,7 +7,9 @@ import { Ambience } from './synth'
 const ALL: Record<string, Preset> = { ...AMBIENCES, ...OVERLAYS }
 const ORIGINAL = JSON.stringify(ALL)
 const NAMES: Record<string, string> = {
-  surface: 'Surface', house: 'Maison', cave: 'Cavernes', mine: 'Mine', water: 'Eau', sacred: 'Sacré', hades: 'Enfers', maze: 'Labyrinthe', dark: 'Obscurité', danger: 'Danger',
+  surface: 'Surface', house: 'Maison', cave: 'Cavernes', mine: 'Mine', water: 'Eau', sacred: 'Sacré', hades: 'Enfers', maze: 'Labyrinthe',
+  garden: 'Jardin', fire: 'Feu', ocean: 'Océan', lake: 'Lac', shadow: 'Ombre', museum: 'Musée', magic: 'Magie', dungeon: 'Donjon',
+  dark: 'Obscurité', danger: 'Danger',
 }
 
 const mood = { place: 'cave' as PlaceId, dark: false, danger: false }

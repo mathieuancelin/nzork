@@ -61,7 +61,7 @@
     "sky": "#4a5a68",
     "ground": "#4a4234"
    },
-   "ambience": "surface"
+   "ambience": "ocean"
   },
   {
    "id": "zork3-cliff",
@@ -146,7 +146,7 @@
     "sky": "#4a3a2a",
     "ground": "#2c2118"
    },
-   "ambience": "house"
+   "ambience": "museum"
   },
   {
    "id": "zork3-great-door",
@@ -165,7 +165,7 @@
      }
     }
    ],
-   "ambience": "house"
+   "ambience": "museum"
   },
   {
    "id": "zork3-museum-entrance",
@@ -185,7 +185,7 @@
      }
     }
    ],
-   "ambience": "house"
+   "ambience": "museum"
   },
   {
    "id": "zork3-jewel-room",
@@ -205,7 +205,7 @@
      }
     }
    ],
-   "ambience": "house"
+   "ambience": "museum"
   },
   {
    "id": "zork3-tech-museum",
@@ -217,7 +217,7 @@
     "sky": "#3d3630",
     "ground": "#2a241e"
    },
-   "ambience": "house"
+   "ambience": "museum"
   },
   {
    "id": "zork3-museum-entrance-unfinished",
@@ -228,7 +228,7 @@
     "sky": "#4a4236",
     "ground": "#2e2820"
    },
-   "ambience": "house"
+   "ambience": "museum"
   },
   {
    "id": "zork3-jewel-room-unfinished",
@@ -239,7 +239,7 @@
     "sky": "#4a4236",
     "ground": "#2e2820"
    },
-   "ambience": "house"
+   "ambience": "museum"
   },
   {
    "id": "zork3-tech-museum-unfinished",
@@ -250,7 +250,7 @@
     "sky": "#4a4236",
     "ground": "#2e2820"
    },
-   "ambience": "house"
+   "ambience": "museum"
   },
   {
    "id": "zork3-puzzle-entrance",
@@ -271,7 +271,7 @@
      }
     }
    ],
-   "ambience": "house"
+   "ambience": "museum"
   },
   {
    "id": "zork3-puzzle-side-room",
@@ -291,7 +291,7 @@
      }
     }
    ],
-   "ambience": "house"
+   "ambience": "museum"
   },
   {
    "id": "zork3-royal-puzzle",
@@ -471,7 +471,7 @@
     "sky": "#2a2433",
     "ground": "#3a3326"
    },
-   "ambience": "sacred"
+   "ambience": "dungeon"
   },
   {
    "id": "zork3-narrow-corridor",
@@ -493,7 +493,7 @@
      }
     }
    ],
-   "ambience": "sacred"
+   "ambience": "dungeon"
   },
   {
    "id": "zork3-south-corridor",
@@ -504,7 +504,7 @@
     "sky": "#3a3838",
     "ground": "#2a2826"
    },
-   "ambience": "sacred"
+   "ambience": "dungeon"
   },
   {
    "id": "zork3-marble-corridor",
@@ -516,7 +516,7 @@
     "sky": "#3a3838",
     "ground": "#2a2826"
    },
-   "ambience": "sacred"
+   "ambience": "dungeon"
   },
   {
    "id": "zork3-north-corridor",
@@ -527,7 +527,7 @@
     "sky": "#3a1d14",
     "ground": "#241410"
    },
-   "ambience": "sacred"
+   "ambience": "dungeon"
   },
   {
    "id": "zork3-parapet",
@@ -538,7 +538,7 @@
     "sky": "#3a1d14",
     "ground": "#241410"
    },
-   "ambience": "sacred"
+   "ambience": "fire"
   },
   {
    "id": "zork3-cell",
@@ -560,7 +560,7 @@
      }
     }
    ],
-   "ambience": "sacred"
+   "ambience": "dungeon"
   },
   {
    "id": "zork3-prison-cell",
@@ -571,7 +571,7 @@
     "sky": "#2a2220",
     "ground": "#1e1816"
    },
-   "ambience": "sacred"
+   "ambience": "dungeon"
   },
   {
    "id": "zork3-good-cell",
@@ -582,7 +582,7 @@
     "sky": "#2a2220",
     "ground": "#1e1816"
    },
-   "ambience": "sacred"
+   "ambience": "dungeon"
   },
   {
    "id": "zork3-treasury",
@@ -593,7 +593,7 @@
     "sky": "#4a3a1e",
     "ground": "#2c2118"
    },
-   "ambience": "house"
+   "ambience": "museum"
   },
   {
    "id": "zork3-foggy-room",
@@ -615,7 +615,7 @@
     "sky": "#1d3442",
     "ground": "#243a45"
    },
-   "ambience": "water"
+   "ambience": "lake"
   },
   {
    "id": "zork3-on-lake",
@@ -626,7 +626,7 @@
     "sky": "#1d3442",
     "ground": "#243a45"
    },
-   "ambience": "water"
+   "ambience": "lake"
   },
   {
    "id": "zork3-underwater",
@@ -637,7 +637,7 @@
     "sky": "#1d3442",
     "ground": "#243a45"
    },
-   "ambience": "water"
+   "ambience": "lake"
   },
   {
    "id": "zork3-western-shore",
@@ -648,7 +648,7 @@
     "sky": "#1d3442",
     "ground": "#243a45"
    },
-   "ambience": "water"
+   "ambience": "lake"
   },
   {
    "id": "zork3-southern-shore",
@@ -659,7 +659,7 @@
     "sky": "#1d3442",
     "ground": "#243a45"
    },
-   "ambience": "water"
+   "ambience": "lake"
   },
   {
    "id": "zork3-scenic-vista",
@@ -670,7 +670,7 @@
     "sky": "#4a3a2a",
     "ground": "#2c2118"
    },
-   "ambience": "cave"
+   "ambience": "magic"
   },
   {
    "id": "zork3-aqueduct-view",
@@ -792,7 +792,7 @@
      }
     }
    ],
-   "ambience": "hades"
+   "ambience": "shadow"
   },
   {
    "id": "zork3-shadow-wall",
@@ -812,7 +812,7 @@
      }
     }
    ],
-   "ambience": "hades"
+   "ambience": "shadow"
   },
   {
    "id": "zork3-shadow-quicksand",
@@ -833,7 +833,7 @@
      }
     }
    ],
-   "ambience": "hades"
+   "ambience": "shadow"
   },
   {
    "id": "zork3-shadow-cliff",
@@ -853,7 +853,7 @@
      }
     }
    ],
-   "ambience": "hades"
+   "ambience": "shadow"
   },
   {
    "id": "zork3-flathead-ocean",
@@ -873,7 +873,7 @@
      }
     }
    ],
-   "ambience": "water"
+   "ambience": "ocean"
   },
   {
    "id": "zork3-room-8",

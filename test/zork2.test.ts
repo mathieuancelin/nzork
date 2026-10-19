@@ -139,10 +139,13 @@ describe('Zork II', () => {
       before = after
       if (over) break
     }
-    expect(seen.get('FORMAL-GARDEN')?.place).toBe('surface')
+    expect(seen.get('FORMAL-GARDEN')?.place).toBe('garden')
     expect(seen.get('TEA-ROOM')?.place).toBe('house')
     expect(seen.get('DIAMOND-5')?.place).toBe('maze')
     expect(seen.get('CRYPT-ROOM')?.place).toBe('sacred')
+    expect(seen.get('VOLCANO-BOTTOM')?.place).toBe('fire')
+    expect(seen.get('WIZARDS-WORKSHOP')?.place).toBe('magic')
+    expect(seen.get('DEPOSITORY')?.place).toBe('museum')
     expect(dragon).toBe(true)
     expect(cues.at(-1)).toBe('victory')
   })
@@ -206,9 +209,12 @@ describe('Zork III', () => {
       if (over) break
     }
     expect(seen.get('CLIFF')?.place).toBe('surface')
-    expect(seen.get('LAKE-SHORE')?.place).toBe('water')
-    expect(seen.get('MUSEUM-ENTRANCE')?.place).toBe('house')
-    expect(seen.get('SHADOW-8')?.place).toBe('hades')
+    expect(seen.get('LAKE-SHORE')?.place).toBe('lake')
+    expect(seen.get('MUSEUM-ENTRANCE')?.place).toBe('museum')
+    expect(seen.get('SHADOW-8')?.place).toBe('shadow')
+    expect(seen.get('VIEW-ROOM')?.place).toBe('magic')
+    expect(seen.get('NORTH-CORRIDOR')?.place).toBe('dungeon')
+    expect(seen.get('PARAPET')?.place).toBe('fire')
     expect(shadow).toBe(true)
     expect(cues.filter((c) => c === 'score')).toHaveLength(7)
     expect(cues.at(-1)).toBe('victory')

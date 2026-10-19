@@ -1,6 +1,8 @@
 // The soundtrack follows the game: one ambience per place, darkness, villains, cues.
 import { describe, it, expect } from 'vitest'
 import scenes from '../src/data/zork1/scenes.json'
+import scenes2 from '../src/data/zork2/scenes.json'
+import scenes3 from '../src/data/zork3/scenes.json'
 import { AMBIENCES, OVERLAYS, PLACES } from '../src/ui/sound/presets'
 import { moodFor, turnCue, type Mood } from '../src/ui/sound/mood'
 import { Game } from '../src/engine/game'
@@ -8,8 +10,11 @@ import { loadStory } from './helpers/plain'
 import { playWalkthrough } from './helpers/walkthrough'
 
 describe('soundtrack data', () => {
-  it('gives every scene a known ambience', () => {
-    for (const s of scenes.scenes) expect(PLACES, s.id).toContain((s as { ambience?: string }).ambience)
+  it('gives every scene of the three games a known ambience, and plays every ambience somewhere', () => {
+    const all = [...scenes.scenes, ...scenes2.scenes, ...scenes3.scenes] as { id: string; ambience?: string }[]
+    for (const s of all) expect(PLACES, s.id).toContain(s.ambience)
+    expect(new Set(all.map((s) => s.ambience))).toEqual(new Set(PLACES))
+    expect(Object.keys(AMBIENCES).sort()).toEqual([...PLACES].sort())
   })
 
   it('has sensible numbers in every preset', () => {

@@ -480,11 +480,19 @@ the mailbox offers its actions): the point & click spirit without the 3D.
 
 - **Generated live** with the Web Audio API, no audio files: detuned drones through moving
   filters, filtered noise (wind, water, rumble), a generated reverb, and short sounds at random
-  moments (drops, creaks, bells, whispers, pebbles, metal, birds, breath).
-- **Eight ambiences** chosen per scene (`ambience` in `scenes.json`): surface, house, caves,
-  mine, water, sacred places, Hades, maze. Two overlays follow the state rather than the place:
-  **darkness** (beating sub-drone, high tension, heartbeat, the grue breathing) and **danger**
-  (tremolo cluster and war drum while the troll, the thief or the cyclops is in the room).
+  moments (drops, creaks, bells, whispers, pebbles, metal, birds, breath, waves, crackling fire,
+  glassy chimes).
+- **Sixteen ambiences** chosen per scene (`ambience` in `scenes.json`): eight from Zork I
+  (surface, house, caves, mine, water, sacred places, Hades, maze) and eight for the places of
+  the sequels: garden (Zork II's gardens), fire (the volcano, the flaming pit), ocean (the
+  Flathead Ocean), lake (Zork III's icy lake), shadow (the Land of Shadow), museum (the Royal
+  Museum, the Bank of Zork), magic (the Wizard's house, the Scenic Vista) and dungeon (the
+  Dungeon Master's prison). The scene adds its own touch: ripples on the lake and the surf,
+  embers over the fire, sparkles in the magic places, mist over the Land of Shadow. Two overlays
+  follow the state rather than the place: **darkness** (beating sub-drone, high tension,
+  heartbeat, the grue breathing) and **danger** (tremolo cluster and war drum while the troll,
+  the thief or the cyclops is in the room; the dragon, Cerberus or the Wizard in Zork II, the
+  hooded figure in Zork III).
   A dead adventurer wandering as a spirit hears Hades.
 - **Cues**: a chime when the score goes up, a descending growl on death, a chord on victory.
 - **Mix**: each ambience is balanced to about −23 LUFS (measured offline), then the player's
