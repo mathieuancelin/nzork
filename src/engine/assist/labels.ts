@@ -33,6 +33,8 @@ export const VERB_LABELS: Record<string, [string, string]> = {
   tie: ['Attacher', 'Tie'],
   move: ['Déplacer', 'Move'],
   push: ['Appuyer sur', 'Push'],
+  // a wall, a panel, a machine: pushed, not pressed
+  shove: ['Pousser', 'Push'],
   turn: ['Tourner', 'Turn'],
   inflate: ['Gonfler', 'Inflate'],
   board: ['Monter dans', 'Board'],
@@ -49,6 +51,11 @@ export const VERB_LABELS: Record<string, [string, string]> = {
   'look in': ['Regarder dans', 'Look in'],
   search: ['Fouiller', 'Search'],
   wear: ['Mettre', 'Wear'],
+  wake: ['Réveiller', 'Wake'],
+  'look under': ['Regarder sous', 'Look under'],
+  'knock on': ['Frapper à', 'Knock on'],
+  unlock: ['Déverrouiller', 'Unlock'],
+  spray: ['Vaporiser', 'Spray'],
 }
 
 const PREP_FR: Record<string, string> = { in: 'dans', on: 'sur', with: 'avec', to: 'à', at: 'sur', under: 'sous' }
@@ -81,7 +88,7 @@ export class Labeler {
         const p = PREP_FR[prep] ?? prep
         s += ' ' + (p === 'à' ? this.thing(obj2, 'au') : `${p} ${this.thing(obj2)}`)
       }
-      return s.replace(/ de le /g, ' du ').replace(/ de les /g, ' des ')
+      return s.replace(/ de le /g, ' du ').replace(/ de les /g, ' des ').replace(/ à le /g, ' au ').replace(/ à les /g, ' aux ')
     }
     let s = ven
     if (obj) s += ' ' + this.thing(obj)

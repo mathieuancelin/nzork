@@ -97,6 +97,13 @@ for (let pass = 0; pass < 12; pass++) {
         const kn = objName.get(k)
         if (kn && kids.has(kn)) score += 1
       }
+      // objects of the same name (Zork III's two wooden doors): the number of adjectives is
+      // the length of the ADJECTIVE property (one byte each); 2 and 4 are left aside, as they
+      // could as well be a word or two
+      const adjectives = (o.props.get('ADJECTIVE') ?? []).length
+      if (o.kind !== 'ROOM' && adjectives && adjectives !== 2 && adjectives !== 4) {
+        score += [...z.props.values()].some((v) => v.length === adjectives) ? 1 : -1
+      }
       // rooms: compare the exits (direction property → destination room)
       if (o.kind === 'ROOM') {
         DIRECTIONS.forEach((d, i) => {

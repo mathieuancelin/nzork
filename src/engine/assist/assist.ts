@@ -91,6 +91,7 @@ export function computeAssist(game: Game, withHint: boolean): Assist {
 
 function stepLabel(step: GuideStep, w: World, L: Labeler): string {
   if (step.dir) return L.dir(step.dir)
+  if (step.label) return L.text(...step.label)
   const special: Record<string, [string, string]> = {
     odysseus: ['Dire « Ulysse »', 'Say "Odysseus"'],
     echo: ['Crier « Écho »', 'Shout "Echo"'],

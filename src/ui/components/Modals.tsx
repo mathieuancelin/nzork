@@ -568,7 +568,7 @@ function HelpModal() {
   )
 }
 
-const THIS_PROJECT = 'https://github.com/mathieuancelin/zork-in-your-browser'
+const THIS_PROJECT = 'https://github.com/mathieuancelin/zork-in-the-browser'
 
 function Link({ href }: { href: string }) {
   return (

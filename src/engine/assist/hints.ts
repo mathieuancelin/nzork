@@ -3,11 +3,13 @@
 // A question appears only once its place has been seen, so the list itself spoils nothing.
 import type { Game, GameId } from '../game'
 import { World } from './world'
+import { ZORK2 } from './hints-zork2'
+import { ZORK3 } from './hints-zork3'
 
-type Lang2 = [fr: string, en: string]
-type Check = (w: World, seen: Set<string>) => boolean
+export type Lang2 = [fr: string, en: string]
+export type Check = (w: World, seen: Set<string>) => boolean
 
-interface Question {
+export interface Question {
   id: string
   q: Lang2
   hints: Lang2[]
@@ -17,11 +19,11 @@ interface Question {
   solved: Check
 }
 
-const touched = (w: World, o: string) => w.attr(o, 'TOUCHBIT')
-const inPlay = (w: World, o: string) => w.vm.parent(w.obj(o)) !== 0
-const saw = (...rooms: string[]): Check => (_w, seen) => rooms.some((r) => seen.has(r))
+export const touched = (w: World, o: string) => w.attr(o, 'TOUCHBIT')
+export const inPlay = (w: World, o: string) => w.vm.parent(w.obj(o)) !== 0
+export const saw = (...rooms: string[]): Check => (_w, seen) => rooms.some((r) => seen.has(r))
 
-// Zork I's questions (the other games have none yet)
+// Zork I's questions (Zork II's and Zork III's are in hints-zork2.ts and hints-zork3.ts)
 const ZORK1: Question[] = [
   {
     id: 'house',
@@ -319,7 +321,7 @@ export interface HintQuestion {
 }
 
 /** The questions the player can ask now (places seen), in the language of the game. */
-const QUESTIONS: Record<GameId, Question[]> = { zork1: ZORK1, zork2: [], zork3: [] }
+const QUESTIONS: Record<GameId, Question[]> = { zork1: ZORK1, zork2: ZORK2, zork3: ZORK3 }
 
 /** Whether the game has InvisiClues hints. */
 export const hasHints = (game: GameId) => QUESTIONS[game].length > 0

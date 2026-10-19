@@ -1,9 +1,9 @@
 {
-  "name": "zork-in-your-browser",
+  "name": "zork-in-the-browser",
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "A fan tribute to Zork I: the original game in a TypeScript Z-machine, in French, in the browser, with pixel-art illustrations and beginner modes",
+  "description": "A fan tribute to the Zork trilogy: the original games in a TypeScript Z-machine, in French, in the browser, with pixel-art illustrations and beginner modes",
   "license": "MIT",
   "scripts": {
     "dev": "vite",

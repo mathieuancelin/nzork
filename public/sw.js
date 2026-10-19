@@ -1,5 +1,5 @@
 // Offline support: cache-first for the game files, network-first for the page itself.
-const CACHE = 'zork-in-your-browser-v1'
+const CACHE = 'zork-in-the-browser-v1'
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(['./', './manifest.webmanifest'])))

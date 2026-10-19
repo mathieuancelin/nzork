@@ -1,7 +1,7 @@
 {
-  "name": "Zork — dans votre navigateur",
+  "name": "Zork — dans le navigateur",
   "short_name": "Zork",
-  "description": "La trilogie Zork d'Infocom (1980-1982) : Zork I et II en français, avec modes d'aide et illustrations.",
+  "description": "La trilogie Zork d'Infocom (1980-1982) en français, avec modes d'aide et illustrations.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

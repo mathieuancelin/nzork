@@ -99,11 +99,11 @@ describe('Zork II', () => {
     expect(found[0].text).not.toMatch(/\b(the|and|of)\b/)
   })
 
-  it('has no hints nor guide yet: hyper noob shows the choices without circling one', () => {
+  it('has hints, but no guide yet: hyper noob shows the choices without circling one', () => {
     const game = english()
-    expect(hasHints('zork2')).toBe(false)
+    expect(hasHints('zork2')).toBe(true)
     expect(hasGuide('zork2')).toBe(false)
-    expect(hintsFor(game, visitedRooms(game))).toEqual([])
+    expect(hintsFor(game, visitedRooms(game)).map((q) => q.id)).toEqual(['lamp'])
     const assist = computeAssist(game, true)
     expect(assist.hint).toBeNull()
     expect(assist.choices.map((c) => c.command)).toEqual(expect.arrayContaining(['south', 'take elvish sword', 'take brass lamp', 'look']))
@@ -169,12 +169,16 @@ describe('Zork III', () => {
     expect(game.info.maxScore).toBe(7)
   })
 
-  it('has no treasures, but collects its documents, read in French', () => {
-    expect(hasTreasures('zork3')).toBe(false)
+  it('tracks the outfit of the Dungeon Master as its treasures, and collects its documents, read in French', () => {
+    expect(hasTreasures('zork3')).toBe(true)
     const run = playWalkthrough(new URL('./walkthrough/zork3/fr.txt', import.meta.url), 'fr', 1234, 'zork3')
     const game = frenchGame(1234, 'zork3')
     game.start()
+    expect(treasuresOf(game)).toMatchObject({ found: 0 })
+    expect(treasuresOf(game).slots).toHaveLength(7)
     for (const c of run.commands) game.send(c)
+    expect(treasuresOf(game).found).toBe(7)
+    expect(treasuresOf(game).slots.map((t) => t.name)).toEqual(['Capuchon', 'Cape', 'Amulette en or', 'Bâton de bois', 'Livre très ancien', "Anneau d'or", 'Clé étrange'])
     const found = documentsOf(game, visitedRooms(game)).filter((d) => d.found)
     expect(found.map((d) => d.id)).toEqual(['REPELLENT', 'ROYAL-SEAL', 'LORE-BOOK'])
     for (const d of found) expect(d.text, d.id).not.toMatch(/(?<!\p{L})(the|and|of|is)(?!\p{L})/u)
@@ -220,12 +224,12 @@ describe('Zork III', () => {
     expect(cues.at(-1)).toBe('victory')
   })
 
-  it('has no hints nor guide yet: hyper noob shows the choices without circling one', () => {
+  it('has hints, and a guide: hyper noob circles the next step', () => {
     const game = english('zork3')
-    expect(hasHints('zork3')).toBe(false)
-    expect(hasGuide('zork3')).toBe(false)
+    expect(hasHints('zork3')).toBe(true)
+    expect(hasGuide('zork3')).toBe(true)
     const assist = computeAssist(game, true)
-    expect(assist.hint).toBeNull()
+    expect(assist.hint?.id).toBe('take brass lamp')
     expect(assist.choices.map((c) => c.command)).toEqual(expect.arrayContaining(['take brass lamp', 'south']))
   })
 })

@@ -60,7 +60,14 @@ const TREASURES: Record<GameId, TreasureList> = {
     // a treasure scores when it first comes into hand, and its value drops to 0 (SCORE-OBJ)
     found: (w, id) => w.vm.getProp(w.obj(id), w.game.symbols.properties.VALUE) === 0,
   },
-  zork3: { list: [] },
+  // Zork III has no treasures to store: what counts is the outfit of the Dungeon Master, the seven
+  // things he wears and carries (LOOK-LIKE-DM? in 3actions.zil); the staff can break
+  zork3: {
+    list: [['HOOD'], ['CLOAK'], ['AMULET'], ['STAFF', 'BROKEN-STAFF'], ['LORE-BOOK'], ['RING'], ['KEY']],
+    // the game hands some of them over without marking them touched (the hood taken from the
+    // figure, the cloak left behind, the staff given by the man, the amulet from the lake bottom)
+    found: (w, id) => w.carried(id) || (inPlay(w, w.obj(id)) && !w.within(id, 'SHADOW') && id !== 'RING' && id !== 'KEY' && id !== 'LORE-BOOK'),
+  },
 }
 
 /** Whether the game has treasures to track. */

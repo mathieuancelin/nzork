@@ -1,4 +1,4 @@
-# Zork in your browser
+# Zork in the browser
 
 **A fan tribute to the Zork trilogy (Infocom, 1980–1982), playable in French in the browser,
 with the sights and sounds the originals never had.** Zork I: The Great Underground Empire,
@@ -9,9 +9,9 @@ Zork II: The Wizard of Frobozz and Zork III: The Dungeon Master are fully transl
 You are standing in an open field west of a white house… and this time you can see it, and
 hear the wind in the trees.
 
-**[Play it online](https://mathieuancelin.github.io/zork-in-your-browser/)**
+**[Play it online](https://mathieuancelin.github.io/zork-in-the-browser/)**
 
-Zork in your browser does not remake Zork. It runs the **original 1980s story files**, untouched, and wraps
+Zork in the browser does not remake Zork. It runs the **original 1980s story files**, untouched, and wraps
 them in what a modern browser can offer: a complete French translation, pixel-art illustrations
 in the spirit of the VGA adventure games, an eerie soundtrack composed live as you play, help
 modes for newcomers, and save slots. Every puzzle, every grue and every one of the 350 points
@@ -28,7 +28,7 @@ status bar). Each game keeps its own game in progress, its ten save slots and it
 | **Zork II: The Wizard of Frobozz** (1981) | Release 63 | yes | map, inventory, the ten treasures of the demon, thirteen documents, ambiences; choices in the Noob modes (the guide and the hints are still to come; the prompts of the illustrations and icons are written, the images are not generated yet) |
 | **Zork III: The Dungeon Master** (1982) | Release 25 | yes | map, inventory, four documents, ambiences; choices in the Noob modes (no treasures in this one: the guide and the hints are still to come, and the illustrations are at the same stage as Zork II's) |
 
-> **Unofficial fan project.** Zork in your browser is a non-commercial tribute, made out of love for the
+> **Unofficial fan project.** Zork in the browser is a non-commercial tribute, made out of love for the
 > game. It is not affiliated with, endorsed by or sponsored by Infocom, Activision or
 > Microsoft. ZORK is a registered trademark of its owner. See [Credits and licenses](#credits-and-licenses).
 
@@ -102,7 +102,7 @@ status bar). Each game keeps its own game in progress, its ten save slots and it
 Requirements: Node.js 24 or later.
 
 ```bash
-git clone --recurse-submodules https://github.com/mathieuancelin/zork-in-your-browser.git
+git clone --recurse-submodules https://github.com/mathieuancelin/zork-in-the-browser.git
 ```
 
 ```bash
@@ -373,7 +373,7 @@ GAME=zork3 npm run catalog:merge
   licenses in [src/engine/story/](src/engine/story) and the [vendor/](vendor) submodules.
 - **ZORK** is a registered trademark of its owner. This project uses the name only to refer to
   the game it pays tribute to.
-- **Zork in your browser** (the Z-machine, the French translation, the interface, the tools and the
+- **Zork in the browser** (the Z-machine, the French translation, the interface, the tools and the
   illustrations) is released under the [MIT license](LICENSE).
 - Fonts: [VT323](https://fonts.google.com/specimen/VT323) and
   [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono), served by Google Fonts.

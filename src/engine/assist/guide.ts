@@ -8,18 +8,11 @@
 // when a fight goes badly.
 
 import { World, DIRECTIONS, DIR_COMMAND, type Direction } from './world'
+import { verbStep, takeStep, type GuideStep } from './guide-common'
+import { zork2Step, ZORK2_GUIDE } from './guide-zork2'
+import { zork3Step, ZORK3_GUIDE } from './guide-zork3'
 
-export interface GuideStep {
-  command: string
-  /** What the step achieves, for the "Pourquoi ?" button. */
-  why: [string, string]
-  /** For the choice label. */
-  verb?: string
-  obj?: string
-  prep?: string
-  obj2?: string
-  dir?: Direction
-}
+export type { GuideStep }
 
 type Pred = (w: World) => boolean
 
@@ -34,30 +27,10 @@ interface Goal {
   act: (w: World) => GuideStep | null
 }
 
-/** Games the guide knows how to finish. */
-export const hasGuide = (game: string) => game === 'zork1'
+/** Games the guide knows how to finish (Zork II's and Zork III's guides live in their own files). */
+export const hasGuide = (game: string) => game === 'zork1' || (game === 'zork2' && ZORK2_GUIDE) || (game === 'zork3' && ZORK3_GUIDE)
 
 // ------------------------------------------------------------------ helpers
-
-const word = (w: World, name: string) => w.word(w.obj(name)) ?? name.toLowerCase()
-
-function verbStep(w: World, verb: string, obj: string | undefined, why: [string, string], prep?: string, obj2?: string): GuideStep {
-  let command = verb
-  if (obj) command += ' ' + word(w, obj)
-  if (prep && obj2) command += ` ${prep} ${word(w, obj2)}`
-  return { command, why, verb, obj, prep, obj2 }
-}
-
-/** Takes an object, opening its closed container first if needed. */
-function takeStep(w: World, obj: string, why: [string, string]): GuideStep {
-  const o = w.obj(obj)
-  const parent = w.vm.parent(o)
-  const container = w.name(parent)
-  if (parent && w.attrOf(parent, 'CONTBIT') && !w.attrOf(parent, 'OPENBIT') && !w.attrOf(parent, 'TRANSBIT') && w.word(parent)) {
-    return verbStep(w, 'open', container, why)
-  }
-  return verbStep(w, 'take', obj, why)
-}
 
 const take = (obj: string, why: [string, string]) => (w: World) => takeStep(w, obj, why)
 const say = (command: string, why: [string, string], verb = command) => (_w?: World): GuideStep => ({ command, why, verb })
@@ -436,6 +409,8 @@ function dropCandidate(w: World, keep: Set<string>): string | null {
 /** The guide's next step, or null when it has nothing to suggest (it only knows Zork I). */
 export function guideStep(w: World): GuideStep | null {
   if (!hasGuide(w.id)) return null
+  if (w.id === 'zork2') return zork2Step(w)
+  if (w.id === 'zork3') return zork3Step(w)
   const step = plan(w)
   // save the lamp's battery when the torch (or daylight) is enough for the next step
   const here = w.here()

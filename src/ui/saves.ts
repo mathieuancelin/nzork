@@ -22,10 +22,13 @@ export interface SlotData {
   visited?: string[]
 }
 
-const slotKey = (game: GameId, id: string | number) => (game === 'zork1' ? `zork-in-your-browser:slot:${id}` : `zork-in-your-browser:${game}:slot:${id}`)
-/** Name of the project before it was renamed: its saves and settings are moved over once. */
-const OLD_PREFIX = 'zork-next:'
-const NEW_PREFIX = 'zork-in-your-browser:'
+const slotKey = (game: GameId, id: string | number) => (game === 'zork1' ? `zork-in-the-browser:slot:${id}` : `zork-in-the-browser:${game}:slot:${id}`)
+/** Names of the project before it was renamed (the latest first): their saves and settings are
+ * moved over once, a newer value always winning over an older one. */
+const OLD_PREFIXES = ['zork-in-your-browser:', 'zork-next:']
+const NEW_PREFIX = 'zork-in-the-browser:'
+/** Formats of the save files exported under those names, still accepted. */
+const FORMATS = ['zork-in-the-browser-saves', 'zork-in-your-browser-saves', 'zork-next-saves']
 
 let migrated = false
 
@@ -43,19 +46,21 @@ function storage(): Storage | null {
 }
 
 function migrate(s: Storage): void {
-  const old: string[] = []
-  for (let i = 0; i < s.length; i++) {
-    const k = s.key(i)
-    if (k?.startsWith(OLD_PREFIX)) old.push(k)
-  }
-  for (const k of old) {
-    try {
-      const key = NEW_PREFIX + k.slice(OLD_PREFIX.length)
-      const value = s.getItem(k)
-      if (value !== null && s.getItem(key) === null) s.setItem(key, value)
-      s.removeItem(k)
-    } catch {
-      // storage full: keep the old copy rather than lose it
+  for (const prefix of OLD_PREFIXES) {
+    const old: string[] = []
+    for (let i = 0; i < s.length; i++) {
+      const k = s.key(i)
+      if (k?.startsWith(prefix)) old.push(k)
+    }
+    for (const k of old) {
+      try {
+        const key = NEW_PREFIX + k.slice(prefix.length)
+        const value = s.getItem(k)
+        if (value !== null && s.getItem(key) === null) s.setItem(key, value)
+        s.removeItem(k)
+      } catch {
+        // storage full: keep the old copy rather than lose it
+      }
     }
   }
 }
@@ -113,13 +118,13 @@ export function exportAll(): string {
     const s = slotsOf(g)
     if (Object.keys(s).length) games[g] = s
   }
-  return JSON.stringify({ format: 'zork-in-your-browser-saves', version: 2, slots: slotsOf('zork1'), games }, null, 1)
+  return JSON.stringify({ format: FORMATS[0], version: 2, slots: slotsOf('zork1'), games }, null, 1)
 }
 
 export function importAll(json: string): number {
   const data = JSON.parse(json) as { format?: string; slots?: Record<string, SlotData>; games?: Record<string, Record<string, SlotData>> }
   // files exported before the project was renamed are still accepted
-  if ((data.format !== 'zork-in-your-browser-saves' && data.format !== 'zork-next-saves') || (!data.slots && !data.games)) throw new Error('Fichier de sauvegarde invalide')
+  if (!FORMATS.includes(data.format ?? '') || (!data.slots && !data.games)) throw new Error('Fichier de sauvegarde invalide')
   let n = 0
   const add = (game: GameId, slots: Record<string, SlotData>) => {
     for (const [id, slot] of Object.entries(slots)) {
@@ -139,7 +144,7 @@ export const gamePref = (game: GameId, key: string) => (game === 'zork1' ? key :
 /** Settings and small preferences. */
 export function readPref<T>(key: string, fallback: T): T {
   try {
-    const raw = storage()?.getItem('zork-in-your-browser:pref:' + key)
+    const raw = storage()?.getItem('zork-in-the-browser:pref:' + key)
     return raw ? (JSON.parse(raw) as T) : fallback
   } catch {
     return fallback
@@ -148,7 +153,7 @@ export function readPref<T>(key: string, fallback: T): T {
 
 export function writePref(key: string, value: unknown): void {
   try {
-    storage()?.setItem('zork-in-your-browser:pref:' + key, JSON.stringify(value))
+    storage()?.setItem('zork-in-the-browser:pref:' + key, JSON.stringify(value))
   } catch {
     /* ignore */
   }

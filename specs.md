@@ -1,4 +1,4 @@
-# Zork in your browser — design notes
+# Zork in the browser — design notes
 
 > Play the **Zork trilogy** in French, in the browser: **Zork I: The Great Underground Empire**
 > with everything (illustrations, guide, hints), **Zork II: The Wizard of Frobozz** and **Zork
@@ -87,7 +87,7 @@ agreement works without touching the game.
 ### Layout
 
 ```
-zork-in-your-browser/
+zork-in-the-browser/
 ├── vendor/zork1/, zork2/, zork3/   # original ZIL sources (git submodules)
 ├── specs.md
 ├── docs/                  # README screenshot
@@ -326,8 +326,8 @@ speaks. Off by default.
 ## 6. Saves
 
 - **10 slots** + **1 autosave** (at every room change), **for each game**. Zork I keeps the
-  storage keys it had (`zork-in-your-browser:slot:<n>`), the other games have their own
-  (`zork-in-your-browser:zork2:slot:<n>`); hints revealed are kept per game too. The game being
+  storage keys it had (`zork-in-the-browser:slot:<n>`), the other games have their own
+  (`zork-in-the-browser:zork2:slot:<n>`); hints revealed are kept per game too. The game being
   played is a preference: the site reopens on it.
 - Each slot shows: an editable name, the date, the place, the score and the number of moves.
 - Storage in `localStorage` (a snapshot weighs ~20–40 KB), with **export/import** of a
