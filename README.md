@@ -1,9 +1,8 @@
 # Zork in your browser
 
 **A fan tribute to the Zork trilogy (Infocom, 1980–1982), playable in French in the browser,
-with the sights and sounds the originals never had.** Zork I: The Great Underground Empire and
-Zork II: The Wizard of Frobozz are fully translated; Zork III: The Dungeon Master plays in
-English for now.
+with the sights and sounds the originals never had.** Zork I: The Great Underground Empire,
+Zork II: The Wizard of Frobozz and Zork III: The Dungeon Master are fully translated.
 
 ![West of House, in Hyper noob mode: the pixel-art scene, the French text and the suggested action circled in gold](docs/screenshot.jpg)
 
@@ -16,7 +15,7 @@ Zork in your browser does not remake Zork. It runs the **original 1980s story fi
 them in what a modern browser can offer: a complete French translation, pixel-art illustrations
 in the spirit of the VGA adventure games, an eerie soundtrack composed live as you play, help
 modes for newcomers, and save slots. Every puzzle, every grue and every one of the 350 points
-(400 in Zork II) is exactly where Infocom left them.
+(400 in Zork II, 7 points of "potential" in Zork III) is exactly where Infocom left them.
 
 ## The three games
 
@@ -26,8 +25,8 @@ status bar). Each game keeps its own game in progress, its ten save slots and it
 | Game | Story file | In French | What the interface adds |
 |---|---|---|---|
 | **Zork I: The Great Underground Empire** (1980) | Release 119 | yes | everything below: illustrations, icons, the Hyper noob guide, hints, map, treasures, documents |
-| **Zork II: The Wizard of Frobozz** (1981) | Release 63 | yes | map, inventory, the ten treasures of the demon, thirteen documents, ambiences; choices in the Noob modes (the guide and the hints are still to come, as are the illustrations) |
-| **Zork III: The Dungeon Master** (1982) | Release 25 | not yet (plays in English) | map, inventory, choices |
+| **Zork II: The Wizard of Frobozz** (1981) | Release 63 | yes | map, inventory, the ten treasures of the demon, thirteen documents, ambiences; choices in the Noob modes (the guide and the hints are still to come; the prompts of the illustrations and icons are written, the images are not generated yet) |
+| **Zork III: The Dungeon Master** (1982) | Release 25 | yes | map, inventory, four documents, ambiences; choices in the Noob modes (no treasures in this one: the guide and the hints are still to come, and the illustrations are at the same stage as Zork II's) |
 
 > **Unofficial fan project.** Zork in your browser is a non-commercial tribute, made out of love for the
 > game. It is not affiliated with, endorsed by or sponsored by Infocom, Activision or
@@ -38,13 +37,14 @@ status bar). Each game keeps its own game in progress, its ten save slots and it
 - **The real games.** The original story files (`zork1.z3` Release 119, `zork2.z3` Release 63,
   `zork3.z3` Release 25) run in a Z-machine written in TypeScript. It reproduces the reference
   interpreter `dfrotz` word for word, fights and randomness included: the tests replay the full
-  350-point walkthrough of Zork I and the 400-point one of Zork II against it.
-- **Fully in French.** Every text of Zork I and Zork II is translated, with proper gender and number
+  walkthroughs of the three games against it (350 points in Zork I, 400 in Zork II, the 7 points
+  of Zork III).
+- **Fully in French.** Every text of the trilogy is translated, with proper gender and number
   agreement (« la boîte est fermée », « l'épée »), and a French parser understands commands
   such as `prends la lanterne`, `ouvre-la` or `mets l'épée dans la vitrine puis va au nord`.
   The Wizard of Frobozz casts his spells in French too, and you can cast them back
-  (`agite la baguette vers le menhir`, then `dis « flotte »`). The original English is one
-  setting away.
+  (`agite la baguette vers le menhir`, then `dis « flotte »`), and the Dungeon Master takes his
+  orders in French (`maître, tourne le cadran sur 1`). The original English is one setting away.
 - **Illustrations** (Zork I). 93 pixel-art scenes cover the 110 rooms, drawn on a 480×270 grid with a
   shared 64-color palette, including state variants (the troll in his room, the drained
   reservoir, the rainbow made solid…). Dark rooms stay dark, except for two eyes that light up
@@ -85,7 +85,8 @@ status bar). Each game keeps its own game in progress, its ten save slots and it
 - **Documents to collect.** Infocom boxes came with "feelies". The documents of the game (the
   leaflet, the dam guidebook, the boat label, the black book, the engravings… and in Zork II the
   newspaper, the balloon label, the robot's instructions, the white book of magic, the Wizard's
-  degree…) join a collection as you find them, each on its own kind of paper, ready to read again
+  degree…, in Zork III the warning of the Royal Puzzle, the Royal Seal and the very ancient
+  book) join a collection as you find them, each on its own kind of paper, ready to read again
   or print.
 - **A storyteller.** If you like, the browser reads the game's answers aloud, in French or
   English, while the music steps back.
@@ -147,8 +148,8 @@ repository name needs to be configured).
 npm test
 ```
 
-They check, among other things, that the full games (350 points in Zork I, 400 in Zork II) are
-identical to `dfrotz` word for word, that they can also be played with French commands without a
+They check, among other things, that the full games (350 points in Zork I, 400 in Zork II, 7 in
+Zork III) are identical to `dfrotz` word for word, that they can also be played with French commands without a
 single English word on screen, and that the Hyper noob guide finishes Zork I on its own. The
 comparison tests need `dfrotz` (from the `frotz` package) and are skipped when it is missing.
 The walkthroughs are in [test/walkthrough/](test/walkthrough), one folder per game.
@@ -166,6 +167,15 @@ prompts of this repository, then reduced to the pixel grid and palette by a post
 step. The whole pipeline is included, to regenerate a scene or the full set with your own API
 key. The art direction is described in [tools/images/style-bible.md](tools/images/style-bible.md)
 and the prompts are in [tools/images/prompts.json](tools/images/prompts.json).
+
+Zork II and Zork III have their scenes ([src/data/zork2/scenes.json](src/data/zork2/scenes.json),
+[src/data/zork3/scenes.json](src/data/zork3/scenes.json): 104 and 90 images with their state
+variants) and their icons (46 and 19, the others borrowed from Zork I) ready, with their prompts
+in [tools/images/zork2/](tools/images/zork2) and [tools/images/zork3/](tools/images/zork3); their
+images are not generated yet. Every command below takes `--game zork2` or `--game zork3` (Zork I
+by default). Their ids start with the game (`zork2-dragon-room`), so the three games share the
+folders of candidates and published images; Zork I's approved keystones are the style
+references of the whole trilogy, joined by each game's own keystones.
 
 1. Put your key in a `.env` file at the root (it is ignored by git):
 
@@ -187,7 +197,8 @@ and the prompts are in [tools/images/prompts.json](tools/images/prompts.json).
    ```
 
 3. Pick the best ones in the review page (http://localhost:5180). Each candidate is shown raw
-   and after post-processing (480×270, 64-color palette).
+   and after post-processing (480×270, 64-color palette). The page has a tab for each game, with
+   the number of images already chosen, and one for its scenes and one for its objects.
 
    ```bash
    npm run images:review
@@ -213,6 +224,25 @@ and the prompts are in [tools/images/prompts.json](tools/images/prompts.json).
    Then go back to step 3 to choose. The game shows an image as soon as it is published in
    `public/scenes/`; until then, a colored placeholder stands in for the scene.
 
+For Zork II, the same steps start with its own keystones (the topiary, the dragon, the Wizard's
+workroom, the bank's depository, the balloon at the bottom of the volcano):
+
+```bash
+npm run images:generate -- --game zork2 --provider openai --keystones --count 4
+```
+
+```bash
+npm run images:generate -- --game zork2 --provider openai --keystones --count 4 --yes
+```
+
+```bash
+npm run images:generate -- --game zork2 --provider openai --missing --count 3 --yes
+```
+
+and the same for Zork III with `--game zork3` (the cliff in the sunlight, the Jewel Room, the
+Guardians of Zork, the hooded figure, the Flathead Ocean). Choose them at
+http://localhost:5180/?game=zork2 (or `zork3`).
+
 Providers: `openai` (model `gpt-image-1` by default, `ZORK_OPENAI_MODEL` to change it,
 `ZORK_OPENAI_QUALITY` for the quality) and `openrouter` (model `google/gemini-2.5-flash-image` by
 default, `ZORK_OPENROUTER_MODEL`). Expect a few cents per image, around 10 to 30 USD for the full
@@ -224,9 +254,9 @@ The 60 objects you can take get 48×48 icons on a transparent background, with t
 as the scenes. Their prompts are in [tools/images/item-prompts.json](tools/images/item-prompts.json)
 (written from the original descriptions, gathered by `npx tsx tools/images/describe.ts --items`),
 and [src/data/zork1/items.json](src/data/zork1/items.json) maps the game's objects to their icon
-(Zork II borrows the lantern, the sword and the matchbook in
-[src/data/zork2/items.json](src/data/zork2/items.json)). The steps
-are the same, with `--items`:
+(Zork II and Zork III have their own in [src/data/zork2/items.json](src/data/zork2/items.json) and
+[src/data/zork3/items.json](src/data/zork3/items.json), and borrow the lantern, the sword and a
+few others from Zork I). The steps are the same, with `--items` (and `--game`):
 
 ```bash
 npm run images:generate -- --items --provider openai --keystones --count 3 --yes
@@ -238,6 +268,10 @@ style references of the others.
 
 ```bash
 npm run images:generate -- --items --provider openai --missing --count 3 --yes
+```
+
+```bash
+npm run images:generate -- --game zork3 --items --provider openai --keystones --count 3 --yes
 ```
 
 OpenAI draws the icons on a transparent background; other models draw them on a plain magenta
@@ -258,7 +292,9 @@ kilobytes.
 The ambiences are data in [src/ui/sound/presets.ts](src/ui/sound/presets.ts); each scene of
 [src/data/zork1/scenes.json](src/data/zork1/scenes.json) names its ambience (and each room of
 Zork II in [src/data/zork2/scenes.json](src/data/zork2/scenes.json): gardens, the river and the
-well, the Wizard's house and the bank, the machinery, the crypt, the afterlife, the maze). To tune them by ear, run
+well, the Wizard's house and the bank, the machinery, the crypt, the afterlife, the maze; and of
+Zork III: the sunlit cliff, the lake and the ocean, the Land of Shadow, the museum, the Royal
+Puzzle, the Dungeon). To tune them by ear, run
 `npm run dev` and open `/sound-lab.html`: it plays each ambience with sliders for its settings,
 measures the levels, balances them, and copies the result back as JSON.
 
@@ -317,7 +353,8 @@ npx tsx tools/catalog/chunk.ts --game zork3 --groups 5 --strings 2 --objects 2
 ```
 
 The first commands build the symbol table and the English catalog; `reuse.ts` copies the
-translation of every text the game shares with Zork I (about 40 % of Zork II); `chunk.ts` cuts
+translation of every text the game shares with Zork I or Zork II (about 40 % of Zork II and of
+Zork III); `chunk.ts` cuts
 what is left into batches (`tools/catalog/<game>/work/`). Each batch is translated into
 `src/engine/i18n/fr/<game>/parts/` (objects into `objects.json`), checked and merged:
 

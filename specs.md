@@ -1,8 +1,8 @@
 # Zork in your browser — design notes
 
 > Play the **Zork trilogy** in French, in the browser: **Zork I: The Great Underground Empire**
-> with everything (illustrations, guide, hints), **Zork II: The Wizard of Frobozz** translated
-> and playable to the end, **Zork III: The Dungeon Master** in English for now. Multiple-choice
+> with everything (illustrations, guide, hints), **Zork II: The Wizard of Frobozz** and **Zork
+> III: The Dungeon Master** translated and playable to the end. Multiple-choice
 > modes for newcomers and 10 save slots per game. A fan tribute: the original games run
 > untouched, and everything this project adds is presentation.
 
@@ -202,6 +202,23 @@ The English version stays playable (language setting): it is used by the tests a
   benefit Zork I too (`botter`, `passer à travers`, `donne-moi…`, a direction never mistaken for
   an adjective: « va au nord » next to a north wall).
 
+### Zork III
+
+- **Reuse first**, from Zork I and Zork II this time: 383 print groups and 44 strings; the
+  remaining ~610 groups, ~205 strings and 190 object names were translated in parallel batches
+  from a Zork III glossary (the Dungeon Master « vouvoie » the player, the hooded figure is
+  « la silhouette encapuchonnée », the score is « votre potentiel »). The batches glue together:
+  the bare compass words (« nord », « sud-ouest ») that the hooded figure, the compass rose and
+  the mirror box insert, the feminine of the doors (« ouverte », « fermée »), the lowercase ends
+  of the Dungeon Master's sentences.
+- **The Dungeon Master takes orders** with a comma, as the robot of Zork II: `maître, va au nord`,
+  `maître, tourne le cadran sur 1`. `dire « frotz ozmoo »` keeps its quotes (`quoteSay`).
+  New common verbs: `vaporiser` (spray: the grue repellent of Zork II and III) and `régler`
+  (`règle le cadran sur 776`).
+- **The Royal Puzzle is drawn** in a fixed font (`+MM    GG+`, GG for « grès »): the final French
+  touches (no double space, a space before « ? ») leave those lines alone, as they leave the
+  indentation of a line.
+
 ## 5. The three game modes
 
 | Mode | Input | Help |
@@ -377,6 +394,18 @@ images**, all generated and published in `public/scenes/`.
 The game stays fully playable without images: a placeholder (gradient and place name) is shown
 while a scene is missing, and images can be turned off in the settings.
 
+**Zork II and Zork III** go through the same pipeline with `--game zork2` / `--game zork3`:
+their scenes in `src/data/<game>/scenes.json` (Zork II: 77 scenes + 27 variants for 86 rooms;
+Zork III: 69 scenes + 21 variants for 89 rooms), their prompts in `tools/images/<game>/`
+(`prompts.json`, `item-prompts.json`, and the descriptions gathered by `describe.ts --game`),
+5 keystone scenes and 4 keystone objects of their own. The ids start with the game
+(`zork3-jewel-room`), so the candidates, approved and published folders are shared; Zork I's
+approved keystones stay the style references of the whole trilogy (same palette, same light),
+and each game's keystones join them once chosen (`references/<game>/`). The review page has a
+tab per game, with the count of images chosen. A variant's condition is a flag set, a flag
+cleared, or an object in a place: an open door (an attribute) cannot have one, so doors are
+drawn as the player first sees them.
+
 ### Object icons
 
 The 60 objects that can be taken get **48×48 icons**, shown pixel for pixel in the side panel:
@@ -479,8 +508,8 @@ the mailbox offers its actions): the point & click spirit without the 3D.
 | 7 | **Soundtrack** | ✅ Procedural Web Audio ambiences per place, darkness and danger overlays, cues, sound lab |
 | 8 | **Side panel** | ✅ Tabs for actions, map, inventory and treasure tracker; object icons generated |
 | 9 | **Atmosphere and extras** | ✅ Lantern halo and scene animations, map with walking, InvisiClues hints, documents (feelies), storyteller |
-| 10 | **Zork II** | ✅ Plays to the end in French (400/400, identical to `dfrotz`), game picker, saves per game, map, inventory, treasures, documents, ambiences. To do: scene prompts and illustrations, item icons, InvisiClues hints, the guide |
-| 11 | **Zork III** | Story file, symbols, English catalog and map ready; plays in English. To do: the translation (catalog extracted, ~40 % reusable), a walkthrough, treasures/documents/ambiences, then images, hints and guide |
+| 10 | **Zork II** | ✅ Plays to the end in French (400/400, identical to `dfrotz`), game picker, saves per game, map, inventory, treasures, documents, ambiences; scene and icon prompts written (104 + 46). To do: generating the illustrations and icons, InvisiClues hints, the guide |
+| 11 | **Zork III** | ✅ Plays to the end in French (7/7 in 234 moves, identical to `dfrotz`), map with the hallway of the mirror, inventory, four documents, ambiences, danger of the hooded figure; scene and icon prompts written (90 + 19). No treasures. To do: generating the illustrations and icons, InvisiClues hints, the guide |
 | 12 | **Next** | 2.5D parallax, clickable hotspots |
 
 ## 12. Decisions
