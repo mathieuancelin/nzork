@@ -94,6 +94,7 @@ export const VERBS: VerbDef[] = [
   { inf: 'casser', en: 'break', forms: [...er('cass'), 'briser', 'brise', 'brisez', 'detruire', 'detruis', 'detruisez', ...er('defonc'), ...er('fracass'), ...er('ecras')], p2: WITH },
   { inf: 'brandir', en: 'wave', forms: ['brandir', 'brandis', 'brandissez', ...er('agit')], p2: { vers: 'at', sur: 'at', devant: 'at' } },
   { inf: 'secouer', en: 'shake', forms: [...er('secou')] },
+  { inf: 'botter', en: 'kick', forms: [...er('bott'), ...er('shoot')] },
   // ---------------------------------------------------------------- eating
   { inf: 'manger', en: 'eat', forms: ['manger', 'mange', 'mangez', 'manges', ...er('devor'), ...er('croqu')] },
   { inf: 'boire', en: 'drink', forms: ['boire', 'bois', 'buvez', 'boit', ...er('aval'), 'siroter', 'sirote'], p1: { dans: 'drink from', a: 'drink from' } },
@@ -118,7 +119,7 @@ export const VERBS: VerbDef[] = [
   { inf: 'glisser', en: 'slide', forms: [...er('gliss')], p2: { sous: 'under' } },
   { inf: 'jouer', en: 'play', forms: [...er('jou')], p1: { de: 'play', du: 'play', avec: 'play' } },
   // ---------------------------------------------------------------- moving around
-  { inf: 'aller', en: 'walk', forms: ['aller', 'va', 'vas', 'allez', 'vais', ...er('march'), 'courir', 'cours', 'courez', ...er('avanc'), ...er('dirig'), 'partir', 'pars', 'partez', 'fuir', 'fuis', 'fuyez', ...er('rend')], p1: { vers: 'walk to', a: 'walk to', au: 'walk to', jusqu: 'walk to', "jusqu'a": 'walk to', dans: 'enter', en: 'enter', sur: 'walk on', autour: 'walk around', 'autour de': 'walk around', 'autour du': 'walk around' } },
+  { inf: 'aller', en: 'walk', forms: ['aller', 'va', 'vas', 'allez', 'vais', ...er('march'), 'courir', 'cours', 'courez', ...er('avanc'), ...er('dirig'), 'partir', 'pars', 'partez', 'fuir', 'fuis', 'fuyez', ...er('rend')], p1: { 'a travers': 'walk through', vers: 'walk to', a: 'walk to', au: 'walk to', jusqu: 'walk to', "jusqu'a": 'walk to', dans: 'enter', en: 'enter', sur: 'walk on', autour: 'walk around', 'autour de': 'walk around', 'autour du': 'walk around' } },
   { inf: 'monter', en: 'climb up', alone: 'up', forms: [...er('mont')], p1: { sur: 'climb on', dans: 'board', a: 'climb', au: 'climb', en: 'climb up', par: 'climb up' }, byNoun: { boat: 'board', tree: 'climb' } },
   { inf: 'grimper', en: 'climb', alone: 'climb', forms: [...er('grimp'), ...er('escalad')], p1: { sur: 'climb on', a: 'climb up', au: 'climb up', dans: 'climb up', en: 'climb up' } },
   { inf: 'descendre', en: 'lower', alone: 'down', forms: ['descendre', 'descends', 'descendez', 'descend'], p1: { de: 'disembark', du: 'disembark', "d'": 'disembark', dans: 'climb down', par: 'climb down', a: 'climb down', au: 'climb down', en: 'climb down' }, byNoun: { stairs: 'climb down', ladder: 'climb down', rope: 'climb down', chimney: 'climb down', tree: 'climb down', slide: 'climb down' } },
@@ -127,6 +128,8 @@ export const VERBS: VerbDef[] = [
   { inf: 'embarquer', en: 'board', forms: [...er('embarqu')], p1: { dans: 'board', sur: 'board', a: 'board' } },
   { inf: 'débarquer', en: 'disembark', alone: 'disembark', forms: [...er('debarqu')], p1: { de: 'disembark', du: 'disembark' } },
   { inf: 'traverser', en: 'cross', forms: [...er('travers'), 'franchir', 'franchis', 'franchissez'] },
+  { inf: 'passer', en: 'walk through', forms: [...er('pass')], p1: { 'a travers': 'walk through', par: 'walk through', dans: 'walk through' } },
+  { inf: 'faire', en: 'make', forms: ['faire', 'fais', 'faites', 'fait'] },
   { inf: 'suivre', en: 'follow', alone: 'follow', forms: ['suivre', 'suis', 'suivez', 'poursuivre', 'poursuis', 'poursuivez', ...er('pist')] },
   { inf: 'nager', en: 'swim', alone: 'swim', forms: ['nager', 'nage', 'nagez', 'nages', 'baigner', 'baigne', 'baignez'], p1: { dans: 'swim in' } },
   { inf: 'sauter', en: 'jump', alone: 'jump', forms: [...er('saut'), 'bondir', 'bondis', 'bondissez', 'plonger', 'plonge', 'plongez'], p1: { 'par-dessus': 'jump over', dans: 'jump in', de: 'jump from', du: 'jump from', "d'": 'jump from', sur: 'jump over', en: 'jump in' } },
@@ -203,6 +206,10 @@ export const DIRECTIONS: Record<string, string> = {
   accoster: 'land',
   accoste: 'land',
   accostez: 'land',
+  // the balloon of Zork II
+  atterrir: 'land',
+  atterris: 'land',
+  atterrissez: 'land',
   dedans: 'in',
   "a l'interieur": 'in',
   dehors: 'out',
@@ -265,11 +272,14 @@ export const PREP_DISPLAY: Record<string, string> = {
 export interface GameWords {
   verbs?: VerbDef[]
   magic?: Record<string, string>
+  /** What is said is put between quotes, as the game expects (say "float"). */
+  quoteSay?: boolean
 }
 
 export const GAME_WORDS: Record<GameId, GameWords> = {
   zork1: {},
   zork2: {
+    quoteSay: true,
     // the Wizard's spells (see the glossary of GUIDE-TRADUCTION.md), said with the wand:
     // "dire flotte" = "say float"
     magic: {

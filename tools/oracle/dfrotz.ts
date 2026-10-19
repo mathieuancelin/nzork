@@ -24,6 +24,8 @@ export function normalise(raw: string): string {
     .filter((l) => !/^>?\s*\S.*\s+Score:\s*-?\d+\s+Moves:\s*\d+\s*$/.test(l))
     .map((l) => l.replace(/^>/, ''))
     .join('\n')
+    // dfrotz may break a long line right after a hyphen ("well-|constructed")
+    .replace(/(\w)-\n(?=\w)/g, '$1-')
     .replace(/[ \t]+\n/g, '\n')
     .replace(/\n{3,}/g, '\n\n')
     .trim()

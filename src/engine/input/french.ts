@@ -56,12 +56,14 @@ export const normalize = (s: string) =>
     .replace(/[’`´]/g, "'")
     .toLowerCase()
 
-const TOKEN_RE = /[\p{L}\p{N}]+(?:-[\p{L}\p{N}]+)*['’]?|[,.;:!?"]/gu
+const TOKEN_RE = /[\p{L}\p{N}]+(?:-[\p{L}\p{N}]+)*['’]?|[,.;:!?"«»“”]/gu
+/** French and typographic quotes are the game's quote mark. */
+const QUOTES = new Set(['"', '«', '»', '“', '”'])
 
 function rawTokens(line: string): Token[] {
   const out: Token[] = []
   for (const m of line.matchAll(TOKEN_RE)) {
-    out.push({ raw: m[0], norm: normalize(m[0]), start: m.index!, end: m.index! + m[0].length })
+    out.push({ raw: m[0], norm: QUOTES.has(m[0]) ? '"' : normalize(m[0]), start: m.index!, end: m.index! + m[0].length })
   }
   return out
 }
@@ -79,11 +81,15 @@ export class FrenchInput implements InputTranslator {
   private maxPrep = 1
   private display = new Map<string, string>()
 
+  /** The game wants what is said between quotes (Zork II: the spells, the riddle). */
+  private quoteSay: boolean
+
   constructor(
     private objects: Record<string, FrObjectWords>,
     game: GameId = 'zork1',
   ) {
     const extra = GAME_WORDS[game]
+    this.quoteSay = !!extra.quoteSay
     // the game's own verbs come first: they may give a common French verb another meaning
     const verbs = [...(extra.verbs ?? []), ...VERBS]
     const add = (phrase: string, kind: Kind, en: string, obj = 0) => {
@@ -180,7 +186,9 @@ export class FrenchInput implements InputTranslator {
         flush(t)
         continue
       }
-      if ((t.norm === '!' || t.norm === '?' || t.norm === ':' || t.norm === '"')) continue
+      if (t.norm === '!' || t.norm === '?' || t.norm === ':') continue
+      // quotes matter to the games that read what is said (they are kept for the English parser)
+      if (t.norm === '"' && !this.quoteSay) continue
       // "et" followed by a verb starts a new clause
       if (t.norm === 'et' && clause.length && this.isVerbAt(tokens, i + 1)) {
         flush(t)
@@ -231,6 +239,12 @@ export class FrenchInput implements InputTranslator {
 
     // "mets le bateau à l'eau" = launch the boat
     const whole = t.map((x) => x.norm).join(' ')
+    // "donne un coup de pied au dragon" = kick the dragon
+    const kick = whole.match(/^(donner|donne|donnez|flanquer|flanque|flanquez) un coup de pied (a|au|aux|dans|sur) /)
+    if (kick) {
+      const n = kick[0].trim().split(' ').length
+      return [{ en: 'kick', pos: t[0].start + 1, len: t[0].raw.length, echo: 'donner un coup de pied à' }, ...this.nounPhrase(t.slice(n), ctx)]
+    }
     const launch = whole.match(/^(mettre|mets|mettez)( (le|ce) (bateau|canot))? a l' ?eau$/)
     if (launch) return [{ en: 'launch', pos: t[0].start + 1, len: t[0].raw.length, echo: 'mettre à l\u2019eau' }]
 
@@ -259,10 +273,12 @@ export class FrenchInput implements InputTranslator {
     const vTok = t[0]
     let rest = t.slice(1)
 
-    // clitic pronoun: "prends-la"
+    // clitic pronoun: "prends-la"; "donne-moi la baguette" = give the wand to me
     let pronoun: Token | undefined = pronounBefore
+    let toMe: Token | undefined
     while (rest.length && rest[0].clitic) {
       if (rest[0].norm !== 'moi') pronoun = rest[0]
+      else toMe = rest[0]
       rest = rest.slice(1)
     }
 
@@ -335,9 +351,19 @@ export class FrenchInput implements InputTranslator {
       }
     }
 
+    // what is said goes between quotes ("dis flotte" = say "float")
+    if (this.quoteSay && (verb.en === 'say' || verb.en === 'answer') && rest.length && !rest.some((x) => x.norm === '"')) {
+      const q = (at: number): Out => ({ en: '"', pos: at, len: 0, echo: '' })
+      return [...this.verbOut(verb.alone ?? verb.en, vTok, verb), q(rest[0].start + 1), ...this.nounPhrase(rest, ctx), q(rest[rest.length - 1].end + 1)]
+    }
     const first = this.nounPhrase(np1, ctx)
     if (pronoun && !first.length) first.push({ en: 'it', pos: pronoun.start + 1, len: pronoun.raw.length, echo: pronoun.raw })
     const second = this.nounPhrase(np2, ctx)
+    if (toMe && !second.length && verb.en === 'give') {
+      second.push({ en: 'me', pos: toMe.start + 1, len: toMe.raw.length, echo: toMe.raw })
+      prepEn = 'to'
+      prepTok = toMe
+    }
 
     const head = first.find((o) => o.echo !== undefined && o.echo !== '')?.en
     let en: string
@@ -410,14 +436,25 @@ export class FrenchInput implements InputTranslator {
     let group: { m?: Match; tok?: Token }[] = []
     const flushGroup = () => {
       if (!group.length) return
-      const items = group.map((g) => {
+      type Item = { en: string; kind: Kind | 'raw'; start: number; end: number; raw: string; m?: Match }
+      const items = group.map((g): Item => {
         if (g.m) return { en: this.pick(g.m, ctx), kind: g.m.kind, start: t[g.m.start].start, end: t[g.m.end - 1].end, raw: '', m: g.m }
-        return { en: g.tok!.norm, kind: 'raw' as const, start: g.tok!.start, end: g.tok!.end, raw: g.tok!.raw, m: undefined }
+        return { en: g.tok!.norm, kind: 'raw', start: g.tok!.start, end: g.tok!.end, raw: g.tok!.raw }
       })
       const headMatch = items.find((x) => x.kind === 'noun')?.m
       const headObj = headMatch ? (headMatch.candidates.find((c) => c.obj && ctx.inScope(c.obj)) ?? headMatch.candidates[0]).obj : 0
       const headInfo = headObj ? this.objects['o' + headObj] : undefined
       const noun = headInfo?.g ? { g: headInfo.g, n: headInfo.n } : undefined
+      // a compound name keeps its distinguishing words: "porte secrète" = secret door
+      if (headMatch && headInfo && headMatch.end - headMatch.start > 1) {
+        const words = new Set(t.slice(headMatch.start, headMatch.end).map((x) => x.norm))
+        for (const [fr, en] of Object.entries(headInfo.adjectifs ?? {})) {
+          const k = keyOf(fr)
+          if (words.has(k) && !items.some((x) => x.kind === 'adj' && x.en === en.toLowerCase())) {
+            items.push({ en: en.toLowerCase(), kind: 'adj', start: t[headMatch.start].start, end: t[headMatch.start].start, raw: '' })
+          }
+        }
+      }
       const order = (k: string) => (k === 'word' ? 0 : k === 'adj' ? 1 : k === 'noun' ? 2 : 3)
       const sorted = [...items].sort((a, b) => order(a.kind) - order(b.kind))
       const start = Math.min(...items.map((x) => x.start))
@@ -431,9 +468,9 @@ export class FrenchInput implements InputTranslator {
     let i = 0
     while (i < t.length) {
       const tok = t[i]
-      if (tok.norm === ',') {
+      if (tok.norm === ',' || tok.norm === '"') {
         flushGroup()
-        res.push({ en: ',', pos: tok.start + 1, len: 1, echo: ',' })
+        res.push({ en: tok.norm, pos: tok.start + 1, len: 1, echo: tok.raw })
         i++
         continue
       }

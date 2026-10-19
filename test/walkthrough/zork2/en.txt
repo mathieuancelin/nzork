@@ -1,0 +1,306 @@
+# Zork II: The Wizard of Frobozz, 400 points (seed 1234)
+take all
+turn on lamp
+s
+s
+s
+sw
+s
+se
+in
+take all
+out
+n
+ne
+fill teapot with water
+s
+sw
+sw
+se
+take brick
+s
+se
+n
+se
+answer "a well"
+e
+take pearl
+e
+get in bucket
+pour water in bucket
+get out of bucket
+e
+# no more than 7 things in hand, or taking something may fail
+drop sword
+drop brick
+drop pearl
+take red cake
+take blue cake
+eat green cake
+e
+throw red cake in pool
+take candy
+w
+eat blue cake
+nw
+robot, go east
+e
+robot, push triangular button
+robot, go south
+s
+take sphere
+robot, lift cage
+take sphere
+n
+w
+se
+w
+se
+# the place mat carries small things (they count as one)
+put letter opener on mat
+put candy on mat
+put sphere on mat
+# the sword is too heavy to carry along with everything else: the dragon can be kicked
+take brick
+take pearl
+w
+get in bucket
+take water
+get out of bucket
+drop teapot
+w
+w
+nw
+open box
+take violin
+i
+# the carousel is the crossroads: treasures wait here, safe from the Wizard's tricks
+drop violin
+drop pearl
+sw
+take string
+put string in brick
+ne
+nw
+n
+n
+# anger the dragon (not too much), and lead him to the glacier
+kick dragon
+kick dragon
+s
+s
+kick dragon
+w
+w
+take ruby
+# (a jump changes the course of chance: the Wizard would otherwise filch the ruby)
+jump
+s
+get in basket
+open receptacle
+put newspaper in receptacle
+light match
+light newspaper with match
+# (chance again: without this jump, the Wizard's Fence spell keeps you on the ledge)
+jump
+# up to the narrow ledge: land there and tie the balloon before it leaves again
+until /Near Small Ledge/ :: look
+land
+tie wire to hook
+get out of basket
+take coin
+s
+open purple book
+take stamp
+n
+get in basket
+untie wire
+until /Near Wide Ledge/ :: look
+land
+tie wire to hook
+get out of basket
+s
+put brick in hole
+light match
+light string with match
+# the fuse burns for two turns: wait outside, then take the crown before the room collapses
+n
+s
+take crown
+take card
+n
+get in basket
+untie wire
+close receptacle
+# with the receptacle closed, the balloon goes back down
+until /balloon has landed|you have landed/ :: look
+get out of basket
+n
+drop card
+e
+e
+n
+n
+n
+until /statuette|bumping/ :: open chest
+take statuette
+follow princess
+follow princess
+follow princess
+follow princess
+follow princess
+follow princess
+follow princess
+follow princess
+look
+look
+look
+look
+look
+look
+drop rose
+out
+s
+s
+w
+drop ruby
+drop coin
+drop stamp
+drop crown
+drop statuette
+n
+n
+n
+u
+# the key is in the keyhole on the other side: push it out onto the mat slid under the door
+take letter opener
+take candy
+take red sphere
+open lid
+put mat under door
+put letter opener in keyhole
+take mat
+take iron key
+take letter opener
+unlock door with iron key
+open door
+take mat
+put candy on mat
+put red sphere on mat
+drop letter opener
+drop iron key
+n
+take blue sphere
+s
+d
+w
+n
+w
+w
+# the Bank of Zork: nobody leaves through the tellers with its money, but the curtain of light
+# leads to the room you came from when you entered the depository
+ne
+e
+s
+take portrait
+n
+walk through curtain
+walk through south wall
+walk through curtain
+take bills
+walk through north wall
+drop portrait
+drop bills
+e
+e
+take portrait
+take bills
+walk through curtain
+s
+e
+e
+s
+s
+se
+sw
+sw
+give candy to lizard
+unlock door with gold key
+open door
+s
+w
+put red sphere on ruby stand
+put blue sphere on sapphire stand
+w
+# anything big enough breaks the aquarium: the portrait will do
+throw portrait at aquarium
+take clear sphere
+take portrait
+e
+put clear sphere on diamond stand
+take black sphere
+s
+put black sphere in pentagram
+give bills to demon
+give portrait to demon
+give gold key to demon
+drop matchbook
+n
+e
+n
+n
+ne
+take stamp
+put stamp on mat
+take coin
+put coin on mat
+take ruby
+put ruby on mat
+take crown
+take statuette
+take pearl
+take violin
+sw
+sw
+s
+w
+s
+give stamp to demon
+give coin to demon
+give ruby to demon
+give crown to demon
+give statuette to demon
+give pearl to demon
+give violin to demon
+demon, give me the wand
+take wand
+n
+e
+n
+n
+ne
+s
+wave wand at menhir
+say "float"
+sw
+take collar
+ne
+s
+d
+# the diamond maze: from a corner room, southeast, northeast, northwest and southwest
+n
+se
+ne
+nw
+sw
+n
+d
+put collar on dog
+e
+open door
+s
+# in the dark, the outline of a secret door appears
+turn off lamp
+turn on lamp
+open secret door
+s

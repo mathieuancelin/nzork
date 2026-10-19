@@ -4,9 +4,17 @@ import { playPlain } from './helpers/plain'
 import { dfrotzTranscript, flatten, HAS_DFROTZ } from '../tools/oracle/dfrotz'
 import { firstDiff } from '../tools/oracle/firstdiff'
 
-const EN = new URL('./walkthrough/zork1/en.txt', import.meta.url)
+/** Lines of a French transcript that still look English (commands left aside). */
+export function englishLines(transcript: string): string[] {
+  return transcript
+    .split('\n')
+    .filter((l) => !l.startsWith('>'))
+    // (whole words: \b would cut "obéis" after its accented letter)
+    .filter((l) => /(?<!\p{L})(the|You|There|is|are|with|here|your)(?!\p{L})/u.test(l) && !/Infocom|ZORK|Release|Copyright|trademark/.test(l))
+}
 
-describe('full game (English)', () => {
+describe('Zork I, full game (English)', () => {
+  const EN = new URL('./walkthrough/zork1/en.txt', import.meta.url)
   const run = playWalkthrough(EN, 'en', 1234)
 
   it('wins with 350 points', () => {
@@ -21,7 +29,7 @@ describe('full game (English)', () => {
   })
 })
 
-describe('full game (French)', () => {
+describe('Zork I, full game (French)', () => {
   const FR = new URL('./walkthrough/zork1/fr.txt', import.meta.url)
   const run = playWalkthrough(FR, 'fr', 1234)
 
@@ -31,13 +39,48 @@ describe('full game (French)', () => {
   })
 
   it('takes the same path as the English game', () => {
-    const en = playWalkthrough(EN, 'en', 1234)
+    const en = playWalkthrough(new URL('./walkthrough/zork1/en.txt', import.meta.url), 'en', 1234)
     expect(run.status.moves).toBe(en.status.moves)
   })
 
   it('shows no English text', () => {
-    const lines = run.transcript.split('\n').filter((l) => !l.startsWith('>'))
-    const english = lines.filter((l) => /\b(the|You|There|is|are|with|here|your)\b/.test(l) && !/Infocom|ZORK|Release|Copyright|trademark/.test(l))
-    expect(english).toEqual([])
+    expect(englishLines(run.transcript)).toEqual([])
+  })
+})
+
+describe('Zork II, full game (English)', () => {
+  const EN = new URL('./walkthrough/zork2/en.txt', import.meta.url)
+  const run = playWalkthrough(EN, 'en', 1234, 'zork2')
+
+  it('wins with 400 points', () => {
+    expect(run.status.score).toBe(400)
+    expect(run.status.roomId).toBe('ZORK3')
+    expect(run.transcript).toContain('Master Adventurer')
+  })
+
+  it.skipIf(!HAS_DFROTZ)('is identical to the original interpreter (dfrotz), word for word', () => {
+    const ours = flatten(playPlain(run.commands, 1234, 'zork2'))
+    const ref = flatten(dfrotzTranscript(run.commands, 1234, 'zork2'))
+    expect(firstDiff(ours, ref)).toBeNull()
+  })
+})
+
+describe('Zork II, full game (French)', () => {
+  const FR = new URL('./walkthrough/zork2/fr.txt', import.meta.url)
+  const run = playWalkthrough(FR, 'fr', 1234, 'zork2')
+
+  it('wins with 400 points with French commands', () => {
+    expect(run.status.score).toBe(400)
+    expect(run.status.roomId).toBe('ZORK3')
+    expect(run.transcript).toContain('Maître aventurier')
+  })
+
+  it('takes the same path as the English game', () => {
+    const en = playWalkthrough(new URL('./walkthrough/zork2/en.txt', import.meta.url), 'en', 1234, 'zork2')
+    expect(run.status.moves).toBe(en.status.moves)
+  })
+
+  it('shows no English text', () => {
+    expect(englishLines(run.transcript)).toEqual([])
   })
 })

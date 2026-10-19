@@ -1,0 +1,307 @@
+# Zork II : Le Sorcier de Frobozz, 400 points (graine 1234), avec des commandes françaises.
+# Le même chemin que en.txt, commande pour commande.
+prends tout
+allume la lanterne
+s
+s
+s
+so
+s
+se
+entre
+prends tout
+sors
+n
+ne
+remplis la théière d'eau
+s
+so
+so
+se
+prends la brique
+s
+se
+n
+se
+réponds « un puits »
+e
+prends le collier de perles
+e
+monte dans le seau
+verse l'eau dans le seau
+sors du seau
+e
+# pas plus de 7 objets en main, sinon on risque de ne pas pouvoir en prendre d'autres
+pose l'épée
+pose la brique
+pose le collier de perles
+prends le gâteau rouge
+prends le gâteau bleu
+mange le gâteau vert
+e
+jette le gâteau rouge dans la mare
+prends les bonbons
+o
+mange le gâteau bleu
+no
+robot, va à l'est
+e
+robot, appuie sur le bouton triangulaire
+robot, va au sud
+s
+prends la sphère
+robot, soulève la cage
+prends la sphère
+n
+o
+se
+o
+se
+# le set de table porte les petits objets (ils ne comptent que pour un)
+mets le coupe-papier sur le set de table
+mets les bonbons sur le set de table
+mets la sphère sur le set de table
+# l'épée est trop lourde avec tout le reste : le dragon se laisse botter
+prends la brique
+prends le collier de perles
+o
+monte dans le seau
+prends l'eau
+sors du seau
+pose la théière
+o
+o
+no
+ouvre la boîte
+prends le violon
+inventaire
+# le carrousel est le carrefour : les trésors y attendent, à l'abri des tours du Sorcier
+pose le violon
+pose le collier de perles
+so
+prends la ficelle
+mets la ficelle dans la brique
+ne
+no
+n
+n
+# fâcher le dragon (pas trop) et le mener jusqu'au glacier
+botte le dragon
+botte le dragon
+s
+s
+botte le dragon
+o
+o
+prends le rubis
+# (un saut change le cours du hasard : sans lui, le Sorcier filouterait le rubis)
+saute
+s
+monte dans la nacelle
+ouvre le réceptacle
+mets le journal dans le réceptacle
+allume une allumette
+allume le journal avec l'allumette
+# (encore le hasard : sans ce saut, le sort Fortifie du Sorcier vous retiendrait sur la corniche)
+saute
+# jusqu'à la corniche étroite : s'y poser et attacher la montgolfière avant qu'elle reparte
+until /près de la petite corniche/ :: regarde
+atterris
+attache le fil au crochet
+sors de la nacelle
+prends le zorkmid
+s
+ouvre le livre violet
+prends le timbre
+n
+monte dans la nacelle
+détache le fil
+until /près de la large corniche/ :: regarde
+atterris
+attache le fil au crochet
+sors de la nacelle
+s
+mets la brique dans le trou
+allume une allumette
+allume la ficelle avec l'allumette
+# la mèche brûle deux tours : attendre dehors, puis prendre la couronne avant l'effondrement
+n
+s
+prends la couronne
+prends la carte
+n
+monte dans la nacelle
+détache le fil
+ferme le réceptacle
+# réceptacle fermé, la montgolfière redescend
+until /s'est posée|avez atterri/ :: regarde
+sors de la nacelle
+n
+pose la carte
+e
+e
+n
+n
+n
+until /statuette|cogne/ :: ouvre le coffre
+prends la statuette
+suis la princesse
+suis la princesse
+suis la princesse
+suis la princesse
+suis la princesse
+suis la princesse
+suis la princesse
+suis la princesse
+regarde
+regarde
+regarde
+regarde
+regarde
+regarde
+pose la rose
+sors
+s
+s
+o
+pose le rubis
+pose le zorkmid
+pose le timbre
+pose la couronne
+pose la statuette
+n
+n
+n
+monte
+# la clé est dans la serrure, de l'autre côté : la pousser sur le set de table glissé sous la porte
+prends le coupe-papier
+prends les bonbons
+prends la sphère rouge
+ouvre le couvercle
+mets le set de table sous la porte
+mets le coupe-papier dans le trou de serrure
+prends le set de table
+prends la clé en fer
+prends le coupe-papier
+déverrouille la porte avec la clé en fer
+ouvre la porte
+prends le set de table
+mets les bonbons sur le set de table
+mets la sphère rouge sur le set de table
+pose le coupe-papier
+pose la clé en fer
+n
+prends la sphère bleue
+s
+descends
+o
+n
+o
+o
+# la Banque de Zork : personne ne sort par les guichets avec son argent, mais le rideau de
+# lumière mène à la salle par laquelle on est entré dans la salle des coffres
+ne
+e
+s
+prends le portrait
+n
+passe à travers le rideau
+passe à travers le mur sud
+passe à travers le rideau
+prends les billets
+passe à travers le mur nord
+pose le portrait
+pose les billets
+e
+e
+prends le portrait
+prends les billets
+passe à travers le rideau
+s
+e
+e
+s
+s
+se
+so
+so
+donne les bonbons au lézard
+déverrouille la porte avec la clé en or
+ouvre la porte
+s
+o
+mets la sphère rouge sur le socle de rubis
+mets la sphère bleue sur le socle de saphir
+o
+# tout objet assez gros brise l'aquarium : le portrait fera l'affaire
+jette le portrait sur l'aquarium
+prends la sphère transparente
+prends le portrait
+e
+mets la sphère transparente sur le socle de diamant
+prends la sphère noire
+s
+mets la sphère noire dans le pentagramme
+donne les billets au démon
+donne le portrait au démon
+donne la clé en or au démon
+pose la pochette d'allumettes
+n
+e
+n
+n
+ne
+prends le timbre
+mets le timbre sur le set de table
+prends le zorkmid
+mets le zorkmid sur le set de table
+prends le rubis
+mets le rubis sur le set de table
+prends la couronne
+prends la statuette
+prends le collier de perles
+prends le violon
+so
+so
+s
+o
+s
+donne le timbre au démon
+donne le zorkmid au démon
+donne le rubis au démon
+donne la couronne au démon
+donne la statuette au démon
+donne le collier de perles au démon
+donne le violon au démon
+démon, donne-moi la baguette
+prends la baguette
+n
+e
+n
+n
+ne
+s
+agite la baguette vers le menhir
+dis « flotte »
+so
+prends le collier
+ne
+s
+descends
+# le labyrinthe en losange : depuis une salle d'angle, sud-est, nord-est, nord-ouest puis sud-ouest
+n
+se
+ne
+no
+so
+n
+descends
+mets le collier sur le chien
+e
+ouvre la porte
+s
+# dans le noir, le contour d'une porte secrète apparaît
+éteins la lanterne
+allume la lanterne
+ouvre la porte secrète
+s
