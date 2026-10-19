@@ -8,7 +8,7 @@ the browser, with the sights and sounds the original never had.**
 You are standing in an open field west of a white house… and this time you can see it, and
 hear the wind in the trees.
 
-**[Play it online](https://mathieuancelin.github.io/nzork/)**
+**[Play it online](https://mathieuancelin.github.io/zork-in-your-browser/)**
 
 Zork in your browser does not remake Zork. It runs the **original 1980s story file**, untouched, and wraps
 it in what a modern browser can offer: a complete French translation, pixel-art illustrations
@@ -64,7 +64,7 @@ exactly where Infocom left them.
 Requirements: Node.js 24 or later.
 
 ```bash
-git clone --recurse-submodules https://github.com/mathieuancelin/nzork.git
+git clone --recurse-submodules https://github.com/mathieuancelin/zork-in-your-browser.git
 ```
 
 ```bash
