@@ -335,15 +335,51 @@ function HelpModal() {
   )
 }
 
+const ZORK_SOURCES = 'https://github.com/historicalsource/zork1'
+const THIS_PROJECT = 'https://github.com/mathieuancelin/zork-in-your-browser'
+
+function Link({ href }: { href: string }) {
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      {href.replace('https://', '')}
+    </a>
+  )
+}
+
 function AboutModal() {
   const lang = useGame((s) => s.settings.lang)
+  if (lang === 'en')
+    return (
+      <Modal title={t(lang, 'about')}>
+        <p>
+          <b>Zork I: The Great Underground Empire</b> (Infocom, 1980), written by <b>Marc Blank, Dave Lebling, Bruce Daniels and Tim Anderson</b>.
+        </p>
+        <p>
+          Its source code and compiled game were released by Microsoft under the MIT license in 2025: <Link href={ZORK_SOURCES} />
+        </p>
+        <p>
+          This version runs the original game (<code>zork1.z3</code>, Release 119) in a Z-machine written in TypeScript, with a French translation, help modes, illustrations and a soundtrack. An unofficial fan
+          tribute, not affiliated with Infocom, Activision or Microsoft.
+        </p>
+        <p className="credit">
+          Browser adaptation: <b>Mathieu Ancelin</b> — <Link href={THIS_PROJECT} />
+        </p>
+      </Modal>
+    )
   return (
     <Modal title={t(lang, 'about')}>
       <p>
-        <b>Zork I : Le Grand Empire Souterrain</b> — Marc Blank, Dave Lebling, Bruce Daniels et Tim Anderson, Infocom, 1980. Sources publiées par Microsoft sous licence MIT (2025).
+        <b>Zork I : Le Grand Empire Souterrain</b> (Infocom, 1980), écrit par <b>Marc Blank, Dave Lebling, Bruce Daniels et Tim Anderson</b>.
       </p>
       <p>
-        Cette version fait tourner le jeu original (fichier <code>zork1.z3</code>, Release 119) dans une machine Z écrite en TypeScript, avec une traduction française, des modes d'aide et des illustrations.
+        Son code source et le jeu compilé ont été publiés par Microsoft sous licence MIT en 2025 : <Link href={ZORK_SOURCES} />
+      </p>
+      <p>
+        Cette version fait tourner le jeu original (fichier <code>zork1.z3</code>, Release 119) dans une machine Z écrite en TypeScript, avec une traduction française, des modes d'aide, des
+        illustrations et une ambiance sonore. Un hommage de fan, non officiel, sans lien avec Infocom, Activision ou Microsoft.
+      </p>
+      <p className="credit">
+        Adaptation pour le navigateur : <b>Mathieu Ancelin</b> — <Link href={THIS_PROJECT} />
       </p>
     </Modal>
   )

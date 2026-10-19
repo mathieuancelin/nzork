@@ -642,6 +642,22 @@ details.examine .choice-list {
   line-height: 1.5;
 }
 
+.modal a {
+  color: var(--accent);
+  overflow-wrap: anywhere;
+}
+
+.modal .credit {
+  margin-top: 18px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.modal .credit b {
+  color: var(--text);
+}
+
 .menu-list {
   display: grid;
   gap: 8px;
