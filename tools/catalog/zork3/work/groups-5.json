@@ -1,0 +1,920 @@
+[
+ {
+  "key": "g10df5",
+  "en": "The man is thoroughly engrossed in the examination of his booty and doesn't seem to hear you.\n",
+  "args": [],
+  "routine": "MAN-F",
+  "zil": "<TELL \"The man is thoroughly engrossed in the examination of his booty and doesn't seem to hear you.\" CR>"
+ },
+ {
+  "key": "g10e2d",
+  "en": "The man is stocky and of medium height, with several days' growth of stubble on his face. He is carrying a number of valuables under his arm, presumably from the now-open chest.\n",
+  "args": [],
+  "routine": "MAN-F",
+  "zil": "<TELL \"The man is stocky and of medium height, with several days' growth of stubble on his face. He is carrying a number of valuables under his arm, presumably from the now-open chest.\" CR>"
+ },
+ {
+  "key": "g10ea1",
+  "en": "The man is taken by surprise and is hit with the sword. He grabs you and throws you to the ground",
+  "args": [],
+  "routine": "MAN-F",
+  "zil": "<TELL \"The man is taken by surprise and is hit with the sword. He grabs you and throws you to the ground\">"
+ },
+ {
+  "key": "g10edd",
+  "en": ", breaking the staff in the process",
+  "args": [],
+  "routine": "MAN-F",
+  "zil": "<TELL \", breaking the staff in the process\">"
+ },
+ {
+  "key": "g10ef7",
+  "en": ", but you finish him off with a quick thrust to the chest. He dies, and disappears without ceremony in the usual style of the Great Underground Empire. His assorted valuables remain behind.\n",
+  "args": [],
+  "routine": "MAN-F",
+  "zil": "<TELL \", but you finish him off with a quick thrust to the chest. He dies, and disappears without ceremony in the usual style of the Great Underground Empire. His assorted valuables remain behind.\" CR>"
+ },
+ {
+  "key": "g10f72",
+  "en": "You wouldn't hurt him with that!\n",
+  "args": [],
+  "routine": "MAN-F",
+  "zil": "<TELL \"You wouldn't hurt him with that!\" CR>"
+ },
+ {
+  "key": "g10f96",
+  "en": "The man recoils sharply. \"These here things are mine. It's my chest and they're my valuables. You've a lot of nerve trying to take them from me after me saving you like that!\"\n",
+  "args": [],
+  "routine": "VALUABLES-F",
+  "zil": "<TELL \"The man recoils sharply. \\\"These here things are mine. It's my chest and they're my valuables. You've a lot of nerve trying to take them from me after me saving you like that!\\\"\" CR>"
+ },
+ {
+  "key": "g1100e",
+  "en": "What valuables?\n",
+  "args": [],
+  "routine": "VALUABLES-F",
+  "zil": "<TELL \"What valuables?\" CR>"
+ },
+ {
+  "key": "g11026",
+  "en": "The rope is tied to a tree.\n",
+  "args": [],
+  "routine": "ROPE-F",
+  "zil": "<TELL \"The rope is tied to a tree.\" CR>"
+ },
+ {
+  "key": "g11047",
+  "en": "The rope won't catch fire.\n",
+  "args": [],
+  "routine": "ROPE-F",
+  "zil": "<TELL \"The rope won't catch fire.\" CR>"
+ },
+ {
+  "key": "g1105e",
+  "en": "The rope is very securely tied and cannot be undone.\n",
+  "args": [],
+  "routine": "ROPE-F",
+  "zil": "<TELL \"The rope is very securely tied and cannot be undone.\" CR>"
+ },
+ {
+  "key": "g11081",
+  "en": "The rope is made of pretty tough stuff and won't cut.\n",
+  "args": [],
+  "routine": "ROPE-F",
+  "zil": "<TELL \"The rope is made of pretty tough stuff and won't cut.\" CR>"
+ },
+ {
+  "key": "g110ac",
+  "en": "You've lost him among the trees.\n",
+  "args": [],
+  "routine": "GLOBAL-MAN-F",
+  "zil": "<TELL \"You've lost him among the trees.\" CR>"
+ },
+ {
+  "key": "g110c3",
+  "en": "You can't see any man here.\n",
+  "args": [],
+  "routine": "GLOBAL-MAN-F",
+  "zil": "<TELL \"You can't see any man here.\" CR>"
+ },
+ {
+  "key": "g110d3",
+  "en": "You can't see any man here.\n",
+  "args": [],
+  "routine": "GLOBAL-MAN-F",
+  "zil": "<TELL \"You can't see any man here.\" CR>"
+ },
+ {
+  "key": "g110e4",
+  "en": "You aren't even close to him!\n",
+  "args": [],
+  "routine": "GLOBAL-MAN-F",
+  "zil": "<TELL \"You aren't even close to him!\" CR>"
+ },
+ {
+  "key": "g110fd",
+  "en": "The man waves back in a friendly way.\n",
+  "args": [],
+  "routine": "GLOBAL-MAN-F",
+  "zil": "<TELL \"The man waves back in a friendly way.\" CR>"
+ },
+ {
+  "key": "g1111e",
+  "en": "He yells back, \"What's that you say? I can't hear you very well.",
+  "args": [],
+  "routine": "GLOBAL-MAN-F",
+  "zil": "<TELL \"He yells back, \\\"What's that you say? I can't hear you very well.\">"
+ },
+ {
+  "key": "g11146",
+  "en": " Just tie the rope to the chest and we can chat afterwards!\" He smiles broadly.",
+  "args": [],
+  "routine": "GLOBAL-MAN-F",
+  "zil": "<TELL \" Just tie the rope to the chest and we can chat afterwards!\\\" He smiles broadly.\">"
+ },
+ {
+  "key": "g1117a",
+  "en": "\"",
+  "args": [],
+  "routine": "GLOBAL-MAN-F",
+  "zil": "<TELL \"\\\"\">"
+ },
+ {
+  "key": "g11185",
+  "en": "It's unlikely you'll succeed at this distance.\n",
+  "args": [],
+  "routine": "GLOBAL-MAN-F",
+  "zil": "<TELL \"It's unlikely you'll succeed at this distance.\" CR>"
+ },
+ {
+  "key": "g111b0",
+  "en": "The {0} flies upward, but not nearly far enough to hit the man. It does seem to amuse him, however, especially as it passes within inches of your head. \"We're wasting time now. Be a good fellow and tie the rope!\"\n",
+  "args": [
+   "o"
+  ],
+  "routine": "GLOBAL-MAN-F",
+  "zil": "<TELL \"The \" D ,PRSO \" flies upward, but not nearly far enough to hit the man. It does seem to amuse him, however, especially as it passes within inches of your head. \\\"We're wasting time now. Be a good fellow and tie the rope!\\\"\" CR>"
+ },
+ {
+  "key": "g1125c",
+  "en": "Just where do you think you are?\n",
+  "args": [],
+  "routine": "LAKE-F",
+  "zil": "<TELL \"Just where do you think you are?\" CR>"
+ },
+ {
+  "key": "g11277",
+  "en": "You can't quite make out the bottom of the lake from here...\n",
+  "args": [],
+  "routine": "LAKE-F",
+  "zil": "<TELL \"You can't quite make out the bottom of the lake from here...\" CR>"
+ },
+ {
+  "key": "g11296",
+  "en": "You can't see under the surface from here.\n",
+  "args": [],
+  "routine": "LAKE-F",
+  "zil": "<TELL \"You can't see under the surface from here.\" CR>"
+ },
+ {
+  "key": "g112da",
+  "en": "You can't carry that much underwater.\n",
+  "args": [],
+  "routine": "IN-LAKE-F",
+  "zil": "<TELL \"You can't carry that much underwater.\" CR>"
+ },
+ {
+  "key": "g112f3",
+  "en": "You can't take that!\n",
+  "args": [],
+  "routine": "IN-LAKE-F",
+  "zil": "<TELL \"You can't take that!\" CR>"
+ },
+ {
+  "key": "g11306",
+  "en": "The {0} is yours for a moment, but drops from your grasp.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "IN-LAKE-F",
+  "zil": "<TELL \"The \" D ,PRSO \" is yours for a moment, but drops from your grasp.\" CR>"
+ },
+ {
+  "key": "g11332",
+  "en": "A large and hungry-looking fish is swimming in the neighborhood.\n",
+  "args": [],
+  "routine": "IN-LAKE-F",
+  "zil": "<TELL \"A large and hungry-looking fish is swimming in the neighborhood.\" CR>"
+ },
+ {
+  "key": "g1138d",
+  "en": "Out of the corner of your eye, a small, shiny object appears in the sand. A moment later, it is gone!\n",
+  "args": [],
+  "routine": "IN-LAKE-F",
+  "zil": "<TELL \"Out of the corner of your eye, a small, shiny object appears in the sand. A moment later, it is gone!\" CR>"
+ },
+ {
+  "key": "g113d4",
+  "en": "You catch a brief glimpse of something shiny in the sand.\n",
+  "args": [],
+  "routine": "IN-LAKE-F",
+  "zil": "<TELL \"You catch a brief glimpse of something shiny in the sand.\" CR>"
+ },
+ {
+  "key": "g113f7",
+  "en": "Something sparkling in the sand catches your eye for a moment.\n",
+  "args": [],
+  "routine": "IN-LAKE-F",
+  "zil": "<TELL \"Something sparkling in the sand catches your eye for a moment.\" CR>"
+ },
+ {
+  "key": "g11427",
+  "en": "You run out of air and return to the surface.\n",
+  "args": [],
+  "routine": "I-IN-LAKE",
+  "zil": "<TELL \"You run out of air and return to the surface.\" CR>"
+ },
+ {
+  "key": "g114b4",
+  "en": "The shock of entering the frigid water has made you drop all your possessions into the lake!\n",
+  "args": [],
+  "routine": "GO-ON-LAKE",
+  "zil": "<TELL \"The shock of entering the frigid water has made you drop all your possessions into the lake!\" CR>"
+ },
+ {
+  "key": "g114f9",
+  "en": "You are nearly paralyzed by the icy waters as you swim into the center of the lake.\n",
+  "args": [],
+  "routine": "GO-ON-LAKE",
+  "zil": "<TELL \"You are nearly paralyzed by the icy waters as you swim into the center of the lake.\" CR>"
+ },
+ {
+  "key": "g11557",
+  "en": "A giant roc, previously hidden among the rocks, is heading right toward you, its mouth gaping wide!\n",
+  "args": [],
+  "routine": "I-ON-LAKE",
+  "zil": "<TELL \"A giant roc, previously hidden among the rocks, is heading right toward you, its mouth gaping wide!\" CR>"
+ },
+ {
+  "key": "g115ca",
+  "en": "The icy waters are taking their toll. You will not be able to hold out much longer.\n",
+  "args": [],
+  "routine": "I-ON-LAKE",
+  "zil": "<TELL \"The icy waters are taking their toll. You will not be able to hold out much longer.\" CR>"
+ },
+ {
+  "key": "g115ff",
+  "en": "You are becoming very weak. You had better leave the water before you drown!\n",
+  "args": [],
+  "routine": "I-ON-LAKE",
+  "zil": "<TELL \"You are becoming very weak. You had better leave the water before you drown!\" CR>"
+ },
+ {
+  "key": "g1168d",
+  "en": "You reach the shiny object. It is a simple golden amulet!\n",
+  "args": [],
+  "routine": "SHINY-OBJECT-F",
+  "zil": "<TELL \"You reach the shiny object. It is a simple golden amulet!\" CR>"
+ },
+ {
+  "key": "g116b2",
+  "en": "The shiny object slips from your grasp and back onto the floor of the lake, where it is covered in sand.\n",
+  "args": [],
+  "routine": "SHINY-OBJECT-F",
+  "zil": "<TELL \"The shiny object slips from your grasp and back onto the floor of the lake, where it is covered in sand.\" CR>"
+ },
+ {
+  "key": "g116ef",
+  "en": "You don't come across anything unusual.\n",
+  "args": [],
+  "routine": "SAND-F",
+  "zil": "<TELL \"You don't come across anything unusual.\" CR>"
+ },
+ {
+  "key": "g11706",
+  "en": "There is nothing notable on the floor of the lake, except some plants and algae.\n",
+  "args": [],
+  "routine": "SAND-F",
+  "zil": "<TELL \"There is nothing notable on the floor of the lake, except some plants and algae.\" CR>"
+ },
+ {
+  "key": "g11733",
+  "en": "It slips through your fingers.\n",
+  "args": [],
+  "routine": "SAND-F",
+  "zil": "<TELL \"It slips through your fingers.\" CR>"
+ },
+ {
+  "key": "g11747",
+  "en": "Yeecchhhh!\n",
+  "args": [],
+  "routine": "ALGAE-F",
+  "zil": "<TELL \"Yeecchhhh!\" CR>"
+ },
+ {
+  "key": "g11755",
+  "en": "The lamp isn't functioning (probably from having gotten wet).\n",
+  "args": [],
+  "routine": "FRIED-LAMP-F",
+  "zil": "<TELL \"The lamp isn't functioning (probably from having gotten wet).\" CR>"
+ },
+ {
+  "key": "g1177d",
+  "en": "You suddenly find yourself back in the viewing room!\n",
+  "args": [],
+  "routine": "I-VIEW-SNAP",
+  "zil": "<TELL \"You suddenly find yourself back in the viewing room!\" CR>"
+ },
+ {
+  "key": "g117b1",
+  "en": "You touch the table and are instantly transported to another place!\n\n",
+  "args": [],
+  "routine": "VIEWING-TABLE-F",
+  "zil": "<TELL \"You touch the table and are instantly transported to another place!\" CR>"
+ },
+ {
+  "key": "g117fa",
+  "en": "The surface is pale and featureless, but slowly, an image takes shape!\n",
+  "args": [],
+  "routine": "VIEWING-TABLE-F",
+  "zil": "<TELL \"The surface is pale and featureless, but slowly, an image takes shape!\" CR>"
+ },
+ {
+  "key": "g1182c",
+  "en": "{0}\nThe image slowly fades.\n",
+  "args": [
+   "s"
+  ],
+  "routine": "VIEWING-TABLE-F",
+  "zil": "<TELL \"The image slowly fades.\" CR>"
+ },
+ {
+  "key": "g11856",
+  "en": "The indicator above the table flickers briefly, then changes to \"",
+  "args": [],
+  "routine": "I-VIEW-CHANGE",
+  "zil": "<TELL \"The indicator above the table flickers briefly, then changes to \\\"\">"
+ },
+ {
+  "key": "g11881",
+  "en": "{0}\".\n",
+  "args": [
+   "s"
+  ],
+  "routine": "I-VIEW-CHANGE",
+  "zil": "<TELL <GET ,VIEW-ROMANS ,ACTIVE-VIEW> \"\\\".\" CR>"
+ },
+ {
+  "key": "g1188f",
+  "en": "You are in a small chamber carved in the rock, with the sole exit to the north. Mounted on one wall is a table labelled \"Scenic Vista,\" whose featureless surface is angled toward you. One might believe that the table was used to indicate points of interest in the view from this spot, like those found in many parks. On the other hand, your surroundings are far from spacious and by no stretch of the imagination could this spot be considered scenic. An indicator above the table reads \"",
+  "args": [],
+  "routine": "VIEW-ROOM-F",
+  "zil": "<TELL \"You are in a small chamber carved in the rock, with the sole exit to the north. Mounted on one wall is a table labelled \\\"Scenic Vista,\\\" whose featureless surface is angled toward you. One might believe that the table was used to indicate points of interest in the view from this spot, like those found in many parks. On the other hand, your surroundings are far from spacious and by no stretch of the imagination could this spot be considered scenic. An indicator above the table reads \\\"\">"
+ },
+ {
+  "key": "g119ae",
+  "en": "{0}\".\n",
+  "args": [
+   "s"
+  ],
+  "routine": "VIEW-ROOM-F",
+  "zil": "<TELL <GET ,VIEW-ROMANS ,ACTIVE-VIEW> \"\\\".\" CR>"
+ },
+ {
+  "key": "g119d6",
+  "en": "The fall would kill you.\n",
+  "args": [],
+  "routine": "CLIFF-OBJECT-F",
+  "zil": "<TELL \"The fall would kill you.\" CR>"
+ },
+ {
+  "key": "g119ef",
+  "en": "The rope is dangling over the side of the cliff already.\n",
+  "args": [],
+  "routine": "CLIFF-OBJECT-F",
+  "zil": "<TELL \"The rope is dangling over the side of the cliff already.\" CR>"
+ },
+ {
+  "key": "g11a16",
+  "en": "You aren't holding the {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "CLIFF-OBJECT-F",
+  "zil": "<TELL \"You aren't holding the \" D ,PRSO \".\" CR>"
+ },
+ {
+  "key": "g11a2d",
+  "en": "The {0} goes over the cliff and lands among the rocks below.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "CLIFF-OBJECT-F",
+  "zil": "<TELL \"The \" D ,PRSO \" goes over the cliff and lands among the rocks below.\" CR>"
+ },
+ {
+  "key": "g11a6f",
+  "en": "You haven't enough strength to climb the cliff.\n",
+  "args": [],
+  "routine": "CLIFF-OBJECT-F",
+  "zil": "<TELL \"You haven't enough strength to climb the cliff.\" CR>"
+ },
+ {
+  "key": "g11a8e",
+  "en": "The cliff is above you!\n",
+  "args": [],
+  "routine": "CLIFF-OBJECT-F",
+  "zil": "<TELL \"The cliff is above you!\" CR>"
+ },
+ {
+  "key": "g11aa3",
+  "en": "The trunks are too large for you to climb them.\n",
+  "args": [],
+  "routine": "TREE-F",
+  "zil": "<TELL \"The trunks are too large for you to climb them.\" CR>"
+ },
+ {
+  "key": "g11ac5",
+  "en": "There seems to be nobody there, but it's hard to tell.\n",
+  "args": [],
+  "routine": "TREE-F",
+  "zil": "<TELL \"There seems to be nobody there, but it's hard to tell.\" CR>"
+ },
+ {
+  "key": "g11af3",
+  "en": "It's hopeless. The torch is wet.\n",
+  "args": [],
+  "routine": "FRIED-TORCH-F",
+  "zil": "<TELL \"It's hopeless. The torch is wet.\" CR>"
+ },
+ {
+  "key": "g11b13",
+  "en": "It's already lit.\n",
+  "args": [],
+  "routine": "TORCH-F",
+  "zil": "<TELL \"It's already lit.\" CR>"
+ },
+ {
+  "key": "g11b1e",
+  "en": "You have nothing to light it with.\n",
+  "args": [],
+  "routine": "TORCH-F",
+  "zil": "<TELL \"You have nothing to light it with.\" CR>"
+ },
+ {
+  "key": "g11b37",
+  "en": "You manage to extinguish the flame.\n",
+  "args": [],
+  "routine": "TORCH-F",
+  "zil": "<TELL \"You manage to extinguish the flame.\" CR>"
+ },
+ {
+  "key": "g11b53",
+  "en": "It has already been extinguished.\n",
+  "args": [],
+  "routine": "TORCH-F",
+  "zil": "<TELL \"It has already been extinguished.\" CR>"
+ },
+ {
+  "key": "g11b94",
+  "en": "The can seems empty.\n",
+  "args": [],
+  "routine": "REPELLENT-FCN",
+  "zil": "<TELL \"The can seems empty.\" CR>"
+ },
+ {
+  "key": "g11b9f",
+  "en": "There is a sloshing sound from inside.\n",
+  "args": [],
+  "routine": "REPELLENT-FCN",
+  "zil": "<TELL \"There is a sloshing sound from inside.\" CR>"
+ },
+ {
+  "key": "g11bcf",
+  "en": "The repellent is all gone.\n",
+  "args": [],
+  "routine": "REPELLENT-FCN",
+  "zil": "<TELL \"The repellent is all gone.\" CR>"
+ },
+ {
+  "key": "g11be6",
+  "en": "The spray stinks amazingly for a few moments, then drifts away.\n",
+  "args": [],
+  "routine": "REPELLENT-FCN",
+  "zil": "<TELL \"The spray stinks amazingly for a few moments, then drifts away.\" CR>"
+ },
+ {
+  "key": "g11c26",
+  "en": "The spray smells like a mixture of old socks and burning rubber. If I were a grue I'd sure stay clear!\n",
+  "args": [],
+  "routine": "REPELLENT-FCN",
+  "zil": "<TELL \"The spray smells like a mixture of old socks and burning rubber. If I were a grue I'd sure stay clear!\" CR>"
+ },
+ {
+  "key": "g11c70",
+  "en": "That horrible smell is much less pungent now.\n",
+  "args": [],
+  "routine": "I-SPRAY",
+  "zil": "<TELL \"That horrible smell is much less pungent now.\" CR>"
+ },
+ {
+  "key": "g11ca5",
+  "en": "The aqueduct is large and impressive. It was probably the major method of water transport in the Empire.\n",
+  "args": [],
+  "routine": "AQUEDUCT-F",
+  "zil": "<TELL \"The aqueduct is large and impressive. It was probably the major method of water transport in the Empire.\" CR>"
+ },
+ {
+  "key": "g11cf1",
+  "en": "The channel is a few feet deep and ten feet wide, rounded on the bottom.\n",
+  "args": [],
+  "routine": "WATER-CHANNEL-F",
+  "zil": "<TELL \"The channel is a few feet deep and ten feet wide, rounded on the bottom.\" CR>"
+ },
+ {
+  "key": "g11d22",
+  "en": "Getting into the channel wouldn't be of much use.\n",
+  "args": [],
+  "routine": "WATER-CHANNEL-F",
+  "zil": "<TELL \"Getting into the channel wouldn't be of much use.\" CR>"
+ },
+ {
+  "key": "g11d3d",
+  "en": "You're standing in it. Otherwise, you would be floating in midair above some very nasty rocks.\n",
+  "args": [],
+  "routine": "WATER-CHANNEL-F",
+  "zil": "<TELL \"You're standing in it. Otherwise, you would be floating in midair above some very nasty rocks.\" CR>"
+ },
+ {
+  "key": "g11d75",
+  "en": "Don't be silly.\n",
+  "args": [],
+  "routine": "MOSS-F",
+  "zil": "<TELL \"Don't be silly.\" CR>"
+ },
+ {
+  "key": "g11d89",
+  "en": "You are now on one of the tallest arches of the aqueduct, hundreds of feet above a rocky chasm. The immensity of the aqueduct project is apparent from here. Stone supports rise from the rock floor to form massive arches, which traverse the region from north to south. The water-carrying channel here is wide and deep. To the west and far below, you can make out a balcony which must command a wide view of the aqueduct.\n",
+  "args": [],
+  "routine": "AQ-2-F",
+  "zil": "<TELL \"You are now on one of the tallest arches of the aqueduct, hundreds of feet above a rocky chasm. The immensity of the aqueduct project is apparent from here. Stone supports rise from the rock floor to form massive arches, which traverse the region from north to south. The water-carrying channel here is wide and deep. To the west and far below, you can make out a balcony which must command a wide view of the aqueduct.\" CR>"
+ },
+ {
+  "key": "g11e6e",
+  "en": "The channel ends abruptly to your north where a supporting pillar has crumbled, casting the arch into the chasm.\n",
+  "args": [],
+  "routine": "AQ-2-F",
+  "zil": "<TELL \"The channel ends abruptly to your north where a supporting pillar has crumbled, casting the arch into the chasm.\" CR>"
+ },
+ {
+  "key": "g11eb1",
+  "en": "You are near the northern end of this segment of the aqueduct system. To the south and slightly uphill, the bulk of the aqueduct looms ominously, towering above a gorge. To the north, the water channel drops precipitously and enters a rocky hole. The damp moss and lichen would certainly make that a one-way trip.\n",
+  "args": [],
+  "routine": "AQ-3-F",
+  "zil": "<TELL \"You are near the northern end of this segment of the aqueduct system. To the south and slightly uphill, the bulk of the aqueduct looms ominously, towering above a gorge. To the north, the water channel drops precipitously and enters a rocky hole. The damp moss and lichen would certainly make that a one-way trip.\" CR>"
+ },
+ {
+  "key": "g11f60",
+  "en": "The southern part of the aqueduct system is inaccessable due to the collapse of one of the water-bearing arches.\n",
+  "args": [],
+  "routine": "AQ-3-F",
+  "zil": "<TELL \"The southern part of the aqueduct system is inaccessable due to the collapse of one of the water-bearing arches.\" CR>"
+ },
+ {
+  "key": "g11faa",
+  "en": "The cover is moved a bit to one side, revealing a small hole leading into darkness.\n",
+  "args": [],
+  "routine": "COVER-F",
+  "zil": "<TELL \"The cover is moved a bit to one side, revealing a small hole leading into darkness.\" CR>"
+ },
+ {
+  "key": "g11fe5",
+  "en": "The cover is far too heavy to take.\n",
+  "args": [],
+  "routine": "COVER-F",
+  "zil": "<TELL \"The cover is far too heavy to take.\" CR>"
+ },
+ {
+  "key": "g12003",
+  "en": "You are between some rock and a dark place. The room is lit dimly from above, revealing a lone, dark path sloping down to the west.\n",
+  "args": [],
+  "routine": "KEY-ROOM-F",
+  "zil": "<TELL \"You are between some rock and a dark place. The room is lit dimly from above, revealing a lone, dark path sloping down to the west.\" CR>"
+ },
+ {
+  "key": "g12052",
+  "en": "A heavy manhole cover has been moved to reveal a dark passage below.\n",
+  "args": [],
+  "routine": "KEY-ROOM-F",
+  "zil": "<TELL \"A heavy manhole cover has been moved to reveal a dark passage below.\" CR>"
+ },
+ {
+  "key": "g12079",
+  "en": "To one side of the room is a large manhole cover.\n",
+  "args": [],
+  "routine": "KEY-ROOM-F",
+  "zil": "<TELL \"To one side of the room is a large manhole cover.\" CR>"
+ },
+ {
+  "key": "g120ad",
+  "en": "The key seems to mold itself to the shape of the lock. With a mere twist of your hand, the massive bolt gives way.\n",
+  "args": [],
+  "routine": "KEY-F",
+  "zil": "<TELL \"The key seems to mold itself to the shape of the lock. With a mere twist of your hand, the massive bolt gives way.\" CR>"
+ },
+ {
+  "key": "g120f4",
+  "en": "It already is.\n",
+  "args": [],
+  "routine": "KEY-F",
+  "zil": "<TELL \"It already is.\" CR>"
+ },
+ {
+  "key": "g12104",
+  "en": "The key molds itself to the lock but will not turn.\n",
+  "args": [],
+  "routine": "KEY-F",
+  "zil": "<TELL \"The key molds itself to the lock but will not turn.\" CR>"
+ },
+ {
+  "key": "g1212b",
+  "en": "The key, which initially seemed certain to fit the lock, seems to change shape and will not enter the keyhole.\n",
+  "args": [],
+  "routine": "KEY-F",
+  "zil": "<TELL \"The key, which initially seemed certain to fit the lock, seems to change shape and will not enter the keyhole.\" CR>"
+ },
+ {
+  "key": "g12172",
+  "en": "{0}\nStrange, though. The key seems to change shape constantly.\n",
+  "args": [
+   "s"
+  ],
+  "routine": "KEY-F",
+  "zil": "<TELL \"Strange, though. The key seems to change shape constantly.\" CR>"
+ },
+ {
+  "key": "g121a1",
+  "en": "The indicator reads \"",
+  "args": [],
+  "routine": "VIEW-INDICATOR-F",
+  "zil": "<TELL \"The indicator reads \\\"\" <GET ,VIEW-ROMANS ,ACTIVE-VIEW> \"\\\".\" CR>"
+ },
+ {
+  "key": "g121b4",
+  "en": "{0}\".\n",
+  "args": [
+   "s"
+  ],
+  "routine": "VIEW-INDICATOR-F",
+  "zil": "<TELL \"The indicator reads \\\"\" <GET ,VIEW-ROMANS ,ACTIVE-VIEW> \"\\\".\" CR>"
+ },
+ {
+  "key": "g121c4",
+  "en": "You are at the shore of an amazing underground sea, the topic of many a legend among adventurers. Few were known to have arrived at this spot, and fewer to return. There is a heavy surf and a breeze is blowing onshore. The land rises steeply to the east and quicksand prevents movement to the south. A thick mist covers the ocean and extends over the hills to the east. A path heads north along the beach.\n",
+  "args": [],
+  "routine": "FLATHEAD-OCEAN-F",
+  "zil": "<TELL \"You are at the shore of an amazing underground sea, the topic of many a legend among adventurers. Few were known to have arrived at this spot, and fewer to return. There is a heavy surf and a breeze is blowing onshore. The land rises steeply to the east and quicksand prevents movement to the south. A thick mist covers the ocean and extends over the hills to the east. A path heads north along the beach.\" CR>"
+ },
+ {
+  "key": "g122ac",
+  "en": "An ancient Viking ship is passing along the shore, an old and crusty sailor at the helm.\n",
+  "args": [],
+  "routine": "FLATHEAD-OCEAN-F",
+  "zil": "<TELL \"An ancient Viking ship is passing along the shore, an old and crusty sailor at the helm.\" CR>"
+ },
+ {
+  "key": "g12307",
+  "en": "Passing alongside the shore now is an old boat, reminiscent of an ancient Viking ship. Standing on the prow of the ship is an old and crusty sailor, peering out over the misty ocean.\n",
+  "args": [],
+  "routine": "FLATHEAD-OCEAN-F",
+  "zil": "<TELL \"Passing alongside the shore now is an old boat, reminiscent of an ancient Viking ship. Standing on the prow of the ship is an old and crusty sailor, peering out over the misty ocean.\" CR>"
+ },
+ {
+  "key": "g1238b",
+  "en": "The boat sails silently through the mist and out of sight.\n",
+  "args": [],
+  "routine": "I-BOAT-DISAPPEAR",
+  "zil": "<TELL \"The boat sails silently through the mist and out of sight.\" CR>"
+ },
+ {
+  "key": "g123d6",
+  "en": "You \"drink\" the contents in one gulp, but nothing unusual seems to have happened as a result.\n",
+  "args": [],
+  "routine": "POTION-F",
+  "zil": "<TELL \"You \\\"drink\\\" the contents in one gulp, but nothing unusual seems to have happened as a result.\" CR>"
+ },
+ {
+  "key": "g12413",
+  "en": "It spills onto the {0} and vanishes.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "POTION-F",
+  "zil": "<TELL \"It spills onto the \" D ,PRSI \" and vanishes.\" CR>"
+ },
+ {
+  "key": "g1242f",
+  "en": "It feels like there's something inside, but you can't see anything even though the vial is transparent.\n",
+  "args": [],
+  "routine": "POTION-F",
+  "zil": "<TELL \"It feels like there's something inside, but you can't see anything even though the vial is transparent.\" CR>"
+ },
+ {
+  "key": "g12466",
+  "en": "The vial (or something in it) smells sweet.\n",
+  "args": [],
+  "routine": "POTION-F",
+  "zil": "<TELL \"The vial (or something in it) smells sweet.\" CR>"
+ },
+ {
+  "key": "g12485",
+  "en": "Nothing seems to come out, although the sweet smell disappears from the vial, seeming to permeate the air briefly before fading entirely.\n",
+  "args": [],
+  "routine": "POTION-F",
+  "zil": "<TELL \"Nothing seems to come out, although the sweet smell disappears from the vial, seeming to permeate the air briefly before fading entirely.\" CR>"
+ },
+ {
+  "key": "g124db",
+  "en": "You can't seem to put anything in it.\n",
+  "args": [],
+  "routine": "VIAL-F",
+  "zil": "<TELL \"You can't seem to put anything in it.\" CR>"
+ },
+ {
+  "key": "g12518",
+  "en": "Nothing seems to come out, although the vial is lighter now.\n",
+  "args": [],
+  "routine": "VIAL-F",
+  "zil": "<TELL \"Nothing seems to come out, although the vial is lighter now.\" CR>"
+ },
+ {
+  "key": "g12549",
+  "en": "The vial is open.",
+  "args": [],
+  "routine": "VIAL-F",
+  "zil": "<TELL \"The vial is open.\">"
+ },
+ {
+  "key": "g12558",
+  "en": " There is a sweet odor from within the vial, apparently coming from a heavy but invisible liquid.",
+  "args": [],
+  "routine": "VIAL-F",
+  "zil": "<TELL \" There is a sweet odor from within the vial, apparently coming from a heavy but invisible liquid.\">"
+ },
+ {
+  "key": "g12597",
+  "en": "It is a small, transparent vial ",
+  "args": [],
+  "routine": "VIAL-F",
+  "zil": "<TELL \"It is a small, transparent vial \">"
+ },
+ {
+  "key": "g125b0",
+  "en": "which looks empty but is strangely heavy.\n",
+  "args": [],
+  "routine": "VIAL-F",
+  "zil": "<TELL \"which looks empty but is strangely heavy.\" CR>"
+ },
+ {
+  "key": "g125c9",
+  "en": "which is light and empty.\n",
+  "args": [],
+  "routine": "VIAL-F",
+  "zil": "<TELL \"which is light and empty.\" CR>"
+ },
+ {
+  "key": "g125dd",
+  "en": "There is no ocean here.\n",
+  "args": [],
+  "routine": "OCEAN-F",
+  "zil": "<TELL \"There is no ocean here.\" CR>"
+ },
+ {
+  "key": "g125f0",
+  "en": "You would be killed by the pounding surf!\n",
+  "args": [],
+  "routine": "OCEAN-F",
+  "zil": "<TELL \"You would be killed by the pounding surf!\" CR>"
+ },
+ {
+  "key": "g12611",
+  "en": "The {0} falls into the ocean and is lost forever.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "OCEAN-F",
+  "zil": "<TELL \"The \" D ,PRSO \" falls into the ocean and is lost forever.\" CR>"
+ },
+ {
+  "key": "g12637",
+  "en": "Standing before you is a great rock.",
+  "args": [],
+  "routine": "STONE-DESC",
+  "zil": "<TELL \"Standing before you is a great rock.\">"
+ },
+ {
+  "key": "g1264d",
+  "en": " Imbedded within it is an Elvish sword.",
+  "args": [],
+  "routine": "STONE-DESC",
+  "zil": "<TELL \" Imbedded within it is an Elvish sword.\">"
+ },
+ {
+  "key": "g12671",
+  "en": "You can't be serious.\n",
+  "args": [],
+  "routine": "STONE-F",
+  "zil": "<TELL \"You can't be serious.\" CR>"
+ },
+ {
+  "key": "g12684",
+  "en": "You can't force anything into the stone.\n",
+  "args": [],
+  "routine": "STONE-F",
+  "zil": "<TELL \"You can't force anything into the stone.\" CR>"
+ },
+ {
+  "key": "g126a0",
+  "en": "The stone is far too massive to be moved.\n",
+  "args": [],
+  "routine": "STONE-F",
+  "zil": "<TELL \"The stone is far too massive to be moved.\" CR>"
+ },
+ {
+  "key": "g126bb",
+  "en": "Since it can't be moved, it's hard to know what's there.\n",
+  "args": [],
+  "routine": "STONE-F",
+  "zil": "<TELL \"Since it can't be moved, it's hard to know what's there.\" CR>"
+ },
+ {
+  "key": "g126df",
+  "en": "There is no fish visible now.\n",
+  "args": [],
+  "routine": "FISH-F",
+  "zil": "<TELL \"There is no fish visible now.\" CR>"
+ },
+ {
+  "key": "g12705",
+  "en": "It's quicksand all right!\n",
+  "args": [],
+  "routine": "QUICKSAND-PSEUDO",
+  "zil": "<TELL \"It's quicksand all right!\" CR>"
+ },
+ {
+  "key": "g1271c",
+  "en": "It's hard to tell what's in there.\n",
+  "args": [],
+  "routine": "QUICKSAND-PSEUDO",
+  "zil": "<TELL \"It's hard to tell what's in there.\" CR>"
+ },
+ {
+  "key": "g1273b",
+  "en": "Yucko.\n",
+  "args": [],
+  "routine": "SWAMP-PSEUDO",
+  "zil": "<TELL \"Yucko.\" CR>"
+ },
+ {
+  "key": "g12747",
+  "en": "You can't make anything out through the mist.\n",
+  "args": [],
+  "routine": "MIST-PSEUDO",
+  "zil": "<TELL \"You can't make anything out through the mist.\" CR>"
+ },
+ {
+  "key": "g1275c",
+  "en": "It smells vaguely salty.\n",
+  "args": [],
+  "routine": "MIST-PSEUDO",
+  "zil": "<TELL \"It smells vaguely salty.\" CR>"
+ },
+ {
+  "key": "g12773",
+  "en": "There's nothing there.\n",
+  "args": [],
+  "routine": "SHORE-PSEUDO",
+  "zil": "<TELL \"There's nothing there.\" CR>"
+ },
+ {
+  "key": "g12783",
+  "en": "It's much too slippery.\n",
+  "args": [],
+  "routine": "WATERFALL-PSEUDO",
+  "zil": "<TELL \"It's much too slippery.\" CR>"
+ },
+ {
+  "key": "g1279e",
+  "en": "The arches all show some signs of decay.\n",
+  "args": [],
+  "routine": "ARCH-PSEUDO",
+  "zil": "<TELL \"The arches all show some signs of decay.\" CR>"
+ },
+ {
+  "key": "g127b7",
+  "en": "The arch before you is broken. The others show signs of decay.\n",
+  "args": [],
+  "routine": "ARCH-PSEUDO",
+  "zil": "<TELL \"The arch before you is broken. The others show signs of decay.\" CR>"
+ }
+]

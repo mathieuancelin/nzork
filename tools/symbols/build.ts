@@ -113,6 +113,19 @@ for (let pass = 0; pass < 12; pass++) {
           }
         })
       }
+      // rooms with the same name and the same exits (Zork III's two "Narrow Room"): the exits
+      // of the other rooms that lead to them tell them apart
+      if (o.kind === 'ROOM') {
+        for (const src of zil.objects) {
+          if (src.kind !== 'ROOM' || objects[src.name] === undefined) continue
+          DIRECTIONS.forEach((d, i) => {
+            const v = src.props.get(d)
+            if (!v || atomName(v[0]) !== 'TO' || atomName(v[1]) !== o.name) return
+            const zv = zObjects[objects[src.name] - 1].props.get(31 - i)
+            if (zv) score += zv[0] === z.num ? 3 : -3
+          })
+        }
+      }
       return { o, score }
     })
     scored.sort((a, b) => b.score - a.score)

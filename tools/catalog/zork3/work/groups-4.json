@@ -1,0 +1,707 @@
+[
+ {
+  "key": "gefbc",
+  "en": "There is no robot here.\n",
+  "args": [],
+  "routine": "ROBOT-F",
+  "zil": "<TELL \"There is no robot here.\" CR>"
+ },
+ {
+  "key": "gefe0",
+  "en": "An odd robot-like device glides in, dusting the floor as it moves. Its head gyrates briefly as it scans the machine. \"Shame. Shame,\" it says, rather tinnily. \"Someone has been tampering with the machines again.\" Six beady mechanical eyes focus on you as the robot picks up the gold machine. \"Hands off, adventurer!\" it says as it leaves the room, closing the door behind it.\n",
+  "args": [],
+  "routine": "JEWEL-ROOM-F",
+  "zil": "<TELL \"An odd robot-like device glides in, dusting the floor as it moves. Its head gyrates briefly as it scans the machine. \\\"Shame. Shame,\\\" it says, rather tinnily. \\\"Someone has been tampering with the machines again.\\\" Six beady mechanical eyes focus on you as the robot picks up the gold machine. \\\"Hands off, adventurer!\\\" it says as it leaves the room, closing the door behind it.\" CR>"
+ },
+ {
+  "key": "gf0e0",
+  "en": "You are in a high-ceilinged chamber",
+  "args": [],
+  "routine": "JEWEL-ROOM-F",
+  "zil": "<TELL \"You are in a high-ceilinged chamber\">"
+ },
+ {
+  "key": "gf0fc",
+  "en": " in the middle of which sits a tall, round steel cage, which is securely locked. In the middle of the cage is a pedestal on which sit the Crown Jewels of the Great Underground Empire: a sceptre, a jewelled knife, and a golden ring. A small bronze plaque, now tarnished, is on the cage.\n",
+  "args": [],
+  "routine": "JEWEL-ROOM-F",
+  "zil": "<TELL \" in the middle of which sits a tall, round steel cage, which is securely locked. In the middle of the cage is a pedestal on which sit the Crown Jewels of the Great Underground Empire: a sceptre, a jewelled knife, and a golden ring. A small bronze plaque, now tarnished, is on the cage.\" CR>"
+ },
+ {
+  "key": "gf19b",
+  "en": " in the middle of which is a bare pedestal. The room is unfinished with no indication of its purpose. A small plaque is fastened to a wall.\n",
+  "args": [],
+  "routine": "JEWEL-ROOM-F",
+  "zil": "<TELL \" in the middle of which is a bare pedestal. The room is unfinished with no indication of its purpose. A small plaque is fastened to a wall.\" CR>"
+ },
+ {
+  "key": "gf204",
+  "en": "The jewels are inside a locked cage.\n",
+  "args": [],
+  "routine": "CROWN-JEWELS-F",
+  "zil": "<TELL \"The jewels are inside a locked cage.\" CR>"
+ },
+ {
+  "key": "gf227",
+  "en": "The {0} is now resting on the pedestal.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "CROWN-JEWELS-F",
+  "zil": "<TELL \"The \" D ,PRSO \" is now resting on the pedestal.\" CR>"
+ },
+ {
+  "key": "gf28f",
+  "en": "The plaque explains that this room was to be the home of the Crown Jewels of the Empire. However, following the unexplained disappearance of a priceless ring during the final stages of construction, Lord Flathead decided to place the remaining jewels in a safer location. Interestingly, he placed his most prized possesion, an incredibly gaudy crown, in a locked safe in a volcano specifically hollowed out for that purpose.\n",
+  "args": [],
+  "routine": "PLAQUE-F",
+  "zil": "<TELL \"The plaque explains that this room was to be the home of the Crown Jewels of the Empire. However, following the unexplained disappearance of a priceless ring during the final stages of construction, Lord Flathead decided to place the remaining jewels in a safer location. Interestingly, he placed his most prized possesion, an incredibly gaudy crown, in a locked safe in a volcano specifically hollowed out for that purpose.\" CR>"
+ },
+ {
+  "key": "gf397",
+  "en": "\n         Crown Jewels\n\n  Presented To The Royal Museum\n      By His Gracious Lord\n\n        DIMWIT FLATHEAD\n\n          Dedicated\n         * 777 GUE *",
+  "args": [],
+  "routine": "PLAQUE-F",
+  "zil": "<TELL \"\\n          Crown Jewels\\n \\n   Presented To The Royal Museum\\n       By His Gracious Lord\\n \\n         DIMWIT FLATHEAD\\n \\n           Dedicated\\n          * 777 GUE *\">"
+ },
+ {
+  "key": "gf41d",
+  "en": "\n\nUnderneath the plaque, in small lettering, is a description of a clumsy attempt to steal the jewels using a time machine from the Technological Museum which the curators were surprised to discover was not a nonworking model. After the attempt, the machine was removed from the exhibit.",
+  "args": [],
+  "routine": "PLAQUE-F",
+  "zil": "<TELL CR CR \"Underneath the plaque, in small lettering, is a description of a clumsy attempt to steal the jewels using a time machine from the Technological Museum which the curators were surprised to discover was not a nonworking model. After the attempt, the machine was removed from the exhibit.\">"
+ },
+ {
+  "key": "gf4d1",
+  "en": "\n\nUnderneath the plaque, in small lettering, is a description of a mysterious happening during the final stages of construction of the Museum, in which some of the crown jewels were found displaced from their proper positions. Fortunately, nothing was missing. The mystery was never solved and the museum was opened despite the objections of Lord Flathead that security was too lax.",
+  "args": [],
+  "routine": "PLAQUE-F",
+  "zil": "<TELL CR CR \"Underneath the plaque, in small lettering, is a description of a mysterious happening during the final stages of construction of the Museum, in which some of the crown jewels were found displaced from their proper positions. Fortunately, nothing was missing. The mystery was never solved and the museum was opened despite the objections of Lord Flathead that security was too lax.\">"
+ },
+ {
+  "key": "gf5cf",
+  "en": "You realize that calling attention to yourself would be fatal.\n",
+  "args": [],
+  "routine": "WOODEN-DOOR-F",
+  "zil": "<TELL \"You realize that calling attention to yourself would be fatal.\" CR>"
+ },
+ {
+  "key": "gf608",
+  "en": "It is already open.\n",
+  "args": [],
+  "routine": "JEWEL-DOOR-F",
+  "zil": "<TELL \"It is already open.\" CR>"
+ },
+ {
+  "key": "gf61b",
+  "en": "The door is locked, probably by the guards on their way out.\n",
+  "args": [],
+  "routine": "JEWEL-DOOR-F",
+  "zil": "<TELL \"The door is locked, probably by the guards on their way out.\" CR>"
+ },
+ {
+  "key": "gf640",
+  "en": "The door is now open.\n",
+  "args": [],
+  "routine": "JEWEL-DOOR-F",
+  "zil": "<TELL \"The door is now open.\" CR>"
+ },
+ {
+  "key": "gf657",
+  "en": "The cage is locked.\n",
+  "args": [],
+  "routine": "CAGE-F",
+  "zil": "<TELL \"The cage is locked.\" CR>"
+ },
+ {
+  "key": "gf668",
+  "en": "The cage is already closed.\n",
+  "args": [],
+  "routine": "CAGE-F",
+  "zil": "<TELL \"The cage is already closed.\" CR>"
+ },
+ {
+  "key": "gf684",
+  "en": "The voices are muffled by the door which (fortunately for you) separates you. They seem to be in heated debate on the topic of ",
+  "args": [],
+  "routine": "VOICES-F",
+  "zil": "<TELL \"The voices are muffled by the door which (fortunately for you) separates you. They seem to be in heated debate on the topic of \">"
+ },
+ {
+  "key": "gf6d3",
+  "en": "{0}.\n",
+  "args": [
+   "s"
+  ],
+  "routine": "VOICES-F",
+  "zil": "<TELL <PICK-ONE ,BLATHER> \".\" CR>"
+ },
+ {
+  "key": "gf6d8",
+  "en": "Are you hearing things now?\n",
+  "args": [],
+  "routine": "VOICES-F",
+  "zil": "<TELL \"Are you hearing things now?\" CR>"
+ },
+ {
+  "key": "gf6f8",
+  "en": "A strange grey machine, shaped somewhat like a clothes dryer, is on one side of the room. On the other side of the hall is a powerful-looking black machine, a tight tangle of wires, pipes, and motors.\nA plaque is mounted near the door.",
+  "args": [],
+  "routine": "MUSEUM-PIECES",
+  "zil": "<TELL \"A strange grey machine, shaped somewhat like a clothes dryer, is on one side of the room. On the other side of the hall is a powerful-looking black machine, a tight tangle of wires, pipes, and motors.\\n A plaque is mounted near the door.\">"
+ },
+ {
+  "key": "gf78e",
+  "en": " The grey machine, it turns out, is a Frobozz Magic Pressurizer, used in the coal mines of the Empire. The black machine is a Frobozz Magic Room Spinner. The golden machine is referred to as a Temporizer. All are nonworking models donated by Frobozzco president John D. Flathead.\n",
+  "args": [],
+  "routine": "MUSEUM-PIECES",
+  "zil": "<TELL \" The grey machine, it turns out, is a Frobozz Magic Pressurizer, used in the coal mines of the Empire. The black machine is a Frobozz Magic Room Spinner. The golden machine is referred to as a Temporizer. All are nonworking models donated by Frobozzco president John D. Flathead.\" CR>"
+ },
+ {
+  "key": "gf841",
+  "en": " The writing is faded, however, and cannot be made out clearly. The two machines seem to be in bad shape, rusting in many spots.\n",
+  "args": [],
+  "routine": "MUSEUM-PIECES",
+  "zil": "<TELL \" The writing is faded, however, and cannot be made out clearly. The two machines seem to be in bad shape, rusting in many spots.\" CR>"
+ },
+ {
+  "key": "gf892",
+  "en": "It's massive and cannot even be moved.\n",
+  "args": [],
+  "routine": "MUSEUM-PIECES",
+  "zil": "<TELL \"It's massive and cannot even be moved.\" CR>"
+ },
+ {
+  "key": "gf8af",
+  "en": "It's too heavy to be pushed.\n",
+  "args": [],
+  "routine": "MUSEUM-PIECES",
+  "zil": "<TELL \"It's too heavy to be pushed.\" CR>"
+ },
+ {
+  "key": "gf8c8",
+  "en": "It seems quite indestructible.\n",
+  "args": [],
+  "routine": "MUSEUM-PIECES",
+  "zil": "<TELL \"It seems quite indestructible.\" CR>"
+ },
+ {
+  "key": "gf8e5",
+  "en": "There's no good place to put anything there.\n",
+  "args": [],
+  "routine": "MUSEUM-PIECES",
+  "zil": "<TELL \"There's no good place to put anything there.\" CR>"
+ },
+ {
+  "key": "gf903",
+  "en": "It's bolted to the wall.\n",
+  "args": [],
+  "routine": "TECH-PLAQUE-F",
+  "zil": "<TELL \"It's bolted to the wall.\" CR>"
+ },
+ {
+  "key": "gf91f",
+  "en": "The plaque merely identifies the machines and names their donor. They are nonworking models of existing state-of-the-art machinery.\n",
+  "args": [],
+  "routine": "TECH-PLAQUE-F",
+  "zil": "<TELL \"The plaque merely identifies the machines and names their donor. They are nonworking models of existing state-of-the-art machinery.\" CR>"
+ },
+ {
+  "key": "gf976",
+  "en": "The words cannot be made out.\n",
+  "args": [],
+  "routine": "TECH-PLAQUE-F",
+  "zil": "<TELL \"The words cannot be made out.\" CR>"
+ },
+ {
+  "key": "gf993",
+  "en": "The Royal Jewels are on the pedestal.\n",
+  "args": [],
+  "routine": "PEDESTAL-F",
+  "zil": "<TELL \"The Royal Jewels are on the pedestal.\" CR>"
+ },
+ {
+  "key": "gf9b3",
+  "en": "You can't reach it through the cage.\n",
+  "args": [],
+  "routine": "PEDESTAL-F",
+  "zil": "<TELL \"You can't reach it through the cage.\" CR>"
+ },
+ {
+  "key": "gfa09",
+  "en": "A cloaked and hooded person, carrying a sword not unlike your own,",
+  "args": [],
+  "routine": "SHADOW-F",
+  "zil": "<TELL \"A cloaked and hooded person, carrying a sword not unlike your own,\">"
+ },
+ {
+  "key": "gfa34",
+  "en": " is standing blocking the way to the ",
+  "args": [],
+  "routine": "SHADOW-F",
+  "zil": "<TELL \" is standing blocking the way to the \">"
+ },
+ {
+  "key": "gfa4c",
+  "en": "{0}.\n",
+  "args": [
+   "s"
+  ],
+  "routine": "SHADOW-F",
+  "zil": "<TELL <LKP ,BLOCKED-DIR ,DIRS> \".\" CR>"
+ },
+ {
+  "key": "gfa55",
+  "en": " is here.\n",
+  "args": [],
+  "routine": "SHADOW-F",
+  "zil": "<TELL \" is here.\" CR>"
+ },
+ {
+  "key": "gfa5d",
+  "en": "The hooded figure",
+  "args": [],
+  "routine": "SHADOW-F",
+  "zil": "<TELL \"The hooded figure\" <GET ,SHADOW-DIAG ,S-STRENGTH> CR>"
+ },
+ {
+  "key": "gfa76",
+  "en": "The hooded figure isn't interested in your gifts.\n",
+  "args": [],
+  "routine": "SHADOW-F",
+  "zil": "<TELL \"The hooded figure isn't interested in your gifts.\" CR>"
+ },
+ {
+  "key": "gfa94",
+  "en": "The hooded figure does not respond to your words.\n",
+  "args": [],
+  "routine": "SHADOW-F",
+  "zil": "<TELL \"The hooded figure does not respond to your words.\" CR>"
+ },
+ {
+  "key": "gfac5",
+  "en": "The hooded figure ignores your feeble attack.\n",
+  "args": [],
+  "routine": "SHADOW-F",
+  "zil": "<TELL \"The hooded figure ignores your feeble attack.\" CR>"
+ },
+ {
+  "key": "gfb68",
+  "en": "{0}\nThe figure",
+  "args": [
+   "s"
+  ],
+  "routine": "SHADOW-ATTACK",
+  "zil": "<TELL \"The figure\" <GET ,SHADOW-DIAG ,S-STRENGTH> CR>"
+ },
+ {
+  "key": "gfb91",
+  "en": "A sharp thrust and the hooded figure is badly wounded!\nThe figure",
+  "args": [],
+  "routine": "SHADOW-ATTACK",
+  "zil": "<TELL \"The figure\" <GET ,SHADOW-DIAG ,S-STRENGTH> CR>"
+ },
+ {
+  "key": "gfbc2",
+  "en": "Your opponent blocks your attack with its sword.\n",
+  "args": [],
+  "routine": "SHADOW-ATTACK",
+  "zil": "<TELL \"Your opponent blocks your attack with its sword.\" CR>"
+ },
+ {
+  "key": "gfc07",
+  "en": "Your sword, glowing wildly, leaps into your hand!\n",
+  "args": [],
+  "routine": "I-SHADOW-REPLY",
+  "zil": "<TELL \"Your sword, glowing wildly, leaps into your hand!\" CR>"
+ },
+ {
+  "key": "gfc4c",
+  "en": "The hooded figure swings its sword and sends yours flying to the ground. Although you are defenseless, the figure reaches for your sword and hands it back to you, nodding grimly.\n",
+  "args": [],
+  "routine": "I-SHADOW-REPLY",
+  "zil": "<TELL \"The hooded figure swings its sword and sends yours flying to the ground. Although you are defenseless, the figure reaches for your sword and hands it back to you, nodding grimly.\" CR>"
+ },
+ {
+  "key": "gfcc3",
+  "en": "A brilliant feint puts you off guard, and the hooded figure slips its sword between your ribs. You are hurt very badly.\n",
+  "args": [],
+  "routine": "I-SHADOW-REPLY",
+  "zil": "<TELL \"A brilliant feint puts you off guard, and the hooded figure slips its sword between your ribs. You are hurt very badly.\" CR>"
+ },
+ {
+  "key": "gfd08",
+  "en": "The hooded figure attempts a thrust, but its weakened state prevents hitting you.\n",
+  "args": [],
+  "routine": "I-SHADOW-REPLY",
+  "zil": "<TELL \"The hooded figure attempts a thrust, but its weakened state prevents hitting you.\" CR>"
+ },
+ {
+  "key": "gfd43",
+  "en": "The hooded figure, fatally wounded, slumps to the ground. It gazes up at you once, and you catch a brief glimpse of deep and sorrowful eyes. Before you can react, the figure vanishes in a cloud of fetid vapor.\n",
+  "args": [],
+  "routine": "SHADOW-DIES",
+  "zil": "<TELL \"The hooded figure, fatally wounded, slumps to the ground. It gazes up at you once, and you catch a brief glimpse of deep and sorrowful eyes. Before you can react, the figure vanishes in a cloud of fetid vapor.\" CR>"
+ },
+ {
+  "key": "gfdd1",
+  "en": "The figure's hood casts a dark shadow over its face. There is no way from where you stand to look beneath it.\n",
+  "args": [],
+  "routine": "HOOD-F",
+  "zil": "<TELL \"The figure's hood casts a dark shadow over its face. There is no way from where you stand to look beneath it.\" CR>"
+ },
+ {
+  "key": "gfe1f",
+  "en": "You slowly remove the hood from your badly wounded opponent and recoil in horror at the sight of your own face, weary and wounded. A faint smile comes to the lips and then the face starts to change, very slowly, into that of an old, wizened person. The image fades and with it the body of your hooded opponent. The cloak remains on the ground.\n",
+  "args": [],
+  "routine": "HOOD-F",
+  "zil": "<TELL \"You slowly remove the hood from your badly wounded opponent and recoil in horror at the sight of your own face, weary and wounded. A faint smile comes to the lips and then the face starts to change, very slowly, into that of an old, wizened person. The image fades and with it the body of your hooded opponent. The cloak remains on the ground.\" CR>"
+ },
+ {
+  "key": "gfef3",
+  "en": "The hooded figure, though recovering from wounds, is strong enough to force you back.\n",
+  "args": [],
+  "routine": "HOOD-F",
+  "zil": "<TELL \"The hooded figure, though recovering from wounds, is strong enough to force you back.\" CR>"
+ },
+ {
+  "key": "gff24",
+  "en": "You cannot get close enough to the hooded figure to remove the hood.\n",
+  "args": [],
+  "routine": "HOOD-F",
+  "zil": "<TELL \"You cannot get close enough to the hooded figure to remove the hood.\" CR>"
+ },
+ {
+  "key": "gff4f",
+  "en": "You cannot get close enough to look underneath the cloak.\n",
+  "args": [],
+  "routine": "CLOAK-F",
+  "zil": "<TELL \"You cannot get close enough to look underneath the cloak.\" CR>"
+ },
+ {
+  "key": "gff78",
+  "en": "The cloak is fastened around the neck of the hooded figure. It would be difficult to remove.\n",
+  "args": [],
+  "routine": "CLOAK-F",
+  "zil": "<TELL \"The cloak is fastened around the neck of the hooded figure. It would be difficult to remove.\" CR>"
+ },
+ {
+  "key": "gffb7",
+  "en": "Your way is blocked by the hooded figure.\n",
+  "args": [],
+  "routine": "SHADOW-ROOMS",
+  "zil": "<TELL \"Your way is blocked by the hooded figure.\" CR>"
+ },
+ {
+  "key": "g10014",
+  "en": "You can hear quiet footsteps nearby.\n",
+  "args": [],
+  "routine": "SHADOW-ROOMS",
+  "zil": "<TELL \"You can hear quiet footsteps nearby.\" CR>"
+ },
+ {
+  "key": "g10040",
+  "en": "Through the shadows, a cloaked and hooded figure appears before you, blocking the ",
+  "args": [],
+  "routine": "SHADOW-ROOMS",
+  "zil": "<TELL \"Through the shadows, a cloaked and hooded figure appears before you, blocking the \">"
+ },
+ {
+  "key": "g1006e",
+  "en": "{0}ern exit from the room and carrying a brightly glowing sword.\n",
+  "args": [
+   "s"
+  ],
+  "routine": "SHADOW-ROOMS",
+  "zil": "<TELL <LKP ,BLOCKED-DIR ,DIRS> \"ern exit from the room and carrying a brightly glowing sword.\" CR>"
+ },
+ {
+  "key": "g100b0",
+  "en": "From nowhere, the sword from the junction appears in your hand, wildly glowing!\n",
+  "args": [],
+  "routine": "SHADOW-ARRIVAL",
+  "zil": "<TELL \"From nowhere, the sword from the junction appears in your hand, wildly glowing!\" CR>"
+ },
+ {
+  "key": "g100df",
+  "en": "Your sword, glowing wildly, appears in your hand!\n",
+  "args": [],
+  "routine": "SHADOW-ARRIVAL",
+  "zil": "<TELL \"Your sword, glowing wildly, appears in your hand!\" CR>"
+ },
+ {
+  "key": "g1011d",
+  "en": "You're not holding that!\n",
+  "args": [],
+  "routine": "LEDGE-F",
+  "zil": "<TELL \"You're not holding that!\" CR>"
+ },
+ {
+  "key": "g10133",
+  "en": "The {0} falls to the base of the cliff below.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "LEDGE-F",
+  "zil": "<TELL \"The \" D ,PRSO \" falls to the base of the cliff below.\" CR>"
+ },
+ {
+  "key": "g10159",
+  "en": "The bread is crushed rather than cut by your sword, and the crumbs scatter to the wind.\n",
+  "args": [],
+  "routine": "WAYBREAD-F",
+  "zil": "<TELL \"The bread is crushed rather than cut by your sword, and the crumbs scatter to the wind.\" CR>"
+ },
+ {
+  "key": "g101b9",
+  "en": "All at once, the chest is lifted from you. Looking up, you see a man at the top of the cliff, pulling intently at the rope. \"That is uncommonly good of you, I do say!\" He chuckles unpleasantly. \"Oh, you are stuck, aren't you. Well, I'll be right back to get you!\" He leaves your sight.\n",
+  "args": [],
+  "routine": "I-MAN-APPEARS",
+  "zil": "<TELL \"All at once, the chest is lifted from you. Looking up, you see a man at the top of the cliff, pulling intently at the rope. \\\"That is uncommonly good of you, I do say!\\\" He chuckles unpleasantly. \\\"Oh, you are stuck, aren't you. Well, I'll be right back to get you!\\\" He leaves your sight.\" CR>"
+ },
+ {
+  "key": "g10286",
+  "en": "At the edge of the cliff above you, a man appears. He looks down at you and speaks. \"Hello, down there! You seem to have a problem. Maybe I can help you.\" He chuckles in an unsettling sort of way. \"Perhaps if you tied that chest to the end of the rope I might be able to drag it up for you. Then, I'll be more than happy to help you up!\" He laughs again.\n",
+  "args": [],
+  "routine": "I-MAN-APPEARS",
+  "zil": "<TELL \"At the edge of the cliff above you, a man appears. He looks down at you and speaks. \\\"Hello, down there! You seem to have a problem. Maybe I can help you.\\\" He chuckles in an unsettling sort of way. \\\"Perhaps if you tied that chest to the end of the rope I might be able to drag it up for you. Then, I'll be more than happy to help you up!\\\" He laughs again.\" CR>"
+ },
+ {
+  "key": "g1038f",
+  "en": "The man looks quite displeased. \"All right, then. I guess someone else can always help me! See you around, sport!\" He disappears.\n",
+  "args": [],
+  "routine": "I-MAN-PRESENT",
+  "zil": "<TELL \"The man looks quite displeased. \\\"All right, then. I guess someone else can always help me! See you around, sport!\\\" He disappears.\" CR>"
+ },
+ {
+  "key": "g1042a",
+  "en": "You can't go anywhere holding that chest. The rope is tied around it!\n",
+  "args": [],
+  "routine": "CLIFF-LEDGE-F",
+  "zil": "<TELL \"You can't go anywhere holding that chest. The rope is tied around it!\" CR>"
+ },
+ {
+  "key": "g10474",
+  "en": "This is a rock-strewn ledge near the base of a tall cliff. The bottom of the cliff is another fifteen feet below. You have little hope of climbing up the cliff face, but you might be able to scramble down from here (though it's doubtful you could return).\n",
+  "args": [],
+  "routine": "CLIFF-LEDGE-F",
+  "zil": "<TELL \"This is a rock-strewn ledge near the base of a tall cliff. The bottom of the cliff is another fifteen feet below. You have little hope of climbing up the cliff face, but you might be able to scramble down from here (though it's doubtful you could return).\" CR>"
+ },
+ {
+  "key": "g1050f",
+  "en": "A long piece of rope is dangling down from the top of the cliff and is within your reach.\n",
+  "args": [],
+  "routine": "CLIFF-LEDGE-F",
+  "zil": "<TELL \"A long piece of rope is dangling down from the top of the cliff and is within your reach.\" CR>"
+ },
+ {
+  "key": "g1056a",
+  "en": "This is a remarkable spot in the dungeon. Perhaps two hundred feet above you is a gaping hole in the earth's surface through which pours bright sunshine! A few seedlings from the world above, nurtured by the sunlight and occasional rains, have grown into giant trees, making this a virtual oasis in the desert of the Underground Empire. To the west is a sheer precipice, dropping nearly fifty feet to jagged rocks below. The way south is barred by a forbidding stone wall, crumbling from age. There is a jagged opening in the wall to the southwest, through which leaks a fine mist. The land to the east looks lifeless and barren.\n",
+  "args": [],
+  "routine": "CLIFF-F",
+  "zil": "<TELL \"This is a remarkable spot in the dungeon. Perhaps two hundred feet above you is a gaping hole in the earth's surface through which pours bright sunshine! A few seedlings from the world above, nurtured by the sunlight and occasional rains, have grown into giant trees, making this a virtual oasis in the desert of the Underground Empire. To the west is a sheer precipice, dropping nearly fifty feet to jagged rocks below. The way south is barred by a forbidding stone wall, crumbling from age. There is a jagged opening in the wall to the southwest, through which leaks a fine mist. The land to the east looks lifeless and barren.\" CR>"
+ },
+ {
+  "key": "g106c1",
+  "en": "A rope is tied to one of the large trees here and is dangling over the side of the cliff, reaching down to the shelf below.\n",
+  "args": [],
+  "routine": "CLIFF-F",
+  "zil": "<TELL \"A rope is tied to one of the large trees here and is dangling over the side of the cliff, reaching down to the shelf below.\" CR>"
+ },
+ {
+  "key": "g10716",
+  "en": "You catch, out of the corner of your eye, some movement among the trees.\n",
+  "args": [],
+  "routine": "CLIFF-F",
+  "zil": "<TELL \"You catch, out of the corner of your eye, some movement among the trees.\" CR>"
+ },
+ {
+  "key": "g10749",
+  "en": "You seem to hear, from the southwest, the sounds of the sea.\n",
+  "args": [],
+  "routine": "CLIFF-F",
+  "zil": "<TELL \"You seem to hear, from the southwest, the sounds of the sea.\" CR>"
+ },
+ {
+  "key": "g1076c",
+  "en": "You can't see any rope here.\n",
+  "args": [],
+  "routine": "GLOBAL-ROPE-F",
+  "zil": "<TELL \"You can't see any rope here.\" CR>"
+ },
+ {
+  "key": "g10792",
+  "en": "A short tug on the rope convinces you that it is securely fastened from above.\n",
+  "args": [],
+  "routine": "GLOBAL-ROPE-F",
+  "zil": "<TELL \"A short tug on the rope convinces you that it is securely fastened from above.\" CR>"
+ },
+ {
+  "key": "g107c6",
+  "en": "You grab securely on to the rope.\n",
+  "args": [],
+  "routine": "GLOBAL-ROPE-F",
+  "zil": "<TELL \"You grab securely on to the rope.\" CR>"
+ },
+ {
+  "key": "g107db",
+  "en": "The man scowls. \"I may help you up, but not before I have that chest.\" He points to the chest near you on the ledge.\n",
+  "args": [],
+  "routine": "GLOBAL-ROPE-F",
+  "zil": "<TELL \"The man scowls. \\\"I may help you up, but not before I have that chest.\\\" He points to the chest near you on the ledge.\" CR>"
+ },
+ {
+  "key": "g1081e",
+  "en": "You try to climb the rope, but you cannot reach the top even with your best effort.\n",
+  "args": [],
+  "routine": "GLOBAL-ROPE-F",
+  "zil": "<TELL \"You try to climb the rope, but you cannot reach the top even with your best effort.\" CR>"
+ },
+ {
+  "key": "g10855",
+  "en": "The chest is now tied to the rope.\n",
+  "args": [],
+  "routine": "GLOBAL-ROPE-F",
+  "zil": "<TELL \"The chest is now tied to the rope.\" CR>"
+ },
+ {
+  "key": "g10874",
+  "en": "The man above you looks pleased. \"Now there's a good friend! Thank you very much, indeed!\" He pulls on the rope and the chest is lifted to the top of the cliff and out of sight. With a short laugh, he disappears. \"I'll be back in a short while!\" are his last words.\n",
+  "args": [],
+  "routine": "GLOBAL-ROPE-F",
+  "zil": "<TELL \"The man above you looks pleased. \\\"Now there's a good friend! Thank you very much, indeed!\\\" He pulls on the rope and the chest is lifted to the top of the cliff and out of sight. With a short laugh, he disappears. \\\"I'll be back in a short while!\\\" are his last words.\" CR>"
+ },
+ {
+  "key": "g1093f",
+  "en": "\"Just grab onto it!\", the man bellows.\n",
+  "args": [],
+  "routine": "GLOBAL-ROPE-F",
+  "zil": "<TELL \"\\\"Just grab onto it!\\\", the man bellows.\" CR>"
+ },
+ {
+  "key": "g10960",
+  "en": "The man looks cross. \"I want the chest, not you!\" he snaps. \"Now stop fooling around and pass it up!\"\n",
+  "args": [],
+  "routine": "GLOBAL-ROPE-F",
+  "zil": "<TELL \"The man looks cross. \\\"I want the chest, not you!\\\" he snaps. \\\"Now stop fooling around and pass it up!\\\"\" CR>"
+ },
+ {
+  "key": "g1099f",
+  "en": "You're unable to tie the rope around yourself.\n",
+  "args": [],
+  "routine": "GLOBAL-ROPE-F",
+  "zil": "<TELL \"You're unable to tie the rope around yourself.\" CR>"
+ },
+ {
+  "key": "g109bc",
+  "en": "You're unable to tie the rope to that.\n",
+  "args": [],
+  "routine": "GLOBAL-ROPE-F",
+  "zil": "<TELL \"You're unable to tie the rope to that.\" CR>"
+ },
+ {
+  "key": "g109e1",
+  "en": "The chest is now disconnected from the rope.\n",
+  "args": [],
+  "routine": "GLOBAL-ROPE-F",
+  "zil": "<TELL \"The chest is now disconnected from the rope.\" CR>"
+ },
+ {
+  "key": "g109fc",
+  "en": "The rope isn't tied to anything.\n",
+  "args": [],
+  "routine": "GLOBAL-ROPE-F",
+  "zil": "<TELL \"The rope isn't tied to anything.\" CR>"
+ },
+ {
+  "key": "g10a18",
+  "en": "A familiar voice calls down to you. \"Are you still there?\" he bellows with a coarse laugh. \"Well, then, grab onto the rope and we'll see what we can do.\" The rope drops to within your reach.\n",
+  "args": [],
+  "routine": "I-MAN-RETURNS",
+  "zil": "<TELL \"A familiar voice calls down to you. \\\"Are you still there?\\\" he bellows with a coarse laugh. \\\"Well, then, grab onto the rope and we'll see what we can do.\\\" The rope drops to within your reach.\" CR>"
+ },
+ {
+  "key": "g10abd",
+  "en": "The man starts to heave on the rope and within a few moments you arrive at the top of the cliff. The man removes the last few valuables from the chest and prepares to leave. \"You've been a good sport! Here, take this, for whatever good it is! I can't see that I'll be needing one!\" He hands you a plain wooden staff from the bottom of the chest and begins examining his valuables.\n",
+  "args": [],
+  "routine": "I-MAN-LIFT",
+  "zil": "<TELL \"The man starts to heave on the rope and within a few moments you arrive at the top of the cliff. The man removes the last few valuables from the chest and prepares to leave. \\\"You've been a good sport! Here, take this, for whatever good it is! I can't see that I'll be needing one!\\\" He hands you a plain wooden staff from the bottom of the chest and begins examining his valuables.\" CR>"
+ },
+ {
+  "key": "g10bb3",
+  "en": "The chest, open and empty, is at your feet.\n",
+  "args": [],
+  "routine": "I-MAN-LIFT",
+  "zil": "<TELL \"The chest, open and empty, is at your feet.\" CR>"
+ },
+ {
+  "key": "g10be7",
+  "en": "\"Well, I don't have all day. See you around sometime.\" Showering you with gravel, he disappears from sight.\n",
+  "args": [],
+  "routine": "I-MAN-LIFT",
+  "zil": "<TELL \"\\\"Well, I don't have all day. See you around sometime.\\\" Showering you with gravel, he disappears from sight.\" CR>"
+ },
+ {
+  "key": "g10c38",
+  "en": "The man appears impatient. \"Are you coming up then, or not?\"\n",
+  "args": [],
+  "routine": "I-MAN-LIFT",
+  "zil": "<TELL \"The man appears impatient. \\\"Are you coming up then, or not?\\\"\" CR>"
+ },
+ {
+  "key": "g10c6d",
+  "en": "What's the point?\n",
+  "args": [],
+  "routine": "CHEST-F",
+  "zil": "<TELL \"What's the point?\" CR>"
+ },
+ {
+  "key": "g10c85",
+  "en": "It doesn't fit.",
+  "args": [],
+  "routine": "CHEST-F",
+  "zil": "<TELL \"It doesn't fit.\">"
+ },
+ {
+  "key": "g10c90",
+  "en": " Awfully peculiar, though, since it's where the staff came from.",
+  "args": [],
+  "routine": "CHEST-F",
+  "zil": "<TELL \" Awfully peculiar, though, since it's where the staff came from.\">"
+ },
+ {
+  "key": "g10cc7",
+  "en": "The man calls down to you. \"Is this what you're looking for?\" he cackles, waving a small key over his head. You try to open the chest, but it is locked.\n",
+  "args": [],
+  "routine": "CHEST-F",
+  "zil": "<TELL \"The man calls down to you. \\\"Is this what you're looking for?\\\" he cackles, waving a small key over his head. You try to open the chest, but it is locked.\" CR>"
+ },
+ {
+  "key": "g10d22",
+  "en": "The chest is locked and cannot be opened.\n",
+  "args": [],
+  "routine": "CHEST-F",
+  "zil": "<TELL \"The chest is locked and cannot be opened.\" CR>"
+ },
+ {
+  "key": "g10d5c",
+  "en": "Your \"friend\", moving quickly, dodges behind some trees and is lost from sight.\n",
+  "args": [],
+  "routine": "I-MAN-LEAVES",
+  "zil": "<TELL \"Your \\\"friend\\\", moving quickly, dodges behind some trees and is lost from sight.\" CR>"
+ },
+ {
+  "key": "g10da2",
+  "en": "Your \"friend\" examines his valuables with great pride.\n",
+  "args": [],
+  "routine": "I-MAN-LEAVES",
+  "zil": "<TELL \"Your \\\"friend\\\" examines his valuables with great pride.\" CR>"
+ },
+ {
+  "key": "g10dc7",
+  "en": "He responds cheerfully. \"It is a wonderful day, isn't it?\"\n",
+  "args": [],
+  "routine": "MAN-F",
+  "zil": "<TELL \"He responds cheerfully. \\\"It is a wonderful day, isn't it?\\\"\" CR>"
+ }
+]

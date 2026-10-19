@@ -1,0 +1,779 @@
+[
+ {
+  "key": "gb51c",
+  "en": "You are in the middle of a long north-south corridor whose walls are polished stone. A narrow red beam of light crosses the room at the north end, inches above the floor.\n",
+  "args": [],
+  "routine": "MREYE-ROOM",
+  "zil": "<TELL \"You are in the middle of a long north-south corridor whose walls are polished stone. A narrow red beam of light crosses the room at the north end, inches above the floor.\" CR>"
+ },
+ {
+  "key": "gb57a",
+  "en": "The beam is blocked by a {0} lying on the floor.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "MREYE-ROOM",
+  "zil": "<TELL \"The beam is blocked by a \" D .O \" lying on the floor.\" CR>"
+ },
+ {
+  "key": "gb5c5",
+  "en": "You jump over the beam and into the hallway.\n",
+  "args": [],
+  "routine": "BEAM-FUNCTION",
+  "zil": "<TELL \"You jump over the beam and into the hallway.\" CR>"
+ },
+ {
+  "key": "gb5ea",
+  "en": "It simply crosses the northern end of the room, so there's nowhere to follow it.\n",
+  "args": [],
+  "routine": "BEAM-FUNCTION",
+  "zil": "<TELL \"It simply crosses the northern end of the room, so there's nowhere to follow it.\" CR>"
+ },
+ {
+  "key": "gb61e",
+  "en": "The red beam of light crosses the north end of the room only an inch or so above the floor.",
+  "args": [],
+  "routine": "BEAM-FUNCTION",
+  "zil": "<TELL \"The red beam of light crosses the north end of the room only an inch or so above the floor.\">"
+ },
+ {
+  "key": "gb657",
+  "en": " The beam is broken by a {0} lying on the ground.",
+  "args": [
+   "o"
+  ],
+  "routine": "BEAM-FUNCTION",
+  "zil": "<TELL \" The beam is broken by a \" D ,BEAM-BREAKER \" lying on the ground.\">"
+ },
+ {
+  "key": "gb6a6",
+  "en": "The beam is now interrupted by a {0} lying on the floor.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "BEAM-FUNCTION",
+  "zil": "<TELL \"The beam is now interrupted by a \" D .PRI \" lying on the floor.\" CR>"
+ },
+ {
+  "key": "gb6ce",
+  "en": "The {0} already breaks the beam.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "BEAM-FUNCTION",
+  "zil": "<TELL \"The \" D .PRI \" already breaks the beam.\" CR>"
+ },
+ {
+  "key": "gb6e4",
+  "en": "The beam is broken briefly as it passes through.\n",
+  "args": [],
+  "routine": "BEAM-FUNCTION",
+  "zil": "<TELL \"The beam is broken briefly as it passes through.\" CR>"
+ },
+ {
+  "key": "gb703",
+  "en": "You're not holding the {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "BEAM-FUNCTION",
+  "zil": "<TELL \"You're not holding the \" D .PRI \".\" CR>"
+ },
+ {
+  "key": "gb71f",
+  "en": "No doubt you have a bottle of moonbeams as well.\n",
+  "args": [],
+  "routine": "BEAM-FUNCTION",
+  "zil": "<TELL \"No doubt you have a bottle of moonbeams as well.\" CR>"
+ },
+ {
+  "key": "gb746",
+  "en": "Click.\n",
+  "args": [],
+  "routine": "MRSWITCH",
+  "zil": "<TELL \"Click.\" CR>"
+ },
+ {
+  "key": "gb755",
+  "en": "Click. Snap!\n",
+  "args": [],
+  "routine": "MRSWITCH",
+  "zil": "<TELL \"Click. Snap!\" CR>"
+ },
+ {
+  "key": "gb77b",
+  "en": "Click.\n",
+  "args": [],
+  "routine": "MRSWITCH",
+  "zil": "<TELL \"Click.\" CR>"
+ },
+ {
+  "key": "gb797",
+  "en": "The mirror quietly swings shut.\n",
+  "args": [],
+  "routine": "I-MRINT",
+  "zil": "<TELL \"The mirror quietly swings shut.\" CR>"
+ },
+ {
+  "key": "gb7ae",
+  "en": "The button pops back to its original position.\n",
+  "args": [],
+  "routine": "I-MRINT",
+  "zil": "<TELL \"The button pops back to its original position.\" CR>"
+ },
+ {
+  "key": "gb7d3",
+  "en": "You are inside a rectangular box of wood whose structure is rather complicated. Four sides and the roof are filled in, and the floor is open.\n\nAs you face the side opposite the entrance, two short sides of carved and polished wood are to your left and right. The left panel is mahogany, the right pine. The wall you face is red on its left half and black on its right. On the entrance side, the wall is white opposite the red part of the wall it faces, and yellow opposite the black section. The painted walls are at least twice the length of the unpainted ones. The ceiling is painted blue.\n\nIn the floor is a stone channel about six inches wide and a foot deep. The channel is oriented in a north-south direction. In the exact center of the room the channel widens into a circular depression perhaps two feet wide. Incised in the stone around this area is a compass rose.\n\nRunning from one short wall to the other at about waist height is a wooden bar, carefully carved and drilled. This bar is pierced in two places. The first hole is in the center of the bar (and thus the center of the room). The second is at the left end of the room (as you face opposite the entrance). Through each hole runs a wooden pole.\n\nThe pole at the left end of the bar is short, extending about a foot above the bar, and ends in a hand grip. The pole ",
+  "args": [],
+  "routine": "MAGIC-MIRROR",
+  "zil": "<TELL \"You are inside a rectangular box of wood whose structure is rather complicated. Four sides and the roof are filled in, and the floor is open.\\n \\n As you face the side opposite the entrance, two short sides of carved and polished wood are to your left and right. The left panel is mahogany, the right pine. The wall you face is red on its left half and black on its right. On the entrance side, the wall is white opposite the red part of the wall it faces, and yellow opposite the black section. The painted walls are at least twice the length of the unpainted ones. The ceiling is painted blue.\\n \\n In the floor is a stone channel about six inches wide and a foot deep. The channel is oriented in a north-south direction. In the exact center of the room the channel widens into a circular depression perhaps two feet wide. Incised in the stone around this area is a compass rose.\\n \\n Running from one short wall to the other at about waist height is a wooden bar, carefully carved and drilled. This bar is pierced in two places. The first hole is in the center of the bar (and thus the center of the room). The second is at the left end of the room (as you face opposite the entrance). Through each hole runs a wooden pole.\\n \\n The pole at the left end of the bar is short, extending about a foot above the bar, and ends in a hand grip. The pole \">"
+ },
+ {
+  "key": "gbac4",
+  "en": "has been lifted out of a hole carved in the stone floor. There is evidently enough friction to keep the pole from dropping back down.",
+  "args": [],
+  "routine": "MAGIC-MIRROR",
+  "zil": "<TELL \"has been lifted out of a hole carved in the stone floor. There is evidently enough friction to keep the pole from dropping back down.\">"
+ },
+ {
+  "key": "gbb0e",
+  "en": "has been dropped into a hole carved in the stone floor.",
+  "args": [],
+  "routine": "MAGIC-MIRROR",
+  "zil": "<TELL \"has been dropped into a hole carved in the stone floor.\">"
+ },
+ {
+  "key": "gbb37",
+  "en": "is positioned above the stone channel in the floor.",
+  "args": [],
+  "routine": "MAGIC-MIRROR",
+  "zil": "<TELL \"is positioned above the stone channel in the floor.\">"
+ },
+ {
+  "key": "gbb51",
+  "en": "has been dropped into the stone channel incised in the floor.",
+  "args": [],
+  "routine": "MAGIC-MIRROR",
+  "zil": "<TELL \"has been dropped into the stone channel incised in the floor.\">"
+ },
+ {
+  "key": "gbb6f",
+  "en": "is resting on the stone floor.",
+  "args": [],
+  "routine": "MAGIC-MIRROR",
+  "zil": "<TELL \"is resting on the stone floor.\">"
+ },
+ {
+  "key": "gbb80",
+  "en": "\n\nThe long pole at the center of the bar extends from the ceiling through the bar to the circular area in the stone channel. This bottom end of the pole has a T-bar a bit less than two feet long attached to it, and on the T-bar is carved an arrow. The arrow and T-bar are pointing ",
+  "args": [],
+  "routine": "MAGIC-MIRROR",
+  "zil": "<TELL \"\\n \\n The long pole at the center of the bar extends from the ceiling through the bar to the circular area in the stone channel. This bottom end of the pole has a T-bar a bit less than two feet long attached to it, and on the T-bar is carved an arrow. The arrow and T-bar are pointing \" <GET ,LONGDIRS </ ,MDIR 45>> \".\">"
+ },
+ {
+  "key": "gbc27",
+  "en": "{0}.",
+  "args": [
+   "s"
+  ],
+  "routine": "MAGIC-MIRROR",
+  "zil": "<TELL \"\\n \\n The long pole at the center of the bar extends from the ceiling through the bar to the circular area in the stone channel. This bottom end of the pole has a T-bar a bit less than two feet long attached to it, and on the T-bar is carved an arrow. The arrow and T-bar are pointing \" <GET ,LONGDIRS </ ,MDIR 45>> \".\">"
+ },
+ {
+  "key": "gbc2f",
+  "en": "\nThe pine panel has been opened outward.",
+  "args": [],
+  "routine": "MAGIC-MIRROR",
+  "zil": "<TELL \"\\n The pine panel has been opened outward.\">"
+ },
+ {
+  "key": "gbc7a",
+  "en": "The structure rotates clockwise.\n",
+  "args": [],
+  "routine": "MPANELS",
+  "zil": "<TELL \"The structure rotates clockwise.\" CR>"
+ },
+ {
+  "key": "gbc9b",
+  "en": "The structure rotates counterclockwise.\n",
+  "args": [],
+  "routine": "MPANELS",
+  "zil": "<TELL \"The structure rotates counterclockwise.\" CR>"
+ },
+ {
+  "key": "gbcb1",
+  "en": "The arrow on the compass rose now indicates ",
+  "args": [],
+  "routine": "MPANELS",
+  "zil": "<TELL \"The arrow on the compass rose now indicates \" <GET ,LONGDIRS </ .MD 45>> \".\" CR>"
+ },
+ {
+  "key": "gbcd4",
+  "en": "{0}.\n",
+  "args": [
+   "s"
+  ],
+  "routine": "MPANELS",
+  "zil": "<TELL \"The arrow on the compass rose now indicates \" <GET ,LONGDIRS </ .MD 45>> \".\" CR>"
+ },
+ {
+  "key": "gbce0",
+  "en": "The pine wall closes quietly.\n",
+  "args": [],
+  "routine": "MPANELS",
+  "zil": "<TELL \"The pine wall closes quietly.\" CR>"
+ },
+ {
+  "key": "gbcff",
+  "en": "The short pole prevents the structure from rotating.\n",
+  "args": [],
+  "routine": "MPANELS",
+  "zil": "<TELL \"The short pole prevents the structure from rotating.\" CR>"
+ },
+ {
+  "key": "gbd1a",
+  "en": "The structure shakes slightly but doesn't move.\n",
+  "args": [],
+  "routine": "MPANELS",
+  "zil": "<TELL \"The structure shakes slightly but doesn't move.\" CR>"
+ },
+ {
+  "key": "gbd37",
+  "en": "You can't do that to the panel.\n",
+  "args": [],
+  "routine": "MENDS",
+  "zil": "<TELL \"You can't do that to the panel.\" CR>"
+ },
+ {
+  "key": "gbd59",
+  "en": "The structure rocks back and forth slightly but doesn't move.\n",
+  "args": [],
+  "routine": "MENDS",
+  "zil": "<TELL \"The structure rocks back and forth slightly but doesn't move.\" CR>"
+ },
+ {
+  "key": "gbda3",
+  "en": "The structure has reached the end of the stone channel and won't budge.\n",
+  "args": [],
+  "routine": "MENDS",
+  "zil": "<TELL \"The structure has reached the end of the stone channel and won't budge.\" CR>"
+ },
+ {
+  "key": "gbdc2",
+  "en": "The pine wall swings open.\n",
+  "args": [],
+  "routine": "MENDS",
+  "zil": "<TELL \"The pine wall swings open.\" CR>"
+ },
+ {
+  "key": "gbdeb",
+  "en": "The pine door opens into the field of view of the Guardians.\n",
+  "args": [],
+  "routine": "MENDS",
+  "zil": "<TELL \"The pine door opens into the field of view of the Guardians.\" CR>"
+ },
+ {
+  "key": "gbe10",
+  "en": "The pine door opens into the field of view of the Guardians of Zork, represented by two identical stone statues carrying bludgeons.\n",
+  "args": [],
+  "routine": "MENDS",
+  "zil": "<TELL \"The pine door opens into the field of view of the Guardians of Zork, represented by two identical stone statues carrying bludgeons.\" CR>"
+ },
+ {
+  "key": "gbe81",
+  "en": "The pine wall closes quietly.\n",
+  "args": [],
+  "routine": "I-PININ",
+  "zil": "<TELL \"The pine wall closes quietly.\" CR>"
+ },
+ {
+  "key": "gbec1",
+  "en": "{0} and stops over another compass rose.\n",
+  "args": [
+   "s"
+  ],
+  "routine": "MIRMOVE",
+  "zil": "<TELL <COND (.PU? \"The structure sways unsteadily \") (T \"The structure slides \")> <COND (.NORTH? \"north\") (T \"south\")> \" and stops over another compass rose.\" CR>"
+ },
+ {
+  "key": "gbf27",
+  "en": "The pole cannot be raised further.\n",
+  "args": [],
+  "routine": "SHORT-POLE-F",
+  "zil": "<TELL \"The pole cannot be raised further.\" CR>"
+ },
+ {
+  "key": "gbf3d",
+  "en": "The pole is now slightly above the floor.\n",
+  "args": [],
+  "routine": "SHORT-POLE-F",
+  "zil": "<TELL \"The pole is now slightly above the floor.\" CR>"
+ },
+ {
+  "key": "gbf65",
+  "en": "The pole cannot be lowered further.\n",
+  "args": [],
+  "routine": "SHORT-POLE-F",
+  "zil": "<TELL \"The pole cannot be lowered further.\" CR>"
+ },
+ {
+  "key": "gbf81",
+  "en": "The pole is lowered into the channel.\n",
+  "args": [],
+  "routine": "SHORT-POLE-F",
+  "zil": "<TELL \"The pole is lowered into the channel.\" CR>"
+ },
+ {
+  "key": "gbfa8",
+  "en": "The pole is lowered into the stone hole.\n",
+  "args": [],
+  "routine": "SHORT-POLE-F",
+  "zil": "<TELL \"The pole is lowered into the stone hole.\" CR>"
+ },
+ {
+  "key": "gbfc1",
+  "en": "The pole is already resting on the floor.\n",
+  "args": [],
+  "routine": "SHORT-POLE-F",
+  "zil": "<TELL \"The pole is already resting on the floor.\" CR>"
+ },
+ {
+  "key": "gbfd9",
+  "en": "The pole now rests on the stone floor.\n",
+  "args": [],
+  "routine": "SHORT-POLE-F",
+  "zil": "<TELL \"The pole now rests on the stone floor.\" CR>"
+ },
+ {
+  "key": "gc014",
+  "en": "The dungeon master answers, \"I will follow.\"\n",
+  "args": [],
+  "routine": "DUNGEON-MASTER-F",
+  "zil": "<TELL \"The dungeon master answers, \\\"I will follow.\\\"\" CR>"
+ },
+ {
+  "key": "gc02f",
+  "en": "The dungeon master's voice replies, \"You must come here first!\"\n",
+  "args": [],
+  "routine": "DUNGEON-MASTER-F",
+  "zil": "<TELL \"The dungeon master's voice replies, \\\"You must come here first!\\\"\" CR>"
+ },
+ {
+  "key": "gc062",
+  "en": "The dungeon master answers, \"I will stay.\"\n",
+  "args": [],
+  "routine": "DUNGEON-MASTER-F",
+  "zil": "<TELL \"The dungeon master answers, \\\"I will stay.\\\"\" CR>"
+ },
+ {
+  "key": "gc08c",
+  "en": "\"I am not permitted to enter the prison cell.\"\n",
+  "args": [],
+  "routine": "DUNGEON-MASTER-F",
+  "zil": "<TELL \"\\\"I am not permitted to enter the prison cell.\\\"\" CR>"
+ },
+ {
+  "key": "gc0b9",
+  "en": "\"Very well. I am at the parapet!\"\n",
+  "args": [],
+  "routine": "DUNGEON-MASTER-F",
+  "zil": "<TELL \"\\\"Very well. I am at the parapet!\\\"\" CR>"
+ },
+ {
+  "key": "gc0e6",
+  "en": "\"I am not permitted to enter the prison cell.\"\n",
+  "args": [],
+  "routine": "DUNGEON-MASTER-F",
+  "zil": "<TELL \"\\\"I am not permitted to enter the prison cell.\\\"\" CR>"
+ },
+ {
+  "key": "gc105",
+  "en": "\"I prefer to stay where I am, thank you.\"\n",
+  "args": [],
+  "routine": "DUNGEON-MASTER-F",
+  "zil": "<TELL \"\\\"I prefer to stay where I am, thank you.\\\"\" CR>"
+ },
+ {
+  "key": "gc136",
+  "en": "\"Very well!\"\n",
+  "args": [],
+  "routine": "DUNGEON-MASTER-F",
+  "zil": "<TELL \"\\\"Very well!\\\"\" CR>"
+ },
+ {
+  "key": "gc147",
+  "en": "\"I will have no use for that, I am afraid.\"\n",
+  "args": [],
+  "routine": "DUNGEON-MASTER-F",
+  "zil": "<TELL \"\\\"I will have no use for that, I am afraid.\\\"\" CR>"
+ },
+ {
+  "key": "gc16f",
+  "en": "The dungeon master appears angered. \"Do not run from your quest: you are nearing the end!\"\n",
+  "args": [],
+  "routine": "DUNGEON-MASTER-F",
+  "zil": "<TELL \"The dungeon master appears angered. \\\"Do not run from your quest: you are nearing the end!\\\"\" CR>"
+ },
+ {
+  "key": "gc1be",
+  "en": "\"If you wish,\" he replies.\n",
+  "args": [],
+  "routine": "DUNGEON-MASTER-F",
+  "zil": "<TELL \"\\\"If you wish,\\\" he replies.\" CR>"
+ },
+ {
+  "key": "gc1d5",
+  "en": "\"Do not be foolish! Consider the end of your quest!\"\n",
+  "args": [],
+  "routine": "DUNGEON-MASTER-F",
+  "zil": "<TELL \"\\\"Do not be foolish! Consider the end of your quest!\\\"\" CR>"
+ },
+ {
+  "key": "gc1fd",
+  "en": "He is dressed simply in a hood and cloak, wearing an amulet and ring, carrying an old book under one arm, and leaning on a wooden staff. A single key, as if to a prison cell, hangs from his belt.\n",
+  "args": [],
+  "routine": "DUNGEON-MASTER-F",
+  "zil": "<TELL \"He is dressed simply in a hood and cloak, wearing an amulet and ring, carrying an old book under one arm, and leaning on a wooden staff. A single key, as if to a prison cell, hangs from his belt.\" CR>"
+ },
+ {
+  "key": "gc284",
+  "en": "\"I'm willing to accompany you, but not ride in your pocket!\"\n",
+  "args": [],
+  "routine": "DUNGEON-MASTER-F",
+  "zil": "<TELL \"\\\"I'm willing to accompany you, but not ride in your pocket!\\\"\" CR>"
+ },
+ {
+  "key": "gc2b3",
+  "en": "\"I have no need for those things.\"\n",
+  "args": [],
+  "routine": "DUNGEON-MASTER-F",
+  "zil": "<TELL \"\\\"I have no need for those things.\\\"\" CR>"
+ },
+ {
+  "key": "gc2da",
+  "en": "He can't hear you.\n",
+  "args": [],
+  "routine": "MASTER-F",
+  "zil": "<TELL \"He can't hear you.\" CR>"
+ },
+ {
+  "key": "gc2e5",
+  "en": "He is not here.\n",
+  "args": [],
+  "routine": "MASTER-F",
+  "zil": "<TELL \"He is not here.\" CR>"
+ },
+ {
+  "key": "gc2ff",
+  "en": "The dungeon master isn't here.\n",
+  "args": [],
+  "routine": "MASTER-F",
+  "zil": "<TELL \"The dungeon master isn't here.\" CR>"
+ },
+ {
+  "key": "gc316",
+  "en": "He politely refuses your offer.\n",
+  "args": [],
+  "routine": "MASTER-F",
+  "zil": "<TELL \"He politely refuses your offer.\" CR>"
+ },
+ {
+  "key": "gc339",
+  "en": "The dungeon master is standing on the parapet.\n",
+  "args": [],
+  "routine": "MASTER-F",
+  "zil": "<TELL \"The dungeon master is standing on the parapet.\" CR>"
+ },
+ {
+  "key": "gc34e",
+  "en": "The dungeon master isn't here.\n",
+  "args": [],
+  "routine": "MASTER-F",
+  "zil": "<TELL \"The dungeon master isn't here.\" CR>"
+ },
+ {
+  "key": "gc37d",
+  "en": "You are in a narrow north-south corridor. At the south end is a door and at the north end is an east-west corridor. The door is ",
+  "args": [],
+  "routine": "BEHIND-DOOR-F",
+  "zil": "<TELL \"You are in a narrow north-south corridor. At the south end is a door and at the north end is an east-west corridor. The door is \">"
+ },
+ {
+  "key": "gc3db",
+  "en": "The wooden door has a barred panel in it at about head height. The door itself is ",
+  "args": [],
+  "routine": "FRONT-DOOR-F",
+  "zil": "<TELL \"The wooden door has a barred panel in it at about head height. The door itself is \">"
+ },
+ {
+  "key": "gc42d",
+  "en": "You can't open the panel. It's set into the door.\n",
+  "args": [],
+  "routine": "DUNGEON-PANEL-F",
+  "zil": "<TELL \"You can't open the panel. It's set into the door.\" CR>"
+ },
+ {
+  "key": "gc44c",
+  "en": "There's not much to be seen.\n",
+  "args": [],
+  "routine": "DUNGEON-PANEL-F",
+  "zil": "<TELL \"There's not much to be seen.\" CR>"
+ },
+ {
+  "key": "gc47c",
+  "en": "The knock reverberates along the hall. For a time it seems there will be no answer. Then you hear someone unlatching the small panel. Through the bars of the great door, the wrinkled face of an old man appears.",
+  "args": [],
+  "routine": "DUNGEON-DOOR-F",
+  "zil": "<TELL \"The knock reverberates along the hall. For a time it seems there will be no answer. Then you hear someone unlatching the small panel. Through the bars of the great door, the wrinkled face of an old man appears.\">"
+ },
+ {
+  "key": "gc4fa",
+  "en": " He seems not to notice you for a brief moment, then recovers.",
+  "args": [],
+  "routine": "DUNGEON-DOOR-F",
+  "zil": "<TELL \" He seems not to notice you for a brief moment, then recovers.\">"
+ },
+ {
+  "key": "gc526",
+  "en": " He starts to smile broadly and opens the massive door without a sound. The old man motions and you feel yourself drawn toward him.\n\"I am the Master of the Dungeon!\" he booms. \"I have been watching you closely during your journey through the Great Underground Empire. Yes!,\" he says, as if recalling some almost forgotten time, \"we have met before, although I may not appear as I did then.\" You look closely into his deeply lined face and see the faces of the old man by the secret door, your \"friend\" at the cliff, and the hooded figure. \"You have shown kindness to the old man, and compassion toward the hooded one. You displayed patience in the puzzle and trust at the cliff. You have demonstrated strength, ingenuity, and valor. However, one final test awaits you. Now! Command me as you will, and complete your quest!\"\n\n",
+  "args": [],
+  "routine": "DUNGEON-DOOR-F",
+  "zil": "<TELL \" He starts to smile broadly and opens the massive door without a sound. The old man motions and you feel yourself drawn toward him.\\n \\\"I am the Master of the Dungeon!\\\" he booms. \\\"I have been watching you closely during your journey through the Great Underground Empire. Yes!,\\\" he says, as if recalling some almost forgotten time, \\\"we have met before, although I may not appear as I did then.\\\" You look closely into his deeply lined face and see the faces of the old man by the secret door, your \\\"friend\\\" at the cliff, and the hooded figure. \\\"You have shown kindness to the old man, and compassion toward the hooded one. You displayed patience in the puzzle and trust at the cliff. You have demonstrated strength, ingenuity, and valor. However, one final test awaits you. Now! Command me as you will, and complete your quest!\\\"\\n\" CR>"
+ },
+ {
+  "key": "gc707",
+  "en": " He looks you over with a piercing gaze and then speaks gravely. \"I have been waiting a long time for you, ",
+  "args": [],
+  "routine": "DUNGEON-DOOR-F",
+  "zil": "<TELL \" He looks you over with a piercing gaze and then speaks gravely. \\\"I have been waiting a long time for you, \">"
+ },
+ {
+  "key": "gc74f",
+  "en": "{0} I will remain here. When you feel you are ready, go to the secret door and 'SAY \"FROTZ OZMOO\"'! Go, now!\" He wags his finger in warning. \"Do not forget the double quotes!\" A moment later, you find yourself in the Button Room.\n",
+  "args": [
+   "s"
+  ],
+  "routine": "DUNGEON-DOOR-F",
+  "zil": "<TELL \" I will remain here. When you feel you are ready, go to the secret door and 'SAY \\\"FROTZ OZMOO\\\"'! Go, now!\\\" He wags his finger in warning. \\\"Do not forget the double quotes!\\\" A moment later, you find yourself in the Button Room.\" CR>"
+ },
+ {
+  "key": "gc82c",
+  "en": "You notice that the dungeon master doesn't follow you.\n",
+  "args": [],
+  "routine": "I-FOLIN",
+  "zil": "<TELL \"You notice that the dungeon master doesn't follow you.\" CR>"
+ },
+ {
+  "key": "gc859",
+  "en": "The dungeon master rejoins you.\n",
+  "args": [],
+  "routine": "I-FOLIN",
+  "zil": "<TELL \"The dungeon master rejoins you.\" CR>"
+ },
+ {
+  "key": "gc86f",
+  "en": "The dungeon master follows you.\n",
+  "args": [],
+  "routine": "I-FOLIN",
+  "zil": "<TELL \"The dungeon master follows you.\" CR>"
+ },
+ {
+  "key": "gc95d",
+  "en": "You are standing behind a stone retaining wall which rims a parapet overlooking a fiery pit. It is difficult to see through the smoke and flame which fills the pit, but it seems to be bottomless. The pit itself is circular, about two hundred feet in diameter, and is fashioned of roughly hewn stone. The flames generate considerable heat, so it is rather uncomfortable standing here.\nThere is an object here which looks like a sundial. On it are an indicator arrow surrounding a large button. On the face of the dial are numbers 1 through 8. The indicator points to the number {0}.\nTo the south, across a narrow corridor, is a prison cell.\n",
+  "args": [
+   "n"
+  ],
+  "routine": "PARAPET-F",
+  "zil": "<TELL \"You are standing behind a stone retaining wall which rims a parapet overlooking a fiery pit. It is difficult to see through the smoke and flame which fills the pit, but it seems to be bottomless. The pit itself is circular, about two hundred feet in diameter, and is fashioned of roughly hewn stone. The flames generate considerable heat, so it is rather uncomfortable standing here.\\n There is an object here which looks like a sundial. On it are an indicator arrow surrounding a large button. On the face of the dial are numbers 1 through 8. The indicator points to the number \" N ,PNUMB \".\" CR>"
+ },
+ {
+  "key": "gcac5",
+  "en": "The dial points to {0}.\n",
+  "args": [
+   "n"
+  ],
+  "routine": "DIAL",
+  "zil": "<TELL \"The dial points to \" N ,PNUMB \".\" CR>"
+ },
+ {
+  "key": "gcae8",
+  "en": "There is no such setting.\n",
+  "args": [],
+  "routine": "DIAL",
+  "zil": "<TELL \"There is no such setting.\" CR>"
+ },
+ {
+  "key": "gcafe",
+  "en": "The dial now points to {0}.\n",
+  "args": [
+   "n"
+  ],
+  "routine": "DIAL",
+  "zil": "<TELL \"The dial now points to \" N ,PNUMB \".\" CR>"
+ },
+ {
+  "key": "gcb16",
+  "en": "You must specify what to set the dial to.\n",
+  "args": [],
+  "routine": "DIAL",
+  "zil": "<TELL \"You must specify what to set the dial to.\" CR>"
+ },
+ {
+  "key": "gcb2f",
+  "en": "The dial face only contains numbers.\n",
+  "args": [],
+  "routine": "DIAL",
+  "zil": "<TELL \"The dial face only contains numbers.\" CR>"
+ },
+ {
+  "key": "gcb54",
+  "en": "The dial spins and comes to a stop pointing at {0}.",
+  "args": [
+   "n"
+  ],
+  "routine": "DIAL",
+  "zil": "<TELL \"The dial spins and comes to a stop pointing at \" N ,PNUMB \".\">"
+ },
+ {
+  "key": "gcb96",
+  "en": "The button depresses with a slight click, and pops back.\n",
+  "args": [],
+  "routine": "DIALBUTTON",
+  "zil": "<TELL \"The button depresses with a slight click, and pops back.\" CR>"
+ },
+ {
+  "key": "gcbc2",
+  "en": "You notice that the cell door is now closed.\n",
+  "args": [],
+  "routine": "DIALBUTTON",
+  "zil": "<TELL \"You notice that the cell door is now closed.\" CR>"
+ },
+ {
+  "key": "gcbe3",
+  "en": "You are in a featureless prison cell. You can see ",
+  "args": [],
+  "routine": "CELL-ROOM",
+  "zil": "<TELL \"You are in a featureless prison cell. You can see \">"
+ },
+ {
+  "key": "gcc03",
+  "en": "an east-west corridor outside the cell door. Your view also takes in the parapet and a large, fiery pit.\n",
+  "args": [],
+  "routine": "CELL-ROOM",
+  "zil": "<TELL \"an east-west corridor outside the cell door. Your view also takes in the parapet and a large, fiery pit.\" CR>"
+ },
+ {
+  "key": "gcc42",
+  "en": "through the small window in the closed door the parapet, and, behind that, smoke and flames rising from a fiery pit.\n",
+  "args": [],
+  "routine": "CELL-ROOM",
+  "zil": "<TELL \"through the small window in the closed door the parapet, and, behind that, smoke and flames rising from a fiery pit.\" CR>"
+ },
+ {
+  "key": "gcc87",
+  "en": "The dungeon master is at the parapet, leaning on his staff. His keen gaze is fixed on you and he looks tense, as if waiting for something to happen.\n",
+  "args": [],
+  "routine": "CELL-ROOM",
+  "zil": "<TELL \"The dungeon master is at the parapet, leaning on his staff. His keen gaze is fixed on you and he looks tense, as if waiting for something to happen.\" CR>"
+ },
+ {
+  "key": "gccdb",
+  "en": "Behind you, to the south, is a bronze door which is ",
+  "args": [],
+  "routine": "CELL-ROOM",
+  "zil": "<TELL \"Behind you, to the south, is a bronze door which is \">"
+ },
+ {
+  "key": "gcd05",
+  "en": "You are in a bare prison cell. Its wooden door is securely fastened, and you can see only flames and smoke through its small window. On the south wall is a bronze door which seems to be ",
+  "args": [],
+  "routine": "NCELL-ROOM",
+  "zil": "<TELL \"You are in a bare prison cell. Its wooden door is securely fastened, and you can see only flames and smoke through its small window. On the south wall is a bronze door which seems to be \">"
+ },
+ {
+  "key": "gcd6b",
+  "en": "open.\n",
+  "args": [],
+  "routine": "DPR",
+  "zil": "<TELL \"open.\" CR>"
+ },
+ {
+  "key": "gcd70",
+  "en": "closed.\n",
+  "args": [],
+  "routine": "DPR",
+  "zil": "<TELL \"closed.\" CR>"
+ },
+ {
+  "key": "gcd7f",
+  "en": "This is a wide east-west corridor which opens onto a northern parapet at its center. You can see flames and smoke as you peer towards the parapet. The corridor turns south at either end, and in the center of the south wall is a heavy wooden door with a small barred window. The door is ",
+  "args": [],
+  "routine": "NORTH-CORRIDOR-F",
+  "zil": "<TELL \"This is a wide east-west corridor which opens onto a northern parapet at its center. You can see flames and smoke as you peer towards the parapet. The corridor turns south at either end, and in the center of the south wall is a heavy wooden door with a small barred window. The door is \">"
+ },
+ {
+  "key": "gce15",
+  "en": "You are in an east-west corridor which turns north at its eastern and western ends. The walls are made of the finest marble. Another hall leads south at the center of the corridor.\n",
+  "args": [],
+  "routine": "SOUTH-CORRIDOR-F",
+  "zil": "<TELL \"You are in an east-west corridor which turns north at its eastern and western ends. The walls are made of the finest marble. Another hall leads south at the center of the corridor.\" CR>"
+ },
+ {
+  "key": "gce79",
+  "en": "In the center of the north wall is a bronze door which is ",
+  "args": [],
+  "routine": "SOUTH-CORRIDOR-F",
+  "zil": "<TELL \"In the center of the north wall is a bronze door which is \">"
+ },
+ {
+  "key": "gcead",
+  "en": "On the other side of the bronze door is a narrow passage which opens out into a larger area.\n",
+  "args": [],
+  "routine": "BRONZE-DOOR-F",
+  "zil": "<TELL \"On the other side of the bronze door is a narrow passage which opens out into a larger area.\" CR>"
+ },
+ {
+  "key": "gcee6",
+  "en": "The bronze door is locked.\n",
+  "args": [],
+  "routine": "BRONZE-DOOR-F",
+  "zil": "<TELL \"The bronze door is locked.\" CR>"
+ },
+ {
+  "key": "gcefd",
+  "en": "The door is securely fastened.\n",
+  "args": [],
+  "routine": "LOCKED-DOOR-F",
+  "zil": "<TELL \"The door is securely fastened.\" CR>"
+ },
+ {
+  "key": "gcf17",
+  "en": "As you examine your new-found riches, the Dungeon Master materializes beside you, and says, \"Now that you have solved all the mysteries of the Dungeon, it is time for you to assume your rightly earned place in the scheme of things. Long have I waited for one capable of releasing me from my burden!\" He taps you lightly on the head with his staff, mumbling a few well-chosen spells, and you feel yourself changing, growing older and more stooped. For a moment there are two identical mages standing among the treasure, then your counterpart dissolves into a mist and disappears, a sardonic grin on his face.\n\nFor a moment you are relieved, safe in the knowledge that you have at last completed your quest in ZORK. You begin to feel the vast powers and lore at your command and thirst for an opportunity to use them.\n\n",
+  "args": [],
+  "routine": "NIRVANA-F",
+  "zil": "<TELL \"As you examine your new-found riches, the Dungeon Master materializes beside you, and says, \\\"Now that you have solved all the mysteries of the Dungeon, it is time for you to assume your rightly earned place in the scheme of things. Long have I waited for one capable of releasing me from my burden!\\\" He taps you lightly on the head with his staff, mumbling a few well-chosen spells, and you feel yourself changing, growing older and more stooped. For a moment there are two identical mages standing among the treasure, then your counterpart dissolves into a mist and disappears, a sardonic grin on his face.\\n \\n For a moment you are relieved, safe in the knowledge that you have at last completed your quest in ZORK. You begin to feel the vast powers and lore at your command and thirst for an opportunity to use them.\\n \\n \">"
+ },
+ {
+  "key": "gd10c",
+  "en": "The bronze door is closed.\n",
+  "args": [],
+  "routine": "BRONZE-DOOR-EXIT",
+  "zil": "<TELL \"The bronze door is closed.\" CR>"
+ },
+ {
+  "key": "gd127",
+  "en": "The massive stone door opens noiselessly. {0}\n",
+  "args": [
+   "s"
+  ],
+  "routine": "SECRET-DOOR-F",
+  "zil": "<TELL \"The massive stone door opens noiselessly. \" ,SECRET-DOOR-DESC CR>"
+ },
+ {
+  "key": "gd163",
+  "en": "You are in a room with passages heading southwest and southeast. The north wall is ornately carved, filled with strange runes and writing in an unfamiliar language.\n",
+  "args": [],
+  "routine": "MSTAIRS-F",
+  "zil": "<TELL \"You are in a room with passages heading southwest and southeast. The north wall is ornately carved, filled with strange runes and writing in an unfamiliar language.\" CR>"
+ }
+]

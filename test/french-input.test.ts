@@ -50,6 +50,25 @@ describe('French commands → English words', () => {
   }
 })
 
+describe('French commands of Zork III', () => {
+  const g3 = frenchGame(1, 'zork3')
+  g3.start()
+  const cases: [string, string][] = [
+    ['vaporise le répulsif sur moi', 'spray repellent on me'],
+    ['règle le cadran sur 776', 'turn dial to 776'],
+    ['mets le capuchon', 'wear hood'],
+    ["mets l'anneau sous le siège", 'put ring under seat'],
+    ['jette la lanterne du haut de la falaise', 'throw lantern off cliff'],
+    ['descends la falaise', 'climb down cliff'],
+    ['maître, tourne le cadran sur 1', 'master , turn dial to 1'],
+    ['dis « frotz ozmoo »', 'say " frotz ozmoo "'],
+    ['salue le marin', 'hello sailor'],
+  ]
+  for (const [fr, expected] of cases) {
+    it(`${fr} → ${expected}`, () => expect(g3.explain(fr)!.join(' ')).toBe(expected))
+  }
+})
+
 describe('French game', () => {
   it('plays the opening', () => {
     const game = frenchGame()

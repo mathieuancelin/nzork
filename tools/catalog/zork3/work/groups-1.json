@@ -1,0 +1,1215 @@
+[
+ {
+  "key": "g5088",
+  "en": "s",
+  "args": [],
+  "routine": "MAIN-LOOP-1",
+  "zil": "<TELL \"s\">"
+ },
+ {
+  "key": "g53a0",
+  "en": ">",
+  "args": [],
+  "routine": "PARSER",
+  "zil": "<TELL \">\">"
+ },
+ {
+  "key": "g6115",
+  "en": " ",
+  "args": [],
+  "routine": "SYNTAX-CHECK",
+  "zil": "<TELL \" \">"
+ },
+ {
+  "key": "g6136",
+  "en": "?\n",
+  "args": [],
+  "routine": "SYNTAX-CHECK",
+  "zil": "<TELL \"?\" CR>"
+ },
+ {
+  "key": "g6256",
+  "en": " ",
+  "args": [],
+  "routine": "BUFFER-PRINT",
+  "zil": "<TELL \" \">"
+ },
+ {
+  "key": "g62d0",
+  "en": " ",
+  "args": [],
+  "routine": "PREP-PRINT",
+  "zil": "<TELL \" \">"
+ },
+ {
+  "key": "g63da",
+  "en": "(",
+  "args": [],
+  "routine": "GWIM",
+  "zil": "<TELL \"(\">"
+ },
+ {
+  "key": "g63f4",
+  "en": " ",
+  "args": [],
+  "routine": "GWIM",
+  "zil": "<TELL \" \">"
+ },
+ {
+  "key": "g640a",
+  "en": ")\n",
+  "args": [],
+  "routine": "GWIM",
+  "zil": "<TELL \")\" CR>"
+ },
+ {
+  "key": "g6410",
+  "en": "{0})\n",
+  "args": [
+   "o"
+  ],
+  "routine": "GWIM",
+  "zil": "<TELL \")\" CR>"
+ },
+ {
+  "key": "g687e",
+  "en": ",",
+  "args": [],
+  "routine": "WHICH-PRINT",
+  "zil": "<TELL \",\">"
+ },
+ {
+  "key": "g6d55",
+  "en": "As in a dream, you see yourself tumbling down a great, dark staircase. All about you are shadowy images of struggles against fierce opponents and diabolical traps. These give way to another round of images: of imposing stone figures, a cool, clear lake, and, now, of an old, yet oddly youthful man. He turns toward you slowly, his long, silver hair dancing about him in a fresh breeze. \"You have reached the final test, my friend! You are proved clever and powerful, but this is not yet enough! Seek me when you feel yourself worthy!\" The dream dissolves around you as his last words echo through the void....\n\n",
+  "args": [],
+  "routine": "GO",
+  "zil": "<TELL \"As in a dream, you see yourself tumbling down a great, dark staircase. All about you are shadowy images of struggles against fierce opponents and diabolical traps. These give way to another round of images: of imposing stone figures, a cool, clear lake, and, now, of an old, yet oddly youthful man. He turns toward you slowly, his long, silver hair dancing about him in a fresh breeze. \\\"You have reached the final test, my friend! You are proved clever and powerful, but this is not yet enough! Seek me when you feel yourself worthy!\\\" The dream dissolves around you as his last words echo through the void....\" CR>"
+ },
+ {
+  "key": "g6fd6",
+  "en": "He looks like a sailor.\n",
+  "args": [],
+  "routine": "SAILOR-FCN",
+  "zil": "<TELL \"He looks like a sailor.\" CR>"
+ },
+ {
+  "key": "g7003",
+  "en": "The seaman looks up and maneuvers the boat toward shore. He cries out \"I have waited three ages for someone to say those words and save me from sailing this endless ocean. Please accept this gift. You may find it useful!\" He throws something which falls near you in the sand, then sails off toward the west, singing a lively, but somewhat uncouth, sailor song.\n",
+  "args": [],
+  "routine": "SAILOR-FCN",
+  "zil": "<TELL \"The seaman looks up and maneuvers the boat toward shore. He cries out \\\"I have waited three ages for someone to say those words and save me from sailing this endless ocean. Please accept this gift. You may find it useful!\\\" He throws something which falls near you in the sand, then sails off toward the west, singing a lively, but somewhat uncouth, sailor song.\" CR>"
+ },
+ {
+  "key": "g70e3",
+  "en": "Nothing happens anymore.\n",
+  "args": [],
+  "routine": "SAILOR-FCN",
+  "zil": "<TELL \"Nothing happens anymore.\" CR>"
+ },
+ {
+  "key": "g70f6",
+  "en": "Nothing happens yet.\n",
+  "args": [],
+  "routine": "SAILOR-FCN",
+  "zil": "<TELL \"Nothing happens yet.\" CR>"
+ },
+ {
+  "key": "g735c",
+  "en": "A good trick, as you are currently invisible.\n",
+  "args": [],
+  "routine": "CRETIN-FCN",
+  "zil": "<TELL \"A good trick, as you are currently invisible.\" CR>"
+ },
+ {
+  "key": "g7379",
+  "en": "What you can see looks pretty much as usual, sorry to say.\n",
+  "args": [],
+  "routine": "CRETIN-FCN",
+  "zil": "<TELL \"What you can see looks pretty much as usual, sorry to say.\" CR>"
+ },
+ {
+  "key": "g7659",
+  "en": "ZORK III: The Dungeon Master\nInfocom interactive fiction - a fantasy story\nCopyright 1982, 1983, 1984, 1986 Infocom, Inc. All rights reserved.\nZORK is a registered trademark of Infocom, Inc.\nRelease ",
+  "args": [],
+  "routine": "V-VERSION",
+  "zil": "<TELL \"ZORK III: The Dungeon Master\\n Infocom interactive fiction - a fantasy story\\n Copyright 1982, 1983, 1984, 1986\">"
+ },
+ {
+  "key": "g789d",
+  "en": "You can't.\n",
+  "args": [],
+  "routine": "V-ATTACK",
+  "zil": "<TELL \"You can't.\" CR>"
+ },
+ {
+  "key": "g7ee7",
+  "en": "How can you drink that?",
+  "args": [],
+  "routine": "V-EAT",
+  "zil": "<TELL \"How can you drink that?\">"
+ },
+ {
+  "key": "g859d",
+  "en": "The {0} is open, but I can't tell what's beyond it.",
+  "args": [
+   "o"
+  ],
+  "routine": "V-LOOK-INSIDE",
+  "zil": "<TELL \"The \" D ,PRSO \" is open, but I can't tell what's beyond it.\">"
+ },
+ {
+  "key": "g85c0",
+  "en": "The {0} is closed.",
+  "args": [
+   "o"
+  ],
+  "routine": "V-LOOK-INSIDE",
+  "zil": "<TELL \"The \" D ,PRSO \" is closed.\">"
+ },
+ {
+  "key": "g8604",
+  "en": "There is nothing on the {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-LOOK-INSIDE",
+  "zil": "<TELL \"There is nothing on the \" D ,PRSO \".\" CR>"
+ },
+ {
+  "key": "g8bea",
+  "en": "Nothing happens.\n",
+  "args": [],
+  "routine": "V-SAY",
+  "zil": "<TELL \"Nothing happens.\" CR>"
+ },
+ {
+  "key": "g8cfa",
+  "en": "out and disappear",
+  "args": [],
+  "routine": "V-SHAKE"
+ },
+ {
+  "key": "g8da7",
+  "en": "The {0} does not understand this.",
+  "args": [
+   "o"
+  ],
+  "routine": "V-SQUEEZE",
+  "zil": "<TELL \"The \" D ,PRSO \" does not understand this.\">"
+ },
+ {
+  "key": "g8dc0",
+  "en": "How singularly useless.",
+  "args": [],
+  "routine": "V-SQUEEZE",
+  "zil": "<TELL \"How singularly useless.\">"
+ },
+ {
+  "key": "g8e9f",
+  "en": "What do you think you're doing?\n",
+  "args": [],
+  "routine": "V-SWIM",
+  "zil": "<TELL \"What do you think you're doing?\" CR>"
+ },
+ {
+  "key": "g8eb8",
+  "en": "Between the rocks and waves, you wouldn't last a minute!\n",
+  "args": [],
+  "routine": "V-SWIM",
+  "zil": "<TELL \"Between the rocks and waves, you wouldn't last a minute!\" CR>"
+ },
+ {
+  "key": "g917b",
+  "en": "You should turn the {0} to something.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "PRE-TURN",
+  "zil": "<TELL \"You should turn the \" D ,PRSO \" to something.\" CR>"
+ },
+ {
+  "key": "g9462",
+  "en": "The ground continues to slope upwards away from the lake. You can barely detect a dim light from the east.\n",
+  "args": [],
+  "routine": "DESCRIBE-ROOM",
+  "zil": "<TELL \"The ground continues to slope upwards away from the lake. You can barely detect a dim light from the east.\" CR>"
+ },
+ {
+  "key": "g959f",
+  "en": ".",
+  "args": [],
+  "routine": "DESCRIBE-OBJECT",
+  "zil": "<TELL \".\">"
+ },
+ {
+  "key": "g9833",
+  "en": ">",
+  "args": [],
+  "routine": "YES?"
+ },
+ {
+  "key": "g98ce",
+  "en": ".",
+  "args": [],
+  "routine": "ITAKE",
+  "zil": "<TELL \".\">"
+ },
+ {
+  "key": "g99e0",
+  "en": "You can't go there in a {0}.",
+  "args": [
+   "o"
+  ],
+  "routine": "NO-GO-TELL",
+  "zil": "<TELL \"You can't go there in a \" D .WLOC \".\">"
+ },
+ {
+  "key": "g99f3",
+  "en": "You can't go there without a vehicle.",
+  "args": [],
+  "routine": "NO-GO-TELL",
+  "zil": "<TELL \"You can't go there without a vehicle.\">"
+ },
+ {
+  "key": "g9a8d",
+  "en": "The {0} comes to a stop.\n\n",
+  "args": [
+   "o"
+  ],
+  "routine": "GOTO",
+  "zil": "<TELL \"The \" D .WLOC \" comes to a stop.\" CR CR>"
+ },
+ {
+  "key": "g9d91",
+  "en": "Who do you think you are? Arthur?\n",
+  "args": [],
+  "routine": "SWORD-FCN",
+  "zil": "<TELL \"Who do you think you are? Arthur?\" CR>"
+ },
+ {
+  "key": "g9da8",
+  "en": "The sword is deeply imbedded in the rock. You can't budge it.\n",
+  "args": [],
+  "routine": "SWORD-FCN",
+  "zil": "<TELL \"The sword is deeply imbedded in the rock. You can't budge it.\" CR>"
+ },
+ {
+  "key": "g9de7",
+  "en": "The lamp smashes. The light is now out.\n",
+  "args": [],
+  "routine": "LANTERN",
+  "zil": "<TELL \"The lamp smashes. The light is now out.\" CR>"
+ },
+ {
+  "key": "g9e70",
+  "en": "The lamp has burned out.",
+  "args": [],
+  "routine": "LANTERN",
+  "zil": "<TELL \"The lamp has burned out.\">"
+ },
+ {
+  "key": "g9e86",
+  "en": "The lamp is on.",
+  "args": [],
+  "routine": "LANTERN",
+  "zil": "<TELL \"The lamp is on.\">"
+ },
+ {
+  "key": "g9e94",
+  "en": "The lamp is turned off.",
+  "args": [],
+  "routine": "LANTERN",
+  "zil": "<TELL \"The lamp is turned off.\">"
+ },
+ {
+  "key": "g9f25",
+  "en": "You look before leaping and realize you would never survive.\n",
+  "args": [],
+  "routine": "CHASM-FCN",
+  "zil": "<TELL \"You look before leaping and realize you would never survive.\" CR>"
+ },
+ {
+  "key": "g9f4a",
+  "en": "You'll have to find a bridge.\n",
+  "args": [],
+  "routine": "CHASM-FCN",
+  "zil": "<TELL \"You'll have to find a bridge.\" CR>"
+ },
+ {
+  "key": "g9fbe",
+  "en": "With the help of the ladder, you exit the puzzle.\n",
+  "args": [],
+  "routine": "CPEXIT",
+  "zil": "<TELL \"With the help of the ladder, you exit the puzzle.\" CR>"
+ },
+ {
+  "key": "g9fde",
+  "en": "The exit is too far above your head.\n",
+  "args": [],
+  "routine": "CPEXIT",
+  "zil": "<TELL \"The exit is too far above your head.\" CR>"
+ },
+ {
+  "key": "g9ff3",
+  "en": "There is no way up.\n",
+  "args": [],
+  "routine": "CPEXIT",
+  "zil": "<TELL \"There is no way up.\" CR>"
+ },
+ {
+  "key": "ga014",
+  "en": "There's no way down here.\n",
+  "args": [],
+  "routine": "CPEXIT",
+  "zil": "<TELL \"There's no way down here.\" CR>"
+ },
+ {
+  "key": "ga02f",
+  "en": "The metal door bars the way.\n",
+  "args": [],
+  "routine": "CPEXIT",
+  "zil": "<TELL \"The metal door bars the way.\" CR>"
+ },
+ {
+  "key": "ga05f",
+  "en": "There is a wall there.\n",
+  "args": [],
+  "routine": "CPEXIT",
+  "zil": "<TELL \"There is a wall there.\" CR>"
+ },
+ {
+  "key": "ga0d1",
+  "en": "There is a wall there.\n",
+  "args": [],
+  "routine": "CPEXIT",
+  "zil": "<TELL \"There is a wall there.\" CR>"
+ },
+ {
+  "key": "ga127",
+  "en": "There is a wall there.\n",
+  "args": [],
+  "routine": "CPMOVE",
+  "zil": "<TELL \"There is a wall there.\" CR>"
+ },
+ {
+  "key": "ga13c",
+  "en": "The hole is blocked by sandstone.\n",
+  "args": [],
+  "routine": "CPENTER",
+  "zil": "<TELL \"The hole is blocked by sandstone.\" CR>"
+ },
+ {
+  "key": "ga161",
+  "en": "This is a small square room, in the middle of which is a round hole",
+  "args": [],
+  "routine": "CPANT-ROOM",
+  "zil": "<TELL \"This is a small square room, in the middle of which is a round hole\">"
+ },
+ {
+  "key": "ga18b",
+  "en": " which is blocked by smooth sandstone.\n",
+  "args": [],
+  "routine": "CPANT-ROOM",
+  "zil": "<TELL \" which is blocked by smooth sandstone.\" CR>"
+ },
+ {
+  "key": "ga1a4",
+  "en": " through which you can discern the floor some ten feet below. The area under the hole is dark, but it appears to be completely enclosed in rock. In any event, it doesn't seem likely that you could climb back up. Exits are west and, up a few steps, north.\n",
+  "args": [],
+  "routine": "CPANT-ROOM",
+  "zil": "<TELL \" through which you can discern the floor some ten feet below. The area under the hole is dark, but it appears to be completely enclosed in rock. In any event, it doesn't seem likely that you could climb back up. Exits are west and, up a few steps, north.\" CR>"
+ },
+ {
+  "key": "ga255",
+  "en": "You can't see any ladder here.\n",
+  "args": [],
+  "routine": "CPLADDER-OBJECT",
+  "zil": "<TELL \"You can't see any ladder here.\" CR>"
+ },
+ {
+  "key": "ga27e",
+  "en": "You hit your head on the ceiling and fall off the ladder.\n",
+  "args": [],
+  "routine": "CPLADDER-JUNK",
+  "zil": "<TELL \"You hit your head on the ceiling and fall off the ladder.\" CR>"
+ },
+ {
+  "key": "ga29d",
+  "en": "Come, come!\n",
+  "args": [],
+  "routine": "CPLADDER-JUNK",
+  "zil": "<TELL \"Come, come!\" CR>"
+ },
+ {
+  "key": "ga2bb",
+  "en": "You can't grab the wall to pull it.\n",
+  "args": [],
+  "routine": "CPWALL-OBJECT",
+  "zil": "<TELL \"You can't grab the wall to pull it.\" CR>"
+ },
+ {
+  "key": "ga2da",
+  "en": "The wall doesn't budge.\n",
+  "args": [],
+  "routine": "CPWALL-OBJECT",
+  "zil": "<TELL \"The wall doesn't budge.\" CR>"
+ },
+ {
+  "key": "ga2ec",
+  "en": "There is only a passage in that direction.\n",
+  "args": [],
+  "routine": "CPWALL-OBJECT",
+  "zil": "<TELL \"There is only a passage in that direction.\" CR>"
+ },
+ {
+  "key": "ga305",
+  "en": "The wall doesn't budge.\n",
+  "args": [],
+  "routine": "CPWALL-OBJECT",
+  "zil": "<TELL \"The wall doesn't budge.\" CR>"
+ },
+ {
+  "key": "ga31a",
+  "en": "The wall barely gives.\n",
+  "args": [],
+  "routine": "CPWALL-OBJECT",
+  "zil": "<TELL \"The wall barely gives.\" CR>"
+ },
+ {
+  "key": "ga32e",
+  "en": "The wall barely gives.\n",
+  "args": [],
+  "routine": "CPWALL-OBJECT",
+  "zil": "<TELL \"The wall barely gives.\" CR>"
+ },
+ {
+  "key": "ga33b",
+  "en": "The wall slides forward and you follow it",
+  "args": [],
+  "routine": "CPWALL-OBJECT",
+  "zil": "<TELL \"The wall slides forward and you follow it\">"
+ },
+ {
+  "key": "ga355",
+  "en": " to this position:\n",
+  "args": [],
+  "routine": "CPWALL-OBJECT",
+  "zil": "<TELL \" to this position:\" CR>"
+ },
+ {
+  "key": "ga366",
+  "en": "....\nThe architecture of this region is getting complex, so that further descriptions will be diagrams of the immediate vicinity in a 3x3 grid. The walls here are rock, but of two different types - sandstone and marble. The following notations will be used:\n",
+  "args": [],
+  "routine": "CPWALL-OBJECT",
+  "zil": "<TELL \"....\\n The architecture of this region is getting complex, so that further descriptions will be diagrams of the immediate vicinity in a 3x3 grid. The walls here are rock, but of two different types - sandstone and marble. The following notations will be used:\\n \">"
+ },
+ {
+  "key": "ga408",
+  "en": "\n  .. = your position (middle of grid)\n  MM = marble wall\n  SS = sandstone wall\n  ?? = unknown (blocked by walls)\n\n",
+  "args": [],
+  "routine": "CPWALL-OBJECT",
+  "zil": "<TELL \"\\n   .. = your position (middle of grid)\\n   MM = marble wall\\n   SS = sandstone wall\\n   ?? = unknown (blocked by walls)\\n \\n \">"
+ },
+ {
+  "key": "ga49a",
+  "en": "You hear a soft \"snap\" from behind the wall you were pushing.\n",
+  "args": [],
+  "routine": "CPWALL-OBJECT",
+  "zil": "<TELL \"You hear a soft \\\"snap\\\" from behind the wall you were pushing.\" CR>"
+ },
+ {
+  "key": "ga59b",
+  "en": "You can't see any steel door here.\n",
+  "args": [],
+  "routine": "CPDOOR-F",
+  "zil": "<TELL \"You can't see any steel door here.\" CR>"
+ },
+ {
+  "key": "ga5b3",
+  "en": "The steel door has already opened.\n",
+  "args": [],
+  "routine": "CPDOOR-F",
+  "zil": "<TELL \"The steel door has already opened.\" CR>"
+ },
+ {
+  "key": "ga5c4",
+  "en": "You can't force it open.\n",
+  "args": [],
+  "routine": "CPDOOR-F",
+  "zil": "<TELL \"You can't force it open.\" CR>"
+ },
+ {
+  "key": "ga5d8",
+  "en": "There doesn't seem to be any way to close it.\n",
+  "args": [],
+  "routine": "CPDOOR-F",
+  "zil": "<TELL \"There doesn't seem to be any way to close it.\" CR>"
+ },
+ {
+  "key": "ga5ef",
+  "en": "Do you think it isn't already?\n",
+  "args": [],
+  "routine": "CPDOOR-F",
+  "zil": "<TELL \"Do you think it isn't already?\" CR>"
+ },
+ {
+  "key": "ga606",
+  "en": "The door is, to a first approximation, indestructible.\n",
+  "args": [],
+  "routine": "CPDOOR-F",
+  "zil": "<TELL \"The door is, to a first approximation, indestructible.\" CR>"
+ },
+ {
+  "key": "ga62d",
+  "en": "Besides a great amount of reverberation, nothing happens.\n",
+  "args": [],
+  "routine": "CPDOOR-F",
+  "zil": "<TELL \"Besides a great amount of reverberation, nothing happens.\" CR>"
+ },
+ {
+  "key": "ga674",
+  "en": "You are in a small square room bounded to the north and west with marble walls and to the east and south with sandstone walls.\n",
+  "args": [],
+  "routine": "CP-ROOM",
+  "zil": "<TELL \"You are in a small square room bounded to the north and west with marble walls and to the east and south with sandstone walls.\" CR>"
+ },
+ {
+  "key": "ga708",
+  "en": "      +",
+  "args": [],
+  "routine": "CPWHERE",
+  "zil": "<TELL \"      +\">"
+ },
+ {
+  "key": "ga719",
+  "en": " ",
+  "args": [],
+  "routine": "CPWHERE",
+  "zil": "<TELL \" \">"
+ },
+ {
+  "key": "ga722",
+  "en": " ",
+  "args": [],
+  "routine": "CPWHERE",
+  "zil": "<TELL \" \">"
+ },
+ {
+  "key": "ga72d",
+  "en": "+\nWest  +",
+  "args": [],
+  "routine": "CPWHERE",
+  "zil": "<TELL \"      +\">"
+ },
+ {
+  "key": "ga742",
+  "en": " .. ",
+  "args": [],
+  "routine": "CPWHERE",
+  "zil": "<TELL \" .. \">"
+ },
+ {
+  "key": "ga74d",
+  "en": "+  East\n      +",
+  "args": [],
+  "routine": "CPWHERE",
+  "zil": "<TELL \"      +\">"
+ },
+ {
+  "key": "ga768",
+  "en": " ",
+  "args": [],
+  "routine": "CPWHERE",
+  "zil": "<TELL \" \">"
+ },
+ {
+  "key": "ga771",
+  "en": " ",
+  "args": [],
+  "routine": "CPWHERE",
+  "zil": "<TELL \" \">"
+ },
+ {
+  "key": "ga77c",
+  "en": "+\n",
+  "args": [],
+  "routine": "CPWHERE",
+  "zil": "<TELL \"      +\">"
+ },
+ {
+  "key": "ga78b",
+  "en": "In the ceiling above you is a large circular opening.\n",
+  "args": [],
+  "routine": "CPWHERE",
+  "zil": "<TELL \"In the ceiling above you is a large circular opening.\" CR>"
+ },
+ {
+  "key": "ga7b0",
+  "en": "The center of the floor here is noticeably depressed.\n",
+  "args": [],
+  "routine": "CPWHERE",
+  "zil": "<TELL \"The center of the floor here is noticeably depressed.\" CR>"
+ },
+ {
+  "key": "ga7d8",
+  "en": "In the center of the west wall is a steel door which is ",
+  "args": [],
+  "routine": "CPWHERE",
+  "zil": "<TELL \"In the center of the west wall is a steel door which is \">"
+ },
+ {
+  "key": "ga7f6",
+  "en": "open",
+  "args": [],
+  "routine": "CPWHERE",
+  "zil": "<TELL \"open\">"
+ },
+ {
+  "key": "ga7fe",
+  "en": "closed",
+  "args": [],
+  "routine": "CPWHERE",
+  "zil": "<TELL \"closed\">"
+ },
+ {
+  "key": "ga803",
+  "en": ". On one side of the door is a narrow slot.\n",
+  "args": [],
+  "routine": "CPWHERE",
+  "zil": "<TELL \". On one side of the door is a narrow slot.\" CR>"
+ },
+ {
+  "key": "ga821",
+  "en": "There is a ladder here, firmly attached to the east wall.\n",
+  "args": [],
+  "routine": "CPWHERE",
+  "zil": "<TELL \"There is a ladder here, firmly attached to the east wall.\" CR>"
+ },
+ {
+  "key": "ga847",
+  "en": "There is a ladder here, firmly attached to the west wall.\n",
+  "args": [],
+  "routine": "CPWHERE",
+  "zil": "<TELL \"There is a ladder here, firmly attached to the west wall.\" CR>"
+ },
+ {
+  "key": "ga86c",
+  "en": "  ",
+  "args": [],
+  "routine": "CP-ORTHO",
+  "zil": "<TELL \"  \">"
+ },
+ {
+  "key": "ga874",
+  "en": "MM",
+  "args": [],
+  "routine": "CP-ORTHO",
+  "zil": "<TELL \"MM\">"
+ },
+ {
+  "key": "ga87a",
+  "en": "SS",
+  "args": [],
+  "routine": "CP-ORTHO",
+  "zil": "<TELL \"SS\">"
+ },
+ {
+  "key": "ga893",
+  "en": "??",
+  "args": [],
+  "routine": "CP-CORNER",
+  "zil": "<TELL \"??\">"
+ },
+ {
+  "key": "ga8a3",
+  "en": "MM",
+  "args": [],
+  "routine": "CP-CORNER",
+  "zil": "<TELL \"MM\">"
+ },
+ {
+  "key": "ga8c1",
+  "en": "  ",
+  "args": [],
+  "routine": "CP-CORNER",
+  "zil": "<TELL \"  \">"
+ },
+ {
+  "key": "ga8c9",
+  "en": "MM",
+  "args": [],
+  "routine": "CP-CORNER",
+  "zil": "<TELL \"MM\">"
+ },
+ {
+  "key": "ga8cf",
+  "en": "SS",
+  "args": [],
+  "routine": "CP-CORNER",
+  "zil": "<TELL \"SS\">"
+ },
+ {
+  "key": "ga8e3",
+  "en": "It doesn't fit.\n",
+  "args": [],
+  "routine": "CP-SLOT-FCN",
+  "zil": "<TELL \"It doesn't fit.\" CR>"
+ },
+ {
+  "key": "ga8f4",
+  "en": "The book drops into the slot and vanishes. The metal door slides open, revealing a passageway to the west, and a sign flashes:\n    \"Royal Puzzle Exit Fee Paid\n          Item Confiscated\"\n",
+  "args": [],
+  "routine": "CP-SLOT-FCN",
+  "zil": "<TELL \"The book drops into the slot and vanishes. The metal door slides open, revealing a passageway to the west, and a sign flashes:\\n     \\\"Royal Puzzle Exit Fee Paid\\n           Item Confiscated\\\"\" CR>"
+ },
+ {
+  "key": "ga977",
+  "en": "The item vanishes into the slot. A moment later, a previously unseen sign flashes \"Garbage In, Garbage Out\" and spews out the {0} (now atomized).\n",
+  "args": [
+   "o"
+  ],
+  "routine": "CP-SLOT-FCN",
+  "zil": "<TELL \"The item vanishes into the slot. A moment later, a previously unseen sign flashes \\\"Garbage In, Garbage Out\\\" and spews out the \" D ,PRSO \" (now atomized).\" CR>"
+ },
+ {
+  "key": "ga9e1",
+  "en": "You are in a narrow room, lit from above. A flight of steps leads up to the north, and a ",
+  "args": [],
+  "routine": "CPOUT-ROOM",
+  "zil": "<TELL \"You are in a narrow room, lit from above. A flight of steps leads up to the north, and a \">"
+ },
+ {
+  "key": "gaa11",
+  "en": "passage",
+  "args": [],
+  "routine": "CPOUT-ROOM",
+  "zil": "<TELL \"passage\">"
+ },
+ {
+  "key": "gaa1b",
+  "en": "metal door",
+  "args": [],
+  "routine": "CPOUT-ROOM",
+  "zil": "<TELL \"metal door\">"
+ },
+ {
+  "key": "gaa24",
+  "en": " leads to the east.\n",
+  "args": [],
+  "routine": "CPOUT-ROOM",
+  "zil": "<TELL \" leads to the east.\" CR>"
+ },
+ {
+  "key": "gaa5e",
+  "en": "There is a wooden wall blocking your way.\n",
+  "args": [],
+  "routine": "MRGO",
+  "zil": "<TELL \"There is a wooden wall blocking your way.\" CR>"
+ },
+ {
+  "key": "gaac4",
+  "en": "There is a large broken mirror blocking your way.\n",
+  "args": [],
+  "routine": "MIRBLOCK",
+  "zil": "<TELL \"There is a large broken mirror blocking your way.\" CR>"
+ },
+ {
+  "key": "gaadb",
+  "en": "There is a large mirror blocking your way.\n",
+  "args": [],
+  "routine": "MIRBLOCK",
+  "zil": "<TELL \"There is a large mirror blocking your way.\" CR>"
+ },
+ {
+  "key": "gab44",
+  "en": "You are in a narrow room, whose ",
+  "args": [],
+  "routine": "EWTELL",
+  "zil": "<TELL \"You are in a narrow room, whose \" <COND (.EAST? \"west\") (T \"east\")> \" wall is a large \" <COND (.MWIN \"mirror.\") (T \"wooden panel which once contained a mirror.\")> CR>"
+ },
+ {
+  "key": "gab63",
+  "en": "{0} wall is a large ",
+  "args": [
+   "s"
+  ],
+  "routine": "EWTELL",
+  "zil": "<TELL \"You are in a narrow room, whose \" <COND (.EAST? \"west\") (T \"east\")> \" wall is a large \" <COND (.MWIN \"mirror.\") (T \"wooden panel which once contained a mirror.\")> CR>"
+ },
+ {
+  "key": "gab94",
+  "en": "The opposite wall is solid rock.\n",
+  "args": [],
+  "routine": "EWTELL",
+  "zil": "<TELL \"The opposite wall is solid rock.\" CR>"
+ },
+ {
+  "key": "gabb8",
+  "en": "Somewhat to the south{0}\n",
+  "args": [
+   "s"
+  ],
+  "routine": "MRDEW",
+  "zil": "<TELL \"Somewhat to the south\" ,GUARDSTR CR>"
+ },
+ {
+  "key": "gabd8",
+  "en": "Somewhat to the north{0}\n",
+  "args": [
+   "s"
+  ],
+  "routine": "MRCEW",
+  "zil": "<TELL \"Somewhat to the north\" ,GUARDSTR CR>"
+ },
+ {
+  "key": "gabf5",
+  "en": "To the north and south are large hallways.\n",
+  "args": [],
+  "routine": "MRBEW",
+  "zil": "<TELL \"To the north and south are large hallways.\" CR>"
+ },
+ {
+  "key": "gac13",
+  "en": "To the north is a large hallway.\n",
+  "args": [],
+  "routine": "MRAEW",
+  "zil": "<TELL \"To the north is a large hallway.\" CR>"
+ },
+ {
+  "key": "gac3a",
+  "en": "This is a part of the long hallway. The east and west walls are dressed stone. In the center of the hall is a shallow stone channel. In the center of the room the channel widens into a large hole around which is engraved a compass rose.\n",
+  "args": [],
+  "routine": "LOOK-TO",
+  "zil": "<TELL \"This is a part of the long hallway. The east and west walls are dressed stone. In the center of the hall is a shallow stone channel. In the center of the room the channel widens into a large hole around which is engraved a compass rose.\" CR>"
+ },
+ {
+  "key": "gacba",
+  "en": "On either side of you are identical stone statues holding bludgeons. They appear ready to strike, though, for the moment, they remain impassive.\n",
+  "args": [],
+  "routine": "LOOK-TO",
+  "zil": "<TELL \"On either side of you are identical stone statues holding bludgeons. They appear ready to strike, though, for the moment, they remain impassive.\" CR>"
+ },
+ {
+  "key": "gad1e",
+  "en": "Somewhat to the north{0}\n",
+  "args": [
+   "s"
+  ],
+  "routine": "LOOK-TO",
+  "zil": "<TELL \"Somewhat to the north\" ,GUARDSTR CR>"
+ },
+ {
+  "key": "gad36",
+  "en": "You are in a north-south hallway which ends, to the north, at a large wooden door.\n",
+  "args": [],
+  "routine": "LOOK-TO",
+  "zil": "<TELL \"You are in a north-south hallway which ends, to the north, at a large wooden door.\" CR>"
+ },
+ {
+  "key": "gad69",
+  "en": "Somewhat to the south{0}\n",
+  "args": [
+   "s"
+  ],
+  "routine": "LOOK-TO",
+  "zil": "<TELL \"Somewhat to the south\" ,GUARDSTR CR>"
+ },
+ {
+  "key": "gad81",
+  "en": "The hallway continues to the south.\n",
+  "args": [],
+  "routine": "LOOK-TO",
+  "zil": "<TELL \"The hallway continues to the south.\" CR>"
+ },
+ {
+  "key": "gadf2",
+  "en": "The {0}th side of the room is divided by a wooden wall into small hallways to the {1}theast and {2}thwest.\n",
+  "args": [
+   "s",
+   "s",
+   "s"
+  ],
+  "routine": "LOOK-TO",
+  "zil": "<TELL \"The \" .DIR \"th side of the room is divided by a wooden wall into small hallways to the \">"
+ },
+ {
+  "key": "gae3c",
+  "en": "{0}{1}th side of the hallway.\n",
+  "args": [
+   "s",
+   "s"
+  ],
+  "routine": "LOOK-TO",
+  "zil": "<TELL <COND (.MIR? \"A large mirror fills the \") (T \"A large panel fills the \")> .DIR \"th side of the hallway.\" CR>"
+ },
+ {
+  "key": "gae6d",
+  "en": "The corridor continues north and south.\n",
+  "args": [],
+  "routine": "LOOK-TO",
+  "zil": "<TELL \"The corridor continues north and south.\" CR>"
+ },
+ {
+  "key": "gae81",
+  "en": "The corridor continues north.\n",
+  "args": [],
+  "routine": "LOOK-TO",
+  "zil": "<TELL \"The corridor continues north.\" CR>"
+ },
+ {
+  "key": "gae91",
+  "en": "The corridor continues south.\n",
+  "args": [],
+  "routine": "LOOK-TO",
+  "zil": "<TELL \"The corridor continues south.\" CR>"
+ },
+ {
+  "key": "gaef8",
+  "en": "To the east and west are the Guardians of Zork, in perfect symmetry. From here, it's hard to tell which of the two is a reflection!\n",
+  "args": [],
+  "routine": "GUARDIANS",
+  "zil": "<TELL \"To the east and west are the Guardians of Zork, in perfect symmetry. From here, it's hard to tell which of the two is a reflection!\" CR>"
+ },
+ {
+  "key": "gaf5d",
+  "en": "You can't see them from here.\n",
+  "args": [],
+  "routine": "GUARDIANS",
+  "zil": "<TELL \"You can't see them from here.\" CR>"
+ },
+ {
+  "key": "gaf6a",
+  "en": "The Guardians are quite impressive. I wouldn't get in their way if I were you!\n",
+  "args": [],
+  "routine": "GUARDIANS",
+  "zil": "<TELL \"The Guardians are quite impressive. I wouldn't get in their way if I were you!\" CR>"
+ },
+ {
+  "key": "gafab",
+  "en": "You step",
+  "args": [],
+  "routine": "GUARDIANS",
+  "zil": "<TELL \"You step\">"
+ },
+ {
+  "key": "gafb3",
+  "en": "The {0} falls",
+  "args": [
+   "o"
+  ],
+  "routine": "GUARDIANS",
+  "zil": "<TELL \"The \" D ,PRSO \" falls\">"
+ },
+ {
+  "key": "gafbf",
+  "en": " in front of the Guardians, who ",
+  "args": [],
+  "routine": "GUARDIANS",
+  "zil": "<TELL \" in front of the Guardians, who \">"
+ },
+ {
+  "key": "gafd8",
+  "en": "decimate you",
+  "args": [],
+  "routine": "GUARDIANS",
+  "zil": "<TELL \"decimate you\">"
+ },
+ {
+  "key": "gafe4",
+  "en": "destroy it",
+  "args": [],
+  "routine": "GUARDIANS",
+  "zil": "<TELL \"destroy it\">"
+ },
+ {
+  "key": "gafed",
+  "en": " in perfect unison. Satisfied, they resume their posts.\n",
+  "args": [],
+  "routine": "GUARDIANS",
+  "zil": "<TELL \" in perfect unison. Satisfied, they resume their posts.\" CR>"
+ },
+ {
+  "key": "gb018",
+  "en": "You aren't close enough, and even if you were, the fight would be a bit one-sided.\n",
+  "args": [],
+  "routine": "GUARDIANS",
+  "zil": "<TELL \"You aren't close enough, and even if you were, the fight would be a bit one-sided.\" CR>"
+ },
+ {
+  "key": "gb04d",
+  "en": "The statues are impassive.\n",
+  "args": [],
+  "routine": "GUARDIANS",
+  "zil": "<TELL \"The statues are impassive.\" CR>"
+ },
+ {
+  "key": "gb0c4",
+  "en": "The structure won't budge.\n",
+  "args": [],
+  "routine": "WOODEN-WALL-F",
+  "zil": "<TELL \"The structure won't budge.\" CR>"
+ },
+ {
+  "key": "gb0d1",
+  "en": "You can't see any wooden wall here.\n",
+  "args": [],
+  "routine": "WOODEN-WALL-F",
+  "zil": "<TELL \"You can't see any wooden wall here.\" CR>"
+ },
+ {
+  "key": "gb148",
+  "en": "You can't see any mirror here.\n",
+  "args": [],
+  "routine": "MIRROR-FUNCTION",
+  "zil": "<TELL \"You can't see any mirror here.\" CR>"
+ },
+ {
+  "key": "gb15b",
+  "en": "You don't see a way to open the mirror here.\n",
+  "args": [],
+  "routine": "MIRROR-FUNCTION",
+  "zil": "<TELL \"You don't see a way to open the mirror here.\" CR>"
+ },
+ {
+  "key": "gb180",
+  "en": "Amazingly, you have no reflection!\n",
+  "args": [],
+  "routine": "MIRROR-FUNCTION",
+  "zil": "<TELL \"Amazingly, you have no reflection!\" CR>"
+ },
+ {
+  "key": "gb197",
+  "en": "A disheveled adventurer stares back at you.\n",
+  "args": [],
+  "routine": "MIRROR-FUNCTION",
+  "zil": "<TELL \"A disheveled adventurer stares back at you.\" CR>"
+ },
+ {
+  "key": "gb1b2",
+  "en": "You have destroyed the mirror, or have you forgotten?\n",
+  "args": [],
+  "routine": "MIRROR-FUNCTION",
+  "zil": "<TELL \"You have destroyed the mirror, or have you forgotten?\" CR>"
+ },
+ {
+  "key": "gb1e0",
+  "en": "The mirror breaks, revealing a wooden panel behind it. The glistening fragments of mirror quietly sparkle into nonexistance.\n",
+  "args": [],
+  "routine": "MIRROR-FUNCTION",
+  "zil": "<TELL \"The mirror breaks, revealing a wooden panel behind it. The glistening fragments of mirror quietly sparkle into nonexistance.\" CR>"
+ },
+ {
+  "key": "gb223",
+  "en": "The mirror has already been broken.\n",
+  "args": [],
+  "routine": "MIRROR-FUNCTION",
+  "zil": "<TELL \"The mirror has already been broken.\" CR>"
+ },
+ {
+  "key": "gb237",
+  "en": "The mirror breaks, revealing a wooden panel behind it. The glistening fragments of mirror quietly sparkle into nonexistance.\n",
+  "args": [],
+  "routine": "MIRROR-FUNCTION",
+  "zil": "<TELL \"The mirror breaks, revealing a wooden panel behind it. The glistening fragments of mirror quietly sparkle into nonexistance.\" CR>"
+ },
+ {
+  "key": "gb27a",
+  "en": "The mirror has already been broken.\n",
+  "args": [],
+  "routine": "MIRROR-FUNCTION",
+  "zil": "<TELL \"The mirror has already been broken.\" CR>"
+ },
+ {
+  "key": "gb291",
+  "en": "There's no mirror left.\n",
+  "args": [],
+  "routine": "MIRROR-FUNCTION",
+  "zil": "<TELL \"There's no mirror left.\" CR>"
+ },
+ {
+  "key": "gb2c4",
+  "en": "You can't see any panel here.\n",
+  "args": [],
+  "routine": "PANEL-FUNCTION",
+  "zil": "<TELL \"You can't see any panel here.\" CR>"
+ },
+ {
+  "key": "gb2d7",
+  "en": "You don't see a way to open the panel here.\n",
+  "args": [],
+  "routine": "PANEL-FUNCTION",
+  "zil": "<TELL \"You don't see a way to open the panel here.\" CR>"
+ },
+ {
+  "key": "gb2fa",
+  "en": "The panel is not that easily destroyed.\n",
+  "args": [],
+  "routine": "PANEL-FUNCTION",
+  "zil": "<TELL \"The panel is not that easily destroyed.\" CR>"
+ },
+ {
+  "key": "gb316",
+  "en": "The panel is not that easily destroyed.\n",
+  "args": [],
+  "routine": "PANEL-FUNCTION",
+  "zil": "<TELL \"The panel is not that easily destroyed.\" CR>"
+ },
+ {
+  "key": "gb392",
+  "en": "There's a wall there.\n",
+  "args": [],
+  "routine": "MIROUT",
+  "zil": "<TELL \"There's a wall there.\" CR>"
+ },
+ {
+  "key": "gb3ce",
+  "en": "As you leave, the door swings shut.\n",
+  "args": [],
+  "routine": "MIROUT",
+  "zil": "<TELL \"As you leave, the door swings shut.\" CR>"
+ },
+ {
+  "key": "gb3f6",
+  "en": "You would hit one of the panels.\n",
+  "args": [],
+  "routine": "MIROUT",
+  "zil": "<TELL \"You would hit one of the panels.\" CR>"
+ },
+ {
+  "key": "gb409",
+  "en": "You are inside a closed box!\n",
+  "args": [],
+  "routine": "MIROUT",
+  "zil": "<TELL \"You are inside a closed box!\" CR>"
+ },
+ {
+  "key": "gb4a3",
+  "en": "A mirror blocks your way.\n",
+  "args": [],
+  "routine": "MIRIN",
+  "zil": "<TELL \"A mirror blocks your way.\" CR>"
+ },
+ {
+  "key": "gb4b2",
+  "en": "The panel is closed.\n",
+  "args": [],
+  "routine": "MIRIN",
+  "zil": "<TELL \"The panel is closed.\" CR>"
+ },
+ {
+  "key": "gb4bf",
+  "en": "The structure blocks your way.\n",
+  "args": [],
+  "routine": "MIRIN",
+  "zil": "<TELL \"The structure blocks your way.\" CR>"
+ },
+ {
+  "key": "gb4ec",
+  "en": "You conveniently drop the {0} in position to block the beam of light.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "MREYE-ROOM",
+  "zil": "<TELL \"You conveniently drop the \" D ,PRSO \" in position to block the beam of light.\" CR>"
+ }
+]

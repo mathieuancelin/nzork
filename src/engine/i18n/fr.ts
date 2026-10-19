@@ -6,10 +6,12 @@ import type { GameId } from '../games'
 import { frenchFrom } from './french'
 import zork1 from './fr/zork1/catalog.json'
 import zork2 from './fr/zork2/catalog.json'
+import zork3 from './fr/zork3/catalog.json'
 
 const CATALOGS: Partial<Record<GameId, Catalog>> = {
   zork1: zork1 as unknown as Catalog,
   zork2: zork2 as unknown as Catalog,
+  zork3: zork3 as unknown as Catalog,
 }
 
 export { frenchFrom }

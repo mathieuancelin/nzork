@@ -3,7 +3,8 @@
 Ce guide s'applique à tous les textes des trois jeux. Il garantit une traduction cohérente même
 si plusieurs personnes (ou agents) traduisent des parties différentes. Les règles de ton, de
 typographie et de format valent pour tous ; le glossaire de Zork I donne aussi les termes
-communs (verbes, objets du jeu de base) ; [celui de Zork II](#glossaire-de-zork-ii) suit.
+communs (verbes, objets du jeu de base) ; [celui de Zork II](#glossaire-de-zork-ii) et
+[celui de Zork III](#glossaire-de-zork-iii) suivent.
 
 Zork II et Zork III partagent avec Zork I une bonne partie du code (le parseur, les verbes
 génériques) : les textes identiques à ceux de Zork I sont repris tels quels
@@ -473,3 +474,107 @@ Ces mots s'écrivent avec une majuscule quand le jeu les cite (« Le Sorcier lan
 
 L'énigme (« What is tall as a house, round as a cup… ») se traduit en vers, et la réponse reste
 **un puits** (le joueur tapera « répondre puits »).
+
+## Glossaire de Zork III
+
+Zork III, *Le Maître du donjon*. Le narrateur vouvoie toujours. Le Maître du donjon (le vieil
+homme) parle avec gravité et vouvoie le joueur ; la silhouette encapuchonnée est muette ou
+menaçante. Le score n'est pas un score mais un **potentiel** (« Votre potentiel est de 3 sur un
+total possible de 7 ») : garder ce mot.
+
+### Lieux
+
+| Anglais | Français |
+|---|---|
+| Endless Stair | Escalier sans fin |
+| Junction | Carrefour |
+| Engravings Room | Salle des gravures |
+| Damp Passage / Creepy Crawl / Tight Squeeze | Passage humide / Boyau sinistre / Étroit goulet |
+| Dark Place / Dead End | Endroit sombre / Cul-de-sac |
+| Foggy Room | Salle brumeuse |
+| Lake Shore / Southern Shore / Western Shore | Rive du lac / Rive sud / Rive ouest |
+| On the Lake / Underwater | Sur le lac / Sous l'eau |
+| Land of Shadow | Pays de l'Ombre |
+| Barren Area | Étendue désolée |
+| Cliff / Cliff Base / Cliff Ledge | Falaise / Pied de la falaise / Corniche de la falaise |
+| Flathead Ocean | Océan Flathead |
+| Scenic Vista | Panorama |
+| Crystal Grotto | Grotte de cristal |
+| Aqueduct / Aqueduct View | Aqueduc / Vue sur l'aqueduc |
+| Key Room | Salle de la clé |
+| Water Slide | Toboggan aquatique |
+| Hairpin Loop | Lacet en épingle |
+| High Arch | Haute arche |
+| Great Door | Grande porte |
+| Museum Entrance / Technology Museum | Entrée du musée / Musée de la technologie |
+| Royal Museum | Musée royal |
+| Jewel Room / Treasury of Zork | Salle des joyaux / Trésor de Zork |
+| Royal Puzzle Entrance / Room in a Puzzle / Side Room | Entrée du Casse-tête royal / Salle du casse-tête / Salle annexe |
+| Ladder Top / Ladder Bottom | Haut de l'échelle / Bas de l'échelle |
+| Timber Room / Drafty Room / Machine Room | Salle des poutres / Salle des courants d'air / Salle de la machine |
+| Button Room / Beam Room | Salle du bouton / Salle du rayon |
+| Hallway / Narrow Room / Inside Mirror | Grand couloir / Salle étroite / Dans le miroir |
+| North / South / East / West Corridor, Narrow Corridor | Couloir nord / sud / est / ouest, Couloir étroit |
+| Dungeon Entrance | Entrée du donjon |
+| Parapet / Prison Cell | Parapet / Cellule |
+| Royal Hall | Salle royale |
+| Sacrificial Altar | Autel sacrificiel |
+| Room 8 | Salle 8 |
+
+### Personnages et créatures
+
+| Anglais | Français |
+|---|---|
+| the Dungeon Master, the old man | le Maître du donjon, le vieil homme |
+| hooded figure, the hooded one, shadow | silhouette encapuchonnée, l'Encapuchonné, l'ombre |
+| man (at the cliff), friend | homme, ami |
+| Guardians of Zork | Gardiens de Zork |
+| Lord Dimwit Flathead and his guards | Lord Dimwit Flathead et ses gardes |
+| Roc (mythical bird) | Roc (oiseau fabuleux) |
+| Viking sailor, Viking ship | marin viking, drakkar |
+| robot (of the museum) | robot |
+| grue | **un grue** |
+
+### Objets
+
+| Anglais | Français |
+|---|---|
+| lamp, brass lantern / broken lantern | lanterne (en laiton) / lanterne cassée |
+| torch / burned-out torch | torche / torche consumée |
+| sword (in the stone) | épée (dans le rocher) |
+| great rock | grand rocher |
+| piece of waybread | morceau de pain de route |
+| staff, wooden staff / broken staff | bâton, bâton de bois / bâton brisé |
+| hood / cloak | capuchon / cape |
+| golden amulet, shiny object | amulette en or, objet brillant |
+| golden ring / jewelled knife / sceptre (the royal jewels) | anneau d'or / couteau incrusté de joyaux / sceptre (les joyaux royaux) |
+| strange key | clé étrange |
+| very ancient book (lore book) | livre très ancien (le livre du savoir) |
+| vial, invisible potion | fiole, potion d'invisibilité (liquide lourd mais invisible) |
+| chest | coffre |
+| rope / wooden ladder | corde / échelle en bois |
+| viewing table | table de visionnage |
+| Royal Seal of Dimwit Flathead | Sceau royal de Dimwit Flathead |
+| gold machine (time machine, temporizer) / seat / dial / button | machine dorée (machine temporelle, temporisateur) / siège / cadran / bouton |
+| grey machine (pressurizer) / black machine (spinner) | machine grise (pressuriseur) / machine noire (centrifugeuse) |
+| bronze plaque, plaque | plaque de bronze, plaque |
+| manhole cover | plaque d'égout |
+| steel / iron / bronze / stone / wooden / secret door, cell door | porte d'acier / de fer / de bronze / de pierre / en bois / secrète, porte de la cellule |
+| mahogany / pine / white / black / red / yellow panel (the mirror box) | panneau d'acajou / de pin / blanc / noir / rouge / jaune |
+| short pole / long pole / T-bar | perche courte / longue perche / barre en T |
+| mirror / compass rose / compass arrow | miroir / rose des vents / flèche de la rose des vents |
+| red beam of light / red button | rayon de lumière rouge / bouton rouge |
+| sundial / large button | cadran solaire / gros bouton |
+| flaming pit | fosse enflammée |
+| pile of assorted valuables | tas d'objets précieux de toutes sortes |
+| runes, engravings | runes, gravures |
+| stone channel, water channel | rigole de pierre, rigole |
+| moss and lichen / plants and algae / reeds | mousse et lichen / plantes et algues / roseaux |
+| broken timber | poutre brisée |
+| warning note | note d'avertissement |
+| Frobozz Magic Grue Repellent | Répulsif magique Frobozz contre les grues (comme dans Zork II) |
+
+### Mots magiques
+
+FROTZ et OZMOO restent tels quels (« dites FROTZ OZMOO »). « Hello, Sailor! » devient « Salut,
+marin ! » comme dans Zork I : le joueur peut taper `salut marin` (ou `hello sailor`).

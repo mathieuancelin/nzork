@@ -1,0 +1,845 @@
+[
+ {
+  "key": "s14080",
+  "en": "You are in a land of dark shadows and shallow hills, which stretch out in all directions. To the west, the land dips sharply.",
+  "uses": [
+   "SHADOW-7.LDESC",
+   "table"
+  ],
+  "zil": "SHADOW-7.LDESC (3actions.zil:3306)"
+ },
+ {
+  "key": "s140c4",
+  "en": "You are standing atop a steep cliff, looking west over a vast ocean. Far below, the surf pounds at a sandy beach. To the south and east are rolling hills filled with eerie shadows. A path cut into the face of the cliff descends toward the beach. To the north is a tall stone wall, which ends at the cliff edge. It was obviously built long ago, and directly north is a spot where you could climb over the rubble of the decaying wall.",
+  "uses": [
+   "SHADOW-8.LDESC",
+   "table"
+  ],
+  "zil": "SHADOW-8.LDESC (3actions.zil:3324)"
+ },
+ {
+  "key": "s141b0",
+  "en": "Between the rocks, wind, and waves, you wouldn't last a minute.",
+  "uses": [
+   "FLATHEAD-OCEAN.WEST",
+   "FLATHEAD-OCEAN.NW",
+   "FLATHEAD-OCEAN.SW",
+   "FLATHEAD-OCEAN.ENTER",
+   "table"
+  ],
+  "zil": "FLATHEAD-OCEAN.NW (3actions.zil:3352)"
+ },
+ {
+  "key": "s141d8",
+  "en": "The quicksand prevents movement here.",
+  "uses": [
+   "FLATHEAD-OCEAN.SOUTH",
+   "table"
+  ],
+  "zil": "FLATHEAD-OCEAN.SOUTH (3actions.zil:3357)"
+ },
+ {
+  "key": "s141ee",
+  "en": "stairs",
+  "uses": [
+   "table"
+  ],
+  "zil": "STAIRS.DESC (gglobals.zil:139)"
+ },
+ {
+  "key": "s141f2",
+  "en": "?",
+  "uses": [
+   "table"
+  ],
+  "zil": "V-SEND (gverbs.zil:1246)"
+ },
+ {
+  "key": "s141f4",
+  "en": " appears to be badly hurt and defenseless.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:3434"
+ },
+ {
+  "key": "s1420a",
+  "en": " is hurt, and its strength appears to be fading.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:3435"
+ },
+ {
+  "key": "s14224",
+  "en": " has some wounds and is probably not capable of hindering your movement.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:3436"
+ },
+ {
+  "key": "s1424c",
+  "en": " has a light wound which hasn't affected its seemingly great strength.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:3437"
+ },
+ {
+  "key": "s14276",
+  "en": " has a great deal of strength, perhaps matching your own.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:3438"
+ },
+ {
+  "key": "s14296",
+  "en": "A good parry! Your sword wounds the hooded figure!",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:3484"
+ },
+ {
+  "key": "s142b2",
+  "en": "A quick stroke catches the hooded figure off guard! Blood trickles down the figure's arm!",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:3485"
+ },
+ {
+  "key": "s142e8",
+  "en": "The hooded figure is hit with a quick slash!",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:3487"
+ },
+ {
+  "key": "s142fc",
+  "en": "Your move was not quick enough and misses the mark.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:3490"
+ },
+ {
+  "key": "s1431a",
+  "en": "A quick stroke, but the hooded figure is on guard.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:3491"
+ },
+ {
+  "key": "s14332",
+  "en": "A good stroke, but it's too slow.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:3492"
+ },
+ {
+  "key": "s14348",
+  "en": "A good slash, but it misses by a mile.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:3493"
+ },
+ {
+  "key": "s14360",
+  "en": "You charge, but the hooded figure jumps nimbly aside.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:3494"
+ },
+ {
+  "key": "s1437a",
+  "en": "The hooded figure catches you off guard and wounds you!",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:3497"
+ },
+ {
+  "key": "s14394",
+  "en": "You are wounded by a lightning thrust!",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:3498"
+ },
+ {
+  "key": "s143ac",
+  "en": "Your quick reflexes cannot stop the hooded figure's stroke! You are hit!",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:3499"
+ },
+ {
+  "key": "s143d2",
+  "en": "In your wounded state, you cannot defend yourself against your still-quick opponent. Slowly and carefully, the figure starts to remove its hood as you fall to the ground, dead.",
+  "uses": [
+   "routine I-SHADOW-REPLY"
+  ],
+  "zil": "I-SHADOW-REPLY (3actions.zil:3523)"
+ },
+ {
+  "key": "s14434",
+  "en": "The hooded figure stabs nonchalantly with its sword and misses.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:3538"
+ },
+ {
+  "key": "s14454",
+  "en": "You dodge as the hooded figure comes in low.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:3539"
+ },
+ {
+  "key": "s14468",
+  "en": "The hooded figure tries to sneak past your guard, but you twist away.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:3540"
+ },
+ {
+  "key": "s1448a",
+  "en": "The hooded figure thrusts, but you fight back and send it flying to the ground!",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:3541"
+ },
+ {
+  "key": "s144b0",
+  "en": "You are at the bottom of a seemingly endless stair, winding its way upward beyond your vision. An eerie light, coming from all around you, casts strange shadows on the walls. To the south is a dark and winding trail.",
+  "uses": [
+   "ZORK2-STAIR.LDESC",
+   "table"
+  ],
+  "zil": "ZORK2-STAIR.LDESC (3actions.zil:3650)"
+ },
+ {
+  "key": "s14528",
+  "en": "The stairs are endless.",
+  "uses": [
+   "ZORK2-STAIR.NORTH",
+   "ZORK2-STAIR.UP",
+   "table"
+  ],
+  "zil": "ZORK2-STAIR.UP (3actions.zil:3656)"
+ },
+ {
+  "key": "s14536",
+  "en": "You are at the junction of a north-south passage and an east-west passage. To the north, you can make out the bottom of a stairway. The ways to the east and south are relatively cramped, but a wider trail leads to the west.",
+  "uses": [
+   "JUNCTION.LDESC",
+   "table"
+  ],
+  "zil": "JUNCTION.LDESC (3actions.zil:3664)"
+ },
+ {
+  "key": "s145a4",
+  "en": "You are west of the junction, where the rock-bound passage widens out into a large, flat area. Although the land here is barren, you can see vegetation to the west. South of here is a mighty wall of stone, ancient and crumbling. To the southwest the wall has decayed enough to form an opening, through which seeps a thin mist. A trail dips sharply into rocky terrain to the northwest.",
+  "uses": [
+   "CLEARING.LDESC",
+   "table"
+  ],
+  "zil": "CLEARING.LDESC (3actions.zil:3678)"
+ },
+ {
+  "key": "s14668",
+  "en": "A stone wall blocks your way.",
+  "uses": [
+   "CLEARING.SOUTH",
+   "CLEARING.SE",
+   "table"
+  ],
+  "zil": "CLEARING.SE (3actions.zil:3688)"
+ },
+ {
+  "key": "s14676",
+  "en": "You are at a sharp turn on a narrow and steeply sloping path, strewn with boulders of various sizes. The path climbs sharply toward a desolate plain to the southeast. Southwest of here the path winds down to the base of a cliff.",
+  "uses": [
+   "SLOPE.LDESC",
+   "table"
+  ],
+  "zil": "SLOPE.LDESC (3actions.zil:3698)"
+ },
+ {
+  "key": "s146f6",
+  "en": "You are at the base of a steep cliff. Directly above you is a wide ledge and far above that some natural sunlight can be seen. To the northeast is a steeply climbing path and the ground becomes sandy toward the south.",
+  "uses": [
+   "CLIFF-BASE.LDESC",
+   "table"
+  ],
+  "zil": "CLIFF-BASE.LDESC (3actions.zil:3713)"
+ },
+ {
+  "key": "s14764",
+  "en": "You can't get up the rock face.",
+  "uses": [
+   "CLIFF-BASE.UP",
+   "table"
+  ],
+  "zil": "CLIFF-BASE.UP (3actions.zil:3718)"
+ },
+ {
+  "key": "s14774",
+  "en": "The drop would kill you.",
+  "uses": [
+   "table"
+  ],
+  "zil": "CLIFF.DOWN (3actions.zil:3728)"
+ },
+ {
+  "key": "s14780",
+  "en": "There's no tree here suitable for climbing.",
+  "uses": [
+   "CLIFF.UP",
+   "table"
+  ],
+  "zil": "CLIFF.UP (3actions.zil:3729)"
+ },
+ {
+  "key": "s1479a",
+  "en": "You attempt the climb but slide back down.",
+  "uses": [
+   "CLIFF-LEDGE.UP",
+   "table"
+  ],
+  "zil": "CLIFF-LEDGE.UP (3actions.zil:3740)"
+ },
+ {
+  "key": "s147b2",
+  "en": "You are in a dank passage filled with a wispy fog. A spooky passageway leads north and a wider path heads off to the south. To the west, the path leaves the rock and enters an eerie, shadowy land.",
+  "uses": [
+   "FOGGY-ROOM.LDESC",
+   "table"
+  ],
+  "zil": "FOGGY-ROOM.LDESC (3actions.zil:3749)"
+ },
+ {
+  "key": "s1481e",
+  "en": "You are in a wide cavern on the north shore of a small lake. Some polished stone steps lead to the southeast and a sheer rock face prevents any movement around the lake to the southwest. The cavern is dimly lit from above.",
+  "uses": [
+   "LAKE-SHORE.LDESC",
+   "table"
+  ],
+  "zil": "LAKE-SHORE.LDESC (3actions.zil:3761)"
+ },
+ {
+  "key": "s14892",
+  "en": "If you really want to enter the lake, you should say so.",
+  "uses": [
+   "LAKE-SHORE.SOUTH",
+   "table"
+  ],
+  "zil": "LAKE-SHORE.SOUTH (3actions.zil:3767)"
+ },
+ {
+  "key": "s148b4",
+  "en": "The sheer rock face prevents movement along the lake shore.",
+  "uses": [
+   "LAKE-SHORE.SW",
+   "table"
+  ],
+  "zil": "LAKE-SHORE.SW (3actions.zil:3768)"
+ },
+ {
+  "key": "s148da",
+  "en": "This is a small balcony carved into a near-vertical cliff. To the east, stretching from north to south, stands a monumental aqueduct supported by mighty stone pillars, some of which are starting to crumble from age. You feel a sense of loss and sadness as you ponder this once-proud structure and the failure of the Empire which created this and other engineering marvels. Some stone steps lead up to the northwest.",
+  "uses": [
+   "AQ-VIEW.LDESC",
+   "table"
+  ],
+  "zil": "AQ-VIEW.LDESC (3actions.zil:3778)"
+ },
+ {
+  "key": "s149b6",
+  "en": "The drop would be fatal.",
+  "uses": [
+   "AQ-VIEW.DOWN",
+   "table"
+  ],
+  "zil": "AQ-VIEW.DOWN (3actions.zil:3786)"
+ },
+ {
+  "key": "s149c2",
+  "en": "You are floating on the surface of the lake. The water is ice cold and your ability to survive here for long is very questionable. A swim north puts you at your starting point. Conditions to the east are poor where the lake turns into swamp. The west and south shores are suitable for walking, however.",
+  "uses": [
+   "ON-LAKE.LDESC",
+   "table"
+  ],
+  "zil": "ON-LAKE.LDESC (3actions.zil:3794)"
+ },
+ {
+  "key": "s14a60",
+  "en": "The swamp is impassable.",
+  "uses": [
+   "ON-LAKE.EAST",
+   "ON-LAKE.NE",
+   "ON-LAKE.SE",
+   "table"
+  ],
+  "zil": "ON-LAKE.NE (3actions.zil:3804)"
+ },
+ {
+  "key": "s14a70",
+  "en": "You are below the surface of the lake. It turns out that the lake is quite shallow and the bottom is only a few feet below you. Considering the frigid temperature of the water, you should probably not plan an extended stay. The lake bottom is sandy and a few hearty plants and algae live there.",
+  "uses": [
+   "IN-LAKE.LDESC",
+   "table"
+  ],
+  "zil": "IN-LAKE.LDESC (3actions.zil:3817)"
+ },
+ {
+  "key": "s14b1a",
+  "en": "You are already at the bottom of the lake.",
+  "uses": [
+   "IN-LAKE.DOWN",
+   "table"
+  ],
+  "zil": "IN-LAKE.DOWN (3actions.zil:3822)"
+ },
+ {
+  "key": "s14b2c",
+  "en": "You are on the western shore of the lake. The ground here is quite hard, but a few sickly reeds manage to grow near the water's edge. The only path leads into the rock to the south.",
+  "uses": [
+   "FAR-SHORE.LDESC",
+   "table"
+  ],
+  "zil": "FAR-SHORE.LDESC (3actions.zil:3839)"
+ },
+ {
+  "key": "s14b8c",
+  "en": "If you want to enter the lake, you should say so.",
+  "uses": [
+   "FAR-SHORE.EAST",
+   "table"
+  ],
+  "zil": "FAR-SHORE.EAST (3actions.zil:3842)"
+ },
+ {
+  "key": "s14baa",
+  "en": "Mounted on one wall is a flaming torch, which fills the room with a flickering light.",
+  "uses": [
+   "TORCH.FDESC",
+   "VIEW-ROOM.LDESC",
+   "table"
+  ],
+  "zil": "TORCH.FDESC (3actions.zil:3875)"
+ },
+ {
+  "key": "s14bda",
+  "en": "A piece of bread is on the ground here.",
+  "uses": [
+   "WAYBREAD.LDESC",
+   "table"
+  ],
+  "zil": "WAYBREAD.LDESC (3actions.zil:3965)"
+ },
+ {
+  "key": "s14bee",
+  "en": "It seems as if somebody has been here recently, as there is some fresh bread lying beneath one of the other trees.",
+  "uses": [
+   "WAYBREAD.FDESC",
+   "table"
+  ],
+  "zil": "WAYBREAD.FDESC (3actions.zil:3967)"
+ },
+ {
+  "key": "s14c2c",
+  "en": "The staff is instantly consumed in a ball of flame. You along with it.",
+  "uses": [
+   "routine STAFF-F"
+  ],
+  "zil": "STAFF-F (3actions.zil:4025)"
+ },
+ {
+  "key": "s14c56",
+  "en": "A large chest, closed and locked, is lying among the boulders.",
+  "uses": [
+   "CHEST.FDESC",
+   "table"
+  ],
+  "zil": "CHEST.FDESC (3actions.zil:4031)"
+ },
+ {
+  "key": "s14c7a",
+  "en": "The man appears to be getting somewhat impatient.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:4118"
+ },
+ {
+  "key": "s14c94",
+  "en": "Your friend at the cliff top has started pacing nervously around.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:4119"
+ },
+ {
+  "key": "s14cbc",
+  "en": "\"Yoo hoo!\" calls the man at the brink of the cliff. \"Remember me?\"",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:4120"
+ },
+ {
+  "key": "s14ce8",
+  "en": "The man on the cliff waves at you. \"It would just take a moment to tie that rope to the chest. I'd be much obliged, and there might even be something in it for you!\"",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:4121"
+ },
+ {
+  "key": "s14d40",
+  "en": "A few small stones fall near your feet. You look up and see your friend waving. \"I haven't got all day, fella. Be a pal and pass up the chest!\"",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:4124"
+ },
+ {
+  "key": "s14d96",
+  "en": "The man on the cliff clears his throat loudly. \"I don't mean to be rushing you, but I do have some pressing engagements....\"",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:4126"
+ },
+ {
+  "key": "s14dde",
+  "en": "Oh, no! A tremendous fish just swallowed you whole!",
+  "uses": [
+   "routine IN-LAKE-F"
+  ],
+  "zil": "IN-LAKE-F (3actions.zil:4498)"
+ },
+ {
+  "key": "s14e02",
+  "en": "Your strength gives out, and you drown in the frigid waters.",
+  "uses": [
+   "routine I-ON-LAKE"
+  ],
+  "zil": "I-ON-LAKE (3actions.zil:4593)"
+ },
+ {
+  "key": "s14e24",
+  "en": "The roc snatches you in its jaws and has you for lunch.",
+  "uses": [
+   "routine I-ROC"
+  ],
+  "zil": "I-ROC (3actions.zil:4600)"
+ },
+ {
+  "key": "s14e42",
+  "en": "I",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:4679"
+ },
+ {
+  "key": "s14e44",
+  "en": "II",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:4679"
+ },
+ {
+  "key": "s14e48",
+  "en": "III",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:4679"
+ },
+ {
+  "key": "s14e4c",
+  "en": "IV",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:4679"
+ },
+ {
+  "key": "s14e50",
+  "en": "You see a passage cluttered with broken timbers. An extremely narrow opening can be seen at the end of the room.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:4686"
+ },
+ {
+  "key": "s14e8a",
+  "en": "You see a tiny room with rough walls. Chiseled crudely on one wall is the number \"8\". The only apparent exit seems to be a blur.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:4688"
+ },
+ {
+  "key": "s14ed2",
+  "en": "You see a wide room with two nearly identical passages leading east and northeast. A wide channel descends steeply into the room and seems to be blocked by rubble.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:4690"
+ },
+ {
+  "key": "s14f26",
+  "en": "You see the interior of a huge temple rudely constructed of basalt blocks. Flickering torches cast a sallow illumination over an altar still wet with the blood of human sacrifice, its velvet covers stained and encrusted with gore.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:4693"
+ },
+ {
+  "key": "s14fb4",
+  "en": "Smokey the Bear puts out both the fire and you.",
+  "uses": [
+   "routine TREE-F"
+  ],
+  "zil": "TREE-F (3actions.zil:4739)"
+ },
+ {
+  "key": "s1506e",
+  "en": "You have come to a dead end in the mine.\nThere is a small pile of coal here.",
+  "uses": [
+   "DEAD-END-5.LDESC",
+   "table"
+  ],
+  "zil": "DEAD-END-5.LDESC (3actions.zil:4799)"
+ },
+ {
+  "key": "s1510c",
+  "en": "This is a small chamber carved out of the rock at the end of a short crawl. On the wall is crudely chiseled the number \"8\". The only apparent exit, to the east, seems to be a blur and a loud, whirring sound resounds through the rock.",
+  "uses": [
+   "ROOM-8.LDESC",
+   "table"
+  ],
+  "zil": "ROOM-8.LDESC (3actions.zil:4852)"
+ },
+ {
+  "key": "s1518c",
+  "en": "You are repelled from the exit by a fierce wind.",
+  "uses": [
+   "ROOM-8.EAST",
+   "table"
+  ],
+  "zil": "ROOM-8.EAST (3actions.zil:4858)"
+ },
+ {
+  "key": "s151a6",
+  "en": "A spray can is in the corner. In large type is the legend \"Frobozz Magic Grue Repellent.\"",
+  "uses": [
+   "REPELLENT.FDESC",
+   "table"
+  ],
+  "zil": "REPELLENT.FDESC (3actions.zil:4868)"
+ },
+ {
+  "key": "s151de",
+  "en": "!!! FROBOZZ MAGIC GRUE REPELLENT !!!\n\nInstructions for use: Apply liberally to creature to be protected. Duration of effect is unpredictable. Use only in place of death!\n\n(No warranty expressed or implied)",
+  "uses": [
+   "REPELLENT.TEXT",
+   "table"
+  ],
+  "zil": "REPELLENT.TEXT (3actions.zil:4871)"
+ },
+ {
+  "key": "s1527e",
+  "en": "The can explodes and you die a horribly smelly death.",
+  "uses": [
+   "routine REPELLENT-FCN"
+  ],
+  "zil": "REPELLENT-FCN (3actions.zil:4884)"
+ },
+ {
+  "key": "s1529e",
+  "en": "Sacrificial Altar\nThis is the interior of a huge temple of primitive construction. A few flickering torches cast a sallow illumination over the altar, which is still drenched with the blood of human sacrifice. Behind the altar is an enormous statue of a demon which seems to reach towards you with dripping fangs and razor-sharp talons. A low noise begins behind you, and you turn to see hundreds of hunched and hairy shapes. A guttural chant issues from their throats. Near you stands a figure draped in a robe of deepest black, brandishing a huge sword. The chant grows louder as the robed figure approaches the altar. The large figure spots you and approaches menacingly. It reaches into its cloak and pulls out a great, glowing dagger. It pulls you onto the altar and, with a murmur of approval from the throng, slices you neatly across your abdomen.",
+  "uses": [
+   "routine ZORK-IV-F"
+  ],
+  "zil": "ZORK-IV-F (3actions.zil:4919)"
+ },
+ {
+  "key": "s1548c",
+  "en": "You are on the south shore of the lake. Rock formations prevent movement to the west and thickening swamp to the east makes the going all but impossible. To the south, where the beach meets a rock formation, you can make out a dark passage sloping steeply upward into the rock.",
+  "uses": [
+   "SOUTH-SHORE.LDESC",
+   "table"
+  ],
+  "zil": "SOUTH-SHORE.LDESC (3actions.zil:4939)"
+ },
+ {
+  "key": "s1551e",
+  "en": "The swamp is too thick.",
+  "uses": [
+   "SOUTH-SHORE.EAST",
+   "table"
+  ],
+  "zil": "SOUTH-SHORE.EAST (3actions.zil:4944)"
+ },
+ {
+  "key": "s1552c",
+  "en": "If you want to go into the lake, you should say so.",
+  "uses": [
+   "SOUTH-SHORE.NORTH",
+   "table"
+  ],
+  "zil": "SOUTH-SHORE.NORTH (3actions.zil:4946)"
+ },
+ {
+  "key": "s1554a",
+  "en": "You can't walk through a piece of metal.",
+  "uses": [
+   "table"
+  ],
+  "zil": "KEY-ROOM.DOWN (3actions.zil:4975)"
+ },
+ {
+  "key": "s1555e",
+  "en": "The hole is too far above your head.",
+  "uses": [
+   "AQ-1.UP",
+   "table"
+  ],
+  "zil": "AQ-1.UP (3actions.zil:4982)"
+ },
+ {
+  "key": "s15570",
+  "en": "You are in a wide stone channel, part of the water supply system for the Great Underground Empire. The source of water was a waterfall to the south, which has long since dried up. Water flowed along the aqueduct to the north. This region is lit from above, although the source of light is not apparent.",
+  "uses": [
+   "AQ-1.LDESC",
+   "table"
+  ],
+  "zil": "AQ-1.LDESC (3actions.zil:4984)"
+ },
+ {
+  "key": "s1560e",
+  "en": "You can't climb the dried-up waterfall.",
+  "uses": [
+   "AQ-1.SOUTH",
+   "table"
+  ],
+  "zil": "AQ-1.SOUTH (3actions.zil:4988)"
+ },
+ {
+  "key": "s15624",
+  "en": "The arch before you is broken.",
+  "uses": [
+   "table"
+  ],
+  "zil": "AQ-2.NORTH (3actions.zil:4997)"
+ },
+ {
+  "key": "s15632",
+  "en": "It's a long way down....",
+  "uses": [
+   "AQ-2.DOWN",
+   "table"
+  ],
+  "zil": "AQ-2.DOWN (3actions.zil:4999)"
+ },
+ {
+  "key": "s15646",
+  "en": "The arch to the south is broken.",
+  "uses": [
+   "table"
+  ],
+  "zil": "AQ-3.SOUTH (3actions.zil:5010)"
+ },
+ {
+  "key": "s15656",
+  "en": "You execute a perfect swan dive into the rocks below!",
+  "uses": [
+   "routine AQUEDUCT-F"
+  ],
+  "zil": "AQUEDUCT-F (3actions.zil:5043)"
+ },
+ {
+  "key": "s15676",
+  "en": "The light from above seems to be focused in the center of the room, where a single key is lying in the dust.",
+  "uses": [
+   "KEY.FDESC",
+   "table"
+  ],
+  "zil": "KEY.FDESC (3actions.zil:5127)"
+ },
+ {
+  "key": "s156ac",
+  "en": "The key is a long and heavy skeleton key.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:5159"
+ },
+ {
+  "key": "s156c4",
+  "en": "The key is short and stubby, shaped like no lock you have ever seen.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:5160"
+ },
+ {
+  "key": "s156ec",
+  "en": "The key is round and thin, more like a pencil than a key.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:5161"
+ },
+ {
+  "key": "s15710",
+  "en": "The key is shiny with many prongs.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:5162"
+ },
+ {
+  "key": "s15724",
+  "en": "The key is sharp as an awl, and rusted badly.",
+  "uses": [
+   "table"
+  ],
+  "zil": "3actions.zil:5163"
+ },
+ {
+  "key": "s15740",
+  "en": "One of the stone figures (or maybe both, it's hard to tell) suddenly springs to life and crushes you with his stone bludgeon.",
+  "uses": [
+   "routine I-VISIBLE"
+  ],
+  "zil": "I-VISIBLE (3actions.zil:5243)"
+ },
+ {
+  "key": "s15788",
+  "en": "You enter the quicksand and slowly sink to a new low in adventuring.",
+  "uses": [
+   "routine QUICKSAND-PSEUDO"
+  ],
+  "zil": "QUICKSAND-PSEUDO (3actions.zil:5365)"
+ }
+]

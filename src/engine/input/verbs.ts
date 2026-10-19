@@ -57,10 +57,11 @@ export const VERBS: VerbDef[] = [
   { inf: 'prendre', en: 'take', forms: ['prendre', 'prends', 'prenez', 'prend', 'pr', ...er('ramass'), 'saisir', 'saisis', 'saisissez', ...er('attrap'), ...er('recuper'), 'cueillir', 'cueille', 'cueillez'], p2: { dans: 'from', sur: 'off', de: 'from', du: 'from', "d'": 'from', sous: 'from' } },
   { inf: 'enlever', en: 'take', forms: [...er('enlev'), 'enleve', ...er('retir'), 'oter', 'ote', 'otez'], p2: { de: 'from', du: 'from', "d'": 'from', dans: 'from', sur: 'off' } },
   { inf: 'poser', en: 'drop', withSecond: 'put', forms: [...er('pos'), ...er('depos'), ...er('lach'), 'laisser', 'laisse', 'laissez', ...er('abandonn')], p2: { dans: 'in', sur: 'on', sous: 'under', derriere: 'behind', en: 'in', a: 'in', au: 'in' } },
-  { inf: 'mettre', en: 'put', forms: ['mettre', 'mets', 'mettez', 'met', ...er('plac'), ...er('ins'), 'inserer', 'insere', 'inserez', ...er('rang'), 'introduire', 'introduis', 'introduisez', ...er('fourr')], p2: { dans: 'in', sur: 'on', sous: 'under', derriere: 'behind', en: 'in' } },
+  // alone, "mets la cape" is worn; with a second object it is put somewhere
+  { inf: 'mettre', en: 'wear', withSecond: 'put', forms: ['mettre', 'mets', 'mettez', 'met', ...er('plac'), ...er('ins'), 'inserer', 'insere', 'inserez', ...er('rang'), 'introduire', 'introduis', 'introduisez', ...er('fourr')], p2: { dans: 'in', sur: 'on', sous: 'under', derriere: 'behind', en: 'in' } },
   { inf: 'donner', en: 'give', forms: [...er('donn'), 'offrir', 'offre', 'offrez', ...er('tend')], p2: { a: 'to', au: 'to', aux: 'to' } },
   { inf: 'nourrir', en: 'feed', forms: ['nourrir', 'nourris', 'nourrissez'], swap: { en: 'give', prep: 'to' } },
-  { inf: 'jeter', en: 'throw', forms: ['jeter', 'jette', 'jetez', 'jettes', ...er('lanc'), 'lancer', ...er('balanc')], p2: { sur: 'at', a: 'at', au: 'at', aux: 'at', contre: 'at', vers: 'at', dans: 'in', en: 'in', 'par-dessus': 'over' }, byNoun: { boat: 'launch' } },
+  { inf: 'jeter', en: 'throw', forms: ['jeter', 'jette', 'jetez', 'jettes', ...er('lanc'), 'lancer', ...er('balanc')], p2: { sur: 'at', a: 'at', au: 'at', aux: 'at', contre: 'at', vers: 'at', dans: 'in', en: 'in', 'par-dessus': 'over', de: 'off', du: 'off', "d'": 'off', 'du haut de': 'off', 'du haut du': 'off' }, byNoun: { boat: 'launch' } },
   // ---------------------------------------------------------------- looking
   { inf: 'regarder', en: 'examine', alone: 'look', forms: [...er('regard'), 'r', 'voir', 'vois', 'voyez', ...er('observ'), ...er('contempl')], p1: { sous: 'look under', derriere: 'look behind', dans: 'look in', "a l'interieur de": 'look in', "a l'interieur du": 'look in', par: 'look in', 'a travers': 'look in', en: 'look in', sur: 'look on', autour: 'look', 'autour de': 'look' } },
   { inf: 'examiner', en: 'examine', forms: [...er('examin'), 'x', ...er('inspect'), ...er('scrut'), ...er('etudi'), 'decrire', 'decris', 'decrivez'] },
@@ -106,11 +107,13 @@ export const VERBS: VerbDef[] = [
   { inf: 'soulever', en: 'raise', forms: [...er('soulev'), 'souleve', 'lever', 'leve', 'levez', ...er('hiss')] },
   { inf: 'abaisser', en: 'lower', forms: [...er('abaiss'), ...er('baiss')] },
   { inf: 'tourner', en: 'turn', forms: [...er('tourn'), ...er('viss'), ...er('deviss'), ...er('pivot')], p2: { avec: 'with', vers: 'to', a: 'to', sur: 'to' } },
+  { inf: 'régler', en: 'turn', forms: [...er('regl')], p2: { sur: 'to', a: 'to', au: 'to' } },
   { inf: 'attacher', en: 'tie', forms: [...er('attach'), ...er('nou'), ...er('fix'), ...er('accroch'), ...er('lier'), 'lie', 'liez'], p2: { a: 'to', au: 'to', aux: 'to', sur: 'to', autour: 'to', 'autour de': 'to', 'autour du': 'to' } },
   { inf: 'détacher', en: 'untie', forms: [...er('detach'), ...er('denou'), ...er('decroch'), 'liberer', 'libere', 'liberez'], p2: { de: 'from', du: 'from', "d'": 'from' } },
   { inf: 'gonfler', en: 'inflate', forms: [...er('gonfl'), ...er('pomp')], p2: WITH },
   { inf: 'dégonfler', en: 'deflate', forms: [...er('degonfl')] },
   { inf: 'réparer', en: 'plug', forms: ['reparer', 'repare', 'reparez', ...er('colmat'), ...er('bouch'), ...er('rafistol')], p2: WITH },
+  { inf: 'vaporiser', en: 'spray', forms: [...er('vaporis'), ...er('pulveris'), ...er('aspers'), ...er('appliqu')], p2: { sur: 'on', avec: 'with' } },
   { inf: 'graisser', en: 'oil', forms: [...er('graiss'), ...er('huil'), ...er('lubrifi')], p2: WITH },
   { inf: 'creuser', en: 'dig', forms: [...er('creus')], p1: { dans: 'dig in' }, p2: WITH },
   { inf: 'sonner', en: 'ring', forms: [...er('sonn'), ...er('carillonn')], p2: WITH },
@@ -122,7 +125,7 @@ export const VERBS: VerbDef[] = [
   { inf: 'aller', en: 'walk', forms: ['aller', 'va', 'vas', 'allez', 'vais', ...er('march'), 'courir', 'cours', 'courez', ...er('avanc'), ...er('dirig'), 'partir', 'pars', 'partez', 'fuir', 'fuis', 'fuyez', ...er('rend')], p1: { 'a travers': 'walk through', vers: 'walk to', a: 'walk to', au: 'walk to', jusqu: 'walk to', "jusqu'a": 'walk to', dans: 'enter', en: 'enter', sur: 'walk on', autour: 'walk around', 'autour de': 'walk around', 'autour du': 'walk around' } },
   { inf: 'monter', en: 'climb up', alone: 'up', forms: [...er('mont')], p1: { sur: 'climb on', dans: 'board', a: 'climb', au: 'climb', en: 'climb up', par: 'climb up' }, byNoun: { boat: 'board', tree: 'climb' } },
   { inf: 'grimper', en: 'climb', alone: 'climb', forms: [...er('grimp'), ...er('escalad')], p1: { sur: 'climb on', a: 'climb up', au: 'climb up', dans: 'climb up', en: 'climb up' } },
-  { inf: 'descendre', en: 'lower', alone: 'down', forms: ['descendre', 'descends', 'descendez', 'descend'], p1: { de: 'disembark', du: 'disembark', "d'": 'disembark', dans: 'climb down', par: 'climb down', a: 'climb down', au: 'climb down', en: 'climb down' }, byNoun: { stairs: 'climb down', ladder: 'climb down', rope: 'climb down', chimney: 'climb down', tree: 'climb down', slide: 'climb down' } },
+  { inf: 'descendre', en: 'lower', alone: 'down', forms: ['descendre', 'descends', 'descendez', 'descend'], p1: { de: 'disembark', du: 'disembark', "d'": 'disembark', dans: 'climb down', par: 'climb down', a: 'climb down', au: 'climb down', en: 'climb down' }, byNoun: { stairs: 'climb down', ladder: 'climb down', rope: 'climb down', chimney: 'climb down', tree: 'climb down', slide: 'climb down', cliff: 'climb down' } },
   { inf: 'entrer', en: 'enter', alone: 'enter', forms: [...er('entr'), ...er('rentr'), 'penetrer', 'penetre', 'penetrez'], p1: { dans: 'enter', en: 'enter', a: 'enter', au: 'enter', par: 'enter' } },
   { inf: 'sortir', en: 'take', alone: 'exit', forms: ['sortir', 'sors', 'sortez', 'sort'], p1: { de: 'exit', du: 'exit', "d'": 'exit', par: 'exit' }, p2: { de: 'from', du: 'from', "d'": 'from', dans: 'from' } },
   { inf: 'embarquer', en: 'board', forms: [...er('embarqu')], p1: { dans: 'board', sur: 'board', a: 'board' } },
@@ -316,5 +319,9 @@ export const GAME_WORDS: Record<GameId, GameWords> = {
       fry: 'fry',
     },
   },
-  zork3: {},
+  zork3: {
+    quoteSay: true,
+    // the words of the Dungeon Master: dire « frotz ozmoo » at the secret door
+    magic: { frotz: 'frotz', ozmoo: 'ozmoo' },
+  },
 }

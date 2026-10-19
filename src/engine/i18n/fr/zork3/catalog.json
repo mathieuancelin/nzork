@@ -1,0 +1,3958 @@
+{
+ "groups": {
+  "g5088": "s",
+  "g53a0": ">",
+  "g6115": " ",
+  "g6136": " ?\n",
+  "g6256": " ",
+  "g62d0": " ",
+  "g63da": "(",
+  "g63f4": " ",
+  "g640a": ")\n",
+  "g6410": "{le:0})\n",
+  "g687e": ",",
+  "g6d55": "Comme dans un rêve, vous vous voyez dégringoler un grand escalier obscur. Tout autour de vous flottent les images indistinctes de luttes contre de féroces adversaires et de pièges diaboliques. Elles cèdent la place à une autre série d'images : d'imposantes figures de pierre, un lac frais et limpide, puis, à présent, un homme âgé, et pourtant étrangement juvénile. Il se tourne lentement vers vous, ses longs cheveux argentés dansant autour de lui dans une brise fraîche. « Vous voici parvenu à l'ultime épreuve, mon ami ! Vous avez prouvé votre ingéniosité et votre puissance, mais cela ne suffit pas encore ! Cherchez-moi lorsque vous vous en sentirez digne ! » Le rêve se dissout autour de vous tandis que ses dernières paroles résonnent dans le vide...\n\n",
+  "g6fd6": "Il a tout l'air d'un marin.\n",
+  "g7003": "Le marin lève les yeux et manœuvre son navire vers le rivage. Il s'écrie : « Voilà trois âges que j'attends que quelqu'un prononce ces mots et me délivre de cette navigation sans fin sur cet océan ! Acceptez ce présent, je vous prie. Il pourrait vous être utile ! » Il lance quelque chose qui tombe près de vous dans le sable, puis met le cap à l'ouest en entonnant une chanson de marin entraînante, quoique passablement paillarde.\n",
+  "g70e3": "Il ne se passe plus rien.\n",
+  "g70f6": "Il ne se passe rien pour l'instant.\n",
+  "g735c": "Joli tour de force, sachant que vous êtes actuellement invisible.\n",
+  "g7379": "Ce que vous pouvez voir de vous-même n'a guère changé, j'ai le regret de vous le dire.\n",
+  "g7659": "ZORK III : Le Maître du donjon\nFiction interactive Infocom - un récit fantastique\nCopyright 1982, 1983, 1984, 1986 Infocom, Inc. Tous droits réservés.\nZORK est une marque déposée d'Infocom, Inc.\nVersion ",
+  "g789d": "Vous ne pouvez pas.\n",
+  "g7ee7": "Comment voulez-vous boire ça ?",
+  "g859d": "{Le:0} {g:0|est|est|sont|sont} ouvert{e:0}, mais je ne saurais dire ce qu'il y a au-delà.",
+  "g85c0": "{Le:0} {g:0|est|est|sont|sont} fermé{e:0}.",
+  "g8604": "Il n'y a rien sur {le:0}.\n",
+  "g8bea": "Il ne se passe rien.\n",
+  "g8cfa": "et disparaît",
+  "g8da7": "{Le:0} ne comprend pas ce geste.",
+  "g8dc0": "Voilà qui est singulièrement inutile.",
+  "g8e9f": "Qu'est-ce que vous croyez faire ?\n",
+  "g8eb8": "Entre les rochers et les vagues, vous ne tiendriez pas une minute !\n",
+  "g917b": "Il faudrait préciser sur quoi tourner {le:0}.\n",
+  "g9462": "Le sol continue de monter en s'éloignant du lac. Vous distinguez à peine une faible lueur venant de l'est.\n",
+  "g959f": ".",
+  "g9833": ">",
+  "g98ce": ".",
+  "g99e0": "Vous ne pouvez pas aller là-bas en {0}.",
+  "g99f3": "Vous ne pouvez pas aller là-bas sans véhicule.",
+  "g9a8d": "{Le:0} s'immobilise.\n\n",
+  "g9d91": "Pour qui vous prenez-vous ? Le roi Arthur ?\n",
+  "g9da8": "L'épée est profondément fichée dans le rocher. Vous ne parvenez pas à la faire bouger.\n",
+  "g9de7": "La lanterne se fracasse. La lumière s'est éteinte.\n",
+  "g9e70": "La lanterne a rendu l'âme.",
+  "g9e86": "La lanterne est allumée.",
+  "g9e94": "La lanterne est éteinte.",
+  "g9f25": "Vous regardez où vous mettez les pieds avant de sauter, et vous comprenez que vous n'y survivriez pas.\n",
+  "g9f4a": "Il vous faudra trouver un pont.\n",
+  "g9fbe": "À l'aide de l'échelle, vous sortez du casse-tête.\n",
+  "g9fde": "La sortie est bien trop haut au-dessus de votre tête.\n",
+  "g9ff3": "Il n'y a aucun moyen de monter.\n",
+  "ga014": "Il n'y a aucun moyen de descendre ici.\n",
+  "ga02f": "La porte de métal vous barre le passage.\n",
+  "ga05f": "Il y a un mur, là.\n",
+  "ga0d1": "Il y a un mur, là.\n",
+  "ga127": "Il y a un mur, là.\n",
+  "ga13c": "Le trou est bouché par du grès.\n",
+  "ga161": "Vous êtes dans une petite salle carrée, au milieu de laquelle se trouve un trou rond",
+  "ga18b": ", bouché par du grès lisse.\n",
+  "ga1a4": " à travers lequel vous distinguez le sol, quelque trois mètres plus bas. L'espace sous le trou est obscur, mais il semble entièrement enclos dans la roche. Quoi qu'il en soit, il paraît peu probable que vous puissiez remonter par là. Les sorties sont à l'ouest et, en haut de quelques marches, au nord.\n",
+  "ga255": "Vous ne voyez pas d'échelle ici.\n",
+  "ga27e": "Vous vous cognez la tête au plafond et tombez de l'échelle.\n",
+  "ga29d": "Allons, allons !\n",
+  "ga2bb": "Vous n'avez aucune prise sur le mur pour le tirer.\n",
+  "ga2da": "Le mur ne bouge pas d'un pouce.\n",
+  "ga2ec": "Il n'y a qu'un passage dans cette direction.\n",
+  "ga305": "Le mur ne bouge pas d'un pouce.\n",
+  "ga31a": "Le mur bouge à peine.\n",
+  "ga32e": "Le mur bouge à peine.\n",
+  "ga33b": "Le mur glisse vers l'avant et vous le suivez",
+  "ga355": " jusqu'à cette position :\n",
+  "ga366": "...\nL'architecture de cette zone se complique : désormais, les descriptions prendront la forme de schémas des environs immédiats, sur une grille de 3 x 3. Les murs sont ici en roche, mais de deux sortes différentes : grès et marbre. Les notations suivantes seront employées :\n",
+  "ga408": "\n  .. = votre position (centre de la grille)\n  MM = mur de marbre\n  GG = mur de grès\n  ?? = inconnu (masqué par des murs)\n\n",
+  "ga49a": "Vous entendez un léger « clac » derrière le mur que vous poussiez.\n",
+  "ga59b": "Vous ne voyez pas de porte d'acier ici.\n",
+  "ga5b3": "La porte d'acier est déjà ouverte.\n",
+  "ga5c4": "Vous ne parvenez pas à la forcer.\n",
+  "ga5d8": "Il ne semble y avoir aucun moyen de la fermer.\n",
+  "ga5ef": "Parce que vous croyez qu'elle ne l'est pas déjà ?\n",
+  "ga606": "La porte est, en première approximation, indestructible.\n",
+  "ga62d": "Hormis une réverbération considérable, il ne se passe rien.\n",
+  "ga674": "Vous êtes dans une petite salle carrée, bordée au nord et à l'ouest de murs de marbre, et à l'est et au sud de murs de grès.\n",
+  "ga708": "      +",
+  "ga719": " ",
+  "ga722": " ",
+  "ga72d": "+\nOuest +",
+  "ga742": " .. ",
+  "ga74d": "+  Est\n      +",
+  "ga768": " ",
+  "ga771": " ",
+  "ga77c": "+\n",
+  "ga78b": "Dans le plafond, au-dessus de vous, s'ouvre une grande ouverture circulaire.\n",
+  "ga7b0": "Ici, le centre du sol présente une dépression bien visible.\n",
+  "ga7d8": "Au centre du mur ouest se trouve une porte d'acier, ",
+  "ga7f6": "ouverte",
+  "ga7fe": "fermée",
+  "ga803": ". D'un côté de la porte s'ouvre une fente étroite.\n",
+  "ga821": "Il y a ici une échelle, solidement fixée au mur est.\n",
+  "ga847": "Il y a ici une échelle, solidement fixée au mur ouest.\n",
+  "ga86c": "  ",
+  "ga874": "MM",
+  "ga87a": "GG",
+  "ga893": "??",
+  "ga8a3": "MM",
+  "ga8c1": "  ",
+  "ga8c9": "MM",
+  "ga8cf": "GG",
+  "ga8e3": "Ça ne rentre pas.\n",
+  "ga8f4": "Le livre tombe dans la fente et disparaît. La porte de métal s'ouvre en coulissant, révélant un passage vers l'ouest, et une enseigne lumineuse clignote :\n    « Taxe de sortie du Casse-tête royal acquittée\n          Objet confisqué »\n",
+  "ga977": "L'objet disparaît dans la fente. Un instant plus tard, une enseigne jusque-là invisible affiche en clignotant « Ordure à l'entrée, ordure à la sortie » et recrache {le:0} (désormais atomisé{e:0}).\n",
+  "ga9e1": "Vous êtes dans une salle étroite, éclairée par le haut. Une volée de marches monte vers le nord, et ",
+  "gaa11": "un passage",
+  "gaa1b": "une porte de métal",
+  "gaa24": " mène vers l'est.\n",
+  "gaa5e": "Un mur en bois vous barre le passage.\n",
+  "gaac4": "Un grand miroir brisé vous barre le passage.\n",
+  "gaadb": "Un grand miroir vous barre le passage.\n",
+  "gab44": "Vous êtes dans une salle étroite dont le mur ",
+  "gab63": "{0} consiste en un grand ",
+  "gab94": "Le mur d'en face est en roche massive.\n",
+  "gabb8": "Un peu plus au sud{0}\n",
+  "gabd8": "Un peu plus au nord{0}\n",
+  "gabf5": "Au nord et au sud s'étendent de grands couloirs.\n",
+  "gac13": "Au nord s'étend un grand couloir.\n",
+  "gac3a": "Vous êtes dans une partie du long couloir. Les murs est et ouest sont en pierre de taille. Au milieu du couloir court une rigole de pierre peu profonde. Au centre de la salle, la rigole s'élargit en un grand trou, autour duquel est gravée une rose des vents.\n",
+  "gacba": "De part et d'autre de vous se dressent des statues de pierre identiques, armées de massues. Elles semblent prêtes à frapper, mais, pour le moment, elles restent impassibles.\n",
+  "gad1e": "Un peu plus au nord{0}\n",
+  "gad36": "Vous êtes dans un couloir nord-sud qui aboutit, au nord, à une grande porte en bois.\n",
+  "gad69": "Un peu plus au sud{0}\n",
+  "gad81": "Le couloir se poursuit vers le sud.\n",
+  "gadf2": "Un mur en bois divise le côté {0} de la salle en petits couloirs, vers le {1}-est et le {2}-ouest.\n",
+  "gae3c": "{0}côté {1} du couloir.\n",
+  "gae6d": "Le couloir se poursuit au nord et au sud.\n",
+  "gae81": "Le couloir se poursuit vers le nord.\n",
+  "gae91": "Le couloir se poursuit vers le sud.\n",
+  "gaef8": "À l'est et à l'ouest se dressent les Gardiens de Zork, en parfaite symétrie. D'ici, difficile de dire lequel des deux n'est qu'un reflet !\n",
+  "gaf5d": "Vous ne les voyez pas d'ici.\n",
+  "gaf6a": "Les Gardiens sont fort impressionnants. À votre place, je ne me mettrais pas en travers de leur chemin !\n",
+  "gafab": "Vous vous avancez",
+  "gafb3": "{Le:0} {g:0|tombe|tombe|tombent|tombent}",
+  "gafbf": " devant les Gardiens, qui ",
+  "gafd8": "vous réduisent en charpie",
+  "gafe4": "{lui:-} réduisent en poussière",
+  "gafed": " dans un ensemble parfait. Satisfaits, ils reprennent leur poste.\n",
+  "gb018": "Vous n'êtes pas assez près, et même si vous l'étiez, le combat serait légèrement déséquilibré.\n",
+  "gb04d": "Les statues restent impassibles.\n",
+  "gb0c4": "La structure refuse de bouger.\n",
+  "gb0d1": "Vous ne voyez pas de mur en bois ici.\n",
+  "gb148": "Vous ne voyez pas de miroir ici.\n",
+  "gb15b": "Vous ne voyez pas comment ouvrir le miroir ici.\n",
+  "gb180": "Chose étonnante, vous n'avez aucun reflet !\n",
+  "gb197": "Un aventurier échevelé vous rend votre regard.\n",
+  "gb1b2": "Vous avez détruit le miroir, ou l'auriez-vous oublié ?\n",
+  "gb1e0": "Le miroir se brise, révélant derrière lui un panneau de bois. Les éclats de miroir étincellent doucement, puis s'évanouissent dans le néant.\n",
+  "gb223": "Le miroir est déjà brisé.\n",
+  "gb237": "Le miroir se brise, révélant derrière lui un panneau de bois. Les éclats de miroir étincellent doucement, puis s'évanouissent dans le néant.\n",
+  "gb27a": "Le miroir est déjà brisé.\n",
+  "gb291": "Il ne reste plus de miroir.\n",
+  "gb2c4": "Vous ne voyez pas de panneau ici.\n",
+  "gb2d7": "Vous ne voyez pas comment ouvrir le panneau ici.\n",
+  "gb2fa": "Le panneau ne se laisse pas détruire si facilement.\n",
+  "gb316": "Le panneau ne se laisse pas détruire si facilement.\n",
+  "gb392": "Il y a un mur, là.\n",
+  "gb3ce": "Au moment où vous sortez, la porte se referme en pivotant.\n",
+  "gb3f6": "Vous heurteriez l'un des panneaux.\n",
+  "gb409": "Vous êtes à l'intérieur d'une boîte fermée !\n",
+  "gb4a3": "Un miroir vous barre le passage.\n",
+  "gb4b2": "Le panneau est fermé.\n",
+  "gb4bf": "La structure vous barre le passage.\n",
+  "gb4ec": "Fort opportunément, vous lâchez {le:0} pile à l'endroit voulu pour interrompre le rayon de lumière.\n",
+  "gb51c": "Vous êtes au milieu d'un long couloir nord-sud aux murs de pierre polie. Un mince rayon de lumière rouge traverse la salle à son extrémité nord, à quelques centimètres du sol.\n",
+  "gb57a": "Le rayon est bloqué par {un:0} posé{e:0} sur le sol.\n",
+  "gb5c5": "Vous sautez par-dessus le rayon et pénétrez dans le grand couloir.\n",
+  "gb5ea": "Il se contente de traverser l'extrémité nord de la salle : le suivre ne vous mènerait nulle part.\n",
+  "gb61e": "Le rayon de lumière rouge traverse l'extrémité nord de la salle, à deux ou trois centimètres à peine au-dessus du sol.",
+  "gb657": " Le rayon est interrompu par {un:0} posé{e:0} par terre.",
+  "gb6a6": "Le rayon est désormais interrompu par {un:0} posé{e:0} sur le sol.\n",
+  "gb6ce": "{Le:0} {g:0|coupe|coupe|coupent|coupent} déjà le rayon.\n",
+  "gb6e4": "Le rayon est brièvement interrompu au passage de votre main.\n",
+  "gb703": "Vous n'avez pas {le:0} en main.\n",
+  "gb71f": "Vous avez sans doute aussi du clair de lune en bouteille.\n",
+  "gb746": "Clic.\n",
+  "gb755": "Clic. Clac !\n",
+  "gb77b": "Clic.\n",
+  "gb797": "Le miroir se referme sans bruit.\n",
+  "gb7ae": "Le bouton revient d'un coup à sa position initiale.\n",
+  "gb7d3": "Vous êtes à l'intérieur d'une boîte rectangulaire en bois, à la structure plutôt compliquée. Les quatre côtés et le toit sont pleins, mais le dessous est ouvert.\n\nLorsque vous faites face au côté opposé à l'entrée, deux petits côtés en bois sculpté et poli se trouvent à votre gauche et à votre droite. Le panneau de gauche est en acajou, celui de droite en pin. La paroi qui vous fait face est rouge sur sa moitié gauche et noire sur sa moitié droite. Du côté de l'entrée, la paroi est blanche en face de la partie rouge de la paroi opposée, et jaune en face de sa partie noire. Les parois peintes sont au moins deux fois plus longues que les autres. Le plafond est peint en bleu.\n\nDans le sol court une rigole de pierre d'une quinzaine de centimètres de large et d'une trentaine de profondeur. La rigole est orientée nord-sud. Au centre exact de la pièce, elle s'élargit en une dépression circulaire d'environ soixante centimètres de diamètre. Une rose des vents est gravée dans la pierre tout autour.\n\nD'un petit côté à l'autre, à hauteur de taille environ, court une barre de bois soigneusement sculptée et forée. Cette barre est percée en deux endroits. Le premier trou se trouve au centre de la barre (et donc au centre de la pièce). Le second se trouve à l'extrémité gauche de la pièce (quand vous faites face au côté opposé à l'entrée). Dans chaque trou passe une perche de bois.\n\nLa perche de l'extrémité gauche de la barre est courte : elle dépasse d'une trentaine de centimètres au-dessus de la barre et se termine par une poignée. La perche ",
+  "gbac4": "a été soulevée hors d'un trou creusé dans le sol de pierre. Le frottement suffit manifestement à l'empêcher de retomber.",
+  "gbb0e": "a été enfoncée dans un trou creusé dans le sol de pierre.",
+  "gbb37": "se trouve juste au-dessus de la rigole de pierre du sol.",
+  "gbb51": "a été enfoncée dans la rigole de pierre creusée dans le sol.",
+  "gbb6f": "repose sur le sol de pierre.",
+  "gbb80": "\n\nLa longue perche, au centre de la barre, descend du plafond et traverse la barre jusqu'à la zone circulaire de la rigole de pierre. À son extrémité inférieure est fixée une barre en T d'un peu moins de soixante centimètres, sur laquelle est gravée une flèche. La flèche et la barre en T pointent ",
+  "gbc27": "plein {0}.",
+  "gbc2f": "\nLe panneau de pin a été ouvert vers l'extérieur.",
+  "gbc7a": "La structure pivote dans le sens des aiguilles d'une montre.\n",
+  "gbc9b": "La structure pivote dans le sens inverse des aiguilles d'une montre.\n",
+  "gbcb1": "La flèche de la rose des vents pointe désormais ",
+  "gbcd4": "plein {0}.\n",
+  "gbce0": "La paroi de pin se referme sans bruit.\n",
+  "gbcff": "La perche courte empêche la structure de pivoter.\n",
+  "gbd1a": "La structure tremble légèrement mais ne bouge pas.\n",
+  "gbd37": "Impossible de faire ça avec ce panneau.\n",
+  "gbd59": "La structure oscille légèrement d'avant en arrière, mais ne bouge pas.\n",
+  "gbda3": "La structure est arrivée au bout de la rigole de pierre et ne bouge plus d'un pouce.\n",
+  "gbdc2": "La paroi de pin pivote et s'ouvre.\n",
+  "gbdeb": "La porte de pin s'ouvre dans le champ de vision des Gardiens.\n",
+  "gbe10": "La porte de pin s'ouvre dans le champ de vision des Gardiens de Zork, représentés par deux statues de pierre identiques armées de massues.\n",
+  "gbe81": "La paroi de pin se referme sans bruit.\n",
+  "gbec1": "vers le {0} et s'arrête au-dessus d'une autre rose des vents.\n",
+  "gbf27": "La perche ne peut pas monter plus haut.\n",
+  "gbf3d": "La perche se trouve maintenant légèrement au-dessus du sol.\n",
+  "gbf65": "La perche ne peut pas descendre plus bas.\n",
+  "gbf81": "La perche descend dans la rigole.\n",
+  "gbfa8": "La perche descend dans le trou de pierre.\n",
+  "gbfc1": "La perche repose déjà sur le sol.\n",
+  "gbfd9": "La perche repose maintenant sur le sol de pierre.\n",
+  "gc014": "Le Maître du donjon répond : « Je vous suivrai. »\n",
+  "gc02f": "La voix du Maître du donjon répond : « Vous devez d'abord venir ici ! »\n",
+  "gc062": "Le Maître du donjon répond : « Je resterai. »\n",
+  "gc08c": "« Il ne m'est pas permis d'entrer dans la cellule. »\n",
+  "gc0b9": "« Fort bien. Me voici sur le parapet ! »\n",
+  "gc0e6": "« Il ne m'est pas permis d'entrer dans la cellule. »\n",
+  "gc105": "« Je préfère rester où je suis, merci. »\n",
+  "gc136": "« Fort bien ! »\n",
+  "gc147": "« Je crains de n'avoir que faire de cela. »\n",
+  "gc16f": "Le Maître du donjon semble courroucé. « Ne fuyez pas votre quête : vous touchez au but ! »\n",
+  "gc1be": "« Comme vous voudrez », répond-il.\n",
+  "gc1d5": "« Ne faites pas l'insensé ! Songez au terme de votre quête ! »\n",
+  "gc1fd": "Il est simplement vêtu d'un capuchon et d'une cape ; il porte une amulette et un anneau, tient un vieux livre sous le bras et s'appuie sur un bâton de bois. Une unique clé, qui semble être celle d'une cellule de prison, pend à sa ceinture.\n",
+  "gc284": "« Je veux bien vous accompagner, mais pas voyager dans votre poche ! »\n",
+  "gc2b3": "« Je n'ai nul besoin de ces choses. »\n",
+  "gc2da": "Il ne vous entend pas.\n",
+  "gc2e5": "Il n'est pas ici.\n",
+  "gc2ff": "Le Maître du donjon n'est pas ici.\n",
+  "gc316": "Il décline poliment votre offre.\n",
+  "gc339": "Le Maître du donjon se tient sur le parapet.\n",
+  "gc34e": "Le Maître du donjon n'est pas ici.\n",
+  "gc37d": "Vous êtes dans un couloir étroit orienté nord-sud. À son extrémité sud se trouve une porte, et à son extrémité nord un couloir est-ouest. La porte est ",
+  "gc3db": "La porte en bois est munie, à peu près à hauteur de tête, d'un panneau à barreaux. La porte elle-même est ",
+  "gc42d": "Vous ne pouvez pas ouvrir le panneau : il est encastré dans la porte.\n",
+  "gc44c": "Il n'y a pas grand-chose à voir.\n",
+  "gc47c": "Le bruit de vos coups se répercute le long du couloir. Pendant un moment, il semble que personne ne répondra. Puis vous entendez quelqu'un déverrouiller le petit panneau. Entre les barreaux de la grande porte apparaît le visage ridé d'un vieil homme.",
+  "gc4fa": " Pendant un bref instant, il semble ne pas vous voir, puis il se ressaisit.",
+  "gc526": " Un large sourire se dessine sur son visage, et il ouvre la porte massive sans un bruit. Le vieil homme vous fait signe, et vous vous sentez attiré vers lui.\n« Je suis le Maître du donjon ! » tonne-t-il. « Je vous ai observé de près tout au long de votre périple à travers le Grand Empire Souterrain. Oui ! » dit-il, comme s'il se remémorait une époque presque oubliée. « Nous nous sommes déjà rencontrés, même si je n'avais sans doute pas alors l'apparence que j'ai aujourd'hui. » Vous scrutez son visage profondément ridé et y voyez les visages du vieil homme de la porte secrète, de votre « ami » de la falaise et de la silhouette encapuchonnée. « Vous avez montré de la bonté envers le vieil homme, et de la compassion envers l'Encapuchonné. Vous avez fait preuve de patience dans le casse-tête et de confiance à la falaise. Vous avez démontré votre force, votre ingéniosité et votre bravoure. Cependant, une dernière épreuve vous attend. À présent ! Donnez-moi vos ordres comme il vous plaira, et achevez votre quête ! »\n\n",
+  "gc707": " Il vous toise d'un regard perçant, puis parle gravement. « Je vous attends depuis bien longtemps, ",
+  "gc74f": "{0} Je resterai ici. Quand vous vous sentirez prêt, rendez-vous à la porte secrète et tapez DIRE « FROTZ OZMOO » ! Allez, maintenant ! » Il agite l'index en signe d'avertissement. « N'oubliez pas les guillemets ! » Un instant plus tard, vous vous retrouvez dans la Salle du bouton.\n",
+  "gc82c": "Vous remarquez que le Maître du donjon ne vous suit pas.\n",
+  "gc859": "Le Maître du donjon vous rejoint.\n",
+  "gc86f": "Le Maître du donjon vous suit.\n",
+  "gc95d": "Vous vous tenez derrière un mur de soutènement en pierre qui borde un parapet surplombant une fosse enflammée. Il est difficile de voir à travers la fumée et les flammes qui emplissent la fosse, mais elle semble sans fond. La fosse elle-même est circulaire, d'une soixantaine de mètres de diamètre, et faite de pierres grossièrement taillées. Les flammes dégagent une chaleur considérable : il est plutôt inconfortable de rester ici.\nIl y a ici un objet qui ressemble à un cadran solaire. On y voit une flèche indicatrice qui entoure un gros bouton. Sur la face du cadran figurent les chiffres de 1 à 8. La flèche indique le chiffre {0}.\nAu sud, de l'autre côté d'un couloir étroit, se trouve une cellule.\n",
+  "gcac5": "Le cadran indique le {0}.\n",
+  "gcae8": "Ce réglage n'existe pas.\n",
+  "gcafe": "Le cadran indique maintenant le {0}.\n",
+  "gcb16": "Vous devez préciser sur quoi régler le cadran.\n",
+  "gcb2f": "Le cadran ne comporte que des chiffres.\n",
+  "gcb54": "Le cadran tourne et s'arrête sur le {0}.",
+  "gcb96": "Le bouton s'enfonce avec un léger déclic, puis ressort.\n",
+  "gcbc2": "Vous remarquez que la porte de la cellule est maintenant fermée.\n",
+  "gcbe3": "Vous êtes dans une cellule de prison sans le moindre signe distinctif. Vous voyez ",
+  "gcc03": "un couloir est-ouest derrière la porte de la cellule. Votre regard embrasse aussi le parapet et une vaste fosse enflammée.\n",
+  "gcc42": "par la petite fenêtre de la porte fermée le parapet et, derrière lui, de la fumée et des flammes qui montent d'une fosse en feu.\n",
+  "gcc87": "Le Maître du donjon se tient sur le parapet, appuyé sur son bâton. Son regard perçant est fixé sur vous et il semble tendu, comme s'il attendait que quelque chose se produise.\n",
+  "gccdb": "Derrière vous, au sud, se trouve une porte de bronze qui est ",
+  "gcd05": "Vous êtes dans une cellule nue. Sa porte en bois est solidement verrouillée, et vous ne voyez que des flammes et de la fumée par sa petite fenêtre. Dans le mur sud se trouve une porte de bronze qui semble ",
+  "gcd6b": "ouverte.\n",
+  "gcd70": "fermée.\n",
+  "gcd7f": "C'est un large couloir est-ouest qui donne, en son centre, sur un parapet au nord. Vous voyez des flammes et de la fumée lorsque vous regardez vers le parapet. Le couloir tourne vers le sud à ses deux extrémités, et au centre du mur sud se trouve une lourde porte en bois munie d'une petite fenêtre à barreaux. La porte est ",
+  "gce15": "Vous êtes dans un couloir est-ouest qui tourne vers le nord à ses extrémités est et ouest. Les murs sont faits du plus beau marbre. En son centre, un autre couloir part vers le sud.\n",
+  "gce79": "Au centre du mur nord se trouve une porte de bronze qui est ",
+  "gcead": "De l'autre côté de la porte de bronze, un passage étroit débouche sur un espace plus vaste.\n",
+  "gcee6": "La porte de bronze est verrouillée.\n",
+  "gcefd": "La porte est solidement verrouillée.\n",
+  "gcf17": "Tandis que vous examinez vos richesses fraîchement acquises, le Maître du donjon se matérialise à vos côtés et déclare : « Maintenant que vous avez résolu tous les mystères du Donjon, il est temps pour vous de prendre dans l'ordre des choses la place que vous avez légitimement gagnée. Longtemps j'ai attendu quelqu'un qui fût capable de me libérer de mon fardeau ! » Il vous tapote légèrement la tête de son bâton en marmonnant quelques sortilèges bien choisis, et vous vous sentez changer, vieillir, vous voûter. Pendant un instant, deux mages identiques se tiennent au milieu du trésor, puis votre double se dissout en une brume et disparaît, un sourire sardonique aux lèvres.\n\nPendant un moment, vous êtes soulagé, fort de la certitude d'avoir enfin achevé votre quête dans ZORK. Vous commencez à sentir les immenses pouvoirs et le vaste savoir dont vous disposez désormais, et vous brûlez de l'occasion de vous en servir.\n\n",
+  "gd10c": "La porte de bronze est fermée.\n",
+  "gd127": "La massive porte de pierre s'ouvre sans un bruit. {0}\n",
+  "gd163": "Vous êtes dans une salle d'où partent des passages vers le sud-ouest et le sud-est. Le mur nord est richement sculpté, couvert de runes étranges et d'inscriptions dans une langue inconnue.\n",
+  "gd1c3": "Parmi les runes, on distingue à peine le contour d'une porte.\n",
+  "gd219": "Un vieil homme est blotti dans le coin et vous observe avec méfiance. Il a l'air faible et las.\n",
+  "gd24e": "Un vieil homme tout ratatiné est blotti dans le coin, endormi. Il ronfle bruyamment et paraît bien faible et frêle.\n",
+  "gd2a8": "Il lève les yeux vers vous et prend le pain de route. Il le mange lentement, puis marque une pause quand il a fini. Il se met à parler : « Ce que vous cherchez se trouve peut-être par là ! » Il désigne le mur sculpté, au nord, où vous remarquez à présent le contour à peine visible d'une porte secrète. Quand vous vous retournez, le vieil homme a disparu !\n",
+  "gd361": "Il refuse votre offre, mais désigne du bras le pain de route que vous tenez à la main.\n",
+  "gd38a": "D'un geste de la main, le vieil homme refuse {le:0}.\n",
+  "gd3aa": "Il dort !\n",
+  "gd3bc": "Le vieil homme est à peine éveillé et semble s'assoupir à tout instant. Il a des yeux brillants, qui semblent vous transpercer de part en part.\n",
+  "gd401": "L'homme est très, très vieux et tout ratatiné. Il porte une longue barbe filasse et ronfle très bruyamment.\n",
+  "gd441": "Il ne parle pas.\n",
+  "gd44c": "Il ronfle comme une tronçonneuse.\n",
+  "gd46d": "Il vous adresse un signe de tête, sans avoir l'air d'avoir compris.\n",
+  "gd48a": "Il dort profondément et ne répond pas.\n",
+  "gd4ac": "Le vieil homme sort de sa torpeur. Il vous scrute de ses yeux, qui paraissent bien plus jeunes et vigoureux que son corps frêle, et il attend, comme si quelque chose devait se produire.\n",
+  "gd525": "L'attaque semble avoir laissé le vieil homme indemne ! Frappé de stupeur, vous le voyez se lever et vous dominer de toute sa hauteur. Il baisse vers vous un regard menaçant, puis triste et las. « Pas encore », se lamente-t-il, et il disparaît dans un nuage de fumée.\n",
+  "gd5ba": "Vous remarquez que le vieil homme s'est endormi.\n",
+  "gd5dd": "Les runes sont écrites dans une langue ancienne. Parmi elles, quelques dessins représentent des flammes, des statues de pierre et un vieil homme.\n",
+  "gd627": "Vous n'avez pas assez de prise pour faire tourner la barre en T. En revanche, vous pourriez peut-être faire tourner toute la structure.\n",
+  "gd669": "La fosse enflammée est un abîme apparemment sans fond, empli de fumée et de flammes.\n",
+  "gd6ab": "Il serait dommage de mettre fin à vos jours si près du terme de votre quête !\n",
+  "gd6ce": "Vous jetez {le:0} dans la fosse, où {il:0} {g:0|est perdu|est perdue|sont perdus|sont perdues} à jamais.\n",
+  "gd6f2": "Vous n'êtes pas assez près.\n",
+  "gd711": "D'ici, vous voyez le parapet et le cadran solaire.",
+  "gd72c": " Le Maître du donjon s'y trouve aussi, appuyé sur son bâton.",
+  "gd759": "La rose des vents est en pierre et encastrée dans le sol. Impossible de la faire tourner ou de la déplacer.\n",
+  "gd79f": "Il vous faudra d'abord entrer dans la cellule.\n",
+  "gd7be": "Regardez donc autour de vous.\n",
+  "gd7d9": "Le livre se consume dans un éblouissant feu d'artifice de couleurs.\n",
+  "gd80a": "Le livre semble s'ouvrir de sa propre volonté à une page précise. On y voit l'image de huit petites salles disposées autour d'un grand cercle de flammes. Toutes sont identiques, sauf une, dont la porte de bronze donne sur une salle baignée d'une lumière dorée. Sous l'image, une légende indique : « Le Donjon et le Trésor de Zork. »\n",
+  "gd8bb": "On peut feuilleter le livre, mais pas le laisser ouvert.\n",
+  "gd8e1": "Les torches sont hors de portée.\n",
+  "gd955": "Vous ne pouvez pas faire ça.\n",
+  "gd967": "Vous n'avez pas d'eau.\n",
+  "gd97d": "Précisez donc quel panneau vous voulez pousser.\n",
+  "gd996": "Impossible de le faire bouger ; du moins, pas d'ici.\n",
+  "gd9d2": " \n    ****  {Le:0} est mort{e:0}  **** \n\n",
+  "gda06": "\n    ****  Vous êtes mort  ****\n\n",
+  "gda30": "Vous vous sentez désincarné, plongé dans des ténèbres profondes. Une voix s'élève du néant : « Je vous ai attendu bien longtemps, mon ami, mais c'est peut-être un autre que je cherchais. Bonne nuit, ô valeureux aventurier ! » Ce sont les dernières paroles que vous entendez.\n",
+  "gdac0": "Vous vous retrouvez dans les profondeurs de la terre, au fond d'une cellule nue. Derrière la fenêtre à barreaux de fer, vous apercevez une immense fosse ardente. Des flammes jaillissent et manquent de peu de vous roussir la peau. Au bout d'un moment, des bruits de pas se font entendre au loin, puis de plus en plus près... La porte s'ouvre en grand, et un vieil homme entre.\n\nIl est simplement vêtu d'un capuchon et d'une cape ; il porte une amulette et un anneau, tient un vieux livre sous le bras et s'appuie sur un bâton de bois. Une clé unique, qui semble être celle d'un immense cachot, pend à sa ceinture.\n\nIl lève son bâton vers vous, et vous l'entendez parler, comme dans un rêve : « Je vous attends, si long et périlleux que soit votre voyage. Allez, et ne me faites pas attendre longtemps ! » Vous sentez une grande puissance monter en vous, et vous vous effondrez sur le sol. L'instant d'après, vous vous éveillez, comme d'un profond sommeil.\n",
+  "gdd27": "Votre potentiel est de {0} sur un total possible de {1}, en {2}",
+  "gddaa": "La porte de fer est verrouillée de l'extérieur.\n",
+  "gddbf": "La porte de fer est bloquée par la rouille et ne peut pas s'ouvrir.\n",
+  "gdde7": "Vous sentez monter des entrailles de la terre une légère secousse, qui passe vite.\n",
+  "gde12": "Une forte secousse monte des entrailles de la terre. Le donjon tout entier tremble violemment, et des débris se détachent et tombent au-dessus de vous.\n",
+  "gde54": "À l'est, à côté de la grande porte de fer, une faille s'ouvre et révèle un espace dégagé derrière elle !\n",
+  "gde94": "L'un des piliers géants qui soutiennent l'aqueduc s'effondre dans un nuage de fumée et de gravats !\n",
+  "gded8": "La rigole tremble sous vos pieds. Puis la portion de rigole située juste au ",
+  "gdefd": "nord",
+  "gdf03": "sud",
+  "gdf06": " s'effondre et tombe dans le gouffre !\n",
+  "gdf2d": "Il n'y a pas de faille ici.\n",
+  "gdf45": "Vous êtes à l'extrémité sud d'une salle monumentale, jonchée de débris laissés par un tremblement de terre récent. À l'est se dresse une grande porte de fer, bloquée par la rouille. Sur sa droite, en revanche, s'ouvre une faille béante dans la roche et, derrière, un espace dégagé.\n",
+  "gdfbe": "Vous êtes dans la moitié sud d'une salle monumentale. À l'est se dresse une gigantesque porte de fer, apparemment bloquée par la rouille.\n",
+  "ge007": "ouverte",
+  "ge00f": "fermée",
+  "ge024": "C'est une sorte de hall d'entrée, à en juger par la grande porte de fer à l'ouest et par les portes ouvragées, l'une de pierre et l'autre en bois, qui mènent respectivement à l'est et au nord. Quelques larges marches descendent vers le sud.\n",
+  "ge087": "Vous êtes à l'entrée du Musée royal, le plus beau et le plus grandiose du Grand Empire Souterrain. Au sud, quelques marches plus bas, se trouve l'entrée du Casse-tête royal et, à l'est, derrière une porte de pierre, la Collection des joyaux royaux. Au nord, une porte en bois est ",
+  "ge111": "{0} et mène au Musée de la technologie. ",
+  "ge133": "À l'ouest se dresse une grande porte de fer, bloquée par la rouille. Sur sa gauche, en revanche, une faille dans la roche permet de sortir du musée.\n",
+  "ge180": "À l'ouest se dresse une grande porte de fer, bloquée par la rouille.\n",
+  "ge199": "À l'ouest se dresse une grande porte de fer, bloquée par la rouille. La faille dans la roche, qui existait à votre départ, a été comblée par des gravats.\n",
+  "ge1e4": "Juste devant vous se trouve une grande machine dorée, pourvue d'un siège devant lequel est placée une console. Sur la console, il y a un unique bouton et un cadran relié à un affichage à trois chiffres, qui indique {0}. La machine est étonnamment brillante et ne porte guère de traces de l'âge.\n",
+  "ge282": "Vous pourriez peut-être déplacer la machine en la poussant.\n",
+  "ge2ab": "Voilà qui serait un joli tour de force, depuis l'intérieur.\n",
+  "ge2c8": "Vous n'irez nulle part dans ce tas de ferraille.\n",
+  "ge2fa": "Vous ne pouvez pas faire ça depuis l'intérieur de la machine.\n",
+  "ge31a": "Vous ne pouvez rien mettre sur la machine elle-même, ni dedans.\n",
+  "ge341": "C'est une machine, pas une boîte.\n",
+  "ge357": "La machine se compose d'un siège et d'une console portant un petit bouton et un cadran relié à un affichage qui indique {0}.\n",
+  "ge3aa": "Voilà qui risque d'être un peu inconfortable !\n",
+  "ge3c9": "La machine doit peser plus de cent kilos et ne peut pas être portée.\n",
+  "ge3f4": "Précisez donc dans quelle direction pousser la machine.\n",
+  "ge423": "Non sans effort, vous poussez la machine avec vous dans la salle.\n",
+  "ge44a": "Toutefois, la machine semble avoir subi quelques dégâts en franchissant les marches.\n",
+  "ge48c": "La machine semble avoir été endommagée quand vous l'avez poussée à travers la faille.\n",
+  "ge4d5": "L'anneau est caché sous le siège.\n",
+  "ge4f7": "C'est trop gros pour être caché sous le siège.\n",
+  "ge514": "Le siège n'a rien de particulier au toucher.\n",
+  "ge537": "Vous trouvez l'anneau sous le siège et le passez à votre doigt.\n",
+  "ge560": "Vous remarquez un petit espace creux sous le siège.\n",
+  "ge581": "Le cadran est réglé sur {0}.\n",
+  "ge5a0": "Vous ne pouvez pas le régler au-delà de 999.\n",
+  "ge5b6": "Le cadran est réglé sur {0}.\n",
+  "ge5ca": "Encore faut-il dire sur quel nombre le tourner !\n",
+  "ge5dd": "Vous ne pouvez pas faire ça !\n",
+  "ge602": "Il ne semble rien s'être passé.\n",
+  "ge627": "Il ne semble rien s'être passé.\n",
+  "ge63f": "Vous êtes pris d'un bref moment de désorientation. Quand votre vue revient, ",
+  "ge67d": "vous êtes entouré d'un certain nombre de gardes lourdement armés, dont la tenue et le langage vous paraissent étranges et inconnus. Une agitation éclate près d'une porte, à l'est, et un personnage à la tête plate, coiffé d'une couronne tape-à-l'œil et vêtu d'une robe pourpre, fait irruption dans la salle.\n",
+  "ge722": "vous vous retrouvez au beau milieu d'une sorte de cérémonie : un étrange homme à la tête plate, en habits royaux, s'apprête à briser une bouteille sur les barreaux d'une cage de fer renfermant de magnifiques joyaux. Il semble ravi de votre présence. ",
+  "ge7e3": "Vous êtes pris d'un bref moment de désorientation. Quand votre vue revient, les lieux semblent quelque peu changés.\n",
+  "ge884": "La tête commence à vous tourner, et vous voilà bientôt complètement désorienté. Quand vos idées s'éclaircissent, vous vous rendez compte que les lieux ont changé.\n",
+  "gea13": "Vous remarquez que la machine dorée a disparu !\n",
+  "gea65": "Vous remarquez que tout ce qui se trouvait dans la machine a disparu",
+  "geaa9": " : à bien y penser, tout ce que vous teniez s'est volatilisé aussi",
+  "gead7": "Vous remarquez que tout ce que vous teniez a disparu",
+  "geb0a": " !\n",
+  "geb2d": "{0}\n\n****  Vous êtes mort  ****\n\n",
+  "geb5e": "Dehors, une voix particulièrement forte et grinçante domine les autres. « Très joli ! Très joli ! Pas assez de sécurité, mais très joli ! Bon, Lord Feepness, écoutez-moi bien ! Je me disais que ce qu'il nous faut, c'est un barrage, un barrage colossal pour dompter la Rivière glaciale, avec des milliers de vannes. Nous l'appellerons... Barrage n° 2 de régulation des crues. Non, ça ne va pas tout à fait. Ah, je sais ! Barrage n° 3 de régulation des crues. » « Pardonnez-moi, Monseigneur, mais ne serait-ce pas un tantinet excessif ? » « Balivernes ! Maintenant, laissez-moi vous exposer mon idée pour évider des volcans... » Sur ces mots, les voix s'évanouissent dans le néant.\n",
+  "gece9": "Vous êtes dans une salle au haut plafond, au centre de laquelle se dresse un piédestal qui ",
+  "ged18": "est destiné à accueillir les joyaux de la Couronne du Grand Empire Souterrain : un couteau incrusté de joyaux, un anneau d'or et le sceptre royal.",
+  "ged6d": " Tous les joyaux ne sont cependant pas à leur place.",
+  "ged8d": "est nu.",
+  "ged94": " La salle, selon toute apparence, n'est pas achevée.\n",
+  "gedc0": "Vous êtes dans une grande salle inachevée, sans doute destinée à faire partie du Musée royal.\n",
+  "gedf9": "Ceci semble être une entrée inachevée du Musée royal. Des portes s'ouvrent à l'est et au nord, et un escalier sans issue part vers le sud. À l'ouest, une lourde porte de fer est fermée à clé.\n",
+  "geea8": "Vous entrouvrez à peine la porte et apercevez des dizaines de fonctionnaires armés. Vous la refermez bien vite, comprenant que vous seriez tué sur-le-champ si vous quittiez la salle.\n",
+  "gef1c": "Derrière la porte, vous entendez des gardes s'éloigner au pas, leurs voix décroissant peu à peu. Au bout de quelques instants, un fracas retentissant signale la fermeture de ce qui doit être une porte gigantesque. Puis le silence se fait.\n",
+  "gefa3": "Il est reparti bien vite, en laissant la porte fermée.\n",
+  "gefbc": "Il n'y a pas de robot ici.\n",
+  "gefe0": "Un étrange appareil, vaguement robotique, entre en glissant et époussette le sol sur son passage. Sa tête pivote un bref instant tandis qu'il inspecte la machine. « Quelle honte. Quelle honte », dit-il d'une voix de fer-blanc. « Quelqu'un a encore tripoté les machines. » Six petits yeux mécaniques se braquent sur vous tandis que le robot emporte la machine dorée. « Bas les pattes, aventurier ! » dit-il en quittant la salle, et il referme la porte derrière lui.\n",
+  "gf0e0": "Vous êtes dans une salle haute de plafond,",
+  "gf0fc": " au centre de laquelle se dresse une haute cage ronde en acier, solidement verrouillée. Au milieu de la cage, sur un piédestal, reposent les joyaux de la Couronne du Grand Empire Souterrain : un sceptre, un couteau incrusté de joyaux et un anneau d'or. Une petite plaque de bronze, aujourd'hui ternie, est fixée sur la cage.\n",
+  "gf19b": " au centre de laquelle se trouve un piédestal nu. La salle est inachevée et rien n'indique à quoi elle était destinée. Une petite plaque est fixée à un mur.\n",
+  "gf204": "Les joyaux sont à l'intérieur d'une cage verrouillée.\n",
+  "gf227": "{Le:0} {g:0|repose|repose|reposent|reposent} désormais sur le piédestal.\n",
+  "gf28f": "La plaque explique que cette salle devait abriter les joyaux de la Couronne de l'Empire. Cependant, après la disparition inexpliquée d'un anneau d'une valeur inestimable pendant les dernières étapes de la construction, Lord Flathead a décidé de mettre les joyaux restants en lieu plus sûr. Détail curieux, il a placé son bien le plus précieux, une couronne incroyablement tape-à-l'œil, dans un coffre verrouillé, au fond d'un volcan évidé tout exprès.\n",
+  "gf397": "\n     Joyaux de la Couronne\n\n     Offerts au Musée royal\n  par Sa Gracieuse Seigneurie\n\n        DIMWIT FLATHEAD\n\n          Inaugurés\n         * 777 GUE *",
+  "gf41d": "\n\nSous la plaque, en petits caractères, figure le récit d'une maladroite tentative de vol des joyaux au moyen d'une machine temporelle empruntée au Musée de la technologie, machine dont les conservateurs ont eu la surprise de découvrir qu'elle n'était pas une maquette non fonctionnelle. Après cette tentative, la machine a été retirée de l'exposition.",
+  "gf4d1": "\n\nSous la plaque, en petits caractères, figure le récit d'un mystérieux incident survenu pendant les dernières étapes de la construction du Musée : certains des joyaux de la Couronne ont été retrouvés hors de leur place. Heureusement, rien ne manquait. Le mystère n'a jamais été élucidé, et le musée a ouvert ses portes malgré les objections de Lord Flathead, qui jugeait la sécurité trop laxiste.",
+  "gf5cf": "Vous comprenez qu'attirer l'attention sur vous serait fatal.\n",
+  "gf608": "Elle est déjà ouverte.\n",
+  "gf61b": "La porte est verrouillée, sans doute par les gardes en partant.\n",
+  "gf640": "La porte est maintenant ouverte.\n",
+  "gf657": "La cage est verrouillée.\n",
+  "gf668": "La cage est déjà fermée.\n",
+  "gf684": "Les voix sont étouffées par la porte qui (heureusement pour vous) vous sépare d'elles. On semble débattre âprement du sujet suivant : ",
+  "gf6d3": "{0}.\n",
+  "gf6d8": "Vous entendez des voix, maintenant ?\n",
+  "gf6f8": "Une étrange machine grise, qui ressemble un peu à un sèche-linge, occupe un côté de la salle. De l'autre côté se dresse une machine noire à l'air puissant, un enchevêtrement serré de fils, de tuyaux et de moteurs.\nUne plaque est fixée près de la porte.",
+  "gf78e": " La machine grise, apprend-on, est un Pressuriseur magique Frobozz, utilisé dans les mines de charbon de l'Empire. La machine noire est une Centrifugeuse à salles magique Frobozz. La machine dorée porte le nom de Temporisateur. Toutes sont des maquettes non fonctionnelles offertes par John D. Flathead, président de la Frobozzco.\n",
+  "gf841": " L'inscription est cependant effacée et impossible à déchiffrer clairement. Les deux machines semblent en piteux état, rongées de rouille par endroits.\n",
+  "gf892": "Elle est massive : impossible même de la déplacer.\n",
+  "gf8af": "Elle est trop lourde pour être poussée.\n",
+  "gf8c8": "Elle semble parfaitement indestructible.\n",
+  "gf8e5": "Il n'y a là aucun endroit convenable où mettre quoi que ce soit.\n",
+  "gf903": "Elle est boulonnée au mur.\n",
+  "gf91f": "La plaque se contente d'identifier les machines et de nommer leur donateur. Ce sont des maquettes non fonctionnelles de machines bien réelles, à la pointe de la technique.\n",
+  "gf976": "Les mots sont indéchiffrables.\n",
+  "gf993": "Les joyaux royaux sont sur le piédestal.\n",
+  "gf9b3": "Vous ne pouvez pas l'atteindre à travers la cage.\n",
+  "gfa09": "Une personne vêtue d'une cape et d'un capuchon, armée d'une épée qui ressemble fort à la vôtre,",
+  "gfa34": " se tient là et vous barre le passage du côté ",
+  "gfa4c": "{0}.\n",
+  "gfa55": " est là.\n",
+  "gfa5d": "La silhouette encapuchonnée",
+  "gfa76": "La silhouette encapuchonnée ne s'intéresse pas à vos cadeaux.\n",
+  "gfa94": "La silhouette encapuchonnée ne répond pas à vos paroles.\n",
+  "gfac5": "La silhouette encapuchonnée ignore votre attaque dérisoire.\n",
+  "gfb68": "{0}\nLa silhouette",
+  "gfb91": "Une estocade précise, et la silhouette encapuchonnée est grièvement blessée !\nLa silhouette",
+  "gfbc2": "Votre adversaire pare votre attaque de son épée.\n",
+  "gfc07": "Votre épée, qui brille d'un éclat sauvage, vous bondit dans la main !\n",
+  "gfc4c": "La silhouette encapuchonnée fait tournoyer son épée et envoie la vôtre voler au sol. Alors que vous êtes sans défense, la silhouette ramasse votre épée et vous la rend avec un hochement de tête sinistre.\n",
+  "gfcc3": "Une feinte brillante vous prend au dépourvu, et la silhouette encapuchonnée vous glisse son épée entre les côtes. Vous êtes très grièvement blessé.\n",
+  "gfd08": "La silhouette encapuchonnée tente une estocade, mais elle est trop affaiblie pour vous atteindre.\n",
+  "gfd43": "La silhouette encapuchonnée, mortellement blessée, s'effondre. Elle lève une fois les yeux vers vous, et vous entrevoyez un regard profond et plein de tristesse. Avant que vous ayez pu réagir, la silhouette s'évanouit dans un nuage de vapeur fétide.\n",
+  "gfdd1": "Le capuchon de la silhouette jette une ombre épaisse sur son visage. D'où vous êtes, impossible de voir ce qu'il cache.\n",
+  "gfe1f": "Vous ôtez lentement le capuchon de votre adversaire grièvement blessé et reculez, horrifié, en découvrant votre propre visage, las et meurtri. Un léger sourire se dessine sur les lèvres, puis le visage commence à changer, très lentement, pour devenir celui d'une personne âgée et ridée. L'image s'estompe, et avec elle le corps de votre adversaire encapuchonné. La cape reste à terre.\n",
+  "gfef3": "La silhouette encapuchonnée, bien qu'encore convalescente, a assez de force pour vous repousser.\n",
+  "gff24": "Vous ne parvenez pas à approcher assez la silhouette encapuchonnée pour lui ôter son capuchon.\n",
+  "gff4f": "Vous ne parvenez pas à vous approcher assez pour regarder sous la cape.\n",
+  "gff78": "La cape est nouée autour du cou de la silhouette encapuchonnée. Il serait difficile de la lui retirer.\n",
+  "gffb7": "La silhouette encapuchonnée vous barre le chemin.\n",
+  "g10014": "Vous entendez des pas feutrés tout près.\n",
+  "g10040": "Surgie des ombres, une silhouette vêtue d'une cape et d'un capuchon apparaît devant vous ; elle bloque la sortie ",
+  "g1006e": "{0} de la salle et tient une épée qui brille d'un vif éclat.\n",
+  "g100b0": "Surgie de nulle part, l'épée du carrefour apparaît dans votre main, brillant d'un éclat sauvage !\n",
+  "g100df": "Votre épée, brillant d'un éclat sauvage, apparaît dans votre main !\n",
+  "g1011d": "Vous n'avez pas ça en main !\n",
+  "g10133": "{Le:0} {g:0|tombe|tombe|tombent|tombent} jusqu'au pied de la falaise, en contrebas.\n",
+  "g10159": "Votre épée écrase le pain plus qu'elle ne le coupe, et les miettes s'éparpillent au vent.\n",
+  "g101b9": "Tout à coup, le coffre est soulevé et vous échappe. Levant les yeux, vous apercevez un homme au sommet de la falaise, qui tire avec application sur la corde. « Voilà qui est singulièrement aimable de votre part, je dois dire ! » Il ricane désagréablement. « Oh, mais vous êtes coincé, on dirait. Bah, je reviens tout de suite vous chercher ! » Il disparaît de votre vue.\n",
+  "g10286": "Au bord de la falaise, au-dessus de vous, un homme apparaît. Il baisse les yeux vers vous et prend la parole. « Ohé, là-dessous ! Vous semblez avoir un problème. Je peux peut-être vous aider. » Il glousse d'une manière assez inquiétante. « Si vous attachiez ce coffre au bout de la corde, je pourrais peut-être le hisser pour vous. Ensuite, je serais ravi de vous aider à monter ! » Il rit de nouveau.\n",
+  "g1038f": "L'homme a l'air franchement mécontent. « Très bien. Je trouverai toujours quelqu'un d'autre pour m'aider ! À un de ces jours, champion ! » Il disparaît.\n",
+  "g1042a": "Vous ne pouvez aller nulle part avec ce coffre dans les bras. La corde est attachée autour !\n",
+  "g10474": "Vous êtes sur une corniche jonchée de rochers, près de la base d'une haute falaise. Le pied de la falaise se trouve encore cinq mètres plus bas. Vous n'avez guère d'espoir d'escalader la paroi, mais vous pourriez sans doute descendre d'ici en vous laissant glisser (même s'il est douteux que vous puissiez revenir).\n",
+  "g1050f": "Une longue corde pend du sommet de la falaise, à portée de votre main.\n",
+  "g1056a": "C'est un endroit remarquable du donjon. À une soixantaine de mètres au-dessus de vous, peut-être, un trou béant s'ouvre dans la surface de la terre et laisse entrer un soleil éclatant ! Quelques jeunes pousses venues du monde d'en haut, nourries par le soleil et les pluies occasionnelles, sont devenues des arbres géants, faisant de ce lieu une véritable oasis dans le désert de l'Empire Souterrain. À l'ouest, un à-pic vertigineux plonge de près de quinze mètres jusqu'aux rochers acérés, en contrebas. Le passage vers le sud est barré par un sinistre mur de pierre que les ans font s'effriter. Une brèche déchiquetée s'ouvre dans le mur au sud-ouest, d'où s'échappe une fine brume. À l'est, la terre paraît morte et stérile.\n",
+  "g106c1": "Une corde est attachée à l'un des grands arbres et pend par-dessus le bord de la falaise, jusqu'à la corniche en contrebas.\n",
+  "g10716": "Du coin de l'œil, vous surprenez un mouvement parmi les arbres.\n",
+  "g10749": "Il vous semble entendre, venant du sud-ouest, le bruit de la mer.\n",
+  "g1076c": "Vous ne voyez pas de corde ici.\n",
+  "g10792": "Il suffit de tirer un peu sur la corde pour vous convaincre qu'elle est solidement attachée là-haut.\n",
+  "g107c6": "Vous vous agrippez fermement à la corde.\n",
+  "g107db": "L'homme fronce les sourcils. « Je veux bien vous aider à monter, mais pas avant d'avoir ce coffre. » Il désigne le coffre posé près de vous sur la corniche.\n",
+  "g1081e": "Vous essayez de grimper à la corde, mais malgré tous vos efforts vous ne parvenez pas à atteindre le sommet.\n",
+  "g10855": "Le coffre est maintenant attaché à la corde.\n",
+  "g10874": "L'homme, au-dessus de vous, a l'air ravi. « Voilà un bon ami ! Merci infiniment, vraiment ! » Il tire sur la corde et le coffre est hissé jusqu'au sommet de la falaise, hors de votre vue. Avec un petit rire, il disparaît. « Je reviens d'ici peu ! » Ce sont là ses dernières paroles.\n",
+  "g1093f": "« Attrapez-la, c'est tout ! » beugle l'homme.\n",
+  "g10960": "L'homme a l'air fâché. « C'est le coffre que je veux, pas vous ! » lance-t-il sèchement. « Alors arrêtez de faire l'idiot et faites-le monter ! »\n",
+  "g1099f": "Vous n'arrivez pas à vous attacher la corde autour du corps.\n",
+  "g109bc": "Vous n'arrivez pas à attacher la corde à ça.\n",
+  "g109e1": "Le coffre est maintenant détaché de la corde.\n",
+  "g109fc": "La corde n'est attachée à rien.\n",
+  "g10a18": "Une voix familière vous interpelle d'en haut. « Vous êtes toujours là ? » beugle l'homme avec un gros rire. « Eh bien, attrapez la corde et on verra ce qu'on peut faire. » La corde descend jusqu'à portée de votre main.\n",
+  "g10abd": "L'homme se met à tirer sur la corde de toutes ses forces et, en quelques instants, vous voilà au sommet de la falaise. L'homme retire du coffre les derniers objets de valeur et s'apprête à partir. « Vous avez été beau joueur ! Tenez, prenez ça, pour ce que ça vaut ! Je ne me vois pas en avoir besoin ! » Il vous tend un simple bâton de bois qui traînait au fond du coffre, puis se met à examiner ses objets de valeur.\n",
+  "g10bb3": "Le coffre, ouvert et vide, est à vos pieds.\n",
+  "g10be7": "« Bon, je n'ai pas toute la journée. À un de ces jours. » Il disparaît de votre vue en vous arrosant de gravier.\n",
+  "g10c38": "L'homme semble s'impatienter. « Alors, vous montez, oui ou non ? »\n",
+  "g10c6d": "À quoi bon ?\n",
+  "g10c85": "Ça ne rentre pas.",
+  "g10c90": " Plutôt bizarre, d'ailleurs, vu que c'est de là que vient le bâton.",
+  "g10cc7": "L'homme vous interpelle d'en haut. « C'est ça que vous cherchez ? » ricane-t-il en agitant une petite clé au-dessus de sa tête. Vous essayez d'ouvrir le coffre, mais il est verrouillé.\n",
+  "g10d22": "Le coffre est verrouillé : impossible de l'ouvrir.\n",
+  "g10d5c": "Votre « ami », d'un pas vif, se faufile derrière des arbres et disparaît de votre vue.\n",
+  "g10da2": "Votre « ami » examine ses objets de valeur avec une immense fierté.\n",
+  "g10dc7": "Il répond avec entrain : « Quelle merveilleuse journée, n'est-ce pas ? »\n",
+  "g10df5": "L'homme est tout absorbé par l'examen de son butin et ne semble pas vous entendre.\n",
+  "g10e2d": "L'homme est trapu et de taille moyenne, avec une barbe de plusieurs jours. Il porte sous le bras un certain nombre d'objets précieux, sans doute tirés du coffre, désormais ouvert.\n",
+  "g10ea1": "Pris par surprise, l'homme est touché par l'épée. Il vous empoigne et vous jette à terre",
+  "g10edd": ", brisant le bâton au passage",
+  "g10ef7": ", mais vous l'achevez d'un coup d'estoc rapide en pleine poitrine. Il meurt et disparaît sans cérémonie, selon l'usage en vigueur dans le Grand Empire Souterrain. Ses objets précieux de toutes sortes restent sur place.\n",
+  "g10f72": "Vous ne lui feriez pas de mal avec ça !\n",
+  "g10f96": "L'homme recule vivement. « Tout ça, c'est à moi. C'est mon coffre, et c'est mes trésors. Vous avez un sacré culot de vouloir me les prendre, après que je vous ai tiré d'affaire comme ça ! »\n",
+  "g1100e": "Quels objets précieux ?\n",
+  "g11026": "La corde est attachée à un arbre.\n",
+  "g11047": "La corde refuse de prendre feu.\n",
+  "g1105e": "La corde est très solidement attachée et impossible à dénouer.\n",
+  "g11081": "La corde est faite d'une matière plutôt coriace et ne se laisse pas couper.\n",
+  "g110ac": "Vous l'avez perdu de vue parmi les arbres.\n",
+  "g110c3": "Vous ne voyez aucun homme ici.\n",
+  "g110d3": "Vous ne voyez aucun homme ici.\n",
+  "g110e4": "Vous n'êtes même pas près de lui !\n",
+  "g110fd": "L'homme vous rend votre salut d'un geste amical.\n",
+  "g1111e": "Il vous crie en retour : « Qu'est-ce que vous dites ? Je ne vous entends pas très bien.",
+  "g11146": " Attachez donc la corde au coffre, on bavardera après ! » Il vous adresse un large sourire.",
+  "g1117a": " »",
+  "g11185": "Vous avez peu de chances d'y parvenir à cette distance.\n",
+  "g111b0": "{Le:0} {g:0|s'élève|s'élève|s'élèvent|s'élèvent} dans les airs, mais bien trop peu pour atteindre l'homme. Cela semble pourtant l'amuser, surtout quand {il:0} vous {g:0|frôle|frôle|frôlent|frôlent} la tête en retombant. « Nous perdons notre temps. Soyez chic, attachez donc la corde ! »\n",
+  "g1125c": "Où croyez-vous donc être ?\n",
+  "g11277": "D'ici, vous ne distinguez pas vraiment le fond du lac...\n",
+  "g11296": "D'ici, vous ne pouvez pas voir sous la surface.\n",
+  "g112da": "Vous ne pouvez pas porter autant de choses sous l'eau.\n",
+  "g112f3": "Vous ne pouvez pas prendre ça !\n",
+  "g11306": "{Le:0} {g:0|est|est|sont|sont} à vous un instant, puis vous {g:0|échappe|échappe|échappent|échappent}.\n",
+  "g11332": "Un gros poisson à l'air affamé nage dans les parages.\n",
+  "g1138d": "Du coin de l'œil, vous voyez apparaître un petit objet brillant dans le sable. Un instant plus tard, il a disparu !\n",
+  "g113d4": "Vous entrevoyez brièvement quelque chose de brillant dans le sable.\n",
+  "g113f7": "Quelque chose qui scintille dans le sable attire un instant votre regard.\n",
+  "g11427": "À court d'air, vous remontez à la surface.\n",
+  "g114b4": "Sous le choc de l'eau glaciale, vous avez lâché toutes vos possessions dans le lac !\n",
+  "g114f9": "Les eaux glacées vous paralysent presque tandis que vous nagez vers le centre du lac.\n",
+  "g11557": "Un Roc géant, jusque-là caché parmi les rocs, fonce droit sur vous, le bec grand ouvert !\n",
+  "g115ca": "Les eaux glacées font leur œuvre. Vous ne tiendrez plus très longtemps.\n",
+  "g115ff": "Vous vous affaiblissez dangereusement. Vous feriez bien de sortir de l'eau avant de vous noyer !\n",
+  "g1168d": "Vous atteignez l'objet brillant. C'est une simple amulette en or !\n",
+  "g116b2": "L'objet brillant vous glisse des doigts et retombe au fond du lac, où le sable le recouvre.\n",
+  "g116ef": "Vous ne trouvez rien d'inhabituel.\n",
+  "g11706": "Il n'y a rien de remarquable au fond du lac, à part quelques plantes et des algues.\n",
+  "g11733": "Le sable vous file entre les doigts.\n",
+  "g11747": "Beuuuurk !\n",
+  "g11755": "La lanterne ne fonctionne pas (sans doute parce qu'elle a pris l'eau).\n",
+  "g1177d": "Vous voilà soudain de retour dans la salle du Panorama !\n",
+  "g117b1": "Vous touchez la table et êtes instantanément transporté ailleurs !\n\n",
+  "g117fa": "La surface est pâle et sans relief, mais peu à peu, une image prend forme !\n",
+  "g1182c": "{0}\nL'image s'estompe lentement.\n",
+  "g11856": "L'indicateur au-dessus de la table clignote brièvement, puis affiche « ",
+  "g11881": "{0} ».\n",
+  "g1188f": "Vous êtes dans une petite salle taillée dans la roche, dont la seule issue est au nord. Fixée à un mur, une table portant l'inscription « Panorama » incline vers vous sa surface parfaitement lisse. On pourrait croire qu'il s'agit d'une table d'orientation, comme on en trouve dans bien des parcs, qui indiquerait les curiosités visibles depuis cet endroit. Mais vos alentours sont loin d'être spacieux, et même avec beaucoup d'imagination, on ne saurait qualifier ce lieu de panoramique. Au-dessus de la table, un indicateur affiche « ",
+  "g119ae": "{0} ».\n",
+  "g119d6": "La chute vous tuerait.\n",
+  "g119ef": "La corde pend déjà dans le vide, le long de la falaise.\n",
+  "g11a16": "Vous ne tenez pas {le:0}.\n",
+  "g11a2d": "{Le:0} {g:0|bascule|bascule|basculent|basculent} par-dessus la falaise et {g:0|atterrit|atterrit|atterrissent|atterrissent} parmi les rochers, tout en bas.\n",
+  "g11a6f": "Vous n'avez pas assez de force pour escalader la falaise.\n",
+  "g11a8e": "La falaise est au-dessus de vous !\n",
+  "g11aa3": "Les troncs sont trop gros pour que vous puissiez y grimper.\n",
+  "g11ac5": "Il ne semble y avoir personne, mais difficile d'en être sûr.\n",
+  "g11af3": "Peine perdue. La torche est mouillée.\n",
+  "g11b13": "Elle est déjà allumée.\n",
+  "g11b1e": "Vous n'avez rien pour l'allumer.\n",
+  "g11b37": "Vous parvenez à éteindre la flamme.\n",
+  "g11b53": "Elle est déjà éteinte.\n",
+  "g11b94": "L'aérosol semble vide.\n",
+  "g11b9f": "Quelque chose clapote à l'intérieur.\n",
+  "g11bcf": "Il ne reste plus une goutte de répulsif.\n",
+  "g11be6": "Le jet dégage pendant quelques instants une puanteur stupéfiante, puis se dissipe.\n",
+  "g11c26": "Le produit sent un mélange de vieilles chaussettes et de caoutchouc brûlé. Si j'étais un grue, je me tiendrais à bonne distance !\n",
+  "g11c70": "Cette épouvantable odeur est désormais beaucoup moins forte.\n",
+  "g11ca5": "L'aqueduc est vaste et impressionnant. C'était sans doute le principal moyen d'acheminement de l'eau dans l'Empire.\n",
+  "g11cf1": "La rigole fait un bon mètre de profondeur et trois mètres de large, avec un fond arrondi.\n",
+  "g11d22": "Entrer dans la rigole ne servirait pas à grand-chose.\n",
+  "g11d3d": "Vous êtes déjà dedans. Sinon, vous flotteriez dans le vide au-dessus de rochers fort peu engageants.\n",
+  "g11d75": "Ne soyez pas ridicule.\n",
+  "g11d89": "Vous êtes à présent sur l'une des plus hautes arches de l'aqueduc, à des dizaines et des dizaines de mètres au-dessus d'un gouffre rocheux. D'ici, on mesure toute l'immensité de l'ouvrage. Des piliers de pierre s'élèvent du sol rocheux pour former des arches massives, qui traversent la région du nord au sud. La rigole qui porte l'eau est ici large et profonde. À l'ouest, loin en contrebas, vous distinguez un balcon qui doit offrir une vue imprenable sur l'aqueduc.\n",
+  "g11e6e": "Au nord, la rigole s'interrompt brusquement : un pilier de soutènement s'est effondré, précipitant l'arche dans le gouffre.\n",
+  "g11eb1": "Vous êtes près de l'extrémité nord de ce tronçon de l'aqueduc. Au sud, en légère montée, la masse de l'aqueduc se dresse d'un air menaçant au-dessus d'une gorge. Au nord, la rigole plonge à pic et s'engouffre dans un trou rocheux. Avec cette mousse et ce lichen humides, ce serait à coup sûr un aller simple.\n",
+  "g11f60": "La partie sud de l'aqueduc est inaccessible depuis l'effondrement de l'une des arches qui portent l'eau.\n",
+  "g11faa": "Vous déplacez un peu la plaque sur le côté, révélant un petit trou qui s'enfonce dans les ténèbres.\n",
+  "g11fe5": "La plaque est bien trop lourde pour être emportée.\n",
+  "g12003": "Vous êtes entre le marteau et l'enclume, ou plutôt entre la roche et un endroit sombre. La salle est faiblement éclairée par le haut, révélant un unique chemin obscur qui descend en pente vers l'ouest.\n",
+  "g12052": "Une lourde plaque d'égout a été déplacée, révélant un passage obscur en contrebas.\n",
+  "g12079": "D'un côté de la salle se trouve une grande plaque d'égout.\n",
+  "g120ad": "La clé semble épouser la forme de la serrure. D'une simple torsion du poignet, vous faites céder le lourd verrou.\n",
+  "g120f4": "Elle est déjà déverrouillée.\n",
+  "g12104": "La clé épouse la forme de la serrure, mais refuse de tourner.\n",
+  "g1212b": "La clé, qui semblait d'abord faite pour cette serrure, paraît changer de forme et refuse de s'y introduire.\n",
+  "g12172": "{0}\nCurieux, tout de même. La clé semble changer de forme sans arrêt.\n",
+  "g121a1": "L'indicateur affiche « ",
+  "g121b4": "{0} ».\n",
+  "g121c4": "Vous êtes sur le rivage d'une stupéfiante mer souterraine, sujet de bien des légendes chez les aventuriers. Rares sont ceux qui seraient parvenus jusqu'ici, et plus rares encore ceux qui en sont revenus. De gros rouleaux déferlent et une brise de mer souffle vers la terre. Le terrain s'élève abruptement à l'est, et des sables mouvants interdisent d'aller vers le sud. Une épaisse brume couvre l'océan et s'étend sur les collines, à l'est. Un sentier part vers le nord en longeant la plage.\n",
+  "g122ac": "Un antique drakkar longe le rivage, un vieux marin bourru à la barre.\n",
+  "g12307": "Un vieux bateau, qui rappelle un antique drakkar, longe à présent le rivage. Debout à la proue, un vieux marin bourru scrute l'océan brumeux.\n",
+  "g1238b": "Le bateau s'éloigne en silence dans la brume et disparaît.\n",
+  "g123d6": "Vous « buvez » le contenu d'un trait, mais rien d'inhabituel ne semble se produire.\n",
+  "g12413": "Le liquide se répand sur {le:0} et disparaît.\n",
+  "g1242f": "On dirait qu'il y a quelque chose à l'intérieur, mais vous ne voyez rien, bien que la fiole soit transparente.\n",
+  "g12466": "La fiole (ou quelque chose qu'elle contient) dégage une odeur sucrée.\n",
+  "g12485": "Rien ne semble s'en écouler, mais l'odeur sucrée quitte la fiole ; elle semble imprégner l'air un bref instant, puis se dissipe entièrement.\n",
+  "g124db": "Impossible, semble-t-il, d'y mettre quoi que ce soit.\n",
+  "g12518": "Rien ne semble s'en écouler, et pourtant la fiole est maintenant plus légère.\n",
+  "g12549": "La fiole est ouverte.",
+  "g12558": " Une odeur sucrée s'échappe de la fiole ; elle semble provenir d'un liquide lourd mais invisible.",
+  "g12597": "C'est une petite fiole transparente ",
+  "g125b0": "qui paraît vide mais qui est étrangement lourde.\n",
+  "g125c9": "qui est légère et vide.\n",
+  "g125dd": "Il n'y a pas d'océan ici.\n",
+  "g125f0": "Les rouleaux déchaînés vous tueraient !\n",
+  "g12611": "{Le:0} {g:0|tombe|tombe|tombent|tombent} dans l'océan et {g:0|est perdu|est perdue|sont perdus|sont perdues} à jamais.\n",
+  "g12637": "Devant vous se dresse un grand rocher.",
+  "g1264d": " Une épée elfique y est fichée.",
+  "g12671": "Vous n'êtes pas sérieux.\n",
+  "g12684": "Impossible de faire entrer quoi que ce soit de force dans le rocher.\n",
+  "g126a0": "Le rocher est bien trop massif pour être déplacé.\n",
+  "g126bb": "Comme on ne peut pas le déplacer, difficile de savoir ce qu'il y a dessous.\n",
+  "g126df": "Aucun poisson n'est visible pour l'instant.\n",
+  "g12705": "Ce sont bien des sables mouvants, aucun doute !\n",
+  "g1271c": "Difficile de dire ce qu'il y a là-dedans.\n",
+  "g1273b": "Beurk.\n",
+  "g12747": "Vous ne distinguez rien à travers la brume.\n",
+  "g1275c": "La brume a une vague odeur salée.\n",
+  "g12773": "Il n'y a rien là-dessous.\n",
+  "g12783": "C'est beaucoup trop glissant.\n",
+  "g1279e": "Les arches montrent toutes des signes de délabrement.\n",
+  "g127b7": "L'arche devant vous est brisée. Les autres montrent des signes de délabrement.\n",
+  "g5020": "Il fait trop sombre pour y voir.\n",
+  "g5035": "On ne voit pas très bien de quoi vous parlez.\n",
+  "g5073": "Ce que vous avez désigné comme ",
+  "g507a": "autre ",
+  "g507f": "objet",
+  "g508b": " n'est",
+  "g509a": " pas",
+  "g50a0": " pas",
+  "g50a3": " ici.\n",
+  "g50b2": "Il n'y a rien ici que vous puissiez prendre.\n",
+  "g5165": " : ",
+  "g5207": "Je ne vois pas de quoi vous parlez.\n",
+  "g53b0": "Je vous demande pardon ?\n",
+  "g53e4": "Je ne peux rien pour votre maladresse.\n",
+  "g5411": "Désolé, impossible de corriger une erreur dans un texte entre guillemets.\n",
+  "g5436": "Attention : seul le premier mot après OUPS est pris en compte.\n",
+  "g54ba": "Il n'y avait aucun mot à remplacer !\n",
+  "g54f3": "Pardon ?\n",
+  "g5503": "Difficile de répéter des bouts de phrase.\n",
+  "g5521": "Ce serait simplement répéter une erreur.\n",
+  "g5575": "Je n'ai pas compris cette phrase.\n",
+  "g57e7": "Il y avait trop de noms dans cette phrase.\n",
+  "g585c": "Veuillez consulter votre manuel pour savoir comment s'adresser correctement aux autres personnes ou créatures.\n",
+  "g5ee4": "Il ne se passe rien.\n",
+  "g5ef3": "Je ne connais pas le mot « ",
+  "g5f1b": " ».\n",
+  "g5f35": "Il ne se passe rien.\n",
+  "g5f44": "Vous avez employé le mot « ",
+  "g5f6c": " » d'une façon que je ne comprends pas.\n",
+  "g5fa8": "Il n'y avait pas de verbe dans cette phrase !\n",
+  "g6032": "Je ne reconnais pas cette tournure de phrase.\n",
+  "g60ac": "Cette question n'a pas de réponse.\n",
+  "g60d2": "Que voulez-vous ",
+  "g60e6": "dire",
+  "g613d": "« Je ne comprends pas ! De quoi parlez-vous ? »\n",
+  "g6247": ", ",
+  "g628d": "{le:+}",
+  "g63f1": " de",
+  "g63fb": "vos mains",
+  "g6405": "{le:0}",
+  "g6692": "Il semble manquer un nom dans cette phrase !\n",
+  "g670a": "(Que diriez-vous ",
+  "g6719": "{du:0} ?)\n",
+  "g6798": "Il semble manquer un nom dans cette phrase !\n",
+  "g67ea": "Il fait trop sombre pour y voir !\n",
+  "g6824": "Quand vous dites « ",
+  "g6862": " », voulez-vous dire ",
+  "g6871": "{le:0}",
+  "g6881": " ou ",
+  "g688d": ", ",
+  "g6895": " ?\n",
+  "g6a6f": "Je ne vois pas de quoi vous parlez.\n",
+  "g6ad9": "Vous n'avez pas ça !\n",
+  "g6ae4": "Vous n'avez pas {le:0}.\n",
+  "g6afb": "(Pris)\n",
+  "g6b3b": "Vous ne pouvez pas employer plusieurs compléments d'objet ",
+  "g6b4c": "in",
+  "g6b4f": "directs avec le verbe « ",
+  "g6b65": "dire",
+  "g6b8b": " ».\n",
+  "g6ee7": "Ces choses-là ne sont pas ici !\n",
+  "g6f14": "Vous ne voyez pas de ",
+  "g6f23": " ici !\n",
+  "g6f28": "{Le:0} semble perplexe. « Je ne vois pas de ",
+  "g6f46": " ici ! »\n",
+  "g6f91": "Précisez si vous voulez monter ou descendre.\n",
+  "g6fbb": "Vous ne pouvez pas parler au marin de cette façon.\n",
+  "g6fe7": "Il n'y a aucun marin en vue.\n",
+  "g7107": "Il ne se passe rien ici.\n",
+  "g7135": "Le sol est trop dur pour creuser ici.\n",
+  "g7150": "Le grue est une présence sinistre qui rôde dans les recoins obscurs de la terre. Son mets favori : les aventuriers. Mais son appétit insatiable est tempéré par sa peur de la lumière. Aucun grue n'a jamais été vu à la lumière du jour, et rares sont ceux qui ont survécu à ses redoutables mâchoires pour le raconter.\n",
+  "g71fa": "Il n'y a pas de grue ici, mais je suis sûr qu'il y en a au moins un qui rôde dans l'obscurité, pas loin. À votre place, je ne laisserais pas ma lumière s'éteindre !\n",
+  "g724d": "Il ne fait aucun bruit, mais il rôde toujours dans l'obscurité, pas loin.\n",
+  "g727f": "Parler tout seul serait, dit-on, le signe d'un effondrement mental imminent.\n",
+  "g72bc": "Il n'y a que vous pour faire ça.\n",
+  "g72cf": "Il va falloir vous débrouiller par vous-même.\n",
+  "g72e6": "L'autocannibalisme n'est pas la solution.\n",
+  "g7312": "Le suicide n'est pas la solution.\n",
+  "g732b": "Pourquoi ne pas simplement marcher, comme tout le monde ?\n",
+  "g734a": "Comme c'est romantique !\n",
+  "g73a5": "Vous devez préciser dans quelle direction aller.\n",
+  "g73c0": "Là, je ne peux pas vous aider...\n",
+  "g73d5": "Aucune chance.\n",
+  "g73e5": "Le zorkmid est l'unité monétaire du Grand Empire Souterrain.\n",
+  "g7408": "Le meilleur moyen de trouver des zorkmids, c'est encore d'aller les chercher.\n",
+  "g7433": "Verbosité maximale.\n",
+  "g7449": "Descriptions brèves.\n",
+  "g745c": "Descriptions superbrèves.\n",
+  "g747c": "Vous avez les mains vides.\n",
+  "g7494": "\nVoulez-vous recommencer la partie depuis le début, charger une partie sauvegardée ou mettre fin à cette séance de jeu ?\n(Tapez RECOMMENCER, CHARGER ou QUITTER) :\n>",
+  "g7515": "Échec.\n",
+  "g7528": "D'accord.\n",
+  "g7531": "Échec.\n",
+  "g7552": "Voulez-vous vraiment quitter la partie ? (O signifie oui) : ",
+  "g757f": "D'accord.\n",
+  "g758b": "Voulez-vous vraiment recommencer ? (O signifie oui) : ",
+  "g75b4": "Redémarrage.\n",
+  "g75c1": "Échec.\n",
+  "g75cb": "D'accord.\n",
+  "g75d7": "Échec.\n",
+  "g75e1": "D'accord.\n",
+  "g75e6": "Échec.\n",
+  "g75fc": "Ici commence la transcription d'une partie de\n",
+  "g7623": "Ici s'achève la transcription d'une partie de\n",
+  "g7705": "{0} / Numéro de série ",
+  "g772b": "Vérification du disque...\n",
+  "g773d": "Le disque est intact.\n",
+  "g774a": "\n** Défaillance du disque **\n",
+  "g776d": "Appel illégal à #RND.\n",
+  "g7797": "Une voix caverneuse dit : « Imbécile. »\n",
+  "g77bb": "Il ne dort pas, au cas où vous ne l'auriez pas remarqué...\n",
+  "g77dc": "{Le:0} ne {g:0|dort|dort|dorment|dorment} pas.\n",
+  "g77ed": "Personne ne semble attendre votre réponse.\n",
+  "g7811": "J'ai connu des gens bizarres, mais se battre contre {un:0} ?\n",
+  "g7836": "Attaquer {un:0} à mains nues relève du suicide.\n",
+  "g785e": "Vous ne tenez même pas {le:0}.\n",
+  "g787a": "Attaquer {le:0} avec {un:1} relève du suicide.\n",
+  "g78a7": "Désolé, j'ai la mémoire courte. Veuillez indiquer une direction.\n",
+  "g78cd": "Vous ne ferez rien sauter avec de simples mots.\n",
+  "g78f7": "{Le:0} doit être à terre pour qu'on puisse y embarquer.\n",
+  "g7916": "Vous êtes déjà dans {le:0} !\n",
+  "g7935": "Vous avez peut-être une théorie sur la façon d'embarquer dans {un:0} ?\n",
+  "g795b": "Vous êtes maintenant dans {le:0}.\n",
+  "g7983": "Si vous voulez, mais Dieu seul sait pourquoi.\n",
+  "g799f": "Un bogue ? Pas dans un programme aussi parfait ! (Kof, kof.)\n",
+  "g79cd": "Vous n'avez pas dit avec quoi !\n",
+  "g79f0": "Avec {un:0}, vraiment ?\n",
+  "g7a1d": "{Le:0} {g:0|prend|prend|prennent|prennent} feu. Malheureusement, vous ",
+  "g7a41": "étiez dedans",
+  "g7a47": "l'aviez en main",
+  "g7a5c": "{Le:0} {g:0|prend|prend|prennent|prennent} feu et {g:0|part|part|partent|partent} en fumée.\n",
+  "g7a76": "Vous ne pouvez pas brûler {un:0}.\n",
+  "g7a85": "Grotesque !\n",
+  "g7abf": "Vous ne pouvez pas monter sur {le:0}.\n",
+  "g7b10": "{Le:0} ne {g:0|mène|mène|mènent|mènent}",
+  "g7b1c": " décidément",
+  "g7b1f": " pas vers le ",
+  "g7b2c": "haut",
+  "g7b32": "bas",
+  "g7b37": ".\n",
+  "g7b59": "Grimper aux murs ne sert à rien.\n",
+  "g7b78": "Il n'y a pas d'arbre où grimper ici.\n",
+  "g7b91": "Vous ne pouvez pas aller par là.\n",
+  "g7b9c": "Vous ne pouvez pas faire ça !\n",
+  "g7bb1": "Il faudrait m'expliquer comment on fait ça à {un:0}.\n",
+  "g7bde": "Fermé.\n",
+  "g7bf2": "Il fait maintenant noir comme dans un four.\n",
+  "g7c01": "C'est déjà fermé.\n",
+  "g7c17": "{Le:0} {g:0|est|est|sont|sont} maintenant fermé{e:0}.\n",
+  "g7c27": "C'est déjà fermé.\n",
+  "g7c32": "Vous ne pouvez pas fermer ça.\n",
+  "g7c45": "{Le:0} ne vous {g:0|prête|prête|prêtent|prêtent} aucune attention.\n",
+  "g7c59": "Vous ne pouvez pas parler à ça !\n",
+  "g7c6b": "Eh bien, pour commencer, vous jouez à Zork...\n",
+  "g7c86": "Vous avez perdu la tête.\n",
+  "g7c95": "Vous ne pouvez pas traverser ça !\n",
+  "g7caa": "Ce genre d'insultes ne vous avancera à rien.\n",
+  "g7cc3": "Quel cinglé !\n",
+  "g7cce": "Un tel langage, dans un établissement aussi distingué !\n",
+  "g7d12": "Pas une idée lumineuse, surtout quand on est dedans.\n",
+  "g7d3b": "Votre maîtrise consommée de l'art {du:0} débite {le:1} en d'innombrables lamelles qu'emporte le vent.\n",
+  "g7d72": "Comme instrument « tranchant », {un:0}, c'est un peu léger.\n",
+  "g7d94": "Drôle d'idée, couper {le:0}...\n",
+  "g7db3": "Allons, allons !\n",
+  "g7dc9": "Creuser avec {le:0} est lent et fastidieux.\n",
+  "g7de5": "Creuser avec {un:0}, c'est ridicule.\n",
+  "g7e1a": "Vous n'êtes pas dedans !\n",
+  "g7e30": "Vous voilà de nouveau sur vos deux pieds.\n",
+  "g7e46": "Vous vous rendez compte que sortir ici vous serait fatal.\n",
+  "g7e63": "Il ne se passe rien.\n",
+  "g7e79": "Comme c'est curieux !\n",
+  "g7e9d": "Posé.\n",
+  "g7ecc": "Vous n'avez pas ça en main.\n",
+  "g7ef9": "Merci beaucoup. Ça fait du bien par où ça passe.",
+  "g7f4b": "Il n'y a pas d'eau ici.\n",
+  "g7f61": "Il faut d'abord tenir {le:0} en main.\n",
+  "g7f7b": "Il faudra d'abord ouvrir {le:0}.\n",
+  "g7f9f": "Je crains que {le:0} ne vous {g:0|reste|reste|restent|restent} sur l'estomac.\n",
+  "g7fcd": "Merci beaucoup. J'avais plutôt soif (à force de parler, sans doute).\n",
+  "g8005": "écho écho ...\n",
+  "g803c": "Vous voilà plongé dans le noir...\n",
+  "g8074": "{Le:0} n'{g:0|a|a|ont|ont} rien de particulier.\n",
+  "g80bb": "Quelle idée saugrenue !\n",
+  "g8105": "Il n'y a rien pour remplir ça.\n",
+  "g814d": "Il n'y a rien pour remplir ça.\n",
+  "g8160": "Vous savez peut-être comment faire, mais moi, non.\n",
+  "g8188": "À moins de deux mètres de votre tête, à supposer que vous ne l'ayez pas oubliée quelque part.\n",
+  "g81b7": "Vous êtes quelque part par ici...\n",
+  "g81ce": "Vous l'apercevez.\n",
+  "g81db": "C'est vous qui l'avez.\n",
+  "g81f4": "C'est juste sous votre nez.\n",
+  "g8205": "C'est {le:0} qui l'a.\n",
+  "g8215": "C'est sur {le:0}.\n",
+  "g8227": "C'est dans {le:0}.\n",
+  "g8235": "Mystère et boule de gomme.\n",
+  "g823f": "Vous êtes cinglé !\n",
+  "g824b": "La Compagnie FROBOZZ a créé ce donjon, en est propriétaire et en assure l'exploitation.\n",
+  "g8282": "Facile à dire, quand on n'a même pas {le:0}.\n",
+  "g82ab": "Vous ne pouvez pas donner {un:0} à {un:1} !\n",
+  "g82c0": "{Le:0} décline poliment votre offre.\n",
+  "g82d5": "Bizarre !\n",
+  "g82e7": "{Le:0} incline la tête pour vous saluer.\n",
+  "g8301": "Il est de notoriété publique que seuls les schizophrènes disent « Bonjour » à {un:0}.\n",
+  "g833f": "L'incantation vous revient en un faible écho, mais rien d'autre ne se passe.\n",
+  "g836b": "Comment voulez-vous gonfler ça ?\n",
+  "g8387": "J'aimerais encore mieux embrasser un cochon.\n",
+  "g839f": "Il n'y a personne.\n",
+  "g83ac": "Pourquoi frapper sur {un:0} ?\n",
+  "g83c6": "C'est déjà éteint.\n",
+  "g83db": "{Le:0} {g:0|est|est|sont|sont} maintenant éteint{e:0}.\n",
+  "g83ed": "Il fait maintenant noir comme dans un four.\n",
+  "g83fe": "Vous ne pouvez pas éteindre ça.\n",
+  "g8415": "C'est déjà allumé.\n",
+  "g8421": "{Le:0} {g:0|est|est|sont|sont} maintenant allumé{e:0}.\n",
+  "g8444": "Si vous voulez brûler {le:0}, dites-le.\n",
+  "g8464": "Vous ne pouvez pas allumer ça.\n",
+  "g8475": "Vous ne pouvez pas lancer ça en disant simplement « lancer » !\n",
+  "g848e": "Voilà qui est plutôt bizarre.\n",
+  "g84a1": "Un petit coup de fatigue ?\n",
+  "g84be": "{Le:0} {g:0|est|est|sont|sont} trop grand{e:0} pour que vous sautiez par-dessus.\n",
+  "g84da": "Ce serait un joli tour de force.\n",
+  "g8508": "Ce n'était pas l'endroit rêvé pour s'essayer au saut.\n",
+  "g854f": "{Le:0} {g:0|ne fait|ne fait|ne font|ne font} aucun bruit.\n",
+  "g8563": "Ça ne semble pas fonctionner.\n",
+  "g8583": "Il n'y a rien derrière {le:0}.\n",
+  "g85d9": "Il n'y a rien de spécial à voir.\n",
+  "g8612": "{Le:0} {g:0|est vide|est vide|sont vides|sont vides}.\n",
+  "g8620": "{Le:0} {g:0|est|est|sont|sont} fermé{e:0}.\n",
+  "g862e": "Vous ne pouvez pas regarder dans {un:0}.\n",
+  "g864d": "Regarder sur {un:0} ? Quelle drôle d'idée !\n",
+  "g865f": "Il n'y a là que de la poussière.\n",
+  "g8677": "Vous ne pouvez pas faire ça.\n",
+  "g8683": "Il n'est pas certain qu'on puisse faire fondre {un:0}.\n",
+  "g86aa": "Vous n'êtes pas un jongleur assez accompli.\n",
+  "g86cd": "Déplacer {le:0} ne révèle rien.\n",
+  "g86e5": "Vous ne pouvez pas déplacer {le:0}.\n",
+  "g86f5": "Il va falloir parler plus fort si vous voulez que je vous entende !\n",
+  "g8722": "Tenter de détruire {le:0} avec ",
+  "g8739": "vos seules mains",
+  "g8745": "{un:0}",
+  "g874a": " est peine perdue.\n",
+  "g8761": "Bien essayé.\n",
+  "g8773": "Ce n'était pas un marin, celui-là ?\n",
+  "g8785": "Vous mettez sans doute aussi des épinards dans votre réservoir d'essence.\n",
+  "g87b8": "C'est déjà ouvert.\n",
+  "g87cf": "C'est ouvert.\n",
+  "g87e9": "{Le:0} {g:0|s'ouvre|s'ouvre|s'ouvrent|s'ouvrent}.\n{1}\n",
+  "g87fa": "En ouvrant {le:0}, vous découvrez ",
+  "g8812": ".\n",
+  "g881d": "C'est déjà ouvert.\n",
+  "g8826": "{Le:0} {g:0|s'ouvre|s'ouvre|s'ouvrent|s'ouvrent}.\n",
+  "g8837": "Il faudra m'expliquer comment on s'y prend pour ouvrir {un:0}.\n",
+  "g886c": "Hein ?\n",
+  "g8873": "Vous ne pouvez pas crocheter ça.\n",
+  "g8884": "Vous entrez si bien dans la peau {du:0} que vous vous donnez la mort, tout comme {il:0} aurait pu le faire !\n",
+  "g88c7": "C'est idiot !\n",
+  "g88d5": "Cela n'a aucun effet.\n",
+  "g88f4": "{Le:0} {g:0|s'éteint|s'éteint|s'éteignent|s'éteignent}.\n",
+  "g8913": "L'eau se répand sur {le:0}, ruisselle jusqu'au sol et s'évapore.\n",
+  "g8941": "Vous ne pouvez pas verser ça.\n",
+  "g8955": "Si vous priez suffisamment, vos prières seront peut-être exaucées.\n",
+  "g8985": "On ne voit vraiment pas comment.\n",
+  "g89a3": "Impossible de pousser quoi que ce soit vers ça.\n",
+  "g89d6": "Vous ne pouvez pas faire ça.\n",
+  "g89e5": "{Le:0} {g:0|n'est|n'est|ne sont|ne sont} pas ouvert{e:0}.\n",
+  "g89fd": "Comment voulez-vous faire ça ?\n",
+  "g8a0e": "{Le:0} {g:0|est|est|sont|sont} déjà dans {le:1}.\n",
+  "g8a3f": "Il n'y a pas de place.\n",
+  "g8a59": "Vous n'avez pas {le:0}.\n",
+  "g8a82": "C'est fait.\n",
+  "g8a8b": "Cette cachette est bien trop évidente.\n",
+  "g8ab9": "Il n'y a pas de surface convenable sur {le:0}.\n",
+  "g8ad5": "Vous ne pouvez pas faire ça.\n",
+  "g8ae9": "Quelle (hum !) étrange idée.\n",
+  "g8b00": "Impossible de lire dans le noir.\n",
+  "g8b1e": "Comment peut-on regarder à travers {un:0} ?\n",
+  "g8b39": "Comment peut-on lire {un:0} ?\n",
+  "g8b61": "Il est peut-être déjà trop tard !\n",
+  "g8b75": "Il y a peu de chances que {le:0} {g:0|s'y intéresse|s'y intéresse|s'y intéressent|s'y intéressent}.\n",
+  "g8b9d": "Et comment, au juste, comptez-vous faire sonner ça ?\n",
+  "g8c01": "Il faut vous adresser directement {au:0}.\n",
+  "g8c36": "Parler tout seul est le signe d'un effondrement mental imminent.\n",
+  "g8c5b": "Vous ne trouvez rien d'inhabituel.\n",
+  "g8c6d": "Pourquoi diable voudriez-vous faire venir {le:0} ?\n",
+  "g8c7f": "Voilà une idée un peu vite expédiée.\n",
+  "g8c99": "Zut !\n",
+  "g8ca3": "Cela ne semble avoir aucun effet.\n",
+  "g8cb6": "Vous ne pouvez pas l'attraper ; donc, vous ne pouvez pas l'agiter !\n",
+  "g8ce2": "Le contenu {du:0} se renverse ",
+  "g8d08": "sur le sol",
+  "g8d11": ".\n",
+  "g8d14": "Secoué.\n",
+  "g8d1f": "On dirait qu'il y a quelque chose à l'intérieur {du:0}.\n",
+  "g8d39": "{Le:0} {g:0|sonne|sonne|sonnent|sonnent} creux.\n",
+  "g8d49": "Secoué.\n",
+  "g8d7b": "Ça sent {le:0}.\n",
+  "g8d8f": "Vous ne pouvez pas faire tourner ça !\n",
+  "g8df5": "Vous comptez sans doute poignarder {le:0} avec votre petit doigt ?\n",
+  "g8e29": "Vous êtes déjà debout, il me semble.\n",
+  "g8e3d": "Vous serez perdu sans moi !\n",
+  "g8e53": "Comme vous n'êtes guère versé dans le combat à mains nues, vous feriez mieux d'attaquer {le:0} avec une arme.\n",
+  "g8edd": "Allez donc vous jeter à l'eau !\n",
+  "g8ef0": "Fffouit !\n",
+  "g8f09": "Vous l'arborez déjà.\n",
+  "g8f16": "Vous l'avez déjà !\n",
+  "g8f2d": "Vous ne pouvez pas atteindre un objet rangé dans un contenant fermé.\n",
+  "g8f65": "{Le:0} {g:0|n'est|n'est|ne sont|ne sont} pas dans {le:1}.\n",
+  "g8f81": "Vous êtes dedans !\n",
+  "g8fa0": "Vous portez maintenant {le:0}.\n",
+  "g8fb2": "Pris.\n",
+  "g8fcb": "{Le:0} marque une pause, songeant peut-être que vous devriez relire le manuel.\n",
+  "g8ffd": "Vous ne pouvez pas parler {au:0} !\n",
+  "g904a": "Vous vous cognez la tête contre {le:0} en tentant cet exploit.\n",
+  "g9072": "Il faudrait pour cela une sacrée contorsion !\n",
+  "g90a4": "Un lancer formidable ! {Le:0}",
+  "g90c7": "{Le:0} se baisse, et {le:1} {g:1|passe|passe|passent|passent} au-dessus de sa tête avant de s'écraser au sol.\n",
+  "g90ee": "Lancé.\n",
+  "g90f5": "Hein ?\n",
+  "g90fb": "Impossible de jeter quoi que ce soit du haut de ça !\n",
+  "g9111": "Vous ne pouvez rien attacher à vous-même.\n",
+  "g9120": "Vous ne pouvez pas attacher {le:0} à ça.\n",
+  "g9133": "Vous n'arriverez certainement jamais à l'attacher avec ça !\n",
+  "g915f": "Il ne se passe rien.\n",
+  "g919b": "Vos mains nues ne semblent pas suffire.\n",
+  "g91b6": "Vous ne pouvez pas tourner ça !\n",
+  "g91c3": "Cela n'a aucun effet.\n",
+  "g91d7": "Ce qui ne s'attache pas ne se détache pas !\n",
+  "g91ef": "Le temps passe...\n",
+  "g9293": "Vous ne pouvez pas aller par là.\n",
+  "g92c4": "{Le:0} {g:0|est|est|sont|sont} fermé{e:0}.\n",
+  "g92f5": "On entend des bruits étranges dans l'obscurité, et il n'y a pas d'issue dans cette direction.\n",
+  "g9337": "Vous ne pouvez pas aller par là.\n",
+  "g9347": "Utilisez les points cardinaux pour vous déplacer.\n",
+  "g9372": "C'est ici !\n",
+  "g937b": "Il faudrait préciser une direction !\n",
+  "g939f": "Vous ne pouvez pas porter {le:0}.\n",
+  "g93b7": "Naturellement !\n",
+  "g93c1": "Vous ne pouvez pas remonter {un:0}.\n",
+  "g93d3": "Avec un peu de chance, votre vœu sera exaucé.\n",
+  "g93ed": "Aaaarrrrgggghhhh !\n",
+  "g93fd": "À votre service !\n",
+  "g9436": "Il fait noir comme dans un four.",
+  "g9446": " Vous risquez fort d'être dévoré par un grue.",
+  "g94bb": ", dans {le:0}",
+  "g9529": "Seules les chauves-souris voient dans le noir. Et vous n'en êtes pas une.\n",
+  "g9582": "Il y a {un:0} ici",
+  "g9590": " (allumé{e:-})",
+  "g95a9": "{0}{Un:1}",
+  "g95b4": " (allumé{e:-})",
+  "g95ce": " (porté{e:-})",
+  "g95eb": " (hors {du:0})",
+  "g9630": ", ",
+  "g9636": "et ",
+  "g9639": "{un:0}",
+  "g97a5": "Vous avez sur vous :\n",
+  "g97c2": "Sur {le:0}, il y a : \n",
+  "g97d8": "{Le:0} tient : \n",
+  "g97e8": "{Le:0} {g:0|contient|contient|contiennent|contiennent} :\n",
+  "g98a1": "Votre fardeau est trop lourd",
+  "g98b2": ", surtout dans votre état.",
+  "g98ee": "Vous avez déjà les bras trop chargés !\n",
+  "g992e": "Vous n'avez pas {le:0} sur vous.\n",
+  "g9951": "{Le:0} {g:0|est|est|sont|sont} fermé{e:0}.\n",
+  "g99be": "{Le:0} {g:0|n'est|n'est|ne sont|ne sont} pas ici !\n",
+  "g9aca": "Tout autour de vous, dans l'obscurité, retentissent de sinistres gargouillis !\n",
+  "g9b03": "Oh non ! Un grue aux aguets s'est faufilé dans {le:+}",
+  "g9b2d": "la pièce",
+  "g9b41": "Vous avez pénétré dans un endroit obscur.\n",
+  "g9b73": "{Le:0} quitte la pièce.\n",
+  "g9ce7": "Votre épée s'est mise à briller très vivement.\n",
+  "g9d08": "Votre épée émet une faible lueur bleue.\n",
+  "g9d2a": "Votre épée ne brille plus.\n",
+  "g9e1e": "Une lanterne épuisée ne s'allume plus.\n",
+  "g9e4a": "La lanterne a déjà rendu l'âme.\n",
+  "g9ec6": "Vous feriez bien de trouver une lumière plus vive que celle {du:0}.\n",
+  "g9f67": "{Le:0} s'enfonce dans le gouffre et disparaît de votre vue.\n",
+  "gb3e9": "Vous ne pouvez pas aller par là.\n",
+  "gc467": "La porte ne bouge pas d'un pouce.\n",
+  "gd0f9": "Vous ne pouvez pas aller par là.\n",
+  "gd93f": "L'eau vous file entre les doigts.\n",
+  "gdd4f": " tour.",
+  "gdd59": " tours.",
+  "gf256": "Vous n'avez pas {le:0}.\n"
+ },
+ "strings": {
+  "s12d8a": "F",
+  "s12d8c": "Si vous insistez... Pouf, vous voilà mort !",
+  "s12da8": " à ce moment-là.",
+  "s12db2": "Donner un coup de pied dans {le:+}",
+  "s12dba": "Vous auriez dû regarder avant de sauter.",
+  "s12dce": "Au cinéma, votre vie serait en train de défiler devant vos yeux.",
+  "s12dec": "Banzaï...",
+  "s12df6": "Jouer de la sorte avec {le:+}",
+  "s12e04": "Pousser {le:+}",
+  "s12e0c": "Tripoter {le:+}",
+  "s12e16": "Très bien. Vous pouvez maintenant passer en CE1.",
+  "s12e32": "Vous vous amusez bien ?",
+  "s12e44": "Youpiiiiiiiiiiii !",
+  "s12e54": "Vous voulez que je vous applaudisse ?",
+  "s12e66": " vous frappe en pleine tête. En temps normal, cela ne vous ferait pas grand mal, mais par une incroyable malchance, vous basculez en arrière en voulant l'esquiver et vous vous brisez la nuque, la justice étant prompte et clémente dans le Grand Empire Souterrain.",
+  "s12f14": "Oh non ! Vous êtes tombé tout droit dans les crocs baveux d'un grue aux aguets !",
+  "s12f3c": "Agiter {le:+}",
+  "s12f44": "  ",
+  "s12f46": "    ",
+  "s12f4a": "      ",
+  "s12f4e": "        ",
+  "s12f54": "          ",
+  "s12f5c": " ne semble rien donner.",
+  "s12f68": " ne sert pas à grand-chose.",
+  "s12f76": " n'a aucun effet.",
+  "s12fc2": " et vous a dévoré !",
+  "s12fce": "Bonjour.",
+  "s12fd4": "Bien le bonjour.",
+  "s12fdc": "Beau temps, ces jours-ci.",
+  "s12ff6": "Au revoir.",
+  "s12ffe": "Une bien vaillante tentative.",
+  "s1300c": "Vous n'êtes pas sérieux.",
+  "s13016": "Une idée intéressante...",
+  "s13028": "Quel concept !",
+  "s13034": "Regardez donc autour de vous.",
+  "s1303e": "Il est un peu tard pour ça.",
+  "s1304a": "Faites-vous examiner la vue.",
+  "s1305a": "La lanterne semble éclairer un peu moins.",
+  "s1306a": "La lanterne éclaire nettement moins, à présent.",
+  "s13080": "La lanterne est presque éteinte.",
+  "s14fd0": "Vous êtes dans une toute petite pièce. Dans un coin, une échelle en bois branlante descend. Il n'est peut-être pas trop risqué de l'emprunter. Il y a aussi un escalier qui monte.",
+  "s15028": "Vous êtes dans une pièce assez large. D'un côté se trouve le pied d'une étroite échelle en bois. Des passages quittent la pièce vers l'ouest et vers le sud.",
+  "s15096": "Vous êtes dans un passage long et étroit, encombré de poutres brisées. Un large passage arrive de l'est et se transforme, à l'extrémité ouest de la salle, en un boyau très étroit. Un fort courant d'air souffle de l'ouest.",
+  "s150fc": "Vous ne pouvez pas vous faufiler dans ce passage avec un tel chargement.",
+  "s127da": "Il y a de l'eau ici.",
+  "s127e6": "Votre vieille amie, la lanterne en laiton, est à vos pieds.",
+  "s12804": "La porte d'acier est fermée.",
+  "s12812": "Une sorte de petite note traîne par terre.",
+  "s1282a": "Avertissement :\n    Le Casse-tête royal est dangereux et l'on risque de rester prisonnier de son enceinte. Prière de ne pas pénétrer dans le casse-tête après la fermeture, en l'absence du personnel du musée.\n              La Direction",
+  "s128ae": "Il y a ici un vieux livre.",
+  "s128bc": "Au creux de la niche repose un livre vieux et poussiéreux.",
+  "s128dc": "Le livre est rédigé d'une écriture ferme et élégante et regorge d'images étranges et merveilleuses. Le texte, tracé en de nombreuses couleurs, est dans une langue qui vous est inconnue. Les mots semblent changer de couleur à mesure que vous les lisez. Le livre lui-même est très ancien, et ses pages sont sèches et cassantes.",
+  "s12976": "Le Maître du donjon est ici, tranquillement appuyé sur son bâton.",
+  "s12994": " ",
+  "s12996": "Vous êtes à l'extrémité sud d'un long couloir. Au sud, un escalier monte dans les ténèbres. Au nord, le couloir est éclairé par des torches fixées haut sur les murs, hors de portée. Sur l'un des murs se trouve un bouton rouge.",
+  "s129fe": "Vous ne pouvez pas aller par là.",
+  "s12a08": "Vous voici au bout de deux passages attenants, qui partent vers l'ouest et le nord-ouest.",
+  "s12a30": "C'est un endroit particulièrement humide, même pour un donjon. Vous apercevez le carrefour à l'ouest, et deux passages semblables à l'est et au nord-est. Une large rigole de pierre descend en pente raide dans la salle depuis le sud. Elle est couverte de mousse et de lichen glissants. La rigole traverse la salle, mais l'ouverture par laquelle elle se prolongeait autrefois vers le nord est aujourd'hui obstruée par des gravats.",
+  "s12ae8": "L'ouverture est obstruée par des tonnes de débris.",
+  "s12b02": "La rigole est trop raide et la mousse trop glissante.",
+  "s12b1c": "C'est un couloir aux murs de marbre poli. Il s'élargit légèrement en tournant vers l'ouest, à ses extrémités nord et sud.",
+  "s12b58": "C'est un couloir aux murs de marbre poli. Il s'élargit légèrement en tournant vers l'est, à ses extrémités nord et sud.",
+  "s12b94": "Vous seriez carbonisé en un rien de temps.",
+  "s12bac": "Vous êtes dans une cellule nue. Sa porte en bois est solidement fermée, et par sa petite fenêtre vous ne voyez que des flammes et de la fumée.",
+  "s12bee": "La porte est solidement fermée.",
+  "s12c00": "C'est une vaste salle, richement aménagée dans un style qui témoigne d'un goût exquis. À en juger par son contenu, c'est l'entrepôt suprême des richesses du Grand Empire Souterrain.\n\nOn y voit des coffres remplis de pierres précieuses, des montagnes de zorkmids, des tableaux rares, des statues antiques et d'envoûtantes curiosités.\n\nSur un mur est accrochée une carte annotée de l'Empire, qui indique l'emplacement de divers trésors cachés ainsi que de nombreux panoramas de premier ordre.\n\nSur un bureau, au fond de la salle, se trouvent des certificats d'actions représentant une participation majoritaire dans FrobozzCo International, le conglomérat multinational, maison mère de la Compagnie Frobozz des bateaux magiques, etc.\n",
+  "s12ee8": "Oh non ! Vous êtes tombé tout droit dans un repaire de grues affamés, et c'est l'heure du dîner !",
+  "s12f80": "Oh non ! Des dizaines de grues aux aguets vous attaquent et vous dévorent ! Vous avez dû tomber sur un authentique repaire de grues !",
+  "s1308e": "ouest",
+  "s13092": "est",
+  "s13096": "miroir.",
+  "s1309c": "panneau de bois qui portait autrefois un miroir.",
+  "s130b2": "Le miroir est fixé sur un panneau qui a été ouvert vers l'extérieur.",
+  "s130ce": "Le panneau a été ouvert vers l'extérieur.",
+  "s130de": ", des statues de pierre identiques se font face sur des piédestaux, de part et d'autre du couloir. Elles représentent des Gardiens de Zork, un ordre militaire d'antique lignée, figurés en guerriers lourdement cuirassés qui serrent de redoutables massues.",
+  "s1317a": "nord",
+  "s1317c": "sud",
+  "s1317e": "Un grand miroir occupe le ",
+  "s13188": "Un grand panneau occupe le ",
+  "s13192": "Les Gardiens s'éveillent et, dans un ensemble parfait, vous pulvérisent à coups de massue. Satisfaits, ils reprennent leur poste.",
+  "s131da": "Le miroir est fixé sur un panneau de bois qui s'enfonce légèrement quand vous poussez, et revient en place quand vous relâchez. Il a l'air fragile.",
+  "s1321a": "Le miroir ne cède pas, mais il semble fragile.",
+  "s13230": "Le panneau de bois s'enfonce légèrement quand vous poussez, et revient en place quand vous relâchez.",
+  "s13258": "Le panneau ne cède pas.",
+  "s13264": "Pour briser le panneau, il faudrait d'abord briser le miroir.",
+  "s1327e": "nord",
+  "s13280": "nord-est",
+  "s13284": "sud-est",
+  "s13288": "sud",
+  "s1328a": "sud-ouest",
+  "s1328e": "nord-ouest",
+  "s13292": "Les Gardiens s'éveillent et, dans un ensemble parfait, vous anéantissent à coups de massues de pierre. Satisfaits, ils reprennent leur poste.",
+  "s132e0": "Soudain, deux immenses massues de pierre traversent le haut de la structure et vous écrasent.",
+  "s13314": "La structure oscille dangereusement ",
+  "s13322": "La structure glisse ",
+  "s1332a": "Soudain, les Gardiens se rendent compte que quelqu'un essaie de passer devant eux en douce, caché dans la structure. Ils s'éveillent et, dans un ensemble parfait, réduisent en bouillie le contenu de la boîte (autrement dit, vous). Puis ils reprennent leur poste, satisfaits.",
+  "s133b8": "Soudain, deux massues de pierre identiques traversent le toit et réduisent en bouillie le contenu de la boîte. Vous compris.",
+  "s133fe": "Le Maître du donjon est pris au dépourvu. Il esquive votre coup et, l'air déçu, trace dans l'air un motif compliqué avec son bâton. Vous tombez en poussière.",
+  "s13466": "mais je crains que mon attente ne soit vaine.",
+  "s1347e": "mais vous avez encore un long chemin à parcourir avant d'être prêt.",
+  "s13492": "et vous semblez avoir fait quelques modestes progrès.",
+  "s134ac": "et votre voyage est à moitié accompli. Courage !",
+  "s134cc": "et vous approchez du terme de votre longue quête !",
+  "s134e4": "et vous serez bientôt prêt !",
+  "s134fa": "et vous êtes presque prêt pour l'ultime épreuve !",
+  "s13512": "Au-delà de la porte secrète, un escalier sombre et inquiétant descend vers un passage en contrebas. La lueur vacillante de torches éclaire le passage.",
+  "s13560": "Vous êtes mort.",
+  "s13568": "Vous êtes très gravement blessé. Une blessure de plus aurait très probablement raison de vous.",
+  "s13592": "Vous êtes plutôt mal en point. Une blessure grave vous tuerait sans doute.",
+  "s135ba": "Vous avez quelques blessures, qui n'entament pas sérieusement vos forces.",
+  "s135de": "Vous êtes légèrement blessé. Il vous reste de bonnes réserves de forces.",
+  "s13606": "Vous êtes en parfaite santé.",
+  "s13616": "C'est un passage très bas et très étroit, qui va d'est en ouest.",
+  "s1362e": "C'est une salle d'une beauté à couper le souffle. De puissantes stalagmites forment des concrétions rocheuses incrustées de cristaux. Des mousses phosphorescentes, nourries par un filet d'eau qui tombe d'en haut, font luire et scintiller les cristaux de toutes les couleurs de l'arc-en-ciel. Une ouverture donne à l'ouest, et un passage creusé de main d'homme part vers le sud.",
+  "s136e0": "Vous êtes à l'extrémité nord d'une grande salle au plafond voûté. Un long couloir carrelé part vers le nord sous une haute arche. La fonction de cette salle reste obscure, mais une grande représentation du Sceau royal de Lord Dimwit Flathead est sculptée sur le mur.",
+  "s13766": "Le Sceau est un Flathead de grand cru : l'excès s'y affiche à peu près partout. Il représente un personnage à la tête curieusement plate, coiffé d'une couronne tape-à-l'œil et entouré des joyaux de la Couronne de l'Empire.",
+  "s137d2": "La grande porte de fer est bloquée par la rouille.",
+  "s137e4": "La porte de fer est bloquée par la rouille.",
+  "s137f4": "Les gardes ont verrouillé la porte de fer derrière eux.",
+  "s1380e": "Au sud, l'escalier s'arrête en cul-de-sac.",
+  "s13822": "ouverte",
+  "s13826": "fermée",
+  "s1382a": "Vous éprouvez un moment de désorientation. Les lieux autour de vous semblent se solidifier ! Des formations rocheuses se referment sur vous et vous voilà englouti dans la pierre !",
+  "s13880": "les lieux semblent avoir changé. Derrière la porte, vous entendez des gardes qui discutent.",
+  "s138ba": "vous êtes entouré de gardes lourdement armés qui semblent impressionnés par votre présence. L'un d'eux, dont le QI doit avoisiner 15, braque dans votre direction un étrange instrument qui ressemble à une gaufre, et tout devient noir.",
+  "s13928": "vous vous retrouvez face à une foule de gens à l'air particulièrement stupide, vêtus d'uniformes bizarres, qui pointent sur vous des objets ressemblant à des gaufres. L'un d'eux tourne sa gaufre et vous vous effondrez, mort.",
+  "s139a2": "vous voyez une rangée de militaires qui, si les apparences ne sont pas trompeuses, ont à eux tous l'intelligence d'un pamplemousse pas mûr. L'un d'eux braque sur vous un instrument en forme de gaufre ; vous vous sentez engourdi, puis paralysé, puis mort.",
+  "s13a34": "Il parle fort, assourdissant presque le malheureux fonctionnaire chargé de veiller à l'exécution de ses volontés. « Aha ! Un voleur ! Ne vous avais-je pas dit qu'il nous fallait plus de sécurité ! Mais non ! Vous disiez tous que mon idée de construire le musée sous trois kilomètres de montagne, entouré de cent cinquante mètres d'acier, n'était pas réaliste ! Bon, que faire de cet... intrus ? J'ai trouvé ! Nous allons bâtir une forteresse colossale sur le plus haut sommet de la montagne, avec une seule échelle étroite qui grimpe sur des centaines et des centaines de mètres jusqu'à la cime. Il y restera jusqu'à la fin de ses jours ! » Son assistant, habitué aux rebuffades, hésite. « Ne pensez-vous pas, Votre Seigneurie, que votre plan est un peu, comment dire, un peu excessif ? » Flathead y réfléchit une seconde. « Non, pas vraiment », dit-il, et l'on vous emmène. Quelques années plus tard, votre prison est achevée. On vous y conduit, et vous passez le reste de votre vie dans la misère.",
+  "s13c3c": "À travers la porte vous parviennent des voix qui, à en juger par leur ton, appartiennent à des militaires ou à des policiers.",
+  "s13c78": "Un garde à la mine particulièrement féroce entre dans la pièce et vous aperçoit. Il grince des dents de façon fort déplaisante, tire une gaufre de son vêtement et vous vaporise d'une pichenette.",
+  "s13ce2": "C'est une salle d'exposition consacrée à la technologie de l'Empire. Une porte en bois, au sud, est ",
+  "s13d00": ".",
+  "s13d02": "C'est une grande salle qui abritait les expositions technologiques du Grand Empire Souterrain. Une porte, au sud, est ",
+  "s13d34": "la grille des salaires des gardes",
+  "s13d42": "la nature excessive du Gouvernement royal",
+  "s13d5a": "la construction prochaine du Casse-tête royal",
+  "s13d70": "la bonne façon d'exécuter les intrus",
+  "s13d88": "la torture des voleurs",
+  "s13d94": "la mise au ban du Sorcier de Frobozz",
+  "s13dac": "Vous êtes dans un boyau sombre et franchement sinistre, d'où partent des passages vers le nord, l'est, le sud et le sud-ouest.",
+  "s13de4": "Vous êtes à l'extrémité est d'un paysage sombre et monotone de collines basses. À l'est et au sud-est, des sentiers s'enfoncent de nouveau dans la roche.",
+  "s13e2a": "D'imposantes parois rocheuses vous barrent le chemin.",
+  "s13e42": "Vous êtes dans une contrée ombreuse de collines basses et ondoyantes qui s'étendent vers l'ouest et le sud. Au nord, la contrée est bordée par un massif mur de pierre. Antique et usé par le temps, le mur s'est suffisamment effondré à un endroit pour qu'on puisse passer.",
+  "s13eba": "Un mur de pierre bloque le passage.",
+  "s13ec8": "Vous êtes dans une contrée sombre et ombreuse. Tout autour de vous, ce ne sont que douces collines et ombres inquiétantes. Tout là-haut, voilée de brume, vous distinguez à peine la voûte de l'immense caverne qui couvre toute cette contrée.",
+  "s13f3a": "Vous êtes dans une contrée de collines ondoyantes, d'une obscurité menaçante. Le sol devient plus meuble vers le sud.",
+  "s13f6a": "Le sol devient trop meuble pour marcher dans cette direction.",
+  "s13f88": "Vous êtes à l'extrémité sud d'une contrée ombreuse. Le sol est ici très meuble, et l'endroit est cerné de sables mouvants presque de tous côtés. Au nord s'étend un terrain de collines basses.",
+  "s13fe4": "Les sables mouvants vous empêchent d'aller dans cette direction.",
+  "s14002": "Vous êtes près de l'extrémité sud du Pays de l'Ombre. Le sol est ici mou et spongieux, et il se change en sables mouvants vers le sud. Au nord et à l'est s'étendent des collines aux pentes douces et ondoyantes. Une légère brise marine souffle le long d'un sentier en pente raide, à l'ouest.",
+  "s14080": "Vous êtes dans une contrée d'ombres noires et de collines basses, qui s'étendent dans toutes les directions. À l'ouest, le terrain plonge brusquement.",
+  "s140c4": "Vous vous tenez au sommet d'une falaise abrupte, face à un vaste océan qui s'étend à l'ouest. Tout en bas, le ressac martèle une plage de sable. Au sud et à l'est ondulent des collines peuplées d'ombres inquiétantes. Un sentier taillé à même la paroi de la falaise descend vers la plage. Au nord se dresse un haut mur de pierre, qui s'arrête au bord de la falaise. Il a manifestement été bâti il y a fort longtemps, et juste au nord se trouve un endroit où vous pourriez escalader les décombres du mur en ruine.",
+  "s141b0": "Entre les rochers, le vent et les vagues, vous ne tiendriez pas une minute.",
+  "s141d8": "Les sables mouvants interdisent tout déplacement par ici.",
+  "s141ee": "escalier",
+  "s141f2": "?",
+  "s141f4": " semble grièvement blessée et sans défense.",
+  "s1420a": " est blessée, et ses forces semblent décliner.",
+  "s14224": " porte quelques blessures et n'est sans doute plus en état de vous barrer la route.",
+  "s1424c": " porte une légère blessure, qui n'a pas entamé sa force apparemment considérable.",
+  "s14276": " possède une force considérable, peut-être égale à la vôtre.",
+  "s14296": "Belle parade ! Votre épée blesse la silhouette encapuchonnée !",
+  "s142b2": "Un coup rapide prend la silhouette encapuchonnée au dépourvu ! Un filet de sang coule le long de son bras !",
+  "s142e8": "La silhouette encapuchonnée reçoit une vive estafilade !",
+  "s142fc": "Votre mouvement n'a pas été assez rapide et manque sa cible.",
+  "s1431a": "Un coup rapide, mais la silhouette encapuchonnée est sur ses gardes.",
+  "s14332": "Un bon coup, mais trop lent.",
+  "s14348": "Une belle taillade, mais qui manque sa cible d'une bonne lieue.",
+  "s14360": "Vous chargez, mais la silhouette encapuchonnée s'écarte d'un bond agile.",
+  "s1437a": "La silhouette encapuchonnée vous prend au dépourvu et vous blesse !",
+  "s14394": "Vous êtes blessé par une botte fulgurante !",
+  "s143ac": "Vos réflexes, si vifs soient-ils, ne peuvent arrêter le coup de la silhouette encapuchonnée ! Vous êtes touché !",
+  "s143d2": "Blessé comme vous l'êtes, vous ne pouvez plus vous défendre contre un adversaire qui, lui, n'a rien perdu de sa vivacité. Lentement, avec soin, la silhouette commence à ôter son capuchon tandis que vous vous effondrez, mort.",
+  "s14434": "La silhouette encapuchonnée porte un coup d'épée nonchalant et vous manque.",
+  "s14454": "Vous esquivez l'attaque basse de la silhouette encapuchonnée.",
+  "s14468": "La silhouette encapuchonnée tente de déjouer votre garde, mais vous vous dérobez en pivotant.",
+  "s1448a": "La silhouette encapuchonnée se fend, mais vous ripostez et l'envoyez rouler à terre !",
+  "s144b0": "Vous êtes au pied d'un escalier apparemment sans fin, qui s'élève en spirale au-delà de votre champ de vision. Une lumière surnaturelle, qui semble venir de partout à la fois, projette des ombres étranges sur les murs. Au sud s'ouvre un sentier sombre et sinueux.",
+  "s14528": "Cet escalier n'a pas de fin.",
+  "s14536": "Vous êtes au croisement d'un passage nord-sud et d'un passage est-ouest. Au nord, vous distinguez le bas d'un escalier. Les voies vers l'est et le sud sont plutôt étroites, mais un sentier plus large mène à l'ouest.",
+  "s145a4": "Vous êtes à l'ouest du carrefour, là où le passage encaissé dans la roche s'élargit en une vaste étendue plate. Bien que la terre soit ici stérile, vous apercevez de la végétation à l'ouest. Au sud se dresse un puissant mur de pierre, antique et croulant. Au sud-ouest, le mur s'est assez délabré pour former une ouverture, par laquelle filtre une brume légère. Au nord-ouest, un sentier plonge brusquement dans un terrain rocailleux.",
+  "s14668": "Un mur de pierre vous barre la route.",
+  "s14676": "Vous êtes dans un virage serré d'un sentier étroit et très pentu, jonché de rochers de toutes tailles. Le sentier grimpe raide vers une plaine désolée, au sud-est. Au sud-ouest, il descend en serpentant jusqu'au pied d'une falaise.",
+  "s146f6": "Vous êtes au pied d'une falaise abrupte. Juste au-dessus de vous s'avance une large corniche et, bien plus haut encore, on aperçoit la lumière naturelle du soleil. Au nord-est grimpe un sentier escarpé, et le sol devient sablonneux vers le sud.",
+  "s14764": "Vous ne pouvez pas escalader la paroi rocheuse.",
+  "s14774": "La chute vous tuerait.",
+  "s14780": "Aucun arbre ici ne se prête à l'escalade.",
+  "s1479a": "Vous tentez l'escalade, mais vous glissez jusqu'en bas.",
+  "s147b2": "Vous êtes dans un passage froid et humide, envahi d'une brume vaporeuse. Un passage lugubre mène au nord et un chemin plus large part vers le sud. À l'ouest, le chemin quitte la roche et pénètre dans une étrange contrée plongée dans l'ombre.",
+  "s1481e": "Vous êtes dans une vaste caverne, sur la rive nord d'un petit lac. Des marches de pierre polie mènent au sud-est, et une paroi rocheuse à pic empêche de contourner le lac par le sud-ouest. La caverne est faiblement éclairée par le haut.",
+  "s14892": "Si vous tenez vraiment à entrer dans le lac, dites-le.",
+  "s148b4": "La paroi rocheuse à pic empêche de longer la rive du lac.",
+  "s148da": "Vous êtes sur un petit balcon taillé dans une falaise presque verticale. À l'est, s'étirant du nord au sud, se dresse un aqueduc monumental soutenu par de puissants piliers de pierre, dont certains commencent à s'effriter sous le poids des ans. Un sentiment de perte et de tristesse vous envahit tandis que vous contemplez cet ouvrage jadis superbe et la chute de l'Empire qui a bâti cette merveille de l'ingénierie, parmi tant d'autres. Des marches de pierre montent vers le nord-ouest.",
+  "s149b6": "La chute vous serait fatale.",
+  "s149c2": "Vous flottez à la surface du lac. L'eau est glacée, et vos chances de survivre longtemps ici sont fort douteuses. En nageant vers le nord, vous reviendrez à votre point de départ. À l'est, là où le lac se change en marécage, les conditions sont mauvaises. Les rives ouest et sud, en revanche, se prêtent à la marche.",
+  "s14a60": "Le marécage est infranchissable.",
+  "s14a70": "Vous êtes sous la surface du lac. Il s'avère que le lac est peu profond : le fond n'est qu'à un mètre ou deux sous vous. Vu la température glaciale de l'eau, mieux vaut sans doute ne pas prévoir un long séjour. Le fond du lac est sablonneux, et quelques plantes et algues robustes y vivent.",
+  "s14b1a": "Vous êtes déjà au fond du lac.",
+  "s14b2c": "Vous êtes sur la rive ouest du lac. Le sol est ici très dur, mais quelques roseaux chétifs parviennent à pousser au bord de l'eau. Le seul chemin s'enfonce dans la roche, vers le sud.",
+  "s14b8c": "Si vous voulez entrer dans le lac, dites-le.",
+  "s14baa": "Une torche enflammée, fixée à l'un des murs, emplit la salle d'une lumière vacillante.",
+  "s14bda": "Il y a ici un morceau de pain par terre.",
+  "s14bee": "Il semble que quelqu'un soit passé par ici récemment, car du pain frais est posé au pied de l'un des autres arbres.",
+  "s14c2c": "Le bâton est instantanément consumé dans une boule de feu. Et vous avec.",
+  "s14c56": "Un grand coffre, fermé à clé, gît parmi les rochers.",
+  "s14c7a": "L'homme semble commencer à s'impatienter.",
+  "s14c94": "Votre ami, en haut de la falaise, s'est mis à faire nerveusement les cent pas.",
+  "s14cbc": "« Ohé ! » crie l'homme au bord de la falaise. « Vous vous souvenez de moi ? »",
+  "s14ce8": "L'homme sur la falaise vous fait signe. « Ça ne prendrait qu'un instant d'attacher cette corde au coffre. Je vous en serais très obligé, et vous pourriez même y trouver votre compte ! »",
+  "s14d40": "Quelques petits cailloux tombent près de vos pieds. Vous levez les yeux et voyez votre ami qui vous fait signe. « J'ai pas toute la journée, mon vieux. Soyez chic, faites-moi monter ce coffre ! »",
+  "s14d96": "L'homme sur la falaise se racle bruyamment la gorge. « Je ne voudrais pas vous bousculer, mais j'ai des engagements assez pressants... »",
+  "s14dde": "Oh non ! Un poisson gigantesque vient de vous avaler tout rond !",
+  "s14e02": "Vos forces vous abandonnent, et vous vous noyez dans les eaux glaciales.",
+  "s14e24": "Le Roc vous happe de son bec et fait de vous son déjeuner.",
+  "s14e42": "I",
+  "s14e44": "II",
+  "s14e48": "III",
+  "s14e4c": "IV",
+  "s14e50": "Vous voyez un passage encombré de poutres brisées. Une ouverture extrêmement étroite se devine au bout de la salle.",
+  "s14e8a": "Vous voyez une minuscule salle aux murs grossiers. Sur l'un d'eux, le chiffre « 8 » a été grossièrement gravé au burin. La seule issue apparente semble n'être qu'un flou.",
+  "s14ed2": "Vous voyez une vaste salle d'où partent deux passages presque identiques, vers l'est et le nord-est. Une large rigole descend en pente raide dans la salle et semble obstruée par des gravats.",
+  "s14f26": "Vous voyez l'intérieur d'un immense temple grossièrement bâti en blocs de basalte. Des torches vacillantes jettent une lueur blafarde sur un autel encore humide du sang de sacrifices humains, ses tentures de velours tachées et incrustées de sang caillé.",
+  "s14fb4": "Un Canadair surgi de nulle part éteint l'incendie, et vous avec.",
+  "s1506e": "Vous êtes arrivé dans un cul-de-sac de la mine.\nIl y a ici un petit tas de charbon.",
+  "s1510c": "Vous êtes dans une petite chambre taillée dans la roche, au bout d'un court boyau. Sur le mur, le chiffre « 8 » a été grossièrement gravé au burin. La seule issue apparente, à l'est, semble n'être qu'un flou, et un puissant vrombissement résonne à travers la roche.",
+  "s1518c": "Un vent violent vous repousse loin de la sortie.",
+  "s151a6": "Une bombe aérosol est posée dans le coin. On peut y lire en gros caractères : « Répulsif magique Frobozz contre les grues ».",
+  "s151de": "!!! RÉPULSIF MAGIQUE FROBOZZ CONTRE LES GRUES !!!\n\nMode d'emploi : appliquer généreusement sur la créature à protéger. La durée d'action est imprévisible. À n'utiliser qu'en lieu et place de la mort !\n\n(Aucune garantie, expresse ou tacite)",
+  "s1527e": "La bombe explose et vous mourez d'une mort horriblement malodorante.",
+  "s1529e": "Autel sacrificiel\nVous êtes à l'intérieur d'un immense temple de facture primitive. Quelques torches vacillantes jettent une lueur blafarde sur l'autel, encore inondé du sang de sacrifices humains. Derrière l'autel se dresse la statue gigantesque d'un démon, qui semble tendre vers vous ses crocs dégoulinants et ses serres tranchantes comme des rasoirs. Un bruit sourd s'élève derrière vous ; vous vous retournez et découvrez des centaines de formes voûtées et velues. Un chant guttural monte de leurs gorges. Près de vous se tient une silhouette drapée d'une robe du noir le plus profond, qui brandit une énorme épée. Le chant s'enfle tandis que la silhouette en robe s'approche de l'autel. La grande silhouette vous repère et s'avance d'un air menaçant. Elle plonge la main dans sa cape et en tire une grande dague luisante. Elle vous hisse sur l'autel et, sous le murmure approbateur de la foule, vous tranche proprement le ventre.",
+  "s1548c": "Vous êtes sur la rive sud du lac. Des formations rocheuses empêchent d'aller vers l'ouest, et à l'est, le marécage de plus en plus épais rend la progression quasi impossible. Au sud, là où la grève rejoint une formation rocheuse, vous distinguez un passage sombre qui monte en pente raide dans la roche.",
+  "s1551e": "Le marécage est trop dense.",
+  "s1552c": "Si vous voulez aller dans le lac, dites-le.",
+  "s1554a": "Vous ne pouvez pas passer à travers un morceau de métal.",
+  "s1555e": "Le trou est bien trop haut au-dessus de votre tête.",
+  "s15570": "Vous êtes dans une large rigole de pierre, qui faisait partie du réseau d'adduction d'eau du Grand Empire Souterrain. L'eau provenait d'une cascade située au sud, tarie depuis longtemps, et s'écoulait le long de l'aqueduc, vers le nord. La zone est éclairée par le haut, bien que la source de la lumière ne soit pas visible.",
+  "s1560e": "Vous ne pouvez pas escalader la cascade tarie.",
+  "s15624": "L'arche devant vous est brisée.",
+  "s15632": "Il y a bien loin jusqu'en bas...",
+  "s15646": "L'arche au sud est brisée.",
+  "s15656": "Vous exécutez un saut de l'ange parfait sur les rochers en contrebas !",
+  "s15676": "La lumière venue d'en haut semble se concentrer au centre de la salle, où une clé solitaire gît dans la poussière.",
+  "s156ac": "La clé est un long et lourd passe-partout.",
+  "s156c4": "La clé est courte et trapue, d'une forme qui ne rappelle aucune serrure de votre connaissance.",
+  "s156ec": "La clé est ronde et fine, plus proche d'un crayon que d'une clé.",
+  "s15710": "La clé est brillante et hérissée de nombreuses dents.",
+  "s15724": "La clé est pointue comme une alène, et très rouillée.",
+  "s15740": "L'une des figures de pierre (ou peut-être les deux, difficile à dire) s'anime soudain et vous écrase sous sa massue de pierre.",
+  "s15788": "Vous pénétrez dans les sables mouvants et vous enlisez lentement. Jamais aventurier n'était tombé aussi bas."
+ },
+ "melee": {},
+ "objects": {
+  "o1": {
+   "nom": "Maître du donjon",
+   "g": "m",
+   "mots": {
+    "maître": "MASTER",
+    "maîtres": "MASTER",
+    "maître du donjon": "MASTER",
+    "maître de donjon": "MASTER",
+    "homme": "MAN",
+    "vieillard": "MAN"
+   },
+   "adjectifs": {
+    "donjon": "DUNGEON",
+    "du donjon": "DUNGEON"
+   }
+  },
+  "o2": {
+   "nom": "perche courte",
+   "g": "f",
+   "mots": {
+    "perche": "POLE",
+    "perches": "POLE",
+    "mât": "POLE",
+    "poteau": "POST",
+    "poteaux": "POST",
+    "piquet": "POST",
+    "poignée": "HANDGRIP",
+    "poignées": "HANDGRIP",
+    "prise": "GRIP"
+   },
+   "adjectifs": {
+    "courte": "SHORT",
+    "court": "SHORT",
+    "petite": "SMALL",
+    "petit": "SMALL"
+   }
+  },
+  "o3": {
+   "nom": "indicateur",
+   "g": "m",
+   "mots": {
+    "indicateur": "INDICATOR",
+    "indicateurs": "INDICATOR",
+    "afficheur": "INDICATOR",
+    "cadran": "DIAL",
+    "cadrans": "DIAL"
+   },
+   "adjectifs": {}
+  },
+  "o4": {
+   "nom": "fosse enflammée",
+   "g": "f",
+   "mots": {
+    "fosse": "PIT",
+    "fosses": "PIT",
+    "fournaise": "PIT",
+    "brasier": "PIT",
+    "abîme": "ABYSS",
+    "abîmes": "ABYSS"
+   },
+   "adjectifs": {
+    "enflammée": "FLAMING",
+    "enflammé": "FLAMING",
+    "en flammes": "FLAMING",
+    "flamboyante": "FLAMING",
+    "flamboyant": "FLAMING",
+    "ardente": "FIERY",
+    "ardent": "FIERY",
+    "embrasée": "FIERY",
+    "embrasé": "FIERY",
+    "de feu": "FIERY"
+   }
+  },
+  "o5": {
+   "nom": "Musée de la technologie",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o6": {
+   "nom": "Salle du rayon",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o7": {
+   "nom": "eau",
+   "g": "f",
+   "mots": {
+    "eau": "WATER",
+    "eaux": "WATER",
+    "quantité": "QUANTITY",
+    "quantite": "QUANTITY"
+   },
+   "adjectifs": {}
+  },
+  "o8": {
+   "nom": "Salle étroite",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o9": {
+   "nom": "mains",
+   "g": "f",
+   "n": "p",
+   "mots": {
+    "mains": "HANDS",
+    "main": "HAND",
+    "paire": "PAIR"
+   },
+   "adjectifs": {
+    "nues": "BARE",
+    "nue": "BARE",
+    "nus": "BARE",
+    "nu": "BARE"
+   }
+  },
+  "o10": {
+   "nom": "cage d'acier",
+   "g": "f",
+   "mots": {
+    "cage": "CAGE",
+    "cages": "CAGE",
+    "cage d'acier": "CAGE"
+   },
+   "adjectifs": {
+    "acier": "STEEL",
+    "d'acier": "STEEL",
+    "en acier": "STEEL"
+   }
+  },
+  "o11": {
+   "nom": "Maître du donjon",
+   "g": "m",
+   "mots": {
+    "maître": "MASTER",
+    "maîtres": "MASTER",
+    "maître du donjon": "MASTER",
+    "maître de donjon": "MASTER",
+    "homme": "MAN",
+    "vieillard": "MAN"
+   },
+   "adjectifs": {
+    "donjon": "DUNGEON",
+    "du donjon": "DUNGEON"
+   }
+  },
+  "o12": {
+   "nom": "Sous l'eau",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o13": {
+   "nom": "clé étrange",
+   "g": "f",
+   "mots": {
+    "clé": "KEY",
+    "clés": "KEY",
+    "clef": "KEY",
+    "clefs": "KEY"
+   },
+   "adjectifs": {
+    "étrange": "STRANGE",
+    "bizarre": "STRANGE",
+    "rouillée": "RUSTY",
+    "rouillé": "RUSTY",
+    "longue": "LONG",
+    "long": "LONG",
+    "courte": "SHORT",
+    "court": "SHORT",
+    "lourde": "HEAVY",
+    "lourd": "HEAVY",
+    "mince": "THIN",
+    "fine": "THIN",
+    "fin": "THIN",
+    "tranchante": "SHARP",
+    "tranchant": "SHARP",
+    "acérée": "SHARP",
+    "acéré": "SHARP",
+    "aiguisée": "SHARP",
+    "pointue": "POINTED",
+    "pointu": "POINTED"
+   }
+  },
+  "o14": {
+   "nom": "éboulis",
+   "g": "m",
+   "mots": {
+    "éboulis": "RUBBLE",
+    "décombres": "RUBBLE",
+    "gravats": "RUBBLE",
+    "gravas": "RUBBLE",
+    "rocher": "ROCK",
+    "roche": "ROCK",
+    "rochers": "ROCKS",
+    "roches": "ROCKS",
+    "pierres": "ROCKS",
+    "cailloux": "ROCKS",
+    "caillou": "ROCK",
+    "bloc": "BOULDER",
+    "blocs": "BOULDER"
+   },
+   "adjectifs": {}
+  },
+  "o15": {
+   "nom": "Salle des poutres",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o16": {
+   "nom": "Salle des joyaux",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o17": {
+   "nom": "table de visionnage",
+   "g": "f",
+   "mots": {
+    "table": "TABLE",
+    "tables": "TABLE",
+    "table de visionnage": "TABLE",
+    "surface": "SURFACE"
+   },
+   "adjectifs": {
+    "visionnage": "VIEWING",
+    "de visionnage": "VIEWING"
+   }
+  },
+  "o18": {
+   "nom": "torche",
+   "g": "f",
+   "mots": {
+    "torche": "TORCH",
+    "torches": "TORCH",
+    "flambeau": "TORCH"
+   },
+   "adjectifs": {}
+  },
+  "o19": {
+   "nom": "Couloir nord",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o20": {
+   "nom": "Haut de l'échelle",
+   "g": "m",
+   "elision": false,
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o21": {
+   "nom": "voix",
+   "g": "f",
+   "n": "p",
+   "mots": {
+    "voix": "VOICES",
+    "gardes": "GUARDS",
+    "soldats": "GUARDS",
+    "officiels": "OFFICI",
+    "fonctionnaires": "OFFICI",
+    "dignitaires": "OFFICI"
+   },
+   "adjectifs": {
+    "armés": "ARMED",
+    "armé": "ARMED",
+    "armées": "ARMED",
+    "armée": "ARMED"
+   }
+  },
+  "o22": {
+   "nom": "fiole",
+   "g": "f",
+   "mots": {
+    "fiole": "VIAL",
+    "fioles": "VIAL",
+    "flacon": "VIAL",
+    "flacons": "VIAL",
+    "odeur": "ODOR",
+    "odeurs": "ODOR",
+    "parfum": "ODOR",
+    "cadeau": "GIFT",
+    "cadeaux": "GIFT"
+   },
+   "adjectifs": {}
+  },
+  "o23": {
+   "nom": "Pays de l'Ombre",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o24": {
+   "nom": "vous",
+   "g": "m",
+   "article": false,
+   "mots": {
+    "moi": "ME",
+    "moi-même": "MYSELF",
+    "moi-meme": "MYSELF",
+    "moi même": "MYSELF",
+    "moi meme": "MYSELF",
+    "soi-même": "SELF",
+    "soi-meme": "SELF",
+    "soi même": "SELF",
+    "soi meme": "SELF",
+    "crétin": "CRETIN",
+    "cretin": "CRETIN",
+    "crétine": "CRETIN",
+    "cretine": "CRETIN"
+   },
+   "adjectifs": {}
+  },
+  "o25": {
+   "nom": "siège",
+   "g": "m",
+   "mots": {
+    "creux": "AREA",
+    "cavité": "AREA",
+    "cavités": "AREA",
+    "espace": "AREA",
+    "renfoncement": "AREA",
+    "logement": "AREA",
+    "cachette": "AREA",
+    "zone": "AREA",
+    "petit creux": "AREA"
+   },
+   "adjectifs": {
+    "petit": "SMALL",
+    "petite": "SMALL",
+    "creux": "HOLLOW",
+    "creuse": "HOLLOW",
+    "évidé": "HOLLOW",
+    "évidée": "HOLLOW"
+   }
+  },
+  "o26": {
+   "nom": "tas d'objets précieux de toutes sortes",
+   "g": "m",
+   "mots": {
+    "tas": "PILE",
+    "tas d'objets précieux": "VALUABLES",
+    "tas d'objets de valeur": "VALUABLES",
+    "objets précieux": "VALUABLES",
+    "objets de valeur": "VALUABLES",
+    "trésor": "TREASURE",
+    "trésors": "TREASURE",
+    "richesses": "TREASURE",
+    "butin": "TREASURE"
+   },
+   "adjectifs": {
+    "de toutes sortes": "ASSORTED",
+    "assortis": "ASSORTED",
+    "divers": "ASSORTED",
+    "variés": "ASSORTED"
+   }
+  },
+  "o27": {
+   "nom": "rayon de lumière rouge",
+   "g": "m",
+   "mots": {
+    "rayon": "BEAM",
+    "rayons": "BEAM",
+    "rayon de lumière": "BEAM",
+    "faisceau": "BEAM",
+    "faisceau de lumière": "BEAM",
+    "lumière": "LIGHT"
+   },
+   "adjectifs": {
+    "rouge": "RED",
+    "rouges": "RED"
+   }
+  },
+  "o28": {
+   "nom": "Entrée du musée",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o29": {
+   "nom": "panneau",
+   "g": "m",
+   "mots": {
+    "panneau": "PANEL",
+    "panneaux": "PANEL"
+   },
+   "adjectifs": {}
+  },
+  "o30": {
+   "nom": "Pays de l'Ombre",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o31": {
+   "nom": "corniche",
+   "g": "f",
+   "mots": {
+    "corniche": "LEDGE",
+    "corniches": "LEDGE",
+    "rebord": "LEDGE",
+    "saillie": "LEDGE"
+   },
+   "adjectifs": {
+    "large": "WIDE",
+    "larges": "WIDE"
+   }
+  },
+  "o32": {
+   "nom": "runes",
+   "g": "f",
+   "n": "p",
+   "mots": {
+    "runes": "RUNES",
+    "rune": "RUNES",
+    "gravures": "ENGRAV",
+    "gravure": "ENGRAV",
+    "texte": "TEXT",
+    "inscriptions": "TEXT",
+    "inscription": "TEXT",
+    "mur": "WALL",
+    "paroi": "WALL"
+   },
+   "adjectifs": {
+    "gravées": "CARVED",
+    "gravée": "CARVED",
+    "gravés": "CARVED",
+    "gravé": "CARVED",
+    "sculptées": "CARVED",
+    "sculpté": "CARVED"
+   }
+  },
+  "o33": {
+   "nom": "direction",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o34": {
+   "nom": "",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o35": {
+   "nom": "crétin",
+   "g": "m",
+   "mots": {
+    "aventurier": "ADVENTURER",
+    "aventurière": "ADVENTURER",
+    "aventuriere": "ADVENTURER"
+   },
+   "adjectifs": {}
+  },
+  "o36": {
+   "nom": "Parapet",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o37": {
+   "nom": "panneau d'acajou",
+   "g": "m",
+   "mots": {
+    "panneau": "PANEL",
+    "panneaux": "PANEL",
+    "panneau d'acajou": "PANEL",
+    "mur": "WALL",
+    "paroi": "WALL"
+   },
+   "adjectifs": {
+    "acajou": "MAHOGANY",
+    "d'acajou": "MAHOGANY",
+    "en acajou": "MAHOGANY"
+   }
+  },
+  "o38": {
+   "nom": "Sceau royal de Dimwit Flathead",
+   "g": "m",
+   "mots": {
+    "sceau": "SEAL",
+    "sceaux": "SEAL",
+    "sceau de flathead": "SEAL",
+    "sceau de dimwit flathead": "SEAL",
+    "sceau royal de flathead": "SEAL",
+    "sceau royal de dimwit flathead": "SEAL",
+    "sceau de lord dimwit flathead": "SEAL",
+    "sceau royal de lord dimwit flathead": "SEAL",
+    "sculpture": "CARVIN",
+    "bas-relief": "CARVIN",
+    "représentation": "RENDER",
+    "reproduction": "RENDER",
+    "effigie": "RENDER",
+    "grand sceau": "SEAL",
+    "grand sceau royal": "SEAL",
+    "représentation du sceau": "RENDER",
+    "représentation du sceau royal": "RENDER"
+   },
+   "adjectifs": {
+    "royal": "ROYAL",
+    "royale": "ROYAL",
+    "grand": "LARGE",
+    "grande": "LARGE",
+    "immense": "LARGE"
+   }
+  },
+  "o39": {
+   "nom": "Salle de la clé",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o40": {
+   "nom": "Étroit goulet",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o41": {
+   "nom": "",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o42": {
+   "nom": "mur est",
+   "g": "m",
+   "mots": {
+    "mur": "WALL",
+    "murs": "WALL",
+    "paroi": "WALL"
+   },
+   "adjectifs": {
+    "est": "EAST",
+    "oriental": "EASTERN",
+    "orientale": "EASTERN"
+   }
+  },
+  "o43": {
+   "nom": "Couloir est",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o44": {
+   "nom": "Grand couloir",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o45": {
+   "nom": "Cellule",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o46": {
+   "nom": "Trésor de Zork",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o47": {
+   "nom": "corde",
+   "g": "f",
+   "mots": {
+    "corde": "ROPE",
+    "cordes": "ROPE",
+    "cordage": "ROPE"
+   },
+   "adjectifs": {}
+  },
+  "o48": {
+   "nom": "Salle étroite",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o49": {
+   "nom": "",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o50": {
+   "nom": "formation rocheuse",
+   "g": "f",
+   "mots": {
+    "cristal": "CRYSTAL",
+    "cristaux": "CRYSTAL",
+    "formation": "CRYSTAL",
+    "formations": "CRYSTAL",
+    "formation rocheuse": "CRYSTAL",
+    "formations rocheuses": "CRYSTAL",
+    "stalagmite": "STALAG",
+    "stalagmites": "STALAG",
+    "stalactite": "STALAG",
+    "stalactites": "STALAG"
+   },
+   "adjectifs": {}
+  },
+  "o51": {
+   "nom": "Salle étroite",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o52": {
+   "nom": "panneau blanc",
+   "g": "m",
+   "mots": {
+    "panneau": "PANEL",
+    "panneaux": "PANEL",
+    "mur": "WALL",
+    "paroi": "WALL"
+   },
+   "adjectifs": {
+    "blanc": "WHITE",
+    "blanche": "WHITE"
+   }
+  },
+  "o53": {
+   "nom": "objet quelconque",
+   "g": "m",
+   "mots": {
+    "ça": "IT",
+    "ca": "IT",
+    "cela": "IT",
+    "eux": "THEM",
+    "elles": "THEM",
+    "elle": "HER",
+    "lui": "HIM"
+   },
+   "adjectifs": {}
+  },
+  "o54": {
+   "nom": "Grand couloir",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o55": {
+   "nom": "Boyau sinistre",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o56": {
+   "nom": "passage",
+   "g": "m",
+   "mots": {
+    "sentier": "TRAIL",
+    "piste": "TRAIL",
+    "chemin": "PATH",
+    "passage": "PATH"
+   },
+   "adjectifs": {
+    "forestier": "FOREST",
+    "forêt": "FOREST",
+    "foret": "FOREST",
+    "étroit": "NARROW",
+    "etroit": "NARROW",
+    "étroite": "NARROW",
+    "etroite": "NARROW",
+    "long": "LONG",
+    "longue": "LONG",
+    "sinueux": "WINDING",
+    "sinueuse": "WINDING"
+   }
+  },
+  "o57": {
+   "nom": "Bas de l'échelle",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o58": {
+   "nom": "Salle étroite",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o59": {
+   "nom": "cape",
+   "g": "f",
+   "mots": {
+    "cape": "CLOAK",
+    "capes": "CLOAK",
+    "manteau": "CLOAK",
+    "pèlerine": "CLOAK"
+   },
+   "adjectifs": {}
+  },
+  "o60": {
+   "nom": "gros bouton",
+   "g": "m",
+   "mots": {
+    "bouton": "BUTTON",
+    "boutons": "BUTTON",
+    "gros bouton": "BUTTON",
+    "grand bouton": "BUTTON"
+   },
+   "adjectifs": {
+    "gros": "LARGE",
+    "grosse": "LARGE",
+    "grand": "LARGE"
+   }
+  },
+  "o61": {
+   "nom": "piédestal",
+   "g": "m",
+   "mots": {
+    "piédestal": "PEDESTAL",
+    "piedestal": "PEDESTAL",
+    "socle": "PEDESTAL"
+   },
+   "adjectifs": {}
+  },
+  "o62": {
+   "nom": "panneau de pin",
+   "g": "m",
+   "mots": {
+    "panneau": "PANEL",
+    "panneaux": "PANEL",
+    "panneau de pin": "PANEL",
+    "mur": "WALL",
+    "paroi": "WALL"
+   },
+   "adjectifs": {
+    "pin": "PINE",
+    "de pin": "PINE",
+    "en pin": "PINE"
+   }
+  },
+  "o63": {
+   "nom": "Pays de l'Ombre",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o64": {
+   "nom": "Salle brumeuse",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o65": {
+   "nom": "coffre",
+   "g": "m",
+   "mots": {
+    "coffre": "CHEST",
+    "coffres": "CHEST",
+    "malle": "CHEST",
+    "caisse": "CHEST"
+   },
+   "adjectifs": {
+    "verrouillé": "LOCKED",
+    "fermé à clé": "LOCKED",
+    "cadenassé": "LOCKED"
+   }
+  },
+  "o66": {
+   "nom": "Musée de la technologie",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o67": {
+   "nom": "roseaux",
+   "g": "m",
+   "n": "p",
+   "mots": {
+    "roseaux": "REEDS",
+    "roseau": "REEDS",
+    "joncs": "REEDS",
+    "jonc": "REEDS"
+   },
+   "adjectifs": {
+    "maladifs": "SICKLY",
+    "maladif": "SICKLY",
+    "chétifs": "SICKLY",
+    "chétif": "SICKLY",
+    "malingres": "SICKLY",
+    "rabougris": "SICKLY",
+    "étiolés": "SICKLY"
+   }
+  },
+  "o68": {
+   "nom": "échelle en bois",
+   "g": "f",
+   "mots": {
+    "échelle": "LADDER",
+    "echelle": "LADDER",
+    "échelles": "LADDER",
+    "echelles": "LADDER"
+   },
+   "adjectifs": {
+    "bois": "WOODEN",
+    "branlante": "RICKETY",
+    "branlant": "RICKETY",
+    "bancale": "RICKETY",
+    "bancal": "RICKETY",
+    "étroite": "NARROW",
+    "etroite": "NARROW",
+    "étroit": "NARROW",
+    "etroit": "NARROW"
+   }
+  },
+  "o69": {
+   "nom": "Pays de l'Ombre",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o70": {
+   "nom": "Salle de la machine",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o71": {
+   "nom": "rigole",
+   "g": "f",
+   "mots": {
+    "rigole": "CHANNEL",
+    "rigoles": "CHANNEL",
+    "rigole d'eau": "CHANNEL",
+    "canal": "CHANNEL",
+    "chenal": "CHANNEL"
+   },
+   "adjectifs": {
+    "d'eau": "WATER"
+   }
+  },
+  "o72": {
+   "nom": "porte de la cellule",
+   "g": "f",
+   "mots": {
+    "porte": "DOOR",
+    "portes": "DOOR",
+    "porte de la cellule": "DOOR",
+    "porte de cellule": "DOOR"
+   },
+   "adjectifs": {
+    "bois": "WOODEN",
+    "en bois": "WOODEN",
+    "de bois": "WOODEN",
+    "cellule": "CELL",
+    "de la cellule": "CELL"
+   }
+  },
+  "o73": {
+   "nom": "Pied de la falaise",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o74": {
+   "nom": "mur sud",
+   "g": "m",
+   "mots": {
+    "mur": "WALL",
+    "murs": "WALL",
+    "paroi": "WALL"
+   },
+   "adjectifs": {
+    "sud": "SOUTH",
+    "méridional": "SOUTHE",
+    "méridionale": "SOUTHE"
+   }
+  },
+  "o75": {
+   "nom": "Vue sur l'aqueduc",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o76": {
+   "nom": "cadran",
+   "g": "m",
+   "mots": {
+    "cadran": "DIAL",
+    "cadrans": "DIAL",
+    "console": "CONSOLE",
+    "pupitre": "CONSOLE",
+    "écran": "DISPLAY",
+    "affichage": "DISPLAY"
+   },
+   "adjectifs": {}
+  },
+  "o77": {
+   "nom": "livre très ancien",
+   "g": "m",
+   "mots": {
+    "livre": "BOOK",
+    "livres": "BOOK",
+    "grimoire": "BOOK",
+    "ouvrage": "BOOK",
+    "livre du savoir": "BOOK",
+    "savoir": "LORE",
+    "texte": "TEXT",
+    "vieux livre": "BOOK"
+   },
+   "adjectifs": {
+    "très ancien": "OLD",
+    "très vieux": "OLD",
+    "ancien": "OLD",
+    "vieux": "OLD",
+    "vieil": "OLD",
+    "étrange": "STRANGE",
+    "savoir": "LORE",
+    "du savoir": "LORE"
+   }
+  },
+  "o78": {
+   "nom": "Lacet en épingle",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o79": {
+   "nom": "robot",
+   "g": "m",
+   "mots": {
+    "robot": "ROBOT",
+    "robots": "ROBOT",
+    "automate": "ROBOT",
+    "appareil": "DEVICE",
+    "dispositif": "DEVICE",
+    "engin": "DEVICE"
+   },
+   "adjectifs": {}
+  },
+  "o80": {
+   "nom": "mur en bois",
+   "g": "m",
+   "mots": {
+    "mur": "WALL",
+    "murs": "WALL",
+    "paroi": "WALL"
+   },
+   "adjectifs": {
+    "bois": "WOODEN",
+    "en bois": "WOODEN",
+    "de bois": "WOODEN"
+   }
+  },
+  "o81": {
+   "nom": "Grotte de cristal",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o82": {
+   "nom": "porte en bois",
+   "g": "f",
+   "mots": {
+    "porte": "DOOR",
+    "portes": "DOOR"
+   },
+   "adjectifs": {
+    "bois": "WOODEN",
+    "en bois": "WOODEN",
+    "de bois": "WOODEN"
+   }
+  },
+  "o83": {
+   "nom": "bâton brisé",
+   "g": "m",
+   "mots": {
+    "bâton": "STAFF",
+    "bâtons": "STAFF",
+    "canne": "STAFF"
+   },
+   "adjectifs": {
+    "brisé": "BROKEN",
+    "brisée": "BROKEN",
+    "cassé": "BROKEN",
+    "cassée": "BROKEN"
+   }
+  },
+  "o84": {
+   "nom": "Entrée du Casse-tête royal",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o85": {
+   "nom": "échelle",
+   "g": "f",
+   "mots": {
+    "échelle": "LADDER",
+    "échelles": "LADDER"
+   },
+   "adjectifs": {}
+  },
+  "o86": {
+   "nom": "Cul-de-sac",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o87": {
+   "nom": "panneau noir",
+   "g": "m",
+   "mots": {
+    "panneau": "PANEL",
+    "panneaux": "PANEL",
+    "mur": "WALL",
+    "paroi": "WALL"
+   },
+   "adjectifs": {
+    "noir": "BLACK",
+    "noire": "BLACK"
+   }
+  },
+  "o88": {
+   "nom": "cadran solaire",
+   "g": "m",
+   "mots": {
+    "cadran": "DIAL",
+    "cadrans": "DIAL",
+    "cadran solaire": "SUNDIAL",
+    "indicateur": "INDICATOR",
+    "aiguille": "ARROW",
+    "flèche": "ARROW"
+   },
+   "adjectifs": {
+    "solaire": "SUN",
+    "indicatrice": "INDICATOR",
+    "indicateur": "INDICATOR"
+   }
+  },
+  "o89": {
+   "nom": "faille",
+   "g": "f",
+   "mots": {
+    "faille": "CLEFT",
+    "failles": "CLEFT",
+    "fissure": "CLEFT",
+    "fissures": "CLEFT",
+    "crevasse": "CLEFT",
+    "brèche": "CLEFT"
+   },
+   "adjectifs": {}
+  },
+  "o90": {
+   "nom": "amulette en or",
+   "g": "f",
+   "mots": {
+    "amulette": "AMULET",
+    "amulettes": "AMULET",
+    "médaillon": "AMULET",
+    "pendentif": "AMULET",
+    "objet": "OBJECT",
+    "amulette en or": "AMULET",
+    "amulette d'or": "AMULET"
+   },
+   "adjectifs": {
+    "or": "GOLDEN",
+    "en or": "GOLDEN",
+    "d'or": "GOLDEN",
+    "dorée": "GOLDEN",
+    "doré": "GOLDEN",
+    "brillante": "SHINY",
+    "brillant": "SHINY",
+    "luisante": "SHINY",
+    "luisant": "SHINY",
+    "étincelante": "SHINY",
+    "étincelant": "SHINY"
+   }
+  },
+  "o91": {
+   "nom": "gouffre",
+   "g": "m",
+   "mots": {
+    "gouffre": "CHASM",
+    "gouffres": "CHASM",
+    "précipice": "CHASM",
+    "ravin": "RAVINE",
+    "ravins": "RAVINE",
+    "gorge": "GORGE",
+    "gorges": "GORGE"
+   },
+   "adjectifs": {
+    "rocheux": "ROCKY",
+    "rocheuse": "ROCKY",
+    "profond": "DEEP",
+    "profonde": "DEEP"
+   }
+  },
+  "o92": {
+   "nom": "machine grise",
+   "g": "f",
+   "mots": {
+    "machine": "MACHINE",
+    "machines": "MACHINE",
+    "machine à laver": "MACHINE",
+    "lave-linge": "MACHINE",
+    "séchoir": "DRYER",
+    "sèche-linge": "DRYER",
+    "pressuriseur": "PRESSURIZER"
+   },
+   "adjectifs": {
+    "grise": "GREY",
+    "gris": "GREY",
+    "à laver": "WASHING",
+    "laver": "WASHING"
+   }
+  },
+  "o93": {
+   "nom": "Passage humide",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o94": {
+   "nom": "poisson",
+   "g": "m",
+   "mots": {
+    "poisson": "FISH",
+    "poissons": "FISH"
+   },
+   "adjectifs": {}
+  },
+  "o95": {
+   "nom": "arbre",
+   "g": "m",
+   "mots": {
+    "arbre": "TREE"
+   },
+   "adjectifs": {
+    "grand": "LARGE",
+    "gros": "LARGE"
+   }
+  },
+  "o96": {
+   "nom": "rose des vents",
+   "g": "f",
+   "mots": {
+    "rose": "ROSE",
+    "roses": "ROSE",
+    "rose des vents": "ROSE"
+   },
+   "adjectifs": {
+    "vents": "COMPASS",
+    "des vents": "COMPASS"
+   }
+  },
+  "o97": {
+   "nom": "vieil homme",
+   "g": "m",
+   "mots": {
+    "homme": "MAN",
+    "hommes": "MAN",
+    "vieillard": "MAN",
+    "bonhomme": "MAN",
+    "vieil homme": "MAN",
+    "vieux monsieur": "MAN"
+   },
+   "adjectifs": {
+    "vieil": "OLD",
+    "vieux": "OLD",
+    "âgé": "OLD"
+   }
+  },
+  "o98": {
+   "nom": "Salle du bouton",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o99": {
+   "nom": "morceau de pain de route",
+   "g": "m",
+   "mots": {
+    "pain": "BREAD",
+    "pains": "BREAD",
+    "pain de route": "BREAD",
+    "morceau de pain": "BREAD",
+    "morceau de pain de route": "BREAD",
+    "lembas": "WAYBREAD",
+    "morceau": "PIECE",
+    "bout": "PIECE"
+   },
+   "adjectifs": {
+    "route": "WAY",
+    "de route": "WAY",
+    "frais": "FRESH"
+   }
+  },
+  "o100": {
+   "nom": "Salle étroite",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o101": {
+   "nom": "zorkmid",
+   "g": "m",
+   "mots": {
+    "zorkmid": "ZORKMID",
+    "zorkmids": "ZORKMID"
+   },
+   "adjectifs": {}
+  },
+  "o102": {
+   "nom": "Rive du lac",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o103": {
+   "nom": "Salle des joyaux",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o104": {
+   "nom": "mur ouest",
+   "g": "m",
+   "mots": {
+    "mur": "WALL",
+    "murs": "WALL",
+    "paroi": "WALL"
+   },
+   "adjectifs": {
+    "ouest": "WEST",
+    "occidental": "WESTERN",
+    "occidentale": "WESTERN"
+   }
+  },
+  "o105": {
+   "nom": "Entrée du donjon",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o106": {
+   "nom": "miroir",
+   "g": "m",
+   "mots": {
+    "miroir": "MIRROR",
+    "miroirs": "MIRROR",
+    "glace": "MIRROR",
+    "structure": "STRUCTURE"
+   },
+   "adjectifs": {}
+  },
+  "o107": {
+   "nom": "rigole de pierre",
+   "g": "f",
+   "mots": {
+    "rigole": "CHANNEL",
+    "rigoles": "CHANNEL",
+    "rigole de pierre": "CHANNEL",
+    "rainure": "CHANNEL",
+    "canal": "CHANNEL",
+    "trou": "HOLE"
+   },
+   "adjectifs": {
+    "pierre": "STONE",
+    "de pierre": "STONE",
+    "en pierre": "STONE"
+   }
+  },
+  "o108": {
+   "nom": "marin",
+   "g": "m",
+   "mots": {
+    "marin": "SAILOR",
+    "matelot": "SAILOR",
+    "détrousseur": "FOOTPAD",
+    "detrousseur": "FOOTPAD",
+    "aviateur": "AVIATOR"
+   },
+   "adjectifs": {}
+  },
+  "o109": {
+   "nom": "Falaise",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o110": {
+   "nom": "silhouette encapuchonnée",
+   "g": "f",
+   "mots": {
+    "silhouette": "FIGURE",
+    "silhouettes": "FIGURE",
+    "personnage": "FIGURE",
+    "forme": "FIGURE",
+    "ombre": "SHADOW",
+    "ombres": "SHADOW",
+    "homme": "MAN",
+    "femme": "WOMAN"
+   },
+   "adjectifs": {
+    "encapuchonnée": "HOODED",
+    "encapuchonné": "HOODED",
+    "à capuchon": "HOODED",
+    "à capuche": "HOODED",
+    "drapée": "CLOAKED",
+    "drapé": "CLOAKED",
+    "en cape": "CLOAKED"
+   }
+  },
+  "o111": {
+   "nom": "anneau d'or",
+   "g": "m",
+   "mots": {
+    "anneau": "RING",
+    "anneaux": "RING",
+    "bague": "RING",
+    "bagues": "RING",
+    "joyaux": "JEWELS",
+    "bijoux": "JEWELS",
+    "joyaux de la couronne": "JEWELS",
+    "anneau d'or": "RING",
+    "anneau en or": "RING",
+    "bague d'or": "RING",
+    "bague en or": "RING"
+   },
+   "adjectifs": {
+    "or": "GOLDEN",
+    "d'or": "GOLDEN",
+    "en or": "GOLDEN",
+    "doré": "GOLDEN",
+    "couronne": "CROWN",
+    "de la couronne": "CROWN"
+   }
+  },
+  "o112": {
+   "nom": "Étendue désolée",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o113": {
+   "nom": "Grand couloir",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o114": {
+   "nom": "sable",
+   "g": "m",
+   "mots": {
+    "sable": "SAND"
+   },
+   "adjectifs": {}
+  },
+  "o115": {
+   "nom": "mur sud",
+   "g": "m",
+   "mots": {
+    "mur": "WALL",
+    "murs": "WALL",
+    "paroi": "WALL"
+   },
+   "adjectifs": {
+    "sud": "SOUTH"
+   }
+  },
+  "o116": {
+   "nom": "Salle royale",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o117": {
+   "nom": "porte d'acier",
+   "g": "f",
+   "mots": {
+    "porte": "DOOR",
+    "portes": "DOOR"
+   },
+   "adjectifs": {
+    "acier": "STEEL",
+    "d'acier": "STEEL",
+    "en acier": "STEEL",
+    "métal": "METAL",
+    "de métal": "METAL",
+    "en métal": "METAL",
+    "métallique": "METAL"
+   }
+  },
+  "o118": {
+   "nom": "poussière et débris",
+   "g": "f",
+   "mots": {
+    "poussière et débris": "DUST",
+    "poussières et débris": "DUST",
+    "poussière": "DUST",
+    "poussières": "DUST",
+    "débris": "DEBRIS"
+   },
+   "adjectifs": {}
+  },
+  "o119": {
+   "nom": "Salle étroite",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o120": {
+   "nom": "bouton",
+   "g": "m",
+   "mots": {
+    "bouton": "BUTTON",
+    "boutons": "BUTTON"
+   },
+   "adjectifs": {}
+  },
+  "o121": {
+   "nom": "siège",
+   "g": "m",
+   "mots": {
+    "siège": "SEAT",
+    "sièges": "SEAT",
+    "fauteuil": "SEAT",
+    "banquette": "SEAT",
+    "chaise": "CHAIR",
+    "chaises": "CHAIR"
+   },
+   "adjectifs": {}
+  },
+  "o122": {
+   "nom": "machine dorée",
+   "g": "f",
+   "mots": {
+    "machine": "MACHINE",
+    "machines": "MACHINE",
+    "machine temporelle": "MACHINE",
+    "machine à remonter le temps": "MACHINE",
+    "temporisateur": "TEMPORIZER",
+    "temporisateurs": "TEMPORIZER"
+   },
+   "adjectifs": {
+    "dorée": "GOLDEN",
+    "doré": "GOLDEN",
+    "dorées": "GOLDEN",
+    "dorés": "GOLDEN",
+    "or": "GOLDEN",
+    "en or": "GOLDEN",
+    "d'or": "GOLDEN",
+    "temporelle": "TIME",
+    "temporel": "TIME",
+    "temps": "TIME",
+    "du temps": "TIME",
+    "à remonter le temps": "TIME"
+   }
+  },
+  "o123": {
+   "nom": "Pays de l'Ombre",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o124": {
+   "nom": "Panorama",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o125": {
+   "nom": "mur nord",
+   "g": "m",
+   "mots": {
+    "mur": "WALL",
+    "murs": "WALL",
+    "paroi": "WALL"
+   },
+   "adjectifs": {
+    "nord": "NORTH",
+    "septentrional": "NORTHE",
+    "septentrionale": "NORTHE"
+   }
+  },
+  "o126": {
+   "nom": "lanterne",
+   "g": "f",
+   "mots": {
+    "lanterne": "LANTERN",
+    "lanternes": "LANTERN",
+    "lanterne en laiton": "LANTERN",
+    "lampe": "LAMP",
+    "lampes": "LAMP"
+   },
+   "adjectifs": {
+    "laiton": "BRASS",
+    "en laiton": "BRASS",
+    "cuivre": "BRASS",
+    "en cuivre": "BRASS"
+   }
+  },
+  "o127": {
+   "nom": "flèche de la rose des vents",
+   "g": "f",
+   "mots": {
+    "flèche": "ARROW",
+    "flèches": "ARROW"
+   },
+   "adjectifs": {
+    "de la rose des vents": "COMPASS",
+    "rose des vents": "COMPASS"
+   }
+  },
+  "o128": {
+   "nom": "bénédictions",
+   "g": "f",
+   "n": "p",
+   "mots": {
+    "bénédictions": "BLESSINGS",
+    "benedictions": "BLESSINGS",
+    "bénédiction": "BLESSINGS",
+    "benediction": "BLESSINGS",
+    "grâces": "GRACES",
+    "graces": "GRACES",
+    "grâce": "GRACES",
+    "grace": "GRACES"
+   },
+   "adjectifs": {}
+  },
+  "o129": {
+   "nom": "objet brillant",
+   "g": "m",
+   "mots": {
+    "objet": "OBJECT",
+    "objets": "OBJECT",
+    "chose": "OBJECT",
+    "amulette": "AMULET",
+    "amulettes": "AMULET"
+   },
+   "adjectifs": {
+    "brillant": "SHINY",
+    "brillante": "SHINY",
+    "luisant": "SHINY",
+    "luisante": "SHINY",
+    "scintillant": "SHINY",
+    "scintillante": "SHINY",
+    "étincelant": "SHINY",
+    "étincelante": "SHINY"
+   }
+  },
+  "o130": {
+   "nom": "Salle annexe",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o131": {
+   "nom": "plaque de bronze",
+   "g": "f",
+   "mots": {
+    "plaque": "PLAQUE",
+    "plaques": "PLAQUE",
+    "texte": "TEXT",
+    "inscription": "TEXT",
+    "inscriptions": "TEXT"
+   },
+   "adjectifs": {
+    "bronze": "BRONZE",
+    "de bronze": "BRONZE",
+    "en bronze": "BRONZE"
+   }
+  },
+  "o132": {
+   "nom": "machine noire",
+   "g": "f",
+   "mots": {
+    "machine": "MACHINE",
+    "machines": "MACHINE",
+    "tuyau": "PIPES",
+    "tuyaux": "PIPES",
+    "tuyauterie": "PIPES",
+    "fil": "WIRES",
+    "fils": "WIRES",
+    "câble": "WIRES",
+    "câbles": "WIRES",
+    "moteur": "MOTORS",
+    "moteurs": "MOTORS"
+   },
+   "adjectifs": {
+    "noire": "BLACK",
+    "noir": "BLACK",
+    "noires": "BLACK",
+    "noirs": "BLACK"
+   }
+  },
+  "o133": {
+   "nom": "mur est",
+   "g": "m",
+   "mots": {
+    "mur": "WALL",
+    "murs": "WALL",
+    "paroi": "WALL"
+   },
+   "adjectifs": {
+    "est": "EAST",
+    "oriental": "EASTERN",
+    "orientale": "EASTERN"
+   }
+  },
+  "o134": {
+   "nom": "Pays de l'Ombre",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o135": {
+   "nom": "plaque d'égout",
+   "g": "f",
+   "mots": {
+    "plaque d'égout": "COVER",
+    "plaques d'égout": "COVER",
+    "bouche d'égout": "COVER",
+    "plaque": "COVER",
+    "couvercle": "COVER",
+    "tampon": "COVER"
+   },
+   "adjectifs": {
+    "égout": "MANHOLE",
+    "d'égout": "MANHOLE",
+    "grande": "LARGE",
+    "grand": "LARGE",
+    "grosse": "LARGE",
+    "gros": "LARGE"
+   }
+  },
+  "o136": {
+   "nom": "Grande porte",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o137": {
+   "nom": "corde",
+   "g": "f",
+   "mots": {
+    "corde": "ROPE",
+    "cordes": "ROPE",
+    "cordage": "ROPE"
+   },
+   "adjectifs": {
+    "pendante": "DANGLING",
+    "pendant": "DANGLING",
+    "qui pend": "DANGLING",
+    "suspendue": "DANGLING",
+    "suspendu": "DANGLING"
+   }
+  },
+  "o138": {
+   "nom": "Cul-de-sac",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o139": {
+   "nom": "homme",
+   "g": "m",
+   "mots": {
+    "homme": "MAN",
+    "hommes": "MAN",
+    "bonhomme": "MAN",
+    "individu": "MAN",
+    "monsieur": "MAN",
+    "ami": "FRIEND",
+    "amis": "FRIEND",
+    "camarade": "FRIEND",
+    "compagnon": "FRIEND"
+   },
+   "adjectifs": {}
+  },
+  "o140": {
+   "nom": "Rive ouest",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o141": {
+   "nom": "bouffée d'air",
+   "g": "f",
+   "mots": {
+    "poumons": "LUNGS",
+    "air": "AIR",
+    "bouche": "MOUTH",
+    "souffle": "BREATH",
+    "haleine": "BREATH"
+   },
+   "adjectifs": {}
+  },
+  "o142": {
+   "nom": "mur ouest",
+   "g": "m",
+   "mots": {
+    "mur": "WALL",
+    "murs": "WALL",
+    "paroi": "WALL"
+   },
+   "adjectifs": {
+    "ouest": "WEST",
+    "occidental": "WESTERN",
+    "occidentale": "WESTERN"
+   }
+  },
+  "o143": {
+   "nom": "Entrée du Casse-tête royal",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o144": {
+   "nom": "plantes et algues",
+   "g": "f",
+   "n": "p",
+   "mots": {
+    "plantes et algues": "PLANTS",
+    "plante": "PLANT",
+    "plantes": "PLANTS",
+    "végétation": "PLANTS",
+    "algue": "ALGAE",
+    "algues": "ALGAE"
+   },
+   "adjectifs": {}
+  },
+  "o145": {
+   "nom": "lanterne cassée",
+   "g": "f",
+   "mots": {
+    "lanterne": "LANTERN",
+    "lanternes": "LANTERN",
+    "lampe": "LAMP",
+    "lampes": "LAMP"
+   },
+   "adjectifs": {
+    "cassée": "BROKEN",
+    "cassee": "BROKEN",
+    "cassé": "BROKEN",
+    "casse": "BROKEN",
+    "brisée": "BROKEN",
+    "brisee": "BROKEN",
+    "brisé": "BROKEN",
+    "brise": "BROKEN"
+   }
+  },
+  "o146": {
+   "nom": "grand rocher",
+   "g": "m",
+   "mots": {
+    "rocher": "ROCK",
+    "roche": "ROCK",
+    "grand rocher": "ROCK",
+    "gros rocher": "ROCK",
+    "grande pierre": "STONE",
+    "grosse pierre": "STONE"
+   },
+   "adjectifs": {
+    "grand": "GREAT",
+    "grande": "GREAT",
+    "gros": "GREAT",
+    "grosse": "GREAT",
+    "énorme": "GREAT",
+    "immense": "GREAT"
+   }
+  },
+  "o147": {
+   "nom": "panneau",
+   "g": "m",
+   "mots": {
+    "panneau": "PANEL",
+    "panneaux": "PANEL",
+    "guichet": "PANEL",
+    "judas": "PANEL"
+   },
+   "adjectifs": {}
+  },
+  "o148": {
+   "nom": "capuchon",
+   "g": "m",
+   "mots": {
+    "capuchon": "HOOD",
+    "capuchons": "HOOD",
+    "capuche": "HOOD",
+    "capuches": "HOOD"
+   },
+   "adjectifs": {}
+  },
+  "o149": {
+   "nom": "petite fente",
+   "g": "f",
+   "mots": {
+    "fente": "SLOT",
+    "fentes": "SLOT",
+    "petite fente": "SLOT",
+    "ouverture": "SLOT",
+    "interstice": "SLIT"
+   },
+   "adjectifs": {
+    "petite": "SMALL",
+    "petit": "SMALL",
+    "petites": "SMALL"
+   }
+  },
+  "o150": {
+   "nom": "grue aux aguets",
+   "g": "m",
+   "mots": {
+    "grue": "GRUE",
+    "grues": "GRUE"
+   },
+   "adjectifs": {
+    "tapi": "LURKING",
+    "embusqué": "LURKING",
+    "embusque": "LURKING",
+    "sinistre": "SINISTER",
+    "affamé": "HUNGRY",
+    "affame": "HUNGRY",
+    "silencieux": "SILENT"
+   }
+  },
+  "o151": {
+   "nom": "Salle étroite",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o152": {
+   "nom": "Gardiens de Zork",
+   "g": "m",
+   "n": "p",
+   "mots": {
+    "gardiens de zork": "GUARDIAN",
+    "gardien de zork": "GUARDIAN",
+    "gardiens": "GUARDIAN",
+    "gardien": "GUARDIAN",
+    "gardes": "GUARDS",
+    "garde": "GUARD",
+    "statues": "STATUE",
+    "statue": "STATUE"
+   },
+   "adjectifs": {}
+  },
+  "o153": {
+   "nom": "porte de la cellule",
+   "g": "f",
+   "mots": {
+    "porte": "DOOR",
+    "portes": "DOOR",
+    "porte de la cellule": "DOOR",
+    "porte de cellule": "DOOR"
+   },
+   "adjectifs": {
+    "cellule": "CELL",
+    "de la cellule": "CELL",
+    "de cellule": "CELL",
+    "bois": "WOODEN",
+    "en bois": "WOODEN",
+    "de bois": "WOODEN",
+    "verrouillée": "LOCKED",
+    "verrouillé": "LOCKED",
+    "fermée à clé": "LOCKED",
+    "fermé à clé": "LOCKED"
+   }
+  },
+  "o154": {
+   "nom": "escalier",
+   "g": "m",
+   "mots": {
+    "escalier": "STAIRS",
+    "escaliers": "STAIRS",
+    "marches": "STEPS",
+    "marche": "STEPS",
+    "degrés": "STEPS",
+    "degres": "STEPS"
+   },
+   "adjectifs": {
+    "pierre": "STONE",
+    "sombre": "DARK",
+    "obscur": "DARK",
+    "marbre": "MARBLE",
+    "menaçant": "FORBIDDING",
+    "menacant": "FORBIDDING",
+    "inquiétant": "FORBIDDING",
+    "inquietant": "FORBIDDING",
+    "raide": "STEEP",
+    "raides": "STEEP",
+    "escarpé": "STEEP",
+    "escarpe": "STEEP"
+   }
+  },
+  "o155": {
+   "nom": "Endroit sombre",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o156": {
+   "nom": "aqueduc",
+   "g": "m",
+   "mots": {
+    "aqueduc": "AQUEDUCT",
+    "aqueducs": "AQUEDUCT",
+    "conduit": "DUCT",
+    "conduite": "DUCT",
+    "gouffre": "CHASM",
+    "précipice": "CHASM"
+   },
+   "adjectifs": {
+    "pierre": "STONE",
+    "de pierre": "STONE",
+    "en pierre": "STONE"
+   }
+  },
+  "o157": {
+   "nom": "barre en bois",
+   "g": "f",
+   "mots": {
+    "barre": "BAR",
+    "barres": "BAR"
+   },
+   "adjectifs": {
+    "bois": "WOODEN",
+    "en bois": "WOODEN",
+    "de bois": "WOODEN"
+   }
+  },
+  "o158": {
+   "nom": "poutre brisée",
+   "g": "f",
+   "mots": {
+    "poutre": "TIMBERS",
+    "poutres": "TIMBERS",
+    "madrier": "TIMBERS",
+    "madriers": "TIMBERS",
+    "tas": "PILE"
+   },
+   "adjectifs": {
+    "bois": "WOODEN",
+    "brisée": "BROKEN",
+    "brisee": "BROKEN",
+    "brisé": "BROKEN",
+    "brise": "BROKEN",
+    "cassée": "BROKEN",
+    "cassee": "BROKEN",
+    "cassé": "BROKEN",
+    "casse": "BROKEN"
+   }
+  },
+  "o159": {
+   "nom": "Couloir étroit",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o160": {
+   "nom": "Dans le miroir",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o161": {
+   "nom": "Salle étroite",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o162": {
+   "nom": "Couloir ouest",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o163": {
+   "nom": "Toboggan aquatique",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o164": {
+   "nom": "quantité d'eau",
+   "g": "f",
+   "mots": {
+    "eau": "WATER",
+    "eaux": "WATER",
+    "quantité": "QUANTITY",
+    "quantite": "QUANTITY",
+    "liquide": "LIQUID",
+    "h2o": "H2O"
+   },
+   "adjectifs": {}
+  },
+  "o165": {
+   "nom": "sol",
+   "g": "m",
+   "mots": {
+    "sol": "GROUND",
+    "sable": "SAND",
+    "terre": "DIRT",
+    "plancher": "FLOOR"
+   },
+   "adjectifs": {}
+  },
+  "o166": {
+   "nom": "chose pareille",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o167": {
+   "nom": "nombre",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o168": {
+   "nom": "torche consumée",
+   "g": "f",
+   "mots": {
+    "torche": "TORCH",
+    "torches": "TORCH",
+    "flambeau": "TORCH"
+   },
+   "adjectifs": {
+    "consumée": "BURNED",
+    "consumé": "BURNED",
+    "brûlée": "BURNED",
+    "brûlé": "BURNED",
+    "calcinée": "BURNED",
+    "éteinte": "DEAD",
+    "éteint": "DEAD",
+    "morte": "DEAD",
+    "mort": "DEAD"
+   }
+  },
+  "o169": {
+   "nom": "Grand couloir",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o170": {
+   "nom": "Pays de l'Ombre",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o171": {
+   "nom": "note d'avertissement",
+   "g": "f",
+   "mots": {
+    "note": "NOTE",
+    "notes": "NOTE",
+    "note d'avertissement": "NOTE",
+    "billet": "NOTE",
+    "avertissement": "WARNING",
+    "avertissements": "WARNING",
+    "texte": "TEXT"
+   },
+   "adjectifs": {
+    "avertissement": "WARNING",
+    "d'avertissement": "WARNING",
+    "petite": "SMALL",
+    "petit": "SMALL"
+   }
+  },
+  "o172": {
+   "nom": "Salle des gravures",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o173": {
+   "nom": "Entrée du musée",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o174": {
+   "nom": "couteau incrusté de joyaux",
+   "g": "m",
+   "mots": {
+    "couteau": "KNIFE",
+    "couteaux": "KNIFE",
+    "dague": "KNIFE",
+    "poignard": "KNIFE",
+    "joyaux": "JEWELS",
+    "joyau": "JEWELS",
+    "bijoux": "JEWELS",
+    "bijou": "JEWELS"
+   },
+   "adjectifs": {
+    "incrusté de joyaux": "JEWELLED",
+    "incrusté de pierreries": "JEWELLED",
+    "orné de joyaux": "JEWELLED",
+    "orné de pierreries": "JEWELLED",
+    "serti de joyaux": "JEWELLED",
+    "incrusté": "JEWELLED",
+    "orné": "JEWELLED",
+    "serti": "JEWELLED",
+    "couronne": "CROWN",
+    "de la couronne": "CROWN"
+   }
+  },
+  "o175": {
+   "nom": "barre en T",
+   "g": "f",
+   "mots": {
+    "barre en t": "T-BAR",
+    "barres en t": "T-BAR",
+    "barre": "BAR",
+    "barres": "BAR"
+   },
+   "adjectifs": {}
+  },
+  "o176": {
+   "nom": "Musée de la technologie",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o177": {
+   "nom": "Endroit sombre",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o178": {
+   "nom": "Salle étroite",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o179": {
+   "nom": "Salle des joyaux",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o180": {
+   "nom": "sceptre",
+   "g": "m",
+   "mots": {
+    "sceptre": "SCEPTRE",
+    "sceptres": "SCEPTRE"
+   },
+   "adjectifs": {}
+  },
+  "o181": {
+   "nom": "Océan Flathead",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o182": {
+   "nom": "Haute arche",
+   "g": "f",
+   "elision": false,
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o183": {
+   "nom": "porte de la cellule",
+   "g": "f",
+   "mots": {
+    "porte": "DOOR",
+    "portes": "DOOR",
+    "porte de la cellule": "DOOR",
+    "porte de cellule": "DOOR"
+   },
+   "adjectifs": {
+    "cellule": "CELL",
+    "de la cellule": "CELL",
+    "de cellule": "CELL",
+    "bois": "WOODEN",
+    "en bois": "WOODEN",
+    "de bois": "WOODEN",
+    "verrouillée": "LOCKED",
+    "verrouillé": "LOCKED",
+    "fermée à clé": "LOCKED",
+    "fermé à clé": "LOCKED"
+   }
+  },
+  "o184": {
+   "nom": "Sur le lac",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o185": {
+   "nom": "lanterne",
+   "g": "f",
+   "mots": {
+    "lanterne": "LANTERN",
+    "lanternes": "LANTERN",
+    "lanterne en laiton": "LANTERN",
+    "lampe": "LAMP",
+    "lampes": "LAMP"
+   },
+   "adjectifs": {
+    "laiton": "BRASS",
+    "en laiton": "BRASS",
+    "cuivre": "BRASS",
+    "en cuivre": "BRASS"
+   }
+  },
+  "o186": {
+   "nom": "Pays de l'Ombre",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o187": {
+   "nom": "mur nord",
+   "g": "m",
+   "mots": {
+    "mur": "WALL",
+    "murs": "WALL",
+    "paroi": "WALL"
+   },
+   "adjectifs": {
+    "nord": "NORTH",
+    "septentrional": "NORTH",
+    "septentrionale": "NORTH"
+   }
+  },
+  "o188": {
+   "nom": "Salle annexe",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o189": {
+   "nom": "homme",
+   "g": "m",
+   "mots": {
+    "homme": "MAN",
+    "hommes": "MAN",
+    "bonhomme": "MAN",
+    "individu": "MAN",
+    "monsieur": "MAN",
+    "ami": "FRIEND",
+    "amis": "FRIEND",
+    "camarade": "FRIEND",
+    "compagnon": "FRIEND"
+   },
+   "adjectifs": {}
+  },
+  "o190": {
+   "nom": "Couloir sud",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o191": {
+   "nom": "bouton rouge",
+   "g": "m",
+   "mots": {
+    "bouton": "BUTTON",
+    "boutons": "BUTTON"
+   },
+   "adjectifs": {
+    "rouge": "RED"
+   }
+  },
+  "o192": {
+   "nom": "Salle 8",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o193": {
+   "nom": "mur de pierre",
+   "g": "m",
+   "mots": {
+    "mur": "WALL",
+    "murs": "WALL",
+    "paroi": "WALL",
+    "muraille": "WALL"
+   },
+   "adjectifs": {
+    "pierre": "STONE",
+    "de pierre": "STONE",
+    "en pierre": "STONE",
+    "massif": "MASSIVE",
+    "massive": "MASSIVE",
+    "imposant": "MASSIVE",
+    "imposante": "MASSIVE",
+    "épais": "MASSIVE",
+    "épaisse": "MASSIVE"
+   }
+  },
+  "o194": {
+   "nom": "Salle du casse-tête",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o195": {
+   "nom": "Répulsif magique Frobozz contre les grues",
+   "g": "m",
+   "mots": {
+    "répulsif": "REPELLENT",
+    "répulsifs": "REPELLENT",
+    "répulsif frobozz": "REPELLENT",
+    "répulsif magique frobozz": "REPELLENT",
+    "répulsif contre les grues": "REPELLENT",
+    "répulsif magique frobozz contre les grues": "REPELLENT",
+    "répulsif magique contre les grues": "REPELLENT",
+    "répulsif anti-grue": "REPELLENT",
+    "bombe": "CAN",
+    "bombe aérosol": "CAN",
+    "aérosol": "CAN",
+    "vaporisateur": "CAN",
+    "atomiseur": "CAN"
+   },
+   "adjectifs": {
+    "anti-grue": "GRUE",
+    "anti-grues": "GRUE",
+    "magique": "MAGIC"
+   }
+  },
+  "o196": {
+   "nom": "longue perche",
+   "g": "f",
+   "mots": {
+    "perche": "POLE",
+    "perches": "POLE",
+    "longue perche": "POLE"
+   },
+   "adjectifs": {
+    "longue": "LONG",
+    "long": "LONG",
+    "centrale": "CENTER",
+    "central": "CENTER",
+    "du centre": "CENTER",
+    "au centre": "CENTER"
+   }
+  },
+  "o197": {
+   "nom": "panneau rouge",
+   "g": "m",
+   "mots": {
+    "panneau": "PANEL",
+    "panneaux": "PANEL",
+    "mur": "WALL",
+    "murs": "WALL",
+    "paroi": "WALL"
+   },
+   "adjectifs": {
+    "rouge": "RED",
+    "rouges": "RED"
+   }
+  },
+  "o198": {
+   "nom": "mousse et lichen",
+   "g": "f",
+   "mots": {
+    "mousse et lichen": "MOSS",
+    "mousses et lichens": "MOSS",
+    "mousse": "MOSS",
+    "mousses": "MOSS",
+    "lichen": "LICHEN",
+    "lichens": "LICHEN"
+   },
+   "adjectifs": {}
+  },
+  "o199": {
+   "nom": "porte de fer",
+   "g": "f",
+   "mots": {
+    "porte": "DOOR",
+    "portes": "DOOR"
+   },
+   "adjectifs": {
+    "fer": "IRON",
+    "de fer": "IRON",
+    "en fer": "IRON"
+   }
+  },
+  "o200": {
+   "nom": "tunnel",
+   "g": "m",
+   "mots": {
+    "tunnel": "PASSAGE",
+    "tunnels": "PASSAGE",
+    "passage": "PASSAGE",
+    "passages": "PASSAGE",
+    "boyau": "CRAWLWAY",
+    "boyaux": "CRAWLWAY",
+    "goulet": "CRAWLWAY"
+   },
+   "adjectifs": {
+    "sombre": "DARK",
+    "obscur": "DARK",
+    "obscure": "DARK",
+    "enfumé": "SMOKY",
+    "enfumée": "SMOKY"
+   }
+  },
+  "o201": {
+   "nom": "liquide lourd mais invisible",
+   "g": "m",
+   "mots": {
+    "liquide": "LIQUID",
+    "liquides": "LIQUID",
+    "potion": "POTION",
+    "potions": "POTION",
+    "breuvage": "POTION",
+    "contenu": "CONTENTS",
+    "fluide": "FLUID"
+   },
+   "adjectifs": {
+    "lourd": "HEAVY",
+    "lourde": "HEAVY",
+    "sucré": "SWEET",
+    "sucrée": "SWEET",
+    "doux": "SWEET",
+    "douce": "SWEET",
+    "invisible": "INVISIBLE",
+    "invisibilité": "INVISIBLE",
+    "d'invisibilité": "INVISIBLE",
+    "odorant": "SMELLING",
+    "odorante": "SMELLING",
+    "parfumé": "SMELLING",
+    "parfumée": "SMELLING"
+   }
+  },
+  "o202": {
+   "nom": "épée",
+   "g": "f",
+   "mots": {
+    "épée": "SWORD",
+    "epee": "SWORD",
+    "épées": "SWORD",
+    "epees": "SWORD",
+    "orcrist": "ORCRIST",
+    "glamdring": "GLAMDRING",
+    "lame": "BLADE"
+   },
+   "adjectifs": {
+    "elfique": "ELVISH",
+    "vieille": "OLD",
+    "vieux": "OLD",
+    "antique": "ANTIQUE"
+   }
+  },
+  "o203": {
+   "nom": "Aqueduc",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o204": {
+   "nom": "Cellule",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o205": {
+   "nom": "porte de pierre",
+   "g": "f",
+   "mots": {
+    "porte": "DOOR",
+    "portes": "DOOR"
+   },
+   "adjectifs": {
+    "pierre": "STONE",
+    "de pierre": "STONE",
+    "en pierre": "STONE",
+    "est": "EAST"
+   }
+  },
+  "o206": {
+   "nom": "parapet",
+   "g": "m",
+   "mots": {
+    "parapet": "PARAPET",
+    "parapets": "PARAPET",
+    "garde-fou": "PARAPET"
+   },
+   "adjectifs": {}
+  },
+  "o207": {
+   "nom": "porte en bois",
+   "g": "f",
+   "mots": {
+    "porte": "DOOR",
+    "portes": "DOOR"
+   },
+   "adjectifs": {
+    "bois": "WOODEN"
+   }
+  },
+  "o208": {
+   "nom": "océan Flathead",
+   "g": "m",
+   "mots": {
+    "océan": "OCEAN",
+    "océans": "OCEAN",
+    "océan flathead": "OCEAN",
+    "mer": "OCEAN",
+    "mers": "OCEAN",
+    "eau": "WATER",
+    "eaux": "WATER",
+    "flots": "WATER"
+   },
+   "adjectifs": {
+    "flathead": "FLATHEAD"
+   }
+  },
+  "o209": {
+   "nom": "porte de bronze",
+   "g": "f",
+   "mots": {
+    "porte": "DOOR",
+    "portes": "DOOR"
+   },
+   "adjectifs": {
+    "bronze": "BRONZE",
+    "de bronze": "BRONZE",
+    "en bronze": "BRONZE"
+   }
+  },
+  "o210": {
+   "nom": "Autel sacrificiel",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o211": {
+   "nom": "Escalier sans fin",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o212": {
+   "nom": "panneau jaune",
+   "g": "m",
+   "mots": {
+    "panneau": "PANEL",
+    "panneaux": "PANEL",
+    "mur": "WALL",
+    "murs": "WALL",
+    "paroi": "WALL"
+   },
+   "adjectifs": {
+    "jaune": "YELLOW",
+    "jaunes": "YELLOW"
+   }
+  },
+  "o213": {
+   "nom": "bâton de bois",
+   "g": "m",
+   "mots": {
+    "bâton": "STAFF",
+    "bâtons": "STAFF",
+    "canne": "STAFF"
+   },
+   "adjectifs": {
+    "bois": "WOODEN",
+    "de bois": "WOODEN",
+    "en bois": "WOODEN"
+   }
+  },
+  "o214": {
+   "nom": "drakkar",
+   "g": "m",
+   "mots": {
+    "drakkar": "SHIP",
+    "drakkars": "SHIP",
+    "navire": "SHIP",
+    "navires": "SHIP",
+    "navire viking": "SHIP",
+    "vaisseau": "SHIP",
+    "bateau": "BOAT",
+    "bateaux": "BOAT",
+    "bateau viking": "BOAT",
+    "embarcation": "CRAFT"
+   },
+   "adjectifs": {
+    "viking": "VIKING",
+    "vikings": "VIKING"
+   }
+  },
+  "o215": {
+   "nom": "trou",
+   "g": "m",
+   "mots": {
+    "trou": "HOLE",
+    "trous": "HOLE",
+    "orifice": "HOLE"
+   },
+   "adjectifs": {
+    "rond": "ROUND",
+    "ronde": "ROUND",
+    "circulaire": "ROUND"
+   }
+  },
+  "o216": {
+   "nom": "Rive sud",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o217": {
+   "nom": "Carrefour",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o218": {
+   "nom": "Corniche de la falaise",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o219": {
+   "nom": "plaque",
+   "g": "f",
+   "mots": {
+    "plaque": "PLAQUE",
+    "plaques": "PLAQUE",
+    "texte": "TEXT",
+    "inscription": "TEXT",
+    "inscriptions": "TEXT"
+   },
+   "adjectifs": {}
+  },
+  "o220": {
+   "nom": "falaise",
+   "g": "f",
+   "mots": {
+    "falaise": "CLIFF",
+    "falaises": "CLIFF",
+    "escarpement": "CLIFF"
+   },
+   "adjectifs": {}
+  },
+  "o221": {
+   "nom": "Salle étroite",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o222": {
+   "nom": "porte secrète",
+   "g": "f",
+   "mots": {
+    "porte": "DOOR",
+    "portes": "DOOR",
+    "porte secrète": "DOOR",
+    "porte dérobée": "DOOR"
+   },
+   "adjectifs": {
+    "secrète": "SECRET",
+    "secret": "SECRET",
+    "dérobée": "SECRET"
+   }
+  },
+  "o223": {
+   "nom": "lac",
+   "g": "m",
+   "mots": {
+    "lac": "LAKE",
+    "lacs": "LAKE",
+    "eau": "WATER",
+    "eaux": "WATER",
+    "surface": "SURFACE"
+   },
+   "adjectifs": {}
+  },
+  "o224": {
+   "nom": "Grand couloir",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o225": {
+   "nom": "Cellule",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o226": {
+   "nom": "pseudo",
+   "g": "m",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o227": {
+   "nom": "Entrée du musée",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  },
+  "o228": {
+   "nom": "Salle des courants d'air",
+   "g": "f",
+   "mots": {},
+   "adjectifs": {}
+  }
+ }
+}

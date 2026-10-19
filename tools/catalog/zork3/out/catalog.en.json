@@ -8293,7 +8293,7 @@
   },
   "o8": {
    "en": "Narrow Room",
-   "name": "MRDE",
+   "name": "MRDW",
    "synonyms": [],
    "adjectives": [],
    "flags": [
@@ -9532,7 +9532,7 @@
   },
   "o100": {
    "en": "Narrow Room",
-   "name": "MRDW",
+   "name": "MRDE",
    "synonyms": [],
    "adjectives": [],
    "flags": [

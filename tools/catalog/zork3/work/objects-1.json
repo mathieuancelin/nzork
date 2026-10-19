@@ -1,0 +1,1379 @@
+[
+ {
+  "key": "o1",
+  "en": "dungeon master",
+  "name": "DUNGEON-MASTER",
+  "synonyms": [
+   "MASTER",
+   "DUNGEON",
+   "MAN"
+  ],
+  "adjectives": [
+   "DUNGEON"
+  ],
+  "flags": [
+   "ACTORBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o2",
+  "en": "short pole",
+  "name": "SHORT-POLE",
+  "synonyms": [
+   "POLE",
+   "POST",
+   "HANDGRIP",
+   "GRIP"
+  ],
+  "adjectives": [
+   "SHORT",
+   "SMALL",
+   "HAND"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o3",
+  "en": "indicator",
+  "name": "VIEW-INDICATOR",
+  "synonyms": [
+   "INDICATOR",
+   "DIAL"
+  ],
+  "adjectives": [],
+  "flags": [
+   "NDESCBIT",
+   "READBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o4",
+  "en": "flaming pit",
+  "name": "FLAMING-PIT",
+  "synonyms": [
+   "PIT",
+   "ABYSS"
+  ],
+  "adjectives": [
+   "FIERY",
+   "FLAMING"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o5",
+  "en": "Technology Museum",
+  "name": "MID-TECH-MUSEUM",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o6",
+  "en": "Beam Room",
+  "name": "MREYE",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o8",
+  "en": "Narrow Room",
+  "name": "MRDW",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o10",
+  "en": "steel cage",
+  "name": "CAGE",
+  "synonyms": [
+   "CAGE"
+  ],
+  "adjectives": [
+   "STEEL"
+  ],
+  "flags": [
+   "NDESCBIT",
+   "CONTBIT",
+   "OPENBIT",
+   "SURFACEBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o11",
+  "en": "dungeon master",
+  "name": "MASTER",
+  "synonyms": [
+   "MASTER",
+   "MAN"
+  ],
+  "adjectives": [
+   "DUNGEON"
+  ],
+  "flags": [
+   "ACTORBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o12",
+  "en": "Underwater",
+  "name": "IN-LAKE",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "NONLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o13",
+  "en": "strange key",
+  "name": "KEY",
+  "synonyms": [
+   "KEY"
+  ],
+  "adjectives": [
+   "STRANGE",
+   "RUSTY",
+   "LONG",
+   "SHORT",
+   "HEAVY",
+   "THIN",
+   "SHARP",
+   "POINTED"
+  ],
+  "flags": [
+   "TAKEBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o14",
+  "en": "rubble",
+  "name": "RUBBLE",
+  "synonyms": [
+   "ROCK",
+   "ROCKS",
+   "BOULDER",
+   "RUBBLE"
+  ],
+  "adjectives": [],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o16",
+  "en": "Jewel Room",
+  "name": "MID-JEWEL-ROOM",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "ONBIT",
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o17",
+  "en": "viewing table",
+  "name": "VIEWING-TABLE",
+  "synonyms": [
+   "TABLE",
+   "SURFACE"
+  ],
+  "adjectives": [
+   "VIEWING"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o19",
+  "en": "North Corridor",
+  "name": "NORTH-CORRIDOR",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o21",
+  "en": "voices",
+  "name": "VOICES",
+  "synonyms": [
+   "VOICE",
+   "VOICES",
+   "GUARDS",
+   "OFFICI"
+  ],
+  "adjectives": [
+   "ARMED"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o22",
+  "en": "vial",
+  "name": "VIAL",
+  "synonyms": [
+   "VIAL",
+   "ODOR",
+   "GIFT"
+  ],
+  "adjectives": [],
+  "flags": [
+   "TAKEBIT",
+   "CONTBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o23",
+  "en": "Land of Shadow",
+  "name": "SHADOW-5",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o25",
+  "en": "seat",
+  "name": "TM-HOLLOW",
+  "synonyms": [
+   "AREA"
+  ],
+  "adjectives": [
+   "SMALL",
+   "HOLLOW"
+  ],
+  "flags": [
+   "NDESCBIT",
+   "OPENBIT",
+   "CONTBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o26",
+  "en": "pile of assorted valuables",
+  "name": "VALUABLES",
+  "synonyms": [
+   "VALUABLES",
+   "TREASURE",
+   "PILE"
+  ],
+  "adjectives": [
+   "ASSORTED"
+  ],
+  "flags": [
+   "NDESCBIT",
+   "TAKEBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o27",
+  "en": "red beam of light",
+  "name": "BEAM",
+  "synonyms": [
+   "BEAM",
+   "LIGHT"
+  ],
+  "adjectives": [
+   "RED"
+  ],
+  "flags": [
+   "NDESCBIT",
+   "OPENBIT",
+   "CONTBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o28",
+  "en": "Museum Entrance",
+  "name": "OLD-MUSEUM-ENTRANCE",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "ONBIT",
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o29",
+  "en": "panel",
+  "name": "PANEL",
+  "synonyms": [
+   "PANEL"
+  ],
+  "adjectives": [],
+  "flags": [],
+  "room": false
+ },
+ {
+  "key": "o30",
+  "en": "Land of Shadow",
+  "name": "SHADOW-1",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o31",
+  "en": "ledge",
+  "name": "LEDGE",
+  "synonyms": [
+   "LEDGE"
+  ],
+  "adjectives": [
+   "WIDE"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o32",
+  "en": "runes",
+  "name": "RUNES",
+  "synonyms": [
+   "ENGRAV",
+   "TEXT",
+   "WALL",
+   "RUNES"
+  ],
+  "adjectives": [
+   "CARVED"
+  ],
+  "flags": [
+   "NDESCBIT",
+   "READBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o33",
+  "en": "direction",
+  "name": "INTDIR",
+  "synonyms": [
+   "INTDIR"
+  ],
+  "adjectives": [],
+  "flags": [
+   "TOOLBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o36",
+  "en": "Parapet",
+  "name": "PARAPET",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o37",
+  "en": "mahogany panel",
+  "name": "MAHOGANY-PANEL",
+  "synonyms": [
+   "WALL",
+   "PANEL"
+  ],
+  "adjectives": [
+   "MAHOGANY"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o38",
+  "en": "Royal Seal of Dimwit Flathead",
+  "name": "ROYAL-SEAL",
+  "synonyms": [
+   "SEAL",
+   "CARVIN",
+   "RENDER"
+  ],
+  "adjectives": [
+   "LARGE",
+   "ROYAL"
+  ],
+  "flags": [
+   "NDESCBIT",
+   "READBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o39",
+  "en": "Key Room",
+  "name": "KEY-ROOM",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o40",
+  "en": "Tight Squeeze",
+  "name": "TIGHT-SQUEEZE",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o42",
+  "en": "eastern wall",
+  "name": "CPEWL",
+  "synonyms": [
+   "WALL"
+  ],
+  "adjectives": [
+   "EAST",
+   "EASTERN"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o43",
+  "en": "East Corridor",
+  "name": "EAST-CORRIDOR",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o44",
+  "en": "Hallway",
+  "name": "MRG",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o45",
+  "en": "Prison Cell",
+  "name": "CELL",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o46",
+  "en": "Treasury of Zork",
+  "name": "NIRVANA",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o48",
+  "en": "Narrow Room",
+  "name": "MRGW",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o50",
+  "en": "rock structure",
+  "name": "CRYSTALS",
+  "synonyms": [
+   "CRYSTAL",
+   "STALAG"
+  ],
+  "adjectives": [],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o51",
+  "en": "Narrow Room",
+  "name": "MRAE",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o52",
+  "en": "white panel",
+  "name": "WHITE-PANEL",
+  "synonyms": [
+   "PANEL",
+   "WALL"
+  ],
+  "adjectives": [
+   "WHITE"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o54",
+  "en": "Hallway",
+  "name": "MRC",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o55",
+  "en": "Creepy Crawl",
+  "name": "CREEPY-CRAWL",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o58",
+  "en": "Narrow Room",
+  "name": "MRCW",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o59",
+  "en": "cloak",
+  "name": "CLOAK",
+  "synonyms": [
+   "CLOAK"
+  ],
+  "adjectives": [],
+  "flags": [
+   "NDESCBIT",
+   "TRYTAKEBIT",
+   "TAKEBIT",
+   "WEARBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o60",
+  "en": "large button",
+  "name": "DIAL-BUTTON",
+  "synonyms": [
+   "BUTTON"
+  ],
+  "adjectives": [
+   "LARGE"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o62",
+  "en": "pine panel",
+  "name": "PINE-PANEL",
+  "synonyms": [
+   "PANEL",
+   "WALL"
+  ],
+  "adjectives": [
+   "PINE"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o63",
+  "en": "Land of Shadow",
+  "name": "SHADOW-6",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o64",
+  "en": "Foggy Room",
+  "name": "FOGGY-ROOM",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o65",
+  "en": "chest",
+  "name": "CHEST",
+  "synonyms": [
+   "CHEST"
+  ],
+  "adjectives": [
+   "LOCKED"
+  ],
+  "flags": [
+   "TAKEBIT",
+   "CONTBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o66",
+  "en": "Technology Museum",
+  "name": "OLD-TECH-MUSEUM",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "ONBIT",
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o67",
+  "en": "reeds",
+  "name": "REEDS",
+  "synonyms": [
+   "REEDS"
+  ],
+  "adjectives": [
+   "SICKLY"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o69",
+  "en": "Land of Shadow",
+  "name": "SHADOW-2",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o71",
+  "en": "channel",
+  "name": "WATER-CHANNEL",
+  "synonyms": [
+   "CHANNEL"
+  ],
+  "adjectives": [
+   "WATER"
+  ],
+  "flags": [],
+  "room": false
+ },
+ {
+  "key": "o72",
+  "en": "cell door",
+  "name": "CELL-DOOR",
+  "synonyms": [
+   "DOOR"
+  ],
+  "adjectives": [
+   "WOOD",
+   "WOODEN",
+   "CELL"
+  ],
+  "flags": [
+   "CONTBIT",
+   "DOORBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o73",
+  "en": "Cliff Base",
+  "name": "CLIFF-BASE",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "ONBIT",
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o74",
+  "en": "southern wall",
+  "name": "SOUTH-WALL",
+  "synonyms": [
+   "WALL"
+  ],
+  "adjectives": [
+   "SOUTH",
+   "SOUTHE"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o75",
+  "en": "Aqueduct View",
+  "name": "AQ-VIEW",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o76",
+  "en": "dial",
+  "name": "TM-DIAL",
+  "synonyms": [
+   "DIAL",
+   "CONSOLE",
+   "DISPLAY"
+  ],
+  "adjectives": [],
+  "flags": [
+   "NDESCBIT",
+   "TURNBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o77",
+  "en": "very ancient book",
+  "name": "LORE-BOOK",
+  "synonyms": [
+   "BOOK",
+   "LORE",
+   "TEXT"
+  ],
+  "adjectives": [
+   "LORE",
+   "OLD",
+   "STRANGE"
+  ],
+  "flags": [
+   "TAKEBIT",
+   "READBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o78",
+  "en": "Hairpin Loop",
+  "name": "SLOPE",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o79",
+  "en": "robot",
+  "name": "ROBOT",
+  "synonyms": [
+   "ROBOT",
+   "DEVICE"
+  ],
+  "adjectives": [],
+  "flags": [],
+  "room": false
+ },
+ {
+  "key": "o80",
+  "en": "wooden wall",
+  "name": "WOODEN-WALL",
+  "synonyms": [
+   "WALL"
+  ],
+  "adjectives": [
+   "WOOD",
+   "WOODEN"
+  ],
+  "flags": [],
+  "room": false
+ },
+ {
+  "key": "o81",
+  "en": "Crystal Grotto",
+  "name": "ROCKY-ROOM",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "ONBIT",
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o82",
+  "en": "wooden door",
+  "name": "DUNGEON-DOOR",
+  "synonyms": [
+   "DOOR"
+  ],
+  "adjectives": [
+   "WOOD",
+   "WOODEN"
+  ],
+  "flags": [
+   "NDESCBIT",
+   "DOORBIT",
+   "CONTBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o83",
+  "en": "broken staff",
+  "name": "BROKEN-STAFF",
+  "synonyms": [
+   "STAFF"
+  ],
+  "adjectives": [
+   "BROKEN"
+  ],
+  "flags": [
+   "TAKEBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o84",
+  "en": "Royal Puzzle Entrance",
+  "name": "MID-CP-ANTE",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o85",
+  "en": "ladder",
+  "name": "CPLADDER",
+  "synonyms": [
+   "LADDER"
+  ],
+  "adjectives": [],
+  "flags": [],
+  "room": false
+ },
+ {
+  "key": "o86",
+  "en": "Dead End",
+  "name": "DEAD-END",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o87",
+  "en": "black panel",
+  "name": "BLACK-PANEL",
+  "synonyms": [
+   "WALL",
+   "PANEL"
+  ],
+  "adjectives": [
+   "BLACK"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o88",
+  "en": "sundial",
+  "name": "SUNDIAL",
+  "synonyms": [
+   "DIAL",
+   "INDICATOR",
+   "ARROW",
+   "SUNDIAL"
+  ],
+  "adjectives": [
+   "INDICATOR",
+   "SUN"
+  ],
+  "flags": [
+   "NDESCBIT",
+   "TURNBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o89",
+  "en": "cleft",
+  "name": "CLEFT",
+  "synonyms": [
+   "CLEFT"
+  ],
+  "adjectives": [],
+  "flags": [
+   "DOORBIT",
+   "OPENBIT",
+   "INVISIBLE"
+  ],
+  "room": false
+ },
+ {
+  "key": "o90",
+  "en": "golden amulet",
+  "name": "AMULET",
+  "synonyms": [
+   "AMULET",
+   "OBJECT"
+  ],
+  "adjectives": [
+   "GOLD",
+   "GOLDEN",
+   "SHINY"
+  ],
+  "flags": [
+   "TAKEBIT",
+   "WEARBIT",
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o91",
+  "en": "chasm",
+  "name": "CHASM",
+  "synonyms": [
+   "CHASM",
+   "GORGE",
+   "RAVINE"
+  ],
+  "adjectives": [
+   "ROCKY",
+   "DEEP"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o92",
+  "en": "grey machine",
+  "name": "PRESSURIZER",
+  "synonyms": [
+   "MACHINE",
+   "DRYER",
+   "PRESSURIZER"
+  ],
+  "adjectives": [
+   "GRAY",
+   "GREY",
+   "WASHING"
+  ],
+  "flags": [],
+  "room": false
+ },
+ {
+  "key": "o93",
+  "en": "Damp Passage",
+  "name": "DAMP-PASSAGE",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o94",
+  "en": "fish",
+  "name": "FISH",
+  "synonyms": [
+   "FISH"
+  ],
+  "adjectives": [],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o96",
+  "en": "compass rose",
+  "name": "ROSE",
+  "synonyms": [
+   "ROSE"
+  ],
+  "adjectives": [
+   "COMPASS"
+  ],
+  "flags": [],
+  "room": false
+ },
+ {
+  "key": "o97",
+  "en": "old man",
+  "name": "OLD-MAN",
+  "synonyms": [
+   "MAN"
+  ],
+  "adjectives": [
+   "OLD"
+  ],
+  "flags": [
+   "ACTORBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o98",
+  "en": "Button Room",
+  "name": "MR-ANTE",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o99",
+  "en": "piece of waybread",
+  "name": "WAYBREAD",
+  "synonyms": [
+   "BREAD",
+   "WAYBREAD",
+   "PIECE"
+  ],
+  "adjectives": [
+   "WAY",
+   "FRESH"
+  ],
+  "flags": [
+   "TAKEBIT",
+   "FOODBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o100",
+  "en": "Narrow Room",
+  "name": "MRDE",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o102",
+  "en": "Lake Shore",
+  "name": "LAKE-SHORE",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "ONBIT",
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o103",
+  "en": "Jewel Room",
+  "name": "JEWEL-ROOM",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "ONBIT",
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o104",
+  "en": "western wall",
+  "name": "CPWWL",
+  "synonyms": [
+   "WALL"
+  ],
+  "adjectives": [
+   "WEST",
+   "WESTERN"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o105",
+  "en": "Dungeon Entrance",
+  "name": "FRONT-DOOR",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o106",
+  "en": "mirror",
+  "name": "MIRROR",
+  "synonyms": [
+   "MIRROR",
+   "STRUCTURE"
+  ],
+  "adjectives": [],
+  "flags": [],
+  "room": false
+ },
+ {
+  "key": "o107",
+  "en": "stone channel",
+  "name": "CHANNEL",
+  "synonyms": [
+   "CHANNEL",
+   "HOLE"
+  ],
+  "adjectives": [
+   "STONE"
+  ],
+  "flags": [],
+  "room": false
+ },
+ {
+  "key": "o109",
+  "en": "Cliff",
+  "name": "CLIFF",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "ONBIT",
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o110",
+  "en": "hooded figure",
+  "name": "SHADOW",
+  "synonyms": [
+   "SHADOW",
+   "FIGURE",
+   "MAN",
+   "WOMAN"
+  ],
+  "adjectives": [
+   "HOODED",
+   "CLOAKED"
+  ],
+  "flags": [
+   "ACTORBIT",
+   "TRANSBIT",
+   "CONTBIT",
+   "OPENBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o111",
+  "en": "golden ring",
+  "name": "RING",
+  "synonyms": [
+   "RING",
+   "JEWELS"
+  ],
+  "adjectives": [
+   "GOLDEN",
+   "CROWN"
+  ],
+  "flags": [
+   "TAKEBIT",
+   "NDESCBIT",
+   "TRYTAKEBIT",
+   "WEARBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o112",
+  "en": "Barren Area",
+  "name": "CLEARING",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o113",
+  "en": "Hallway",
+  "name": "MRB",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o115",
+  "en": "southern wall",
+  "name": "CPSWL",
+  "synonyms": [
+   "WALL"
+  ],
+  "adjectives": [
+   "SOUTH"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o116",
+  "en": "Royal Hall",
+  "name": "WIDE-HALL",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o117",
+  "en": "steel door",
+  "name": "CPDOOR",
+  "synonyms": [
+   "DOOR"
+  ],
+  "adjectives": [
+   "STEEL",
+   "METAL"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ }
+]

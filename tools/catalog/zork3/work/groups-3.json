@@ -1,0 +1,787 @@
+[
+ {
+  "key": "gd1c3",
+  "en": "The outline of a door is barely visible among the runes.\n",
+  "args": [],
+  "routine": "MSTAIRS-F",
+  "zil": "<TELL \"The outline of a door is barely visible among the runes.\" CR>"
+ },
+ {
+  "key": "gd219",
+  "en": "There is an old man huddled in the corner, eyeing you cautiously. He looks weak and tired.\n",
+  "args": [],
+  "routine": "OLD-MAN-F",
+  "zil": "<TELL \"There is an old man huddled in the corner, eyeing you cautiously. He looks weak and tired.\" CR>"
+ },
+ {
+  "key": "gd24e",
+  "en": "An old and wizened man is huddled, asleep, in the corner. He is snoring loudly, and looks quite weak and frail.\n",
+  "args": [],
+  "routine": "OLD-MAN-F",
+  "zil": "<TELL \"An old and wizened man is huddled, asleep, in the corner. He is snoring loudly, and looks quite weak and frail.\" CR>"
+ },
+ {
+  "key": "gd2a8",
+  "en": "He looks up at you and takes the waybread. Slowly, he eats the bread and pauses when he is finished. He starts to speak: \"Perhaps what you seek is through there!\" He points at the carved wall to the north, where you now notice the bare outline of a secret door. When you turn back, the old man is gone!\n",
+  "args": [],
+  "routine": "OLD-MAN-F",
+  "zil": "<TELL \"He looks up at you and takes the waybread. Slowly, he eats the bread and pauses when he is finished. He starts to speak: \\\"Perhaps what you seek is through there!\\\" He points at the carved wall to the north, where you now notice the bare outline of a secret door. When you turn back, the old man is gone!\" CR>"
+ },
+ {
+  "key": "gd361",
+  "en": "He refuses your offer but motions with his arm to the waybread in your hand.\n",
+  "args": [],
+  "routine": "OLD-MAN-F",
+  "zil": "<TELL \"He refuses your offer but motions with his arm to the waybread in your hand.\" CR>"
+ },
+ {
+  "key": "gd38a",
+  "en": "The old man refuses the {0} with a wave of his hand.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "OLD-MAN-F",
+  "zil": "<TELL \"The old man refuses the \" D ,PRSO \" with a wave of his hand.\" CR>"
+ },
+ {
+  "key": "gd3aa",
+  "en": "He is asleep!\n",
+  "args": [],
+  "routine": "OLD-MAN-F",
+  "zil": "<TELL \"He is asleep!\" CR>"
+ },
+ {
+  "key": "gd3bc",
+  "en": "The old man is barely awake and appears to nod off every few moments. He has bright eyes, which appear to see right through your body.\n",
+  "args": [],
+  "routine": "OLD-MAN-F",
+  "zil": "<TELL \"The old man is barely awake and appears to nod off every few moments. He has bright eyes, which appear to see right through your body.\" CR>"
+ },
+ {
+  "key": "gd401",
+  "en": "The man is very, very old and wizened. He has a long, stringy beard and is snoring quite loudly.\n",
+  "args": [],
+  "routine": "OLD-MAN-F",
+  "zil": "<TELL \"The man is very, very old and wizened. He has a long, stringy beard and is snoring quite loudly.\" CR>"
+ },
+ {
+  "key": "gd441",
+  "en": "He isn't talking.\n",
+  "args": [],
+  "routine": "OLD-MAN-F",
+  "zil": "<TELL \"He isn't talking.\" CR>"
+ },
+ {
+  "key": "gd44c",
+  "en": "He is snoring like a buzz saw.\n",
+  "args": [],
+  "routine": "OLD-MAN-F",
+  "zil": "<TELL \"He is snoring like a buzz saw.\" CR>"
+ },
+ {
+  "key": "gd46d",
+  "en": "He nods at you without seeming to have understood.\n",
+  "args": [],
+  "routine": "OLD-MAN-F",
+  "zil": "<TELL \"He nods at you without seeming to have understood.\" CR>"
+ },
+ {
+  "key": "gd48a",
+  "en": "He is sleeping soundly and does not respond.\n",
+  "args": [],
+  "routine": "OLD-MAN-F",
+  "zil": "<TELL \"He is sleeping soundly and does not respond.\" CR>"
+ },
+ {
+  "key": "gd4ac",
+  "en": "The old man is roused to consciousness. He peers at you through eyes which appear much younger and stronger than his frail body and waits, as if expecting something to happen.\n",
+  "args": [],
+  "routine": "OLD-MAN-F",
+  "zil": "<TELL \"The old man is roused to consciousness. He peers at you through eyes which appear much younger and stronger than his frail body and waits, as if expecting something to happen.\" CR>"
+ },
+ {
+  "key": "gd525",
+  "en": "The attack seems to have left the old man unharmed! You watch in awe as he rises to his feet and seems to tower above you. He peers down menacingly, then sadly and wearily. \"Not yet,\" he mourns, and vanishes in a puff of smoke.\n",
+  "args": [],
+  "routine": "OLD-MAN-F",
+  "zil": "<TELL \"The attack seems to have left the old man unharmed! You watch in awe as he rises to his feet and seems to tower above you. He peers down menacingly, then sadly and wearily. \\\"Not yet,\\\" he mourns, and vanishes in a puff of smoke.\" CR>"
+ },
+ {
+  "key": "gd5ba",
+  "en": "You notice that the old man has fallen asleep.\n",
+  "args": [],
+  "routine": "I-OLD-MAN-SLEEPS",
+  "zil": "<TELL \"You notice that the old man has fallen asleep.\" CR>"
+ },
+ {
+  "key": "gd5dd",
+  "en": "The runes are in an ancient language. Some pictures among the runes depict flames, stone statues, and an old man.\n",
+  "args": [],
+  "routine": "RUNES-F",
+  "zil": "<TELL \"The runes are in an ancient language. Some pictures among the runes depict flames, stone statues, and an old man.\" CR>"
+ },
+ {
+  "key": "gd627",
+  "en": "You don't have enough leverage to turn the T-bar. You might be able to turn the whole structure, however.\n",
+  "args": [],
+  "routine": "T-BAR-F",
+  "zil": "<TELL \"You don't have enough leverage to turn the T-bar. You might be able to turn the whole structure, however.\" CR>"
+ },
+ {
+  "key": "gd669",
+  "en": "The flaming pit is a seemingly bottomless abyss filled with smoke and flame.\n",
+  "args": [],
+  "routine": "FLAMING-PIT-F",
+  "zil": "<TELL \"The flaming pit is a seemingly bottomless abyss filled with smoke and flame.\" CR>"
+ },
+ {
+  "key": "gd6ab",
+  "en": "It would be a pity to end your life so near the end of your quest!\n",
+  "args": [],
+  "routine": "FLAMING-PIT-F",
+  "zil": "<TELL \"It would be a pity to end your life so near the end of your quest!\" CR>"
+ },
+ {
+  "key": "gd6ce",
+  "en": "You cast the {0} into the pit, where it is lost forever.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "FLAMING-PIT-F",
+  "zil": "<TELL \"You cast the \" D ,PRSO \" into the pit, where it is lost forever.\" CR>"
+ },
+ {
+  "key": "gd6f2",
+  "en": "You're not close enough.\n",
+  "args": [],
+  "routine": "FLAMING-PIT-F",
+  "zil": "<TELL \"You're not close enough.\" CR>"
+ },
+ {
+  "key": "gd711",
+  "en": "You can see the parapet and sundial from here.",
+  "args": [],
+  "routine": "PARAPET-OBJ-F",
+  "zil": "<TELL \"You can see the parapet and sundial from here.\">"
+ },
+ {
+  "key": "gd72c",
+  "en": " The dungeon master is there also, leaning on his staff.",
+  "args": [],
+  "routine": "PARAPET-OBJ-F",
+  "zil": "<TELL \" The dungeon master is there also, leaning on his staff.\">"
+ },
+ {
+  "key": "gd759",
+  "en": "The compass rose is made of stone and is imbedded in the ground. You could not possibly turn it or move it.\n",
+  "args": [],
+  "routine": "ROSE-F",
+  "zil": "<TELL \"The compass rose is made of stone and is imbedded in the ground. You could not possibly turn it or move it.\" CR>"
+ },
+ {
+  "key": "gd79f",
+  "en": "You will have to enter the cell first.\n",
+  "args": [],
+  "routine": "CELL-DOOR-F",
+  "zil": "<TELL \"You will have to enter the cell first.\" CR>"
+ },
+ {
+  "key": "gd7be",
+  "en": "Look around.\n",
+  "args": [],
+  "routine": "CELL-DOOR-F",
+  "zil": "<TELL \"Look around.\" CR>"
+ },
+ {
+  "key": "gd7d9",
+  "en": "The book is consumed in a dazzling display of color.\n",
+  "args": [],
+  "routine": "LORE-BOOK-F",
+  "zil": "<TELL \"The book is consumed in a dazzling display of color.\" CR>"
+ },
+ {
+  "key": "gd80a",
+  "en": "The book seems to will itself open to a specific page. It shows a picture of eight small rooms located around a great circle of flame. All are identical save one, which has a bronze door leading to a room bathed in golden light. A legend beneath the picture says \"The Dungeon and Treasury of Zork.\"\n",
+  "args": [],
+  "routine": "LORE-BOOK-F",
+  "zil": "<TELL \"The book seems to will itself open to a specific page. It shows a picture of eight small rooms located around a great circle of flame. All are identical save one, which has a bronze door leading to a room bathed in golden light. A legend beneath the picture says \\\"The Dungeon and Treasury of Zork.\\\"\" CR>"
+ },
+ {
+  "key": "gd8bb",
+  "en": "The book can be perused but not left open.\n",
+  "args": [],
+  "routine": "LORE-BOOK-F",
+  "zil": "<TELL \"The book can be perused but not left open.\" CR>"
+ },
+ {
+  "key": "gd8e1",
+  "en": "The torches are out of reach.\n",
+  "args": [],
+  "routine": "TORCH-PSEUDO",
+  "zil": "<TELL \"The torches are out of reach.\" CR>"
+ },
+ {
+  "key": "gd955",
+  "en": "You can't do that.\n",
+  "args": [],
+  "routine": "WATER-FCN",
+  "zil": "<TELL \"You can't do that.\" CR>"
+ },
+ {
+  "key": "gd967",
+  "en": "You don't have any water.\n",
+  "args": [],
+  "routine": "WATER-FCN",
+  "zil": "<TELL \"You don't have any water.\" CR>"
+ },
+ {
+  "key": "gd97d",
+  "en": "You should specify which panel you want to push.\n",
+  "args": [],
+  "routine": "RANDOM-WALL",
+  "zil": "<TELL \"You should specify which panel you want to push.\" CR>"
+ },
+ {
+  "key": "gd996",
+  "en": "You can't budge it; at least from here.\n",
+  "args": [],
+  "routine": "RANDOM-WALL",
+  "zil": "<TELL \"You can't budge it; at least from here.\" CR>"
+ },
+ {
+  "key": "gd9d2",
+  "en": " \n    ****  The {0} has died  **** \n\n",
+  "args": [
+   "o"
+  ],
+  "routine": "JIGS-UP",
+  "zil": "<TELL \" \\n    ****  The \" D ,WINNER \" has died  **** \\n \\n\">"
+ },
+ {
+  "key": "gda06",
+  "en": "\n    ****  You have died  ****\n\n",
+  "args": [],
+  "routine": "JIGS-UP",
+  "zil": "<TELL \"\\n     ****  You have died  ****\\n \\n \">"
+ },
+ {
+  "key": "gda30",
+  "en": "You feel yourself disembodied in a deep blackness. A voice from the void speaks:  \"I have waited a long age for you, my friend, but perhaps it has been another that I have been seeking. Good night, oh worthy adventurer!\" It is the last you hear.\n",
+  "args": [],
+  "routine": "JIGS-UP",
+  "zil": "<TELL \"You feel yourself disembodied in a deep blackness. A voice from the void speaks:  \\\"I have waited a long age for you, my friend, but perhaps it has been another that I have been seeking. Good night, oh worthy adventurer!\\\" It is the last you hear.\" CR>"
+ },
+ {
+  "key": "gdac0",
+  "en": "You find yourself deep within the earth in a barren prison cell. Outside the iron-barred window, you can see a great, fiery pit. Flames leap up and very nearly sear your flesh. After a while, footfalls can be heard in the distance, then closer and closer.... The door swings open, and in walks an old man.\n\nHe is dressed simply in a hood and cloak, wearing an amulet and ring, carrying an old book under one arm, and leaning on a wooden staff. A single key, as if to a massive prison cell, hangs from his belt.\n\nHe raises the staff toward you and you hear him speak, as if in a dream: \"I await you, though your journey be long and full of peril. Go then, and let me not wait long!\" You feel some great power well up inside you and you fall to the floor. The next moment, you are awakening, as if from a deep slumber.\n",
+  "args": [],
+  "routine": "JIGS-UP",
+  "zil": "<TELL \"You find yourself deep within the earth in a barren prison cell. Outside the iron-barred window, you can see a great, fiery pit. Flames leap up and very nearly sear your flesh. After a while, footfalls can be heard in the distance, then closer and closer.... The door swings open, and in walks an old man.\\n \\n He is dressed simply in a hood and cloak, wearing an amulet and ring, carrying an old book under one arm, and leaning on a wooden staff. A single key, as if to a massive prison cell, hangs from his belt.\\n \\n He raises the staff toward you and you hear him speak, as if in a dream: \\\"I await you, though your journey be long and full of peril. Go then, and let me not wait long!\\\" You feel some great power well up inside you and you fall to the floor. The next moment, you are awakening, as if from a deep slumber.\" CR>"
+ },
+ {
+  "key": "gdd27",
+  "en": "Your potential is {0} of a possible {1}, in {2}",
+  "args": [
+   "n",
+   "n",
+   "n"
+  ],
+  "routine": "V-SCORE",
+  "zil": "<TELL \" of a possible \" N ,SCORE-MAX \", in \">"
+ },
+ {
+  "key": "gddaa",
+  "en": "The iron door is locked from the outside.\n",
+  "args": [],
+  "routine": "IRON-DOOR-F",
+  "zil": "<TELL \"The iron door is locked from the outside.\" CR>"
+ },
+ {
+  "key": "gddbf",
+  "en": "The iron door is rusted shut and cannot be opened.\n",
+  "args": [],
+  "routine": "IRON-DOOR-F",
+  "zil": "<TELL \"The iron door is rusted shut and cannot be opened.\" CR>"
+ },
+ {
+  "key": "gdde7",
+  "en": "You feel a mild tremor from within the earth which passes quickly.\n",
+  "args": [],
+  "routine": "I-CLEFT",
+  "zil": "<TELL \"You feel a mild tremor from within the earth which passes quickly.\" CR>"
+ },
+ {
+  "key": "gde12",
+  "en": "There is a great tremor from within the earth. The entire dungeon shakes violently and loose debris falls from above you.\n",
+  "args": [],
+  "routine": "I-CLEFT",
+  "zil": "<TELL \"There is a great tremor from within the earth. The entire dungeon shakes violently and loose debris falls from above you.\" CR>"
+ },
+ {
+  "key": "gde54",
+  "en": "To the east, next to the great iron door, a cleft opens up, revealing an open area behind!\n",
+  "args": [],
+  "routine": "I-CLEFT",
+  "zil": "<TELL \"To the east, next to the great iron door, a cleft opens up, revealing an open area behind!\" CR>"
+ },
+ {
+  "key": "gde94",
+  "en": "One of the giant pillars supporting the aqueduct collapses in a pile of smoke and rubble!\n",
+  "args": [],
+  "routine": "I-CLEFT",
+  "zil": "<TELL \"One of the giant pillars supporting the aqueduct collapses in a pile of smoke and rubble!\" CR>"
+ },
+ {
+  "key": "gded8",
+  "en": "The channel beneath your feet trembles. Then the channel just to the ",
+  "args": [],
+  "routine": "I-CLEFT",
+  "zil": "<TELL \"The channel beneath your feet trembles. Then the channel just to the \">"
+ },
+ {
+  "key": "gdefd",
+  "en": "north",
+  "args": [],
+  "routine": "I-CLEFT",
+  "zil": "<TELL \"north\">"
+ },
+ {
+  "key": "gdf03",
+  "en": "south",
+  "args": [],
+  "routine": "I-CLEFT",
+  "zil": "<TELL \"south\">"
+ },
+ {
+  "key": "gdf06",
+  "en": " collapses and falls into the chasm!\n",
+  "args": [],
+  "routine": "I-CLEFT",
+  "zil": "<TELL \" collapses and falls into the chasm!\" CR>"
+ },
+ {
+  "key": "gdf2d",
+  "en": "There is no cleft here.\n",
+  "args": [],
+  "routine": "CLEFT-F",
+  "zil": "<TELL \"There is no cleft here.\" CR>"
+ },
+ {
+  "key": "gdf45",
+  "en": "This is the south end of a monumental hall, full of debris from a recent earthquake. To the east is a great iron door, rusted shut. To its right, however, is a gaping cleft in the rock and behind, a cleared area.\n",
+  "args": [],
+  "routine": "MUSEUM-ANTE-F",
+  "zil": "<TELL \"This is the south end of a monumental hall, full of debris from a recent earthquake. To the east is a great iron door, rusted shut. To its right, however, is a gaping cleft in the rock and behind, a cleared area.\" CR>"
+ },
+ {
+  "key": "gdfbe",
+  "en": "You are in the southern half of a monumental hall. To the east lies a tremendous iron door which appears to be rusted shut.\n",
+  "args": [],
+  "routine": "MUSEUM-ANTE-F",
+  "zil": "<TELL \"You are in the southern half of a monumental hall. To the east lies a tremendous iron door which appears to be rusted shut.\" CR>"
+ },
+ {
+  "key": "ge007",
+  "en": "open",
+  "args": [],
+  "routine": "DDESC",
+  "zil": "<TELL \"open\">"
+ },
+ {
+  "key": "ge00f",
+  "en": "closed",
+  "args": [],
+  "routine": "DDESC",
+  "zil": "<TELL \"closed\">"
+ },
+ {
+  "key": "ge024",
+  "en": "This is an entrance hall of some sort, judging by the grand iron door to the west, and the ornate stone and wooden doors which lead to the east and north, respectively. A few wide steps lead south.\n",
+  "args": [],
+  "routine": "MUSEUM-ENTRANCE-F",
+  "zil": "<TELL \"This is an entrance hall of some sort, judging by the grand iron door to the west, and the ornate stone and wooden doors which lead to the east and north, respectively. A few wide steps lead south.\" CR>"
+ },
+ {
+  "key": "ge087",
+  "en": "This is the entrance to the Royal Museum, the finest and grandest in the Great Underground Empire. To the south, down a few steps, is the entrance to the Royal Puzzle and to the east, through a stone door, is the Royal Jewel Collection. A wooden door to the north is ",
+  "args": [],
+  "routine": "MUSEUM-ENTRANCE-F",
+  "zil": "<TELL \"This is the entrance to the Royal Museum, the finest and grandest in the Great Underground Empire. To the south, down a few steps, is the entrance to the Royal Puzzle and to the east, through a stone door, is the Royal Jewel Collection. A wooden door to the north is \">"
+ },
+ {
+  "key": "ge111",
+  "en": "{0} and leads to the Museum of Technology. ",
+  "args": [
+   "s"
+  ],
+  "routine": "MUSEUM-ENTRANCE-F",
+  "zil": "<TELL <COND (<FSET? ,WOODEN-DOOR ,OPENBIT> \"open\") (T \"closed\")> \" and leads to the Museum of Technology. \">"
+ },
+ {
+  "key": "ge133",
+  "en": "To the west is a great iron door, rusted shut. To its left, however, is a cleft in the rock providing an exit from the museum.\n",
+  "args": [],
+  "routine": "MUSEUM-ENTRANCE-F",
+  "zil": "<TELL \"To the west is a great iron door, rusted shut. To its left, however, is a cleft in the rock providing an exit from the museum.\" CR>"
+ },
+ {
+  "key": "ge180",
+  "en": "To the west is a great iron door, rusted shut.\n",
+  "args": [],
+  "routine": "MUSEUM-ENTRANCE-F",
+  "zil": "<TELL \"To the west is a great iron door, rusted shut.\" CR>"
+ },
+ {
+  "key": "ge199",
+  "en": "To the west is a great iron door, rusted shut. The cleft in the rock, present when you started, has filled in with rubble.\n",
+  "args": [],
+  "routine": "MUSEUM-ENTRANCE-F",
+  "zil": "<TELL \"To the west is a great iron door, rusted shut. The cleft in the rock, present when you started, has filled in with rubble.\" CR>"
+ },
+ {
+  "key": "ge1e4",
+  "en": "Directly in front of you is a large golden machine, which has a seat with a console in front. On the console is a single button and a dial connected to a three-digit display which reads {0}. The machine is suprisingly shiny and shows few signs of age.\n",
+  "args": [
+   "n"
+  ],
+  "routine": "TIME-MACHINE-F",
+  "zil": "<TELL \"Directly in front of you is a large golden machine, which has a seat with a console in front. On the console is a single button and a dial connected to a three-digit display which reads \" N ,TM-YEAR \". The machine is surprisingly shiny and shows few signs of age.\" CR>"
+ },
+ {
+  "key": "ge282",
+  "en": "You might be able to move the machine by pushing it.\n",
+  "args": [],
+  "routine": "TIME-MACHINE-F",
+  "zil": "<TELL \"You might be able to move the machine by pushing it.\" CR>"
+ },
+ {
+  "key": "ge2ab",
+  "en": "That would be a good trick from inside it.\n",
+  "args": [],
+  "routine": "TIME-MACHINE-F",
+  "zil": "<TELL \"That would be a good trick from inside it.\" CR>"
+ },
+ {
+  "key": "ge2c8",
+  "en": "You're not going anywhere in this heap.\n",
+  "args": [],
+  "routine": "TIME-MACHINE-F",
+  "zil": "<TELL \"You're not going anywhere in this heap.\" CR>"
+ },
+ {
+  "key": "ge2fa",
+  "en": "You can't do that from inside the machine.\n",
+  "args": [],
+  "routine": "TIME-MACHINE-F",
+  "zil": "<TELL \"You can't do that from inside the machine.\" CR>"
+ },
+ {
+  "key": "ge31a",
+  "en": "You can't put anything on or inside the machine itself.\n",
+  "args": [],
+  "routine": "TIME-MACHINE-F",
+  "zil": "<TELL \"You can't put anything on or inside the machine itself.\" CR>"
+ },
+ {
+  "key": "ge341",
+  "en": "This is a machine, not a box.\n",
+  "args": [],
+  "routine": "TIME-MACHINE-F",
+  "zil": "<TELL \"This is a machine, not a box.\" CR>"
+ },
+ {
+  "key": "ge357",
+  "en": "The machine consists of a seat and a console containing one small button and a dial connected to a display which reads {0}.\n",
+  "args": [
+   "n"
+  ],
+  "routine": "TIME-MACHINE-F",
+  "zil": "<TELL \"The machine consists of a seat and a console containing one small button and a dial connected to a display which reads \" N ,TM-YEAR \".\" CR>"
+ },
+ {
+  "key": "ge3aa",
+  "en": "That will be somewhat uncomfortable!\n",
+  "args": [],
+  "routine": "TIME-MACHINE-F",
+  "zil": "<TELL \"That will be somewhat uncomfortable!\" CR>"
+ },
+ {
+  "key": "ge3c9",
+  "en": "The machine must weigh hundreds of pounds and cannot be carried.\n",
+  "args": [],
+  "routine": "TIME-MACHINE-F",
+  "zil": "<TELL \"The machine must weigh hundreds of pounds and cannot be carried.\" CR>"
+ },
+ {
+  "key": "ge3f4",
+  "en": "You should specify in which direction to push the machine.\n",
+  "args": [],
+  "routine": "TIME-MACHINE-F",
+  "zil": "<TELL \"You should specify in which direction to push the machine.\" CR>"
+ },
+ {
+  "key": "ge423",
+  "en": "With some effort, you push the machine into the room with you.\n",
+  "args": [],
+  "routine": "TIME-MACHINE-F",
+  "zil": "<TELL \"With some effort, you push the machine into the room with you.\" CR>"
+ },
+ {
+  "key": "ge44a",
+  "en": "However, the machine seems to have sustained some damage as a result of going over the stairs.\n",
+  "args": [],
+  "routine": "TIME-MACHINE-F",
+  "zil": "<TELL \"However, the machine seems to have sustained some damage as a result of going over the stairs.\" CR>"
+ },
+ {
+  "key": "ge48c",
+  "en": "Pushing the machine through the cleft seems to have damaged it.\n",
+  "args": [],
+  "routine": "TIME-MACHINE-F",
+  "zil": "<TELL \"Pushing the machine through the cleft seems to have damaged it.\" CR>"
+ },
+ {
+  "key": "ge4d5",
+  "en": "The ring is concealed underneath the seat.\n",
+  "args": [],
+  "routine": "TM-SEAT-F",
+  "zil": "<TELL \"The ring is concealed underneath the seat.\" CR>"
+ },
+ {
+  "key": "ge4f7",
+  "en": "It's too big to hide under the seat.\n",
+  "args": [],
+  "routine": "TM-SEAT-F",
+  "zil": "<TELL \"It's too big to hide under the seat.\" CR>"
+ },
+ {
+  "key": "ge514",
+  "en": "There's nothing odd about the feel of the seat.\n",
+  "args": [],
+  "routine": "TM-SEAT-F",
+  "zil": "<TELL \"There's nothing odd about the feel of the seat.\" CR>"
+ },
+ {
+  "key": "ge537",
+  "en": "You find the ring under the seat and put it on your finger.\n",
+  "args": [],
+  "routine": "TM-SEAT-F",
+  "zil": "<TELL \"You find the ring under the seat and put it on your finger.\" CR>"
+ },
+ {
+  "key": "ge560",
+  "en": "You notice a small hollow area under the seat.\n",
+  "args": [],
+  "routine": "TM-SEAT-F",
+  "zil": "<TELL \"You notice a small hollow area under the seat.\" CR>"
+ },
+ {
+  "key": "ge581",
+  "en": "The dial is set to {0}.\n",
+  "args": [
+   "n"
+  ],
+  "routine": "TM-DIAL-F",
+  "zil": "<TELL \"The dial is set to \" N ,TM-YEAR \".\" CR>"
+ },
+ {
+  "key": "ge5a0",
+  "en": "You can't set it beyond 999.\n",
+  "args": [],
+  "routine": "TM-DIAL-F",
+  "zil": "<TELL \"You can't set it beyond 999.\" CR>"
+ },
+ {
+  "key": "ge5b6",
+  "en": "The dial is set to {0}.\n",
+  "args": [
+   "n"
+  ],
+  "routine": "TM-DIAL-F",
+  "zil": "<TELL \"The dial is set to \" N ,TM-YEAR \".\" CR>"
+ },
+ {
+  "key": "ge5ca",
+  "en": "You have to say what to turn it to!\n",
+  "args": [],
+  "routine": "TM-DIAL-F",
+  "zil": "<TELL \"You have to say what to turn it to!\" CR>"
+ },
+ {
+  "key": "ge5dd",
+  "en": "You can't do that!\n",
+  "args": [],
+  "routine": "TM-DIAL-F",
+  "zil": "<TELL \"You can't do that!\" CR>"
+ },
+ {
+  "key": "ge602",
+  "en": "Nothing seems to have happened.\n",
+  "args": [],
+  "routine": "TM-BUTTON-F",
+  "zil": "<TELL \"Nothing seems to have happened.\" CR>"
+ },
+ {
+  "key": "ge627",
+  "en": "Nothing seems to have happened.\n",
+  "args": [],
+  "routine": "TM-BUTTON-F",
+  "zil": "<TELL \"Nothing seems to have happened.\" CR>"
+ },
+ {
+  "key": "ge63f",
+  "en": "You experience a brief period of disorientation. When your vision returns, ",
+  "args": [],
+  "routine": "TM-BUTTON-F",
+  "zil": "<TELL \"You experience a brief period of disorientation. When your vision returns, \">"
+ },
+ {
+  "key": "ge67d",
+  "en": "you are surrounded by a number of heavily armed guards, the dress and speech of which seem strange and unfamiliar. A commotion starts at a door to the east and a person with a flat head, wearing a gaudy crown and a purple robe, bursts into the room.\n",
+  "args": [],
+  "routine": "TM-BUTTON-F",
+  "zil": "<TELL \"you are surrounded by a number of heavily armed guards, the dress and speech of which seem strange and unfamiliar. A commotion starts at a door to the east and a person with a flat head, wearing a gaudy crown and a purple robe, bursts into the room.\" CR>"
+ },
+ {
+  "key": "ge722",
+  "en": "you find yourself in the middle of some kind of ceremony, with a strange flat-headed man wearing royal vestments about to break a bottle on the bars of an iron cage containing magnificent jewels. He appears pleased by your presence. ",
+  "args": [],
+  "routine": "TM-BUTTON-F",
+  "zil": "<TELL \"you find yourself in the middle of some kind of ceremony, with a strange flat-headed man wearing royal vestments about to break a bottle on the bars of an iron cage containing magnificent jewels. He appears pleased by your presence. \">"
+ },
+ {
+  "key": "ge7e3",
+  "en": "You experience a brief period of disorientation. When your vision returns, your surroundings appear somewhat altered.\n",
+  "args": [],
+  "routine": "HAPPY-NEW-YEAR",
+  "zil": "<TELL \"You experience a brief period of disorientation. When your vision returns, your surroundings appear somewhat altered.\" CR>"
+ },
+ {
+  "key": "ge884",
+  "en": "You start to feel light-headed and quickly become completely disoriented. When your head clears, you realize that your surroundings have changed.\n",
+  "args": [],
+  "routine": "I-SNAP",
+  "zil": "<TELL \"You start to feel light-headed and quickly become completely disoriented. When your head clears, you realize that your surroundings have changed.\" CR>"
+ },
+ {
+  "key": "gea13",
+  "en": "You notice that the golden machine has disappeared!\n",
+  "args": [],
+  "routine": "TGOTO",
+  "zil": "<TELL \"You notice that the golden machine has disappeared!\" CR>"
+ },
+ {
+  "key": "gea65",
+  "en": "You notice that everything in the machine is gone",
+  "args": [],
+  "routine": "MOVE-TM-OBJECTS",
+  "zil": "<TELL \"You notice that everything in the machine is gone\">"
+ },
+ {
+  "key": "geaa9",
+  "en": ": come to mention it, everything you were holding has vanished too",
+  "args": [],
+  "routine": "MOVE-TM-OBJECTS",
+  "zil": "<TELL \": come to mention it, everything you were holding has vanished too\">"
+ },
+ {
+  "key": "gead7",
+  "en": "You notice that everything you were holding is gone",
+  "args": [],
+  "routine": "MOVE-TM-OBJECTS",
+  "zil": "<TELL \"You notice that everything you were holding is gone\">"
+ },
+ {
+  "key": "geb0a",
+  "en": "!\n",
+  "args": [],
+  "routine": "MOVE-TM-OBJECTS",
+  "zil": "<TELL \"!\" CR>"
+ },
+ {
+  "key": "geb2d",
+  "en": "{0}\n\n****  You have died  ****\n\n",
+  "args": [
+   "s"
+  ],
+  "routine": "REALLY-DEAD",
+  "zil": "<TELL .STR \"\\n \\n ****  You have died  ****\\n \\n \">"
+ },
+ {
+  "key": "geb5e",
+  "en": "One particularly loud and grating voice can be heard above the others outside the room. \"Very nice! Very nice! Not enough security, but very nice! Now, Lord Feepness, pay attention! I've been thinking that what we need is a dam, a tremendous dam to control the Frigid River, with thousands of gates. We shall call it ... Flood Control Dam #2. No, not quite right. Aha! Flood Control Dam #3.\" \"Pardon me, my Lord, but wouldn't that be just a tad excessive?\" \"Nonsense! Now, let me tell you my idea for hollowing out volcanoes...\" With that, the voices trail out nothingness.\n",
+  "args": [],
+  "routine": "HEAR-FLATHEAD",
+  "zil": "<TELL \"One particularly loud and grating voice can be heard above the others outside the room. \\\"Very nice! Very nice! Not enough security, but very nice! Now, Lord Feepness, pay attention! I've been thinking that what we need is a dam, a tremendous dam to control the Frigid River, with thousands of gates. We shall call it ... Flood Control Dam #2. No, not quite right. Aha! Flood Control Dam #3.\\\" \\\"Pardon me, my Lord, but wouldn't that be just a tad excessive?\\\" \\\"Nonsense! Now, let me tell you my idea for hollowing out volcanoes...\\\" With that, the voices trail out nothingness.\" CR>"
+ },
+ {
+  "key": "gece9",
+  "en": "You are in a high-ceilinged chamber, in the center of which is a pedestal which ",
+  "args": [],
+  "routine": "OLD-TECH-MUSEUM-F",
+  "zil": "<TELL \"You are in a high-ceilinged chamber, in the center of which is a pedestal which \">"
+ },
+ {
+  "key": "ged18",
+  "en": "is the intended home of the Crown Jewels of the Great Underground Empire: a jewelled knife, a golden ring, and the royal sceptre.",
+  "args": [],
+  "routine": "OLD-TECH-MUSEUM-F",
+  "zil": "<TELL \"is the intended home of the Crown Jewels of the Great Underground Empire: a jewelled knife, a golden ring, and the royal sceptre.\">"
+ },
+ {
+  "key": "ged6d",
+  "en": " Not all of the jewels are in place, however.",
+  "args": [],
+  "routine": "OLD-TECH-MUSEUM-F",
+  "zil": "<TELL \" Not all of the jewels are in place, however.\">"
+ },
+ {
+  "key": "ged8d",
+  "en": "is bare.",
+  "args": [],
+  "routine": "OLD-TECH-MUSEUM-F",
+  "zil": "<TELL \"is bare.\">"
+ },
+ {
+  "key": "ged94",
+  "en": " The room is, by appearances, unfinished.\n",
+  "args": [],
+  "routine": "OLD-TECH-MUSEUM-F",
+  "zil": "<TELL \" The room is, by appearances, unfinished.\" CR>"
+ },
+ {
+  "key": "gedc0",
+  "en": "You are in a large, unfinished room, probably intended to be a part of the Royal Museum.\n",
+  "args": [],
+  "routine": "OLD-TECH-MUSEUM-F",
+  "zil": "<TELL \"You are in a large, unfinished room, probably intended to be a part of the Royal Museum.\" CR>"
+ },
+ {
+  "key": "gedf9",
+  "en": "This appears to be an unfinished entranceway to the Royal Museum. There are doors to the east and north, and a blind stairway to the south. A heavy iron door to the west is closed and locked.\n",
+  "args": [],
+  "routine": "OLD-TECH-MUSEUM-F",
+  "zil": "<TELL \"This appears to be an unfinished entranceway to the Royal Museum. There are doors to the east and north, and a blind stairway to the south. A heavy iron door to the west is closed and locked.\" CR>"
+ },
+ {
+  "key": "geea8",
+  "en": "You open the door ever so slightly and see dozens of armed officials. You shut the door quickly, realizing that you would be killed in an instant if you left the room.\n",
+  "args": [],
+  "routine": "OLD-TECH-MUSEUM-F",
+  "zil": "<TELL \"You open the door ever so slightly and see dozens of armed officials. You shut the door quickly, realizing that you would be killed in an instant if you left the room.\" CR>"
+ },
+ {
+  "key": "gef1c",
+  "en": "You hear, from outside the door, guards marching away, their voices fading. After a few moments, a booming crash signals the close of what must be a tremendous door. Then there is silence.\n",
+  "args": [],
+  "routine": "I-GUARDS-LEAVE",
+  "zil": "<TELL \"You hear, from outside the door, guards marching away, their voices fading. After a few moments, a booming crash signals the close of what must be a tremendous door. Then there is silence.\" CR>"
+ },
+ {
+  "key": "gefa3",
+  "en": "It moved quickly and left the door closed.\n",
+  "args": [],
+  "routine": "ROBOT-F",
+  "zil": "<TELL \"It moved quickly and left the door closed.\" CR>"
+ }
+]

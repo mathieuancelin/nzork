@@ -67,7 +67,7 @@ export const GAMES: Record<GameId, GameInfo> = {
     year: 1982,
     maxScore: 7,
     sources: 'https://github.com/historicalsource/zork3',
-    french: false,
+    french: true,
   },
 }
 

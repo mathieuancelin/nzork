@@ -12,6 +12,7 @@ const STORIES: Record<GameId, string> = { zork1: zork1Story, zork2: zork2Story, 
 const CATALOGS: Partial<Record<GameId, () => Promise<{ default: unknown }>>> = {
   zork1: () => import('../engine/i18n/fr/zork1/catalog.json'),
   zork2: () => import('../engine/i18n/fr/zork2/catalog.json'),
+  zork3: () => import('../engine/i18n/fr/zork3/catalog.json'),
 }
 
 export interface GameData {

@@ -1,0 +1,2708 @@
+{
+  "o1": {
+    "nom": "Maître du donjon",
+    "g": "m",
+    "mots": {
+      "maître": "MASTER",
+      "maîtres": "MASTER",
+      "maître du donjon": "MASTER",
+      "maître de donjon": "MASTER",
+      "homme": "MAN",
+      "vieillard": "MAN"
+    },
+    "adjectifs": {
+      "donjon": "DUNGEON",
+      "du donjon": "DUNGEON"
+    }
+  },
+  "o2": {
+    "nom": "perche courte",
+    "g": "f",
+    "mots": {
+      "perche": "POLE",
+      "perches": "POLE",
+      "mât": "POLE",
+      "poteau": "POST",
+      "poteaux": "POST",
+      "piquet": "POST",
+      "poignée": "HANDGRIP",
+      "poignées": "HANDGRIP",
+      "prise": "GRIP"
+    },
+    "adjectifs": {
+      "courte": "SHORT",
+      "court": "SHORT",
+      "petite": "SMALL",
+      "petit": "SMALL"
+    }
+  },
+  "o3": {
+    "nom": "indicateur",
+    "g": "m",
+    "mots": {
+      "indicateur": "INDICATOR",
+      "indicateurs": "INDICATOR",
+      "afficheur": "INDICATOR",
+      "cadran": "DIAL",
+      "cadrans": "DIAL"
+    },
+    "adjectifs": {}
+  },
+  "o4": {
+    "nom": "fosse enflammée",
+    "g": "f",
+    "mots": {
+      "fosse": "PIT",
+      "fosses": "PIT",
+      "fournaise": "PIT",
+      "brasier": "PIT",
+      "abîme": "ABYSS",
+      "abîmes": "ABYSS"
+    },
+    "adjectifs": {
+      "enflammée": "FLAMING",
+      "enflammé": "FLAMING",
+      "en flammes": "FLAMING",
+      "flamboyante": "FLAMING",
+      "flamboyant": "FLAMING",
+      "ardente": "FIERY",
+      "ardent": "FIERY",
+      "embrasée": "FIERY",
+      "embrasé": "FIERY",
+      "de feu": "FIERY"
+    }
+  },
+  "o5": {
+    "nom": "Musée de la technologie",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o6": {
+    "nom": "Salle du rayon",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o7": {
+    "nom": "eau",
+    "g": "f",
+    "mots": {
+      "eau": "WATER",
+      "eaux": "WATER",
+      "quantité": "QUANTITY",
+      "quantite": "QUANTITY"
+    },
+    "adjectifs": {}
+  },
+  "o8": {
+    "nom": "Salle étroite",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o9": {
+    "nom": "mains",
+    "g": "f",
+    "n": "p",
+    "mots": {
+      "mains": "HANDS",
+      "main": "HAND",
+      "paire": "PAIR"
+    },
+    "adjectifs": {
+      "nues": "BARE",
+      "nue": "BARE",
+      "nus": "BARE",
+      "nu": "BARE"
+    }
+  },
+  "o10": {
+    "nom": "cage d'acier",
+    "g": "f",
+    "mots": {
+      "cage": "CAGE",
+      "cages": "CAGE",
+      "cage d'acier": "CAGE"
+    },
+    "adjectifs": {
+      "acier": "STEEL",
+      "d'acier": "STEEL",
+      "en acier": "STEEL"
+    }
+  },
+  "o11": {
+    "nom": "Maître du donjon",
+    "g": "m",
+    "mots": {
+      "maître": "MASTER",
+      "maîtres": "MASTER",
+      "maître du donjon": "MASTER",
+      "maître de donjon": "MASTER",
+      "homme": "MAN",
+      "vieillard": "MAN"
+    },
+    "adjectifs": {
+      "donjon": "DUNGEON",
+      "du donjon": "DUNGEON"
+    }
+  },
+  "o12": {
+    "nom": "Sous l'eau",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o13": {
+    "nom": "clé étrange",
+    "g": "f",
+    "mots": {
+      "clé": "KEY",
+      "clés": "KEY",
+      "clef": "KEY",
+      "clefs": "KEY"
+    },
+    "adjectifs": {
+      "étrange": "STRANGE",
+      "bizarre": "STRANGE",
+      "rouillée": "RUSTY",
+      "rouillé": "RUSTY",
+      "longue": "LONG",
+      "long": "LONG",
+      "courte": "SHORT",
+      "court": "SHORT",
+      "lourde": "HEAVY",
+      "lourd": "HEAVY",
+      "mince": "THIN",
+      "fine": "THIN",
+      "fin": "THIN",
+      "tranchante": "SHARP",
+      "tranchant": "SHARP",
+      "acérée": "SHARP",
+      "acéré": "SHARP",
+      "aiguisée": "SHARP",
+      "pointue": "POINTED",
+      "pointu": "POINTED"
+    }
+  },
+  "o14": {
+    "nom": "éboulis",
+    "g": "m",
+    "mots": {
+      "éboulis": "RUBBLE",
+      "décombres": "RUBBLE",
+      "gravats": "RUBBLE",
+      "gravas": "RUBBLE",
+      "rocher": "ROCK",
+      "roche": "ROCK",
+      "rochers": "ROCKS",
+      "roches": "ROCKS",
+      "pierres": "ROCKS",
+      "cailloux": "ROCKS",
+      "caillou": "ROCK",
+      "bloc": "BOULDER",
+      "blocs": "BOULDER"
+    },
+    "adjectifs": {}
+  },
+  "o15": {
+    "nom": "Salle des poutres",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o16": {
+    "nom": "Salle des joyaux",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o17": {
+    "nom": "table de visionnage",
+    "g": "f",
+    "mots": {
+      "table": "TABLE",
+      "tables": "TABLE",
+      "table de visionnage": "TABLE",
+      "surface": "SURFACE"
+    },
+    "adjectifs": {
+      "visionnage": "VIEWING",
+      "de visionnage": "VIEWING"
+    }
+  },
+  "o18": {
+    "nom": "torche",
+    "g": "f",
+    "mots": {
+      "torche": "TORCH",
+      "torches": "TORCH",
+      "flambeau": "TORCH"
+    },
+    "adjectifs": {}
+  },
+  "o19": {
+    "nom": "Couloir nord",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o20": {
+    "nom": "Haut de l'échelle",
+    "g": "m",
+    "elision": false,
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o21": {
+    "nom": "voix",
+    "g": "f",
+    "n": "p",
+    "mots": {
+      "voix": "VOICES",
+      "gardes": "GUARDS",
+      "soldats": "GUARDS",
+      "officiels": "OFFICI",
+      "fonctionnaires": "OFFICI",
+      "dignitaires": "OFFICI"
+    },
+    "adjectifs": {
+      "armés": "ARMED",
+      "armé": "ARMED",
+      "armées": "ARMED",
+      "armée": "ARMED"
+    }
+  },
+  "o22": {
+    "nom": "fiole",
+    "g": "f",
+    "mots": {
+      "fiole": "VIAL",
+      "fioles": "VIAL",
+      "flacon": "VIAL",
+      "flacons": "VIAL",
+      "odeur": "ODOR",
+      "odeurs": "ODOR",
+      "parfum": "ODOR",
+      "cadeau": "GIFT",
+      "cadeaux": "GIFT"
+    },
+    "adjectifs": {}
+  },
+  "o23": {
+    "nom": "Pays de l'Ombre",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o24": {
+    "nom": "vous",
+    "g": "m",
+    "article": false,
+    "mots": {
+      "moi": "ME",
+      "moi-même": "MYSELF",
+      "moi-meme": "MYSELF",
+      "moi même": "MYSELF",
+      "moi meme": "MYSELF",
+      "soi-même": "SELF",
+      "soi-meme": "SELF",
+      "soi même": "SELF",
+      "soi meme": "SELF",
+      "crétin": "CRETIN",
+      "cretin": "CRETIN",
+      "crétine": "CRETIN",
+      "cretine": "CRETIN"
+    },
+    "adjectifs": {}
+  },
+  "o25": {
+    "nom": "siège",
+    "g": "m",
+    "mots": {
+      "creux": "AREA",
+      "cavité": "AREA",
+      "cavités": "AREA",
+      "espace": "AREA",
+      "renfoncement": "AREA",
+      "logement": "AREA",
+      "cachette": "AREA",
+      "zone": "AREA",
+      "petit creux": "AREA"
+    },
+    "adjectifs": {
+      "petit": "SMALL",
+      "petite": "SMALL",
+      "creux": "HOLLOW",
+      "creuse": "HOLLOW",
+      "évidé": "HOLLOW",
+      "évidée": "HOLLOW"
+    }
+  },
+  "o26": {
+    "nom": "tas d'objets précieux de toutes sortes",
+    "g": "m",
+    "mots": {
+      "tas": "PILE",
+      "tas d'objets précieux": "VALUABLES",
+      "tas d'objets de valeur": "VALUABLES",
+      "objets précieux": "VALUABLES",
+      "objets de valeur": "VALUABLES",
+      "trésor": "TREASURE",
+      "trésors": "TREASURE",
+      "richesses": "TREASURE",
+      "butin": "TREASURE"
+    },
+    "adjectifs": {
+      "de toutes sortes": "ASSORTED",
+      "assortis": "ASSORTED",
+      "divers": "ASSORTED",
+      "variés": "ASSORTED"
+    }
+  },
+  "o27": {
+    "nom": "rayon de lumière rouge",
+    "g": "m",
+    "mots": {
+      "rayon": "BEAM",
+      "rayons": "BEAM",
+      "rayon de lumière": "BEAM",
+      "faisceau": "BEAM",
+      "faisceau de lumière": "BEAM",
+      "lumière": "LIGHT"
+    },
+    "adjectifs": {
+      "rouge": "RED",
+      "rouges": "RED"
+    }
+  },
+  "o28": {
+    "nom": "Entrée du musée",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o29": {
+    "nom": "panneau",
+    "g": "m",
+    "mots": {
+      "panneau": "PANEL",
+      "panneaux": "PANEL"
+    },
+    "adjectifs": {}
+  },
+  "o30": {
+    "nom": "Pays de l'Ombre",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o31": {
+    "nom": "corniche",
+    "g": "f",
+    "mots": {
+      "corniche": "LEDGE",
+      "corniches": "LEDGE",
+      "rebord": "LEDGE",
+      "saillie": "LEDGE"
+    },
+    "adjectifs": {
+      "large": "WIDE",
+      "larges": "WIDE"
+    }
+  },
+  "o32": {
+    "nom": "runes",
+    "g": "f",
+    "n": "p",
+    "mots": {
+      "runes": "RUNES",
+      "rune": "RUNES",
+      "gravures": "ENGRAV",
+      "gravure": "ENGRAV",
+      "texte": "TEXT",
+      "inscriptions": "TEXT",
+      "inscription": "TEXT",
+      "mur": "WALL",
+      "paroi": "WALL"
+    },
+    "adjectifs": {
+      "gravées": "CARVED",
+      "gravée": "CARVED",
+      "gravés": "CARVED",
+      "gravé": "CARVED",
+      "sculptées": "CARVED",
+      "sculpté": "CARVED"
+    }
+  },
+  "o33": {
+    "nom": "direction",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o34": {
+    "nom": "",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o35": {
+    "nom": "crétin",
+    "g": "m",
+    "mots": {
+      "aventurier": "ADVENTURER",
+      "aventurière": "ADVENTURER",
+      "aventuriere": "ADVENTURER"
+    },
+    "adjectifs": {}
+  },
+  "o36": {
+    "nom": "Parapet",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o37": {
+    "nom": "panneau d'acajou",
+    "g": "m",
+    "mots": {
+      "panneau": "PANEL",
+      "panneaux": "PANEL",
+      "panneau d'acajou": "PANEL",
+      "mur": "WALL",
+      "paroi": "WALL"
+    },
+    "adjectifs": {
+      "acajou": "MAHOGANY",
+      "d'acajou": "MAHOGANY",
+      "en acajou": "MAHOGANY"
+    }
+  },
+  "o38": {
+    "nom": "Sceau royal de Dimwit Flathead",
+    "g": "m",
+    "mots": {
+      "sceau": "SEAL",
+      "sceaux": "SEAL",
+      "sceau de flathead": "SEAL",
+      "sceau de dimwit flathead": "SEAL",
+      "sceau royal de flathead": "SEAL",
+      "sceau royal de dimwit flathead": "SEAL",
+      "sceau de lord dimwit flathead": "SEAL",
+      "sceau royal de lord dimwit flathead": "SEAL",
+      "sculpture": "CARVIN",
+      "bas-relief": "CARVIN",
+      "représentation": "RENDER",
+      "reproduction": "RENDER",
+      "effigie": "RENDER",
+      "grand sceau": "SEAL",
+      "grand sceau royal": "SEAL",
+      "représentation du sceau": "RENDER",
+      "représentation du sceau royal": "RENDER"
+    },
+    "adjectifs": {
+      "royal": "ROYAL",
+      "royale": "ROYAL",
+      "grand": "LARGE",
+      "grande": "LARGE",
+      "immense": "LARGE"
+    }
+  },
+  "o39": {
+    "nom": "Salle de la clé",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o40": {
+    "nom": "Étroit goulet",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o41": {
+    "nom": "",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o42": {
+    "nom": "mur est",
+    "g": "m",
+    "mots": {
+      "mur": "WALL",
+      "murs": "WALL",
+      "paroi": "WALL"
+    },
+    "adjectifs": {
+      "est": "EAST",
+      "oriental": "EASTERN",
+      "orientale": "EASTERN"
+    }
+  },
+  "o43": {
+    "nom": "Couloir est",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o44": {
+    "nom": "Grand couloir",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o45": {
+    "nom": "Cellule",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o46": {
+    "nom": "Trésor de Zork",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o47": {
+    "nom": "corde",
+    "g": "f",
+    "mots": {
+      "corde": "ROPE",
+      "cordes": "ROPE",
+      "cordage": "ROPE"
+    },
+    "adjectifs": {}
+  },
+  "o48": {
+    "nom": "Salle étroite",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o49": {
+    "nom": "",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o50": {
+    "nom": "formation rocheuse",
+    "g": "f",
+    "mots": {
+      "cristal": "CRYSTAL",
+      "cristaux": "CRYSTAL",
+      "formation": "CRYSTAL",
+      "formations": "CRYSTAL",
+      "formation rocheuse": "CRYSTAL",
+      "formations rocheuses": "CRYSTAL",
+      "stalagmite": "STALAG",
+      "stalagmites": "STALAG",
+      "stalactite": "STALAG",
+      "stalactites": "STALAG"
+    },
+    "adjectifs": {}
+  },
+  "o51": {
+    "nom": "Salle étroite",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o52": {
+    "nom": "panneau blanc",
+    "g": "m",
+    "mots": {
+      "panneau": "PANEL",
+      "panneaux": "PANEL",
+      "mur": "WALL",
+      "paroi": "WALL"
+    },
+    "adjectifs": {
+      "blanc": "WHITE",
+      "blanche": "WHITE"
+    }
+  },
+  "o53": {
+    "nom": "objet quelconque",
+    "g": "m",
+    "mots": {
+      "ça": "IT",
+      "ca": "IT",
+      "cela": "IT",
+      "eux": "THEM",
+      "elles": "THEM",
+      "elle": "HER",
+      "lui": "HIM"
+    },
+    "adjectifs": {}
+  },
+  "o54": {
+    "nom": "Grand couloir",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o55": {
+    "nom": "Boyau sinistre",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o56": {
+    "nom": "passage",
+    "g": "m",
+    "mots": {
+      "sentier": "TRAIL",
+      "piste": "TRAIL",
+      "chemin": "PATH",
+      "passage": "PATH"
+    },
+    "adjectifs": {
+      "forestier": "FOREST",
+      "forêt": "FOREST",
+      "foret": "FOREST",
+      "étroit": "NARROW",
+      "etroit": "NARROW",
+      "étroite": "NARROW",
+      "etroite": "NARROW",
+      "long": "LONG",
+      "longue": "LONG",
+      "sinueux": "WINDING",
+      "sinueuse": "WINDING"
+    }
+  },
+  "o57": {
+    "nom": "Bas de l'échelle",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o58": {
+    "nom": "Salle étroite",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o59": {
+    "nom": "cape",
+    "g": "f",
+    "mots": {
+      "cape": "CLOAK",
+      "capes": "CLOAK",
+      "manteau": "CLOAK",
+      "pèlerine": "CLOAK"
+    },
+    "adjectifs": {}
+  },
+  "o60": {
+    "nom": "gros bouton",
+    "g": "m",
+    "mots": {
+      "bouton": "BUTTON",
+      "boutons": "BUTTON",
+      "gros bouton": "BUTTON",
+      "grand bouton": "BUTTON"
+    },
+    "adjectifs": {
+      "gros": "LARGE",
+      "grosse": "LARGE",
+      "grand": "LARGE"
+    }
+  },
+  "o61": {
+    "nom": "piédestal",
+    "g": "m",
+    "mots": {
+      "piédestal": "PEDESTAL",
+      "piedestal": "PEDESTAL",
+      "socle": "PEDESTAL"
+    },
+    "adjectifs": {}
+  },
+  "o62": {
+    "nom": "panneau de pin",
+    "g": "m",
+    "mots": {
+      "panneau": "PANEL",
+      "panneaux": "PANEL",
+      "panneau de pin": "PANEL",
+      "mur": "WALL",
+      "paroi": "WALL"
+    },
+    "adjectifs": {
+      "pin": "PINE",
+      "de pin": "PINE",
+      "en pin": "PINE"
+    }
+  },
+  "o63": {
+    "nom": "Pays de l'Ombre",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o64": {
+    "nom": "Salle brumeuse",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o65": {
+    "nom": "coffre",
+    "g": "m",
+    "mots": {
+      "coffre": "CHEST",
+      "coffres": "CHEST",
+      "malle": "CHEST",
+      "caisse": "CHEST"
+    },
+    "adjectifs": {
+      "verrouillé": "LOCKED",
+      "fermé à clé": "LOCKED",
+      "cadenassé": "LOCKED"
+    }
+  },
+  "o66": {
+    "nom": "Musée de la technologie",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o67": {
+    "nom": "roseaux",
+    "g": "m",
+    "n": "p",
+    "mots": {
+      "roseaux": "REEDS",
+      "roseau": "REEDS",
+      "joncs": "REEDS",
+      "jonc": "REEDS"
+    },
+    "adjectifs": {
+      "maladifs": "SICKLY",
+      "maladif": "SICKLY",
+      "chétifs": "SICKLY",
+      "chétif": "SICKLY",
+      "malingres": "SICKLY",
+      "rabougris": "SICKLY",
+      "étiolés": "SICKLY"
+    }
+  },
+  "o68": {
+    "nom": "échelle en bois",
+    "g": "f",
+    "mots": {
+      "échelle": "LADDER",
+      "echelle": "LADDER",
+      "échelles": "LADDER",
+      "echelles": "LADDER"
+    },
+    "adjectifs": {
+      "bois": "WOODEN",
+      "branlante": "RICKETY",
+      "branlant": "RICKETY",
+      "bancale": "RICKETY",
+      "bancal": "RICKETY",
+      "étroite": "NARROW",
+      "etroite": "NARROW",
+      "étroit": "NARROW",
+      "etroit": "NARROW"
+    }
+  },
+  "o69": {
+    "nom": "Pays de l'Ombre",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o70": {
+    "nom": "Salle de la machine",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o71": {
+    "nom": "rigole",
+    "g": "f",
+    "mots": {
+      "rigole": "CHANNEL",
+      "rigoles": "CHANNEL",
+      "rigole d'eau": "CHANNEL",
+      "canal": "CHANNEL",
+      "chenal": "CHANNEL"
+    },
+    "adjectifs": {
+      "d'eau": "WATER"
+    }
+  },
+  "o72": {
+    "nom": "porte de la cellule",
+    "g": "f",
+    "mots": {
+      "porte": "DOOR",
+      "portes": "DOOR",
+      "porte de la cellule": "DOOR",
+      "porte de cellule": "DOOR"
+    },
+    "adjectifs": {
+      "bois": "WOODEN",
+      "en bois": "WOODEN",
+      "de bois": "WOODEN",
+      "cellule": "CELL",
+      "de la cellule": "CELL"
+    }
+  },
+  "o73": {
+    "nom": "Pied de la falaise",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o74": {
+    "nom": "mur sud",
+    "g": "m",
+    "mots": {
+      "mur": "WALL",
+      "murs": "WALL",
+      "paroi": "WALL"
+    },
+    "adjectifs": {
+      "sud": "SOUTH",
+      "méridional": "SOUTHE",
+      "méridionale": "SOUTHE"
+    }
+  },
+  "o75": {
+    "nom": "Vue sur l'aqueduc",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o76": {
+    "nom": "cadran",
+    "g": "m",
+    "mots": {
+      "cadran": "DIAL",
+      "cadrans": "DIAL",
+      "console": "CONSOLE",
+      "pupitre": "CONSOLE",
+      "écran": "DISPLAY",
+      "affichage": "DISPLAY"
+    },
+    "adjectifs": {}
+  },
+  "o77": {
+    "nom": "livre très ancien",
+    "g": "m",
+    "mots": {
+      "livre": "BOOK",
+      "livres": "BOOK",
+      "grimoire": "BOOK",
+      "ouvrage": "BOOK",
+      "livre du savoir": "BOOK",
+      "savoir": "LORE",
+      "texte": "TEXT",
+      "vieux livre": "BOOK"
+    },
+    "adjectifs": {
+      "très ancien": "OLD",
+      "très vieux": "OLD",
+      "ancien": "OLD",
+      "vieux": "OLD",
+      "vieil": "OLD",
+      "étrange": "STRANGE",
+      "savoir": "LORE",
+      "du savoir": "LORE"
+    }
+  },
+  "o78": {
+    "nom": "Lacet en épingle",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o79": {
+    "nom": "robot",
+    "g": "m",
+    "mots": {
+      "robot": "ROBOT",
+      "robots": "ROBOT",
+      "automate": "ROBOT",
+      "appareil": "DEVICE",
+      "dispositif": "DEVICE",
+      "engin": "DEVICE"
+    },
+    "adjectifs": {}
+  },
+  "o80": {
+    "nom": "mur en bois",
+    "g": "m",
+    "mots": {
+      "mur": "WALL",
+      "murs": "WALL",
+      "paroi": "WALL"
+    },
+    "adjectifs": {
+      "bois": "WOODEN",
+      "en bois": "WOODEN",
+      "de bois": "WOODEN"
+    }
+  },
+  "o81": {
+    "nom": "Grotte de cristal",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o82": {
+    "nom": "porte en bois",
+    "g": "f",
+    "mots": {
+      "porte": "DOOR",
+      "portes": "DOOR"
+    },
+    "adjectifs": {
+      "bois": "WOODEN",
+      "en bois": "WOODEN",
+      "de bois": "WOODEN"
+    }
+  },
+  "o83": {
+    "nom": "bâton brisé",
+    "g": "m",
+    "mots": {
+      "bâton": "STAFF",
+      "bâtons": "STAFF",
+      "canne": "STAFF"
+    },
+    "adjectifs": {
+      "brisé": "BROKEN",
+      "brisée": "BROKEN",
+      "cassé": "BROKEN",
+      "cassée": "BROKEN"
+    }
+  },
+  "o84": {
+    "nom": "Entrée du Casse-tête royal",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o85": {
+    "nom": "échelle",
+    "g": "f",
+    "mots": {
+      "échelle": "LADDER",
+      "échelles": "LADDER"
+    },
+    "adjectifs": {}
+  },
+  "o86": {
+    "nom": "Cul-de-sac",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o87": {
+    "nom": "panneau noir",
+    "g": "m",
+    "mots": {
+      "panneau": "PANEL",
+      "panneaux": "PANEL",
+      "mur": "WALL",
+      "paroi": "WALL"
+    },
+    "adjectifs": {
+      "noir": "BLACK",
+      "noire": "BLACK"
+    }
+  },
+  "o88": {
+    "nom": "cadran solaire",
+    "g": "m",
+    "mots": {
+      "cadran": "DIAL",
+      "cadrans": "DIAL",
+      "cadran solaire": "SUNDIAL",
+      "indicateur": "INDICATOR",
+      "aiguille": "ARROW",
+      "flèche": "ARROW"
+    },
+    "adjectifs": {
+      "solaire": "SUN",
+      "indicatrice": "INDICATOR",
+      "indicateur": "INDICATOR"
+    }
+  },
+  "o89": {
+    "nom": "faille",
+    "g": "f",
+    "mots": {
+      "faille": "CLEFT",
+      "failles": "CLEFT",
+      "fissure": "CLEFT",
+      "fissures": "CLEFT",
+      "crevasse": "CLEFT",
+      "brèche": "CLEFT"
+    },
+    "adjectifs": {}
+  },
+  "o90": {
+    "nom": "amulette en or",
+    "g": "f",
+    "mots": {
+      "amulette": "AMULET",
+      "amulettes": "AMULET",
+      "médaillon": "AMULET",
+      "pendentif": "AMULET",
+      "objet": "OBJECT",
+      "amulette en or": "AMULET",
+      "amulette d'or": "AMULET"
+    },
+    "adjectifs": {
+      "or": "GOLDEN",
+      "en or": "GOLDEN",
+      "d'or": "GOLDEN",
+      "dorée": "GOLDEN",
+      "doré": "GOLDEN",
+      "brillante": "SHINY",
+      "brillant": "SHINY",
+      "luisante": "SHINY",
+      "luisant": "SHINY",
+      "étincelante": "SHINY",
+      "étincelant": "SHINY"
+    }
+  },
+  "o91": {
+    "nom": "gouffre",
+    "g": "m",
+    "mots": {
+      "gouffre": "CHASM",
+      "gouffres": "CHASM",
+      "précipice": "CHASM",
+      "ravin": "RAVINE",
+      "ravins": "RAVINE",
+      "gorge": "GORGE",
+      "gorges": "GORGE"
+    },
+    "adjectifs": {
+      "rocheux": "ROCKY",
+      "rocheuse": "ROCKY",
+      "profond": "DEEP",
+      "profonde": "DEEP"
+    }
+  },
+  "o92": {
+    "nom": "machine grise",
+    "g": "f",
+    "mots": {
+      "machine": "MACHINE",
+      "machines": "MACHINE",
+      "machine à laver": "MACHINE",
+      "lave-linge": "MACHINE",
+      "séchoir": "DRYER",
+      "sèche-linge": "DRYER",
+      "pressuriseur": "PRESSURIZER"
+    },
+    "adjectifs": {
+      "grise": "GREY",
+      "gris": "GREY",
+      "à laver": "WASHING",
+      "laver": "WASHING"
+    }
+  },
+  "o93": {
+    "nom": "Passage humide",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o94": {
+    "nom": "poisson",
+    "g": "m",
+    "mots": {
+      "poisson": "FISH",
+      "poissons": "FISH"
+    },
+    "adjectifs": {}
+  },
+  "o95": {
+    "nom": "arbre",
+    "g": "m",
+    "mots": {
+      "arbre": "TREE"
+    },
+    "adjectifs": {
+      "grand": "LARGE",
+      "gros": "LARGE"
+    }
+  },
+  "o96": {
+    "nom": "rose des vents",
+    "g": "f",
+    "mots": {
+      "rose": "ROSE",
+      "roses": "ROSE",
+      "rose des vents": "ROSE"
+    },
+    "adjectifs": {
+      "vents": "COMPASS",
+      "des vents": "COMPASS"
+    }
+  },
+  "o97": {
+    "nom": "vieil homme",
+    "g": "m",
+    "mots": {
+      "homme": "MAN",
+      "hommes": "MAN",
+      "vieillard": "MAN",
+      "bonhomme": "MAN",
+      "vieil homme": "MAN",
+      "vieux monsieur": "MAN"
+    },
+    "adjectifs": {
+      "vieil": "OLD",
+      "vieux": "OLD",
+      "âgé": "OLD"
+    }
+  },
+  "o98": {
+    "nom": "Salle du bouton",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o99": {
+    "nom": "morceau de pain de route",
+    "g": "m",
+    "mots": {
+      "pain": "BREAD",
+      "pains": "BREAD",
+      "pain de route": "BREAD",
+      "morceau de pain": "BREAD",
+      "morceau de pain de route": "BREAD",
+      "lembas": "WAYBREAD",
+      "morceau": "PIECE",
+      "bout": "PIECE"
+    },
+    "adjectifs": {
+      "route": "WAY",
+      "de route": "WAY",
+      "frais": "FRESH"
+    }
+  },
+  "o100": {
+    "nom": "Salle étroite",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o101": {
+    "nom": "zorkmid",
+    "g": "m",
+    "mots": {
+      "zorkmid": "ZORKMID",
+      "zorkmids": "ZORKMID"
+    },
+    "adjectifs": {}
+  },
+  "o102": {
+    "nom": "Rive du lac",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o103": {
+    "nom": "Salle des joyaux",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o104": {
+    "nom": "mur ouest",
+    "g": "m",
+    "mots": {
+      "mur": "WALL",
+      "murs": "WALL",
+      "paroi": "WALL"
+    },
+    "adjectifs": {
+      "ouest": "WEST",
+      "occidental": "WESTERN",
+      "occidentale": "WESTERN"
+    }
+  },
+  "o105": {
+    "nom": "Entrée du donjon",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o106": {
+    "nom": "miroir",
+    "g": "m",
+    "mots": {
+      "miroir": "MIRROR",
+      "miroirs": "MIRROR",
+      "glace": "MIRROR",
+      "structure": "STRUCTURE"
+    },
+    "adjectifs": {}
+  },
+  "o107": {
+    "nom": "rigole de pierre",
+    "g": "f",
+    "mots": {
+      "rigole": "CHANNEL",
+      "rigoles": "CHANNEL",
+      "rigole de pierre": "CHANNEL",
+      "rainure": "CHANNEL",
+      "canal": "CHANNEL",
+      "trou": "HOLE"
+    },
+    "adjectifs": {
+      "pierre": "STONE",
+      "de pierre": "STONE",
+      "en pierre": "STONE"
+    }
+  },
+  "o108": {
+    "nom": "marin",
+    "g": "m",
+    "mots": {
+      "marin": "SAILOR",
+      "matelot": "SAILOR",
+      "détrousseur": "FOOTPAD",
+      "detrousseur": "FOOTPAD",
+      "aviateur": "AVIATOR"
+    },
+    "adjectifs": {}
+  },
+  "o109": {
+    "nom": "Falaise",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o110": {
+    "nom": "silhouette encapuchonnée",
+    "g": "f",
+    "mots": {
+      "silhouette": "FIGURE",
+      "silhouettes": "FIGURE",
+      "personnage": "FIGURE",
+      "forme": "FIGURE",
+      "ombre": "SHADOW",
+      "ombres": "SHADOW",
+      "homme": "MAN",
+      "femme": "WOMAN"
+    },
+    "adjectifs": {
+      "encapuchonnée": "HOODED",
+      "encapuchonné": "HOODED",
+      "à capuchon": "HOODED",
+      "à capuche": "HOODED",
+      "drapée": "CLOAKED",
+      "drapé": "CLOAKED",
+      "en cape": "CLOAKED"
+    }
+  },
+  "o111": {
+    "nom": "anneau d'or",
+    "g": "m",
+    "mots": {
+      "anneau": "RING",
+      "anneaux": "RING",
+      "bague": "RING",
+      "bagues": "RING",
+      "joyaux": "JEWELS",
+      "bijoux": "JEWELS",
+      "joyaux de la couronne": "JEWELS",
+      "anneau d'or": "RING",
+      "anneau en or": "RING",
+      "bague d'or": "RING",
+      "bague en or": "RING"
+    },
+    "adjectifs": {
+      "or": "GOLDEN",
+      "d'or": "GOLDEN",
+      "en or": "GOLDEN",
+      "doré": "GOLDEN",
+      "couronne": "CROWN",
+      "de la couronne": "CROWN"
+    }
+  },
+  "o112": {
+    "nom": "Étendue désolée",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o113": {
+    "nom": "Grand couloir",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o114": {
+    "nom": "sable",
+    "g": "m",
+    "mots": {
+      "sable": "SAND"
+    },
+    "adjectifs": {}
+  },
+  "o115": {
+    "nom": "mur sud",
+    "g": "m",
+    "mots": {
+      "mur": "WALL",
+      "murs": "WALL",
+      "paroi": "WALL"
+    },
+    "adjectifs": {
+      "sud": "SOUTH"
+    }
+  },
+  "o116": {
+    "nom": "Salle royale",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o117": {
+    "nom": "porte d'acier",
+    "g": "f",
+    "mots": {
+      "porte": "DOOR",
+      "portes": "DOOR"
+    },
+    "adjectifs": {
+      "acier": "STEEL",
+      "d'acier": "STEEL",
+      "en acier": "STEEL",
+      "métal": "METAL",
+      "de métal": "METAL",
+      "en métal": "METAL",
+      "métallique": "METAL"
+    }
+  },
+  "o118": {
+    "nom": "poussière et débris",
+    "g": "f",
+    "mots": {
+      "poussière et débris": "DUST",
+      "poussières et débris": "DUST",
+      "poussière": "DUST",
+      "poussières": "DUST",
+      "débris": "DEBRIS"
+    },
+    "adjectifs": {}
+  },
+  "o119": {
+    "nom": "Salle étroite",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o120": {
+    "nom": "bouton",
+    "g": "m",
+    "mots": {
+      "bouton": "BUTTON",
+      "boutons": "BUTTON"
+    },
+    "adjectifs": {}
+  },
+  "o121": {
+    "nom": "siège",
+    "g": "m",
+    "mots": {
+      "siège": "SEAT",
+      "sièges": "SEAT",
+      "fauteuil": "SEAT",
+      "banquette": "SEAT",
+      "chaise": "CHAIR",
+      "chaises": "CHAIR"
+    },
+    "adjectifs": {}
+  },
+  "o122": {
+    "nom": "machine dorée",
+    "g": "f",
+    "mots": {
+      "machine": "MACHINE",
+      "machines": "MACHINE",
+      "machine temporelle": "MACHINE",
+      "machine à remonter le temps": "MACHINE",
+      "temporisateur": "TEMPORIZER",
+      "temporisateurs": "TEMPORIZER"
+    },
+    "adjectifs": {
+      "dorée": "GOLDEN",
+      "doré": "GOLDEN",
+      "dorées": "GOLDEN",
+      "dorés": "GOLDEN",
+      "or": "GOLDEN",
+      "en or": "GOLDEN",
+      "d'or": "GOLDEN",
+      "temporelle": "TIME",
+      "temporel": "TIME",
+      "temps": "TIME",
+      "du temps": "TIME",
+      "à remonter le temps": "TIME"
+    }
+  },
+  "o123": {
+    "nom": "Pays de l'Ombre",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o124": {
+    "nom": "Panorama",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o125": {
+    "nom": "mur nord",
+    "g": "m",
+    "mots": {
+      "mur": "WALL",
+      "murs": "WALL",
+      "paroi": "WALL"
+    },
+    "adjectifs": {
+      "nord": "NORTH",
+      "septentrional": "NORTHE",
+      "septentrionale": "NORTHE"
+    }
+  },
+  "o126": {
+    "nom": "lanterne",
+    "g": "f",
+    "mots": {
+      "lanterne": "LANTERN",
+      "lanternes": "LANTERN",
+      "lanterne en laiton": "LANTERN",
+      "lampe": "LAMP",
+      "lampes": "LAMP"
+    },
+    "adjectifs": {
+      "laiton": "BRASS",
+      "en laiton": "BRASS",
+      "cuivre": "BRASS",
+      "en cuivre": "BRASS"
+    }
+  },
+  "o127": {
+    "nom": "flèche de la rose des vents",
+    "g": "f",
+    "mots": {
+      "flèche": "ARROW",
+      "flèches": "ARROW"
+    },
+    "adjectifs": {
+      "de la rose des vents": "COMPASS",
+      "rose des vents": "COMPASS"
+    }
+  },
+  "o128": {
+    "nom": "bénédictions",
+    "g": "f",
+    "n": "p",
+    "mots": {
+      "bénédictions": "BLESSINGS",
+      "benedictions": "BLESSINGS",
+      "bénédiction": "BLESSINGS",
+      "benediction": "BLESSINGS",
+      "grâces": "GRACES",
+      "graces": "GRACES",
+      "grâce": "GRACES",
+      "grace": "GRACES"
+    },
+    "adjectifs": {}
+  },
+  "o129": {
+    "nom": "objet brillant",
+    "g": "m",
+    "mots": {
+      "objet": "OBJECT",
+      "objets": "OBJECT",
+      "chose": "OBJECT",
+      "amulette": "AMULET",
+      "amulettes": "AMULET"
+    },
+    "adjectifs": {
+      "brillant": "SHINY",
+      "brillante": "SHINY",
+      "luisant": "SHINY",
+      "luisante": "SHINY",
+      "scintillant": "SHINY",
+      "scintillante": "SHINY",
+      "étincelant": "SHINY",
+      "étincelante": "SHINY"
+    }
+  },
+  "o130": {
+    "nom": "Salle annexe",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o131": {
+    "nom": "plaque de bronze",
+    "g": "f",
+    "mots": {
+      "plaque": "PLAQUE",
+      "plaques": "PLAQUE",
+      "texte": "TEXT",
+      "inscription": "TEXT",
+      "inscriptions": "TEXT"
+    },
+    "adjectifs": {
+      "bronze": "BRONZE",
+      "de bronze": "BRONZE",
+      "en bronze": "BRONZE"
+    }
+  },
+  "o132": {
+    "nom": "machine noire",
+    "g": "f",
+    "mots": {
+      "machine": "MACHINE",
+      "machines": "MACHINE",
+      "tuyau": "PIPES",
+      "tuyaux": "PIPES",
+      "tuyauterie": "PIPES",
+      "fil": "WIRES",
+      "fils": "WIRES",
+      "câble": "WIRES",
+      "câbles": "WIRES",
+      "moteur": "MOTORS",
+      "moteurs": "MOTORS"
+    },
+    "adjectifs": {
+      "noire": "BLACK",
+      "noir": "BLACK",
+      "noires": "BLACK",
+      "noirs": "BLACK"
+    }
+  },
+  "o133": {
+    "nom": "mur est",
+    "g": "m",
+    "mots": {
+      "mur": "WALL",
+      "murs": "WALL",
+      "paroi": "WALL"
+    },
+    "adjectifs": {
+      "est": "EAST",
+      "oriental": "EASTERN",
+      "orientale": "EASTERN"
+    }
+  },
+  "o134": {
+    "nom": "Pays de l'Ombre",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o135": {
+    "nom": "plaque d'égout",
+    "g": "f",
+    "mots": {
+      "plaque d'égout": "COVER",
+      "plaques d'égout": "COVER",
+      "bouche d'égout": "COVER",
+      "plaque": "COVER",
+      "couvercle": "COVER",
+      "tampon": "COVER"
+    },
+    "adjectifs": {
+      "égout": "MANHOLE",
+      "d'égout": "MANHOLE",
+      "grande": "LARGE",
+      "grand": "LARGE",
+      "grosse": "LARGE",
+      "gros": "LARGE"
+    }
+  },
+  "o136": {
+    "nom": "Grande porte",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o137": {
+    "nom": "corde",
+    "g": "f",
+    "mots": {
+      "corde": "ROPE",
+      "cordes": "ROPE",
+      "cordage": "ROPE"
+    },
+    "adjectifs": {
+      "pendante": "DANGLING",
+      "pendant": "DANGLING",
+      "qui pend": "DANGLING",
+      "suspendue": "DANGLING",
+      "suspendu": "DANGLING"
+    }
+  },
+  "o138": {
+    "nom": "Cul-de-sac",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o139": {
+    "nom": "homme",
+    "g": "m",
+    "mots": {
+      "homme": "MAN",
+      "hommes": "MAN",
+      "bonhomme": "MAN",
+      "individu": "MAN",
+      "monsieur": "MAN",
+      "ami": "FRIEND",
+      "amis": "FRIEND",
+      "camarade": "FRIEND",
+      "compagnon": "FRIEND"
+    },
+    "adjectifs": {}
+  },
+  "o140": {
+    "nom": "Rive ouest",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o141": {
+    "nom": "bouffée d'air",
+    "g": "f",
+    "mots": {
+      "poumons": "LUNGS",
+      "air": "AIR",
+      "bouche": "MOUTH",
+      "souffle": "BREATH",
+      "haleine": "BREATH"
+    },
+    "adjectifs": {}
+  },
+  "o142": {
+    "nom": "mur ouest",
+    "g": "m",
+    "mots": {
+      "mur": "WALL",
+      "murs": "WALL",
+      "paroi": "WALL"
+    },
+    "adjectifs": {
+      "ouest": "WEST",
+      "occidental": "WESTERN",
+      "occidentale": "WESTERN"
+    }
+  },
+  "o143": {
+    "nom": "Entrée du Casse-tête royal",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o144": {
+    "nom": "plantes et algues",
+    "g": "f",
+    "n": "p",
+    "mots": {
+      "plantes et algues": "PLANTS",
+      "plante": "PLANT",
+      "plantes": "PLANTS",
+      "végétation": "PLANTS",
+      "algue": "ALGAE",
+      "algues": "ALGAE"
+    },
+    "adjectifs": {}
+  },
+  "o145": {
+    "nom": "lanterne cassée",
+    "g": "f",
+    "mots": {
+      "lanterne": "LANTERN",
+      "lanternes": "LANTERN",
+      "lampe": "LAMP",
+      "lampes": "LAMP"
+    },
+    "adjectifs": {
+      "cassée": "BROKEN",
+      "cassee": "BROKEN",
+      "cassé": "BROKEN",
+      "casse": "BROKEN",
+      "brisée": "BROKEN",
+      "brisee": "BROKEN",
+      "brisé": "BROKEN",
+      "brise": "BROKEN"
+    }
+  },
+  "o146": {
+    "nom": "grand rocher",
+    "g": "m",
+    "mots": {
+      "rocher": "ROCK",
+      "roche": "ROCK",
+      "grand rocher": "ROCK",
+      "gros rocher": "ROCK",
+      "grande pierre": "STONE",
+      "grosse pierre": "STONE"
+    },
+    "adjectifs": {
+      "grand": "GREAT",
+      "grande": "GREAT",
+      "gros": "GREAT",
+      "grosse": "GREAT",
+      "énorme": "GREAT",
+      "immense": "GREAT"
+    }
+  },
+  "o147": {
+    "nom": "panneau",
+    "g": "m",
+    "mots": {
+      "panneau": "PANEL",
+      "panneaux": "PANEL",
+      "guichet": "PANEL",
+      "judas": "PANEL"
+    },
+    "adjectifs": {}
+  },
+  "o148": {
+    "nom": "capuchon",
+    "g": "m",
+    "mots": {
+      "capuchon": "HOOD",
+      "capuchons": "HOOD",
+      "capuche": "HOOD",
+      "capuches": "HOOD"
+    },
+    "adjectifs": {}
+  },
+  "o149": {
+    "nom": "petite fente",
+    "g": "f",
+    "mots": {
+      "fente": "SLOT",
+      "fentes": "SLOT",
+      "petite fente": "SLOT",
+      "ouverture": "SLOT",
+      "interstice": "SLIT"
+    },
+    "adjectifs": {
+      "petite": "SMALL",
+      "petit": "SMALL",
+      "petites": "SMALL"
+    }
+  },
+  "o150": {
+    "nom": "grue aux aguets",
+    "g": "m",
+    "mots": {
+      "grue": "GRUE",
+      "grues": "GRUE"
+    },
+    "adjectifs": {
+      "tapi": "LURKING",
+      "embusqué": "LURKING",
+      "embusque": "LURKING",
+      "sinistre": "SINISTER",
+      "affamé": "HUNGRY",
+      "affame": "HUNGRY",
+      "silencieux": "SILENT"
+    }
+  },
+  "o151": {
+    "nom": "Salle étroite",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o152": {
+    "nom": "Gardiens de Zork",
+    "g": "m",
+    "n": "p",
+    "mots": {
+      "gardiens de zork": "GUARDIAN",
+      "gardien de zork": "GUARDIAN",
+      "gardiens": "GUARDIAN",
+      "gardien": "GUARDIAN",
+      "gardes": "GUARDS",
+      "garde": "GUARD",
+      "statues": "STATUE",
+      "statue": "STATUE"
+    },
+    "adjectifs": {}
+  },
+  "o153": {
+    "nom": "porte de la cellule",
+    "g": "f",
+    "mots": {
+      "porte": "DOOR",
+      "portes": "DOOR",
+      "porte de la cellule": "DOOR",
+      "porte de cellule": "DOOR"
+    },
+    "adjectifs": {
+      "cellule": "CELL",
+      "de la cellule": "CELL",
+      "de cellule": "CELL",
+      "bois": "WOODEN",
+      "en bois": "WOODEN",
+      "de bois": "WOODEN",
+      "verrouillée": "LOCKED",
+      "verrouillé": "LOCKED",
+      "fermée à clé": "LOCKED",
+      "fermé à clé": "LOCKED"
+    }
+  },
+  "o154": {
+    "nom": "escalier",
+    "g": "m",
+    "mots": {
+      "escalier": "STAIRS",
+      "escaliers": "STAIRS",
+      "marches": "STEPS",
+      "marche": "STEPS",
+      "degrés": "STEPS",
+      "degres": "STEPS"
+    },
+    "adjectifs": {
+      "pierre": "STONE",
+      "sombre": "DARK",
+      "obscur": "DARK",
+      "marbre": "MARBLE",
+      "menaçant": "FORBIDDING",
+      "menacant": "FORBIDDING",
+      "inquiétant": "FORBIDDING",
+      "inquietant": "FORBIDDING",
+      "raide": "STEEP",
+      "raides": "STEEP",
+      "escarpé": "STEEP",
+      "escarpe": "STEEP"
+    }
+  },
+  "o155": {
+    "nom": "Endroit sombre",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o156": {
+    "nom": "aqueduc",
+    "g": "m",
+    "mots": {
+      "aqueduc": "AQUEDUCT",
+      "aqueducs": "AQUEDUCT",
+      "conduit": "DUCT",
+      "conduite": "DUCT",
+      "gouffre": "CHASM",
+      "précipice": "CHASM"
+    },
+    "adjectifs": {
+      "pierre": "STONE",
+      "de pierre": "STONE",
+      "en pierre": "STONE"
+    }
+  },
+  "o157": {
+    "nom": "barre en bois",
+    "g": "f",
+    "mots": {
+      "barre": "BAR",
+      "barres": "BAR"
+    },
+    "adjectifs": {
+      "bois": "WOODEN",
+      "en bois": "WOODEN",
+      "de bois": "WOODEN"
+    }
+  },
+  "o158": {
+    "nom": "poutre brisée",
+    "g": "f",
+    "mots": {
+      "poutre": "TIMBERS",
+      "poutres": "TIMBERS",
+      "madrier": "TIMBERS",
+      "madriers": "TIMBERS",
+      "tas": "PILE"
+    },
+    "adjectifs": {
+      "bois": "WOODEN",
+      "brisée": "BROKEN",
+      "brisee": "BROKEN",
+      "brisé": "BROKEN",
+      "brise": "BROKEN",
+      "cassée": "BROKEN",
+      "cassee": "BROKEN",
+      "cassé": "BROKEN",
+      "casse": "BROKEN"
+    }
+  },
+  "o159": {
+    "nom": "Couloir étroit",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o160": {
+    "nom": "Dans le miroir",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o161": {
+    "nom": "Salle étroite",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o162": {
+    "nom": "Couloir ouest",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o163": {
+    "nom": "Toboggan aquatique",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o164": {
+    "nom": "quantité d'eau",
+    "g": "f",
+    "mots": {
+      "eau": "WATER",
+      "eaux": "WATER",
+      "quantité": "QUANTITY",
+      "quantite": "QUANTITY",
+      "liquide": "LIQUID",
+      "h2o": "H2O"
+    },
+    "adjectifs": {}
+  },
+  "o165": {
+    "nom": "sol",
+    "g": "m",
+    "mots": {
+      "sol": "GROUND",
+      "sable": "SAND",
+      "terre": "DIRT",
+      "plancher": "FLOOR"
+    },
+    "adjectifs": {}
+  },
+  "o166": {
+    "nom": "chose pareille",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o167": {
+    "nom": "nombre",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o168": {
+    "nom": "torche consumée",
+    "g": "f",
+    "mots": {
+      "torche": "TORCH",
+      "torches": "TORCH",
+      "flambeau": "TORCH"
+    },
+    "adjectifs": {
+      "consumée": "BURNED",
+      "consumé": "BURNED",
+      "brûlée": "BURNED",
+      "brûlé": "BURNED",
+      "calcinée": "BURNED",
+      "éteinte": "DEAD",
+      "éteint": "DEAD",
+      "morte": "DEAD",
+      "mort": "DEAD"
+    }
+  },
+  "o169": {
+    "nom": "Grand couloir",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o170": {
+    "nom": "Pays de l'Ombre",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o171": {
+    "nom": "note d'avertissement",
+    "g": "f",
+    "mots": {
+      "note": "NOTE",
+      "notes": "NOTE",
+      "note d'avertissement": "NOTE",
+      "billet": "NOTE",
+      "avertissement": "WARNING",
+      "avertissements": "WARNING",
+      "texte": "TEXT"
+    },
+    "adjectifs": {
+      "avertissement": "WARNING",
+      "d'avertissement": "WARNING",
+      "petite": "SMALL",
+      "petit": "SMALL"
+    }
+  },
+  "o172": {
+    "nom": "Salle des gravures",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o173": {
+    "nom": "Entrée du musée",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o174": {
+    "nom": "couteau incrusté de joyaux",
+    "g": "m",
+    "mots": {
+      "couteau": "KNIFE",
+      "couteaux": "KNIFE",
+      "dague": "KNIFE",
+      "poignard": "KNIFE",
+      "joyaux": "JEWELS",
+      "joyau": "JEWELS",
+      "bijoux": "JEWELS",
+      "bijou": "JEWELS"
+    },
+    "adjectifs": {
+      "incrusté de joyaux": "JEWELLED",
+      "incrusté de pierreries": "JEWELLED",
+      "orné de joyaux": "JEWELLED",
+      "orné de pierreries": "JEWELLED",
+      "serti de joyaux": "JEWELLED",
+      "incrusté": "JEWELLED",
+      "orné": "JEWELLED",
+      "serti": "JEWELLED",
+      "couronne": "CROWN",
+      "de la couronne": "CROWN"
+    }
+  },
+  "o175": {
+    "nom": "barre en T",
+    "g": "f",
+    "mots": {
+      "barre en t": "T-BAR",
+      "barres en t": "T-BAR",
+      "barre": "BAR",
+      "barres": "BAR"
+    },
+    "adjectifs": {}
+  },
+  "o176": {
+    "nom": "Musée de la technologie",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o177": {
+    "nom": "Endroit sombre",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o178": {
+    "nom": "Salle étroite",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o179": {
+    "nom": "Salle des joyaux",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o180": {
+    "nom": "sceptre",
+    "g": "m",
+    "mots": {
+      "sceptre": "SCEPTRE",
+      "sceptres": "SCEPTRE"
+    },
+    "adjectifs": {}
+  },
+  "o181": {
+    "nom": "Océan Flathead",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o182": {
+    "nom": "Haute arche",
+    "g": "f",
+    "elision": false,
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o183": {
+    "nom": "porte de la cellule",
+    "g": "f",
+    "mots": {
+      "porte": "DOOR",
+      "portes": "DOOR",
+      "porte de la cellule": "DOOR",
+      "porte de cellule": "DOOR"
+    },
+    "adjectifs": {
+      "cellule": "CELL",
+      "de la cellule": "CELL",
+      "de cellule": "CELL",
+      "bois": "WOODEN",
+      "en bois": "WOODEN",
+      "de bois": "WOODEN",
+      "verrouillée": "LOCKED",
+      "verrouillé": "LOCKED",
+      "fermée à clé": "LOCKED",
+      "fermé à clé": "LOCKED"
+    }
+  },
+  "o184": {
+    "nom": "Sur le lac",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o185": {
+    "nom": "lanterne",
+    "g": "f",
+    "mots": {
+      "lanterne": "LANTERN",
+      "lanternes": "LANTERN",
+      "lanterne en laiton": "LANTERN",
+      "lampe": "LAMP",
+      "lampes": "LAMP"
+    },
+    "adjectifs": {
+      "laiton": "BRASS",
+      "en laiton": "BRASS",
+      "cuivre": "BRASS",
+      "en cuivre": "BRASS"
+    }
+  },
+  "o186": {
+    "nom": "Pays de l'Ombre",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o187": {
+    "nom": "mur nord",
+    "g": "m",
+    "mots": {
+      "mur": "WALL",
+      "murs": "WALL",
+      "paroi": "WALL"
+    },
+    "adjectifs": {
+      "nord": "NORTH",
+      "septentrional": "NORTH",
+      "septentrionale": "NORTH"
+    }
+  },
+  "o188": {
+    "nom": "Salle annexe",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o189": {
+    "nom": "homme",
+    "g": "m",
+    "mots": {
+      "homme": "MAN",
+      "hommes": "MAN",
+      "bonhomme": "MAN",
+      "individu": "MAN",
+      "monsieur": "MAN",
+      "ami": "FRIEND",
+      "amis": "FRIEND",
+      "camarade": "FRIEND",
+      "compagnon": "FRIEND"
+    },
+    "adjectifs": {}
+  },
+  "o190": {
+    "nom": "Couloir sud",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o191": {
+    "nom": "bouton rouge",
+    "g": "m",
+    "mots": {
+      "bouton": "BUTTON",
+      "boutons": "BUTTON"
+    },
+    "adjectifs": {
+      "rouge": "RED"
+    }
+  },
+  "o192": {
+    "nom": "Salle 8",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o193": {
+    "nom": "mur de pierre",
+    "g": "m",
+    "mots": {
+      "mur": "WALL",
+      "murs": "WALL",
+      "paroi": "WALL",
+      "muraille": "WALL"
+    },
+    "adjectifs": {
+      "pierre": "STONE",
+      "de pierre": "STONE",
+      "en pierre": "STONE",
+      "massif": "MASSIVE",
+      "massive": "MASSIVE",
+      "imposant": "MASSIVE",
+      "imposante": "MASSIVE",
+      "épais": "MASSIVE",
+      "épaisse": "MASSIVE"
+    }
+  },
+  "o194": {
+    "nom": "Salle du casse-tête",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o195": {
+    "nom": "Répulsif magique Frobozz contre les grues",
+    "g": "m",
+    "mots": {
+      "répulsif": "REPELLENT",
+      "répulsifs": "REPELLENT",
+      "répulsif frobozz": "REPELLENT",
+      "répulsif magique frobozz": "REPELLENT",
+      "répulsif contre les grues": "REPELLENT",
+      "répulsif magique frobozz contre les grues": "REPELLENT",
+      "répulsif magique contre les grues": "REPELLENT",
+      "répulsif anti-grue": "REPELLENT",
+      "bombe": "CAN",
+      "bombe aérosol": "CAN",
+      "aérosol": "CAN",
+      "vaporisateur": "CAN",
+      "atomiseur": "CAN"
+    },
+    "adjectifs": {
+      "anti-grue": "GRUE",
+      "anti-grues": "GRUE",
+      "magique": "MAGIC"
+    }
+  },
+  "o196": {
+    "nom": "longue perche",
+    "g": "f",
+    "mots": {
+      "perche": "POLE",
+      "perches": "POLE",
+      "longue perche": "POLE"
+    },
+    "adjectifs": {
+      "longue": "LONG",
+      "long": "LONG",
+      "centrale": "CENTER",
+      "central": "CENTER",
+      "du centre": "CENTER",
+      "au centre": "CENTER"
+    }
+  },
+  "o197": {
+    "nom": "panneau rouge",
+    "g": "m",
+    "mots": {
+      "panneau": "PANEL",
+      "panneaux": "PANEL",
+      "mur": "WALL",
+      "murs": "WALL",
+      "paroi": "WALL"
+    },
+    "adjectifs": {
+      "rouge": "RED",
+      "rouges": "RED"
+    }
+  },
+  "o198": {
+    "nom": "mousse et lichen",
+    "g": "f",
+    "mots": {
+      "mousse et lichen": "MOSS",
+      "mousses et lichens": "MOSS",
+      "mousse": "MOSS",
+      "mousses": "MOSS",
+      "lichen": "LICHEN",
+      "lichens": "LICHEN"
+    },
+    "adjectifs": {}
+  },
+  "o199": {
+    "nom": "porte de fer",
+    "g": "f",
+    "mots": {
+      "porte": "DOOR",
+      "portes": "DOOR"
+    },
+    "adjectifs": {
+      "fer": "IRON",
+      "de fer": "IRON",
+      "en fer": "IRON"
+    }
+  },
+  "o200": {
+    "nom": "tunnel",
+    "g": "m",
+    "mots": {
+      "tunnel": "PASSAGE",
+      "tunnels": "PASSAGE",
+      "passage": "PASSAGE",
+      "passages": "PASSAGE",
+      "boyau": "CRAWLWAY",
+      "boyaux": "CRAWLWAY",
+      "goulet": "CRAWLWAY"
+    },
+    "adjectifs": {
+      "sombre": "DARK",
+      "obscur": "DARK",
+      "obscure": "DARK",
+      "enfumé": "SMOKY",
+      "enfumée": "SMOKY"
+    }
+  },
+  "o201": {
+    "nom": "liquide lourd mais invisible",
+    "g": "m",
+    "mots": {
+      "liquide": "LIQUID",
+      "liquides": "LIQUID",
+      "potion": "POTION",
+      "potions": "POTION",
+      "breuvage": "POTION",
+      "contenu": "CONTENTS",
+      "fluide": "FLUID"
+    },
+    "adjectifs": {
+      "lourd": "HEAVY",
+      "lourde": "HEAVY",
+      "sucré": "SWEET",
+      "sucrée": "SWEET",
+      "doux": "SWEET",
+      "douce": "SWEET",
+      "invisible": "INVISIBLE",
+      "invisibilité": "INVISIBLE",
+      "d'invisibilité": "INVISIBLE",
+      "odorant": "SMELLING",
+      "odorante": "SMELLING",
+      "parfumé": "SMELLING",
+      "parfumée": "SMELLING"
+    }
+  },
+  "o202": {
+    "nom": "épée",
+    "g": "f",
+    "mots": {
+      "épée": "SWORD",
+      "epee": "SWORD",
+      "épées": "SWORD",
+      "epees": "SWORD",
+      "orcrist": "ORCRIST",
+      "glamdring": "GLAMDRING",
+      "lame": "BLADE"
+    },
+    "adjectifs": {
+      "elfique": "ELVISH",
+      "vieille": "OLD",
+      "vieux": "OLD",
+      "antique": "ANTIQUE"
+    }
+  },
+  "o203": {
+    "nom": "Aqueduc",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o204": {
+    "nom": "Cellule",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o205": {
+    "nom": "porte de pierre",
+    "g": "f",
+    "mots": {
+      "porte": "DOOR",
+      "portes": "DOOR"
+    },
+    "adjectifs": {
+      "pierre": "STONE",
+      "de pierre": "STONE",
+      "en pierre": "STONE",
+      "est": "EAST"
+    }
+  },
+  "o206": {
+    "nom": "parapet",
+    "g": "m",
+    "mots": {
+      "parapet": "PARAPET",
+      "parapets": "PARAPET",
+      "garde-fou": "PARAPET"
+    },
+    "adjectifs": {}
+  },
+  "o207": {
+    "nom": "porte en bois",
+    "g": "f",
+    "mots": {
+      "porte": "DOOR",
+      "portes": "DOOR"
+    },
+    "adjectifs": {
+      "bois": "WOODEN"
+    }
+  },
+  "o208": {
+    "nom": "océan Flathead",
+    "g": "m",
+    "mots": {
+      "océan": "OCEAN",
+      "océans": "OCEAN",
+      "océan flathead": "OCEAN",
+      "mer": "OCEAN",
+      "mers": "OCEAN",
+      "eau": "WATER",
+      "eaux": "WATER",
+      "flots": "WATER"
+    },
+    "adjectifs": {
+      "flathead": "FLATHEAD"
+    }
+  },
+  "o209": {
+    "nom": "porte de bronze",
+    "g": "f",
+    "mots": {
+      "porte": "DOOR",
+      "portes": "DOOR"
+    },
+    "adjectifs": {
+      "bronze": "BRONZE",
+      "de bronze": "BRONZE",
+      "en bronze": "BRONZE"
+    }
+  },
+  "o210": {
+    "nom": "Autel sacrificiel",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o211": {
+    "nom": "Escalier sans fin",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o212": {
+    "nom": "panneau jaune",
+    "g": "m",
+    "mots": {
+      "panneau": "PANEL",
+      "panneaux": "PANEL",
+      "mur": "WALL",
+      "murs": "WALL",
+      "paroi": "WALL"
+    },
+    "adjectifs": {
+      "jaune": "YELLOW",
+      "jaunes": "YELLOW"
+    }
+  },
+  "o213": {
+    "nom": "bâton de bois",
+    "g": "m",
+    "mots": {
+      "bâton": "STAFF",
+      "bâtons": "STAFF",
+      "canne": "STAFF"
+    },
+    "adjectifs": {
+      "bois": "WOODEN",
+      "de bois": "WOODEN",
+      "en bois": "WOODEN"
+    }
+  },
+  "o214": {
+    "nom": "drakkar",
+    "g": "m",
+    "mots": {
+      "drakkar": "SHIP",
+      "drakkars": "SHIP",
+      "navire": "SHIP",
+      "navires": "SHIP",
+      "navire viking": "SHIP",
+      "vaisseau": "SHIP",
+      "bateau": "BOAT",
+      "bateaux": "BOAT",
+      "bateau viking": "BOAT",
+      "embarcation": "CRAFT"
+    },
+    "adjectifs": {
+      "viking": "VIKING",
+      "vikings": "VIKING"
+    }
+  },
+  "o215": {
+    "nom": "trou",
+    "g": "m",
+    "mots": {
+      "trou": "HOLE",
+      "trous": "HOLE",
+      "orifice": "HOLE"
+    },
+    "adjectifs": {
+      "rond": "ROUND",
+      "ronde": "ROUND",
+      "circulaire": "ROUND"
+    }
+  },
+  "o216": {
+    "nom": "Rive sud",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o217": {
+    "nom": "Carrefour",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o218": {
+    "nom": "Corniche de la falaise",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o219": {
+    "nom": "plaque",
+    "g": "f",
+    "mots": {
+      "plaque": "PLAQUE",
+      "plaques": "PLAQUE",
+      "texte": "TEXT",
+      "inscription": "TEXT",
+      "inscriptions": "TEXT"
+    },
+    "adjectifs": {}
+  },
+  "o220": {
+    "nom": "falaise",
+    "g": "f",
+    "mots": {
+      "falaise": "CLIFF",
+      "falaises": "CLIFF",
+      "escarpement": "CLIFF"
+    },
+    "adjectifs": {}
+  },
+  "o221": {
+    "nom": "Salle étroite",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o222": {
+    "nom": "porte secrète",
+    "g": "f",
+    "mots": {
+      "porte": "DOOR",
+      "portes": "DOOR",
+      "porte secrète": "DOOR",
+      "porte dérobée": "DOOR"
+    },
+    "adjectifs": {
+      "secrète": "SECRET",
+      "secret": "SECRET",
+      "dérobée": "SECRET"
+    }
+  },
+  "o223": {
+    "nom": "lac",
+    "g": "m",
+    "mots": {
+      "lac": "LAKE",
+      "lacs": "LAKE",
+      "eau": "WATER",
+      "eaux": "WATER",
+      "surface": "SURFACE"
+    },
+    "adjectifs": {}
+  },
+  "o224": {
+    "nom": "Grand couloir",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o225": {
+    "nom": "Cellule",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o226": {
+    "nom": "pseudo",
+    "g": "m",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o227": {
+    "nom": "Entrée du musée",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  },
+  "o228": {
+    "nom": "Salle des courants d'air",
+    "g": "f",
+    "mots": {},
+    "adjectifs": {}
+  }
+}
