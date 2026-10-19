@@ -39,6 +39,8 @@ interface TreasureList {
   list: [string, string?][]
   /** Where a treasure counts once stored (Zork I: the trophy case). */
   stored?: (w: World, id: string) => boolean
+  /** Found even without being touched (Zork II's unicorn hands its key over). */
+  found?: (w: World, id: string) => boolean
 }
 
 const TREASURES: Record<GameId, TreasureList> = {
@@ -55,6 +57,8 @@ const TREASURES: Record<GameId, TreasureList> = {
   // secret, so the tracker only counts the ones found
   zork2: {
     list: [['STATUETTE'], ['PORTRAIT'], ['BILLS'], ['CROWN'], ['VIOLIN'], ['PEARL'], ['RUBY'], ['STAMP'], ['COIN'], ['GOLD-KEY']],
+    // a treasure scores when it first comes into hand, and its value drops to 0 (SCORE-OBJ)
+    found: (w, id) => w.vm.getProp(w.obj(id), w.game.symbols.properties.VALUE) === 0,
   },
   zork3: { list: [] },
 }
@@ -129,14 +133,15 @@ function hidden(w: World, obj: number): boolean {
 /** The treasures: which ones were found, which ones are stored where they count. */
 export function treasuresOf(game: Game): Treasures {
   const w = new World(game)
-  const { list, stored } = TREASURES[game.id]
+  const { list, stored, found: given } = TREASURES[game.id]
   const slots = list.map(([main, damaged]): TreasureSlot => {
     // the damaged version replaces the original once it exists
     const id = damaged && inPlay(w, w.obj(damaged)) ? damaged : main
     const obj = w.obj(id)
     // unknown until touched; the game also touches what is inside a treasure put in the case,
     // so a treasure shut away in another one stays unknown too
-    const state = !w.attrOf(obj, 'TOUCHBIT') || hidden(w, obj) ? 'unknown' : stored?.(w, id) ? 'case' : 'found'
+    const known = (w.attrOf(obj, 'TOUCHBIT') || !!given?.(w, id)) && !hidden(w, obj)
+    const state = !known ? 'unknown' : stored?.(w, id) ? 'case' : 'found'
     return { id, obj, name: nameOf(game, obj), state }
   })
   const found = slots.filter((s) => s.state !== 'unknown').length

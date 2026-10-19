@@ -1,4 +1,5 @@
-// Saves and settings survive the renaming of the project (zork-next → zork-in-your-browser).
+// Saves and settings survive the renaming of the project (zork-next → zork-in-your-browser),
+// and each game of the trilogy keeps its own saves.
 import { describe, it, expect } from 'vitest'
 
 class MemoryStorage {
@@ -45,6 +46,40 @@ describe('saves after the renaming', () => {
     const old = JSON.stringify({ format: 'zork-next-saves', version: 1, slots: { '5': slot } })
     expect(saves.importAll(old)).toBe(1)
     expect(saves.readSlot(5)?.name).toBe('Old game')
+    delete (globalThis as { window?: unknown }).window
+  })
+})
+
+describe('saves of each game', () => {
+  it('keeps Zork I where it was and the other games apart, in the files too', async () => {
+    const store = new MemoryStorage()
+    ;(globalThis as { window?: unknown }).window = { localStorage: store }
+    const saves = await import('../src/ui/saves')
+    const slot = (name: string, game?: string) => ({ name, date: '2026-10-19T00:00:00Z', save: { game, snapshot: {} }, transcript: [] }) as never
+    saves.writeSlot(2, slot('Zork I game'))
+    saves.writeSlot(2, slot('Zork II game', 'zork2'), 'zork2')
+    saves.writeSlot('auto', slot('Zork II auto', 'zork2'), 'zork2')
+    expect(store.getItem('zork-in-your-browser:slot:2')).toContain('Zork I game')
+    expect(store.getItem('zork-in-your-browser:zork2:slot:2')).toContain('Zork II game')
+    expect(saves.readSlot(2)?.name).toBe('Zork I game')
+    expect(saves.readSlot(2, 'zork2')?.name).toBe('Zork II game')
+    expect(saves.readSlot(2, 'zork3')).toBeNull()
+    expect(saves.gamePref('zork1', 'hints')).toBe('hints')
+    expect(saves.gamePref('zork2', 'hints')).toBe('zork2:hints')
+
+    const file = JSON.parse(saves.exportAll())
+    expect(file.version).toBe(2)
+    expect(Object.keys(file.slots)).toEqual(['2'])
+    expect(Object.keys(file.games.zork2).sort()).toEqual(['2', 'auto'])
+
+    for (const k of store.keys()) store.removeItem(k)
+    expect(saves.importAll(JSON.stringify(file))).toBe(3)
+    expect(saves.readSlot(2)?.name).toBe('Zork I game')
+    expect(saves.readSlot('auto', 'zork2')?.name).toBe('Zork II auto')
+    // a snapshot always goes back to its own game, wherever the file put it
+    expect(saves.importAll(JSON.stringify({ format: 'zork-in-your-browser-saves', version: 1, slots: { '7': slot('Stray', 'zork2') } }))).toBe(1)
+    expect(saves.readSlot(7)).toBeNull()
+    expect(saves.readSlot(7, 'zork2')?.name).toBe('Stray')
     delete (globalThis as { window?: unknown }).window
   })
 })

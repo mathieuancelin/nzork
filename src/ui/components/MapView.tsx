@@ -23,6 +23,18 @@ const STUB: Partial<Record<MapDir, [number, number]>> = {
 const HOVER_DELAY = 700
 const PREVIEW = { w: 240, h: 165 }
 
+/** A room name on at most two short lines, to fit in its box. */
+function labelLines(name: string, width = 13): string[] {
+  const lines: string[] = []
+  for (const word of name.split(' ')) {
+    const last = lines[lines.length - 1]
+    if (last !== undefined && last.length + 1 + word.length <= width) lines[lines.length - 1] = `${last} ${word}`
+    else lines.push(word)
+  }
+  if (lines.length > 2) return [lines[0], lines.slice(1).join(' ').slice(0, width - 1) + '…']
+  return lines
+}
+
 const at = (game: GameId, room: string): [number, number] => {
   const [x, y] = GRIDS[game][room] ?? [0, 0]
   return [x * CELL.x, y * CELL.y]
@@ -167,7 +179,18 @@ export function MapView({ large = false }: { large?: boolean }) {
                   onPointerLeave={leave}
                 >
                   <rect width={NODE.w} height={NODE.h} rx={3} fill={scene?.sky ?? '#2b241c'} />
-                  {img && <image href={img} width={NODE.w} height={NODE.h} preserveAspectRatio="xMidYMid slice" imageRendering="pixelated" />}
+                  {img ? (
+                    <image href={img} width={NODE.w} height={NODE.h} preserveAspectRatio="xMidYMid slice" imageRendering="pixelated" />
+                  ) : (
+                    // no picture yet (Zork II and III): the name of the room
+                    <text className="map-label" x={NODE.w / 2} y={NODE.h / 2} textAnchor="middle">
+                      {labelLines(map.names[room] ?? '').map((l, i, all) => (
+                        <tspan key={i} x={NODE.w / 2} dy={i === 0 ? `${0.35 - (all.length - 1) * 0.55}em` : '1.1em'}>
+                          {l}
+                        </tspan>
+                      ))}
+                    </text>
+                  )}
                   <rect className="frame" width={NODE.w} height={NODE.h} rx={3} />
                 </g>
               )

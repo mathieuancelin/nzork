@@ -18,14 +18,16 @@ export interface Mood {
 export function moodFor(game: Game): Mood {
   const w = new World(game)
   const st = game.status()
+  // a global the game does not have (Zork III ends without WON-FLAG) reads as 0
+  const g = (name: string) => (w.hasGlobal(name) ? w.global(name) : 0)
   return {
     // a dead adventurer wanders as a spirit
-    place: w.flag('DEAD') ? 'hades' : ambienceFor(game.id, st.roomId),
+    place: g('DEAD') ? 'hades' : ambienceFor(game.id, st.roomId),
     dark: !st.lit,
     danger: threatened(w, w.here()),
     score: st.score,
-    deaths: w.global('DEATHS'),
-    won: w.flag('WON-FLAG'),
+    deaths: g('DEATHS'),
+    won: g('WON-FLAG') !== 0,
   }
 }
 
