@@ -16,7 +16,7 @@ export const DIR_COMMAND: Record<Direction, string> = {
 
 export type Exit =
   | { kind: 'open'; to: string }
-  | { kind: 'closed'; to: string } // conditional exit currently blocked
+  | { kind: 'closed'; to: string; door?: boolean } // conditional exit currently blocked (a closed door, or a passage not open yet)
   | { kind: 'function' } // computed by a routine (trap door, chimney, maze diodes…)
   | { kind: 'none' }
 
@@ -171,9 +171,32 @@ export class World {
       case 4: // CEXIT: global flag
         return vm.global(vm.mem[addr + 1] - 16) ? { kind: 'open', to: to() } : { kind: 'closed', to: to() }
       case 5: // DEXIT: door
-        return vm.hasAttr(vm.mem[addr + 1], A.OPENBIT) ? { kind: 'open', to: to() } : { kind: 'closed', to: to() }
+        return vm.hasAttr(vm.mem[addr + 1], A.OPENBIT) ? { kind: 'open', to: to() } : { kind: 'closed', to: to(), door: true }
     }
     return { kind: 'none' }
+  }
+
+  /**
+   * Turns of light left in the brass lantern: the countdown of its interrupt in the clock table
+   * (C-TABLE, entries of [enabled, tick, routine]) plus the stages still to come in LAMP-TABLE.
+   * 385 when new, 0 when burned out.
+   */
+  lampTurnsLeft(): number {
+    const vm = this.vm
+    if (this.attr('LAMP', 'RMUNGBIT')) return 0
+    const table = this.global('C-TABLE')
+    const routine = symbols.routines['I-LANTERN' as keyof typeof symbols.routines] as number
+    let tick = 0
+    for (let off = this.global('C-INTS'); off < 180; off += 6) {
+      if (vm.unpack(vm.word(table + off + 4)) === routine) tick = vm.word(table + off + 2)
+    }
+    let stages = 0
+    for (let p = this.global('LAMP-TABLE'), i = 0; i < 8; p += 4, i++) {
+      const v = vm.word(p)
+      stages += v
+      if (!v) break
+    }
+    return tick + stages
   }
 
   /** In a vehicle (the boat)? */

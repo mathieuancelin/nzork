@@ -26,6 +26,22 @@ export interface SceneInfo {
   base: string
   sky: string
   ground: string
+  /** What lights the place: daylight (or its own light), the brass lantern, or a flame. */
+  light: 'day' | 'lamp' | 'flame'
+  /** Strength of the lantern, 1 when new, 0 when burned out (1 for the other lights). */
+  strength: number
+  /** Ambience of the place, for the little animations. */
+  ambience: PlaceId
+}
+
+/** Turns of light of a new lantern (LAMP-TABLE: 200 + 100 + 70 + 15). */
+const LAMP_LIFE = 385
+
+function lightOf(w: World, room: string): Pick<SceneInfo, 'light' | 'strength'> {
+  if (w.roomLit(room)) return { light: 'day', strength: 1 }
+  const on = (o: string) => w.carried(o) && w.attr(o, 'ONBIT')
+  if (on('LAMP')) return { light: 'lamp', strength: Math.min(1, w.lampTurnsLeft() / LAMP_LIFE) }
+  return { light: 'flame', strength: 1 }
 }
 
 function holds(w: World, c: Condition): boolean {
@@ -39,13 +55,19 @@ export function sceneFor(game: Game): SceneInfo {
   const roomId = game.status().roomId
   const s = byRoom.get(roomId)
   const base = s?.id ?? roomId.toLowerCase()
+  const w = new World(game)
   let id = base
   if (s?.variants) {
-    const w = new World(game)
     const v = s.variants.find((x) => holds(w, x.when))
     if (v) id = v.id
   }
-  return { id, base, sky: s?.palette?.sky ?? '#1b2130', ground: s?.palette?.ground ?? '#2a2016' }
+  return { id, base, sky: s?.palette?.sky ?? '#1b2130', ground: s?.palette?.ground ?? '#2a2016', ...lightOf(w, roomId), ambience: ambienceFor(roomId) }
+}
+
+/** The base scene of a room (its picture, without the state variants). */
+export function sceneOfRoom(roomId: string): { id: string; sky: string; ground: string } | undefined {
+  const s = byRoom.get(roomId)
+  return s && { id: s.id, sky: s.palette?.sky ?? '#1b2130', ground: s.palette?.ground ?? '#2a2016' }
 }
 
 /** The soundtrack's ambience for a room. */

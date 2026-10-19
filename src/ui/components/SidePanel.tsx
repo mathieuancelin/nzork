@@ -3,7 +3,8 @@ import { useState } from 'react'
 import { useGame, type SideTab } from '../store'
 import { t } from '../i18n'
 import { ChoicePanel } from './ChoicePanel'
-import { ItemIcon } from './ItemIcon'
+import { Glyph, ItemIcon } from './ItemIcon'
+import { MapView } from './MapView'
 import type { Item } from '../../engine/assist/items'
 
 export function SidePanel() {
@@ -18,20 +19,25 @@ export function SidePanel() {
   // folding only exists on small screens, where the panel sits under the text
   const fold = () => window.matchMedia('(max-width: 900px)').matches && setCollapsed(!collapsed)
 
-  const tabs: SideTab[] = [...(mode !== 'classic' ? (['actions'] as const) : []), 'inventory', ...(showTreasures ? (['treasures'] as const) : [])]
+  const tabs: SideTab[] = [...(mode !== 'classic' ? (['actions'] as const) : []), 'map', 'inventory', ...(showTreasures ? (['treasures'] as const) : [])]
   const current = tabs.includes(tab) ? tab : tabs[0]
-  const label = (k: SideTab) => {
-    if (k === 'actions') return t(lang, 'actions')
-    if (k === 'inventory') return `${t(lang, 'inventory')}${side?.items.length ? ` (${side.items.length})` : ''}`
-    return `${t(lang, 'treasures')} ${side ? `${side.treasures.inCase}/${side.treasures.slots.length}` : ''}`
+  const name = (k: SideTab) => t(lang, k === 'actions' ? 'actions' : k === 'map' ? 'map' : k === 'inventory' ? 'inventory' : 'treasures')
+  const count = (k: SideTab) => {
+    if (k === 'inventory') return side?.items.length ? String(side.items.length) : ''
+    if (k === 'treasures') return side ? `${side.treasures.inCase}/${side.treasures.slots.length}` : ''
+    return ''
   }
+  const ICON = { actions: 'actions', map: 'map', inventory: 'container', treasures: 'treasure' } as const
 
   return (
     <aside className={`side ${collapsed ? 'collapsed' : ''}`}>
       <div className="tabs" role="tablist">
         {tabs.map((k) => (
-          <button key={k} role="tab" aria-selected={k === current} className={`tab ${k === current ? 'on' : ''}`} onClick={() => (k === current ? fold() : setTab(k))}>
-            {label(k)}
+          <button key={k} role="tab" aria-selected={k === current} aria-label={name(k)} title={name(k)} className={`tab ${k === current ? 'on' : ''}`} onClick={() => (k === current ? fold() : setTab(k))}>
+            <Glyph name={ICON[k]} className="tab-icon" />
+            {/* on a narrow panel, only the open tab shows its name */}
+            <span className="tab-label">{name(k)}</span>
+            {count(k) && <span className="tab-count">{count(k)}</span>}
           </button>
         ))}
         <button className="tab fold" onClick={fold} aria-expanded={!collapsed} aria-label={t(lang, collapsed ? 'expandSide' : 'collapseSide')} title={t(lang, collapsed ? 'expandSide' : 'collapseSide')}>
@@ -39,7 +45,7 @@ export function SidePanel() {
         </button>
       </div>
       <div className="tab-body" role="tabpanel">
-        {current === 'actions' ? <ChoicePanel /> : current === 'inventory' ? <Inventory /> : <TreasureTracker />}
+        {current === 'actions' ? <ChoicePanel /> : current === 'map' ? <MapView /> : current === 'inventory' ? <Inventory /> : <TreasureTracker />}
       </div>
     </aside>
   )

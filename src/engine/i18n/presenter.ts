@@ -126,6 +126,12 @@ export class Presenter implements OutputSink {
 
   // ------------------------------------------------------------ helpers
 
+  /** A string of the story file (byte address), in the language of the game. */
+  textAt(addr: number): string {
+    const t = this.catalog?.strings[key('s', addr)]
+    return t !== undefined && !t.includes('{') ? finishText(t) : this.vm.decodeAt(addr).text
+  }
+
   noun(obj: number): FrNoun {
     const n = this.catalog?.objects['o' + obj]
     return n ?? { nom: this.vm.objName(obj), g: 'm' }

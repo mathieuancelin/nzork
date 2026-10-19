@@ -15,6 +15,8 @@ export interface SlotData {
   date: string // ISO
   save: SaveData
   transcript: TranscriptEntry[]
+  /** Rooms seen, for the map (the game itself forgets the maze rooms). */
+  visited?: string[]
 }
 
 const PREFIX = 'zork-in-your-browser:slot:'

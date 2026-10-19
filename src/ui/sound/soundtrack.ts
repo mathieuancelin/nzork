@@ -69,6 +69,16 @@ export class Soundtrack {
     }
   }
 
+  /** Steps back while the storyteller speaks. */
+  duck(on: boolean) {
+    if (!this.mix || !this.ctx) return
+    const g = this.mix.gain
+    const now = this.ctx.currentTime
+    g.cancelScheduledValues(now)
+    g.setValueAtTime(g.value, now)
+    g.linearRampToValueAtTime(on ? 0.35 : 1, now + 0.6)
+  }
+
   /** Rebuilds what plays (after the presets were edited). */
   refresh() {
     this.generation++

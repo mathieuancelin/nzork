@@ -4,7 +4,39 @@ import type { ItemKind } from '../../engine/assist/items'
 import { itemImageId, itemManifest } from '../items'
 
 // 12×12 glyphs: '#' full, '+' half-tone
-const GLYPHS: Record<ItemKind | 'unknown', string[]> = {
+type GlyphName = ItemKind | 'unknown' | 'map' | 'actions'
+
+const GLYPHS: Record<GlyphName, string[]> = {
+  // a compass rose, for the map
+  map: [
+    '.....##.....',
+    '.....##.....',
+    '....####....',
+    '.#..#++#..#.',
+    '############',
+    '############',
+    '.#..#++#..#.',
+    '....####....',
+    '.....##.....',
+    '.....##.....',
+    '............',
+    '............',
+  ],
+  // a pointer, for the clickable actions
+  actions: [
+    '.#..........',
+    '.##.........',
+    '.#+#........',
+    '.#++#.......',
+    '.#+++#......',
+    '.#++++#.....',
+    '.#+++++#....',
+    '.#++####....',
+    '.#+#.#+#....',
+    '.##..#+#....',
+    '.#....#+#...',
+    '.......##...',
+  ],
   treasure: [
     '............',
     '...######...',
@@ -135,7 +167,7 @@ const GLYPHS: Record<ItemKind | 'unknown', string[]> = {
 
 const rendered = new Map<string, ReactElement[]>()
 
-function glyph(kind: ItemKind | 'unknown'): ReactElement[] {
+function glyph(kind: GlyphName): ReactElement[] {
   let rects = rendered.get(kind)
   if (!rects) {
     rects = []
@@ -159,6 +191,15 @@ function useItemManifest(): Set<string> | null {
     }
   }, [])
   return available
+}
+
+/** A pixel glyph on its own (tab icons). */
+export function Glyph({ name, className = '' }: { name: GlyphName; className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 12 12" shapeRendering="crispEdges" fill="currentColor" aria-hidden="true">
+      {glyph(name)}
+    </svg>
+  )
 }
 
 export function ItemIcon({ id, kind, lit }: { id: string | null; kind: ItemKind | 'unknown'; lit?: boolean }) {

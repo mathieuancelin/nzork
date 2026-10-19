@@ -5,14 +5,19 @@ import { createGame, loadStory } from './engine'
 import { AUTOSAVE, SLOT_COUNT, allSlots, deleteSlot, readPref, readSlot, writePref, writeSlot, type SlotData, type TranscriptEntry } from './saves'
 import { computeAssist, type Assist, type Choice } from '../engine/assist/assist'
 import { inventoryOf, treasuresOf, type Item, type Treasures } from '../engine/assist/items'
+import { mapOf, pathTo, visitedRooms, type MapState } from '../engine/assist/map'
+import { hintsFor, type HintQuestion } from '../engine/assist/hints'
+import { documentsOf, type GameDocument } from '../engine/assist/documents'
+import { Labeler } from '../engine/assist/labels'
+import { World, DIR_COMMAND } from '../engine/assist/world'
 import { t } from './i18n'
 import { sceneFor, roomTitles, type SceneInfo } from './scenes'
 import { moodFor, turnCue, type Mood } from './sound/mood'
 import type { CueKind } from './sound/presets'
 
 export type Mode = 'classic' | 'noob' | 'hypernoob'
-export type Modal = null | 'menu' | 'saves' | 'settings' | 'help' | 'about' | 'welcome'
-export type SideTab = 'actions' | 'inventory' | 'treasures'
+export type Modal = null | 'menu' | 'saves' | 'settings' | 'help' | 'about' | 'welcome' | 'hints' | 'documents'
+export type SideTab = 'actions' | 'map' | 'inventory' | 'treasures'
 
 export interface Settings {
   lang: Lang
@@ -29,6 +34,11 @@ export interface Settings {
   sidebar: boolean
   /** Treasure tracker tab. */
   treasures: boolean
+  /** Storyteller: the answers of the game read aloud. */
+  narrator: boolean
+  narratorRate: number
+  /** Chosen voice (voiceURI), or '' for the best one available. */
+  narratorVoice: string
 }
 
 const DEFAULT_SETTINGS: Settings = {
@@ -43,6 +53,9 @@ const DEFAULT_SETTINGS: Settings = {
   volume: 0.6,
   sidebar: true,
   treasures: true,
+  narrator: false,
+  narratorRate: 1,
+  narratorVoice: '',
 }
 
 interface State {
@@ -56,7 +69,13 @@ interface State {
   /** Last short sound to play (score, death, victory). */
   cue: { id: number; kind: CueKind } | null
   /** What the side panel shows: inventory and treasures. */
-  side: { items: Item[]; treasures: Treasures } | null
+  side: { items: Item[]; treasures: Treasures; map: MapState } | null
+  /** Walking automatically to a room chosen on the map. */
+  traveling: boolean
+  /** The map shown large, above everything. */
+  mapLarge: boolean
+  /** InvisiClues: how many hints of each question were revealed. */
+  revealed: Record<string, number>
   sideTab: SideTab
   /** On small screens, the side panel can fold down to its tabs. */
   sideCollapsed: boolean
@@ -86,6 +105,13 @@ interface State {
   showToast(text: string): void
   setSideTab(tab: SideTab): void
   setSideCollapsed(collapsed: boolean): void
+  travelTo(room: string): void
+  setMapLarge(on: boolean): void
+  /** The hint questions that make sense now (places seen). */
+  hints(): HintQuestion[]
+  reveal(id: string): void
+  /** The documents of the game ("feelies"), found or still to find. */
+  documents(): GameDocument[]
 }
 
 let game: Game | null = null
@@ -99,13 +125,22 @@ const entry = (kind: TranscriptEntry['kind'], text: string): TranscriptEntry => 
 
 const MAX_TRANSCRIPT = 400
 
-const sideOf = (g: Game) => ({ items: inventoryOf(g), treasures: treasuresOf(g) })
+/** Rooms seen, remembered by the interface: the game forgets the maze rooms on purpose. */
+let remembered = new Set<string>()
+/** Set while walking to a room chosen on the map; any command of the player stops it. */
+let travel: ReturnType<typeof setTimeout> | null = null
+
+const sideOf = (g: Game) => {
+  const st = g.status()
+  if (st.lit) remembered.add(st.roomId)
+  return { items: inventoryOf(g), treasures: treasuresOf(g), map: mapOf(g, visitedRooms(g, remembered)) }
+}
 
 export const useGame = create<State>((set, get) => {
   const persistAuto = () => {
     if (!game) return
     const s = get()
-    const data: SlotData = { name: t(s.settings.lang, 'autosave'), date: new Date().toISOString(), save: game.save(''), transcript: s.transcript.slice(-60) }
+    const data: SlotData = { name: t(s.settings.lang, 'autosave'), date: new Date().toISOString(), save: game.save(''), transcript: s.transcript.slice(-60), visited: [...remembered] }
     writeSlot(AUTOSAVE, data)
     set({ autosave: data })
   }
@@ -117,6 +152,22 @@ export const useGame = create<State>((set, get) => {
       return
     }
     set({ assist: computeAssist(game, s.settings.mode === 'hypernoob') })
+  }
+
+  /** Plays one clickable choice (or one step of a walk on the map). */
+  const play = (choice: Choice) => {
+    if (!game) return
+    turnMarks.push(get().transcript.length)
+    if (turnMarks.length > 60) turnMarks.shift()
+    set((st) => ({ transcript: [...st.transcript, entry('in', choice.label)] }))
+    const turn = game.sendCanonical(choice.command)
+    afterTurn(turn.text)
+  }
+
+  const stopTravel = () => {
+    if (travel) clearTimeout(travel)
+    travel = null
+    if (get().traveling) set({ traveling: false })
   }
 
   const afterTurn = (text: string) => {
@@ -150,6 +201,9 @@ export const useGame = create<State>((set, get) => {
     mood: null,
     cue: null,
     side: null,
+    traveling: false,
+    mapLarge: false,
+    revealed: readPref<Record<string, number>>('hints', {}),
     sideTab: readPref<SideTab>('sideTab', 'actions'),
     sideCollapsed: readPref<boolean>('sideCollapsed', false),
     titles: new Set(),
@@ -183,8 +237,12 @@ export const useGame = create<State>((set, get) => {
     newGame() {
       if (!story) return
       const { settings } = get()
+      stopTravel()
       game = createGame(story, settings.lang)
       turnMarks = []
+      remembered = new Set()
+      writePref('hints', {})
+      set({ revealed: {} })
       set({ transcript: [], over: false, titles: roomTitles(game) })
       const turn = game.start()
       set({ transcript: [entry('out', turn.text)] })
@@ -195,6 +253,7 @@ export const useGame = create<State>((set, get) => {
       const line = raw.trim()
       const s = get()
       if (!game) return
+      stopTravel()
       const lang = s.settings.lang
       set({ history: [...s.history.filter((h) => h !== line), line].slice(-50) })
       // commands handled by the interface rather than by the game
@@ -215,17 +274,14 @@ export const useGame = create<State>((set, get) => {
     },
 
     playChoice(choice) {
-      if (!game) return
-      turnMarks.push(get().transcript.length)
-      if (turnMarks.length > 60) turnMarks.shift()
-      set((st) => ({ transcript: [...st.transcript, entry('in', choice.label)] }))
-      const turn = game.sendCanonical(choice.command)
-      afterTurn(turn.text)
+      stopTravel()
+      play(choice)
     },
 
     undo() {
       const s = get()
       if (!game || !s.settings.undo) return
+      stopTravel()
       const status = game.undo()
       if (!status) {
         get().showToast(t(s.settings.lang, 'nothingToUndo'))
@@ -255,6 +311,7 @@ export const useGame = create<State>((set, get) => {
         date: new Date().toISOString(),
         save: game.save(''),
         transcript: s.transcript.slice(-60),
+        visited: [...remembered],
       }
       if (!writeSlot(slot, data)) {
         get().showToast(t(s.settings.lang, 'saveFailed'))
@@ -269,8 +326,10 @@ export const useGame = create<State>((set, get) => {
       const data = readSlot(slot)
       if (!data) return
       const lang = get().settings.lang
+      stopTravel()
       game = createGame(story, lang)
       game.load(data.save)
+      remembered = new Set(data.visited ?? [])
       set({ titles: roomTitles(game) })
       turnMarks = []
       nextId = Math.max(nextId, ...data.transcript.map((e) => e.id + 1))
@@ -322,6 +381,56 @@ export const useGame = create<State>((set, get) => {
       writePref('sideTab', tab)
       set({ sideTab: tab })
       get().setSideCollapsed(false)
+    },
+
+    travelTo(room) {
+      if (!game || travel) return
+      const lang = get().settings.lang
+      const steps = pathTo(game, visitedRooms(game, remembered), room)
+      if (!steps?.length) {
+        if (steps === null) get().showToast(t(lang, 'noPath'))
+        return
+      }
+      const labels = new Labeler(game)
+      set({ traveling: true })
+      // one move at a time, so that the player sees the way; anything unexpected stops the walk
+      const next = () => {
+        travel = null
+        const s = get()
+        const step = steps.shift()
+        if (!game || !step || s.over || s.waitingFor !== 'command') return stopTravel()
+        if (s.mood?.danger) {
+          get().showToast(t(lang, 'travelDanger'))
+          return stopTravel()
+        }
+        const w = new World(game)
+        if (!w.roomLit(step.to) && !w.carriesLight()) {
+          get().showToast(t(lang, 'travelDark'))
+          return stopTravel()
+        }
+        play({ id: `travel-${step.dir}`, label: labels.dir(step.dir), command: DIR_COMMAND[step.dir], group: 'move' })
+        if (game.status().roomId !== step.to || !steps.length) return stopTravel()
+        travel = setTimeout(next, 450)
+      }
+      next()
+    },
+
+    setMapLarge(on) {
+      set({ mapLarge: on })
+    },
+
+    hints() {
+      return game ? hintsFor(game, visitedRooms(game, remembered)) : []
+    },
+
+    documents() {
+      return game ? documentsOf(game, visitedRooms(game, remembered)) : []
+    },
+
+    reveal(id) {
+      const revealed = { ...get().revealed, [id]: (get().revealed[id] ?? 0) + 1 }
+      writePref('hints', revealed)
+      set({ revealed })
     },
 
     setSideCollapsed(collapsed) {

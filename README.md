@@ -32,7 +32,9 @@ exactly where Infocom left them.
 - **Illustrations.** 93 pixel-art scenes cover the 110 rooms, drawn on a 480×270 grid with a
   shared 64-color palette, including state variants (the troll in his room, the drained
   reservoir, the rainbow made solid…). Dark rooms stay dark, except for two eyes that light up
-  if you linger.
+  if you linger. Underground, the scene is lit by your lantern: its halo narrows as the
+  batteries run down and flickers when they are nearly dead, a torch gives a warm, unsteady
+  light, and dust drifts or water ripples on top.
 - **A soundtrack that gets under your skin.** Go down the trap door and the wind gives way to a
   deep drone and water dripping somewhere in the dark. Let your lantern die and a heartbeat
   rises while something breathes close by. Walk into the troll's room and a war drum starts. The
@@ -54,6 +56,19 @@ exactly where Infocom left them.
   to see what you can do with it. The treasure tracker has 19 slots that reveal themselves as you
   find the treasures and turn gold once they are in the trophy case. It never tells you where to
   look, and can be turned off.
+- **A map that draws itself.** Every room you have seen appears with a thumbnail of its
+  illustration, linked to its neighbors, with short dashes for the exits you have not taken.
+  Rest the pointer on a room (or touch it) to see its picture again; pick one and the game
+  walks you there, one step at a time, after a confirmation. It opens large above everything
+  when you need the whole picture. The maze finally becomes bearable.
+- **Hints, the InvisiClues way.** Infocom's hint booklets were printed in invisible ink: you
+  revealed one answer at a time with a special marker. Here, questions about the places you
+  have seen offer three hints each, from vague to explicit, revealed one by one.
+- **Documents to collect.** Infocom boxes came with "feelies". The documents of the game (the
+  leaflet, the dam guidebook, the boat label, the black book, the engravings…) join a collection
+  as you find them, each on its own kind of paper, ready to read again or print.
+- **A storyteller.** If you like, the browser reads the game's answers aloud, in French or
+  English, while the music steps back.
 - **Saves and undo.** 10 save slots plus an autosave, export and import of a save file, and
   **undo** (Ctrl+Z), on by default.
 - **Retro touches, modern comfort.** Optional CRT scanlines and typewriter effect, adjustable
@@ -244,9 +259,9 @@ git submodule update --init
 | `src/engine/story/` | `zork1.z3` and its symbol table (ZIL names of objects, attributes, globals, routines) |
 | `src/engine/i18n/` | text rendering: templates, French grammar, catalog in `fr/catalog.json` |
 | `src/engine/input/` | French command parser |
-| `src/engine/assist/` | clickable choices, the Hyper noob guide, the inventory and the treasure tracker |
+| `src/engine/assist/` | clickable choices, the Hyper noob guide, inventory, treasures, map, hints, documents |
 | `src/ui/` | the React application |
-| `tools/` | symbols, catalog extraction and merge, `dfrotz` oracle, images, bot |
+| `tools/` | symbols, catalog extraction and merge, `dfrotz` oracle, images, map layout, bot |
 | `vendor/zork1/` | the original ZIL sources (git submodule) |
 
 The design notes are in [specs.md](specs.md). The translation follows

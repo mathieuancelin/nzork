@@ -228,6 +228,36 @@ The panel next to the text has up to three tabs, and can be hidden from the stat
   closed egg must not give itself away. Damaged versions (broken egg, broken canary) take the
   slot once they are in play. The tracker never says where a treasure is, and can be turned off
   in the settings.
+- **Map**: the rooms seen, placed on a grid computed once by `tools/map/layout.ts` (breadth-first
+  placement from the exits, then simulated annealing against misfitting directions and crossing
+  passages) into `src/data/map.json`. Each room shows a thumbnail of its scene; passages link
+  visited rooms; dashes show the visible exits not taken yet (doors included, hidden passages
+  such as the way to the barrow left out). The game clears the visit mark of maze rooms on
+  purpose, so the interface also remembers the rooms seen, in the saves. Resting the pointer
+  on a room (or touching it) shows its picture; a room can be walked to after a confirmation,
+  one move at a time, through visited rooms and open exits only, stopping at anything
+  unexpected (a villain, darkness without light, a blocked way).
+
+### Hints (InvisiClues)
+
+About 25 questions (`src/engine/assist/hints.ts`), each with three hints from vague to
+explicit, in French and English. A question shows once its place has been seen (or its object
+found), and moves to "solved" with the puzzle; hints are revealed one at a time, with a faint
+"invisible ink" look. Available from the menu in every mode.
+
+### Documents (feelies)
+
+The eleven texts written in the game (leaflet, owner's manual, dam guidebook, matchbook, gunk
+tube, boat label, engravings, prayer, black book, ancient map, the gothic door) join a
+collection once found, read from the story file in the language of the game, each on its own
+paper (cream leaflet, blue booklet, tan cloth label, parchment, stone…), printable.
+
+### Storyteller
+
+The browser's speech synthesis reads each new answer aloud in the language of the game, in
+sentences short enough for every engine, with the best local voice unless the player picks
+another, at an adjustable rate. A new command interrupts it; the soundtrack steps back while it
+speaks. Off by default.
 
 ## 6. Saves
 
@@ -355,6 +385,11 @@ the mailbox offers its actions): the point & click spirit without the 3D.
 - Settings: game mode, language (fr/en), font size, images, typewriter effect, CRT effect
   (scanlines), undo.
 - Dark theme (it is a cave…), layout adapted to phones, keyboard shortcuts, full screen button.
+- Light on the scenes: underground, a halo shows what the lantern lights. Its reach follows the
+  batteries, read from the game's clock table (385 turns: 200, then 100, 70 and 15 after each
+  warning), and it flickers below 12 %; a torch or candles give a warm, unsteady light. Dust
+  motes drift in caves, mines, the house and the temples; water ripples by the river and the
+  dam. Turned off for players who ask for reduced motion.
 
 ### Soundtrack
 
@@ -386,8 +421,9 @@ the mailbox offers its actions): the point & click spirit without the 3D.
 | 5 | **Images** | ✅ Style bible, 82 scenes + 11 state variants, 93 prompts, OpenAI / OpenRouter generation with cost estimate, 480×270 post-processing with a 64-color palette, review page. **All 93 images generated and chosen** |
 | 6 | **Deployment** | ✅ GitHub Pages workflow (tests with `dfrotz`, build, deploy), offline PWA |
 | 7 | **Soundtrack** | ✅ Procedural Web Audio ambiences per place, darkness and danger overlays, cues, sound lab |
-| 8 | **Side panel** | ✅ Tabs for actions, inventory and treasure tracker; object icon pipeline and 60 prompts. **Icons to generate** (placeholders until then) |
-| 9 | **Bonus** | To do: 2.5D parallax, clickable hotspots |
+| 8 | **Side panel** | ✅ Tabs for actions, map, inventory and treasure tracker; object icons generated |
+| 9 | **Atmosphere and extras** | ✅ Lantern halo and scene animations, map with walking, InvisiClues hints, documents (feelies), storyteller |
+| 10 | **Next** | Zork II and Zork III (same engine, new translation, images and guide); 2.5D parallax, clickable hotspots |
 
 ## 12. Decisions
 

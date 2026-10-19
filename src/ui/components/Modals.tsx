@@ -3,6 +3,8 @@ import { useEffect, useRef, useState } from 'react'
 import { useGame, type Mode } from '../store'
 import { t } from '../i18n'
 import { AUTOSAVE, SLOT_COUNT, exportAll, importAll } from '../saves'
+import { ItemIcon } from './ItemIcon'
+import { narrator } from '../sound/narrator'
 
 function Modal({ title, children }: { title: string; children: React.ReactNode }) {
   const close = useGame((s) => s.openModal)
@@ -35,7 +37,109 @@ export function Modals() {
   if (modal === 'help') return <HelpModal />
   if (modal === 'about') return <AboutModal />
   if (modal === 'welcome') return <WelcomeModal />
+  if (modal === 'hints') return <HintsModal />
+  if (modal === 'documents') return <DocumentsModal />
   return null
+}
+
+/** The "feelies": the documents of the game, each on its own kind of paper. */
+function DocumentsModal() {
+  const lang = useGame((s) => s.settings.lang)
+  const docs = useGame((s) => s.documents)()
+  const [reading, setReading] = useState<string | null>(null)
+  const doc = docs.find((d) => d.id === reading && d.found)
+  if (doc)
+    return (
+      <Modal title={doc.name ?? ''}>
+        <div className="paper-row">
+          <button className="btn" onClick={() => setReading(null)}>
+            {t(lang, 'back')}
+          </button>
+          <button className="btn" onClick={() => window.print()}>
+            {t(lang, 'print')}
+          </button>
+        </div>
+        <article className={`paper paper-${doc.style}`}>{doc.text}</article>
+      </Modal>
+    )
+  return (
+    <Modal title={t(lang, 'documents')}>
+      <p className="hint-intro">{t(lang, 'documentsIntro')}</p>
+      <ul className="doc-grid">
+        {docs.map((d) => (
+          <li key={d.id}>
+            <button className={`doc ${d.found ? '' : 'sealed'}`} disabled={!d.found} onClick={() => setReading(d.id)}>
+              <ItemIcon id={d.found ? d.id : null} kind={d.found ? 'paper' : 'unknown'} />
+              <span>{d.found ? d.name : t(lang, 'docUnknown')}</span>
+            </button>
+          </li>
+        ))}
+      </ul>
+    </Modal>
+  )
+}
+
+/** InvisiClues: questions about the places seen, hints revealed one at a time. */
+function HintsModal() {
+  const lang = useGame((s) => s.settings.lang)
+  const revealed = useGame((s) => s.revealed)
+  const reveal = useGame((s) => s.reveal)
+  const questions = useGame((s) => s.hints)()
+  const open = questions.filter((q) => !q.solved)
+  const solved = questions.filter((q) => q.solved)
+  // the questions already started are unfolded
+  const [unfolded, setUnfolded] = useState(() => new Set(open.filter((q) => revealed[q.id]).map((q) => q.id)))
+  const [showSolved, setShowSolved] = useState(false)
+  const toggle = (id: string) =>
+    setUnfolded((s) => {
+      const next = new Set(s)
+      if (!next.delete(id)) next.add(id)
+      return next
+    })
+  const block = (q: (typeof questions)[number]) => {
+    const n = Math.min(revealed[q.id] ?? 0, q.hints.length)
+    const on = unfolded.has(q.id)
+    return (
+      <div key={q.id} className="clue">
+        <button className="clue-q" aria-expanded={on} onClick={() => toggle(q.id)}>
+          {on ? '▾' : '▸'} {q.question}
+        </button>
+        {on && (
+          <>
+            {n > 0 && (
+              <ol>
+                {q.hints.slice(0, n).map((h, i) => (
+                  <li key={i} className="ink revealed">
+                    {h}
+                  </li>
+                ))}
+              </ol>
+            )}
+            {n < q.hints.length && (
+              <button className="ink hidden" onClick={() => reveal(q.id)}>
+                <span>{t(lang, 'hintNext')}</span>
+                <small>{t(lang, 'hintsLeft', q.hints.length - n)}</small>
+              </button>
+            )}
+          </>
+        )}
+      </div>
+    )
+  }
+  return (
+    <Modal title={t(lang, 'hints')}>
+      <p className="hint-intro">{t(lang, 'hintsIntro')}</p>
+      {open.length ? open.map(block) : <p className="empty">{t(lang, 'hintsNone')}</p>}
+      {solved.length > 0 && (
+        <div className="clue-solved">
+          <button className="clue-q" aria-expanded={showSolved} onClick={() => setShowSolved(!showSolved)}>
+            {showSolved ? '▾' : '▸'} {t(lang, 'hintsSolved')} ({solved.length})
+          </button>
+          {showSolved && solved.map(block)}
+        </div>
+      )}
+    </Modal>
+  )
 }
 
 function WelcomeModal() {
@@ -104,6 +208,12 @@ function MenuModal() {
         </button>
         <button className="btn" onClick={() => open('settings')}>
           {t(lang, 'settings')}
+        </button>
+        <button className="btn" onClick={() => open('hints')}>
+          {t(lang, 'hints')}
+        </button>
+        <button className="btn" onClick={() => open('documents')}>
+          {t(lang, 'documents')}
         </button>
         <button className="btn" onClick={() => open('help')}>
           {t(lang, 'help')}
@@ -286,7 +396,47 @@ function SettingsModal() {
         <span>{t(lang, 'volume')}</span>
         <input type="range" min={0} max={1} step={0.05} value={settings.volume} disabled={!settings.sound} onChange={(e) => set('volume', Number(e.target.value))} aria-label={t(lang, 'volume')} />
       </div>
+      {narrator.available && <NarratorSettings />}
     </Modal>
+  )
+}
+
+function NarratorSettings() {
+  const settings = useGame((s) => s.settings)
+  const set = useGame((s) => s.setSetting)
+  const lang = settings.lang
+  // the list of voices arrives late in some browsers
+  const [, refresh] = useState(0)
+  useEffect(() => {
+    const synth = window.speechSynthesis
+    const update = () => refresh((n) => n + 1)
+    synth.addEventListener('voiceschanged', update)
+    return () => synth.removeEventListener('voiceschanged', update)
+  }, [])
+  const voices = narrator.voices(lang)
+  return (
+    <>
+      <Toggle label={t(lang, 'narrator')} value={settings.narrator} onChange={(v) => set('narrator', v)} />
+      {settings.narrator && (
+        <>
+          <div className="setting">
+            <span>{t(lang, 'voice')}</span>
+            <select value={settings.narratorVoice} onChange={(e) => set('narratorVoice', e.target.value)}>
+              <option value="">{t(lang, 'voiceAuto')}</option>
+              {voices.map((v) => (
+                <option key={v.uri} value={v.uri}>
+                  {v.name}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div className="setting">
+            <span>{t(lang, 'narratorRate')}</span>
+            <input type="range" min={0.7} max={1.5} step={0.05} value={settings.narratorRate} onChange={(e) => set('narratorRate', Number(e.target.value))} aria-label={t(lang, 'narratorRate')} />
+          </div>
+        </>
+      )}
+    </>
   )
 }
 

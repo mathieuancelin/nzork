@@ -7,9 +7,11 @@ import { Scene } from './components/Scene'
 import { Transcript } from './components/Transcript'
 import { CommandBar } from './components/CommandBar'
 import { SidePanel } from './components/SidePanel'
+import { MapOverlay } from './components/MapView'
 import { Modals } from './components/Modals'
 import { t } from './i18n'
 import { useSoundtrack } from './sound/useSoundtrack'
+import { useNarrator } from './sound/useNarrator'
 
 function App() {
   const ready = useGame((s) => s.ready)
@@ -18,7 +20,9 @@ function App() {
   const toast = useGame((s) => s.toast)
   const undo = useGame((s) => s.undo)
   const sideCollapsed = useGame((s) => s.sideCollapsed)
+  const mapLarge = useGame((s) => s.mapLarge)
   useSoundtrack()
+  useNarrator()
 
   useEffect(() => {
     init()
@@ -56,6 +60,7 @@ function App() {
         </div>
         {withSide && <SidePanel />}
       </div>
+      {mapLarge && <MapOverlay />}
       <Modals />
       {toast && <div className="toast" role="status">{toast}</div>}
     </div>

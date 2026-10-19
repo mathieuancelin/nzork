@@ -1,0 +1,448 @@
+{
+ "size": [
+  16,
+  26
+ ],
+ "rooms": {
+  "ARAGAIN-FALLS": [
+   14,
+   22
+  ],
+  "ATLANTIS-ROOM": [
+   7,
+   14
+  ],
+  "ATTIC": [
+   7,
+   21
+  ],
+  "BAT-ROOM": [
+   0,
+   7
+  ],
+  "CANYON-BOTTOM": [
+   13,
+   25
+  ],
+  "CANYON-VIEW": [
+   11,
+   23
+  ],
+  "CELLAR": [
+   5,
+   19
+  ],
+  "CHASM-ROOM": [
+   6,
+   18
+  ],
+  "CLEARING": [
+   10,
+   23
+  ],
+  "CLIFF-MIDDLE": [
+   12,
+   24
+  ],
+  "COLD-PASSAGE": [
+   4,
+   12
+  ],
+  "CYCLOPS-ROOM": [
+   5,
+   21
+  ],
+  "DAM-BASE": [
+   10,
+   16
+  ],
+  "DAM-LOBBY": [
+   8,
+   14
+  ],
+  "DAM-ROOM": [
+   9,
+   16
+  ],
+  "DAMP-CAVE": [
+   10,
+   17
+  ],
+  "DEAD-END-1": [
+   4,
+   17
+  ],
+  "DEAD-END-2": [
+   3,
+   20
+  ],
+  "DEAD-END-3": [
+   1,
+   19
+  ],
+  "DEAD-END-4": [
+   2,
+   21
+  ],
+  "DEAD-END-5": [
+   8,
+   3
+  ],
+  "DEEP-CANYON": [
+   8,
+   17
+  ],
+  "DOME-ROOM": [
+   9,
+   19
+  ],
+  "EAST-OF-CHASM": [
+   5,
+   22
+  ],
+  "EAST-OF-HOUSE": [
+   10,
+   22
+  ],
+  "EGYPT-ROOM": [
+   12,
+   19
+  ],
+  "END-OF-RAINBOW": [
+   12,
+   23
+  ],
+  "ENGRAVINGS-CAVE": [
+   8,
+   19
+  ],
+  "ENTRANCE-TO-HADES": [
+   12,
+   17
+  ],
+  "EW-PASSAGE": [
+   6,
+   19
+  ],
+  "FOREST-1": [
+   8,
+   22
+  ],
+  "FOREST-2": [
+   10,
+   21
+  ],
+  "FOREST-3": [
+   9,
+   24
+  ],
+  "GALLERY": [
+   6,
+   22
+  ],
+  "GAS-ROOM": [
+   3,
+   3
+  ],
+  "GRATING-CLEARING": [
+   8,
+   20
+  ],
+  "GRATING-ROOM": [
+   7,
+   23
+  ],
+  "IN-STREAM": [
+   5,
+   15
+  ],
+  "KITCHEN": [
+   7,
+   22
+  ],
+  "LADDER-BOTTOM": [
+   9,
+   2
+  ],
+  "LADDER-TOP": [
+   9,
+   1
+  ],
+  "LAND-OF-LIVING-DEAD": [
+   11,
+   17
+  ],
+  "LIVING-ROOM": [
+   6,
+   20
+  ],
+  "LOUD-ROOM": [
+   9,
+   17
+  ],
+  "LOWER-SHAFT": [
+   6,
+   2
+  ],
+  "MACHINE-ROOM": [
+   7,
+   3
+  ],
+  "MAINTENANCE-ROOM": [
+   8,
+   13
+  ],
+  "MAZE-1": [
+   3,
+   17
+  ],
+  "MAZE-10": [
+   6,
+   23
+  ],
+  "MAZE-11": [
+   5,
+   24
+  ],
+  "MAZE-12": [
+   3,
+   22
+  ],
+  "MAZE-13": [
+   5,
+   23
+  ],
+  "MAZE-14": [
+   4,
+   21
+  ],
+  "MAZE-15": [
+   4,
+   20
+  ],
+  "MAZE-2": [
+   2,
+   18
+  ],
+  "MAZE-3": [
+   3,
+   19
+  ],
+  "MAZE-4": [
+   4,
+   18
+  ],
+  "MAZE-5": [
+   2,
+   20
+  ],
+  "MAZE-6": [
+   3,
+   21
+  ],
+  "MAZE-7": [
+   4,
+   19
+  ],
+  "MAZE-8": [
+   2,
+   19
+  ],
+  "MAZE-9": [
+   4,
+   23
+  ],
+  "MINE-1": [
+   4,
+   3
+  ],
+  "MINE-2": [
+   6,
+   0
+  ],
+  "MINE-3": [
+   7,
+   0
+  ],
+  "MINE-4": [
+   7,
+   1
+  ],
+  "MINE-ENTRANCE": [
+   2,
+   11
+  ],
+  "MIRROR-ROOM-1": [
+   5,
+   12
+  ],
+  "MIRROR-ROOM-2": [
+   11,
+   18
+  ],
+  "MOUNTAINS": [
+   11,
+   21
+  ],
+  "NARROW-PASSAGE": [
+   9,
+   18
+  ],
+  "NORTH-OF-HOUSE": [
+   9,
+   21
+  ],
+  "NORTH-TEMPLE": [
+   11,
+   19
+  ],
+  "NS-PASSAGE": [
+   7,
+   18
+  ],
+  "ON-RAINBOW": [
+   13,
+   22
+  ],
+  "PATH": [
+   8,
+   21
+  ],
+  "RESERVOIR": [
+   6,
+   16
+  ],
+  "RESERVOIR-NORTH": [
+   7,
+   15
+  ],
+  "RESERVOIR-SOUTH": [
+   7,
+   17
+  ],
+  "RIVER-1": [
+   12,
+   15
+  ],
+  "RIVER-2": [
+   14,
+   15
+  ],
+  "RIVER-3": [
+   15,
+   16
+  ],
+  "RIVER-4": [
+   14,
+   17
+  ],
+  "RIVER-5": [
+   13,
+   20
+  ],
+  "ROUND-ROOM": [
+   8,
+   18
+  ],
+  "SANDY-BEACH": [
+   14,
+   19
+  ],
+  "SANDY-CAVE": [
+   15,
+   19
+  ],
+  "SHAFT-ROOM": [
+   1,
+   7
+  ],
+  "SHORE": [
+   14,
+   20
+  ],
+  "SLIDE-ROOM": [
+   3,
+   13
+  ],
+  "SMALL-CAVE": [
+   7,
+   12
+  ],
+  "SMELLY-ROOM": [
+   2,
+   5
+  ],
+  "SOUTH-OF-HOUSE": [
+   9,
+   23
+  ],
+  "SOUTH-TEMPLE": [
+   12,
+   20
+  ],
+  "SQUEEKY-ROOM": [
+   0,
+   9
+  ],
+  "STONE-BARROW": [
+   8,
+   23
+  ],
+  "STRANGE-PASSAGE": [
+   5,
+   20
+  ],
+  "STREAM-VIEW": [
+   6,
+   17
+  ],
+  "STUDIO": [
+   6,
+   21
+  ],
+  "TIMBER-ROOM": [
+   7,
+   2
+  ],
+  "TINY-CAVE": [
+   12,
+   18
+  ],
+  "TORCH-ROOM": [
+   10,
+   19
+  ],
+  "TREASURE-ROOM": [
+   5,
+   18
+  ],
+  "TROLL-ROOM": [
+   5,
+   17
+  ],
+  "TWISTING-PASSAGE": [
+   6,
+   12
+  ],
+  "UP-A-TREE": [
+   9,
+   20
+  ],
+  "WEST-OF-HOUSE": [
+   9,
+   22
+  ],
+  "WHITE-CLIFFS-NORTH": [
+   13,
+   17
+  ],
+  "WHITE-CLIFFS-SOUTH": [
+   13,
+   18
+  ],
+  "WINDING-PASSAGE": [
+   10,
+   18
+  ]
+ }
+}
