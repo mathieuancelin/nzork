@@ -10,13 +10,13 @@ hear the wind in the trees.
 
 **[Play it online](https://mathieuancelin.github.io/nzork/)**
 
-Zork Next does not remake Zork. It runs the **original 1980s story file**, untouched, and wraps
+Zork in your browser does not remake Zork. It runs the **original 1980s story file**, untouched, and wraps
 it in what a modern browser can offer: a complete French translation, pixel-art illustrations
 in the spirit of the VGA adventure games, an eerie soundtrack composed live as you play, help
 modes for newcomers, and save slots. Every puzzle, every grue and every one of the 350 points is
 exactly where Infocom left them.
 
-> **Unofficial fan project.** Zork Next is a non-commercial tribute, made out of love for the
+> **Unofficial fan project.** Zork in your browser is a non-commercial tribute, made out of love for the
 > game. It is not affiliated with, endorsed by or sponsored by Infocom, Activision or
 > Microsoft. ZORK is a registered trademark of its owner. See [Credits and licenses](#credits-and-licenses).
 
@@ -260,7 +260,7 @@ The design notes are in [specs.md](specs.md). The translation follows
   and the [vendor/zork1](vendor/zork1) submodule.
 - **ZORK** is a registered trademark of its owner. This project uses the name only to refer to
   the game it pays tribute to.
-- **Zork Next** (the Z-machine, the French translation, the interface, the tools and the
+- **Zork in your browser** (the Z-machine, the French translation, the interface, the tools and the
   illustrations) is released under the [MIT license](LICENSE).
 - Fonts: [VT323](https://fonts.google.com/specimen/VT323) and
   [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono), served by Google Fonts.

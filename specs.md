@@ -1,4 +1,4 @@
-# Zork Next — design notes
+# Zork in your browser — design notes
 
 > Play **Zork I: The Great Underground Empire** in French, in the browser, with retro
 > illustrations, multiple-choice modes for newcomers and 10 save slots. A fan tribute: the
@@ -76,7 +76,7 @@ agreement works without touching the game.
 ### Layout
 
 ```
-zork-next/
+zork-in-your-browser/
 ├── vendor/zork1/          # original ZIL sources (git submodule)
 ├── specs.md
 ├── docs/                  # README screenshot

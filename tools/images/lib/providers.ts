@@ -88,7 +88,7 @@ export function openrouter(): Provider {
       for (const r of references) content.push({ type: 'image_url', image_url: { url: `data:image/png;base64,${r.toString('base64')}` } })
       const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
         method: 'POST',
-        headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json', 'X-Title': 'Zork Next' },
+        headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json', 'X-Title': 'Zork in your browser' },
         body: JSON.stringify({
           model,
           messages: [{ role: 'user', content }],
