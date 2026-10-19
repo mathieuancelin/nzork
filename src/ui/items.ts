@@ -5,9 +5,10 @@
 // the elvish sword, the matchbook).
 import zork1 from '../data/zork1/items.json'
 import zork2 from '../data/zork2/items.json'
+import zork3 from '../data/zork3/items.json'
 import type { GameId } from '../engine/games'
 
-const ITEMS: Record<GameId, { items: { id: string; objects: string[] }[] }> = { zork1, zork2, zork3: { items: [] } }
+const ITEMS: Record<GameId, { items: { id: string; objects: string[] }[] }> = { zork1, zork2, zork3 }
 const byObject = new Map<GameId, Map<string, string>>()
 
 /** Picture of an object (its ZIL name, e.g. "LAMP"). */
@@ -17,7 +18,7 @@ export function itemImageId(objName: string, game: GameId = 'zork1'): string {
     byObject.set(game, (m = new Map()))
     for (const it of ITEMS[game].items) for (const o of it.objects) m.set(o, it.id)
   }
-  return m.get(objName) ?? (game === 'zork1' ? objName.toLowerCase() : `${game}/${objName.toLowerCase()}`)
+  return m.get(objName) ?? (game === 'zork1' ? objName.toLowerCase() : `${game}-${objName.toLowerCase()}`)
 }
 
 let manifest: Promise<Set<string>> | null = null

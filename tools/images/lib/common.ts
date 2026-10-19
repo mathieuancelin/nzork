@@ -1,9 +1,17 @@
 // Shared helpers for the image tools. Two kinds of images go through the same pipeline: the
 // scenes (480×270 illustrations of the rooms) and the items (48×48 icons of the objects, on a
-// transparent background). The tools work on the scenes by default, on the items with --items.
+// transparent background). The tools work on the scenes by default, on the items with --items,
+// and on Zork I by default, on another game with --game zork2.
+//
+// Zork I's prompts live at the root of tools/images/, the other games' in tools/images/<game>/.
+// The images of every game share the candidates, approved and published folders: the ids of
+// Zork II and III start with their game ("zork2-dragon-room"). Zork I's keystones are the style
+// references of the whole trilogy, with the same 64-color palette; a game's own keystones join
+// them (references/<game>/).
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { join } from 'node:path'
+import { isGameId, type GameId } from '../../../src/engine/games'
 
 export const ROOT = fileURLToPath(new URL('../../../', import.meta.url))
 export const IMAGES = join(ROOT, 'tools/images')
@@ -12,40 +20,64 @@ export type KindName = 'scenes' | 'items'
 
 export interface Kind {
   name: KindName
-  /** Prompts file in tools/images/. */
+  game: GameId
+  /** Prompts file (absolute path). */
   prompts: string
   /** Raw candidates (git-ignored). */
   out: string
   /** Raw approved images (kept to re-run the post-processing). */
   approved: string
-  /** Approved keystones, sent as style references. */
+  /** Approved keystones of this game, sent as style references. */
   references: string
   /** Final images used by the game, with their manifest. */
   public: string
 }
 
-export const KINDS: Record<KindName, Kind> = {
-  scenes: {
-    name: 'scenes',
-    prompts: 'prompts.json',
-    out: join(IMAGES, 'out'),
-    approved: join(IMAGES, 'approved'),
-    references: join(IMAGES, 'references'),
-    public: join(ROOT, 'public/scenes'),
-  },
-  items: {
-    name: 'items',
-    prompts: 'item-prompts.json',
-    out: join(IMAGES, 'out-items'),
-    approved: join(IMAGES, 'approved-items'),
-    references: join(IMAGES, 'references-items'),
-    public: join(ROOT, 'public/items'),
-  },
+/** Where a game's prompts and descriptions live (Zork I: tools/images/ itself). */
+export const gameDir = (game: GameId) => (game === 'zork1' ? IMAGES : join(IMAGES, game))
+
+export function kinds(game: GameId = 'zork1'): Record<KindName, Kind> {
+  const sub = (dir: string) => (game === 'zork1' ? dir : join(dir, game))
+  return {
+    scenes: {
+      name: 'scenes',
+      game,
+      prompts: join(gameDir(game), 'prompts.json'),
+      out: join(IMAGES, 'out'),
+      approved: join(IMAGES, 'approved'),
+      references: sub(join(IMAGES, 'references')),
+      public: join(ROOT, 'public/scenes'),
+    },
+    items: {
+      name: 'items',
+      game,
+      prompts: join(gameDir(game), 'item-prompts.json'),
+      out: join(IMAGES, 'out-items'),
+      approved: join(IMAGES, 'approved-items'),
+      references: sub(join(IMAGES, 'references-items')),
+      public: join(ROOT, 'public/items'),
+    },
+  }
 }
 
-/** The kind chosen on the command line (--items, else the scenes). */
+export const KINDS = kinds('zork1')
+
+/** The game chosen on the command line (--game zork2), Zork I by default. */
+export function gameFromArgs(): GameId {
+  const g = arg('game') ?? 'zork1'
+  if (!isGameId(g)) throw new Error(`Unknown game "${g}" (zork1, zork2 or zork3)`)
+  return g
+}
+
+/** The kind chosen on the command line (--items, else the scenes), for the chosen game. */
 export function kindFromArgs(): Kind {
-  return KINDS[flag('items') ? 'items' : 'scenes']
+  return kinds(gameFromArgs())[flag('items') ? 'items' : 'scenes']
+}
+
+/** Style references for a game: Zork I's keystones (the art direction), then the game's own. */
+export function styleReferences(kind: Kind): string[] {
+  const dirs = [kinds('zork1')[kind.name].references, ...(kind.game === 'zork1' ? [] : [kind.references])]
+  return dirs.filter((d) => existsSync(d)).flatMap((d) => readdirSync(d).filter((f) => /\.png$/i.test(f)).map((f) => join(d, f)))
 }
 
 export interface PromptEntry {
@@ -62,7 +94,8 @@ export interface Prompts {
 }
 
 export function loadPrompts(kind: Kind = KINDS.scenes): Prompts {
-  const raw = JSON.parse(readFileSync(join(IMAGES, kind.prompts), 'utf8'))
+  if (!existsSync(kind.prompts)) return { style: '', negative: '', entries: {} }
+  const raw = JSON.parse(readFileSync(kind.prompts, 'utf8'))
   return { style: raw.style, negative: raw.negative, entries: raw[kind.name] }
 }
 

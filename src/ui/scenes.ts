@@ -1,9 +1,10 @@
 // Which illustration goes with which room (and state). The scene list of each game lives in
 // src/data/<game>/scenes.json, the prompts in tools/images/prompts.json; generated images are
-// published in public/scenes/ with a manifest (Zork I so far: the scenes of the other games
-// show their placeholder).
+// published in public/scenes/ with a manifest; the scenes of Zork II and III start with their
+// game ("zork2-dragon-room"). A scene without an image shows its placeholder.
 import zork1 from '../data/zork1/scenes.json'
 import zork2 from '../data/zork2/scenes.json'
+import zork3 from '../data/zork3/scenes.json'
 import type { Game, GameId } from '../engine/game'
 import { World } from '../engine/assist/world'
 import { allRooms } from '../engine/assist/map'
@@ -19,7 +20,7 @@ interface SceneDef {
   variants?: { id: string; when: Condition }[]
 }
 
-const SCENES = { zork1, zork2, zork3: { scenes: [] } } as unknown as Record<GameId, { scenes: SceneDef[] }>
+const SCENES = { zork1, zork2, zork3 } as unknown as Record<GameId, { scenes: SceneDef[] }>
 const byRoom = new Map<GameId, Map<string, SceneDef>>()
 function sceneDef(game: GameId, room: string): SceneDef | undefined {
   let m = byRoom.get(game)
@@ -45,8 +46,8 @@ export interface SceneInfo {
   ambience: PlaceId
 }
 
-/** Turns of light of a new lantern: the stages of LAMP-TABLE (Zork I 200 + 100 + 70 + 15, Zork II 200 + 300 + 100 + 50). */
-const LAMP_LIFE: Record<GameId, number> = { zork1: 385, zork2: 650, zork3: 385 }
+/** Turns of light of a new lantern: the stages of LAMP-TABLE (Zork I 200 + 100 + 70 + 15, Zork II 200 + 300 + 100 + 50, Zork III 300 + 100 + 50). */
+const LAMP_LIFE: Record<GameId, number> = { zork1: 385, zork2: 650, zork3: 450 }
 
 function lightOf(w: World, room: string): Pick<SceneInfo, 'light' | 'strength'> {
   if (w.roomLit(room)) return { light: 'day', strength: 1 }
@@ -63,7 +64,7 @@ function holds(w: World, c: Condition): boolean {
 }
 
 /** Without a scene, a room still gets its own (missing) picture, named after the game. */
-const fallbackId = (game: GameId, roomId: string) => (game === 'zork1' ? roomId.toLowerCase() : `${game}/${roomId.toLowerCase()}`)
+const fallbackId = (game: GameId, roomId: string) => (game === 'zork1' ? roomId.toLowerCase() : `${game}-${roomId.toLowerCase()}`)
 
 export function sceneFor(game: Game): SceneInfo {
   const roomId = game.status().roomId

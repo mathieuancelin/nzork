@@ -1,0 +1,148 @@
+{
+ "items": [
+  {
+   "id": "water",
+   "objects": [
+    "WATER"
+   ]
+  },
+  {
+   "id": "lamp",
+   "objects": [
+    "LAMP"
+   ]
+  },
+  {
+   "id": "lamp-broken",
+   "objects": [
+    "BROKEN-LAMP"
+   ]
+  },
+  {
+   "id": "zork3-lamp-wet",
+   "objects": [
+    "FRIED-LAMP"
+   ]
+  },
+  {
+   "id": "sword",
+   "objects": [
+    "SWORD"
+   ]
+  },
+  {
+   "id": "timbers",
+   "objects": [
+    "TIMBERS"
+   ]
+  },
+  {
+   "id": "zork3-torch",
+   "objects": [
+    "TORCH"
+   ]
+  },
+  {
+   "id": "zork3-torch-burned-out",
+   "objects": [
+    "FRIED-TORCH"
+   ]
+  },
+  {
+   "id": "zork3-warning-note",
+   "objects": [
+    "WARNING-NOTE"
+   ]
+  },
+  {
+   "id": "zork3-lore-book",
+   "objects": [
+    "LORE-BOOK"
+   ]
+  },
+  {
+   "id": "zork3-sceptre",
+   "objects": [
+    "SCEPTRE"
+   ]
+  },
+  {
+   "id": "zork3-jewelled-knife",
+   "objects": [
+    "JEWELLED-KNIFE"
+   ]
+  },
+  {
+   "id": "zork3-ring",
+   "objects": [
+    "RING"
+   ]
+  },
+  {
+   "id": "zork3-amulet",
+   "objects": [
+    "AMULET"
+   ]
+  },
+  {
+   "id": "zork3-hood",
+   "objects": [
+    "HOOD"
+   ]
+  },
+  {
+   "id": "zork3-cloak",
+   "objects": [
+    "CLOAK"
+   ]
+  },
+  {
+   "id": "zork3-staff",
+   "objects": [
+    "STAFF"
+   ]
+  },
+  {
+   "id": "zork3-staff-broken",
+   "objects": [
+    "BROKEN-STAFF"
+   ]
+  },
+  {
+   "id": "zork3-key",
+   "objects": [
+    "KEY"
+   ]
+  },
+  {
+   "id": "zork3-waybread",
+   "objects": [
+    "WAYBREAD"
+   ]
+  },
+  {
+   "id": "zork3-chest",
+   "objects": [
+    "CHEST"
+   ]
+  },
+  {
+   "id": "zork3-valuables",
+   "objects": [
+    "VALUABLES"
+   ]
+  },
+  {
+   "id": "zork3-repellent",
+   "objects": [
+    "REPELLENT"
+   ]
+  },
+  {
+   "id": "zork3-vial",
+   "objects": [
+    "VIAL"
+   ]
+  }
+ ]
+}

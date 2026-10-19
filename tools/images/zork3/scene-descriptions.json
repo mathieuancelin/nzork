@@ -1,0 +1,981 @@
+[
+ {
+  "id": "zork3-endless-stair",
+  "rooms": [
+   {
+    "room": "ZORK2-STAIR",
+    "name": "Endless Stair",
+    "description": "You are at the bottom of a seemingly endless stair, winding its way upward beyond your vision. An eerie light, coming from all around you, casts strange shadows on the walls. To the south is a dark and winding trail.",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-junction",
+  "rooms": [
+   {
+    "room": "JUNCTION",
+    "name": "Junction",
+    "description": "You are at the junction of a north-south passage and an east-west passage. To the north, you can make out the bottom of a stairway. The ways to the east and south are relatively cramped, but a wider trail leads to the west.",
+    "objects": [
+     "great rock"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zork3-barren-area",
+  "rooms": [
+   {
+    "room": "CLEARING",
+    "name": "Barren Area",
+    "description": "You are west of the junction, where the rock-bound passage widens out into a large, flat area. Although the land here is barren, you can see vegetation to the west. South of here is a mighty wall of stone, ancient and crumbling. To the southwest the wall has decayed enough to form an opening, through which seeps a thin mist. A trail dips sharply into rocky terrain to the northwest.",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-hairpin-loop",
+  "rooms": [
+   {
+    "room": "SLOPE",
+    "name": "Hairpin Loop",
+    "description": "You are at a sharp turn on a narrow and steeply sloping path, strewn with boulders of various sizes. The path climbs sharply toward a desolate plain to the southeast. Southwest of here the path winds down to the base of a cliff.",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-cliff-base",
+  "rooms": [
+   {
+    "room": "CLIFF-BASE",
+    "name": "Cliff Base",
+    "description": "You are at the base of a steep cliff. Directly above you is a wide ledge and far above that some natural sunlight can be seen. To the northeast is a steeply climbing path and the ground becomes sandy toward the south.",
+    "roomRoutineTexts": "",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-cliff",
+  "rooms": [
+   {
+    "room": "CLIFF",
+    "name": "Cliff",
+    "roomRoutineTexts": "This is a remarkable spot in the dungeon. Perhaps two hundred feet above you is a gaping hole in the earth's surface through which pours bright sunshine! A few seedlings from the world above, nurtured by the sunlight and occasional rains, have grown into giant trees, making this a virtual oasis in the desert of the Underground Empire. To the west is a sheer precipice, dropping nearly fifty feet to jagged rocks below. The way south is barred by a forbidding stone wall, crumbling from age. There is a jagged opening in the wall to the southwest, through which leaks a fine mist. The land to the east looks lifeless and barren.\n A rope is tied to one of the large trees here and is dangling over the side of the cliff, reaching down to the shelf below.\n You catch, out of the corner of your eye, some movement among the trees.\n You seem to hear, from the southwest, the sounds of the sea.\n",
+    "objects": [
+     "piece of waybread",
+     "rope",
+     "tree"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zork3-cliff-ledge",
+  "rooms": [
+   {
+    "room": "CLIFF-LEDGE",
+    "name": "Cliff Ledge",
+    "roomRoutineTexts": "You can't go anywhere holding that chest. The rope is tied around it!\n This is a rock-strewn ledge near the base of a tall cliff. The bottom of the cliff is another fifteen feet below. You have little hope of climbing up the cliff face, but you might be able to scramble down from here (though it's doubtful you could return).\n A long piece of rope is dangling down from the top of the cliff and is within your reach.\n",
+    "objects": [
+     "chest"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zork3-creepy-crawl",
+  "rooms": [
+   {
+    "room": "CREEPY-CRAWL",
+    "name": "Creepy Crawl",
+    "description": "You are in a dark and quite creepy crawlway with passages leaving to the north, east, south, and southwest.",
+    "roomRoutineTexts": "",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-tight-squeeze",
+  "rooms": [
+   {
+    "room": "TIGHT-SQUEEZE",
+    "name": "Tight Squeeze",
+    "description": "This is a very low and narrow passage leading east to west.",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-crystal-grotto",
+  "rooms": [
+   {
+    "room": "ROCKY-ROOM",
+    "name": "Crystal Grotto",
+    "description": "This is a chamber of breathtaking beauty. Mighty stalagmites form crystalline-encrusted rock formations. Phosphorescent mosses, fed by a trickle of water from above, make the crystals glow and sparkle with every color of the rainbow. There is an opening to the west, and a man-made passage heads south.",
+    "objects": [
+     "rock structure"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zork3-royal-hall",
+  "rooms": [
+   {
+    "room": "WIDE-HALL",
+    "name": "Royal Hall",
+    "description": "This is the north end of a large hall with a vaulted ceiling. A long, tiled hallway leads north through a tall arch. Although the purpose of this room is unclear, there is a large rendering of the Royal Seal of Lord Dimwit Flathead carved on the wall.",
+    "objects": [
+     "Royal Seal of Dimwit Flathead"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zork3-great-door",
+  "rooms": [
+   {
+    "room": "MUSEUM-ANTE",
+    "name": "Great Door",
+    "roomRoutineTexts": "This is the south end of a monumental hall, full of debris from a recent earthquake. To the east is a great iron door, rusted shut. To its right, however, is a gaping cleft in the rock and behind, a cleared area.\n You are in the southern half of a monumental hall. To the east lies a tremendous iron door which appears to be rusted shut.\n",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-museum-entrance",
+  "rooms": [
+   {
+    "room": "MUSEUM-ENTRANCE",
+    "name": "Museum Entrance",
+    "roomRoutineTexts": "This is an entrance hall of some sort, judging by the grand iron door to the west, and the ornate stone and wooden doors which lead to the east and north, respectively. A few wide steps lead south.\n This is the entrance to the Royal Museum, the finest and grandest in the Great Underground Empire. To the south, down a few steps, is the entrance to the Royal Puzzle and to the east, through a stone door, is the Royal Jewel Collection. A wooden door to the north is  {0} and leads to the Museum of Technology.  To the west is a great iron door, rusted shut. To its left, however, is a cleft in the rock providing an exit from the museum.\n To the west is a great iron door, rusted shut.\n To the west is a great iron door, rusted shut. The cleft in the rock, present when you started, has filled in with rubble.\n",
+    "objects": []
+   },
+   {
+    "room": "MID-MUSEUM-ENTRANCE",
+    "name": "Museum Entrance",
+    "roomRoutineTexts": "This is an entrance hall of some sort, judging by the grand iron door to the west, and the ornate stone and wooden doors which lead to the east and north, respectively. A few wide steps lead south.\n This is the entrance to the Royal Museum, the finest and grandest in the Great Underground Empire. To the south, down a few steps, is the entrance to the Royal Puzzle and to the east, through a stone door, is the Royal Jewel Collection. A wooden door to the north is  {0} and leads to the Museum of Technology.  To the west is a great iron door, rusted shut. To its left, however, is a cleft in the rock providing an exit from the museum.\n To the west is a great iron door, rusted shut.\n To the west is a great iron door, rusted shut. The cleft in the rock, present when you started, has filled in with rubble.\n",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-jewel-room",
+  "rooms": [
+   {
+    "room": "JEWEL-ROOM",
+    "name": "Jewel Room",
+    "roomRoutineTexts": "An odd robot-like device glides in, dusting the floor as it moves. Its head gyrates briefly as it scans the machine. \"Shame. Shame,\" it says, rather tinnily. \"Someone has been tampering with the machines again.\" Six beady mechanical eyes focus on you as the robot picks up the gold machine. \"Hands off, adventurer!\" it says as it leaves the room, closing the door behind it.\n You are in a high-ceilinged chamber  in the middle of which sits a tall, round steel cage, which is securely locked. In the middle of the cage is a pedestal on which sit the Crown Jewels of the Great Underground Empire: a sceptre, a jewelled knife, and a golden ring. A small bronze plaque, now tarnished, is on the cage.\n  in the middle of which is a bare pedestal. The room is unfinished with no indication of its purpose. A small plaque is fastened to a wall.\n",
+    "objects": [
+     "pedestal",
+     "steel cage"
+    ]
+   },
+   {
+    "room": "MID-JEWEL-ROOM",
+    "name": "Jewel Room",
+    "roomRoutineTexts": "An odd robot-like device glides in, dusting the floor as it moves. Its head gyrates briefly as it scans the machine. \"Shame. Shame,\" it says, rather tinnily. \"Someone has been tampering with the machines again.\" Six beady mechanical eyes focus on you as the robot picks up the gold machine. \"Hands off, adventurer!\" it says as it leaves the room, closing the door behind it.\n You are in a high-ceilinged chamber  in the middle of which sits a tall, round steel cage, which is securely locked. In the middle of the cage is a pedestal on which sit the Crown Jewels of the Great Underground Empire: a sceptre, a jewelled knife, and a golden ring. A small bronze plaque, now tarnished, is on the cage.\n  in the middle of which is a bare pedestal. The room is unfinished with no indication of its purpose. A small plaque is fastened to a wall.\n",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-tech-museum",
+  "rooms": [
+   {
+    "room": "TECH-MUSEUM",
+    "name": "Technology Museum",
+    "roomRoutineTexts": "",
+    "objects": [
+     "gold machine",
+     "grey machine",
+     "black machine",
+     "plaque"
+    ]
+   },
+   {
+    "room": "MID-TECH-MUSEUM",
+    "name": "Technology Museum",
+    "roomRoutineTexts": "",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-museum-entrance-unfinished",
+  "rooms": [
+   {
+    "room": "OLD-MUSEUM-ENTRANCE",
+    "name": "Museum Entrance",
+    "roomRoutineTexts": "You are in a high-ceilinged chamber, in the center of which is a pedestal which  is the intended home of the Crown Jewels of the Great Underground Empire: a jewelled knife, a golden ring, and the royal sceptre.  Not all of the jewels are in place, however. is bare.  The room is, by appearances, unfinished.\n You are in a large, unfinished room, probably intended to be a part of the Royal Museum.\n This appears to be an unfinished entranceway to the Royal Museum. There are doors to the east and north, and a blind stairway to the south. A heavy iron door to the west is closed and locked.\n You open the door ever so slightly and see dozens of armed officials. You shut the door quickly, realizing that you would be killed in an instant if you left the room.\n",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-jewel-room-unfinished",
+  "rooms": [
+   {
+    "room": "OLD-JEWEL-ROOM",
+    "name": "Jewel Room",
+    "roomRoutineTexts": "You are in a high-ceilinged chamber, in the center of which is a pedestal which  is the intended home of the Crown Jewels of the Great Underground Empire: a jewelled knife, a golden ring, and the royal sceptre.  Not all of the jewels are in place, however. is bare.  The room is, by appearances, unfinished.\n You are in a large, unfinished room, probably intended to be a part of the Royal Museum.\n This appears to be an unfinished entranceway to the Royal Museum. There are doors to the east and north, and a blind stairway to the south. A heavy iron door to the west is closed and locked.\n You open the door ever so slightly and see dozens of armed officials. You shut the door quickly, realizing that you would be killed in an instant if you left the room.\n",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-tech-museum-unfinished",
+  "rooms": [
+   {
+    "room": "OLD-TECH-MUSEUM",
+    "name": "Technology Museum",
+    "roomRoutineTexts": "You are in a high-ceilinged chamber, in the center of which is a pedestal which  is the intended home of the Crown Jewels of the Great Underground Empire: a jewelled knife, a golden ring, and the royal sceptre.  Not all of the jewels are in place, however. is bare.  The room is, by appearances, unfinished.\n You are in a large, unfinished room, probably intended to be a part of the Royal Museum.\n This appears to be an unfinished entranceway to the Royal Museum. There are doors to the east and north, and a blind stairway to the south. A heavy iron door to the west is closed and locked.\n You open the door ever so slightly and see dozens of armed officials. You shut the door quickly, realizing that you would be killed in an instant if you left the room.\n",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-puzzle-entrance",
+  "rooms": [
+   {
+    "room": "CP-ANTE",
+    "name": "Royal Puzzle Entrance",
+    "roomRoutineTexts": "This is a small square room, in the middle of which is a round hole  which is blocked by smooth sandstone.\n  through which you can discern the floor some ten feet below. The area under the hole is dark, but it appears to be completely enclosed in rock. In any event, it doesn't seem likely that you could climb back up. Exits are west and, up a few steps, north.\n",
+    "objects": [
+     "lamp",
+     "warning note",
+     "hole"
+    ]
+   },
+   {
+    "room": "MID-CP-ANTE",
+    "name": "Royal Puzzle Entrance",
+    "roomRoutineTexts": "This is a small square room, in the middle of which is a round hole  which is blocked by smooth sandstone.\n  through which you can discern the floor some ten feet below. The area under the hole is dark, but it appears to be completely enclosed in rock. In any event, it doesn't seem likely that you could climb back up. Exits are west and, up a few steps, north.\n",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-puzzle-side-room",
+  "rooms": [
+   {
+    "room": "CP-OUT",
+    "name": "Side Room",
+    "roomRoutineTexts": "You are in a narrow room, lit from above. A flight of steps leads up to the north, and a  passage metal door  leads to the east.\n",
+    "objects": []
+   },
+   {
+    "room": "MID-CP-OUT",
+    "name": "Side Room",
+    "roomRoutineTexts": "You are in a narrow room, lit from above. A flight of steps leads up to the north, and a  passage metal door  leads to the east.\n",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-royal-puzzle",
+  "rooms": [
+   {
+    "room": "CP",
+    "name": "Room in a Puzzle",
+    "roomRoutineTexts": "You are in a small square room bounded to the north and west with marble walls and to the east and south with sandstone walls.\n",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-engravings-room",
+  "rooms": [
+   {
+    "room": "MSTAIRS",
+    "name": "Engravings Room",
+    "roomRoutineTexts": "You are in a room with passages heading southwest and southeast. The north wall is ornately carved, filled with strange runes and writing in an unfamiliar language.\n The outline of a door is barely visible among the runes.\n",
+    "objects": [
+     "runes"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zork3-dead-end",
+  "rooms": [
+   {
+    "room": "DEAD-END",
+    "name": "Dead End",
+    "description": "You have come to the end of two adjoining passages to the west and the northwest.",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-damp-passage",
+  "rooms": [
+   {
+    "room": "DAMP-PASSAGE",
+    "name": "Damp Passage",
+    "description": "This is a particularly damp spot even by dungeon standards. You can see the junction to the west, and two similar passages to the east and northeast. A wide stone channel steeply descends into the room from the south. It is covered with slippery moss and lichen. The channel crosses the room, but the opening where it once continued north is now blocked by rubble.",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-button-room",
+  "rooms": [
+   {
+    "room": "MR-ANTE",
+    "name": "Button Room",
+    "description": "You are at the southern end of a long hall. To the south, stairs ascend into darkness. To the north the corridor is illuminated by torches set high in the walls, out of reach. On one wall is a red button.",
+    "objects": [
+     "red button"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zork3-beam-room",
+  "rooms": [
+   {
+    "room": "MREYE",
+    "name": "Beam Room",
+    "description": " ",
+    "roomRoutineTexts": "You conveniently drop the {0} in position to block the beam of light.\n You are in the middle of a long north-south corridor whose walls are polished stone. A narrow red beam of light crosses the room at the north end, inches above the floor.\n The beam is blocked by a {0} lying on the floor.\n",
+    "objects": [
+     "red beam of light"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zork3-hallway",
+  "rooms": [
+   {
+    "room": "MRA",
+    "name": "Hallway",
+    "description": " ",
+    "roomRoutineTexts": "",
+    "objects": []
+   },
+   {
+    "room": "MRB",
+    "name": "Hallway",
+    "description": " ",
+    "roomRoutineTexts": "",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-hallway-statues",
+  "rooms": [
+   {
+    "room": "MRC",
+    "name": "Hallway",
+    "description": " ",
+    "roomRoutineTexts": "",
+    "objects": []
+   },
+   {
+    "room": "MRD",
+    "name": "Hallway",
+    "description": " ",
+    "roomRoutineTexts": "",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-guardians",
+  "rooms": [
+   {
+    "room": "MRG",
+    "name": "Hallway",
+    "description": " ",
+    "roomRoutineTexts": "To the east and west are the Guardians of Zork, in perfect symmetry. From here, it's hard to tell which of the two is a reflection!\n You can't see them from here.\n The Guardians are quite impressive. I wouldn't get in their way if I were you!\n You step The {0} falls  in front of the Guardians, who  decimate you destroy it  in perfect unison. Satisfied, they resume their posts.\n You aren't close enough, and even if you were, the fight would be a bit one-sided.\n The statues are impassive.\n",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-narrow-room",
+  "rooms": [
+   {
+    "room": "MRAE",
+    "name": "Narrow Room",
+    "description": " ",
+    "roomRoutineTexts": "To the north is a large hallway.\n",
+    "objects": []
+   },
+   {
+    "room": "MRAW",
+    "name": "Narrow Room",
+    "description": " ",
+    "roomRoutineTexts": "To the north is a large hallway.\n",
+    "objects": []
+   },
+   {
+    "room": "MRBE",
+    "name": "Narrow Room",
+    "description": " ",
+    "roomRoutineTexts": "To the north and south are large hallways.\n",
+    "objects": []
+   },
+   {
+    "room": "MRBW",
+    "name": "Narrow Room",
+    "description": " ",
+    "roomRoutineTexts": "To the north and south are large hallways.\n",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-narrow-room-statues",
+  "rooms": [
+   {
+    "room": "MRCE",
+    "name": "Narrow Room",
+    "description": " ",
+    "roomRoutineTexts": "Somewhat to the north{0}\n",
+    "objects": []
+   },
+   {
+    "room": "MRCW",
+    "name": "Narrow Room",
+    "description": " ",
+    "roomRoutineTexts": "Somewhat to the north{0}\n",
+    "objects": []
+   },
+   {
+    "room": "MRDE",
+    "name": "Narrow Room",
+    "description": " ",
+    "roomRoutineTexts": "Somewhat to the south{0}\n",
+    "objects": []
+   },
+   {
+    "room": "MRDW",
+    "name": "Narrow Room",
+    "description": " ",
+    "roomRoutineTexts": "Somewhat to the south{0}\n",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-narrow-room-guardians",
+  "rooms": [
+   {
+    "room": "MRGE",
+    "name": "Narrow Room",
+    "description": " ",
+    "roomRoutineTexts": "To the east and west are the Guardians of Zork, in perfect symmetry. From here, it's hard to tell which of the two is a reflection!\n You can't see them from here.\n The Guardians are quite impressive. I wouldn't get in their way if I were you!\n You step The {0} falls  in front of the Guardians, who  decimate you destroy it  in perfect unison. Satisfied, they resume their posts.\n You aren't close enough, and even if you were, the fight would be a bit one-sided.\n The statues are impassive.\n",
+    "objects": []
+   },
+   {
+    "room": "MRGW",
+    "name": "Narrow Room",
+    "description": " ",
+    "roomRoutineTexts": "To the east and west are the Guardians of Zork, in perfect symmetry. From here, it's hard to tell which of the two is a reflection!\n You can't see them from here.\n The Guardians are quite impressive. I wouldn't get in their way if I were you!\n You step The {0} falls  in front of the Guardians, who  decimate you destroy it  in perfect unison. Satisfied, they resume their posts.\n You aren't close enough, and even if you were, the fight would be a bit one-sided.\n The statues are impassive.\n",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-mirror-box",
+  "rooms": [
+   {
+    "room": "IN-MIRROR",
+    "name": "Inside Mirror",
+    "description": " ",
+    "roomRoutineTexts": "You are inside a rectangular box of wood whose structure is rather complicated. Four sides and the roof are filled in, and the floor is open.\n\nAs you face the side opposite the entrance, two short sides of carved and polished wood are to your left and right. The left panel is mahogany, the right pine. The wall you face is red on its left half and black on its right. On the entrance side, the wall is white opposite the red part of the wall it faces, and yellow opposite the black section. The painted walls are at least twice the length of the unpainted ones. The ceiling is painted blue.\n\nIn the floor is a stone channel about six inches wide and a foot deep. The channel is oriented in a north-south direction. In the exact center of the room the channel widens into a circular depression perhaps two feet wide. Incised in the stone around this area is a compass rose.\n\nRunning from one short wall to the other at about waist height is a wooden bar, carefully carved and drilled. This bar is pierced in two places. The first hole is in the center of the bar (and thus the center of the room). The second is at the left end of the room (as you face opposite the entrance). Through each hole runs a wooden pole.\n\nThe pole at the left end of the bar is short, extending about a foot above the bar, and ends in a hand grip. The pole  has been lifted out of a hole carved in the stone floor. There is evidently enough friction to keep the pole from dropping back down. has been dropped into a hole carved in the stone floor. is positioned above the stone channel in the floor. has been dropped into the stone channel incised in the floor. is resting on the stone floor. \n\nThe long pole at the center of the bar extends from the ceiling through the bar to the circular area in the stone channel. This bottom end of the pole has a T-bar a bit less than two feet long attached to it, and on the T-bar is carved an arrow. The arrow and T-bar are pointing  {0}. \nThe pine panel has been opened outward.",
+    "objects": [
+     "T-bar",
+     "black panel",
+     "compass arrow",
+     "long pole",
+     "mahogany panel",
+     "pine panel",
+     "red panel",
+     "short pole",
+     "yellow panel",
+     "white panel",
+     "wooden bar"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zork3-dungeon-entrance",
+  "rooms": [
+   {
+    "room": "FRONT-DOOR",
+    "name": "Dungeon Entrance",
+    "description": " ",
+    "roomRoutineTexts": "The wooden door has a barred panel in it at about head height. The door itself is ",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-narrow-corridor",
+  "rooms": [
+   {
+    "room": "BEHIND-DOOR",
+    "name": "Narrow Corridor",
+    "roomRoutineTexts": "You are in a narrow north-south corridor. At the south end is a door and at the north end is an east-west corridor. The door is ",
+    "objects": [
+     "dungeon master"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zork3-south-corridor",
+  "rooms": [
+   {
+    "room": "SOUTH-CORRIDOR",
+    "name": "South Corridor",
+    "roomRoutineTexts": "You are in an east-west corridor which turns north at its eastern and western ends. The walls are made of the finest marble. Another hall leads south at the center of the corridor.\n In the center of the north wall is a bronze door which is ",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-marble-corridor",
+  "rooms": [
+   {
+    "room": "EAST-CORRIDOR",
+    "name": "East Corridor",
+    "description": "This is a hall with polished marble walls. It widens slightly as it turns west at its northern and southern ends.",
+    "objects": []
+   },
+   {
+    "room": "WEST-CORRIDOR",
+    "name": "West Corridor",
+    "description": "This is a hall with polished marble walls. It widens slightly as it turns east at its northern and southern ends.",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-north-corridor",
+  "rooms": [
+   {
+    "room": "NORTH-CORRIDOR",
+    "name": "North Corridor",
+    "description": " ",
+    "roomRoutineTexts": "This is a wide east-west corridor which opens onto a northern parapet at its center. You can see flames and smoke as you peer towards the parapet. The corridor turns south at either end, and in the center of the south wall is a heavy wooden door with a small barred window. The door is ",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-parapet",
+  "rooms": [
+   {
+    "room": "PARAPET",
+    "name": "Parapet",
+    "description": " ",
+    "roomRoutineTexts": "You are standing behind a stone retaining wall which rims a parapet overlooking a fiery pit. It is difficult to see through the smoke and flame which fills the pit, but it seems to be bottomless. The pit itself is circular, about two hundred feet in diameter, and is fashioned of roughly hewn stone. The flames generate considerable heat, so it is rather uncomfortable standing here.\nThere is an object here which looks like a sundial. On it are an indicator arrow surrounding a large button. On the face of the dial are numbers 1 through 8. The indicator points to the number {0}.\nTo the south, across a narrow corridor, is a prison cell.\n",
+    "objects": [
+     "large button",
+     "sundial"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zork3-cell",
+  "rooms": [
+   {
+    "room": "CELL",
+    "name": "Prison Cell",
+    "description": " ",
+    "roomRoutineTexts": "You are in a featureless prison cell. You can see  an east-west corridor outside the cell door. Your view also takes in the parapet and a large, fiery pit.\n through the small window in the closed door the parapet, and, behind that, smoke and flames rising from a fiery pit.\n The dungeon master is at the parapet, leaning on his staff. His keen gaze is fixed on you and he looks tense, as if waiting for something to happen.\n Behind you, to the south, is a bronze door which is ",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-prison-cell",
+  "rooms": [
+   {
+    "room": "PRISON-CELL",
+    "name": "Prison Cell",
+    "description": "You are in a bare prison cell. Its wooden door is securely fastened, and you can see only flames and smoke through its small window.",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-good-cell",
+  "rooms": [
+   {
+    "room": "GOOD-CELL",
+    "name": "Prison Cell",
+    "description": " ",
+    "roomRoutineTexts": "You are in a bare prison cell. Its wooden door is securely fastened, and you can see only flames and smoke through its small window. On the south wall is a bronze door which seems to be ",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-treasury",
+  "rooms": [
+   {
+    "room": "NIRVANA",
+    "name": "Treasury of Zork",
+    "description": "This is a large room, richly appointed in a style that bespeaks exquisite taste. To judge from its contents, it is the ultimate storehouse of the wealth of the Great Underground Empire.\n\nThere are chests containing precious jewels, mountains of zorkmids, rare paintings, ancient statuary, and beguiling curios.\n\nOn one wall is an annotated map of the Empire, showing the locations of various troves of treasure, and of many superior scenic views.\n\nOn a desk at the far end of the room are stock certificates representing a controlling interest in FrobozzCo International, the multinational conglomerate and parent company of the Frobozz Magic Boat Co., etc.\n",
+    "roomRoutineTexts": "As you examine your new-found riches, the Dungeon Master materializes beside you, and says, \"Now that you have solved all the mysteries of the Dungeon, it is time for you to assume your rightly earned place in the scheme of things. Long have I waited for one capable of releasing me from my burden!\" He taps you lightly on the head with his staff, mumbling a few well-chosen spells, and you feel yourself changing, growing older and more stooped. For a moment there are two identical mages standing among the treasure, then your counterpart dissolves into a mist and disappears, a sardonic grin on his face.\n\nFor a moment you are relieved, safe in the knowledge that you have at last completed your quest in ZORK. You begin to feel the vast powers and lore at your command and thirst for an opportunity to use them.\n\n",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-foggy-room",
+  "rooms": [
+   {
+    "room": "FOGGY-ROOM",
+    "name": "Foggy Room",
+    "description": "You are in a dank passage filled with a wispy fog. A spooky passageway leads north and a wider path heads off to the south. To the west, the path leaves the rock and enters an eerie, shadowy land.",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-lake-shore",
+  "rooms": [
+   {
+    "room": "LAKE-SHORE",
+    "name": "Lake Shore",
+    "description": "You are in a wide cavern on the north shore of a small lake. Some polished stone steps lead to the southeast and a sheer rock face prevents any movement around the lake to the southwest. The cavern is dimly lit from above.",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-on-lake",
+  "rooms": [
+   {
+    "room": "ON-LAKE",
+    "name": "On the Lake",
+    "description": "You are floating on the surface of the lake. The water is ice cold and your ability to survive here for long is very questionable. A swim north puts you at your starting point. Conditions to the east are poor where the lake turns into swamp. The west and south shores are suitable for walking, however.",
+    "roomRoutineTexts": "",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-underwater",
+  "rooms": [
+   {
+    "room": "IN-LAKE",
+    "name": "Underwater",
+    "description": "You are below the surface of the lake. It turns out that the lake is quite shallow and the bottom is only a few feet below you. Considering the frigid temperature of the water, you should probably not plan an extended stay. The lake bottom is sandy and a few hearty plants and algae live there.",
+    "roomRoutineTexts": "You can't carry that much underwater.\n You can't take that!\n The {0} is yours for a moment, but drops from your grasp.\n A large and hungry-looking fish is swimming in the neighborhood.\n Out of the corner of your eye, a small, shiny object appears in the sand. A moment later, it is gone!\n You catch a brief glimpse of something shiny in the sand.\n Something sparkling in the sand catches your eye for a moment.\n",
+    "objects": [
+     "sand",
+     "plants and algae",
+     "shiny object"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zork3-western-shore",
+  "rooms": [
+   {
+    "room": "FAR-SHORE",
+    "name": "Western Shore",
+    "description": "You are on the western shore of the lake. The ground here is quite hard, but a few sickly reeds manage to grow near the water's edge. The only path leads into the rock to the south.",
+    "objects": [
+     "reeds"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zork3-southern-shore",
+  "rooms": [
+   {
+    "room": "SOUTH-SHORE",
+    "name": "Southern Shore",
+    "description": "You are on the south shore of the lake. Rock formations prevent movement to the west and thickening swamp to the east makes the going all but impossible. To the south, where the beach meets a rock formation, you can make out a dark passage sloping steeply upward into the rock.",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-scenic-vista",
+  "rooms": [
+   {
+    "room": "VIEW-ROOM",
+    "name": "Scenic Vista",
+    "description": "Mounted on one wall is a flaming torch, which fills the room with a flickering light.",
+    "roomRoutineTexts": "You are in a small chamber carved in the rock, with the sole exit to the north. Mounted on one wall is a table labelled \"Scenic Vista,\" whose featureless surface is angled toward you. One might believe that the table was used to indicate points of interest in the view from this spot, like those found in many parks. On the other hand, your surroundings are far from spacious and by no stretch of the imagination could this spot be considered scenic. An indicator above the table reads \" {0}\".\n",
+    "objects": [
+     "viewing table",
+     "torch",
+     "indicator"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zork3-aqueduct-view",
+  "rooms": [
+   {
+    "room": "AQ-VIEW",
+    "name": "Aqueduct View",
+    "description": "This is a small balcony carved into a near-vertical cliff. To the east, stretching from north to south, stands a monumental aqueduct supported by mighty stone pillars, some of which are starting to crumble from age. You feel a sense of loss and sadness as you ponder this once-proud structure and the failure of the Empire which created this and other engineering marvels. Some stone steps lead up to the northwest.",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-dark-place",
+  "rooms": [
+   {
+    "room": "DARK-1",
+    "name": "Dark Place",
+    "objects": []
+   },
+   {
+    "room": "DARK-2",
+    "name": "Dark Place",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-key-room",
+  "rooms": [
+   {
+    "room": "KEY-ROOM",
+    "name": "Key Room",
+    "roomRoutineTexts": "You are between some rock and a dark place. The room is lit dimly from above, revealing a lone, dark path sloping down to the west.\n A heavy manhole cover has been moved to reveal a dark passage below.\n To one side of the room is a large manhole cover.\n",
+    "objects": [
+     "manhole cover",
+     "strange key"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zork3-aqueduct",
+  "rooms": [
+   {
+    "room": "AQ-1",
+    "name": "Aqueduct",
+    "description": "You are in a wide stone channel, part of the water supply system for the Great Underground Empire. The source of water was a waterfall to the south, which has long since dried up. Water flowed along the aqueduct to the north. This region is lit from above, although the source of light is not apparent.",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-high-arch",
+  "rooms": [
+   {
+    "room": "AQ-2",
+    "name": "High Arch",
+    "roomRoutineTexts": "You are now on one of the tallest arches of the aqueduct, hundreds of feet above a rocky chasm. The immensity of the aqueduct project is apparent from here. Stone supports rise from the rock floor to form massive arches, which traverse the region from north to south. The water-carrying channel here is wide and deep. To the west and far below, you can make out a balcony which must command a wide view of the aqueduct.\n The channel ends abruptly to your north where a supporting pillar has crumbled, casting the arch into the chasm.\n",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-water-slide",
+  "rooms": [
+   {
+    "room": "AQ-3",
+    "name": "Water Slide",
+    "roomRoutineTexts": "You are near the northern end of this segment of the aqueduct system. To the south and slightly uphill, the bulk of the aqueduct looms ominously, towering above a gorge. To the north, the water channel drops precipitously and enters a rocky hole. The damp moss and lichen would certainly make that a one-way trip.\n The southern part of the aqueduct system is inaccessable due to the collapse of one of the water-bearing arches.\n",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-shadow-hills",
+  "rooms": [
+   {
+    "room": "SHADOW-1",
+    "name": "Land of Shadow",
+    "description": "You are at the eastern end of a dark, featureless landscape of shallow hills. Paths to the east and southeast reenter the rock.",
+    "roomRoutineTexts": "Your way is blocked by the hooded figure.\n You can hear quiet footsteps nearby.\n Through the shadows, a cloaked and hooded figure appears before you, blocking the  {0}ern exit from the room and carrying a brightly glowing sword.\n",
+    "objects": []
+   },
+   {
+    "room": "SHADOW-3",
+    "name": "Land of Shadow",
+    "description": "You are in a dark and shadowy land. All around you are gentle hills and eerie shadows. Far above, shrouded in mist, you can barely make out the ceiling of the enormous cavern that spans this entire land.",
+    "roomRoutineTexts": "Your way is blocked by the hooded figure.\n You can hear quiet footsteps nearby.\n Through the shadows, a cloaked and hooded figure appears before you, blocking the  {0}ern exit from the room and carrying a brightly glowing sword.\n",
+    "objects": []
+   },
+   {
+    "room": "SHADOW-4",
+    "name": "Land of Shadow",
+    "description": "You are in an ominously dark land of rolling hills. The ground becomes softer to the south.",
+    "roomRoutineTexts": "Your way is blocked by the hooded figure.\n You can hear quiet footsteps nearby.\n Through the shadows, a cloaked and hooded figure appears before you, blocking the  {0}ern exit from the room and carrying a brightly glowing sword.\n",
+    "objects": []
+   },
+   {
+    "room": "SHADOW-7",
+    "name": "Land of Shadow",
+    "description": "You are in a land of dark shadows and shallow hills, which stretch out in all directions. To the west, the land dips sharply.",
+    "roomRoutineTexts": "Your way is blocked by the hooded figure.\n You can hear quiet footsteps nearby.\n Through the shadows, a cloaked and hooded figure appears before you, blocking the  {0}ern exit from the room and carrying a brightly glowing sword.\n",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-shadow-wall",
+  "rooms": [
+   {
+    "room": "SHADOW-2",
+    "name": "Land of Shadow",
+    "description": "You are in a shadowy land of low, rolling hills stretching out to the west and south. The land is bordered to the north by a massive stone wall. Ancient and weathered, the wall has crumbled enough at one point to permit passage.",
+    "roomRoutineTexts": "Your way is blocked by the hooded figure.\n You can hear quiet footsteps nearby.\n Through the shadows, a cloaked and hooded figure appears before you, blocking the  {0}ern exit from the room and carrying a brightly glowing sword.\n",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-shadow-quicksand",
+  "rooms": [
+   {
+    "room": "SHADOW-5",
+    "name": "Land of Shadow",
+    "description": "You are at the southern end of a shadowy land. The ground here is quite soft, and the area is surrounded by quicksand on most sides. North of here is a terrain of shallow hills.",
+    "roomRoutineTexts": "Your way is blocked by the hooded figure.\n You can hear quiet footsteps nearby.\n Through the shadows, a cloaked and hooded figure appears before you, blocking the  {0}ern exit from the room and carrying a brightly glowing sword.\n",
+    "objects": []
+   },
+   {
+    "room": "SHADOW-6",
+    "name": "Land of Shadow",
+    "description": "You are near the southern end of the land of shadow. The ground here is soft and spongy, and it becomes quicksand to the south. North and east of here are gentle, rolling hills. A gentle sea breeze wafts over a steeply sloping path to the west.",
+    "roomRoutineTexts": "Your way is blocked by the hooded figure.\n You can hear quiet footsteps nearby.\n Through the shadows, a cloaked and hooded figure appears before you, blocking the  {0}ern exit from the room and carrying a brightly glowing sword.\n",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-shadow-cliff",
+  "rooms": [
+   {
+    "room": "SHADOW-8",
+    "name": "Land of Shadow",
+    "description": "You are standing atop a steep cliff, looking west over a vast ocean. Far below, the surf pounds at a sandy beach. To the south and east are rolling hills filled with eerie shadows. A path cut into the face of the cliff descends toward the beach. To the north is a tall stone wall, which ends at the cliff edge. It was obviously built long ago, and directly north is a spot where you could climb over the rubble of the decaying wall.",
+    "roomRoutineTexts": "Your way is blocked by the hooded figure.\n You can hear quiet footsteps nearby.\n Through the shadows, a cloaked and hooded figure appears before you, blocking the  {0}ern exit from the room and carrying a brightly glowing sword.\n",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-flathead-ocean",
+  "rooms": [
+   {
+    "room": "FLATHEAD-OCEAN",
+    "name": "Flathead Ocean",
+    "roomRoutineTexts": "You are at the shore of an amazing underground sea, the topic of many a legend among adventurers. Few were known to have arrived at this spot, and fewer to return. There is a heavy surf and a breeze is blowing onshore. The land rises steeply to the east and quicksand prevents movement to the south. A thick mist covers the ocean and extends over the hills to the east. A path heads north along the beach.\n An ancient Viking ship is passing along the shore, an old and crusty sailor at the helm.\n Passing alongside the shore now is an old boat, reminiscent of an ancient Viking ship. Standing on the prow of the ship is an old and crusty sailor, peering out over the misty ocean.\n",
+    "objects": [
+     "Viking Ship"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zork3-room-8",
+  "rooms": [
+   {
+    "room": "ROOM-8",
+    "name": "Room 8",
+    "description": "This is a small chamber carved out of the rock at the end of a short crawl. On the wall is crudely chiseled the number \"8\". The only apparent exit, to the east, seems to be a blur and a loud, whirring sound resounds through the rock.",
+    "objects": [
+     "Frobozz Magic Grue Repellent"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zork3-sacrificial-altar",
+  "rooms": [
+   {
+    "room": "ZORK-IV",
+    "name": "Sacrificial Altar",
+    "roomRoutineTexts": "",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-ladder-top",
+  "rooms": [
+   {
+    "room": "LADDER-TOP",
+    "name": "Ladder Top",
+    "description": "This is a very small room. In the corner is a rickety wooden ladder, leading downward. It might be safe to descend. There is also a staircase leading upward.",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-ladder-bottom",
+  "rooms": [
+   {
+    "room": "LADDER-BOTTOM",
+    "name": "Ladder Bottom",
+    "description": "This is a rather wide room. On one side is the bottom of a narrow wooden ladder. To the west and the south are passages leaving the room.",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-mine-dead-end",
+  "rooms": [
+   {
+    "room": "DEAD-END-5",
+    "name": "Dead End",
+    "description": "You have come to a dead end in the mine.\nThere is a small pile of coal here.",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-timber-room",
+  "rooms": [
+   {
+    "room": "TIMBER-ROOM",
+    "name": "Timber Room",
+    "description": "This is a long and narrow passage, which is cluttered with broken timbers. A wide passage comes from the east and turns at the west end of the room into a very narrow passageway. From the west comes a strong draft.",
+    "roomRoutineTexts": "",
+    "objects": [
+     "broken timber"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zork3-drafty-room",
+  "rooms": [
+   {
+    "room": "LOWER-SHAFT",
+    "name": "Drafty Room",
+    "roomRoutineTexts": "",
+    "objects": []
+   }
+  ]
+ },
+ {
+  "id": "zork3-machine-room",
+  "rooms": [
+   {
+    "room": "MACHINE-ROOM",
+    "name": "Machine Room",
+    "objects": []
+   }
+  ]
+ }
+]

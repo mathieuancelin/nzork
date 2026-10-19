@@ -23,6 +23,283 @@
    "objects": [
     "MATCH"
    ]
+  },
+  {
+   "id": "zork2-statuette",
+   "objects": [
+    "STATUETTE"
+   ]
+  },
+  {
+   "id": "zork2-crown",
+   "objects": [
+    "CROWN"
+   ]
+  },
+  {
+   "id": "zork2-violin",
+   "objects": [
+    "VIOLIN"
+   ]
+  },
+  {
+   "id": "zork2-pearl",
+   "objects": [
+    "PEARL"
+   ]
+  },
+  {
+   "id": "zork2-zorkmid",
+   "objects": [
+    "COIN"
+   ]
+  },
+  {
+   "id": "zork2-stamp",
+   "objects": [
+    "STAMP"
+   ]
+  },
+  {
+   "id": "zork2-ruby",
+   "objects": [
+    "RUBY"
+   ]
+  },
+  {
+   "id": "zork2-bills",
+   "objects": [
+    "BILLS"
+   ]
+  },
+  {
+   "id": "zork2-portrait",
+   "objects": [
+    "PORTRAIT"
+   ]
+  },
+  {
+   "id": "zork2-candy",
+   "objects": [
+    "CANDY"
+   ]
+  },
+  {
+   "id": "zork2-sphere-red",
+   "objects": [
+    "PALANTIR-1"
+   ]
+  },
+  {
+   "id": "zork2-sphere-blue",
+   "objects": [
+    "PALANTIR-2"
+   ]
+  },
+  {
+   "id": "zork2-sphere-clear",
+   "objects": [
+    "PALANTIR-3"
+   ]
+  },
+  {
+   "id": "zork2-sphere-black",
+   "objects": [
+    "PALANTIR-4"
+   ]
+  },
+  {
+   "id": "zork2-collar",
+   "objects": [
+    "COLLAR"
+   ]
+  },
+  {
+   "id": "zork2-wand",
+   "objects": [
+    "WAND"
+   ]
+  },
+  {
+   "id": "zork2-gold-key",
+   "objects": [
+    "GOLD-KEY"
+   ]
+  },
+  {
+   "id": "zork2-rose",
+   "objects": [
+    "ROSE"
+   ]
+  },
+  {
+   "id": "zork2-chest",
+   "objects": [
+    "CHEST"
+   ]
+  },
+  {
+   "id": "zork2-steel-box",
+   "objects": [
+    "IRON-BOX"
+   ]
+  },
+  {
+   "id": "zork2-deposit-box",
+   "objects": [
+    "DEPOSIT-BOX"
+   ]
+  },
+  {
+   "id": "zork2-teapot",
+   "objects": [
+    "TEAPOT"
+   ]
+  },
+  {
+   "id": "zork2-water",
+   "objects": [
+    "WATER",
+    "SALTY-WATER"
+   ]
+  },
+  {
+   "id": "zork2-flask",
+   "objects": [
+    "FLASK"
+   ]
+  },
+  {
+   "id": "zork2-place-mat",
+   "objects": [
+    "PLACE-MAT"
+   ]
+  },
+  {
+   "id": "zork2-letter-opener",
+   "objects": [
+    "LETTER-OPENER"
+   ]
+  },
+  {
+   "id": "zork2-iron-key",
+   "objects": [
+    "KEY"
+   ]
+  },
+  {
+   "id": "zork2-club",
+   "objects": [
+    "BAT"
+   ]
+  },
+  {
+   "id": "zork2-brick",
+   "objects": [
+    "BRICK"
+   ]
+  },
+  {
+   "id": "zork2-string",
+   "objects": [
+    "FUSE"
+   ]
+  },
+  {
+   "id": "zork2-repellent",
+   "objects": [
+    "REPELLENT"
+   ]
+  },
+  {
+   "id": "zork2-mangled-cage",
+   "objects": [
+    "MANGLED-CAGE"
+   ]
+  },
+  {
+   "id": "zork2-dead-serpent",
+   "objects": [
+    "DEAD-SERPENT"
+   ]
+  },
+  {
+   "id": "zork2-cake-green",
+   "objects": [
+    "EAT-ME-CAKE"
+   ]
+  },
+  {
+   "id": "zork2-cake-blue",
+   "objects": [
+    "BLUE-ICING"
+   ]
+  },
+  {
+   "id": "zork2-cake-orange",
+   "objects": [
+    "ORANGE-ICING"
+   ]
+  },
+  {
+   "id": "zork2-cake-red",
+   "objects": [
+    "RED-ICING"
+   ]
+  },
+  {
+   "id": "zork2-book-green",
+   "objects": [
+    "GREEN-BOOK"
+   ]
+  },
+  {
+   "id": "zork2-book-blue",
+   "objects": [
+    "BLUE-BOOK"
+   ]
+  },
+  {
+   "id": "zork2-book-white",
+   "objects": [
+    "WHITE-BOOK"
+   ]
+  },
+  {
+   "id": "zork2-book-purple",
+   "objects": [
+    "PURPLE-BOOK"
+   ]
+  },
+  {
+   "id": "zork2-newspaper",
+   "objects": [
+    "NEWSPAPER"
+   ]
+  },
+  {
+   "id": "zork2-brochure",
+   "objects": [
+    "BANK-BROCHURE"
+   ]
+  },
+  {
+   "id": "zork2-card",
+   "objects": [
+    "CARD"
+   ]
+  },
+  {
+   "id": "zork2-balloon-label",
+   "objects": [
+    "BALLOON-LABEL"
+   ]
+  },
+  {
+   "id": "zork2-robot-label",
+   "objects": [
+    "ROBOT-LABEL"
+   ]
   }
  ]
 }

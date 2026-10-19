@@ -1,0 +1,291 @@
+{
+ "style": "Detailed hand-crafted pixel art scene from an early-1990s VGA point-and-click adventure game (LucasArts / Sierra style), 256-color look, limited palette, subtle dithering, painterly pixel shading, crisp edges, first-person view at eye level, wide 16:9 composition with a framing foreground, atmospheric lighting, no characters, no text, no letters, no UI, no border.",
+ "negative": "text, letters, words, inscription, watermark, signature, logo, UI, frame, border, photograph, photorealistic, 3D render, smooth gradients, blur, bokeh, anime, modern objects, people, player character, hands, gore",
+ "scenes": {
+  "zork3-endless-stair": {
+   "prompt": "The foot of a seemingly endless stone staircase winding upward and out of sight, spiraling into blackness far above, seen at a slight upward angle. An eerie, sourceless pale light comes from all around, casting strange, distorted shadows across the rough rock walls. Worn steps fill the middle ground; to one side, between the rocks, a dark and winding trail leads off to the south. Cold greys and dusky violet tints, faint silvery highlights, dreamlike and foreboding, the threshold of a final quest."
+  },
+  "zork3-junction": {
+   "prompt": "An underground crossroads where a north-south passage meets an east-west one, lit by the warm glow of the viewer's lantern. In the middle stands a great rough boulder, and deeply embedded in it is an ancient elvish sword, its blade sunk into the stone, the ornate hilt and crossguard catching a faint blue glint. To the north, the bottom of a stairway is barely visible in the gloom; cramped passages lead east and south, and a wider trail heads west. Browns, greys, ochre, a legendary, expectant stillness."
+  },
+  "zork3-junction--empty": {
+   "prompt": "An underground crossroads where a north-south passage meets an east-west one, lit by the warm glow of the viewer's lantern. In the middle stands a great rough boulder, its top split by a narrow empty slot where a sword was once embedded, a few chips of stone scattered at its foot. To the north, the bottom of a stairway is barely visible in the gloom; cramped passages lead east and south, and a wider trail heads west. Browns, greys, ochre, quiet and a little bare."
+  },
+  "zork3-barren-area": {
+   "prompt": "A large, flat and barren underground expanse where a rock-bound passage widens out, lit by the warm glow of the viewer's lantern. Dusty bare ground and scattered stones in the foreground; far to the west, a faint green-gold glow hints at vegetation and light. To the south runs a mighty wall of ancient stone blocks, weathered and crumbling; to the southwest it has decayed into a ragged opening through which a thin pale mist seeps. A trail dips sharply into rocky terrain to the northwest. Browns, dusty ochre, grey stone, desolate."
+  },
+  "zork3-hairpin-loop": {
+   "prompt": "A sharp hairpin turn on a narrow, steeply sloping underground path, lit by the warm glow of the viewer's lantern. Boulders of all sizes are strewn along the trail and piled against the rock walls. Uphill to the southeast the path climbs toward the darkness of a desolate plain; downhill to the southwest it winds away toward the base of a cliff, where a faint natural light glimmers far below. Loose gravel, cracked stone. Browns, greys, ochre, precarious and lonely."
+  },
+  "zork3-cliff-base": {
+   "prompt": "At the base of a steep, towering rock cliff deep underground, seen at an upward angle. Directly above, a wide rocky ledge juts out from the cliff face, and far above that a shaft of natural sunlight spills down from an unseen opening, softly lighting the scene. A steep path climbs away to the northeast between boulders; toward the south, the stony ground turns to pale sand, as if a shore were near. Grey and ochre rock, warm sunlit highlights, sandy beige, a hopeful glimpse of the world above."
+  },
+  "zork3-cliff": {
+   "prompt": "A remarkable oasis deep underground: about two hundred feet above, a gaping hole in the earth's surface pours bright sunshine down onto a grove of giant trees grown from seedlings of the world above, their trunks and leafy crowns glowing in the light. A long rope is tied to one of the large trees and dangles over the edge of a sheer precipice on the west, dropping toward jagged rocks far below. To the south, a forbidding stone wall crumbles with age, a jagged opening on the southwest leaking a fine mist; to the east the land turns lifeless and barren. Lush greens, golden sunbeams, grey rock, wondrous.",
+   "keystone": true
+  },
+  "zork3-cliff--man": {
+   "prompt": "A remarkable oasis deep underground: bright sunshine pours from a gaping hole in the earth's surface far above onto a grove of giant trees; a rope tied to one of them dangles over a sheer precipice on the west, and a crumbling stone wall runs to the south. Among the trees stands a stocky man of medium height with several days' growth of stubble, in rough, patched traveling clothes, proudly examining an armful of assorted valuables with a sly, satisfied grin, ready to slip away. Lush greens, golden sunbeams, grey rock, mischievous.",
+   "creatures": true
+  },
+  "zork3-cliff-ledge": {
+   "prompt": "A rock-strewn ledge near the base of a tall cliff, seen at a steep upward angle toward the sheer cliff face rising above, its top far out of reach against a glow of natural sunlight. A long rope dangles down from the top of the cliff and hangs within reach beside the ledge. Boulders and loose stones litter the narrow shelf in the foreground; past its crumbling edge, the bottom of the cliff lies about fifteen feet below. Grey and ochre rock, warm sunlit haze from above, a feeling of being stranded."
+  },
+  "zork3-cliff-ledge--man": {
+   "prompt": "A rock-strewn ledge near the base of a tall cliff, seen at a steep upward angle; a long rope dangles down the sheer cliff face from the top, within reach of the ledge. Far above, at the brink of the cliff and outlined against the glow of natural sunlight, a stocky, stubbly man in rough clothes leans over the edge and peers down, waving and chuckling in an unsettling sort of way. Boulders and loose stones litter the narrow shelf in the foreground. Grey and ochre rock, warm sunlit haze, a mix of hope and mistrust.",
+   "creatures": true
+  },
+  "zork3-creepy-crawl": {
+   "prompt": "A dark and quite creepy low crawlway deep underground, lit by the warm glow of the viewer's lantern, which barely reaches the walls. The ceiling hangs close overhead with dangling roots and dripping stalactites; tunnels branch off to the north, east, south and southwest, each a black opening into the unknown. Old cobwebs, damp patches and odd shadows cling to the rough rock. Browns, greys, sickly ochre, claustrophobic and unnerving."
+  },
+  "zork3-tight-squeeze": {
+   "prompt": "A very low and narrow passage running east to west, lit by the warm glow of the viewer's lantern, seen from a crouching viewpoint. The rough rock ceiling presses down just above, the walls almost brushing both sides; the tunnel continues ahead into darkness, where a faint multicolored shimmer can be glimpsed at its far end. Dust and loose pebbles on the floor. Browns, greys, ochre, cramped and oppressive."
+  },
+  "zork3-crystal-grotto": {
+   "prompt": "A chamber of breathtaking beauty deep underground. Mighty stalagmites rise into crystal-encrusted rock formations, and phosphorescent mosses, fed by a thin trickle of water from above, make the crystals glow and sparkle with every color of the rainbow, filling the cave with a soft magical light. An opening leads off to the west, and on the south side a man-made passage with squared stone edges heads away. Violet, emerald, sapphire and rose glints over dark rock, wondrous and serene."
+  },
+  "zork3-royal-hall": {
+   "prompt": "The north end of a large hall with a high vaulted stone ceiling, seen at a slight upward angle and lit by the warm glow of the viewer's lantern. Carved on the wall is a large rendering of the Royal Seal of Lord Dimwit Flathead: a curiously flat-headed figure wearing a gaudy crown, surrounded by the Crown Jewels of the Empire, ostentatious and excessive. A long tiled hallway leads north through a tall arch, and the hall stretches away south into darkness. Dusty tiles, pale stone, faded gilt, pompous grandeur."
+  },
+  "zork3-great-door": {
+   "prompt": "The southern half of a monumental underground hall of huge dressed stone blocks, seen at a slight upward angle and lit by the warm glow of the viewer's lantern. In the east wall stands a tremendous iron door, heavily riveted and covered with thick flaking rust, clearly rusted shut for ages. The hall stretches back north into darkness. Dust lies thick on the flagstones. Rust oranges, iron greys, pale stone, imposing and sealed."
+  },
+  "zork3-great-door--cleft": {
+   "prompt": "The south end of a monumental underground hall, full of debris from a recent earthquake: fallen blocks, rubble and dust cover the flagstones, lit by the warm glow of the viewer's lantern. In the east wall stands a tremendous iron door, riveted and rusted shut; to its right, the rock has split open into a gaping cleft, and through it a cleared area is visible beyond. The hall stretches back north into darkness. Rust oranges, iron greys, pale stone, freshly cracked rock, a way opened."
+  },
+  "zork3-museum-entrance": {
+   "prompt": "The entrance hall of the Royal Museum, once the grandest in the Great Underground Empire, softly lit by old bronze wall lamps. To the west stands a great iron door, rusted shut. To the east, an ornate stone door carved with royal motifs leads to the Royal Jewel Collection; to the north, a tall wooden door leads to the Museum of Technology. A few wide marble steps descend to the south. Polished floor, carved pilasters, a dusty faded grandeur. Warm stone, bronze and rust, dark wood, stately."
+  },
+  "zork3-museum-entrance--cleft": {
+   "prompt": "The entrance hall of the Royal Museum, once the grandest in the Great Underground Empire, softly lit by old bronze wall lamps. To the west stands a great iron door, rusted shut; to its left, the rock has split into a rough dark cleft, rubble at its foot, offering a way out of the museum. To the east, an ornate carved stone door leads to the Royal Jewel Collection; to the north, a tall wooden door to the Museum of Technology. A few wide marble steps descend to the south. Warm stone, bronze and rust, dark wood, stately."
+  },
+  "zork3-jewel-room": {
+   "prompt": "A high-ceilinged chamber of the Royal Museum, softly lit from above. In the middle stands a tall, round steel cage, securely locked, its bars rising almost to the ceiling. Inside it, on a stone pedestal, glitter the Crown Jewels of the Great Underground Empire, a royal sceptre, a jewelled knife and a golden ring, gleaming behind the bars. A small blank tarnished bronze plaque is fixed to the cage. A stone door leads out to the west. Polished stone, steel greys, gold and jewel glints, hushed and secure.",
+   "keystone": true
+  },
+  "zork3-jewel-room--bare": {
+   "prompt": "A high-ceilinged chamber, unfinished and with no indication of its purpose, softly lit from above. In the middle stands a bare stone pedestal with nothing on it and no cage around it. A small blank plaque is fastened to one wall. Rough, unpolished walls, a few unfinished blocks. A stone door leads out to the west. Grey stone, dull bronze, dust, an odd and slightly comical emptiness."
+  },
+  "zork3-tech-museum": {
+   "prompt": "A large hall which once hosted the technological exhibits of the Great Underground Empire, softly lit from above. Directly ahead stands a large, surprisingly shiny golden machine: a seat facing a console with a single button and a dial connected to a small blank display. On one side of the room, a strange grey machine shaped somewhat like a clothes dryer; on the other, a powerful-looking black machine, a tight tangle of wires, pipes and motors, both rusting in many spots. A faded blank plaque near the south door. Gold, iron greys, rust, curious."
+  },
+  "zork3-museum-entrance-unfinished": {
+   "prompt": "An unfinished entranceway to the Royal Museum, newly built and softly lit. Bare, freshly cut stone walls, a few planks and a heap of building stones in a corner. A heavy iron door to the west is closed and locked, gleaming and new, not yet rusted. Doors lead east and north; to the south a short stairway ends blindly against solid rock. A hushed, nervous atmosphere, as if guards were just outside. Pale new stone, bright iron, raw wood, secretive."
+  },
+  "zork3-jewel-room-unfinished": {
+   "prompt": "A high-ceilinged chamber of the Royal Museum still under construction, softly lit. In its center stands a plain stone pedestal, the intended home of the Crown Jewels, with no cage around it yet. The walls are bare new stone, unpolished, with a few unfinished blocks and scaffolding planks leaning in a corner. A closed door leads out to the west, beyond which voices seem to murmur. Pale fresh stone, warm light, dust, tense secrecy."
+  },
+  "zork3-tech-museum-unfinished": {
+   "prompt": "A large, unfinished room meant to become part of the Royal Museum, softly lit, its bare new walls unpolished. The exhibits have just been delivered and stand gleaming: in the center a large golden machine with a seat facing a console bearing a single button and a dial; on one side a grey machine shaped somewhat like a clothes dryer; on the other a black machine, a tight tangle of wires, pipes and motors. A closed door to the south. Gold, shiny greys and blacks, fresh stone, anticipation."
+  },
+  "zork3-puzzle-entrance": {
+   "prompt": "A small square room of the Royal Museum, softly lit. In the middle of the floor is a round hole, completely blocked by a smooth slab of sandstone set flush with the floor. An opening leads west, and a few steps rise to the north toward the museum entrance. Smooth marble walls, polished floor. Pale sandstone, white and grey marble, warm light, quiet and closed."
+  },
+  "zork3-puzzle-entrance--open": {
+   "prompt": "A small square room of the Royal Museum, softly lit. In the middle of the floor gapes a round hole: through it, the floor of a dark chamber can be discerned about ten feet below, enclosed in rock, with no visible way to climb back up. An opening leads west, and a few steps rise to the north toward the museum entrance. Smooth marble walls, polished floor. Pale sandstone, white and grey marble, warm light above, tempting darkness below."
+  },
+  "zork3-puzzle-side-room": {
+   "prompt": "A narrow room of the Royal Museum, lit by a soft light from above. A flight of stone steps leads up to the north. In the east wall stands a solid steel door, closed, smooth and featureless, set flush in the sandstone. Polished floor. Pale sandstone, steel greys, warm light, quiet and puzzling."
+  },
+  "zork3-puzzle-side-room--open": {
+   "prompt": "A narrow room of the Royal Museum, lit by a soft light from above. A flight of stone steps leads up to the north. In the east wall, a heavy steel door has slid open into the sandstone, revealing a passage that leads east among square blocks of marble and sandstone. Polished floor. Pale sandstone, steel greys, warm light, relief and freedom."
+  },
+  "zork3-royal-puzzle": {
+   "prompt": "A small square room inside the Royal Puzzle, a labyrinth of movable stone blocks, lit by a soft, even light from above. The walls to the north and west are of polished white-veined marble, smooth and solid; those to the east and south are of rough, warm-colored sandstone blocks, with thin dark seams at their edges as if they could be pushed. Square floor tiles in a grid pattern, sharp corners, nothing else. Cream marble, ochre sandstone, soft shadows, puzzling and confining."
+  },
+  "zork3-engravings-room": {
+   "prompt": "A room deep underground with passages heading southwest and southeast, lit by the warm glow of the viewer's lantern. The entire north wall is ornately carved, filled with strange illegible runes and pictures in an unfamiliar ancient style: among the patterns, carved flames, stone statues and an old man can be made out. No door is visible among the carvings. Dusty floor, rough side walls. Browns, ochre and grey, mysterious and ancient."
+  },
+  "zork3-engravings-room--old-man": {
+   "prompt": "A room deep underground with passages heading southwest and southeast, lit by the warm glow of the viewer's lantern. The north wall is ornately carved with strange illegible runes and pictures of flames, stone statues and an old man. Huddled asleep in a corner is a very old and wizened man with a long, stringy white beard, in a worn grey robe, snoring loudly, looking weak, tired and frail. Dusty floor, rough side walls. Browns, ochre and grey, mysterious and pitiful.",
+   "creatures": true
+  },
+  "zork3-engravings-room--door": {
+   "prompt": "A room deep underground with passages heading southwest and southeast, lit by the warm glow of the viewer's lantern. In the ornately carved north wall, covered with strange illegible runes, a massive stone door, its outline now plain among the carvings, has swung open noiselessly: beyond it, dark, forbidding stairs lead down toward a passage lit by flickering torchlight. Dusty floor. Browns, ochre and grey, a warm glow from beyond, the way to the final secrets."
+  },
+  "zork3-dead-end": {
+   "prompt": "The meeting point of two adjoining underground passages, lit by the warm glow of the viewer's lantern: one arrives from the west, the other from the northwest, and both end here against a blank wall of rough rock. Damp stone, a few pebbles, slow drips. Browns, greys, ochre, quiet and stale."
+  },
+  "zork3-damp-passage": {
+   "prompt": "A particularly damp underground room, lit by the warm glow of the viewer's lantern, which glistens on the wet walls. A wide stone channel, coated with slippery green moss and lichen, descends steeply into the room from the south, crosses the floor and stops at the north side, where its opening is blocked by a heap of rubble. A junction lies to the west, and two similar passages leave to the east and northeast. Puddles and drips. Mossy greens, wet greys, ochre, dank."
+  },
+  "zork3-button-room": {
+   "prompt": "The southern end of a long hall of dressed stone, looking north along the corridor, which is lit by torches set high in the walls, out of reach, their flames throwing a warm flickering light. On one wall, at hand height, is a single round red button. At the edge of the frame, stairs climb away into darkness. Smooth flagstones, tall walls. Warm stone, torchlight oranges, a vivid spot of red, expectant."
+  },
+  "zork3-beam-room": {
+   "prompt": "The middle of a long north-south corridor whose walls are polished stone, lit by torches set high in the walls. At the north end, a narrow, perfectly straight red beam of light crosses the corridor only inches above the floor, from one wall to the other, glowing faintly in the dust. Beyond it the corridor continues north into a wide hallway. Polished grey stone, warm torchlight, a vivid thin red line, mysterious."
+  },
+  "zork3-hallway": {
+   "prompt": "Part of a long, wide north-south hallway whose east and west walls are dressed stone, lit by torches set high in the walls. In the center of the floor runs a shallow stone channel, which widens in the middle of the room into a large round hole, around which a compass rose with plain arrow points and no letters is finely engraved in the stone. The corridor continues north and south into the torchlit distance. Smooth grey and ochre stone, warm flickering light, symmetrical and solemn."
+  },
+  "zork3-hallway-statues": {
+   "prompt": "Part of a long north-south hallway of dressed stone, lit by torches set high in the walls, a shallow stone channel running down the center of the floor and widening into a round hole ringed by an engraved, letterless compass rose. Somewhat further along the corridor, two identical stone statues face each other from pedestals on opposite sides: the Guardians of Zork, heavily armored warriors clasping formidable bludgeons, in perfect symmetry. Grey stone, warm torchlight, deep shadows, menacing stillness."
+  },
+  "zork3-guardians": {
+   "prompt": "Standing in a long stone hallway right between the Guardians of Zork: two immense, identical stone statues on pedestals on either side, heavily armored warriors of an ancient military order clasping formidable bludgeons, poised as if ready to strike, yet for the moment impassive. The scene is lit by torches set high in the walls, their flames glinting on the carved armor. A shallow channel runs along the floor to an engraved, letterless compass rose, and the hallway continues north and south. Grey granite, warm torchlight, deep shadows, perfect and terrifying symmetry.",
+   "keystone": true
+  },
+  "zork3-narrow-room": {
+   "prompt": "A narrow, corridor-like room: one long wall is a huge mirror in a wooden frame, reflecting the empty torchlit room and doubling it into an uncanny twin; the opposite wall is solid rough rock. Torchlight spills in from the large hallways that open at its north and south ends. Smooth stone floor, dark wooden framing, silvery reflections. Grey stone, warm torchlight, silvery glass, strange and disorienting."
+  },
+  "zork3-narrow-room-statues": {
+   "prompt": "A narrow, corridor-like room: one long wall is a huge mirror in a wooden frame reflecting the empty torchlit room, the opposite wall solid rough rock. Somewhat further along, beyond the end of the room, two identical stone statues of armored warriors clasping bludgeons face each other from pedestals, the Guardians of Zork, their image repeated in the mirror. Torchlight from the hallway. Grey stone, warm torchlight, silvery glass, tense."
+  },
+  "zork3-narrow-room-guardians": {
+   "prompt": "A narrow room squeezed between a solid rock wall and a huge framed mirror, right beside one of the Guardians of Zork: an immense stone statue of a heavily armored warrior clasping a formidable bludgeon stands at the edge of the room, and in the mirror its perfect reflection looks exactly like a second, identical Guardian facing it, so that it is hard to tell which is the reflection. Torchlight from high in the walls. Grey stone, silvery glass, warm flickering light, dread."
+  },
+  "zork3-mirror-box": {
+   "prompt": "Inside a rectangular box of carved wood with a rather complicated structure, its four sides and roof filled in, its floor open onto bare stone. Ahead, the long wall is painted red on its left half and black on its right; the short side walls are carved and polished mahogany on the left and pine on the right; the ceiling is painted blue. A carved, drilled wooden bar crosses the box at waist height, pierced by a short pole ending in a hand grip and by a long central pole running from ceiling to floor, ending in a T-bar carved with an arrow over a letterless compass rose in a stone channel. Warm wood, red, black, blue, intricate."
+  },
+  "zork3-dungeon-entrance": {
+   "prompt": "A north-south hallway of dressed stone, lit by torches set high in the walls, which ends to the north at a large, massive wooden door bound with iron. At about head height, the door has a small barred panel, closed and dark. Heavy planks, black iron studs, worn flagstones, grey stone walls. Warm flickering light, deep shadows, solemn and forbidding: the entrance to the Dungeon."
+  },
+  "zork3-narrow-corridor": {
+   "prompt": "A narrow north-south corridor of fine pale stone, lit by a steady warm light. At its far north end it opens onto a wider east-west corridor with polished marble walls; at the south end stands a heavy wooden door bound with iron. Clean flagstones, plain walls, an atmosphere of solemn expectation. Pale marble, warm stone, quiet."
+  },
+  "zork3-narrow-corridor--master": {
+   "prompt": "A narrow north-south corridor of fine pale stone, lit by a steady warm light, opening at its far north end onto a wider marble corridor. Standing quietly in the corridor, leaning on a plain wooden staff, is the Dungeon Master: an old yet oddly youthful man with long silver hair and a deeply lined face, dressed simply in a hood and cloak, a golden amulet on his chest and a ring on his finger, an old book under one arm and a single key hanging from his belt, his keen eyes fixed on the viewer. Pale marble, warm light, dignified and mysterious.",
+   "creatures": true
+  },
+  "zork3-south-corridor": {
+   "prompt": "An east-west corridor whose walls are made of the finest polished marble, lit by a steady warm light, seen from the point where another hall arrives from the south at its center. The corridor runs away left and right and turns north at both its eastern and western ends; the north wall ahead is smooth and plain. Polished white and grey marble with fine veins, gleaming floor, clean symmetry. Cool whites, warm light, austere and grand."
+  },
+  "zork3-marble-corridor": {
+   "prompt": "A north-south hall with polished marble walls, lit by a steady warm light gleaming on the veined stone. At its far end the hall widens slightly as it turns sideways around a corner, and it turns the same way at the near end. Smooth floor of marble slabs, no ornament, perfectly clean. White and grey marble, warm light, austere and quiet."
+  },
+  "zork3-north-corridor": {
+   "prompt": "A wide east-west marble corridor which opens at its center onto a northern parapet: through the opening, smoke and leaping flames rise from a vast fiery pit, casting a flickering orange glow and a shimmer of heat over everything. The corridor runs left and right and turns south at either end; to one side, set in the south wall, is a heavy wooden door with a small barred window. Marble tinted orange, deep reds, black smoke, ominous."
+  },
+  "zork3-parapet": {
+   "prompt": "Standing behind a low stone retaining wall which rims a parapet overlooking a vast circular pit of roughly hewn stone, about two hundred feet across and seemingly bottomless, filled with roaring flames and billowing smoke, the heat shimmering in the air. In the foreground stands an object like a sundial: a round stone dial marked with eight divisions shown as simple notches, an indicator arrow around a large central button. Lit by the hellish orange glare of the fire. Deep reds, oranges, black smoke, grey stone, awe and dread."
+  },
+  "zork3-cell": {
+   "prompt": "Inside a featureless prison cell of bare stone, looking out through its open wooden door: beyond a narrow east-west corridor stands the parapet with its low stone wall and a sundial-like object, and behind it smoke and flames rise from a vast fiery pit, casting a flickering orange glow into the cell. Bare walls, cold flagstones. Grey stone, deep reds and oranges, black smoke, confined and expectant."
+  },
+  "zork3-cell--master": {
+   "prompt": "Inside a featureless prison cell of bare stone, looking out through its open wooden door across a narrow corridor to the parapet, behind which smoke and flames rise from a vast fiery pit. At the parapet, beside a sundial-like object, stands the Dungeon Master, an old man with long silver hair in a simple hood and cloak, leaning on his wooden staff, his keen gaze fixed on the viewer, tense, as if waiting for something to happen. Grey stone, deep reds and oranges, black smoke, suspense.",
+   "creatures": true
+  },
+  "zork3-prison-cell": {
+   "prompt": "A bare prison cell of rough stone, its heavy wooden door securely fastened. Through the small barred window in the door, only flames and smoke can be seen, their orange glow flickering into the cell across the bare walls and floor. No furniture, no other exit. Grey stone, dark wood, deep reds and oranges, hopeless and trapped."
+  },
+  "zork3-good-cell": {
+   "prompt": "A bare prison cell of rough stone, faintly lit by the orange glow of flames flickering through the small barred window of its fastened wooden door. On the south wall stands a massive bronze door, finely made, with a heavy lock, gleaming in the firelight: the one promising feature of the cell. Grey stone, polished bronze, orange glow, a glimmer of hope."
+  },
+  "zork3-treasury": {
+   "prompt": "A large room richly appointed in exquisite taste, the ultimate storehouse of the wealth of the Great Underground Empire, glowing with warm golden light. Open chests overflow with precious jewels, mountains of gold coins rise from the floor, rare paintings in gilded frames hang among ancient statues and beguiling curios. On one wall hangs a large map of the Empire covered with tiny pictograms; at the far end stands a carved desk piled with neat stacks of blank certificates. Gold, crimson, deep wood, glittering jewels, triumphant."
+  },
+  "zork3-foggy-room": {
+   "prompt": "A dank underground passage filled with a wispy, drifting fog, lit by the warm glow of the viewer's lantern, which turns the mist into a pale halo. A spooky narrow passageway leads north into blackness, a wider path heads off to the south, and to the west the path leaves the rock and opens onto an eerie, shadowy land of dim hills. Wet rock walls, puddles, swirling vapor. Greys, muted violet, ochre, spooky and muffled."
+  },
+  "zork3-lake-shore": {
+   "prompt": "A wide cavern on the north shore of a small, still underground lake, dimly lit from above by a soft grey light whose source cannot be seen. The dark, ice-cold water stretches away, its far shores faint in the gloom. Polished stone steps lead down and away to the southeast; to the southwest a sheer rock face drops straight into the water, barring any passage along the shore. Pebbly beach in the foreground. Deep blue-greens, grey stone, silvery reflections, cold and calm."
+  },
+  "zork3-on-lake": {
+   "prompt": "Low viewpoint just above the surface of a small, ice-cold underground lake, floating among slow ripples, dimly lit from above by a soft grey light. Low, walkable shores lie to the west and south; to the east the lake thickens into a dark swamp of reeds and mud. A thin cold mist hangs over the water, and the cavern vault is lost in shadow. Deep blue-greens, grey, pale mist, chilling and exposed."
+  },
+  "zork3-underwater": {
+   "prompt": "Underwater at the bottom of a shallow, frigid underground lake, only a few feet below the surface. The sandy bottom stretches out in soft ripples, with a few hardy plants and strands of algae swaying gently. Above, the shimmering surface lets through a dim, rippling greyish light that dances on the sand; tiny bubbles rise. Cold blue-greens, pale sand, dark water fading to black at the edges, silent and breath-holding."
+  },
+  "zork3-western-shore": {
+   "prompt": "The western shore of a small underground lake, dimly lit from above by a soft grey light. The ground here is hard, bare rock; a few sickly, yellowing reeds manage to grow at the water's edge in the foreground. The dark lake stretches away to the east. The only path leads south into a narrow opening in the rock. Blue-green water, grey stone, faded yellow reeds, lonely and cold."
+  },
+  "zork3-southern-shore": {
+   "prompt": "The south shore of a small underground lake, dimly lit from above by a soft grey light. Rock formations block the way to the west, and to the east the shore thickens into an impassable swamp of mud, reeds and stagnant pools. To the south, where the narrow beach meets a rock formation, a dark passage slopes steeply upward into the rock. Grey sand, blue-green water, muddy browns, isolated."
+  },
+  "zork3-scenic-vista": {
+   "prompt": "A small chamber carved in the rock, its sole exit to the north, filled with warm flickering firelight. Mounted on one wall is a viewing table of polished stone like those found at park viewpoints, its featureless surface angled toward the viewer; above it is a small blank indicator plate. Nothing about the cramped room is scenic: rough walls close in on every side. Warm oranges, brown and grey stone, a touch of irony."
+  },
+  "zork3-aqueduct-view": {
+   "prompt": "A small balcony carved into a near-vertical cliff, overlooking a vast chasm lit from above by a soft light of unknown origin. To the east, stretching from north to south across the whole view, stands a monumental stone aqueduct carried on rows of mighty arches and pillars, some of them starting to crumble from age. A low stone balustrade frames the foreground; stone steps climb away to the northwest. Pale stone, dusty ochre, hazy blue depths, melancholic grandeur."
+  },
+  "zork3-aqueduct-view--collapsed": {
+   "prompt": "A small balcony carved into a near-vertical cliff, overlooking a vast chasm lit from above by a soft light of unknown origin. To the east, a monumental stone aqueduct stretches from north to south on rows of mighty arches, but one of its giant supporting pillars has collapsed into a pile of rubble and drifting dust, leaving a broken gap where a segment of the channel has fallen into the chasm. A low stone balustrade frames the foreground; stone steps climb to the northwest. Pale stone, dusty ochre, hazy blue depths, loss."
+  },
+  "zork3-dark-place": {
+   "prompt": "A dark, featureless passage of rough rock sloping steeply upward, swallowed by absolute darkness; only the nearest edges of the stone catch a faint glow. Uneven rock underfoot, an oppressive, airless blackness ahead in which anything could be lurking. Almost black, deep browns and greys, a frightening silence."
+  },
+  "zork3-key-room": {
+   "prompt": "A small rocky room, dimly lit from above by a single shaft of pale light focused on the center of the floor, where it falls on a patch of fine dust. To one side lies a large, heavy round iron manhole cover set in the floor. A lone, dark path slopes down to the west. Rough walls fading into darkness. Grey and brown rock, rusty iron, a pale beam of light, secretive."
+  },
+  "zork3-key-room--open": {
+   "prompt": "A small rocky room, dimly lit from above by a single shaft of pale light focused on the center of the floor. To one side, the large, heavy round iron manhole cover has been moved aside, revealing a dark round hole leading down into a passage below. A lone, dark path slopes down to the west. Rough walls fading into darkness. Grey and brown rock, rusty iron, a pale beam of light, a way down."
+  },
+  "zork3-aqueduct": {
+   "prompt": "Standing in a wide stone channel, part of the ancient water supply system of the Great Underground Empire, lit from above by a soft light whose source cannot be seen. The dry channel is rounded at the bottom, a few feet deep and ten feet wide, with patches of moss. To the south rises a long dried-up waterfall, a smooth, stained rock face where water once poured; to the north the channel runs away along the aqueduct. Pale stone, dry ochre, faint greens, abandoned."
+  },
+  "zork3-high-arch": {
+   "prompt": "Standing in the wide water channel on top of one of the tallest arches of a monumental aqueduct, hundreds of feet above a rocky chasm. Massive stone arches on mighty pillars march away north and south across the region, and the channel runs on along them. To the west and far below, a small balcony is carved into a cliff. Lit from above by a soft light of unknown origin. Pale stone, hazy blue depths, dizzying grandeur."
+  },
+  "zork3-high-arch--broken": {
+   "prompt": "Standing in the wide water channel on top of one of the tallest arches of a monumental aqueduct, hundreds of feet above a rocky chasm. Just ahead to the north the channel ends abruptly: a supporting pillar has crumbled and the arch beyond has fallen into the chasm, leaving a jagged broken edge over empty space. Other arches stand in the hazy distance; far below to the west, a small balcony is carved into a cliff. Soft light from above. Pale stone, hazy blue depths, peril."
+  },
+  "zork3-water-slide": {
+   "prompt": "Near the northern end of a segment of a great stone aqueduct, lit from above by a soft light. Ahead, the water channel drops precipitously and plunges into a dark rocky hole, its steep slope coated with damp, slippery moss and lichen, clearly a one-way trip. To one side, the bulk of the aqueduct looms ominously uphill to the south on its arches, towering above a gorge. Pale stone, mossy greens, a black opening, vertigo."
+  },
+  "zork3-water-slide--broken": {
+   "prompt": "Near the northern end of a segment of a great stone aqueduct, lit from above by a soft light. Ahead, the water channel drops precipitously into a dark rocky hole, its steep slope coated with slippery moss and lichen. To one side, uphill to the south, the aqueduct ends in a jagged break where one of its water-bearing arches has collapsed into the gorge, dust still hanging in the air. Pale stone, mossy greens, a black opening, no way back."
+  },
+  "zork3-shadow-hills": {
+   "prompt": "A dark and shadowy land of low, rolling hills stretching away in every direction, deep inside an enormous cavern whose ceiling can barely be made out far above, shrouded in mist. The scene is lit by the warm glow of the viewer's lantern, which reaches a few gentle slopes of bare dark earth and sparse dead grass before fading into gloom; towering walls of rock close the land in the distance. Eerie shadows seem to move between the hills. Deep violets, dark greys, ashen browns, mournful and uncanny."
+  },
+  "zork3-shadow-hills--figure": {
+   "prompt": "A dark and shadowy land of low, rolling hills under the misty vault of an enormous cavern, the warm glow of the viewer's lantern fading into gloom. Through the shadows, a cloaked and hooded figure stands before the viewer, blocking the way: a tall silhouette in a dark hooded cloak, its face hidden in the deep shadow of the hood, holding a brightly glowing elvish sword not unlike the viewer's own, its blade casting a cold blue light across the bare dark earth. Deep violets, dark greys, ashen browns, cold blue highlights, tense and uncanny.",
+   "keystone": true,
+   "creatures": true
+  },
+  "zork3-shadow-wall": {
+   "prompt": "A shadowy land of low, rolling hills stretching away to the west and south under the misty vault of an enormous cavern, lit by the warm glow of the viewer's lantern. Along the north runs a massive stone wall, ancient and weathered; at one point it has crumbled into a heap of rubble, leaving a gap through which a way north can be glimpsed. Eerie shadows lie between the hills. Deep violets, dark greys, weathered stone, desolate."
+  },
+  "zork3-shadow-wall--figure": {
+   "prompt": "A shadowy land of low, rolling hills, a massive ancient stone wall running along the north and crumbled at one point into a gap of rubble, the warm glow of the viewer's lantern fading into gloom. Through the shadows, a cloaked and hooded figure stands before the viewer, blocking the way: a tall silhouette in a dark hooded cloak, its face hidden in the deep shadow of the hood, holding a brightly glowing elvish sword not unlike the viewer's own, its blade casting a cold blue light over the stones of the wall. Deep violets, dark greys, cold blue highlights, tense.",
+   "creatures": true
+  },
+  "zork3-shadow-quicksand": {
+   "prompt": "The southern edge of a shadowy land of gentle hills, lit by the warm glow of the viewer's lantern. The ground here becomes soft and spongy, glistening, and to the south it turns into a treacherous expanse of quicksand, its smooth, faintly heaving surface vanishing into darkness. Low rolling hills rise to the north and east; a steeply sloping path leads down to the west, where a gentle sea breeze stirs the mist. Deep violets, dark greys, muddy ochre, wet sheen, treacherous."
+  },
+  "zork3-shadow-quicksand--figure": {
+   "prompt": "The soft, spongy southern edge of a shadowy land, a treacherous expanse of glistening quicksand stretching away to the south, the warm glow of the viewer's lantern fading into gloom. Through the shadows, a cloaked and hooded figure stands before the viewer, blocking the way: a tall silhouette in a dark hooded cloak, its face hidden in the deep shadow of the hood, holding a brightly glowing elvish sword not unlike the viewer's own, its blade casting a cold blue light over the wet ground. Deep violets, dark greys, muddy ochre, cold blue highlights, tense.",
+   "creatures": true
+  },
+  "zork3-shadow-cliff": {
+   "prompt": "Standing atop a steep cliff at the western edge of a shadowy land, looking out over a vast underground ocean shrouded in mist; far below, surf pounds a sandy beach. A path cut into the cliff face descends toward the shore. To the north, a tall ancient stone wall runs up to the cliff edge and ends there, decayed into rubble at one spot where it could be climbed. Shadow-filled hills behind. Dim grey-blue light from the sea, lantern glow, dark violets, vertiginous and haunting."
+  },
+  "zork3-shadow-cliff--figure": {
+   "prompt": "Atop a steep cliff at the western edge of a shadowy land, a vast misty underground ocean far below, a tall ancient stone wall ending at the cliff edge to the north. Through the shadows, a cloaked and hooded figure stands before the viewer, blocking the way: a tall silhouette in a dark hooded cloak, its face hidden in the deep shadow of the hood, holding a brightly glowing elvish sword not unlike the viewer's own, its blade casting a cold blue light against the grey mist of the sea. Dark violets, grey-blue mist, cold blue highlights, dramatic.",
+   "creatures": true
+  },
+  "zork3-flathead-ocean": {
+   "prompt": "The shore of an amazing underground sea, a legendary place few adventurers have reached. Heavy surf rolls onto a sandy beach and an onshore breeze blows; a thick mist covers the ocean, hiding its horizon, and drifts over steep hills rising to the east. To the south, a glistening stretch of quicksand closes the beach, while a path heads north along the shore. A diffuse silvery light seems to come from the mist itself. Grey-blue sea, white foam, pale sand, misty silver, wondrous and lonely.",
+   "keystone": true
+  },
+  "zork3-flathead-ocean--ship": {
+   "prompt": "The shore of an amazing underground sea: heavy surf rolls onto a sandy beach under a thick silvery mist. Passing along the shore through the mist is an ancient Viking ship with a carved dragon-headed prow, a striped square sail and a row of round shields along its side; standing on the prow, an old and crusty bearded sailor peers out over the misty ocean. Steep hills rise to the east, quicksand closes the beach to the south. Grey-blue sea, white foam, weathered wood, red and white stripes, legendary.",
+   "creatures": true
+  },
+  "zork3-room-8": {
+   "prompt": "A small, rough chamber carved out of the rock at the end of a short crawl, lit by the warm glow of the viewer's lantern. On one wall, crude chisel marks scar the stone. The only apparent exit, to the east, is a strange blur, as if the passage beyond were spinning at great speed, a fierce wind blowing out of it. Rough brown and grey rock, a motion-smeared opening, uneasy."
+  },
+  "zork3-sacrificial-altar": {
+   "prompt": "The interior of a huge, primitive temple built of rough basalt blocks, lit by a few flickering torches that cast a sallow, sickly light. In the center stands a crude stone altar draped with dark, stained velvet covers. Behind it rises an enormous statue of a demon, reaching forward with fanged jaws and razor-sharp talons. Deep shadows gather in the far corners. Black basalt, sallow yellow torchlight, dark crimson, terrifying but not gory."
+  },
+  "zork3-ladder-top": {
+   "prompt": "A very small room in an old mine, lit by the warm glow of the viewer's lantern. In the corner, the top of a rickety wooden ladder leads down through a hole in the floor into darkness, its rungs worn and uneven. On the other side, a rough staircase cut into the rock leads upward. Coal-black walls, rust, dark browns, cramped and precarious."
+  },
+  "zork3-ladder-bottom": {
+   "prompt": "A rather wide room deep in an old coal mine, lit by the warm glow of the viewer's lantern. On one side, the bottom of a narrow wooden ladder rises toward a dark hole in the ceiling. Passages leave the room to the west and south. Timber props, black coal seams, gravel and coal dust on the floor. Coal blacks, rust, dark browns, gloomy."
+  },
+  "zork3-mine-dead-end": {
+   "prompt": "A dead end in an old coal mine, lit by the warm glow of the viewer's lantern: the tunnel ends against a rough wall of rock and glistening black coal, at the foot of which lies a small pile of loose coal. Pick marks scar the seam, an old timber frame braces the ceiling. Coal blacks, rust, dark browns, airless and final."
+  },
+  "zork3-timber-room": {
+   "prompt": "A long and narrow mine passage cluttered with broken timbers: collapsed props and splintered beams lie across the floor and lean against the walls, lit by the warm glow of the viewer's lantern. A wide passage comes from the east and, at the west end of the room, turns into an extremely narrow opening, from which a strong draft blows, stirring the coal dust. Coal blacks, rust, splintered wood browns, precarious."
+  },
+  "zork3-drafty-room": {
+   "prompt": "A small, drafty room at the bottom of a long vertical shaft that rises into darkness, lit by the warm glow of the viewer's lantern. A cold draft swirls the coal dust. A passageway leads south, and a very narrow passage opens to the east. Rough black walls, rusted iron fittings. Coal blacks, rust, iron greys, cold and gloomy."
+  },
+  "zork3-machine-room": {
+   "prompt": "A large, cold room deep in a mine, its sole exit to the north, lit by the warm glow of the viewer's lantern. It is bare: only a few rusted bolts in the floor and a clean rectangular patch on the stone mark where some large machine once stood. Frost glistens on the walls, and old pipes end in nothing. Iron greys, rust, coal black, cold blue shadows, empty."
+  }
+ }
+}

@@ -1,17 +1,19 @@
 // Local review page for the generated candidates:  npm run images:review  → http://localhost:5180
-// Two tabs: the scenes and the object icons (/?kind=items). One foldable block per image: the
-// prompt, the current image, the candidates (raw and pixelized). Choosing a candidate publishes
-// it in public/scenes/ (or public/items/), folds the block and opens the next one still to
-// choose, without reloading the page.
+// One tab per game (/?game=zork2), each with its scenes and its object icons (&kind=items). One
+// foldable block per image: the prompt, the current image, the candidates (raw and pixelized).
+// Choosing a candidate publishes it in public/scenes/ (or public/items/), folds the block and
+// opens the next one still to choose, without reloading the page.
 import { createServer } from 'node:http'
 import { copyFileSync, existsSync, readFileSync, statSync, unlinkSync, writeFileSync } from 'node:fs'
 import { join, resolve } from 'node:path'
-import { KINDS, candidates, ensureDir, loadPrompts, readManifest, writeManifest, type Kind, type KindName } from './lib/common'
+import { KINDS, candidates, ensureDir, kinds, loadPrompts, readManifest, writeManifest, type Kind, type KindName } from './lib/common'
 import { loadPalette, pixelize, pixelizeItem } from './lib/pixel'
+import { GAMES, GAME_IDS, isGameId } from '../../src/engine/games'
 
 const PORT = Number(process.env.PORT ?? 5180)
+// candidates, approved and published images are shared by the games
 const ALLOWED = Object.values(KINDS).flatMap((k) => [k.out, k.public, k.approved].map((d) => resolve(d)))
-const kindOf = (name: string | null | undefined): Kind => KINDS[(name === 'items' ? 'items' : 'scenes') as KindName]
+const kindOf = (name: string | null | undefined, game?: string | null): Kind => kinds(isGameId(game) ? game : 'zork1')[(name === 'items' ? 'items' : 'scenes') as KindName]
 const pixelizeFor = (kind: Kind) => (kind.name === 'items' ? pixelizeItem : pixelize)
 
 function safe(path: string): string | null {
@@ -31,8 +33,16 @@ function chosenCandidate(kind: Kind, id: string, cands: string[]): string | null
   return cands.find((c) => statSync(c).size === size && readFileSync(c).equals(bytes)) ?? null
 }
 
+/** "12 / 69": the images of a game already chosen, out of all its prompts. */
+function tally(kind: Kind): string {
+  const ids = Object.keys(loadPrompts(kind).entries)
+  const done = readManifest(kind)
+  return `${ids.filter((id) => done.has(id)).length} / ${ids.length}`
+}
+
 function page(kind: Kind): string {
   const items = kind.name === 'items'
+  const gameArg = kind.game === 'zork1' ? '' : `--game ${kind.game} `
   const prompts = loadPrompts(kind)
   const done = readManifest(kind)
   const ids = Object.keys(prompts.entries).sort((a, b) => Number(!!prompts.entries[b].keystone) - Number(!!prompts.entries[a].keystone))
@@ -68,7 +78,7 @@ function page(kind: Kind): string {
         </figcaption></figure>`,
       )
       .join('')}</div>
-    ${cands.length ? '' : `<p class="none">Aucun candidat : npm run images:generate -- ${items ? '--items ' : ''}--ids ${id}</p>`}
+    ${cands.length ? '' : `<p class="none">Aucun candidat : npm run images:generate -- ${gameArg}${items ? '--items ' : ''}--ids ${id}</p>`}
   </div>
 </details>`
     })
@@ -108,7 +118,7 @@ button.del{border-color:#d9685f;color:#d9685f}
 figure.chosen button.choose{border-color:#8fc47f;color:#8fc47f}
 .none{color:#6f6552}
 body.hide-done details[data-done="true"]{display:none}
-nav a{color:#a39679;text-decoration:none;padding:4px 10px;border:1px solid #3b3226;border-radius:6px}nav a.on{color:#f4c96b;border-color:#e3a83c}
+nav a{color:#a39679;text-decoration:none;padding:4px 10px;border:1px solid #3b3226;border-radius:6px}nav a.on{color:#f4c96b;border-color:#e3a83c}nav small{color:#6f6552}
 .items .grid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
 .items .thumb{width:54px;height:54px;object-fit:contain}
 .items img.px,.items .current img{width:192px;max-width:192px;background:repeating-conic-gradient(#2b241c 0 25%,#1d1912 0 50%) 0 0/16px 16px;border-radius:4px}
@@ -117,20 +127,22 @@ label{cursor:pointer;color:#a39679}
 </style></head><body class="${kind.name}">
 <header>
   <h1>Atelier des illustrations</h1>
-  <nav><a href="/" class="${items ? '' : 'on'}">Scènes</a> <a href="/?kind=items" class="${items ? 'on' : ''}">Objets</a></nav>
+  <nav>${GAME_IDS.map((g) => `<a href="/?game=${g}${items ? '&kind=items' : ''}" class="${g === kind.game ? 'on' : ''}">${GAMES[g].title} <small>${tally(kinds(g)[kind.name])}</small></a>`).join(' ')}</nav>
+  <nav><a href="/?game=${kind.game}" class="${items ? '' : 'on'}">Scènes <small>${tally(kinds(kind.game).scenes)}</small></a> <a href="/?game=${kind.game}&kind=items" class="${items ? 'on' : ''}">Objets <small>${tally(kinds(kind.game).items)}</small></a></nav>
   <div class="progress"><span id="count"></span><div class="bar"><i id="bar"></i></div></div>
   <label><input type="checkbox" id="hide"> Masquer ${items ? 'les objets choisis' : 'les scènes choisies'}</label>
   <button id="next">${items ? 'Objet suivant à choisir' : 'Scène suivante à choisir'} ↓</button>
 </header>
 <main>
 <p class="palette">Palette : ${loadPalette().length} couleurs. Chaque candidat montre l'image brute puis l'aperçu pixelisé (${items ? 'icône 48×48 détourée, agrandie ×4' : '480×270'}, palette commune). Choisir une image la publie, replie le bloc et ouvre le suivant.</p>
-${blocks}
+${blocks || `<p class="none">Aucun prompt pour ${GAMES[kind.game].title} : voir ${esc(kind.prompts)}</p>`}
 </main>
 <div class="toast" id="toast"></div>
 <script>
 const scenes = [...document.querySelectorAll('details.scene')]
 const PUBLIC = ${JSON.stringify(kind.public)}
 const KIND = ${JSON.stringify(kind.name)}
+const GAME = ${JSON.stringify(kind.game)}
 
 function status(d) {
   const n = d.querySelectorAll('figure').length
@@ -166,7 +178,7 @@ function toast(text) {
 }
 
 async function post(kind, id, path) {
-  const r = await fetch('/' + kind, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id, path, kind: KIND }) })
+  const r = await fetch('/' + kind, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ id, path, kind: KIND, game: GAME }) })
   if (!r.ok) throw new Error(await r.text())
 }
 
@@ -228,7 +240,7 @@ createServer(async (req, res) => {
     const url = new URL(req.url ?? '/', `http://localhost:${PORT}`)
     if (url.pathname === '/') {
       res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' })
-      return res.end(page(kindOf(url.searchParams.get('kind'))))
+      return res.end(page(kindOf(url.searchParams.get('kind'), url.searchParams.get('game'))))
     }
     if (url.pathname === '/file' || url.pathname === '/preview') {
       const p = safe(url.searchParams.get('path') ?? '')
@@ -240,8 +252,8 @@ createServer(async (req, res) => {
     if (req.method === 'POST' && (url.pathname === '/approve' || url.pathname === '/reject')) {
       let raw = ''
       for await (const chunk of req) raw += chunk
-      const { id, path, kind: kindName } = JSON.parse(raw) as { id: string; path: string; kind?: string }
-      const kind = kindOf(kindName)
+      const { id, path, kind: kindName, game } = JSON.parse(raw) as { id: string; path: string; kind?: string; game?: string }
+      const kind = kindOf(kindName, game)
       const p = safe(path)
       if (!p || !/^[a-z0-9-]+$/.test(id)) return res.writeHead(400).end('bad request')
       if (url.pathname === '/reject') {

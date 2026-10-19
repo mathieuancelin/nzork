@@ -1,0 +1,332 @@
+{
+ "style": "Detailed hand-crafted pixel art scene from an early-1990s VGA point-and-click adventure game (LucasArts / Sierra style), 256-color look, limited palette, subtle dithering, painterly pixel shading, crisp edges, first-person view at eye level, wide 16:9 composition with a framing foreground, atmospheric lighting, no characters, no text, no letters, no UI, no border.",
+ "negative": "text, letters, words, inscription, watermark, signature, logo, UI, frame, border, photograph, photorealistic, 3D render, smooth gradients, blur, bokeh, anime, modern objects, people, player character, hands, gore",
+ "scenes": {
+  "zork2-inside-barrow": {
+   "prompt": "Inside an ancient barrow hidden deep within a dark forest: a low burial chamber of huge, roughly fitted grey stone slabs, roots poking through the joints of the ceiling, dimly lit by a faint cold glow seeping in from ahead. The great stone door has shut behind the viewer; at the southern end, the chamber narrows into a low, rough tunnel, at whose far end a faint greenish glow is visible. Packed earth floor strewn with dry leaves, lichen in the cracks. Browns, cold greys, ochre, a hint of green light far ahead, hushed and enclosed."
+  },
+  "zork2-narrow-tunnel": {
+   "prompt": "Standing at the southern mouth of a narrow rock tunnel where it opens onto a wide underground cavern. High above, the cavern ceiling is dotted with phosphorescent mosses that give a soft, eerie blue-green light. A deep ravine winds across the cavern floor, its steep and crumbly walls dropping to a thin, glinting stream far below. Just ahead, a crude wooden foot bridge spans the ravine toward the south. Rough tunnel walls frame the foreground. Dim blue-green glow, browns and greys, wide and mysterious."
+  },
+  "zork2-foot-bridge": {
+   "prompt": "Standing in the middle of a crude but sturdy wooden foot bridge of lashed planks and rope railings crossing a deep ravine inside a great cavern. On both sides, steep crumbly walls plunge to a small stream glinting far below. The path runs on to the north, toward a tunnel mouth, and to the south into the cavern. Phosphorescent mosses on the high ceiling cast a dim blue-green glow over everything. Weathered planks and ropes in the foreground. Browns, greys, blue-green light, vertiginous but steady."
+  },
+  "zork2-great-cavern": {
+   "prompt": "The center of a great cavern carved out of the limestone, seen at a slight upward angle. Stalactites and stalagmites of many sizes are everywhere, pale and glistening, some joined into thick columns. Patches of phosphorescent moss on the walls and the vault give a dim greenish glow, and weird shadows stretch between the formations. A narrow path winds away southwest among the stalagmites, and another leads northeast. Pale limestone, ochre, soft blue-green glow, eerie and majestic."
+  },
+  "zork2-shallow-ford": {
+   "prompt": "The southern edge of a great limestone cavern, dimly lit by phosphorescent moss high above. In the foreground a shallow stream ripples over smooth pebbles, a ford easy to cross. Beyond it, to the south, opens the dark round mouth of a tunnel that looks as if it was once enlarged and smoothed by hand. Behind, to the north, a narrow path winds back among pale stalagmites. Clear rippling water, pale limestone, greenish glow, a dark opening, quiet."
+  },
+  "zork2-dark-tunnel": {
+   "prompt": "A smooth but dusty tunnel lit by the warm glow of the viewer's lantern, a dim light glowing far behind to the northeast. Twigs and dead leaves cover the floor, the debris piling deeper ahead where the tunnel branches into a wide corridor curving away southwest and a narrower one leading southeast. Smooth, worked walls with a few roots and cracks, dust drifting in the light. Browns, ochre, grey, a faint greenish glow at one edge, quiet and expectant."
+  },
+  "zork2-garden-north": {
+   "prompt": "The northern end of a formal garden inside a vast cavern: tall clipped hedges hide the cavern walls, and a large growth of glowing mosses on the roof of the cave gives the soft, diffuse light of a cloudy day. In the center of a rose bed stands a small open gazebo painted white, with slender columns and a domed roof. A carefully manicured path of crushed white stones leads south; to the north, a break in the hedge is almost overgrown. Muted greens, white, soft pinks and reds of roses, peaceful and enchanted."
+  },
+  "zork2-garden-north--unicorn": {
+   "prompt": "The northern end of a formal garden inside a vast cavern: tall clipped hedges hide the walls, and glowing mosses on the cave roof give the soft light of a cloudy day. In the center of a rose bed stands a small open gazebo painted white; a manicured path of crushed white stones leads south, and a break in the hedge to the north is almost overgrown. Beside the roses, a beautiful white unicorn crops the grass, its spiral horn gleaming, a red satin ribbon around its neck holding a tiny glint of gold. Muted greens, pure white, rose reds, enchanted and shy.",
+   "creatures": true
+  },
+  "zork2-gazebo": {
+   "prompt": "Inside a small white gazebo in the midst of an underground formal garden: slender painted columns and a latticed balustrade frame the view, with clipped hedges and rose beds beyond under the soft, cloudy-day glow of mosses on the far cavern roof. In the center stands a small round tea table covered with a white cloth, bare. The open doorway leads back out to the garden path. White paint, muted greens, rose pinks, cool and restful."
+  },
+  "zork2-formal-garden": {
+   "prompt": "The middle part of a formal garden in an underground cavern: hedges hide the cavern walls, and a dim, pale illumination falls from mosses glowing far above like an overcast sky. A path of small crushed white stones winds from the foreground to the north among bushes and flower beds. In the distance to the north, the small white roof of a gazebo shows above the hedges; to the south loom peculiarly shaped bushes, and a small gap opens in the hedge to the west. Muted greens, white gravel, soft flower colors, calm and slightly uncanny."
+  },
+  "zork2-topiary": {
+   "prompt": "The southern end of an underground formal garden, its hedges hiding the cavern walls under a dim glow of mosses far above. Fantastic topiary bushes stand arrayed with geometric precision, shaggy and unclipped but clearly shaped like creatures: a dragon, a unicorn, a great serpent, a huge misshapen three-headed dog and several human figures, all made of dense leaves. On the west side, the path of white gravel passes under a rose arbor into a dark tunnel. Muted greens, rose reds, white gravel, whimsical yet vaguely troubling, as if the shapes might move.",
+   "keystone": true
+  },
+  "zork2-stream-path": {
+   "prompt": "A path following the south edge of a deep ravine, lit by the warm glow of the viewer's lantern, the far side lost in darkness and a stream murmuring unseen far below. The path heads away northeast along the brink. To the east, a ruined stone archway is choked with vines and vegetation, a pale garden light glimmering behind the leaves; to the southwest, a tunnel narrows into a tight, low crawl. Crumbly rock edge in the foreground. Browns, greys, dark greens, blue-black depths, secretive."
+  },
+  "zork2-marble-hall": {
+   "prompt": "An arched hall of fine white and grey-veined marble, lit by the warm glow of the viewer's lantern, its vaulted ceiling receding into shadow. To the north the hall stops abruptly: the marble floor is cracked and broken, slabs tilted and fallen, where a cold stream crosses at a ford, as if a flood or a collapse of the cave had struck. To the south, the hall opens toward a larger dark room. Elegant pilasters, scattered rubble, water stains. Pale marble, grey, ochre, cool blue-green water, faded grandeur."
+  },
+  "zork2-deep-ford": {
+   "prompt": "Low viewpoint, wading through a cold, dark stream at a deep spot at the bottom of a ravine, lit by the warm glow of the viewer's lantern glinting on the swirling water. The walls of the ravine rise steeply to the east and west; along the north wall runs a small rock ledge just above the water. To the south, on the bank, stands the entrance of a well-built but somewhat ruined marble hall with a cracked archway. Deep blue-greens, grey rock, pale marble, numbing cold."
+  },
+  "zork2-deep-ford--dead-dragon": {
+   "prompt": "Low viewpoint, wading through a cold, dark stream at a deep spot at the bottom of a ravine, lit by the warm glow of the viewer's lantern. The ravine walls rise steeply east and west, with a small rock ledge along the north wall. Half blocking the stream lies the huge body of a dead red dragon, sprawled across the water like a fallen boulder, wings crumpled, eyes closed, a puzzled look frozen on its face, the current parting around it. To the south, the cracked archway of a ruined marble hall. Deep blue-greens, crimson scales, grey rock, somber, never gory.",
+   "creatures": true
+  },
+  "zork2-ravine-ledge": {
+   "prompt": "Standing on a narrow rock ledge near the bottom of a deep ravine, lit by the warm glow of the viewer's lantern. Just below, a short scramble down the rock face leads to a cold, dark stream. The ledge continues to the west along the wall; above, a precarious climb leads up to another tiny ledge, where the dark doorway of a small room carved into the rock can be made out. Steep rough walls rise into darkness. Grey and ochre rock, blue-green water, precarious."
+  },
+  "zork2-end-of-ledge": {
+   "prompt": "The end of a rock ledge running along the wall of a ravine, lit by the warm glow of the viewer's lantern. Here a tunnel leads north into the wall; a faint haze of smoke drifts out of it in the warm air, and the rock around its mouth is darkened with soot. Below the ledge, sharp jagged rocks fall away into darkness; the ledge leads back east. Browns, grey, sooty black, a warm reddish tinge from the tunnel, ominous."
+  },
+  "zork2-dragon-room": {
+   "prompt": "A large cavern full of broken stone, lit by the warm glow of the viewer's lantern. The walls are scorched black and deep claw scratches score the floor; a sooty, dry haze hangs in the air. A paved path winds from a large passage on the west, through the room, and out across a huge stone bridge to the south. To the north, a dark and smoky tunnel leads off, and a small crack is visible in the east wall. Charred browns, soot black, ochre, ember-red tints, empty yet dangerous."
+  },
+  "zork2-dragon-room--dragon": {
+   "prompt": "A large cavern full of broken stone, lit by the warm glow of the viewer's lantern, its walls scorched black and its floor scored by deep claw scratches. A paved path winds from a passage on the west across the room to a huge stone bridge to the south; a small crack shows in the east wall. Before the dark, smoky tunnel to the north lies a huge red dragon, blocking it entirely, watching the viewer with slitted yellow cat's eyes, smoke curling from his nostrils and between his sword-sharp teeth. Charred browns, soot black, crimson and bronze scales, menacing and majestic, not gory.",
+   "keystone": true,
+   "creatures": true
+  },
+  "zork2-dragon-lair": {
+   "prompt": "The dragon's lair, lit by the warm glow of the viewer's lantern: a rough cavern whose rock walls are scarred and blackened by flame, the floor littered with debris, broken stone, old bones and ash. A blackened doorway leads back to the south. A large flat rock sits in one corner. Soot blacks, charred browns, ochre, a few glints of dead embers, oppressive and abandoned."
+  },
+  "zork2-dragon-lair--princess": {
+   "prompt": "The dragon's lair, lit by the warm glow of the viewer's lantern: a rough cavern whose rock walls are scarred and blackened by flame, the floor littered with debris, broken stone, old bones and ash. A blackened doorway leads back to the south. A large flat rock sits in one corner. On the rock in the corner sits a beautiful young princess in a dirty and bedraggled gown, her long hair unkempt, staring blankly ahead as if in a trance, oblivious to the viewer. Soot blacks, charred browns, a pale gown and golden hair as the only bright touch, melancholic.",
+   "creatures": true
+  },
+  "zork2-fresco-room": {
+   "prompt": "A room crossed by a path from east to west, lit by the warm glow of the viewer's lantern. Its walls are covered with beautiful old frescoes of someone battling dragons and rescuing fair maidens, in rich faded colors; but wherever the hero should be, the paint is blackened, blistered and cracked by intense heat, so that no one can tell who he is. Doorways open to the east and the west. Plaster, ochre, faded reds and blues, soot black, ironic and melancholic."
+  },
+  "zork2-stone-bridge": {
+   "prompt": "Standing in the middle of a ruined but still impressive stone bridge spanning a deep chasm, lit by the warm glow of the viewer's lantern. Broken balustrades and missing paving stones line the span; far below, water glints at the bottom of the abyss. Ahead, to the north, the paved path leads into a large open cavern; to the south it enters a tunnel full of drifting mist. Grey stone, ochre, blue-black depths, pale mist, vertiginous grandeur."
+  },
+  "zork2-cool-room": {
+   "prompt": "A cool, damp room filled with misty air, lit by the warm glow of the viewer's lantern, which makes the mist glow softly. A twisty path arrives from the southeast and splits here: one branch toward a wide stone bridge to the north, the other into a narrow tunnel to the west, from which cold mist and a chill seem to flow. Wet, glistening walls, puddles, a rim of frost on the stones near the tunnel. Cool greys, pale blues, ochre, damp and chilly."
+  },
+  "zork2-ice-room": {
+   "prompt": "A large hall of ancient black lava, its walls and floor worn smooth by the slow movement of a glacier, lit by the warm glow of the viewer's lantern. A large passage exits to the east, and at the top of a jumble of fallen rocks an upward lava tube opens into darkness. The whole west end is filled by a huge glacier, a wall of glistening blue-white ice that reflects the light like a dark mirror. Cold blues and whites, black lava, ochre, frozen silence."
+  },
+  "zork2-ice-room--melted": {
+   "prompt": "A large hall of ancient black lava, its walls and floor worn smooth by the slow movement of a glacier, lit by the warm glow of the viewer's lantern. A large passage exits to the east, and at the top of a jumble of fallen rocks an upward lava tube opens into darkness. The glacier is gone: where it stood, a damp and scorched passage leads west, still partly full of drifting steam, and puddles of meltwater cover the smooth lava floor. Wet black lava, grey steam, ochre, a sooty scorch, quiet after the storm."
+  },
+  "zork2-lava-tube": {
+   "prompt": "Inside a tight chimney of solidified lava, seen at a strong upward angle, lit by the warm glow of the viewer's lantern. The tube rises at least another hundred feet into darkness and drops to a large room far below. In its side, a large crack opens to the south, probably the result of a shift in the rock strata. Ropy, glassy lava textures, black and red-brown, footholds in the rock, cramped and vertical, faint warm air rising."
+  },
+  "zork2-cobwebby-corridor": {
+   "prompt": "A winding corridor filled with dusty cobwebs, lit by the warm glow of the viewer's lantern, the silvery strands catching the light. Some webs are broken and the dust on the floor is disturbed, as if someone passed recently. The twists and turns run from northeast to southwest; high up on the north side of one twist, a narrow crack opens in the rock. Greys, browns, silvery webs, ochre dust, creepy."
+  },
+  "zork2-carousel-room": {
+   "prompt": "A large circular room whose high ceiling is lost in gloom, lit by the warm glow of the viewer's lantern. Eight identical dark passages open all around its curved walls, evenly spaced and impossible to tell apart. The whole room seems to be turning: the walls and openings repeat in dizzying, ghosted streaks of dithering, and a spiral pattern swirls on the worn floor, as if a loud whirring came from everywhere at once. Browns, greys, ochre, vertigo and disorientation."
+  },
+  "zork2-carousel-room--stopped": {
+   "prompt": "A large circular room whose high ceiling is lost in gloom, lit by the warm glow of the viewer's lantern. Eight identical dark passages open all around its curved walls, evenly spaced and impossible to tell apart. The room has stopped turning and everything is perfectly still: each passage now stands sharp and distinct, a worn spiral pattern lies quiet on the floor, and dust settles slowly in the light. Browns, greys, ochre, a sudden calm."
+  },
+  "zork2-room-8": {
+   "prompt": "A small chamber carved out of the rock at the end of a short crawl, lit by the warm glow of the viewer's lantern. On the far wall, a single crude mark has been chiselled, rough and without any readable meaning. Behind the viewer, the low dark opening of the crawl leads back east. Rough grey and brown rock, chisel scars, dust, cramped and secretive."
+  },
+  "zork2-menhir-room": {
+   "prompt": "A large room once used as a quarry, lit by the warm glow of the viewer's lantern. Large limestone chunks lie helter-skelter on the floor, some rough-hewn, others smooth and well-finished; one side shows the cuts of quarried building blocks, the other half-shaped standing stones. Passages lead north and south. One particularly large menhir, at least twenty feet tall and eight feet thick, leans against the wall, blocking a dark opening to the southwest; an ornate carved emblem decorates its face. Pale limestone, ochre, grey, ancient and heavy."
+  },
+  "zork2-menhir-room--floating": {
+   "prompt": "A large room once used as a quarry, lit by the warm glow of the viewer's lantern. Large limestone chunks lie helter-skelter on the floor, some rough-hewn, others smooth and well-finished; one side shows the cuts of quarried building blocks, the other half-shaped standing stones. Passages lead north and south. The enormous menhir, twenty feet tall and carved with an ornate emblem, floats like a feather about ten feet in midair, motionless, a faint magical shimmer around it; beneath it, a dark passage to the southwest lies open and beckoning. Pale limestone, ochre, grey, a soft magical glow, astonishing."
+  },
+  "zork2-kennel": {
+   "prompt": "A room that was once a kennel for a very large dog, lit by the warm glow of the viewer's lantern. Thick dust lies over everything: huge old bones are scattered about, some big enough to belong to a dinosaur, beside an enormous trampled bed of rotten straw and a stone trough. Deep claw marks score the walls. The only exit opens to the northeast. Dusty browns, bone white, dark reds and greys, eerie and long abandoned."
+  },
+  "zork2-stairway": {
+   "prompt": "The top of a wide marble stairway leading down into the gloom, lit by the warm glow of the viewer's lantern. Elegant white marble steps between carved balustrades descend from the foreground into darkness; behind the viewer, a passage leads north. Smooth dressed stone walls. Pale marble, grey, ochre, deep shadows below, a solemn invitation."
+  },
+  "zork2-oddly-angled-room": {
+   "prompt": "A small room with oddly angled walls, lit by the warm glow of the viewer's lantern; its faceted walls are made of some dark, glassy substance that reflects the light in fractured glints. Passages open in all directions at strange angles, all alike. Set into the floor is a very small diamond-shaped window, glowing faintly from below. Dark glass, steel blues, ochre glints, disorienting and geometric."
+  },
+  "zork2-oddly-angled-stairs": {
+   "prompt": "A small room with oddly angled walls made of some dark, glassy substance, lit by the warm glow of the viewer's lantern, the faceted walls catching fractured glints. Passages open in all directions at strange angles. In the middle, a wide marble stairway leads upward out of the room. At its foot, the floor is solid and seamless. Dark glass, white marble, steel blues, ochre glints, disorienting and geometric."
+  },
+  "zork2-oddly-angled-stairs--open": {
+   "prompt": "A small room with oddly angled walls made of some dark, glassy substance, lit by the warm glow of the viewer's lantern, the faceted walls catching fractured glints. Passages open in all directions at strange angles. In the middle, a wide marble stairway leads upward out of the room. At the foot of the stairway the floor has swung down like a trap door, revealing a secret passage leading down into unrelieved darkness. Dark glass, white marble, steel blues, black depths, a sense of discovery."
+  },
+  "zork2-cerberus-room": {
+   "prompt": "The entrance to a huge crypt or tomb, seen at a slight upward angle and lit by the warm glow of the viewer's lantern: behind the viewer a marble stairway leads up, and ahead, through a monumental gateway arch of black and white stone carved with funerary motifs, the dark entrance of the crypt yawns to the east. Old claw marks and gnawed bones on the flagstones. Pale marble, black stone, dark reds, deep shadows, ominous and grand."
+  },
+  "zork2-cerberus-room--tamed": {
+   "prompt": "The entrance to a huge crypt or tomb, seen at a slight upward angle and lit by the warm glow of the viewer's lantern: behind the viewer a marble stairway leads up, and ahead, through a monumental gateway arch of black and white stone carved with funerary motifs, the dark entrance of the crypt yawns to the east. Before it stands a three-headed dog the size of an elephant, insipidly grinning with all three heads, tongues lolling, a gigantic studded collar around its neck, its huge tail wagging hard. Pale marble, black stone, warm browns, absurdly friendly.",
+   "creatures": true
+  },
+  "zork2-cerberus-room--cerberus": {
+   "prompt": "The entrance to a huge crypt or tomb, seen at a slight upward angle and lit by the warm glow of the viewer's lantern: behind the viewer a marble stairway leads up, and ahead, through a monumental gateway arch of black and white stone carved with funerary motifs, the dark entrance of the crypt yawns to the east. Guarding it stands a vicious three-headed dog the size of an elephant, black-furred and hackles raised, all three heads snarling with bared fangs and glowing red eyes. Pale marble, black stone, dark reds, menacing, not gory.",
+   "creatures": true
+  },
+  "zork2-crypt-anteroom": {
+   "prompt": "A large, empty anteroom lit by the warm glow of the viewer's lantern, its walls covered with marble bas-reliefs depicting the stirring times and the rather optimistic afterlife of a dynasty of kings with oddly flat heads: processions, banquets, clouds and harps. To the south stands a huge closed marble door, crowned by a band of worn, illegible carving. The exit is to the west. Pale marble, grey, gold accents, solemn and faintly comic."
+  },
+  "zork2-crypt": {
+   "prompt": "A crypt lit by the warm glow of the viewer's lantern. In the center lies a massive sealed marble tomb with carved, illegible lettering; around it, twelve somewhat flat, mummified heads of ancient kings are mounted securely on tall poles, dry and statue-like. No urns, no offerings. The only apparent exit is the door to the north, behind the viewer. The south wall is smooth dressed stone. Pale marble, grey, dark shadows, a macabre dignity, never gory."
+  },
+  "zork2-crypt--secret-door": {
+   "prompt": "A crypt lit by the warm glow of the viewer's lantern. In the center lies a massive sealed marble tomb with carved, illegible lettering; around it, twelve somewhat flat, mummified heads of ancient kings are mounted securely on tall poles, dry and statue-like. No urns, no offerings. The only apparent exit is the door to the north, behind the viewer. In the south wall, a secret door stands open, its outline traced in light, and beyond it a landing glows with an eerie green light. Pale marble, grey, deep shadows, emerald glow, the way to the end."
+  },
+  "zork2-landing": {
+   "prompt": "A landing beyond a secret door, at the top of a roughly hewn staircase that leads down into darkness. The stone floor is covered with carefully drawn magical runes and circles, abstract symbols without any letters, overlaid with sweeping, glowing green lines of enormous power that undulate back and forth across the landing and cast an eerie emerald light. Rough-hewn walls, the black stairwell ahead. Emerald greens, black, grey stone, powerful and climactic."
+  },
+  "zork2-guarded-room": {
+   "prompt": "A cobwebby, musty room lit by the warm glow of the viewer's lantern; tracks in the thick dust of the floor show that it has seen visitors recently. At the south end stands a stained and battered but very strong-looking oak door banded with iron. A corridor exits to the north. Embedded in the middle of the door is a nasty-looking lizard head, alive, with sharp teeth and beady eyes that follow the viewer. Greys, dusty browns, sickly green, cobweb silver, watchful."
+  },
+  "zork2-guarded-room--asleep": {
+   "prompt": "A cobwebby, musty room lit by the warm glow of the viewer's lantern; tracks in the thick dust of the floor show that it has seen visitors recently. At the south end stands a stained and battered but very strong-looking oak door banded with iron. A corridor exits to the north. The lizard head embedded in the middle of the door is now sleepy-looking, eyes closed and jaws slack, digesting peacefully. Greys, dusty browns, dull green, cobweb silver, a hushed relief."
+  },
+  "zork2-wizards-workshop": {
+   "prompt": "The entry hall of the Wizard of Frobozz's workshop, lit by the warm glow of the viewer's lantern. Dark corridors lead off to the west and the south; from the west drifts a faint haze of incense and candle smoke. Behind the viewer, a heavy oak door leads back north. The walls are hung with faded star charts and astrological tapestries covered with abstract symbols, and a tarnished mirror. Deep purples, midnight blues, gold accents, wood browns, mysterious and whimsical."
+  },
+  "zork2-wizards-workroom": {
+   "prompt": "The Wizard's workroom, lit by candles and the viewer's lantern. Shelves and racks crowd the walls, but a massive workbench of dark, heavy wood bound with iron dominates the room: stained by years of use, burned, deeply gouged as though some huge clawed animal was once imprisoned on it, and scattered with alembics, a mortar and pestle, small knives, scraps of vellum and wax candles. In a cleared area, three crystal stands of ruby, sapphire and diamond form a triangle. A hall runs east and west; a larger room lies south. Purples, dark wood, iron, candlelight gold, arcane.",
+   "keystone": true
+  },
+  "zork2-wizards-workroom--obsidian-stand": {
+   "prompt": "The Wizard's workroom, lit by candles and the viewer's lantern, its walls crowded with shelves and racks. A massive iron-bound workbench of dark wood, stained, burned and deeply gouged, is scattered with alembics, a mortar and pestle, knives, vellum and candles. In a cleared area, three empty crystal stands of ruby, sapphire and diamond form a triangle, and at its center now rises a black stand of polished obsidian, faint wisps of red, blue and white smoke still curling above it. A hall runs east and west; a larger room lies south. Purples, dark wood, glossy black, candlelight gold, arcane."
+  },
+  "zork2-trophy-room": {
+   "prompt": "The Wizard's trophy room, filled with memorabilia, lit by the warm glow of the viewer's lantern. On one wall hangs a framed diploma of illegible scrawls with a wax seal; a rack holds several old magic wands; a panel displays a collection of dull, nicked swords; shelves bear small glass bottles of murky liquid with vague shapes inside; a stuffed owl stares from its perch. The exit is to the north. Embedded in the wall stands an ornate glass-fronted trophy cabinet. Purples, dark wood, gold, tarnished steel, eccentric and faintly menacing."
+  },
+  "zork2-trophy-room--smashed": {
+   "prompt": "The Wizard's trophy room, lit by the warm glow of the viewer's lantern: a framed diploma of illegible scrawls, a rack of old magic wands, a panel of dull, nicked swords, shelves of small murky bottles and a stuffed owl on its perch. Where the ornate trophy cabinet was embedded in the wall, only an empty, splintered niche remains, and shards of glass and gilded wood litter the floor. The exit is to the north. Purples, dark wood, gold, glittering shards, the aftermath of violence."
+  },
+  "zork2-pentagram-room": {
+   "prompt": "A bare stone room lit by candles and the viewer's lantern. Inscribed on the floor is a great pentagram drawn in black chalk, its five points touching a circle of abstract arcane symbols, with a solid black circle at its center. Candles flicker at the points of the star. The only exit is to the north. Dark stone, black chalk, candlelight gold, deep purples, ominous and ritual."
+  },
+  "zork2-pentagram-room--demon": {
+   "prompt": "A bare stone room lit by candles and the viewer's lantern. Inscribed on the floor is a great pentagram of black chalk inside a circle of abstract arcane symbols, a solid black circle at its center, candles flickering at its points. Floating in midair above it looms a large and somewhat formidable demon, half-formed from greasy smoke: massive arms, a vile grin full of enormous fangs, glowing yellow eyes and a forked tongue, confined within the star. The only exit is to the north. Dark stone, candlelight gold, smoky greys, deep purples, menacing yet greedy, not gory.",
+   "creatures": true
+  },
+  "zork2-aquarium-room": {
+   "prompt": "A dark hallway turning a corner, lit by a fitful light flickering from the east and by the viewer's lantern. To the south, a dark doorway. Stone walls, puddles of salt water on the floor. Filling the northern half of the room is a huge aquarium of thick glass in an iron frame, its murky green water and sandy bottom faintly glowing, a vague shadow moving deep inside. Murky greens, blue-greys, iron, wet stone, uneasy stillness."
+  },
+  "zork2-aquarium-room--shattered": {
+   "prompt": "A dark hallway turning a corner, lit by a fitful light flickering from the east and by the viewer's lantern. To the south, a dark doorway. Stone walls, puddles of salt water on the floor. The huge aquarium filling the northern half of the room is shattered: its glass wall lies in jagged shards, salt water and wet sand are spilled across the floor, and among them lie the limp green coils of a dead sea serpent as big as a small whale. Murky greens, glittering glass, iron, wet sand, sad aftermath, never gory."
+  },
+  "zork2-aquarium-room--serpent": {
+   "prompt": "A dark hallway turning a corner, lit by a fitful light flickering from the east and by the viewer's lantern. To the south, a dark doorway. Stone walls, puddles of salt water on the floor. Filling the northern half of the room is a huge aquarium of thick glass in an iron frame; inside, a baby sea serpent already as big as a small whale writhes its scaly green body through the murky water, eyeing the viewer suspiciously with beady green eyes and dagger-like teeth. Murky greens, blue-greys, iron, menacing but not gory.",
+   "creatures": true
+  },
+  "zork2-murky-room": {
+   "prompt": "Underwater on the sandy bottom of a huge aquarium, looking out through murky salt water: everything is hazy and wavering, rendered in soft dithered greens. The floor is fine pale sand with a few stones; ahead, beyond the thick glass, the wall of the room is nicely dressed stone. Pale shafts of light waver down from above, and a large shadow seems to pass overhead. Murky greens, sand, dark blue, claustrophobic and dreamlike."
+  },
+  "zork2-wizards-quarters": {
+   "prompt": "Where the Wizard of Frobozz lives: a bedroom caught in the middle of a magical transformation, its decor shifting from one style to another. One side is an austere, monkish cell with a bare cot; the center melts into an opulent Arabian seraglio of silk cushions and hanging lamps, then into Louis XIV gilding; palm fronds and a hammock creep in from a corner while wisps of cloud drift across the ceiling. A doorway leads north. Lit by the viewer's lantern and a shimmer of magic. Purples, gold, greens, whimsical and unsettling."
+  },
+  "zork2-riddle-room": {
+   "prompt": "A bare stone room, empty on all sides, lit by the warm glow of the viewer's lantern. To the east stands a great closed door made of a single slab of stone, and above it runs a long band of carved inscription worn into illegible grooves. In the northwest corner, an exit leads down into darkness. Smooth grey stone, ochre, deep shadows, severe and silent, as if waiting for an answer."
+  },
+  "zork2-pearl-room": {
+   "prompt": "A former broom closet cut into the rock, lit by the warm glow of the viewer's lantern: a narrow, cramped room with a few old iron wall hooks, a broken wooden shelf, cobwebs in the corners and thick dust on the floor. Low doorways open at both ends, to the east and to the west, leading on into darkness. Grey stone, old wood, browns and ochre, humble and forgotten."
+  },
+  "zork2-circular-room": {
+   "prompt": "A damp circular room at the bottom of a well, its walls made of old brick and mortar, lit by the warm glow of the viewer's lantern. The walls rise straight up into darkness; the roof cannot be seen. Faint etchings circle the bricks, worn and illegible. On the floor stands a large wooden bucket, three feet wide and three feet high, bound with iron hoops. A passageway leads west. Damp red-brown brick, moss, wet stone, blue-black darkness above, enclosed."
+  },
+  "zork2-top-of-well": {
+   "prompt": "The top of a deep magic well, lit by the warm glow of the viewer's lantern: a brick rim encircles the shaft, which drops away into blackness, and a large iron-bound wooden bucket rests at its lip. Faint etchings circle the stones of the well, worn and illegible. To the east, a small crack runs across the floor at the entrance of a room from which a soft warm light spills. Old brick, wet stone, wood, browns and reds, a sense of achievement."
+  },
+  "zork2-tea-room": {
+   "prompt": "A small room lit by soft warm light, containing a large oblong table covered with a white tablecloth, no doubt set for afternoon tea, with mismatched chairs pushed back at odd angles and a mess of stains and crumbs suggesting that the users were indeed mad. In the eastern corner, a tiny mouse hole no more than four inches high opens at the foot of the wall. Passageways lead away to the west and the northwest. Faded floral wallpaper, wood browns, cream, soft pinks, whimsical and dreamlike."
+  },
+  "zork2-posts-room": {
+   "prompt": "An enormous room seen from the height of a mouse: in the center rise four gigantic wooden posts, delineating a rectangular area beneath a wooden roof far overhead, the fringe of a vast white cloth hanging from its edge. Everything appears abnormally large: floorboards like the planks of a bridge, the cracks between them like trenches. To the east, a passageway opens at the foot of a wall; to the west and northwest yawn great gaping chasms. Soft warm light. Wood browns, cream, giant scale, dizzying and dreamlike."
+  },
+  "zork2-pool-room": {
+   "prompt": "A large room seen at the scale of a mouse, lit by the warm glow of the viewer's lantern. One half of its floor is a broad depressed basin. Far above, salty water flows from a large leak in the ceiling. The only exit is to the west. The basin is now almost dry: crusts of white salt and damp patches cover its bottom where a pool has evaporated. Damp stone, white salt, grey and blue tones, strange and melancholic."
+  },
+  "zork2-pool-room--tears": {
+   "prompt": "A large room seen at the scale of a mouse, lit by the warm glow of the viewer's lantern. One half of its floor is a broad depressed basin. Far above, salty water flows from a large leak in the ceiling. The only exit is to the west. The leak has submerged the depressed half of the room in a pool of tears, still and salty, rippling where the water falls; a hazy something glints at the deepest part of the pool. Blue-greens, damp stone, silver ripples, strange and melancholic."
+  },
+  "zork2-low-room": {
+   "prompt": "A circular room with a low ceiling, lit by a cold, even light. The walls are lined with great coils of copper windings and riveted iron plates, like the inside of a giant electromagnet, and faint blue sparks of static crackle along them. Exits open to the east and the southeast. Iron greys, copper oranges, pale blue glints, industrial and disorienting."
+  },
+  "zork2-low-room--robot": {
+   "prompt": "A circular room with a low ceiling, lit by a cold, even light. The walls are lined with great coils of copper windings and riveted iron plates, like the inside of a giant electromagnet, and faint blue sparks of static crackle along them. Exits open to the east and the southeast. In the middle of the room stands a late-model household robot: a boxy, slightly dented metal body on jointed legs, a head-like appendage with round lens eyes and a little antenna, articulated arms ending in grippers, patiently waiting for orders. Iron greys, copper, pale blue glints, quaintly helpful.",
+   "creatures": true
+  },
+  "zork2-machine-room": {
+   "prompt": "A large room full of assorted heavy machinery whirring noisily, lit by humming lamps: dynamos, pistons, flywheels and tangles of cables, wisps of smoke rising from a smell of burned resistors. Along one wall, three large buttons, one round, one triangular and one square, are set in a panel beneath rows of cryptic symbols and a large warning plaque, both without any readable letters. Exits lead west and south. Iron greys, rust, copper, warning reds, noisy and dangerous."
+  },
+  "zork2-dingy-closet": {
+   "prompt": "A dingy closet next to a larger room to the north, lit by a dim bare light. Stained walls and a grimy floor; chiselled into one wall is a block of carved lettering, worn into illegible grooves. In the ceiling, a long dark slot can be made out, suspiciously wide. The only way out leads north. Greys, dirty browns, rust, cramped and suspicious."
+  },
+  "zork2-cage": {
+   "prompt": "Trapped inside a solid steel cage that has fallen from the ceiling of a dingy closet: thick vertical steel bars fill the foreground and frame the whole image, the grimy walls of the small room visible between them. A faint, sickly yellow-green gas creeps in from vents near the floor. Dim bare light. Steel greys, dirty browns, sickly green, trapped and urgent."
+  },
+  "zork2-bank-entrance": {
+   "prompt": "The entrance hall of the Bank of Zork, once the largest banking institution of the Great Underground Empire, now ravaged by passing scavengers, lit by the warm glow of the viewer's lantern: marble columns, a coffered ceiling, broken counters and overturned furniture. At the northwest and northeast corners stand two signboards with arrows pointing to doorways, their lettering illegible. The way out, to the east, is an ornate but tasteful archway. Pale marble, brass, faded green, dusty and pompous."
+  },
+  "zork2-teller-room": {
+   "prompt": "A small room once used by a bank officer who retrieved safety deposit boxes for the customers, lit by the warm glow of the viewer's lantern: a worn counter with a brass grille, empty pigeonholes, a stool. On the north side, a doorway under a small sign with illegible lettering leads to a viewing room; on one side, above an open door, hangs another sign with illegible lettering. An exit leads south. Dark wood, brass, faded green, dusty and orderly."
+  },
+  "zork2-viewing-room": {
+   "prompt": "A small room once used by holders of safety deposit boxes to view their contents, lit by the warm glow of the viewer's lantern: a plain table and two chairs stand in the center, and on the north wall hangs a framed notice with lines of illegible lettering. Dark wood panelling; the only exit is to the south. Dark wood, brass, faded green, quiet and bureaucratic."
+  },
+  "zork2-viewing-room--curtain": {
+   "prompt": "A small room once used by holders of safety deposit boxes to view their contents, lit by the warm glow of the viewer's lantern: a plain table and two chairs stand in the center, and on the north wall hangs a framed notice with lines of illegible lettering. Dark wood panelling; the only exit is to the south. One of the side walls is no longer solid: it has become a shimmering curtain of pale golden light, rippling softly, through which one might pass. Dark wood, brass, golden shimmer, magical."
+  },
+  "zork2-small-room": {
+   "prompt": "A small, bare room with no distinguishing features and no exits at all, lit by the warm glow of the viewer's lantern: four plain, smooth walls of pale grey plaster meeting at sharp corners, a plain floor, a low ceiling and nothing else, the shadows falling flat and hard, as if the room had been put away in a drawer. Pale grey plaster, dust, flat shadows, eerie emptiness."
+  },
+  "zork2-small-room--curtain": {
+   "prompt": "A small, bare room with no distinguishing features and no exits at all, lit by the warm glow of the viewer's lantern: four plain, smooth walls of pale grey plaster meeting at sharp corners, a plain floor, a low ceiling and nothing else, the shadows falling flat and hard, as if the room had been put away in a drawer. One of the walls has become a shimmering curtain of pale golden light, rippling softly. Pale grey plaster, golden shimmer, eerie and magical."
+  },
+  "zork2-vault": {
+   "prompt": "The Vault of the Bank of Zork, a room with no doors, lit by the warm glow of the viewer's lantern: thick riveted steel walls with massive bolts, empty steel shelves, the round outline of a great sealed hatch. One wall is a shimmering curtain of pale golden light, rippling softly. Steel greys, gold, brass, cold and forbidding."
+  },
+  "zork2-depository": {
+   "prompt": "The Safety Depository of the Bank of Zork, a large rectangular room. The east and west walls are covered with rows of empty niches where safety deposit boxes were once stored, all carefully removed. Large doorways open to the east, west and south. The northern wall of the room is a shimmering curtain of pale golden light that fills the room with a soft glow. In the center stands a large stone cube about ten feet on a side, engraved with worn, illegible lettering. Marble, brass, golden light, solemn and magical.",
+   "keystone": true
+  },
+  "zork2-chairmans-office": {
+   "prompt": "The office of the Chairman of the Bank of Zork, extensively vandalized, lit by the warm glow of the viewer's lantern: a massive mahogany desk overturned with its drawers torn out, a slashed leather armchair, papers and broken glass on a thick worn carpet, bare panelled walls. The lone exit is to the north. Dark wood, oxblood leather, brass, faded green, ruined opulence."
+  },
+  "zork2-dreary-room": {
+   "prompt": "A small and rather dreary room, eerily illuminated by a red glow emanating from a narrow crack in one wall. The light falls on a dusty wooden table in the center of the room. On the south side stands a massive wooden door with a small window barred with iron and a formidable bolt lock set in its frame, a keyhole within the lock. Dust, cobwebs, bare stone walls. Deep reds, dark browns, black shadows, eerie and oppressive."
+  },
+  "zork2-tiny-room": {
+   "prompt": "A tiny room carved out of the wall of a ravine, lit by the warm glow of the viewer's lantern. On the north side stands a massive wooden door with a small window barred with iron and a formidable bolt lock set in its frame; the keyhole is covered by a thin metal lid. Behind the viewer, an exit leads down a precarious climb to the ravine. Rough rock walls, dark wood, iron, browns and greys, cramped."
+  },
+  "zork2-volcano-bottom": {
+   "prompt": "The bottom of a large dormant volcano, seen at a strong upward angle: the vast, rough walls of the crater rise all around in layers of black and red-brown rock, to a distant circle of pale daylight high above, where light enters from the cone. The floor is old cooled lava, cracked and rubbly. The only exit is a passage to the north. Lit by the faint daylight from above and the viewer's lantern. Black, rust-red, ochre, pale sky, awe-inspiring."
+  },
+  "zork2-volcano-bottom--balloon": {
+   "prompt": "The bottom of a large dormant volcano, seen at a strong upward angle: the vast, rough crater walls of black and red-brown rock rise all around to a distant circle of pale daylight high above, where light enters from the cone. In the foreground, on the cracked lava floor, rests a large and extremely heavy wicker basket; an enormous cloth balloon bag is draped over its side, a metal receptacle is fastened in its center and a braided wire dangles from it. The only exit is a passage to the north. Faint daylight and the viewer's lantern. Black, rust-red, wicker gold, pale sky, adventurous.",
+   "keystone": true
+  },
+  "zork2-volcano-core": {
+   "prompt": "View from the wicker basket of a hot-air balloon floating inside a dormant volcano: the basket rim and its ropes frame the foreground, and the great inflated cloth bag glows above. About a hundred feet below lies the dim crater floor; all around rise the rough black and red-brown walls of the volcano, and far above, the open top of the cone is clearly visible, a circle of pale sky. Black, rust-red, ochre, pale blue sky, airy and dizzying."
+  },
+  "zork2-volcano-small-ledge": {
+   "prompt": "View from the wicker basket of a hot-air balloon floating inside a dormant volcano: the basket rim and its ropes frame the foreground, and the great inflated cloth bag glows above. About two hundred feet above the volcano floor, the rim looms above; on the west side, a small rock ledge juts from the crater wall within reach, with a dark opening behind it. Black, rust-red, ochre, pale blue sky, airy and dizzying."
+  },
+  "zork2-volcano-viewing-ledge": {
+   "prompt": "View from the wicker basket of a hot-air balloon floating inside a dormant volcano: the basket rim and its ropes frame the foreground, and the great inflated cloth bag glows above. High above the floor of the volcano, very near the rim, which looks narrow and jagged against the bright sky; to the east, a thin viewing ledge clings to the crater wall, far too narrow to land on. Black, rust-red, ochre, bright pale sky, airy and dizzying."
+  },
+  "zork2-volcano-wide-ledge": {
+   "prompt": "View from the wicker basket of a hot-air balloon floating inside a dormant volcano: the basket rim and its ropes frame the foreground, and the great inflated cloth bag glows above. Near the rim of the volcano, wide open to a cloudy sky above; to the west, a wide ledge on the crater wall offers a place to land, a small door in the rock behind it. The crater falls away into darkness below. Black, rust-red, ochre, bright cloudy sky, airy and dizzying."
+  },
+  "zork2-narrow-ledge": {
+   "prompt": "A narrow ledge on the inner wall of an old dormant volcano, halfway between the floor far below and the rim above, lit by faint daylight from the cone and the viewer's lantern. A small iron hook is set in the rock near the edge; behind the viewer, an exit leads south into the wall. Beyond the edge, the vast black and rust-red crater falls away dizzyingly. Black rock, rust-red, ochre, pale sky high above, precarious."
+  },
+  "zork2-narrow-ledge--balloon": {
+   "prompt": "A narrow ledge on the inner wall of an old dormant volcano, halfway between the floor far below and the rim above, lit by faint daylight from the cone and the viewer's lantern. A small iron hook is set in the rock near the edge; behind the viewer, an exit leads south into the wall. Beyond the edge, the vast black and rust-red crater falls away dizzyingly. Hovering at the edge of the ledge, a wicker basket beneath a great inflated cloth balloon is tied to the iron hook by a braided wire. Black rock, rust-red, wicker gold, pale sky, adventurous."
+  },
+  "zork2-narrow-ledge--door": {
+   "prompt": "A narrow ledge on the inner wall of an old dormant volcano, halfway between the floor far below and the rim above, lit by faint daylight from the cone and the viewer's lantern. A small iron hook is set in the rock near the edge; behind the viewer, an exit leads south into the wall. Beyond the edge, the vast black and rust-red crater falls away dizzyingly. At the west end of the ledge, a small door has appeared in the rock, standing open on a narrow chimney that slopes steeply downward. Black rock, rust-red, ochre, pale sky, a welcome way out."
+  },
+  "zork2-library": {
+   "prompt": "What must have been a large royal library, lit by the warm glow of the viewer's lantern: tall bookcases line the walls, all gnawed to pieces by unfriendly gnomes, with splintered wood, sawdust and shredded pages scattered across the floor. A reading table lies broken in two. An exit opens to the north. Dark wood, faded red and gold, parchment tones, dust, sad ruin."
+  },
+  "zork2-volcano-view": {
+   "prompt": "A ledge in the middle of a large dormant volcano, lit by faint daylight from the cone far above and the viewer's lantern. Below lies the dim volcano bottom; above, the rim and a circle of sky. Across the vast crater, a couple of ledges jut from the opposite wall, one higher and one lower than this one. Behind the viewer, the exit leads east into a lava tube. Black, rust-red, ochre, pale sky, panoramic and vertiginous."
+  },
+  "zork2-wide-ledge": {
+   "prompt": "A wide ledge high in a dormant volcano, lit by daylight from the cone and the viewer's lantern; the rim is about two hundred feet above, and a precipitous drop falls to the bottom. A small iron hook is set in the rock near the edge. To the south, a small door opens into the wall. Black rock, rust-red, ochre, pale sky above, airy and precarious."
+  },
+  "zork2-wide-ledge--balloon": {
+   "prompt": "A wide ledge high in a dormant volcano, lit by daylight from the cone and the viewer's lantern; the rim is about two hundred feet above, and a precipitous drop falls to the bottom. A small iron hook is set in the rock near the edge. To the south, a small door opens into the wall. Hovering at the edge of the ledge, a wicker basket beneath a great inflated cloth balloon is tied to the iron hook by a braided wire. Black rock, rust-red, wicker gold, pale sky, adventurous."
+  },
+  "zork2-wide-ledge--door": {
+   "prompt": "A wide ledge high in a dormant volcano, lit by daylight from the cone and the viewer's lantern; the rim is about two hundred feet above, and a precipitous drop falls to the bottom. A small iron hook is set in the rock near the edge. To the south, a small door opens into the wall. At the west end of the ledge, another small door has appeared in the rock, standing open on a narrow chimney that slopes steeply downward. Black rock, rust-red, ochre, pale sky, a welcome way out."
+  },
+  "zork2-dusty-room": {
+   "prompt": "A dusty old room, featureless except for an exit on the north side, dimly lit, thick dust on the floor and cracks running across the ceiling. Embedded in the far wall is a rusty steel box, somewhat damaged: an oblong hole has been chipped out of its front. Rust, grey, dusty browns, still and secretive."
+  },
+  "zork2-dusty-room--blown-open": {
+   "prompt": "A dusty old room, featureless except for an exit on the north side, dimly lit, thick dust on the floor and cracks running across the ceiling. The rusty steel box embedded in the far wall has had its door blown off by an explosion: a gaping, blackened opening, twisted metal, scorch marks and debris across the floor, dust still hanging in the air. Rust, soot black, grey, dusty browns, the walls seem ready to collapse."
+  },
+  "zork2-lava-room": {
+   "prompt": "A small room whose walls are formed by an old lava flow, frozen ropes and ripples of black and red-brown basalt, lit by the warm glow of the viewer's lantern. Exits lead east and south. The floor is glassy and uneven, and a faint warmth lingers in the air. Black, rust-red, ochre, a strange solidified motion."
+  },
+  "zork2-red-mist": {
+   "prompt": "Inside a huge crystalline sphere, seen from within: its curved, translucent, faceted wall surrounds the viewer and glints faintly; there is no lantern, only a diffuse ghostly glow from the crystal itself. The sphere is filled with thin red mist; through the swirling haze, a small room with a sign on its wall can be vaguely made out outside. Toward the west, the mist becomes blue. Crimson, rose and violet, ghostly and otherworldly."
+  },
+  "zork2-blue-mist": {
+   "prompt": "Inside a huge crystalline sphere, seen from within: its curved, translucent, faceted wall surrounds the viewer and glints faintly; there is no lantern, only a diffuse ghostly glow from the crystal itself. The sphere is filled with thin blue mist with an odd glow; through the swirling haze, a large dreary room with a great door and a huge table can be vaguely made out outside. Toward the west, the mist becomes white. Deep blues, indigo, ghostly and otherworldly."
+  },
+  "zork2-white-mist": {
+   "prompt": "Inside a huge crystalline sphere, seen from within: its curved, translucent, faceted wall surrounds the viewer and glints faintly; there is no lantern, only a diffuse ghostly glow from the crystal itself. The sphere is filled with thin white mist; through the swirling haze, a strange room is barely visible outside, a sinuous shadow crossing it. Toward the west, the mist becomes black. Pearly whites, pale greys, faint greens, ghostly and otherworldly."
+  },
+  "zork2-black-mist": {
+   "prompt": "At the end of a corridor of black mist, a black-walled spherical room: the inner surface of a vast sphere of dark, obsidian-like crystal, swirling with black and deep violet vapors and faintly lit by a cold ghostly glow. At its center the mist coils and thickens, as if something vast and terrible were about to take shape. Black, deep violet, cold greys, dread and finality."
+  }
+ }
+}

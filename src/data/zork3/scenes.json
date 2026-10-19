@@ -1,0 +1,967 @@
+{
+ "scenes": [
+  {
+   "id": "zork3-endless-stair",
+   "rooms": [
+    "ZORK2-STAIR"
+   ],
+   "palette": {
+    "sky": "#2a2838",
+    "ground": "#22201a"
+   },
+   "ambience": "cave"
+  },
+  {
+   "id": "zork3-junction",
+   "rooms": [
+    "JUNCTION"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   },
+   "variants": [
+    {
+     "id": "zork3-junction--empty",
+     "when": {
+      "notFlag": "SWORD-IN-STONE?"
+     }
+    }
+   ],
+   "ambience": "cave"
+  },
+  {
+   "id": "zork3-barren-area",
+   "rooms": [
+    "CLEARING"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   },
+   "ambience": "cave"
+  },
+  {
+   "id": "zork3-hairpin-loop",
+   "rooms": [
+    "SLOPE"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   },
+   "ambience": "cave"
+  },
+  {
+   "id": "zork3-cliff-base",
+   "rooms": [
+    "CLIFF-BASE"
+   ],
+   "palette": {
+    "sky": "#4a5a68",
+    "ground": "#4a4234"
+   },
+   "ambience": "surface"
+  },
+  {
+   "id": "zork3-cliff",
+   "rooms": [
+    "CLIFF"
+   ],
+   "palette": {
+    "sky": "#6a8aa8",
+    "ground": "#3d5a2a"
+   },
+   "variants": [
+    {
+     "id": "zork3-cliff--man",
+     "when": {
+      "objectIn": [
+       "MAN",
+       "CLIFF"
+      ]
+     }
+    }
+   ],
+   "ambience": "surface"
+  },
+  {
+   "id": "zork3-cliff-ledge",
+   "rooms": [
+    "CLIFF-LEDGE"
+   ],
+   "palette": {
+    "sky": "#4a5a68",
+    "ground": "#4a4234"
+   },
+   "variants": [
+    {
+     "id": "zork3-cliff-ledge--man",
+     "when": {
+      "flag": "MAN-FLAG"
+     }
+    }
+   ],
+   "ambience": "surface"
+  },
+  {
+   "id": "zork3-creepy-crawl",
+   "rooms": [
+    "CREEPY-CRAWL"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   },
+   "ambience": "cave"
+  },
+  {
+   "id": "zork3-tight-squeeze",
+   "rooms": [
+    "TIGHT-SQUEEZE"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   },
+   "ambience": "cave"
+  },
+  {
+   "id": "zork3-crystal-grotto",
+   "rooms": [
+    "ROCKY-ROOM"
+   ],
+   "palette": {
+    "sky": "#2a2a44",
+    "ground": "#1c1c2a"
+   },
+   "ambience": "cave"
+  },
+  {
+   "id": "zork3-royal-hall",
+   "rooms": [
+    "WIDE-HALL"
+   ],
+   "palette": {
+    "sky": "#4a3a2a",
+    "ground": "#2c2118"
+   },
+   "ambience": "house"
+  },
+  {
+   "id": "zork3-great-door",
+   "rooms": [
+    "MUSEUM-ANTE"
+   ],
+   "palette": {
+    "sky": "#4a3a2a",
+    "ground": "#2c2118"
+   },
+   "variants": [
+    {
+     "id": "zork3-great-door--cleft",
+     "when": {
+      "flag": "CLEFT-FLAG"
+     }
+    }
+   ],
+   "ambience": "house"
+  },
+  {
+   "id": "zork3-museum-entrance",
+   "rooms": [
+    "MUSEUM-ENTRANCE",
+    "MID-MUSEUM-ENTRANCE"
+   ],
+   "palette": {
+    "sky": "#3d3630",
+    "ground": "#2a241e"
+   },
+   "variants": [
+    {
+     "id": "zork3-museum-entrance--cleft",
+     "when": {
+      "flag": "CLEFT-FLAG"
+     }
+    }
+   ],
+   "ambience": "house"
+  },
+  {
+   "id": "zork3-jewel-room",
+   "rooms": [
+    "JEWEL-ROOM",
+    "MID-JEWEL-ROOM"
+   ],
+   "palette": {
+    "sky": "#3d3630",
+    "ground": "#2a241e"
+   },
+   "variants": [
+    {
+     "id": "zork3-jewel-room--bare",
+     "when": {
+      "flag": "RING-STOLEN"
+     }
+    }
+   ],
+   "ambience": "house"
+  },
+  {
+   "id": "zork3-tech-museum",
+   "rooms": [
+    "TECH-MUSEUM",
+    "MID-TECH-MUSEUM"
+   ],
+   "palette": {
+    "sky": "#3d3630",
+    "ground": "#2a241e"
+   },
+   "ambience": "house"
+  },
+  {
+   "id": "zork3-museum-entrance-unfinished",
+   "rooms": [
+    "OLD-MUSEUM-ENTRANCE"
+   ],
+   "palette": {
+    "sky": "#4a4236",
+    "ground": "#2e2820"
+   },
+   "ambience": "house"
+  },
+  {
+   "id": "zork3-jewel-room-unfinished",
+   "rooms": [
+    "OLD-JEWEL-ROOM"
+   ],
+   "palette": {
+    "sky": "#4a4236",
+    "ground": "#2e2820"
+   },
+   "ambience": "house"
+  },
+  {
+   "id": "zork3-tech-museum-unfinished",
+   "rooms": [
+    "OLD-TECH-MUSEUM"
+   ],
+   "palette": {
+    "sky": "#4a4236",
+    "ground": "#2e2820"
+   },
+   "ambience": "house"
+  },
+  {
+   "id": "zork3-puzzle-entrance",
+   "rooms": [
+    "CP-ANTE",
+    "MID-CP-ANTE"
+   ],
+   "palette": {
+    "sky": "#5a4a36",
+    "ground": "#3e3528"
+   },
+   "variants": [
+    {
+     "id": "zork3-puzzle-entrance--open",
+     "when": {
+      "flag": "CLEFT-FLAG",
+      "notFlag": "CPBLOCK-FLAG"
+     }
+    }
+   ],
+   "ambience": "house"
+  },
+  {
+   "id": "zork3-puzzle-side-room",
+   "rooms": [
+    "CP-OUT",
+    "MID-CP-OUT"
+   ],
+   "palette": {
+    "sky": "#5a4a36",
+    "ground": "#3e3528"
+   },
+   "variants": [
+    {
+     "id": "zork3-puzzle-side-room--open",
+     "when": {
+      "flag": "CP-FLAG"
+     }
+    }
+   ],
+   "ambience": "house"
+  },
+  {
+   "id": "zork3-royal-puzzle",
+   "rooms": [
+    "CP"
+   ],
+   "palette": {
+    "sky": "#5a4a36",
+    "ground": "#3e3528"
+   },
+   "ambience": "maze"
+  },
+  {
+   "id": "zork3-engravings-room",
+   "rooms": [
+    "MSTAIRS"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   },
+   "variants": [
+    {
+     "id": "zork3-engravings-room--old-man",
+     "when": {
+      "objectIn": [
+       "OLD-MAN",
+       "MSTAIRS"
+      ]
+     }
+    },
+    {
+     "id": "zork3-engravings-room--door",
+     "when": {
+      "flag": "OLD-MAN-GONE"
+     }
+    }
+   ],
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork3-dead-end",
+   "rooms": [
+    "DEAD-END"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   },
+   "ambience": "cave"
+  },
+  {
+   "id": "zork3-damp-passage",
+   "rooms": [
+    "DAMP-PASSAGE"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   },
+   "ambience": "cave"
+  },
+  {
+   "id": "zork3-button-room",
+   "rooms": [
+    "MR-ANTE"
+   ],
+   "palette": {
+    "sky": "#2a2433",
+    "ground": "#3a3326"
+   },
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork3-beam-room",
+   "rooms": [
+    "MREYE"
+   ],
+   "palette": {
+    "sky": "#2a2433",
+    "ground": "#3a3326"
+   },
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork3-hallway",
+   "rooms": [
+    "MRA",
+    "MRB"
+   ],
+   "palette": {
+    "sky": "#2a2433",
+    "ground": "#3a3326"
+   },
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork3-hallway-statues",
+   "rooms": [
+    "MRC",
+    "MRD"
+   ],
+   "palette": {
+    "sky": "#2a2433",
+    "ground": "#3a3326"
+   },
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork3-guardians",
+   "rooms": [
+    "MRG"
+   ],
+   "palette": {
+    "sky": "#2a2433",
+    "ground": "#3a3326"
+   },
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork3-narrow-room",
+   "rooms": [
+    "MRAE",
+    "MRAW",
+    "MRBE",
+    "MRBW"
+   ],
+   "palette": {
+    "sky": "#2a2433",
+    "ground": "#3a3326"
+   },
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork3-narrow-room-statues",
+   "rooms": [
+    "MRCE",
+    "MRCW",
+    "MRDE",
+    "MRDW"
+   ],
+   "palette": {
+    "sky": "#2a2433",
+    "ground": "#3a3326"
+   },
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork3-narrow-room-guardians",
+   "rooms": [
+    "MRGE",
+    "MRGW"
+   ],
+   "palette": {
+    "sky": "#2a2433",
+    "ground": "#3a3326"
+   },
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork3-mirror-box",
+   "rooms": [
+    "IN-MIRROR"
+   ],
+   "palette": {
+    "sky": "#4a3a2a",
+    "ground": "#2c2118"
+   },
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork3-dungeon-entrance",
+   "rooms": [
+    "FRONT-DOOR"
+   ],
+   "palette": {
+    "sky": "#2a2433",
+    "ground": "#3a3326"
+   },
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork3-narrow-corridor",
+   "rooms": [
+    "BEHIND-DOOR"
+   ],
+   "palette": {
+    "sky": "#3a3838",
+    "ground": "#2a2826"
+   },
+   "variants": [
+    {
+     "id": "zork3-narrow-corridor--master",
+     "when": {
+      "objectIn": [
+       "DUNGEON-MASTER",
+       "BEHIND-DOOR"
+      ]
+     }
+    }
+   ],
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork3-south-corridor",
+   "rooms": [
+    "SOUTH-CORRIDOR"
+   ],
+   "palette": {
+    "sky": "#3a3838",
+    "ground": "#2a2826"
+   },
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork3-marble-corridor",
+   "rooms": [
+    "EAST-CORRIDOR",
+    "WEST-CORRIDOR"
+   ],
+   "palette": {
+    "sky": "#3a3838",
+    "ground": "#2a2826"
+   },
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork3-north-corridor",
+   "rooms": [
+    "NORTH-CORRIDOR"
+   ],
+   "palette": {
+    "sky": "#3a1d14",
+    "ground": "#241410"
+   },
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork3-parapet",
+   "rooms": [
+    "PARAPET"
+   ],
+   "palette": {
+    "sky": "#3a1d14",
+    "ground": "#241410"
+   },
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork3-cell",
+   "rooms": [
+    "CELL"
+   ],
+   "palette": {
+    "sky": "#2a2220",
+    "ground": "#1e1816"
+   },
+   "variants": [
+    {
+     "id": "zork3-cell--master",
+     "when": {
+      "objectIn": [
+       "DUNGEON-MASTER",
+       "PARAPET"
+      ]
+     }
+    }
+   ],
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork3-prison-cell",
+   "rooms": [
+    "PRISON-CELL"
+   ],
+   "palette": {
+    "sky": "#2a2220",
+    "ground": "#1e1816"
+   },
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork3-good-cell",
+   "rooms": [
+    "GOOD-CELL"
+   ],
+   "palette": {
+    "sky": "#2a2220",
+    "ground": "#1e1816"
+   },
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork3-treasury",
+   "rooms": [
+    "NIRVANA"
+   ],
+   "palette": {
+    "sky": "#4a3a1e",
+    "ground": "#2c2118"
+   },
+   "ambience": "house"
+  },
+  {
+   "id": "zork3-foggy-room",
+   "rooms": [
+    "FOGGY-ROOM"
+   ],
+   "palette": {
+    "sky": "#2a2c30",
+    "ground": "#1e1e20"
+   },
+   "ambience": "cave"
+  },
+  {
+   "id": "zork3-lake-shore",
+   "rooms": [
+    "LAKE-SHORE"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   },
+   "ambience": "water"
+  },
+  {
+   "id": "zork3-on-lake",
+   "rooms": [
+    "ON-LAKE"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   },
+   "ambience": "water"
+  },
+  {
+   "id": "zork3-underwater",
+   "rooms": [
+    "IN-LAKE"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   },
+   "ambience": "water"
+  },
+  {
+   "id": "zork3-western-shore",
+   "rooms": [
+    "FAR-SHORE"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   },
+   "ambience": "water"
+  },
+  {
+   "id": "zork3-southern-shore",
+   "rooms": [
+    "SOUTH-SHORE"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   },
+   "ambience": "water"
+  },
+  {
+   "id": "zork3-scenic-vista",
+   "rooms": [
+    "VIEW-ROOM"
+   ],
+   "palette": {
+    "sky": "#4a3a2a",
+    "ground": "#2c2118"
+   },
+   "ambience": "cave"
+  },
+  {
+   "id": "zork3-aqueduct-view",
+   "rooms": [
+    "AQ-VIEW"
+   ],
+   "palette": {
+    "sky": "#4a4a52",
+    "ground": "#2e2c2a"
+   },
+   "variants": [
+    {
+     "id": "zork3-aqueduct-view--collapsed",
+     "when": {
+      "notFlag": "AQ-FLAG"
+     }
+    }
+   ],
+   "ambience": "cave"
+  },
+  {
+   "id": "zork3-dark-place",
+   "rooms": [
+    "DARK-1",
+    "DARK-2"
+   ],
+   "palette": {
+    "sky": "#0e0d0b",
+    "ground": "#1a1712"
+   },
+   "ambience": "cave"
+  },
+  {
+   "id": "zork3-key-room",
+   "rooms": [
+    "KEY-ROOM"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   },
+   "variants": [
+    {
+     "id": "zork3-key-room--open",
+     "when": {
+      "flag": "COVER-MOVED"
+     }
+    }
+   ],
+   "ambience": "cave"
+  },
+  {
+   "id": "zork3-aqueduct",
+   "rooms": [
+    "AQ-1"
+   ],
+   "palette": {
+    "sky": "#4a4a52",
+    "ground": "#2e2c2a"
+   },
+   "ambience": "cave"
+  },
+  {
+   "id": "zork3-high-arch",
+   "rooms": [
+    "AQ-2"
+   ],
+   "palette": {
+    "sky": "#4a4a52",
+    "ground": "#2e2c2a"
+   },
+   "variants": [
+    {
+     "id": "zork3-high-arch--broken",
+     "when": {
+      "notFlag": "AQ-FLAG"
+     }
+    }
+   ],
+   "ambience": "cave"
+  },
+  {
+   "id": "zork3-water-slide",
+   "rooms": [
+    "AQ-3"
+   ],
+   "palette": {
+    "sky": "#4a4a52",
+    "ground": "#2e2c2a"
+   },
+   "variants": [
+    {
+     "id": "zork3-water-slide--broken",
+     "when": {
+      "notFlag": "AQ-FLAG"
+     }
+    }
+   ],
+   "ambience": "cave"
+  },
+  {
+   "id": "zork3-shadow-hills",
+   "rooms": [
+    "SHADOW-1",
+    "SHADOW-3",
+    "SHADOW-4",
+    "SHADOW-7"
+   ],
+   "palette": {
+    "sky": "#241f33",
+    "ground": "#1a1622"
+   },
+   "variants": [
+    {
+     "id": "zork3-shadow-hills--figure",
+     "when": {
+      "flag": "BLOCKED-DIR",
+      "notFlag": "SHADOW-GONE"
+     }
+    }
+   ],
+   "ambience": "hades"
+  },
+  {
+   "id": "zork3-shadow-wall",
+   "rooms": [
+    "SHADOW-2"
+   ],
+   "palette": {
+    "sky": "#241f33",
+    "ground": "#1a1622"
+   },
+   "variants": [
+    {
+     "id": "zork3-shadow-wall--figure",
+     "when": {
+      "flag": "BLOCKED-DIR",
+      "notFlag": "SHADOW-GONE"
+     }
+    }
+   ],
+   "ambience": "hades"
+  },
+  {
+   "id": "zork3-shadow-quicksand",
+   "rooms": [
+    "SHADOW-5",
+    "SHADOW-6"
+   ],
+   "palette": {
+    "sky": "#241f33",
+    "ground": "#1a1622"
+   },
+   "variants": [
+    {
+     "id": "zork3-shadow-quicksand--figure",
+     "when": {
+      "flag": "BLOCKED-DIR",
+      "notFlag": "SHADOW-GONE"
+     }
+    }
+   ],
+   "ambience": "hades"
+  },
+  {
+   "id": "zork3-shadow-cliff",
+   "rooms": [
+    "SHADOW-8"
+   ],
+   "palette": {
+    "sky": "#2c3344",
+    "ground": "#1a1622"
+   },
+   "variants": [
+    {
+     "id": "zork3-shadow-cliff--figure",
+     "when": {
+      "flag": "BLOCKED-DIR",
+      "notFlag": "SHADOW-GONE"
+     }
+    }
+   ],
+   "ambience": "hades"
+  },
+  {
+   "id": "zork3-flathead-ocean",
+   "rooms": [
+    "FLATHEAD-OCEAN"
+   ],
+   "palette": {
+    "sky": "#3e5566",
+    "ground": "#4d4433"
+   },
+   "variants": [
+    {
+     "id": "zork3-flathead-ocean--ship",
+     "when": {
+      "flag": "BOAT-SEEN",
+      "notFlag": "SHIP-GONE"
+     }
+    }
+   ],
+   "ambience": "water"
+  },
+  {
+   "id": "zork3-room-8",
+   "rooms": [
+    "ROOM-8"
+   ],
+   "palette": {
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   },
+   "ambience": "cave"
+  },
+  {
+   "id": "zork3-sacrificial-altar",
+   "rooms": [
+    "ZORK-IV"
+   ],
+   "palette": {
+    "sky": "#3a1d14",
+    "ground": "#241410"
+   },
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork3-ladder-top",
+   "rooms": [
+    "LADDER-TOP"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   },
+   "ambience": "mine"
+  },
+  {
+   "id": "zork3-ladder-bottom",
+   "rooms": [
+    "LADDER-BOTTOM"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   },
+   "ambience": "mine"
+  },
+  {
+   "id": "zork3-mine-dead-end",
+   "rooms": [
+    "DEAD-END-5"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   },
+   "ambience": "mine"
+  },
+  {
+   "id": "zork3-timber-room",
+   "rooms": [
+    "TIMBER-ROOM"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   },
+   "ambience": "mine"
+  },
+  {
+   "id": "zork3-drafty-room",
+   "rooms": [
+    "LOWER-SHAFT"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   },
+   "ambience": "mine"
+  },
+  {
+   "id": "zork3-machine-room",
+   "rooms": [
+    "MACHINE-ROOM"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   },
+   "ambience": "mine"
+  }
+ ]
+}

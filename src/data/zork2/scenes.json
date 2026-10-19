@@ -1,950 +1,1118 @@
 {
  "scenes": [
   {
-   "id": "zork2/aquarium-room",
-   "rooms": [
-    "AQUARIUM-ROOM"
-   ],
-   "ambience": "water",
-   "palette": {
-    "sky": "#5b6fa8",
-    "ground": "#3b4a5e"
-   }
-  },
-  {
-   "id": "zork2/bank-entrance",
-   "rooms": [
-    "BANK-ENTRANCE"
-   ],
-   "ambience": "house",
-   "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
-  },
-  {
-   "id": "zork2/cage-room",
-   "rooms": [
-    "CAGE-ROOM"
-   ],
-   "ambience": "mine",
-   "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
-  },
-  {
-   "id": "zork2/carousel-room",
-   "rooms": [
-    "CAROUSEL-ROOM"
-   ],
-   "ambience": "cave",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/cerberus-room",
-   "rooms": [
-    "CERBERUS-ROOM"
-   ],
-   "ambience": "hades",
-   "palette": {
-    "sky": "#3a1d14",
-    "ground": "#241410"
-   }
-  },
-  {
-   "id": "zork2/cobwebby-corridor",
-   "rooms": [
-    "COBWEBBY-CORRIDOR"
-   ],
-   "ambience": "cave",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/cool-room",
-   "rooms": [
-    "COOL-ROOM"
-   ],
-   "ambience": "cave",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/crypt-anteroom",
-   "rooms": [
-    "CRYPT-ANTEROOM"
-   ],
-   "ambience": "sacred",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/crypt-room",
-   "rooms": [
-    "CRYPT-ROOM"
-   ],
-   "ambience": "sacred",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/dark-tunnel",
-   "rooms": [
-    "DARK-TUNNEL"
-   ],
-   "ambience": "cave",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/dead-palantir-1",
-   "rooms": [
-    "DEAD-PALANTIR-1"
-   ],
-   "ambience": "hades",
-   "palette": {
-    "sky": "#3a1d14",
-    "ground": "#241410"
-   }
-  },
-  {
-   "id": "zork2/dead-palantir-2",
-   "rooms": [
-    "DEAD-PALANTIR-2"
-   ],
-   "ambience": "hades",
-   "palette": {
-    "sky": "#3a1d14",
-    "ground": "#241410"
-   }
-  },
-  {
-   "id": "zork2/dead-palantir-3",
-   "rooms": [
-    "DEAD-PALANTIR-3"
-   ],
-   "ambience": "hades",
-   "palette": {
-    "sky": "#3a1d14",
-    "ground": "#241410"
-   }
-  },
-  {
-   "id": "zork2/dead-palantir-4",
-   "rooms": [
-    "DEAD-PALANTIR-4"
-   ],
-   "ambience": "hades",
-   "palette": {
-    "sky": "#3a1d14",
-    "ground": "#241410"
-   }
-  },
-  {
-   "id": "zork2/deep-ford",
-   "rooms": [
-    "DEEP-FORD"
-   ],
-   "ambience": "water",
-   "palette": {
-    "sky": "#5b6fa8",
-    "ground": "#3b4a5e"
-   }
-  },
-  {
-   "id": "zork2/depository",
-   "rooms": [
-    "DEPOSITORY"
-   ],
-   "ambience": "house",
-   "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
-  },
-  {
-   "id": "zork2/diamond-1",
-   "rooms": [
-    "DIAMOND-1"
-   ],
-   "ambience": "maze",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/diamond-2",
-   "rooms": [
-    "DIAMOND-2"
-   ],
-   "ambience": "maze",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/diamond-3",
-   "rooms": [
-    "DIAMOND-3"
-   ],
-   "ambience": "maze",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/diamond-4",
-   "rooms": [
-    "DIAMOND-4"
-   ],
-   "ambience": "maze",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/diamond-5",
-   "rooms": [
-    "DIAMOND-5"
-   ],
-   "ambience": "maze",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/diamond-6",
-   "rooms": [
-    "DIAMOND-6"
-   ],
-   "ambience": "maze",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/diamond-7",
-   "rooms": [
-    "DIAMOND-7"
-   ],
-   "ambience": "maze",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/diamond-8",
-   "rooms": [
-    "DIAMOND-8"
-   ],
-   "ambience": "maze",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/diamond-9",
-   "rooms": [
-    "DIAMOND-9"
-   ],
-   "ambience": "maze",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/dragon-lair",
-   "rooms": [
-    "DRAGON-LAIR"
-   ],
-   "ambience": "cave",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/dragon-room",
-   "rooms": [
-    "DRAGON-ROOM"
-   ],
-   "ambience": "cave",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/dreary-room",
-   "rooms": [
-    "DREARY-ROOM"
-   ],
-   "ambience": "house",
-   "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
-  },
-  {
-   "id": "zork2/foot-bridge",
-   "rooms": [
-    "FOOT-BRIDGE"
-   ],
-   "ambience": "water",
-   "palette": {
-    "sky": "#5b6fa8",
-    "ground": "#3b4a5e"
-   }
-  },
-  {
-   "id": "zork2/formal-garden",
-   "rooms": [
-    "FORMAL-GARDEN"
-   ],
-   "ambience": "surface",
-   "palette": {
-    "sky": "#5f87b0",
-    "ground": "#3d5a2a"
-   }
-  },
-  {
-   "id": "zork2/fresco-room",
-   "rooms": [
-    "FRESCO-ROOM"
-   ],
-   "ambience": "house",
-   "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
-  },
-  {
-   "id": "zork2/garden-north",
-   "rooms": [
-    "GARDEN-NORTH"
-   ],
-   "ambience": "surface",
-   "palette": {
-    "sky": "#5f87b0",
-    "ground": "#3d5a2a"
-   }
-  },
-  {
-   "id": "zork2/gazebo-room",
-   "rooms": [
-    "GAZEBO-ROOM"
-   ],
-   "ambience": "surface",
-   "palette": {
-    "sky": "#5f87b0",
-    "ground": "#3d5a2a"
-   }
-  },
-  {
-   "id": "zork2/glacier-room",
-   "rooms": [
-    "GLACIER-ROOM"
-   ],
-   "ambience": "cave",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/great-cavern",
-   "rooms": [
-    "GREAT-CAVERN"
-   ],
-   "ambience": "water",
-   "palette": {
-    "sky": "#5b6fa8",
-    "ground": "#3b4a5e"
-   }
-  },
-  {
-   "id": "zork2/guardian-room",
-   "rooms": [
-    "GUARDIAN-ROOM"
-   ],
-   "ambience": "house",
-   "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
-  },
-  {
-   "id": "zork2/in-aquarium",
-   "rooms": [
-    "IN-AQUARIUM"
-   ],
-   "ambience": "water",
-   "palette": {
-    "sky": "#5b6fa8",
-    "ground": "#3b4a5e"
-   }
-  },
-  {
-   "id": "zork2/in-cage",
-   "rooms": [
-    "IN-CAGE"
-   ],
-   "ambience": "mine",
-   "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
-  },
-  {
-   "id": "zork2/inside-barrow",
+   "id": "zork2-inside-barrow",
    "rooms": [
     "INSIDE-BARROW"
    ],
-   "ambience": "cave",
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "cave"
   },
   {
-   "id": "zork2/kennel",
-   "rooms": [
-    "KENNEL"
-   ],
-   "ambience": "hades",
-   "palette": {
-    "sky": "#3a1d14",
-    "ground": "#241410"
-   }
-  },
-  {
-   "id": "zork2/lava-room",
-   "rooms": [
-    "LAVA-ROOM"
-   ],
-   "ambience": "cave",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/lava-tube",
-   "rooms": [
-    "LAVA-TUBE"
-   ],
-   "ambience": "cave",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/ledge-1",
-   "rooms": [
-    "LEDGE-1"
-   ],
-   "ambience": "cave",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/ledge-2",
-   "rooms": [
-    "LEDGE-2"
-   ],
-   "ambience": "cave",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/ledge-tunnel",
-   "rooms": [
-    "LEDGE-TUNNEL"
-   ],
-   "ambience": "cave",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/library",
-   "rooms": [
-    "LIBRARY"
-   ],
-   "ambience": "house",
-   "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
-  },
-  {
-   "id": "zork2/machine-room",
-   "rooms": [
-    "MACHINE-ROOM"
-   ],
-   "ambience": "mine",
-   "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
-  },
-  {
-   "id": "zork2/magnet-room",
-   "rooms": [
-    "MAGNET-ROOM"
-   ],
-   "ambience": "mine",
-   "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
-  },
-  {
-   "id": "zork2/marble-hall",
-   "rooms": [
-    "MARBLE-HALL"
-   ],
-   "ambience": "house",
-   "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
-  },
-  {
-   "id": "zork2/menhir-room",
-   "rooms": [
-    "MENHIR-ROOM"
-   ],
-   "ambience": "sacred",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/narrow-tunnel",
+   "id": "zork2-narrow-tunnel",
    "rooms": [
     "NARROW-TUNNEL"
    ],
-   "ambience": "cave",
    "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
+    "sky": "#1f2c28",
+    "ground": "#2b2a1e"
+   },
+   "ambience": "cave"
   },
   {
-   "id": "zork2/office",
+   "id": "zork2-foot-bridge",
    "rooms": [
-    "OFFICE"
+    "FOOT-BRIDGE"
    ],
-   "ambience": "house",
    "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
+    "sky": "#1f2c28",
+    "ground": "#2b2a1e"
+   },
+   "ambience": "water"
   },
   {
-   "id": "zork2/pearl-room",
+   "id": "zork2-great-cavern",
    "rooms": [
-    "PEARL-ROOM"
+    "GREAT-CAVERN"
    ],
-   "ambience": "sacred",
    "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
+    "sky": "#1f2c28",
+    "ground": "#2b2a1e"
+   },
+   "ambience": "cave"
   },
   {
-   "id": "zork2/pentagram-room",
-   "rooms": [
-    "PENTAGRAM-ROOM"
-   ],
-   "ambience": "sacred",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/pool-room",
-   "rooms": [
-    "POOL-ROOM"
-   ],
-   "ambience": "water",
-   "palette": {
-    "sky": "#5b6fa8",
-    "ground": "#3b4a5e"
-   }
-  },
-  {
-   "id": "zork2/posts-room",
-   "rooms": [
-    "POSTS-ROOM"
-   ],
-   "ambience": "water",
-   "palette": {
-    "sky": "#5b6fa8",
-    "ground": "#3b4a5e"
-   }
-  },
-  {
-   "id": "zork2/ravine-ledge",
-   "rooms": [
-    "RAVINE-LEDGE"
-   ],
-   "ambience": "water",
-   "palette": {
-    "sky": "#5b6fa8",
-    "ground": "#3b4a5e"
-   }
-  },
-  {
-   "id": "zork2/riddle-room",
-   "rooms": [
-    "RIDDLE-ROOM"
-   ],
-   "ambience": "sacred",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/room-8",
-   "rooms": [
-    "ROOM-8"
-   ],
-   "ambience": "cave",
-   "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
-  },
-  {
-   "id": "zork2/safe-room",
-   "rooms": [
-    "SAFE-ROOM"
-   ],
-   "ambience": "house",
-   "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
-  },
-  {
-   "id": "zork2/shallow-ford",
+   "id": "zork2-shallow-ford",
    "rooms": [
     "SHALLOW-FORD"
    ],
-   "ambience": "water",
    "palette": {
-    "sky": "#5b6fa8",
-    "ground": "#3b4a5e"
-   }
+    "sky": "#1f2c28",
+    "ground": "#2b2a1e"
+   },
+   "ambience": "water"
   },
   {
-   "id": "zork2/small-room",
+   "id": "zork2-dark-tunnel",
    "rooms": [
-    "SMALL-ROOM"
+    "DARK-TUNNEL"
    ],
-   "ambience": "house",
-   "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
-  },
-  {
-   "id": "zork2/stairway-top",
-   "rooms": [
-    "STAIRWAY-TOP"
-   ],
-   "ambience": "sacred",
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "cave"
   },
   {
-   "id": "zork2/stone-bridge",
+   "id": "zork2-garden-north",
    "rooms": [
-    "STONE-BRIDGE"
+    "GARDEN-NORTH"
    ],
-   "ambience": "cave",
    "palette": {
-    "sky": "#1a1712",
-    "ground": "#2b231a"
-   }
+    "sky": "#5f7f78",
+    "ground": "#3d5a2a"
+   },
+   "variants": [
+    {
+     "id": "zork2-garden-north--unicorn",
+     "when": {
+      "objectIn": [
+       "UNICORN",
+       "GARDEN-NORTH"
+      ]
+     }
+    }
+   ],
+   "ambience": "surface"
   },
   {
-   "id": "zork2/stream-path",
+   "id": "zork2-gazebo",
    "rooms": [
-    "STREAM-PATH"
+    "GAZEBO-ROOM"
    ],
-   "ambience": "water",
    "palette": {
-    "sky": "#5b6fa8",
-    "ground": "#3b4a5e"
-   }
+    "sky": "#5f7f78",
+    "ground": "#3d5a2a"
+   },
+   "ambience": "surface"
   },
   {
-   "id": "zork2/tea-room",
+   "id": "zork2-formal-garden",
    "rooms": [
-    "TEA-ROOM"
+    "FORMAL-GARDEN"
    ],
-   "ambience": "house",
    "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
+    "sky": "#5f7f78",
+    "ground": "#3d5a2a"
+   },
+   "ambience": "surface"
   },
   {
-   "id": "zork2/teller-east",
-   "rooms": [
-    "TELLER-EAST"
-   ],
-   "ambience": "house",
-   "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
-  },
-  {
-   "id": "zork2/teller-west",
-   "rooms": [
-    "TELLER-WEST"
-   ],
-   "ambience": "house",
-   "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
-  },
-  {
-   "id": "zork2/tiny-room",
-   "rooms": [
-    "TINY-ROOM"
-   ],
-   "ambience": "house",
-   "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
-  },
-  {
-   "id": "zork2/topiary-room",
+   "id": "zork2-topiary",
    "rooms": [
     "TOPIARY-ROOM"
    ],
-   "ambience": "surface",
    "palette": {
-    "sky": "#5f87b0",
+    "sky": "#5f7f78",
     "ground": "#3d5a2a"
-   }
+   },
+   "ambience": "surface"
   },
   {
-   "id": "zork2/trophy-room",
+   "id": "zork2-stream-path",
    "rooms": [
-    "TROPHY-ROOM"
+    "STREAM-PATH"
    ],
-   "ambience": "house",
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   },
+   "ambience": "water"
+  },
+  {
+   "id": "zork2-marble-hall",
+   "rooms": [
+    "MARBLE-HALL"
+   ],
+   "palette": {
+    "sky": "#3a3530",
+    "ground": "#2a2622"
+   },
+   "ambience": "house"
+  },
+  {
+   "id": "zork2-deep-ford",
+   "rooms": [
+    "DEEP-FORD"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   },
+   "variants": [
+    {
+     "id": "zork2-deep-ford--dead-dragon",
+     "when": {
+      "objectIn": [
+       "DEAD-DRAGON",
+       "DEEP-FORD"
+      ]
+     }
+    }
+   ],
+   "ambience": "water"
+  },
+  {
+   "id": "zork2-ravine-ledge",
+   "rooms": [
+    "RAVINE-LEDGE"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   },
+   "ambience": "water"
+  },
+  {
+   "id": "zork2-end-of-ledge",
+   "rooms": [
+    "LEDGE-TUNNEL"
+   ],
+   "palette": {
+    "sky": "#2a1a14",
+    "ground": "#2b1d16"
+   },
+   "ambience": "cave"
+  },
+  {
+   "id": "zork2-dragon-room",
+   "rooms": [
+    "DRAGON-ROOM"
+   ],
+   "palette": {
+    "sky": "#2a1a14",
+    "ground": "#2b1d16"
+   },
+   "variants": [
+    {
+     "id": "zork2-dragon-room--dragon",
+     "when": {
+      "objectIn": [
+       "DRAGON",
+       "DRAGON-ROOM"
+      ]
+     }
+    }
+   ],
+   "ambience": "cave"
+  },
+  {
+   "id": "zork2-dragon-lair",
+   "rooms": [
+    "DRAGON-LAIR"
+   ],
+   "palette": {
+    "sky": "#2a1a14",
+    "ground": "#2b1d16"
+   },
+   "variants": [
+    {
+     "id": "zork2-dragon-lair--princess",
+     "when": {
+      "objectIn": [
+       "PRINCESS",
+       "DRAGON-LAIR"
+      ]
+     }
+    }
+   ],
+   "ambience": "cave"
+  },
+  {
+   "id": "zork2-fresco-room",
+   "rooms": [
+    "FRESCO-ROOM"
+   ],
    "palette": {
     "sky": "#4a3a2a",
     "ground": "#2c2118"
-   }
+   },
+   "ambience": "house"
   },
   {
-   "id": "zork2/vair-1",
+   "id": "zork2-stone-bridge",
    "rooms": [
-    "VAIR-1"
+    "STONE-BRIDGE"
    ],
-   "ambience": "surface",
-   "palette": {
-    "sky": "#5f87b0",
-    "ground": "#3d5a2a"
-   }
-  },
-  {
-   "id": "zork2/vair-2",
-   "rooms": [
-    "VAIR-2"
-   ],
-   "ambience": "surface",
-   "palette": {
-    "sky": "#5f87b0",
-    "ground": "#3d5a2a"
-   }
-  },
-  {
-   "id": "zork2/vair-3",
-   "rooms": [
-    "VAIR-3"
-   ],
-   "ambience": "surface",
-   "palette": {
-    "sky": "#5f87b0",
-    "ground": "#3d5a2a"
-   }
-  },
-  {
-   "id": "zork2/vair-4",
-   "rooms": [
-    "VAIR-4"
-   ],
-   "ambience": "surface",
-   "palette": {
-    "sky": "#5f87b0",
-    "ground": "#3d5a2a"
-   }
-  },
-  {
-   "id": "zork2/vault",
-   "rooms": [
-    "VAULT"
-   ],
-   "ambience": "house",
-   "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
-  },
-  {
-   "id": "zork2/viewing-east",
-   "rooms": [
-    "VIEWING-EAST"
-   ],
-   "ambience": "house",
-   "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
-  },
-  {
-   "id": "zork2/viewing-west",
-   "rooms": [
-    "VIEWING-WEST"
-   ],
-   "ambience": "house",
-   "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
-  },
-  {
-   "id": "zork2/volcano-bottom",
-   "rooms": [
-    "VOLCANO-BOTTOM"
-   ],
-   "ambience": "cave",
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "cave"
   },
   {
-   "id": "zork2/volcano-view",
+   "id": "zork2-cool-room",
    "rooms": [
-    "VOLCANO-VIEW"
+    "COOL-ROOM"
    ],
-   "ambience": "cave",
+   "palette": {
+    "sky": "#141a2a",
+    "ground": "#1c1c22"
+   },
+   "ambience": "cave"
+  },
+  {
+   "id": "zork2-ice-room",
+   "rooms": [
+    "GLACIER-ROOM"
+   ],
+   "palette": {
+    "sky": "#2a3a4a",
+    "ground": "#33424c"
+   },
+   "variants": [
+    {
+     "id": "zork2-ice-room--melted",
+     "when": {
+      "flag": "ICE-MELTED"
+     }
+    }
+   ],
+   "ambience": "cave"
+  },
+  {
+   "id": "zork2-lava-tube",
+   "rooms": [
+    "LAVA-TUBE"
+   ],
+   "palette": {
+    "sky": "#2a1a14",
+    "ground": "#3a2418"
+   },
+   "ambience": "cave"
+  },
+  {
+   "id": "zork2-cobwebby-corridor",
+   "rooms": [
+    "COBWEBBY-CORRIDOR"
+   ],
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "cave"
   },
   {
-   "id": "zork2/well-bottom",
+   "id": "zork2-carousel-room",
    "rooms": [
-    "WELL-BOTTOM"
+    "CAROUSEL-ROOM"
    ],
-   "ambience": "water",
    "palette": {
-    "sky": "#5b6fa8",
-    "ground": "#3b4a5e"
-   }
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   },
+   "variants": [
+    {
+     "id": "zork2-carousel-room--stopped",
+     "when": {
+      "flag": "CAROUSEL-FLIP-FLAG"
+     }
+    }
+   ],
+   "ambience": "cave"
   },
   {
-   "id": "zork2/well-top",
+   "id": "zork2-room-8",
    "rooms": [
-    "WELL-TOP"
+    "ROOM-8"
    ],
-   "ambience": "water",
    "palette": {
-    "sky": "#5b6fa8",
-    "ground": "#3b4a5e"
-   }
+    "sky": "#1a1712",
+    "ground": "#2b231a"
+   },
+   "ambience": "cave"
   },
   {
-   "id": "zork2/wizards-quarters",
+   "id": "zork2-menhir-room",
    "rooms": [
-    "WIZARDS-QUARTERS"
+    "MENHIR-ROOM"
    ],
-   "ambience": "house",
    "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
+    "sky": "#2a2620",
+    "ground": "#3a3326"
+   },
+   "variants": [
+    {
+     "id": "zork2-menhir-room--floating",
+     "when": {
+      "flag": "MENHIR-POSITION"
+     }
+    }
+   ],
+   "ambience": "sacred"
   },
   {
-   "id": "zork2/wizards-workshop",
+   "id": "zork2-kennel",
    "rooms": [
-    "WIZARDS-WORKSHOP"
+    "KENNEL"
    ],
-   "ambience": "house",
    "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
+    "sky": "#3a1d14",
+    "ground": "#241410"
+   },
+   "ambience": "hades"
   },
   {
-   "id": "zork2/workbench-room",
+   "id": "zork2-stairway",
    "rooms": [
-    "WORKBENCH-ROOM"
+    "STAIRWAY-TOP"
    ],
-   "ambience": "house",
    "palette": {
-    "sky": "#4a3a2a",
-    "ground": "#2c2118"
-   }
+    "sky": "#3a3530",
+    "ground": "#2a2622"
+   },
+   "ambience": "sacred"
   },
   {
-   "id": "zork2/zork3",
+   "id": "zork2-oddly-angled-room",
+   "rooms": [
+    "DIAMOND-1",
+    "DIAMOND-2",
+    "DIAMOND-3",
+    "DIAMOND-4",
+    "DIAMOND-6",
+    "DIAMOND-7",
+    "DIAMOND-8",
+    "DIAMOND-9"
+   ],
+   "palette": {
+    "sky": "#1a2226",
+    "ground": "#22282a"
+   },
+   "ambience": "maze"
+  },
+  {
+   "id": "zork2-oddly-angled-stairs",
+   "rooms": [
+    "DIAMOND-5"
+   ],
+   "palette": {
+    "sky": "#1a2226",
+    "ground": "#22282a"
+   },
+   "variants": [
+    {
+     "id": "zork2-oddly-angled-stairs--open",
+     "when": {
+      "flag": "DIAMOND-SOLVE"
+     }
+    }
+   ],
+   "ambience": "maze"
+  },
+  {
+   "id": "zork2-cerberus-room",
+   "rooms": [
+    "CERBERUS-ROOM"
+   ],
+   "palette": {
+    "sky": "#3a1d14",
+    "ground": "#241410"
+   },
+   "variants": [
+    {
+     "id": "zork2-cerberus-room--tamed",
+     "when": {
+      "flag": "CERBERUS-LEASHED",
+      "objectIn": [
+       "CERBERUS",
+       "CERBERUS-ROOM"
+      ]
+     }
+    },
+    {
+     "id": "zork2-cerberus-room--cerberus",
+     "when": {
+      "objectIn": [
+       "CERBERUS",
+       "CERBERUS-ROOM"
+      ]
+     }
+    }
+   ],
+   "ambience": "hades"
+  },
+  {
+   "id": "zork2-crypt-anteroom",
+   "rooms": [
+    "CRYPT-ANTEROOM"
+   ],
+   "palette": {
+    "sky": "#2a2433",
+    "ground": "#3a3326"
+   },
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork2-crypt",
+   "rooms": [
+    "CRYPT-ROOM"
+   ],
+   "palette": {
+    "sky": "#2a2433",
+    "ground": "#3a3326"
+   },
+   "variants": [
+    {
+     "id": "zork2-crypt--secret-door",
+     "when": {
+      "flag": "DIM-DOOR-FLAG"
+     }
+    }
+   ],
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork2-landing",
    "rooms": [
     "ZORK3"
    ],
-   "ambience": "sacred",
+   "palette": {
+    "sky": "#12261a",
+    "ground": "#1c1c18"
+   },
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork2-guarded-room",
+   "rooms": [
+    "GUARDIAN-ROOM"
+   ],
+   "palette": {
+    "sky": "#2a2233",
+    "ground": "#2a2018"
+   },
+   "variants": [
+    {
+     "id": "zork2-guarded-room--asleep",
+     "when": {
+      "flag": "GUARDIAN-FED"
+     }
+    }
+   ],
+   "ambience": "house"
+  },
+  {
+   "id": "zork2-wizards-workshop",
+   "rooms": [
+    "WIZARDS-WORKSHOP"
+   ],
+   "palette": {
+    "sky": "#2a2233",
+    "ground": "#2a2018"
+   },
+   "ambience": "house"
+  },
+  {
+   "id": "zork2-wizards-workroom",
+   "rooms": [
+    "WORKBENCH-ROOM"
+   ],
+   "palette": {
+    "sky": "#2a2233",
+    "ground": "#2a2018"
+   },
+   "variants": [
+    {
+     "id": "zork2-wizards-workroom--obsidian-stand",
+     "when": {
+      "objectIn": [
+       "STAND-4",
+       "WORKBENCH"
+      ]
+     }
+    }
+   ],
+   "ambience": "house"
+  },
+  {
+   "id": "zork2-trophy-room",
+   "rooms": [
+    "TROPHY-ROOM"
+   ],
+   "palette": {
+    "sky": "#2a2233",
+    "ground": "#2a2018"
+   },
+   "variants": [
+    {
+     "id": "zork2-trophy-room--smashed",
+     "when": {
+      "objectIn": [
+       "BROKEN-CASE",
+       "TROPHY-ROOM"
+      ]
+     }
+    }
+   ],
+   "ambience": "house"
+  },
+  {
+   "id": "zork2-pentagram-room",
+   "rooms": [
+    "PENTAGRAM-ROOM"
+   ],
+   "palette": {
+    "sky": "#2a2233",
+    "ground": "#2a2018"
+   },
+   "variants": [
+    {
+     "id": "zork2-pentagram-room--demon",
+     "when": {
+      "objectIn": [
+       "GENIE",
+       "PENTAGRAM-ROOM"
+      ],
+      "notFlag": "GENIE-READY?"
+     }
+    }
+   ],
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork2-aquarium-room",
+   "rooms": [
+    "AQUARIUM-ROOM"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   },
+   "variants": [
+    {
+     "id": "zork2-aquarium-room--shattered",
+     "when": {
+      "objectIn": [
+       "DEAD-SERPENT",
+       "AQUARIUM-ROOM"
+      ]
+     }
+    },
+    {
+     "id": "zork2-aquarium-room--serpent",
+     "when": {
+      "objectIn": [
+       "SERPENT",
+       "AQUARIUM"
+      ]
+     }
+    }
+   ],
+   "ambience": "water"
+  },
+  {
+   "id": "zork2-murky-room",
+   "rooms": [
+    "IN-AQUARIUM"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   },
+   "ambience": "water"
+  },
+  {
+   "id": "zork2-wizards-quarters",
+   "rooms": [
+    "WIZARDS-QUARTERS"
+   ],
+   "palette": {
+    "sky": "#2a2233",
+    "ground": "#2a2018"
+   },
+   "ambience": "house"
+  },
+  {
+   "id": "zork2-riddle-room",
+   "rooms": [
+    "RIDDLE-ROOM"
+   ],
+   "palette": {
+    "sky": "#2a2433",
+    "ground": "#3a3326"
+   },
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork2-pearl-room",
+   "rooms": [
+    "PEARL-ROOM"
+   ],
    "palette": {
     "sky": "#1a1712",
     "ground": "#2b231a"
-   }
+   },
+   "ambience": "sacred"
+  },
+  {
+   "id": "zork2-circular-room",
+   "rooms": [
+    "WELL-BOTTOM"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   },
+   "ambience": "water"
+  },
+  {
+   "id": "zork2-top-of-well",
+   "rooms": [
+    "WELL-TOP"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   },
+   "ambience": "water"
+  },
+  {
+   "id": "zork2-tea-room",
+   "rooms": [
+    "TEA-ROOM"
+   ],
+   "palette": {
+    "sky": "#4a3a2a",
+    "ground": "#2c2118"
+   },
+   "ambience": "house"
+  },
+  {
+   "id": "zork2-posts-room",
+   "rooms": [
+    "POSTS-ROOM"
+   ],
+   "palette": {
+    "sky": "#4a3a2a",
+    "ground": "#2c2118"
+   },
+   "ambience": "house"
+  },
+  {
+   "id": "zork2-pool-room",
+   "rooms": [
+    "POOL-ROOM"
+   ],
+   "palette": {
+    "sky": "#1d3442",
+    "ground": "#243a45"
+   },
+   "variants": [
+    {
+     "id": "zork2-pool-room--tears",
+     "when": {
+      "objectIn": [
+       "POOL",
+       "POOL-ROOM"
+      ]
+     }
+    }
+   ],
+   "ambience": "water"
+  },
+  {
+   "id": "zork2-low-room",
+   "rooms": [
+    "MAGNET-ROOM"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   },
+   "variants": [
+    {
+     "id": "zork2-low-room--robot",
+     "when": {
+      "objectIn": [
+       "ROBOT",
+       "MAGNET-ROOM"
+      ]
+     }
+    }
+   ],
+   "ambience": "mine"
+  },
+  {
+   "id": "zork2-machine-room",
+   "rooms": [
+    "MACHINE-ROOM"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   },
+   "ambience": "mine"
+  },
+  {
+   "id": "zork2-dingy-closet",
+   "rooms": [
+    "CAGE-ROOM"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   },
+   "ambience": "mine"
+  },
+  {
+   "id": "zork2-cage",
+   "rooms": [
+    "IN-CAGE"
+   ],
+   "palette": {
+    "sky": "#141210",
+    "ground": "#262019"
+   },
+   "ambience": "mine"
+  },
+  {
+   "id": "zork2-bank-entrance",
+   "rooms": [
+    "BANK-ENTRANCE"
+   ],
+   "palette": {
+    "sky": "#34362c",
+    "ground": "#2a2622"
+   },
+   "ambience": "house"
+  },
+  {
+   "id": "zork2-teller-room",
+   "rooms": [
+    "TELLER-WEST",
+    "TELLER-EAST"
+   ],
+   "palette": {
+    "sky": "#34362c",
+    "ground": "#2a2622"
+   },
+   "ambience": "house"
+  },
+  {
+   "id": "zork2-viewing-room",
+   "rooms": [
+    "VIEWING-WEST",
+    "VIEWING-EAST"
+   ],
+   "palette": {
+    "sky": "#34362c",
+    "ground": "#2a2622"
+   },
+   "variants": [
+    {
+     "id": "zork2-viewing-room--curtain",
+     "when": {
+      "flag": "SCOL-ACTIVE"
+     }
+    }
+   ],
+   "ambience": "house"
+  },
+  {
+   "id": "zork2-small-room",
+   "rooms": [
+    "SMALL-ROOM"
+   ],
+   "palette": {
+    "sky": "#34362c",
+    "ground": "#2a2622"
+   },
+   "variants": [
+    {
+     "id": "zork2-small-room--curtain",
+     "when": {
+      "flag": "SCOL-ACTIVE"
+     }
+    }
+   ],
+   "ambience": "house"
+  },
+  {
+   "id": "zork2-vault",
+   "rooms": [
+    "VAULT"
+   ],
+   "palette": {
+    "sky": "#34362c",
+    "ground": "#2a2622"
+   },
+   "ambience": "house"
+  },
+  {
+   "id": "zork2-depository",
+   "rooms": [
+    "DEPOSITORY"
+   ],
+   "palette": {
+    "sky": "#34362c",
+    "ground": "#2a2622"
+   },
+   "ambience": "house"
+  },
+  {
+   "id": "zork2-chairmans-office",
+   "rooms": [
+    "OFFICE"
+   ],
+   "palette": {
+    "sky": "#34362c",
+    "ground": "#2a2622"
+   },
+   "ambience": "house"
+  },
+  {
+   "id": "zork2-dreary-room",
+   "rooms": [
+    "DREARY-ROOM"
+   ],
+   "palette": {
+    "sky": "#3a1d14",
+    "ground": "#2c2118"
+   },
+   "ambience": "house"
+  },
+  {
+   "id": "zork2-tiny-room",
+   "rooms": [
+    "TINY-ROOM"
+   ],
+   "palette": {
+    "sky": "#4a3a2a",
+    "ground": "#2c2118"
+   },
+   "ambience": "house"
+  },
+  {
+   "id": "zork2-volcano-bottom",
+   "rooms": [
+    "VOLCANO-BOTTOM"
+   ],
+   "palette": {
+    "sky": "#4a4a52",
+    "ground": "#2e1f1a"
+   },
+   "variants": [
+    {
+     "id": "zork2-volcano-bottom--balloon",
+     "when": {
+      "objectIn": [
+       "BALLOON",
+       "VOLCANO-BOTTOM"
+      ]
+     }
+    }
+   ],
+   "ambience": "cave"
+  },
+  {
+   "id": "zork2-volcano-core",
+   "rooms": [
+    "VAIR-1"
+   ],
+   "palette": {
+    "sky": "#6a7f9a",
+    "ground": "#2e1f1a"
+   },
+   "ambience": "surface"
+  },
+  {
+   "id": "zork2-volcano-small-ledge",
+   "rooms": [
+    "VAIR-2"
+   ],
+   "palette": {
+    "sky": "#6a7f9a",
+    "ground": "#2e1f1a"
+   },
+   "ambience": "surface"
+  },
+  {
+   "id": "zork2-volcano-viewing-ledge",
+   "rooms": [
+    "VAIR-3"
+   ],
+   "palette": {
+    "sky": "#6a7f9a",
+    "ground": "#2e1f1a"
+   },
+   "ambience": "surface"
+  },
+  {
+   "id": "zork2-volcano-wide-ledge",
+   "rooms": [
+    "VAIR-4"
+   ],
+   "palette": {
+    "sky": "#6a7f9a",
+    "ground": "#2e1f1a"
+   },
+   "ambience": "surface"
+  },
+  {
+   "id": "zork2-narrow-ledge",
+   "rooms": [
+    "LEDGE-1"
+   ],
+   "palette": {
+    "sky": "#4a4a52",
+    "ground": "#2e1f1a"
+   },
+   "variants": [
+    {
+     "id": "zork2-narrow-ledge--balloon",
+     "when": {
+      "objectIn": [
+       "BALLOON",
+       "LEDGE-1"
+      ]
+     }
+    },
+    {
+     "id": "zork2-narrow-ledge--door",
+     "when": {
+      "flag": "GNOME-DOOR-FLAG"
+     }
+    }
+   ],
+   "ambience": "cave"
+  },
+  {
+   "id": "zork2-library",
+   "rooms": [
+    "LIBRARY"
+   ],
+   "palette": {
+    "sky": "#4a3a2a",
+    "ground": "#2c2118"
+   },
+   "ambience": "house"
+  },
+  {
+   "id": "zork2-volcano-view",
+   "rooms": [
+    "VOLCANO-VIEW"
+   ],
+   "palette": {
+    "sky": "#4a4a52",
+    "ground": "#2e1f1a"
+   },
+   "ambience": "cave"
+  },
+  {
+   "id": "zork2-wide-ledge",
+   "rooms": [
+    "LEDGE-2"
+   ],
+   "palette": {
+    "sky": "#4a4a52",
+    "ground": "#2e1f1a"
+   },
+   "variants": [
+    {
+     "id": "zork2-wide-ledge--balloon",
+     "when": {
+      "objectIn": [
+       "BALLOON",
+       "LEDGE-2"
+      ]
+     }
+    },
+    {
+     "id": "zork2-wide-ledge--door",
+     "when": {
+      "flag": "GNOME-DOOR-FLAG"
+     }
+    }
+   ],
+   "ambience": "cave"
+  },
+  {
+   "id": "zork2-dusty-room",
+   "rooms": [
+    "SAFE-ROOM"
+   ],
+   "palette": {
+    "sky": "#4a3a2a",
+    "ground": "#2c2118"
+   },
+   "variants": [
+    {
+     "id": "zork2-dusty-room--blown-open",
+     "when": {
+      "flag": "SAFE-FLAG"
+     }
+    }
+   ],
+   "ambience": "house"
+  },
+  {
+   "id": "zork2-lava-room",
+   "rooms": [
+    "LAVA-ROOM"
+   ],
+   "palette": {
+    "sky": "#2a1a14",
+    "ground": "#3a2418"
+   },
+   "ambience": "cave"
+  },
+  {
+   "id": "zork2-red-mist",
+   "rooms": [
+    "DEAD-PALANTIR-1"
+   ],
+   "palette": {
+    "sky": "#5a1e24",
+    "ground": "#2a1014"
+   },
+   "ambience": "hades"
+  },
+  {
+   "id": "zork2-blue-mist",
+   "rooms": [
+    "DEAD-PALANTIR-2"
+   ],
+   "palette": {
+    "sky": "#1e2e5a",
+    "ground": "#10162a"
+   },
+   "ambience": "hades"
+  },
+  {
+   "id": "zork2-white-mist",
+   "rooms": [
+    "DEAD-PALANTIR-3"
+   ],
+   "palette": {
+    "sky": "#8a8a94",
+    "ground": "#4a4a52"
+   },
+   "ambience": "hades"
+  },
+  {
+   "id": "zork2-black-mist",
+   "rooms": [
+    "DEAD-PALANTIR-4"
+   ],
+   "palette": {
+    "sky": "#0e0c14",
+    "ground": "#18141e"
+   },
+   "ambience": "hades"
   }
  ]
 }

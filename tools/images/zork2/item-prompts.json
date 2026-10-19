@@ -1,0 +1,148 @@
+{
+ "style": "Single object rendered as a detailed hand-crafted pixel art inventory icon from an early-1990s VGA point-and-click adventure game (LucasArts / Sierra style), 256-color look, limited palette, subtle dithering, crisp dark outline, painterly pixel shading, soft light from the upper left, three-quarter view, the whole object centered and filling most of the frame, isolated on a transparent background, no cast shadow, no ground, no scenery, no text, no letters, no frame, no border.",
+ "negative": "text, letters, words, inscription, watermark, signature, logo, UI, frame, border, background scenery, floor, table, cast shadow, several objects, hands, people, photograph, photorealistic, 3D render, smooth gradients, blur, anime, modern objects",
+ "items": {
+  "zork2-statuette": {
+   "prompt": "A wrought gold statuette of a coiled dragon with spread wings, finely chased scales, gleaming."
+  },
+  "zork2-crown": {
+   "prompt": "The excessively gaudy crown of a vain king: heavy gold, crammed with oversized rubies, emeralds and sapphires, garish and ostentatious.",
+   "keystone": true
+  },
+  "zork2-violin": {
+   "prompt": "A fancy Stradivarius violin of glowing reddish varnished wood, with its bow laid across it, seen at an angle."
+  },
+  "zork2-pearl": {
+   "prompt": "A pearl necklace of hundreds of large, lustrous white pearls, draped in loops."
+  },
+  "zork2-zorkmid": {
+   "prompt": "A priceless gold zorkmid: a large, beautiful octagonal gold coin with an embossed portrait and illegible engraved legends."
+  },
+  "zork2-stamp": {
+   "prompt": "A small postage stamp with perforated edges, printed with the tiny portrait of a smug king with a flat head, no readable characters."
+  },
+  "zork2-ruby": {
+   "prompt": "A moby ruby: a huge faceted ruby, deep blood-red, sparkling."
+  },
+  "zork2-bills": {
+   "prompt": "A neat stack of green banknotes tied with a paper band, engraved with ornate patterns and no readable text."
+  },
+  "zork2-portrait": {
+   "prompt": "A small oil portrait in an ornate gilded frame of a pompous banker with a flat head, a monocle and mutton-chop whiskers, seen at a slight angle."
+  },
+  "zork2-candy": {
+   "prompt": "A package of candied goodies: a small ornate box with a cellophane window showing candied grasshoppers and chocolate ants, illegible scribbles instead of text."
+  },
+  "zork2-sphere-red": {
+   "prompt": "A beautiful red crystal sphere, translucent ruby red, with misty swirls deep inside and a bright highlight.",
+   "keystone": true
+  },
+  "zork2-sphere-blue": {
+   "prompt": "A blue crystal sphere, translucent sapphire blue, with misty swirls deep inside and a bright highlight."
+  },
+  "zork2-sphere-clear": {
+   "prompt": "A clear crystal sphere, colorless and transparent like water, with faint white mist swirling inside and a few grains of sand clinging to it."
+  },
+  "zork2-sphere-black": {
+   "prompt": "A strange black crystal sphere, glossy obsidian black with faint violet glints and a dark mist deep inside."
+  },
+  "zork2-collar": {
+   "prompt": "A gigantic dog collar of thick studded leather with a huge brass buckle, curled in a loop, large enough for three rhinoceros-sized dogs."
+  },
+  "zork2-wand": {
+   "prompt": "The Wizard's magic wand: a slender wand of dark polished wood with a silver star-shaped tip, faint sparkles around it, shown diagonally.",
+   "keystone": true
+  },
+  "zork2-gold-key": {
+   "prompt": "A delicate tiny gold key strung on a red satin ribbon."
+  },
+  "zork2-rose": {
+   "prompt": "A single perfect red rose with a long green stem and a few leaves."
+  },
+  "zork2-chest": {
+   "prompt": "A rotten old wooden chest with rusty hinges and iron bands, lid closed, its planks cracked and mossy."
+  },
+  "zork2-steel-box": {
+   "prompt": "A dented steel box with a hinged lid, closed, scuffed and scratched."
+  },
+  "zork2-deposit-box": {
+   "prompt": "A safety deposit box: a long narrow polished steel box with a hinged lid and a small keyhole."
+  },
+  "zork2-teapot": {
+   "prompt": "A china teapot with no lid, white porcelain painted with delicate blue flowers, a curved spout and a round handle.",
+   "keystone": true
+  },
+  "zork2-water": {
+   "prompt": "A splash of clear water: a small floating blob of water with droplets, bluish and shiny."
+  },
+  "zork2-flask": {
+   "prompt": "A stoppered glass flask filled with clear liquid, a skull and crossbones engraved on the glass, cork stopper."
+  },
+  "zork2-place-mat": {
+   "prompt": "A rectangular woven place mat with a fringed edge and a simple checked pattern."
+  },
+  "zork2-letter-opener": {
+   "prompt": "A slim letter opener with a thin metal blade and an ornate brass handle, shown diagonally."
+  },
+  "zork2-iron-key": {
+   "prompt": "A rusty iron key, old and plain, with a round bow and a simple bit."
+  },
+  "zork2-club": {
+   "prompt": "A long wooden club shaped like a baseball bat, curiously burned black at its thick end, a few scorched marks on the wood."
+  },
+  "zork2-brick": {
+   "prompt": "A square brick of reddish clay with a small round hole in its top, rough texture."
+  },
+  "zork2-string": {
+   "prompt": "A coil of thin black braided string."
+  },
+  "zork2-repellent": {
+   "prompt": "A spray can with a nozzle on top, its label covered with big illegible scribbles and a little drawing of a fleeing monster."
+  },
+  "zork2-mangled-cage": {
+   "prompt": "A mangled steel cage, its thick bars bent and twisted, crumpled out of shape."
+  },
+  "zork2-dead-serpent": {
+   "prompt": "A dead baby sea serpent lying in a heap of green scaly coils, flippers limp and eyes closed, more sad than gruesome."
+  },
+  "zork2-cake-green": {
+   "prompt": "A small square cake frosted in white, decorated on top with flowing green icing scrolls instead of letters."
+  },
+  "zork2-cake-blue": {
+   "prompt": "A small square cake frosted in white, decorated on top with flowing blue icing scrolls instead of letters."
+  },
+  "zork2-cake-orange": {
+   "prompt": "A small square cake frosted in white, decorated on top with flowing orange icing scrolls instead of letters."
+  },
+  "zork2-cake-red": {
+   "prompt": "A small square cake frosted in white, decorated on top with flowing red icing scrolls instead of letters."
+  },
+  "zork2-book-green": {
+   "prompt": "A handsome book bound in green leather with gilded edges, closed."
+  },
+  "zork2-book-blue": {
+   "prompt": "A worn and battered blue book, its cloth cover frayed at the corners, closed."
+  },
+  "zork2-book-white": {
+   "prompt": "A white book bound in pale vellum with a small silver clasp, closed."
+  },
+  "zork2-book-purple": {
+   "prompt": "A purple book spotted with mold and dust, closed."
+  },
+  "zork2-newspaper": {
+   "prompt": "A folded newspaper with a large headline, columns of illegible scribbles instead of text and a small smudged picture."
+  },
+  "zork2-brochure": {
+   "prompt": "A small, worn piece of paper, a faded bank brochure folded in three, with illegible scribbles instead of text."
+  },
+  "zork2-card": {
+   "prompt": "A small white card with a red warning border and lines of illegible scribbles instead of text."
+  },
+  "zork2-balloon-label": {
+   "prompt": "A small blue paper label with a scalloped edge and lines of illegible scribbles instead of text."
+  },
+  "zork2-robot-label": {
+   "prompt": "A green piece of paper, slightly crumpled, with lines of illegible scribbles instead of text."
+  }
+ }
+}

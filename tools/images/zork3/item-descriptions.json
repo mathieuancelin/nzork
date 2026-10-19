@@ -1,0 +1,354 @@
+[
+ {
+  "id": "zork3-water",
+  "objects": [
+   {
+    "object": "WATER",
+    "name": "quantity of water",
+    "flags": [
+     "TAKEBIT",
+     "DRINKBIT"
+    ],
+    "lying": "There is some water here.",
+    "routineTexts": "The water slips through your fingers.\n You can't do that.\n You don't have any water.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork3-broken-lamp",
+  "objects": [
+   {
+    "object": "BROKEN-LAMP",
+    "name": "broken lantern",
+    "flags": [
+     "TAKEBIT"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zork3-lamp",
+  "objects": [
+   {
+    "object": "LAMP",
+    "name": "lamp",
+    "flags": [
+     "TAKEBIT",
+     "LIGHTBIT"
+    ],
+    "firstSeen": "Your old friend, the brass lantern, is at your feet.",
+    "routineTexts": "The lamp smashes. The light is now out.\n A burned-out lamp won't light.\n The lamp has already burned out.\n The lamp has burned out. The lamp is on. The lamp is turned off."
+   }
+  ]
+ },
+ {
+  "id": "zork3-sword",
+  "objects": [
+   {
+    "object": "SWORD",
+    "name": "sword",
+    "flags": [
+     "TAKEBIT",
+     "WEAPONBIT",
+     "TRYTAKEBIT"
+    ],
+    "routineTexts": "Who do you think you are? Arthur?\n The sword is deeply imbedded in the rock. You can't budge it.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork3-warning-note",
+  "objects": [
+   {
+    "object": "WARNING-NOTE",
+    "name": "warning note",
+    "flags": [
+     "TAKEBIT",
+     "READBIT",
+     "BURNBIT"
+    ],
+    "firstSeen": "Lying on the ground is a small note of some kind.",
+    "writing": "Warning:\n    The Royal Puzzle is dangerous and it is possible to become trapped within its confines. Please do not enter the puzzle after hours when museum personnel are not present.\n              The Management"
+   }
+  ]
+ },
+ {
+  "id": "zork3-lore-book",
+  "objects": [
+   {
+    "object": "LORE-BOOK",
+    "name": "very ancient book",
+    "flags": [
+     "TAKEBIT",
+     "READBIT"
+    ],
+    "firstSeen": "Nestled inside the niche is an old and dusty book.",
+    "lying": "There is an old book here.",
+    "writing": "The book is written in a strong and elegant hand and is full of strange, wondrous pictures. The text, penned in many colours, is in a tongue unknown to you. The words seem to change colour as you read them. The book itself is very old and the pages dry and brittle.",
+    "routineTexts": "The book is consumed in a dazzling display of color.\n The book seems to will itself open to a specific page. It shows a picture of eight small rooms located around a great circle of flame. All are identical save one, which has a bronze door leading to a room bathed in golden light. A legend beneath the picture says \"The Dungeon and Treasury of Zork.\"\n The book can be perused but not left open.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork3-sceptre",
+  "objects": [
+   {
+    "object": "SCEPTRE",
+    "name": "sceptre",
+    "flags": [
+     "TAKEBIT",
+     "NDESCBIT",
+     "TRYTAKEBIT"
+    ],
+    "routineTexts": "The jewels are inside a locked cage.\n The {0} is now resting on the pedestal.\n You don't have the {0}.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork3-jewelled-knife",
+  "objects": [
+   {
+    "object": "JEWELLED-KNIFE",
+    "name": "jewelled knife",
+    "flags": [
+     "TAKEBIT",
+     "NDESCBIT",
+     "TRYTAKEBIT"
+    ],
+    "routineTexts": "The jewels are inside a locked cage.\n The {0} is now resting on the pedestal.\n You don't have the {0}.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork3-ring",
+  "objects": [
+   {
+    "object": "RING",
+    "name": "golden ring",
+    "flags": [
+     "TAKEBIT",
+     "NDESCBIT",
+     "TRYTAKEBIT",
+     "WEARBIT"
+    ],
+    "routineTexts": "The jewels are inside a locked cage.\n The {0} is now resting on the pedestal.\n You don't have the {0}.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork3-hood",
+  "objects": [
+   {
+    "object": "HOOD",
+    "name": "hood",
+    "flags": [
+     "NDESCBIT",
+     "TRYTAKEBIT",
+     "TAKEBIT",
+     "WEARBIT"
+    ],
+    "routineTexts": "The figure's hood casts a dark shadow over its face. There is no way from where you stand to look beneath it.\n You slowly remove the hood from your badly wounded opponent and recoil in horror at the sight of your own face, weary and wounded. A faint smile comes to the lips and then the face starts to change, very slowly, into that of an old, wizened person. The image fades and with it the body of your hooded opponent. The cloak remains on the ground.\n The hooded figure, though recovering from wounds, is strong enough to force you back.\n You cannot get close enough to the hooded figure to remove the hood.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork3-cloak",
+  "objects": [
+   {
+    "object": "CLOAK",
+    "name": "cloak",
+    "flags": [
+     "NDESCBIT",
+     "TRYTAKEBIT",
+     "TAKEBIT",
+     "WEARBIT"
+    ],
+    "routineTexts": "You cannot get close enough to look underneath the cloak.\n The cloak is fastened around the neck of the hooded figure. It would be difficult to remove.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork3-torch",
+  "objects": [
+   {
+    "object": "TORCH",
+    "name": "torch",
+    "flags": [
+     "LIGHTBIT",
+     "TAKEBIT",
+     "ONBIT",
+     "FLAMEBIT"
+    ],
+    "firstSeen": "Mounted on one wall is a flaming torch, which fills the room with a flickering light.",
+    "routineTexts": "It's already lit.\n You have nothing to light it with.\n You manage to extinguish the flame.\n It has already been extinguished.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork3-fried-torch",
+  "objects": [
+   {
+    "object": "FRIED-TORCH",
+    "name": "burned-out torch",
+    "flags": [
+     "TAKEBIT"
+    ],
+    "routineTexts": "It's hopeless. The torch is wet.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork3-amulet",
+  "objects": [
+   {
+    "object": "AMULET",
+    "name": "golden amulet",
+    "flags": [
+     "TAKEBIT",
+     "WEARBIT",
+     "NDESCBIT"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zork3-fried-lamp",
+  "objects": [
+   {
+    "object": "FRIED-LAMP",
+    "name": "lamp",
+    "flags": [
+     "TAKEBIT"
+    ],
+    "routineTexts": "The lamp isn't functioning (probably from having gotten wet).\n"
+   }
+  ]
+ },
+ {
+  "id": "zork3-waybread",
+  "objects": [
+   {
+    "object": "WAYBREAD",
+    "name": "piece of waybread",
+    "flags": [
+     "TAKEBIT",
+     "FOODBIT"
+    ],
+    "firstSeen": "It seems as if somebody has been here recently, as there is some fresh bread lying beneath one of the other trees.",
+    "lying": "A piece of bread is on the ground here.",
+    "routineTexts": "The bread is crushed rather than cut by your sword, and the crumbs scatter to the wind.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork3-staff",
+  "objects": [
+   {
+    "object": "STAFF",
+    "name": "wooden staff",
+    "flags": [
+     "TAKEBIT"
+    ],
+    "routineTexts": ""
+   }
+  ]
+ },
+ {
+  "id": "zork3-broken-staff",
+  "objects": [
+   {
+    "object": "BROKEN-STAFF",
+    "name": "broken staff",
+    "flags": [
+     "TAKEBIT"
+    ],
+    "routineTexts": ""
+   }
+  ]
+ },
+ {
+  "id": "zork3-chest",
+  "objects": [
+   {
+    "object": "CHEST",
+    "name": "chest",
+    "flags": [
+     "TAKEBIT",
+     "CONTBIT"
+    ],
+    "firstSeen": "A large chest, closed and locked, is lying among the boulders.",
+    "routineTexts": "What's the point?\n It doesn't fit.  Awfully peculiar, though, since it's where the staff came from. The man calls down to you. \"Is this what you're looking for?\" he cackles, waving a small key over his head. You try to open the chest, but it is locked.\n The chest is locked and cannot be opened.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork3-valuables",
+  "objects": [
+   {
+    "object": "VALUABLES",
+    "name": "pile of assorted valuables",
+    "flags": [
+     "NDESCBIT",
+     "TAKEBIT"
+    ],
+    "routineTexts": "The man recoils sharply. \"These here things are mine. It's my chest and they're my valuables. You've a lot of nerve trying to take them from me after me saving you like that!\"\n What valuables?\n"
+   }
+  ]
+ },
+ {
+  "id": "zork3-timbers",
+  "objects": [
+   {
+    "object": "TIMBERS",
+    "name": "broken timber",
+    "flags": [
+     "TAKEBIT"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zork3-repellent",
+  "objects": [
+   {
+    "object": "REPELLENT",
+    "name": "Frobozz Magic Grue Repellent",
+    "flags": [
+     "TAKEBIT",
+     "READBIT"
+    ],
+    "firstSeen": "A spray can is in the corner. In large type is the legend \"Frobozz Magic Grue Repellent.\"",
+    "writing": "!!! FROBOZZ MAGIC GRUE REPELLENT !!!\n\nInstructions for use: Apply liberally to creature to be protected. Duration of effect is unpredictable. Use only in place of death!\n\n(No warranty expressed or implied)",
+    "routineTexts": "The can seems empty.\n There is a sloshing sound from inside.\n The repellent is all gone.\n The spray stinks amazingly for a few moments, then drifts away.\n The spray smells like a mixture of old socks and burning rubber. If I were a grue I'd sure stay clear!\n"
+   }
+  ]
+ },
+ {
+  "id": "zork3-key",
+  "objects": [
+   {
+    "object": "KEY",
+    "name": "strange key",
+    "flags": [
+     "TAKEBIT"
+    ],
+    "firstSeen": "The light from above seems to be focused in the center of the room, where a single key is lying in the dust.",
+    "routineTexts": "The key seems to mold itself to the shape of the lock. With a mere twist of your hand, the massive bolt gives way.\n It already is.\n The key molds itself to the lock but will not turn.\n The key, which initially seemed certain to fit the lock, seems to change shape and will not enter the keyhole.\n {0}\nStrange, though. The key seems to change shape constantly.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork3-vial",
+  "objects": [
+   {
+    "object": "VIAL",
+    "name": "vial",
+    "flags": [
+     "TAKEBIT",
+     "CONTBIT"
+    ],
+    "routineTexts": "You can't seem to put anything in it.\n Nothing seems to come out, although the vial is lighter now.\n The vial is open.  There is a sweet odor from within the vial, apparently coming from a heavy but invisible liquid. It is a small, transparent vial  which looks empty but is strangely heavy.\n which is light and empty.\n"
+   }
+  ]
+ }
+]

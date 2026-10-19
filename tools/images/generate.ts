@@ -1,8 +1,10 @@
-// Generates candidate images for the scenes, or with --items for the object icons.
+// Generates candidate images for the scenes, or with --items for the object icons, of Zork I
+// or, with --game zork2, of another game.
 //
 //   npm run images:generate -- --provider openai --keystones --count 4          (plan + cost only)
 //   npm run images:generate -- --provider openai --keystones --count 4 --yes    (really generates)
 //   npm run images:generate -- --items --provider openai --keystones --count 3 --yes
+//   npm run images:generate -- --game zork2 --provider openai --keystones --count 4 --yes
 //
 // Selection: --keystones | --ids id1,id2 (or --scenes) | --missing (no approved image yet) | --all
 // Options: --count N (candidates each, default 4) · --no-refs (do not send the style
@@ -12,9 +14,8 @@
 
 import { readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { readdirSync, existsSync } from 'node:fs'
 import { PROVIDERS } from './lib/providers'
-import { arg, candidates, ensureDir, flag, fullPrompt, kindFromArgs, loadDotEnv, loadPrompts, readManifest } from './lib/common'
+import { arg, candidates, ensureDir, flag, fullPrompt, kindFromArgs, loadDotEnv, loadPrompts, readManifest, styleReferences } from './lib/common'
 
 loadDotEnv()
 const kind = kindFromArgs()
@@ -41,11 +42,10 @@ else {
 }
 for (const id of ids) if (!prompts.entries[id]) throw new Error(`Unknown ${items ? 'item' : 'scene'} ${id}`)
 
-const refDir = kind.references
-const refs = flag('no-refs') || !existsSync(refDir) ? [] : readdirSync(refDir).filter((f) => /\.png$/i.test(f)).map((f) => readFileSync(join(refDir, f)))
+const refs = flag('no-refs') ? [] : styleReferences(kind).map((f) => readFileSync(f))
 const shape = items ? 'square' : 'wide'
 const total = ids.length * count
-console.log(`Provider: ${provider.name} (${provider.model})`)
+console.log(`Game: ${kind.game} · provider: ${provider.name} (${provider.model})`)
 console.log(`${items ? 'Items' : 'Scenes'}: ${ids.length} × ${count} candidates = ${total} images, ${refs.length} style reference(s)`)
 console.log(`Estimated cost: ~${(total * provider.estimatedCost[shape]).toFixed(2)} $ (rough estimate, check the provider's prices)`)
 if (!flag('yes')) {
@@ -88,4 +88,4 @@ await Promise.all(
   }),
 )
 console.log(`\nDone: ${done} image(s), ${failed} failure(s). Candidates: ${ids.map((id) => `${id}=${candidates(id, kind).length}`).join(', ')}`)
-console.log(`Next: npm run images:review${items ? ' (then the "Objets" tab)' : ''}`)
+console.log(`Next: npm run images:review${items ? ' (then the "Objets" tab)' : ''}${kind.game === 'zork1' ? '' : ` (game ${kind.game})`}`)

@@ -1,0 +1,808 @@
+[
+ {
+  "id": "lamp",
+  "objects": [
+   {
+    "object": "LAMP",
+    "name": "lamp",
+    "flags": [
+     "TAKEBIT",
+     "LIGHTBIT"
+    ],
+    "firstSeen": "A strangely familiar brass lantern is lying on the ground.",
+    "routineTexts": "The lamp has smashed into the floor, and the light has gone out.\n A burned-out lamp won't light.\n The lamp has already burned out.\n The lamp has burned out. The lamp is on. The lamp is turned off."
+   }
+  ]
+ },
+ {
+  "id": "lamp-broken",
+  "objects": [
+   {
+    "object": "BROKEN-LAMP",
+    "name": "broken brass lantern",
+    "flags": [
+     "TAKEBIT"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "sword",
+  "objects": [
+   {
+    "object": "SWORD",
+    "name": "elvish sword",
+    "flags": [
+     "TAKEBIT",
+     "WEAPONBIT",
+     "TRYTAKEBIT"
+    ],
+    "firstSeen": "A sword of Elvish workmanship is on the ground.",
+    "lying": "An Elvish sword of great antiquity is here.",
+    "routineTexts": ""
+   }
+  ]
+ },
+ {
+  "id": "matches",
+  "objects": [
+   {
+    "object": "MATCH",
+    "name": "matchbook",
+    "flags": [
+     "READBIT",
+     "TAKEBIT"
+    ],
+    "lying": "There is a matchbook saying \"Visit ZORK I\" here.",
+    "writing": "\">> Visit Exotic ZORK I <<\n\nConsult the Frobozz Magic Travel Agency, or visit your local computer store for more details.\"",
+    "routineTexts": "I'm afraid you have run out of matches.\n One of the matches starts to burn.\n The match is out.\n You have  {0} match es. . A match is burning. No match is burning."
+   }
+  ]
+ },
+ {
+  "id": "zork2-chest",
+  "objects": [
+   {
+    "object": "CHEST",
+    "name": "rotten wooden chest",
+    "flags": [
+     "CONTBIT",
+     "TAKEBIT"
+    ],
+    "firstSeen": "A rotten old wooden chest is in one corner among the debris.",
+    "routineTexts": "The opening of the squeaky lid startles the young woman.\n The hinges are very rusty, but they seem to be starting to give. You can probably open it if you try again. There is something bumping around inside.  All this rummaging around has startled the young woman."
+   }
+  ]
+ },
+ {
+  "id": "zork2-statuette",
+  "objects": [
+   {
+    "object": "STATUETTE",
+    "name": "golden dragon statuette",
+    "flags": [
+     "STAGGERED",
+     "TAKEBIT"
+    ],
+    "firstSeen": "Nestled in the chest is a wrought gold statuette of a dragon."
+   }
+  ]
+ },
+ {
+  "id": "zork2-collar",
+  "objects": [
+   {
+    "object": "COLLAR",
+    "name": "gigantic dog collar",
+    "flags": [
+     "STAGGERED",
+     "TAKEBIT"
+    ],
+    "firstSeen": "A gigantic dog collar, large enough for three rhinoceros-sized dogs, is lying amidst the debris.",
+    "routineTexts": ""
+   }
+  ]
+ },
+ {
+  "id": "zork2-bat",
+  "objects": [
+   {
+    "object": "BAT",
+    "name": "wooden club",
+    "flags": [
+     "INVISIBLE",
+     "TAKEBIT",
+     "WEAPONBIT",
+     "READBIT",
+     "BURNBIT"
+    ],
+    "firstSeen": "A long wooden club lies on the ground near the diamond-shaped window. The club is curiously burned at the thick end.",
+    "writing": "The words \"Babe Flathead\" are burned into the wood."
+   }
+  ]
+ },
+ {
+  "id": "zork2-palantir-4",
+  "objects": [
+   {
+    "object": "PALANTIR-4",
+    "name": "black crystal sphere",
+    "flags": [
+     "STAGGERED",
+     "TAKEBIT",
+     "TRANSBIT"
+    ],
+    "lying": "There is a strange black sphere here.",
+    "routineTexts": "There is something misty in the sphere. Perhaps if you were to look into it...\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-palantir-3",
+  "objects": [
+   {
+    "object": "PALANTIR-3",
+    "name": "clear crystal sphere",
+    "flags": [
+     "STAGGERED",
+     "TAKEBIT",
+     "NDESCBIT",
+     "TRANSBIT"
+    ],
+    "lying": "There is a clear crystal sphere lying in the sand.",
+    "routineTexts": "There is something misty in the sphere. Perhaps if you were to look into it...\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-dead-serpent",
+  "objects": [
+   {
+    "object": "DEAD-SERPENT",
+    "name": "dead sea serpent",
+    "flags": [
+     "TAKEBIT"
+    ],
+    "lying": "There is a dead sea serpent in a heap here.",
+    "routineTexts": "This may only be a baby sea serpent, but it's as big as a small whale.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-balloon-label",
+  "objects": [
+   {
+    "object": "BALLOON-LABEL",
+    "name": "blue label",
+    "flags": [
+     "READBIT",
+     "TAKEBIT",
+     "BURNBIT"
+    ],
+    "lying": "There is a blue label here.",
+    "writing": " !! FROBOZZ MAGIC BALLOON COMPANY !!\n\nHello, Aviator!\n\nTo land your balloon, say LAND\nOtherwise, you're on your own!\n\nNo warranty expressed or implied."
+   }
+  ]
+ },
+ {
+  "id": "zork2-brick",
+  "objects": [
+   {
+    "object": "BRICK",
+    "name": "brick",
+    "flags": [
+     "TAKEBIT",
+     "BURNBIT",
+     "OPENBIT",
+     "SEARCHBIT"
+    ],
+    "lying": "There is a square brick here which feels like clay.",
+    "routineTexts": ""
+   }
+  ]
+ },
+ {
+  "id": "zork2-card",
+  "objects": [
+   {
+    "object": "CARD",
+    "name": "card",
+    "flags": [
+     "READBIT",
+     "TAKEBIT",
+     "BURNBIT"
+    ],
+    "lying": "There is a card with writing on it here.",
+    "writing": " Warning:\n    This room was constructed over very weak rock strata. Detonation of explosives in this room is strictly prohibited!\n         Frobozz Magic Cave Company\n         per M. Agrippa, foreman\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-crown",
+  "objects": [
+   {
+    "object": "CROWN",
+    "name": "gaudy crown",
+    "flags": [
+     "STAGGERED",
+     "TAKEBIT",
+     "WEARBIT"
+    ],
+    "firstSeen": "The excessively gaudy crown of Lord Dimwit Flathead sits in the safe.",
+    "lying": "Lord Dimwit's crown is here."
+   }
+  ]
+ },
+ {
+  "id": "zork2-palantir-1",
+  "objects": [
+   {
+    "object": "PALANTIR-1",
+    "name": "red crystal sphere",
+    "flags": [
+     "STAGGERED",
+     "TAKEBIT",
+     "TRANSBIT",
+     "TRYTAKEBIT"
+    ],
+    "lying": "There is a beautiful red crystal sphere here.",
+    "routineTexts": "As you reach for the sphere, a solid steel cage falls from the ceiling to entrap you. To make matters worse, poisonous gas starts coming into the room.\n\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-violin",
+  "objects": [
+   {
+    "object": "VIOLIN",
+    "name": "fancy violin",
+    "flags": [
+     "STAGGERED",
+     "TAKEBIT"
+    ],
+    "lying": "There is a Stradivarius here.",
+    "routineTexts": "An amazingly offensive noise issues from the violin.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-flask",
+  "objects": [
+   {
+    "object": "FLASK",
+    "name": "stoppered glass flask filled with liquid",
+    "flags": [
+     "TAKEBIT",
+     "TRANSBIT",
+     "READBIT"
+    ],
+    "lying": "A stoppered glass flask with a skull-and-crossbones marking is here. The flask is filled with some clear liquid.",
+    "writing": "There is a skull-and-crossbones engraved on the glass.",
+    "routineTexts": "You notice that objects behind the flask appear to be magnified. You might try looking at something through the flask.\n The flask distorts and magnifies the {0}, showing details not noticed earlier.\n The flask breaks into pieces.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-robot-label",
+  "objects": [
+   {
+    "object": "ROBOT-LABEL",
+    "name": "green piece of paper",
+    "flags": [
+     "READBIT",
+     "TAKEBIT",
+     "BURNBIT"
+    ],
+    "lying": "There is a green piece of paper here.",
+    "writing": "!!  FROBOZZ MAGIC ROBOT COMPANY  !!\n\n Hello, Master!\n\n   I am a late-model robot, trained at GUE Tech to perform various simple household functions.\n\n   To activate me, say the following:\n\n        >ROBOT, <things to do>\n\nAt your service!"
+   }
+  ]
+ },
+ {
+  "id": "zork2-mangled-cage",
+  "objects": [
+   {
+    "object": "MANGLED-CAGE",
+    "name": "mangled cage",
+    "flags": [
+     "TAKEBIT"
+    ],
+    "lying": "There is a mangled steel cage here."
+   }
+  ]
+ },
+ {
+  "id": "zork2-pearl",
+  "objects": [
+   {
+    "object": "PEARL",
+    "name": "pearl necklace",
+    "flags": [
+     "STAGGERED",
+     "TAKEBIT"
+    ],
+    "lying": "There is a pearl necklace here with hundreds of large pearls."
+   }
+  ]
+ },
+ {
+  "id": "zork2-eat-me-cake",
+  "objects": [
+   {
+    "object": "EAT-ME-CAKE",
+    "name": "cake frosted with green letters",
+    "flags": [
+     "READBIT",
+     "TAKEBIT",
+     "FOODBIT"
+    ],
+    "writing": "The icing spells out \"Eat Me.\"",
+    "routineTexts": "Suddenly, the room appears to have become very large (although everything you are carrying seems to be its normal size).\n\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-blue-icing",
+  "objects": [
+   {
+    "object": "BLUE-ICING",
+    "name": "cake frosted with blue letters",
+    "flags": [
+     "READBIT",
+     "TAKEBIT",
+     "FOODBIT"
+    ],
+    "routineTexts": "The cake is much too tall now for you to read the lettering.\n The letters, now visible, say \" Evaporate Explode Enlarge \".\n You can't see through that!\n The first letter is a capital E. The rest is too small to read.\n The room around you seems to be getting smaller.\n\n The cake sinks majestically into the pool.\n Most of the pool evaporates, revealing a (slightly damp but still valuable) package of rare candies. The red cake must be pretty strong stuff, since it remains intact!\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-orange-icing",
+  "objects": [
+   {
+    "object": "ORANGE-ICING",
+    "name": "cake frosted with orange letters",
+    "flags": [
+     "READBIT",
+     "TAKEBIT",
+     "FOODBIT"
+    ],
+    "routineTexts": "The cake is much too tall now for you to read the lettering.\n The letters, now visible, say \" Evaporate Explode Enlarge \".\n You can't see through that!\n The first letter is a capital E. The rest is too small to read.\n The room around you seems to be getting smaller.\n\n The cake sinks majestically into the pool.\n Most of the pool evaporates, revealing a (slightly damp but still valuable) package of rare candies. The red cake must be pretty strong stuff, since it remains intact!\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-red-icing",
+  "objects": [
+   {
+    "object": "RED-ICING",
+    "name": "cake frosted with red letters",
+    "flags": [
+     "READBIT",
+     "TAKEBIT",
+     "FOODBIT"
+    ],
+    "routineTexts": "The cake is much too tall now for you to read the lettering.\n The letters, now visible, say \" Evaporate Explode Enlarge \".\n You can't see through that!\n The first letter is a capital E. The rest is too small to read.\n The room around you seems to be getting smaller.\n\n The cake sinks majestically into the pool.\n Most of the pool evaporates, revealing a (slightly damp but still valuable) package of rare candies. The red cake must be pretty strong stuff, since it remains intact!\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-coin",
+  "objects": [
+   {
+    "object": "COIN",
+    "name": "priceless zorkmid",
+    "flags": [
+     "STAGGERED",
+     "READBIT",
+     "TAKEBIT"
+    ],
+    "firstSeen": "On the floor is a priceless gold zorkmid (a valuable collector's item).",
+    "lying": "There is an engraved zorkmid here.",
+    "writing": "This is a beautiful octagonal coin bearing the legends \"Ten Thousand Zorkmids\" and \"In Frobs We Trust\"."
+   }
+  ]
+ },
+ {
+  "id": "zork2-stamp",
+  "objects": [
+   {
+    "object": "STAMP",
+    "name": "Flathead stamp",
+    "flags": [
+     "STAGGERED",
+     "READBIT",
+     "TAKEBIT",
+     "BURNBIT"
+    ],
+    "lying": "There is a Flathead stamp here.",
+    "writing": "This three zorkmid stamp bears a portrait of Lord Dimwit Flathead, \"Our Excessive Leader\"."
+   }
+  ]
+ },
+ {
+  "id": "zork2-green-book",
+  "objects": [
+   {
+    "object": "GREEN-BOOK",
+    "name": "green book",
+    "flags": [
+     "READBIT",
+     "TAKEBIT",
+     "CONTBIT",
+     "BURNBIT"
+    ],
+    "firstSeen": "A handsome book, bound in green leather, sits in the center of the room.",
+    "writing": "This book is written in a tongue with which I am unfamiliar.",
+    "routineTexts": ""
+   }
+  ]
+ },
+ {
+  "id": "zork2-blue-book",
+  "objects": [
+   {
+    "object": "BLUE-BOOK",
+    "name": "blue book",
+    "flags": [
+     "READBIT",
+     "TAKEBIT",
+     "CONTBIT",
+     "BURNBIT"
+    ],
+    "firstSeen": "Worn and battered in one corner of the room is a blue book.",
+    "writing": "This book is written in a tongue with which I am unfamiliar.",
+    "routineTexts": ""
+   }
+  ]
+ },
+ {
+  "id": "zork2-white-book",
+  "objects": [
+   {
+    "object": "WHITE-BOOK",
+    "name": "white book",
+    "flags": [
+     "READBIT",
+     "TAKEBIT",
+     "CONTBIT",
+     "BURNBIT"
+    ],
+    "firstSeen": "Right beside the purple book sits a white one.",
+    "writing": "It is written in an unfamiliar tongue and details the use of various magical objects, chiefly the so-called \"magic wand\". Apparently these devices work by pointing them at the object to be ensorcelled, and then chanting the appropriate magic words. (It's truly amazing how credulous these ancients were, isn't it?)",
+    "routineTexts": ""
+   }
+  ]
+ },
+ {
+  "id": "zork2-purple-book",
+  "objects": [
+   {
+    "object": "PURPLE-BOOK",
+    "name": "purple book",
+    "flags": [
+     "READBIT",
+     "TAKEBIT",
+     "CONTBIT",
+     "SEARCHBIT",
+     "BURNBIT"
+    ],
+    "lying": "Lying in the dust, and covered with mold, is a purple book.",
+    "writing": "This book is written in a tongue with which I am unfamiliar. Assuming that one can indeed tell a book by its cover, it is likely filled with purple prose, the like of which is rarely seen outside the Great Underground Empire.",
+    "routineTexts": ""
+   }
+  ]
+ },
+ {
+  "id": "zork2-ruby",
+  "objects": [
+   {
+    "object": "RUBY",
+    "name": "ruby",
+    "flags": [
+     "STAGGERED",
+     "TAKEBIT"
+    ],
+    "firstSeen": "On the floor lies a moby ruby.",
+    "lying": "There is a moby ruby lying here."
+   }
+  ]
+ },
+ {
+  "id": "zork2-iron-box",
+  "objects": [
+   {
+    "object": "IRON-BOX",
+    "name": "steel box",
+    "flags": [
+     "CONTBIT",
+     "TAKEBIT",
+     "INVISIBLE"
+    ],
+    "lying": "There is a dented steel box here."
+   }
+  ]
+ },
+ {
+  "id": "zork2-candy",
+  "objects": [
+   {
+    "object": "CANDY",
+    "name": "package of candy",
+    "flags": [
+     "STAGGERED",
+     "FOODBIT",
+     "TAKEBIT",
+     "INVISIBLE",
+     "READBIT"
+    ],
+    "lying": "There is a package of candied goodies here.",
+    "routineTexts": "       Frobozz Magic Candy Company\n         >>Special Assortment<<\n          Candied Grasshoppers\n             Chocolated Ants\n              Worms Glacee\n(By Appointment to His Majesty, Dimwit I)\n Such rich food would probably not be good for you.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-fuse",
+  "objects": [
+   {
+    "object": "FUSE",
+    "name": "black string",
+    "flags": [
+     "TAKEBIT",
+     "BURNBIT"
+    ],
+    "lying": "There is a coil of black, braided string here.",
+    "routineTexts": "The string starts to burn.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-bills",
+  "objects": [
+   {
+    "object": "BILLS",
+    "name": "stack of zorkmid bills",
+    "flags": [
+     "STAGGERED",
+     "READBIT",
+     "TAKEBIT",
+     "BURNBIT"
+    ],
+    "firstSeen": "On the floor sit 200 neatly stacked zorkmid bills.",
+    "lying": "200 neatly stacked zorkmid bills are here.",
+    "writing": "Each bill is worth 100 zorkmids, and bears the legend \"In Frobs We Trust\".",
+    "routineTexts": "Nothing like having money to burn!\n Talk about eating rich foods!\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-portrait",
+  "objects": [
+   {
+    "object": "PORTRAIT",
+    "name": "portrait of J. Pierpont Flathead",
+    "flags": [
+     "STAGGERED",
+     "TAKEBIT",
+     "BURNBIT"
+    ],
+    "firstSeen": "A portrait of J. Pierpont Flathead hangs on the wall.",
+    "lying": "The portrait of J. Pierpont Flathead is here."
+   }
+  ]
+ },
+ {
+  "id": "zork2-bank-brochure",
+  "objects": [
+   {
+    "object": "BANK-BROCHURE",
+    "name": "bank brochure",
+    "flags": [
+     "READBIT",
+     "TAKEBIT",
+     "BURNBIT"
+    ],
+    "firstSeen": "On the ground is a small, worn piece of paper.",
+    "writing": "The paper is barely readable. You can only make out \"... valuables are completely safe ... advanced magic technology ... impossible to take valuables from the depository ... either teller's ... Many customers faint ... teller pops in ... seems to walk through ... walls ...\""
+   }
+  ]
+ },
+ {
+  "id": "zork2-deposit-box",
+  "objects": [
+   {
+    "object": "DEPOSIT-BOX",
+    "name": "safety deposit box",
+    "flags": [
+     "NDESCBIT",
+     "TAKEBIT",
+     "TRYTAKEBIT"
+    ],
+    "routineTexts": "The gnome clutches it possessively.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-letter-opener",
+  "objects": [
+   {
+    "object": "LETTER-OPENER",
+    "name": "letter opener",
+    "flags": [
+     "TAKEBIT",
+     "TOOLBIT"
+    ]
+   }
+  ]
+ },
+ {
+  "id": "zork2-key",
+  "objects": [
+   {
+    "object": "KEY",
+    "name": "rusty iron key",
+    "flags": [
+     "TAKEBIT",
+     "NDESCBIT",
+     "TURNBIT",
+     "TOOLBIT"
+    ],
+    "routineTexts": ""
+   }
+  ]
+ },
+ {
+  "id": "zork2-palantir-2",
+  "objects": [
+   {
+    "object": "PALANTIR-2",
+    "name": "blue crystal sphere",
+    "flags": [
+     "STAGGERED",
+     "TAKEBIT",
+     "TRANSBIT"
+    ],
+    "firstSeen": "In the center of the table sits a blue crystal sphere.",
+    "routineTexts": "There is something misty in the sphere. Perhaps if you were to look into it...\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-newspaper",
+  "objects": [
+   {
+    "object": "NEWSPAPER",
+    "name": "newspaper",
+    "flags": [
+     "TAKEBIT",
+     "BURNBIT",
+     "READBIT"
+    ],
+    "writing": "** U.S. News and Dungeon Report **\n\nFAMED ADVENTURER TO EXPLORE GREAT UNDERGROUND EMPIRE\n\nOur correspondents report that a world-famous and battle-hardened adventurer has been seen in the vicinity of the Great Underground Empire. Local grues have been reported sharpening their (slavering) fangs....\n\n\"Zork II: The Wizard of Frobozz\" was written by Dave Lebling and Marc Blank, and is (c) Copyright 1981, 1982, 1983 by Infocom, Inc."
+   }
+  ]
+ },
+ {
+  "id": "zork2-place-mat",
+  "objects": [
+   {
+    "object": "PLACE-MAT",
+    "name": "place mat",
+    "flags": [
+     "TAKEBIT",
+     "SURFACEBIT",
+     "CONTBIT",
+     "OPENBIT"
+    ],
+    "routineTexts": "The place mat fits easily under the door.\n There's not enough room under this door.\n As the place mat is moved, a {0} falls from it and onto the floor.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-teapot",
+  "objects": [
+   {
+    "object": "TEAPOT",
+    "name": "china teapot",
+    "flags": [
+     "TAKEBIT",
+     "TRANSBIT",
+     "CONTBIT",
+     "OPENBIT"
+    ],
+    "routineTexts": "The teapot has no lid.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-water",
+  "objects": [
+   {
+    "object": "WATER",
+    "name": "quantity of water",
+    "flags": [
+     "TAKEBIT",
+     "DRINKBIT"
+    ],
+    "lying": "There is some water here.",
+    "routineTexts": "The water leaks out of the {0} and evaporates immediately.\n The teapot is now full of water.\n The teapot isn't currently empty.\n The water slips through your fingers.\n Nice try.\n You don't have any water.\n The water spills to the floor and evaporates.\n The water splashes on the walls and evaporates.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-salty-water",
+  "objects": [
+   {
+    "object": "SALTY-WATER",
+    "name": "quantity of salty water",
+    "flags": [
+     "TAKEBIT",
+     "DRINKBIT"
+    ],
+    "lying": "There is some water here.",
+    "routineTexts": "The water leaks out of the {0} and evaporates immediately.\n The teapot is now full of water.\n The teapot isn't currently empty.\n The water slips through your fingers.\n Nice try.\n You don't have any water.\n The water spills to the floor and evaporates.\n The water splashes on the walls and evaporates.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-gold-key",
+  "objects": [
+   {
+    "object": "GOLD-KEY",
+    "name": "delicate gold key",
+    "flags": [
+     "STAGGERED",
+     "NDESCBIT",
+     "TAKEBIT",
+     "TRYTAKEBIT"
+    ],
+    "routineTexts": "The unicorn listens distractedly, then goes back to cropping grass.\n The unicorn shies away as you approach.\n The unicorn shies away as you approach for a closer look, but you do notice a tiny gold key hanging from a red satin ribbon looped around the animal's neck.\n The unicorn shies away as you approach.\n The unicorn, unsurprised by this evidence that you are indeed the uncouth sort of vagabond it suspected you were, melts into the hedges and is gone.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-rose",
+  "objects": [
+   {
+    "object": "ROSE",
+    "name": "perfect rose",
+    "flags": [
+     "TAKEBIT"
+    ],
+    "routineTexts": "Unlike your efforts here, it comes out smelling like a rose.\n A rose is a rose is a rose....\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-wand",
+  "objects": [
+   {
+    "object": "WAND",
+    "name": "Wizard's magic wand",
+    "flags": [
+     "STAGGERED",
+     "NDESCBIT",
+     "TAKEBIT",
+     "TRYTAKEBIT"
+    ],
+    "routineTexts": "The Wizard snatches it away.\n There is no grue in sight, but a hissing sound issues forth from the darkness.\n You don't have the wand!\n A lot you know about magic! A magic wand takes a while to recharge after use! You might cause it to short-circuit!\n At what?\n Touch what?\n The wand grows warm and seems to vibrate.\n Fortunately a safety interlock prevents the fatal feedback loop that this would cause.\n The wand grows warm, the {0} seems to glow dimly with magical essences, and you feel suffused with power.\n"
+   }
+  ]
+ },
+ {
+  "id": "zork2-repellent",
+  "objects": [
+   {
+    "object": "REPELLENT",
+    "name": "Frobozz Magic Grue Repellent",
+    "flags": [
+     "TAKEBIT",
+     "READBIT"
+    ],
+    "firstSeen": "A spray can is in the corner. In large type is the legend \"Frobozz Magic Grue Repellent\".",
+    "writing": "!!! FROBOZZ MAGIC GRUE REPELLENT !!!\n\nInstructions for use: Apply liberally to creature to be protected. Duration of effect is unpredictable. Use only in place of death!\n\n(No warranty expressed or implied)",
+    "routineTexts": "The can seems empty.\n There is a sloshing sound from inside.\n The repellent is all gone.\n The spray stinks amazingly for a few moments, then drifts away.\n The spray smells like a mixture of old socks and burning rubber. If I were a grue I'd sure stay clear!\n"
+   }
+  ]
+ }
+]

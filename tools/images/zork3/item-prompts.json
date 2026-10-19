@@ -1,0 +1,67 @@
+{
+ "style": "Single object rendered as a detailed hand-crafted pixel art inventory icon from an early-1990s VGA point-and-click adventure game (LucasArts / Sierra style), 256-color look, limited palette, subtle dithering, crisp dark outline, painterly pixel shading, soft light from the upper left, three-quarter view, the whole object centered and filling most of the frame, isolated on a transparent background, no cast shadow, no ground, no scenery, no text, no letters, no frame, no border.",
+ "negative": "text, letters, words, inscription, watermark, signature, logo, UI, frame, border, background scenery, floor, table, cast shadow, several objects, hands, people, photograph, photorealistic, 3D render, smooth gradients, blur, anime, modern objects",
+ "items": {
+  "zork3-lamp-wet": {
+   "prompt": "A brass lantern with a glass globe and a wire handle, unlit and dull, dripping with water, droplets beading on the glass, clearly no longer working."
+  },
+  "zork3-torch": {
+   "prompt": "A wooden wall torch: a stout wooden handle topped with pitch-soaked wrappings, burning with a bright, flickering orange flame."
+  },
+  "zork3-torch-burned-out": {
+   "prompt": "A wooden torch, burned out and soaked: its charred, blackened head of wrappings dripping water, no flame, a thin wisp of smoke."
+  },
+  "zork3-warning-note": {
+   "prompt": "A small slip of paper, slightly yellowed and creased, with a few lines of illegible scribbles instead of text and a little squiggle at the bottom."
+  },
+  "zork3-lore-book": {
+   "prompt": "A very ancient book bound in worn dark leather with faded gold tooling, lying slightly open on dry, brittle yellowed pages full of strange, wondrous colored pictures and lines of illegible multicolored scribbles instead of text, the colors faintly shimmering.",
+   "keystone": true
+  },
+  "zork3-sceptre": {
+   "prompt": "The royal sceptre of the Great Underground Empire: a gold rod crowned by a large faceted jewel in an ornate crown-shaped mount, studded with smaller gems, gaudy and excessive, shown diagonally."
+  },
+  "zork3-jewelled-knife": {
+   "prompt": "A ceremonial jewelled knife: a slender gleaming blade with a golden hilt and crossguard encrusted with rubies, emeralds and sapphires, shown diagonally."
+  },
+  "zork3-ring": {
+   "prompt": "A golden ring: a thick band of polished gold, finely engraved, set with a small brilliant gem, seen at a three-quarter angle, gleaming.",
+   "keystone": true
+  },
+  "zork3-amulet": {
+   "prompt": "A simple golden amulet: a round polished gold medallion on a fine gold chain, plain and glinting, a few grains of sand still clinging to it."
+  },
+  "zork3-hood": {
+   "prompt": "A dark hood of heavy charcoal-grey wool with a short shoulder cape, its deep cowl open and empty, the inside lost in shadow."
+  },
+  "zork3-cloak": {
+   "prompt": "A long dark cloak of heavy charcoal-grey wool, loosely folded, with a simple metal clasp at the neck."
+  },
+  "zork3-staff": {
+   "prompt": "A plain wooden staff: long, straight and smooth, of dark polished wood, slightly gnarled at the top and worn by use, shown diagonally.",
+   "keystone": true
+  },
+  "zork3-staff-broken": {
+   "prompt": "A plain wooden staff snapped in two: two pieces of dark polished wood with splintered ends, shown crossed."
+  },
+  "zork3-key": {
+   "prompt": "A strange key that seems to change shape: a long iron skeleton key whose shaft and bit look subtly warped and shifting, its outline faintly shimmering."
+  },
+  "zork3-waybread": {
+   "prompt": "A piece of fresh waybread: a flat, golden-brown round bread cake, lightly scored on top, with a few crumbs."
+  },
+  "zork3-chest": {
+   "prompt": "A large, sturdy wooden chest bound with iron bands, closed and locked with a heavy iron lock, scuffed and a little dusty."
+  },
+  "zork3-valuables": {
+   "prompt": "A pile of assorted valuables: gold coins, a jeweled goblet, pearl necklaces, rings and a small silver candlestick heaped together."
+  },
+  "zork3-repellent": {
+   "prompt": "A spray can of grue repellent: a cylindrical metal aerosol can with a nozzle on top, its bright label covered in illegible scribbles instead of text."
+  },
+  "zork3-vial": {
+   "prompt": "A small transparent glass vial with a cork stopper, apparently empty yet strangely heavy, a faint shimmer hinting at an invisible liquid inside.",
+   "keystone": true
+  }
+ }
+}
