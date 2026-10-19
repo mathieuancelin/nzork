@@ -1,8 +1,10 @@
 # Zork in your browser — design notes
 
-> Play **Zork I: The Great Underground Empire** in French, in the browser, with retro
-> illustrations, multiple-choice modes for newcomers and 10 save slots. A fan tribute: the
-> original game runs untouched, and everything this project adds is presentation.
+> Play the **Zork trilogy** in French, in the browser: **Zork I: The Great Underground Empire**
+> with everything (illustrations, guide, hints), **Zork II: The Wizard of Frobozz** translated
+> and playable to the end, **Zork III: The Dungeon Master** in English for now. Multiple-choice
+> modes for newcomers and 10 save slots per game. A fan tribute: the original games run
+> untouched, and everything this project adds is presentation.
 
 ## 1. What the original sources contain
 
@@ -22,9 +24,18 @@ Microsoft 2025):
 Volume of text: **~1,900 unique strings, ~115,000 characters** to translate.
 `dfrotz` serves as an **oracle** to compare our version with the original.
 
-The game itself only needs the compiled story file, kept with its license in
-`src/engine/story/`. The submodule is read by the tools (symbol table, catalog extraction, map,
-scene descriptions).
+`vendor/zork2/` and `vendor/zork3/` are the same for the sequels
+([historicalsource/zork2](https://github.com/historicalsource/zork2),
+[historicalsource/zork3](https://github.com/historicalsource/zork3)): the same generic files
+(`gparser`, `gverbs`, `gsyntax`… with compile-time conditionals on `ZORK-NUMBER`) and their own
+`2dungeon.zil` / `2actions.zil` (86 rooms, 165 objects, ~6,800 lines) and `3dungeon.zil` /
+`3actions.zil`. Story files: `zork2.z3` Release 63, `zork3.z3` Release 25 (both serial 860811).
+Zork II has ~1,000 print groups and ~350 strings (~84,000 characters), of which about 40 % are
+shared with Zork I. Zork III is the same size.
+
+The games themselves only need the compiled story files, kept with their licenses in
+`src/engine/story/<game>/`. The submodules are read by the tools (symbol table, catalog
+extraction, map, scene descriptions), which all take `--game zork2` (Zork I by default).
 
 ## 2. Architecture choices
 
@@ -77,18 +88,19 @@ agreement works without touching the game.
 
 ```
 zork-in-your-browser/
-├── vendor/zork1/          # original ZIL sources (git submodule)
+├── vendor/zork1/, zork2/, zork3/   # original ZIL sources (git submodules)
 ├── specs.md
 ├── docs/                  # README screenshot
 ├── src/
 │   ├── engine/
 │   │   ├── zmachine/      # Z-machine v3, text, Frotz RNG, disassembler
-│   │   ├── story/         # zork1.z3 + its license + symbol table
-│   │   ├── i18n/          # presenter, French grammar, clean-up, fr/ catalog and object names
-│   │   ├── input/         # French command parser → parse buffer
+│   │   ├── story/<game>/  # zorkN.z3 + its license + symbol table
+│   │   ├── i18n/          # presenter, French grammar, clean-up, fr/<game>/ catalog and object names
+│   │   ├── input/         # French command parser → parse buffer (common verbs + each game's own)
 │   │   ├── assist/        # world model, choice generator, guide (hyper noob mode)
+│   │   ├── games.ts       # the three games: story file, release, score, sources, translation
 │   │   └── game.ts        # facade: game, saves, undo, state for the UI
-│   ├── data/scenes.json   # rooms → scenes and state variants
+│   ├── data/<game>/       # map layout, rooms → scenes and ambiences, item icons
 │   ├── ui/                # React app
 │   └── cli.ts             # play in the terminal
 ├── tools/
@@ -105,12 +117,18 @@ zork-in-your-browser/
 ## 3. The engine
 
 - A complete **Z-machine version 3** (instructions, objects, properties, dictionary, lexical
-  analysis) that runs the original `zork1.z3` file (Release 119).
+  analysis) that runs the original `zork1.z3` file (Release 119), and just as well `zork2.z3`
+  (Release 63) and `zork3.z3` (Release 25): nothing in it is specific to a game.
+- **The game is explicit**: `Game` takes a game id (`zork1`, `zork2`, `zork3`) and loads its
+  symbol table; everything that reads the state by ZIL names (world model, side panel, map,
+  sound) goes through it, and each feature says what it knows of each game (Zork I's treasures
+  and trophy case, Zork II's ten treasures and its special exits…). A save records its game and
+  never loads into another one.
 - **Randomness**: the Frotz generator, seeded, included in the state. A game replays
   identically, and the tests compare it word for word with `dfrotz -s`.
 - **State = dynamic memory + stack**: ~11 KB, serialized to JSON. It is the basis of saves, undo
   and the guide's simulations.
-- **Symbol table** (`story/symbols.json`): mapping between the machine's numbers and the names of
+- **Symbol table** (`story/<game>/symbols.json`): mapping between the machine's numbers and the names of
   the ZIL source (objects `MAILBOX`, attributes `TAKEBIT`, globals `TROLL-FLAG`, routines
   `WORD-PRINT`…). It is computed by a tool that aligns the source with the compiled file (rooms
   with the same name are told apart by their exits), and it is used by the guide, the choices and
@@ -166,6 +184,24 @@ before handing it over, and handles what is specific to French:
 
 The English version stays playable (language setting): it is used by the tests and by purists.
 
+### Zork II
+
+- **Reuse first**: `tools/catalog/reuse.ts` copies the French of every text Zork II shares with
+  Zork I (same English, same arguments, same routine, or a complete sentence with a single
+  translation): 403 print groups and ~40 strings, the parser and the generic verbs. The rest
+  (~600 groups, ~310 strings, 230 object names) was translated in batches from a Zork II glossary
+  added to the translation guide (places, characters, objects, institutions), so that parallel
+  translators agree on every name.
+- **The Wizard's spells** all start with F in English; they keep an alliteration in F in French
+  (Float → « Flotte », Fear → « Frayeur », Filch → « Filoute », Fudge → « Fondant »…), as words
+  the parser understands: `dis « flotte »` sends `say "float"`.
+- **Quotes reach the game.** Zork II reads what is said between quotes (the spells, the riddle's
+  answer), so its parser puts what follows `dire` / `répondre` between quotes even when the
+  player does not type them.
+- Zork II's own verbs are added per game (`GAME_WORDS` in `input/verbs.ts`); common additions
+  benefit Zork I too (`botter`, `passer à travers`, `donne-moi…`, a direction never mistaken for
+  an adjective: « va au nord » next to a north wall).
+
 ## 5. The three game modes
 
 | Mode | Input | Help |
@@ -174,7 +210,9 @@ The English version stays playable (language setting): it is used by the tests a
 | **Noob** | Multiple choices, free typing still available | None |
 | **Hyper noob** | Multiple choices | The right answer is **circled in a dedicated color** (gold), with a foldable "Why?" |
 
-The mode can be changed at any time, including in the middle of a game.
+The mode can be changed at any time, including in the middle of a game. The guide only knows
+Zork I for now: in Zork II and III, hyper noob shows the choices without circling one (and the
+settings say so).
 
 ### Choice generator (noob modes)
 
@@ -222,7 +260,12 @@ The panel next to the text has up to three tabs, and can be hidden from the stat
   visible contents of open or transparent containers, an icon per object and a glow on a lit
   light source. In the noob modes, clicking an object lists the choices about it (each choice
   knows its object); in hyper noob mode the object holding the circled answer is circled too.
-- **Treasures**: 19 slots and a counter ("7 / 19 in the trophy case"). A treasure stays a "?"
+- **Treasures**: 19 slots and a counter ("7 / 19 in the trophy case"). In Zork II, 10 slots:
+  the treasures of the demon's fee (`TREASURES-MAX`: every object with a value but the four
+  spheres, the candy, the collar and the wand), counted as found ("3 / 10 found") since where
+  they go is the game's secret. A Zork II treasure scores when it first comes into hand and its
+  value drops to 0: that is how the tracker knows the unicorn's key, which is handed over
+  rather than taken. A treasure stays a "?"
   until the player has touched it (TOUCHBIT) and as long as it is shut inside a closed, opaque
   container: the game touches what is inside a treasure put in the case, and the canary in the
   closed egg must not give itself away. Damaged versions (broken egg, broken canary) take the
@@ -230,9 +273,13 @@ The panel next to the text has up to three tabs, and can be hidden from the stat
   in the settings.
 - **Map**: the rooms seen, placed on a grid computed once by `tools/map/layout.ts` (breadth-first
   placement from the exits, then simulated annealing against misfitting directions and crossing
-  passages) into `src/data/map.json`. Each room shows a thumbnail of its scene; passages link
+  passages) into `src/data/<game>/map.json`. Each room shows a thumbnail of its scene; passages link
   visited rooms; dashes show the visible exits not taken yet (doors included, hidden passages
-  such as the way to the barrow left out). The game clears the visit mark of maze rooms on
+  such as the way to the barrow left out). For Zork II, the layout links for placement only
+  the rooms an object leads to (the bucket of the well, the balloon in the volcano, the cake of
+  the Tea Room, the walls of the bank, the cage) and keeps the annealing within the area of the
+  first placement, otherwise such rooms drift away; rooms with no picture yet show their name.
+  The game clears the visit mark of maze rooms on
   purpose, so the interface also remembers the rooms seen, in the saves. Resting the pointer
   on a room (or touching it) shows its picture; a room can be walked to after a confirmation,
   one move at a time, through visited rooms and open exits only, stopping at anything
@@ -261,10 +308,15 @@ speaks. Off by default.
 
 ## 6. Saves
 
-- **10 slots** + **1 autosave** (at every room change).
+- **10 slots** + **1 autosave** (at every room change), **for each game**. Zork I keeps the
+  storage keys it had (`zork-in-your-browser:slot:<n>`), the other games have their own
+  (`zork-in-your-browser:zork2:slot:<n>`); hints revealed are kept per game too. The game being
+  played is a preference: the site reopens on it.
 - Each slot shows: an editable name, the date, the place, the score and the number of moves.
 - Storage in `localStorage` (a snapshot weighs ~20–40 KB), with **export/import** of a
-  `.zork.json` file to move to another browser or device.
+  `.zork.json` file to move to another browser or device. Version 2 of the file keeps Zork I's
+  saves where version 1 had them (`slots`) and adds the other games under `games`; on import, a
+  snapshot always goes back to the game it belongs to.
 - The game commands `sauvegarder`, `charger` and `recommencer` open the slots screen.
 - **Undo the last move**: absent from the original, **on by default**, can be turned off in the
   settings.
@@ -305,7 +357,7 @@ images**, all generated and published in `public/scenes/`.
 1. **`style-bible.md`**: the art direction in words (palette, light, framing "eye-level view,
    slight low angle", no character in the foreground, no text in the image), plus a shared
    style prompt and a negative prompt.
-2. **`src/data/scenes.json`** and **`prompts.json`**: one entry per scene, with the rooms it
+2. **`src/data/zork1/scenes.json`** and **`prompts.json`**: one entry per scene, with the rooms it
    covers, its state variants and a prompt (in English, models understand it better) written
    from the original descriptions gathered by `describe.ts`.
 3. **`generate.ts`**: batch generation through an **interchangeable provider interface**:
@@ -330,7 +382,7 @@ while a scene is missing, and images can be turned off in the settings.
 The 60 objects that can be taken get **48×48 icons**, shown pixel for pixel in the side panel:
 
 - the same pipeline with `--items`: prompts in `tools/images/item-prompts.json` (written from
-  the original descriptions, `describe.ts --items`), `src/data/items.json` mapping the objects
+  the original descriptions, `describe.ts --items`), `src/data/zork1/items.json` mapping the objects
   to their icon, the "Objets" tab of the review page, `public/items/` and its manifest;
 - 4 keystone objects (lantern, sword, egg, sack) become the style references of the others;
 - square images on a transparent background (OpenAI), or on plain magenta that the
@@ -367,7 +419,11 @@ the mailbox offers its actions): the point & click spirit without the 3D.
   back exactly the original output, which proves that the interception of print groups loses
   nothing.
 - **Full solution**: the 350-point game replayed automatically, in English and with French
-  commands (same path, no English text on screen).
+  commands (same path, no English text on screen). Same for Zork II: the 400-point solution
+  (310 moves) is identical to `dfrotz` word for word, and plays with French commands. Its
+  walkthrough had to be written for the seed: the carousel spins at random until the robot
+  stops it, and a couple of `jump`s steer chance away from the Wizard's worst spells (each
+  consumes a random number, so the Wizard draws differently afterwards).
 - **Hyper noob bot**: finishes the game on several seeds (see §5), and its suggestion is always
   among the offered choices.
 - **Unit tests** for the French parser (elisions, accents, pronouns, shortcuts), the French
@@ -409,7 +465,7 @@ the mailbox offers its actions): the point & click spirit without the 3D.
 - **Sound lab** (`/sound-lab.html`, development only): every ambience with sliders, level
   measurement and balancing, export of the tuned values.
 
-## 11. Status (2026-10-17)
+## 11. Status (2026-10-19)
 
 | # | Phase | Status |
 |---|---|---|
@@ -423,7 +479,9 @@ the mailbox offers its actions): the point & click spirit without the 3D.
 | 7 | **Soundtrack** | ✅ Procedural Web Audio ambiences per place, darkness and danger overlays, cues, sound lab |
 | 8 | **Side panel** | ✅ Tabs for actions, map, inventory and treasure tracker; object icons generated |
 | 9 | **Atmosphere and extras** | ✅ Lantern halo and scene animations, map with walking, InvisiClues hints, documents (feelies), storyteller |
-| 10 | **Next** | Zork II and Zork III (same engine, new translation, images and guide); 2.5D parallax, clickable hotspots |
+| 10 | **Zork II** | ✅ Plays to the end in French (400/400, identical to `dfrotz`), game picker, saves per game, map, inventory, treasures, documents, ambiences. To do: scene prompts and illustrations, item icons, InvisiClues hints, the guide |
+| 11 | **Zork III** | Story file, symbols, English catalog and map ready; plays in English. To do: the translation (catalog extracted, ~40 % reusable), a walkthrough, treasures/documents/ambiences, then images, hints and guide |
+| 12 | **Next** | 2.5D parallax, clickable hotspots |
 
 ## 12. Decisions
 
@@ -433,6 +491,11 @@ the mailbox offers its actions): the point & click spirit without the 3D.
 3. **Image providers**: OpenAI and OpenRouter, both supported.
 4. **Undo the last move**: on by default.
 5. **The grue**: « un grue », masculine.
-6. **Original sources**: a git submodule (`vendor/zork1`), not a copy; the compiled story file
-   is kept in the repository with its license, so the game builds without the submodule.
+6. **Original sources**: git submodules (`vendor/zork1`, `zork2`, `zork3`), not copies; the
+   compiled story files are kept in the repository with their licenses, so the game builds
+   without the submodules.
 7. **Treasure tracker**: spoiler-free (unknown treasures are "?", no locations), optional.
+8. **The trilogy**: one engine, one folder per game (`story/<game>/`, `i18n/fr/<game>/`,
+   `data/<game>/`, `tools/catalog/<game>/`, `test/walkthrough/<game>/`); Zork I keeps its storage
+   keys so that existing saves keep working. The catalog of a game is downloaded only when it is
+   played.

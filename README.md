@@ -1,7 +1,9 @@
 # Zork in your browser
 
-**A fan tribute to Zork I: The Great Underground Empire (Infocom, 1980), playable in French in
-the browser, with the sights and sounds the original never had.**
+**A fan tribute to the Zork trilogy (Infocom, 1980–1982), playable in French in the browser,
+with the sights and sounds the originals never had.** Zork I: The Great Underground Empire and
+Zork II: The Wizard of Frobozz are fully translated; Zork III: The Dungeon Master plays in
+English for now.
 
 ![West of House, in Hyper noob mode: the pixel-art scene, the French text and the suggested action circled in gold](docs/screenshot.jpg)
 
@@ -10,11 +12,22 @@ hear the wind in the trees.
 
 **[Play it online](https://mathieuancelin.github.io/zork-in-your-browser/)**
 
-Zork in your browser does not remake Zork. It runs the **original 1980s story file**, untouched, and wraps
-it in what a modern browser can offer: a complete French translation, pixel-art illustrations
+Zork in your browser does not remake Zork. It runs the **original 1980s story files**, untouched, and wraps
+them in what a modern browser can offer: a complete French translation, pixel-art illustrations
 in the spirit of the VGA adventure games, an eerie soundtrack composed live as you play, help
-modes for newcomers, and save slots. Every puzzle, every grue and every one of the 350 points is
-exactly where Infocom left them.
+modes for newcomers, and save slots. Every puzzle, every grue and every one of the 350 points
+(400 in Zork II) is exactly where Infocom left them.
+
+## The three games
+
+Pick a game on the welcome screen, or at any time from the menu (or the game's name in the
+status bar). Each game keeps its own game in progress, its ten save slots and its hints.
+
+| Game | Story file | In French | What the interface adds |
+|---|---|---|---|
+| **Zork I: The Great Underground Empire** (1980) | Release 119 | yes | everything below: illustrations, icons, the Hyper noob guide, hints, map, treasures, documents |
+| **Zork II: The Wizard of Frobozz** (1981) | Release 63 | yes | map, inventory, the ten treasures of the demon, thirteen documents, ambiences; choices in the Noob modes (the guide and the hints are still to come, as are the illustrations) |
+| **Zork III: The Dungeon Master** (1982) | Release 25 | not yet (plays in English) | map, inventory, choices |
 
 > **Unofficial fan project.** Zork in your browser is a non-commercial tribute, made out of love for the
 > game. It is not affiliated with, endorsed by or sponsored by Infocom, Activision or
@@ -22,14 +35,17 @@ exactly where Infocom left them.
 
 ## What it adds
 
-- **The real game.** The original `zork1.z3` (Release 119, serial 880429) runs in a Z-machine
-  written in TypeScript. It reproduces the reference interpreter `dfrotz` word for word, fights
-  and randomness included: the tests replay the full 350-point walkthrough against it.
-- **Fully in French.** Every text of the game is translated, with proper gender and number
+- **The real games.** The original story files (`zork1.z3` Release 119, `zork2.z3` Release 63,
+  `zork3.z3` Release 25) run in a Z-machine written in TypeScript. It reproduces the reference
+  interpreter `dfrotz` word for word, fights and randomness included: the tests replay the full
+  350-point walkthrough of Zork I and the 400-point one of Zork II against it.
+- **Fully in French.** Every text of Zork I and Zork II is translated, with proper gender and number
   agreement (« la boîte est fermée », « l'épée »), and a French parser understands commands
   such as `prends la lanterne`, `ouvre-la` or `mets l'épée dans la vitrine puis va au nord`.
-  The original English is one setting away.
-- **Illustrations.** 93 pixel-art scenes cover the 110 rooms, drawn on a 480×270 grid with a
+  The Wizard of Frobozz casts his spells in French too, and you can cast them back
+  (`agite la baguette vers le menhir`, then `dis « flotte »`). The original English is one
+  setting away.
+- **Illustrations** (Zork I). 93 pixel-art scenes cover the 110 rooms, drawn on a 480×270 grid with a
   shared 64-color palette, including state variants (the troll in his room, the drained
   reservoir, the rainbow made solid…). Dark rooms stay dark, except for two eyes that light up
   if you linger. Underground, the scene is lit by your lantern: its halo narrows as the
@@ -50,27 +66,31 @@ exactly where Infocom left them.
   | Noob | Click on actions computed from the game state at every turn (moves, objects, special actions). Typing is still available. |
   | Hyper noob | Same choices, and the right one is circled in gold, with a "Why?" that explains it. A goal-based guide adapts to the thief and to fights. |
 
-  You can switch modes at any time, even in the middle of a game.
+  You can switch modes at any time, even in the middle of a game. The guide only knows Zork I so
+  far: in the other games, Hyper noob shows the choices without circling one.
 - **Inventory and treasures at a glance.** A side panel shows what you carry, with a pixel-art
   icon for each object and the contents of open containers; in the Noob modes, click an object
-  to see what you can do with it. The treasure tracker has 19 slots that reveal themselves as you
-  find the treasures and turn gold once they are in the trophy case. It never tells you where to
-  look, and can be turned off.
+  to see what you can do with it. The treasure tracker has 19 slots in Zork I that reveal
+  themselves as you find the treasures and turn gold once they are in the trophy case, and 10 in
+  Zork II, the treasures that will pay a certain fee. It never tells you where to look, and can be
+  turned off.
 - **A map that draws itself.** Every room you have seen appears with a thumbnail of its
   illustration, linked to its neighbors, with short dashes for the exits you have not taken.
   Rest the pointer on a room (or touch it) to see its picture again; pick one and the game
   walks you there, one step at a time, after a confirmation. It opens large above everything
   when you need the whole picture. The maze finally becomes bearable.
-- **Hints, the InvisiClues way.** Infocom's hint booklets were printed in invisible ink: you
+- **Hints, the InvisiClues way** (Zork I). Infocom's hint booklets were printed in invisible ink: you
   revealed one answer at a time with a special marker. Here, questions about the places you
   have seen offer three hints each, from vague to explicit, revealed one by one.
 - **Documents to collect.** Infocom boxes came with "feelies". The documents of the game (the
-  leaflet, the dam guidebook, the boat label, the black book, the engravings…) join a collection
-  as you find them, each on its own kind of paper, ready to read again or print.
+  leaflet, the dam guidebook, the boat label, the black book, the engravings… and in Zork II the
+  newspaper, the balloon label, the robot's instructions, the white book of magic, the Wizard's
+  degree…) join a collection as you find them, each on its own kind of paper, ready to read again
+  or print.
 - **A storyteller.** If you like, the browser reads the game's answers aloud, in French or
   English, while the music steps back.
-- **Saves and undo.** 10 save slots plus an autosave, export and import of a save file, and
-  **undo** (Ctrl+Z), on by default.
+- **Saves and undo.** 10 save slots plus an autosave for each game, export and import of a save
+  file (every game in one file), and **undo** (Ctrl+Z), on by default.
 - **Retro touches, modern comfort.** Optional CRT scanlines and typewriter effect, adjustable
   font size, a layout that works on phones, and an installable app (PWA) that plays offline.
 
@@ -96,10 +116,11 @@ Then open the address shown (http://localhost:5173). You can also play in the te
 npm run play
 ```
 
-(`npm run play -- --en` plays the original English version.)
+(`npm run play -- --en` plays the original English version, `npm run play -- --game zork2` plays
+Zork II.)
 
-The submodule ([vendor/zork1](#the-original-sources)) is only needed by the development tools:
-playing, testing and building work without it.
+The submodules ([vendor/zork1, zork2 and zork3](#the-original-sources)) are only needed by the
+development tools: playing, testing and building work without them.
 
 ### Useful commands
 
@@ -126,10 +147,11 @@ repository name needs to be configured).
 npm test
 ```
 
-They check, among other things, that the full 350-point game is identical to `dfrotz` word for
-word, that it can also be played with French commands without a single English word on screen,
-and that the Hyper noob guide finishes the game on its own. The comparison tests need `dfrotz`
-(from the `frotz` package) and are skipped when it is missing.
+They check, among other things, that the full games (350 points in Zork I, 400 in Zork II) are
+identical to `dfrotz` word for word, that they can also be played with French commands without a
+single English word on screen, and that the Hyper noob guide finishes Zork I on its own. The
+comparison tests need `dfrotz` (from the `frotz` package) and are skipped when it is missing.
+The walkthroughs are in [test/walkthrough/](test/walkthrough), one folder per game.
 
 The guide can also be watched playing alone:
 
@@ -139,7 +161,7 @@ npm run bot -- 1234 --fr --verbose
 
 ## Illustrations
 
-The images in [public/scenes/](public/scenes) were generated with AI image models from the
+The images of Zork I in [public/scenes/](public/scenes) were generated with AI image models from the
 prompts of this repository, then reduced to the pixel grid and palette by a post-processing
 step. The whole pipeline is included, to regenerate a scene or the full set with your own API
 key. The art direction is described in [tools/images/style-bible.md](tools/images/style-bible.md)
@@ -201,7 +223,9 @@ set with several candidates per scene (check current prices with the provider).
 The 60 objects you can take get 48×48 icons on a transparent background, with the same palette
 as the scenes. Their prompts are in [tools/images/item-prompts.json](tools/images/item-prompts.json)
 (written from the original descriptions, gathered by `npx tsx tools/images/describe.ts --items`),
-and [src/data/items.json](src/data/items.json) maps the game's objects to their icon. The steps
+and [src/data/zork1/items.json](src/data/zork1/items.json) maps the game's objects to their icon
+(Zork II borrows the lantern, the sword and the matchbook in
+[src/data/zork2/items.json](src/data/zork2/items.json)). The steps
 are the same, with `--items`:
 
 ```bash
@@ -232,18 +256,22 @@ light, a villain in the room, a treasure in the case, a death. The whole thing w
 kilobytes.
 
 The ambiences are data in [src/ui/sound/presets.ts](src/ui/sound/presets.ts); each scene of
-[src/data/scenes.json](src/data/scenes.json) names its ambience. To tune them by ear, run
+[src/data/zork1/scenes.json](src/data/zork1/scenes.json) names its ambience (and each room of
+Zork II in [src/data/zork2/scenes.json](src/data/zork2/scenes.json): gardens, the river and the
+well, the Wizard's house and the bank, the machinery, the crypt, the afterlife, the maze). To tune them by ear, run
 `npm run dev` and open `/sound-lab.html`: it plays each ambience with sliders for its settings,
 measures the levels, balances them, and copies the result back as JSON.
 
 ## The original sources
 
-[vendor/zork1](vendor/zork1) is a git submodule pointing to
-[historicalsource/zork1](https://github.com/historicalsource/zork1), the ZIL source code of
-Zork I released by Microsoft under the MIT license. The game does not need it at runtime (it
-runs the compiled story file kept in [src/engine/story/](src/engine/story)), but the tools read
-it to rebuild the symbol table, extract the text catalog, print the map and describe the scenes
-for the image prompts.
+[vendor/zork1](vendor/zork1), [vendor/zork2](vendor/zork2) and [vendor/zork3](vendor/zork3) are
+git submodules pointing to [historicalsource/zork1](https://github.com/historicalsource/zork1),
+[zork2](https://github.com/historicalsource/zork2) and [zork3](https://github.com/historicalsource/zork3),
+the ZIL source code of the trilogy released by Microsoft under the MIT license. The game does not
+need them at runtime (it runs the compiled story files kept in
+[src/engine/story/](src/engine/story), one folder per game), but the tools read them to rebuild
+the symbol tables, extract the text catalogs, print the maps and describe the scenes for the image
+prompts. Every tool takes `--game zork2` (Zork I by default).
 
 If you cloned without `--recurse-submodules`:
 
@@ -256,23 +284,53 @@ git submodule update --init
 | Folder | Role |
 |---|---|
 | `src/engine/zmachine/` | Z-machine v3, Frotz random number generator, disassembler |
-| `src/engine/story/` | `zork1.z3` and its symbol table (ZIL names of objects, attributes, globals, routines) |
-| `src/engine/i18n/` | text rendering: templates, French grammar, catalog in `fr/catalog.json` |
+| `src/engine/games.ts` | the three games: story file, release, score, sources, translation |
+| `src/engine/story/<game>/` | the story file, its license and its symbol table (ZIL names of objects, attributes, globals, routines) |
+| `src/engine/i18n/` | text rendering: templates, French grammar, catalogs in `fr/<game>/catalog.json` |
 | `src/engine/input/` | French command parser |
 | `src/engine/assist/` | clickable choices, the Hyper noob guide, inventory, treasures, map, hints, documents |
+| `src/data/<game>/` | map layout, scenes and ambiences, item icons |
 | `src/ui/` | the React application |
-| `tools/` | symbols, catalog extraction and merge, `dfrotz` oracle, images, map layout, bot |
-| `vendor/zork1/` | the original ZIL sources (git submodule) |
+| `tools/` | symbols, catalog extraction, reuse and merge, `dfrotz` oracle, images, map layout, bot |
+| `vendor/zork1/`, `zork2/`, `zork3/` | the original ZIL sources (git submodules) |
 
 The design notes are in [specs.md](specs.md). The translation follows
-[src/engine/i18n/fr/GUIDE-TRADUCTION.md](src/engine/i18n/fr/GUIDE-TRADUCTION.md) (in French).
+[src/engine/i18n/fr/GUIDE-TRADUCTION.md](src/engine/i18n/fr/GUIDE-TRADUCTION.md) (in French),
+with a glossary for each game.
+
+### Translating a game
+
+```bash
+npm run symbols -- --game zork3
+```
+
+```bash
+npm run catalog:extract -- --game zork3
+```
+
+```bash
+npx tsx tools/catalog/reuse.ts --game zork3
+```
+
+```bash
+npx tsx tools/catalog/chunk.ts --game zork3 --groups 5 --strings 2 --objects 2
+```
+
+The first commands build the symbol table and the English catalog; `reuse.ts` copies the
+translation of every text the game shares with Zork I (about 40 % of Zork II); `chunk.ts` cuts
+what is left into batches (`tools/catalog/<game>/work/`). Each batch is translated into
+`src/engine/i18n/fr/<game>/parts/` (objects into `objects.json`), checked and merged:
+
+```bash
+GAME=zork3 npm run catalog:merge
+```
 
 ## Credits and licenses
 
-- **Zork I** was written by Marc Blank, Dave Lebling, Bruce Daniels and Tim Anderson, and
-  published by Infocom in 1980. Its source code and compiled story file were released by
-  Microsoft under the MIT license in 2025: see [src/engine/story/LICENSE](src/engine/story/LICENSE)
-  and the [vendor/zork1](vendor/zork1) submodule.
+- **Zork I** (1980), **Zork II** (1981) and **Zork III** (1982) were written by Marc Blank, Dave
+  Lebling, Bruce Daniels and Tim Anderson, and published by Infocom. Their source code and
+  compiled story files were released by Microsoft under the MIT license in 2025: see the
+  licenses in [src/engine/story/](src/engine/story) and the [vendor/](vendor) submodules.
 - **ZORK** is a registered trademark of its owner. This project uses the name only to refer to
   the game it pays tribute to.
 - **Zork in your browser** (the Z-machine, the French translation, the interface, the tools and the

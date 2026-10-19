@@ -61,7 +61,7 @@ export const GAMES: Record<GameId, GameInfo> = {
     number: 3,
     title: 'Zork III',
     authors: 'Marc Blank, Dave Lebling, Bruce Daniels, Tim Anderson',
-    subtitle: { fr: 'Le Maître du Donjon', en: 'The Dungeon Master' },
+    subtitle: { fr: 'Le Maître du donjon', en: 'The Dungeon Master' },
     file: 'zork3.z3',
     release: 'Release 25 / Serial number 860811',
     year: 1982,
