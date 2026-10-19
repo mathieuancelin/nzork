@@ -1,7 +1,13 @@
-# Guide de traduction de Zork I
+# Guide de traduction de Zork
 
-Ce guide s'applique à tous les textes du jeu. Il garantit une traduction cohérente même si
-plusieurs personnes (ou agents) traduisent des parties différentes.
+Ce guide s'applique à tous les textes des trois jeux. Il garantit une traduction cohérente même
+si plusieurs personnes (ou agents) traduisent des parties différentes. Les règles de ton, de
+typographie et de format valent pour tous ; le glossaire de Zork I donne aussi les termes
+communs (verbes, objets du jeu de base) ; [celui de Zork II](#glossaire-de-zork-ii) suit.
+
+Zork II et Zork III partagent avec Zork I une bonne partie du code (le parseur, les verbes
+génériques) : les textes identiques à ceux de Zork I sont repris tels quels
+(`parts/reused.json`), et leurs traductions font référence pour le reste.
 
 ## Ton
 
@@ -112,7 +118,7 @@ Quand un texte cite une commande du jeu, utiliser la commande française :
 Les mots magiques restent ou s'adaptent : « echo » → « écho », « Odysseus / Ulysses » → « Ulysse »,
 « XYZZY » et « PLUGH » restent tels quels, « Hello, sailor! » → « Salut, marin ! ».
 
-## Glossaire
+## Glossaire (Zork I et termes communs)
 
 ### Lieux
 
@@ -275,3 +281,195 @@ Wizard → Magicien · Master Adventurer → Maître aventurier.
   petits passages tortueux, tous semblables. »
 - « Oh, no! You have walked into the slavering fangs of a lurking grue! » → « Oh non ! Vous êtes
   tombé tout droit dans les crocs baveux d'un grue aux aguets ! »
+
+## Glossaire de Zork II
+
+Zork II, *Le Sorcier de Frobozz*. Le Sorcier est toujours « le Sorcier » (majuscule, comme
+l'anglais *the Wizard*), il **tutoie** volontiers le joueur s'il le méprise, mais le narrateur
+vouvoie toujours.
+
+### Lieux
+
+| Anglais | Français |
+|---|---|
+| Inside the Barrow | Dans le tumulus |
+| Narrow Tunnel / Dark Tunnel / Lava Tube | Tunnel étroit / Tunnel obscur / Tunnel de lave |
+| Foot Bridge / Stone Bridge | Passerelle / Pont de pierre |
+| Great Cavern | Grande caverne |
+| Shallow Ford / Deep Ford | Gué peu profond / Gué profond |
+| Path Near Stream | Sentier près du ruisseau |
+| Formal Garden / North End of Garden | Jardin à la française / Extrémité nord du jardin |
+| Gazebo | Kiosque |
+| Topiary | Topiaire |
+| Carousel Room | Salle du carrousel |
+| Riddle Room | Salle de l'énigme |
+| Pearl Room | Salle de la perle |
+| Circular Room | Salle circulaire |
+| Top of Well | Haut du puits |
+| Tea Room | Salon de thé |
+| Pool Room | Salle du bassin |
+| Posts Room | Salle des poteaux |
+| Low Room / Small Room / Tiny Room | Salle basse / Petite salle / Minuscule salle |
+| Machine Room | Salle de la machine |
+| Dingy Closet | Placard miteux |
+| Cage | Cage |
+| Ice Room | Salle de glace |
+| Lava Room | Salle de lave |
+| Volcano Bottom / Volcano Core / Volcano View | Fond du volcan / Cœur du volcan / Vue sur le volcan |
+| Volcano Near Small Ledge / Near Wide Ledge / by Viewing Ledge | Volcan, près de la petite corniche / Volcan, près de la large corniche / Volcan, près du belvédère |
+| Narrow Ledge / Wide Ledge / End of Ledge / Ledge in Ravine | Corniche étroite / Large corniche / Bout de la corniche / Corniche dans le ravin |
+| Library | Bibliothèque |
+| Dusty Room | Salle poussiéreuse |
+| Bank Entrance | Entrée de la banque |
+| East / West Teller's Room | Guichet est / Guichet ouest |
+| East / West Viewing Room | Salle d'observation est / ouest |
+| Safety Depository | Salle des coffres |
+| Chairman's Office | Bureau du président |
+| Vault | Chambre forte |
+| Dragon Room / Dragon's Lair | Salle du dragon / Antre du dragon |
+| Fresco Room | Salle des fresques |
+| Marble Hall | Salle de marbre |
+| Cool Room | Salle fraîche |
+| Murky Room | Salle glauque |
+| Dreary Room | Salle lugubre |
+| Oddly-angled Room | Salle biscornue |
+| Menhir Room | Salle du menhir |
+| Kennel | Chenil |
+| Cerberus Room | Salle de Cerbère |
+| Crypt Anteroom / Crypt | Antichambre de la crypte / Crypte |
+| Cobwebby Corridor | Couloir aux toiles d'araignée |
+| Guarded Room | Salle gardée |
+| Room of Red / Blue / White / Black Mist | Salle de la brume rouge / bleue / blanche / noire |
+| Aquarium Room | Salle de l'aquarium |
+| Wizard's Workroom / Workshop / Quarters | Cabinet de travail du Sorcier / Atelier du Sorcier / Appartements du Sorcier |
+| Trophy Room | Salle des trophées |
+| Pentagram Room | Salle du pentagramme |
+| Stairway / Landing | Escalier / Palier |
+| Room 8 | Salle 8 |
+
+### Personnages et créatures
+
+| Anglais | Français |
+|---|---|
+| the Wizard of Frobozz, the Wizard | le Sorcier de Frobozz, le Sorcier |
+| demon, genie, djinn | démon (masculin) |
+| huge red dragon, dragon | énorme dragon rouge, dragon |
+| beautiful princess | belle princesse |
+| unicorn | licorne |
+| lizard, door keeper | lézard, gardien |
+| Cerberus, three-headed dog | Cerbère, chien à trois têtes |
+| robot | robot |
+| Gnome of Zurich / Volcano Gnome | Gnome de Zurich / Gnome du volcan |
+| baby sea serpent | bébé serpent de mer |
+| grue | **un grue** (comme dans Zork I) |
+| sailor, footpad, aviator | marin, détrousseur, aviateur |
+
+### Objets
+
+| Anglais | Français |
+|---|---|
+| lamp, brass lantern / broken brass lantern | lanterne (en laiton) / lanterne en laiton cassée |
+| elvish sword | épée elfique |
+| Wizard's magic wand | baguette magique du Sorcier |
+| red / blue / clear / black crystal sphere | sphère de cristal rouge / bleue / transparente / noire |
+| balloon, (wicker) basket | montgolfière ; la nacelle d'osier (l'objet BALLOON s'appelle « nacelle ») |
+| receptacle | réceptacle |
+| braided wire | fil tressé |
+| hook | crochet |
+| cloth bag | sac de toile |
+| blue label (of the balloon) | étiquette bleue |
+| brick / black string, fuse | brique / ficelle noire, mèche |
+| Frobozz Magic Grue Repellent | Répulsif magique Frobozz contre les grues |
+| golden dragon statuette | statuette de dragon en or |
+| pearl necklace | collier de perles |
+| gaudy crown | couronne tape-à-l'œil |
+| fancy violin (Stradivarius) | violon de luxe (Stradivarius) |
+| priceless zorkmid (gold coin) | zorkmid inestimable |
+| stack of zorkmid bills | liasse de billets en zorkmids |
+| portrait of J. Pierpont Flathead | portrait de J. Pierpont Flathead |
+| Flathead stamp | timbre Flathead |
+| ruby | rubis |
+| gigantic dog collar | collier de chien gigantesque |
+| package of candy, candied grasshoppers | paquet de bonbons, sauterelles confites |
+| delicate gold key / rusty iron key | délicate clé en or / clé en fer rouillée |
+| perfect rose, roses | rose parfaite, rosiers |
+| china teapot | théière en porcelaine |
+| cake frosted with green / orange / blue / red letters | gâteau glacé de lettres vertes / orange / bleues / rouges |
+| "Eat Me" / "Explode" / "Enlarge" / "Evaporate" (icing) | « Mange-moi » / « Explose » / « Grandis » / « Évapore » |
+| large oblong table | grande table oblongue |
+| pool of tears | mare de larmes |
+| stoppered glass flask | flacon de verre bouché |
+| newspaper / bank brochure | journal / brochure de la banque |
+| green / blue / purple / white book | livre vert / bleu / violet / blanc |
+| card, note / degree, diploma | carte / diplôme |
+| place mat / letter opener | set de table / coupe-papier |
+| matchbook | pochette d'allumettes |
+| wooden club | gourdin en bois |
+| enormous menhir | énorme menhir |
+| well / wooden bucket | puits / seau en bois |
+| group of wooden posts | groupe de poteaux en bois |
+| aquarium | aquarium |
+| Wizard's trophy cabinet / smashed trophy cabinet | vitrine à trophées du Sorcier / vitrine à trophées fracassée |
+| Wizard's workbench | établi du Sorcier |
+| set of used wands | collection de baguettes usées |
+| ruby / sapphire / diamond / black obsidian stand | socle de rubis / de saphir / de diamant / d'obsidienne noire |
+| solid steel cage / mangled cage | solide cage d'acier / cage déformée |
+| steel box / safety deposit box / box (safe) | boîte d'acier / coffre de dépôt / coffre |
+| large stone cube | gros cube de pierre |
+| shimmering curtain of light | rideau de lumière chatoyant |
+| compass | boussole |
+| set of poled heads | têtes plantées sur des piques |
+| marble crypt / crypt door | crypte de marbre / porte de la crypte |
+| pentagram | pentagramme |
+| gazebo / hedge | kiosque / haie |
+| glacier | glacier |
+| mosses | mousses |
+| barred window / diamond shaped window | fenêtre à barreaux / fenêtre en losange |
+| round / square / triangular button | bouton rond / carré / triangulaire |
+| green piece of paper (robot) | morceau de papier vert |
+| warning label | étiquette d'avertissement |
+| arcane items (alembic, vellum, candles, knives) | objets ésotériques (alambic, vélin, bougies, couteaux) |
+
+### Institutions et noms propres
+
+| Anglais | Français |
+|---|---|
+| Bank of Zork | Banque de Zork |
+| Lord Dimwit Flathead, "Our Excessive Leader" | Lord Dimwit Flathead, « Notre Excessif Dirigeant » |
+| J. Pierpont Flathead | J. Pierpont Flathead |
+| GUE Tech, Doctor of Thaumaturgy (D. T.) | GUE Tech, docteur en thaumaturgie (D. T.) |
+| Frobozz Magic … Company | Compagnie Frobozz de … magiques (comme dans Zork I) |
+| zorkmid | zorkmid |
+
+### Les sorts du Sorcier
+
+Le Sorcier lance des sorts qui commencent tous par F ; le joueur peut les prononcer lui-même avec
+la baguette (« dire flotte »). On garde l'allitération en F, avec un mot français reconnaissable :
+
+| Anglais | Français |
+|---|---|
+| Feeble | Faiblesse |
+| Fumble | Fébrile |
+| Fear | Frayeur |
+| Filch | Filoute |
+| Freeze | Fige |
+| Fall | Fauche |
+| Ferment | Fermente |
+| Fierce | Féroce |
+| Float | Flotte |
+| Fireproof | Flammifuge |
+| Fence | Fortifie |
+| Fantasize | Fantasme |
+| Fluoresce | Fluorescence |
+| Fudge (odeur de chocolat) | Fondant |
+| Fry | Friture |
+| Free (le démon s'en va) | Fuis |
+| Foolishment | Fadaises |
+| Frobizz! Frobozzle! Frobnoid! | inchangés |
+
+Ces mots s'écrivent avec une majuscule quand le jeu les cite (« Le Sorcier lance : « Frayeur ! » »).
+
+### Énigme
+
+L'énigme (« What is tall as a house, round as a cup… ») se traduit en vers, et la réponse reste
+**un puits** (le joueur tapera « répondre puits »).

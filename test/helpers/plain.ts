@@ -1,11 +1,12 @@
 // Runs the original story file with a plain-text output, as a reference transcript.
 import { readFileSync } from 'node:fs'
 import { ZMachine, zsciiToString, type OutputSink } from '../../src/engine/zmachine/vm'
+import { GAMES, type GameId } from '../../src/engine/games'
 
-export const STORY_PATH = new URL('../../src/engine/story/zork1.z3', import.meta.url)
+export const storyPath = (game: GameId = 'zork1') => new URL(`../../src/engine/story/${game}/${GAMES[game].file}`, import.meta.url)
 
-export function loadStory(): Uint8Array {
-  return new Uint8Array(readFileSync(STORY_PATH))
+export function loadStory(game: GameId = 'zork1'): Uint8Array {
+  return new Uint8Array(readFileSync(storyPath(game)))
 }
 
 export class PlainSink implements OutputSink {
@@ -34,9 +35,9 @@ export class PlainSink implements OutputSink {
 }
 
 /** Plays `commands` and returns the full transcript, dfrotz style (commands are not echoed). */
-export function playPlain(commands: string[], seed: number): string {
+export function playPlain(commands: string[], seed: number, game: GameId = 'zork1'): string {
   const sink = new PlainSink()
-  const vm = new ZMachine(loadStory(), sink, seed)
+  const vm = new ZMachine(loadStory(game), sink, seed)
   sink.vm = vm
   let transcript = ''
   let y = vm.run()

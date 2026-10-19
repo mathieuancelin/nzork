@@ -1,11 +1,13 @@
 // Checks French translation files against the English catalog.
-//   npx tsx tools/catalog/validate.ts src/engine/i18n/fr/parts/groups-1.json [...]
-// With no argument, checks every file of src/engine/i18n/fr/parts/ and objects.json.
+//   npx tsx tools/catalog/validate.ts [--game zork2] src/engine/i18n/fr/zork2/parts/groups-1.json [...]
+// With no file, checks every file of src/engine/i18n/fr/<game>/parts/ and objects.json.
 import { readFileSync, readdirSync, existsSync } from 'node:fs'
+import { argsWithoutGame, gamePaths, toolGame } from '../game'
 
-const en = JSON.parse(readFileSync(new URL('./out/catalog.en.json', import.meta.url), 'utf8'))
-const partsDir = new URL('../../src/engine/i18n/fr/parts/', import.meta.url)
-const objectsFile = new URL('../../src/engine/i18n/fr/objects.json', import.meta.url)
+const paths = gamePaths(toolGame())
+const en = JSON.parse(readFileSync(new URL('out/catalog.en.json', paths.catalog), 'utf8'))
+const partsDir = new URL('parts/', paths.french)
+const objectsFile = new URL('objects.json', paths.french)
 
 const OBJ_FNS = new Set(['le', 'un', 'du', 'au', 'de', 'ce', 'il', 'lui', 'e', 'g'])
 const PLACEHOLDER = /\{(?:([A-Za-z]+):)?([^}|:]*)((?:\|[^|}]*)*)\}/g
@@ -69,17 +71,22 @@ function checkPart(path: URL | string, name: string) {
   return Object.keys(data).length
 }
 
-function checkObjects() {
-  if (!existsSync(objectsFile)) return 0
-  const data = JSON.parse(readFileSync(objectsFile, 'utf8'))
+/** objects.json (complete), or a batch of objects being translated (partial). */
+function checkObjects(file: URL | string = objectsFile, partial = false) {
+  if (!existsSync(file)) return 0
+  const data = JSON.parse(readFileSync(file, 'utf8'))
   for (const [key, o] of Object.entries(data) as [string, Record<string, unknown>][]) {
-    if (!en.objects[key]) err('objects', key, 'unknown key')
+    const src = en.objects[key] as { synonyms: string[]; adjectives: string[] } | undefined
+    if (!src) err('objects', key, 'unknown key')
     if (typeof o.nom !== 'string') err('objects', key, 'missing nom')
     if (o.g !== 'm' && o.g !== 'f') err('objects', key, 'g must be m or f')
     if (o.n !== undefined && o.n !== 's' && o.n !== 'p') err('objects', key, 'n must be s or p')
+    // the French words must lead to words of the game's dictionary for this object
+    for (const [fr, w] of Object.entries((o.mots ?? {}) as Record<string, string>)) if (src && !src.synonyms.includes(w)) err('objects', key, `mots: "${fr}" → ${w} is not a synonym of the object (${src.synonyms.join(' ')})`)
+    for (const [fr, w] of Object.entries((o.adjectifs ?? {}) as Record<string, string>)) if (src && !src.adjectives.includes(w)) err('objects', key, `adjectifs: "${fr}" → ${w} is not an adjective of the object (${src.adjectives.join(' ')})`)
   }
   const missing = Object.keys(en.objects).filter((k) => !data[k])
-  if (missing.length) err('objects', '-', `missing ${missing.length} objects: ${missing.slice(0, 10).join(' ')}`)
+  if (missing.length && !partial) err('objects', '-', `missing ${missing.length} objects: ${missing.slice(0, 10).join(' ')}`)
   return Object.keys(data).length
 }
 
@@ -101,10 +108,10 @@ function checkMissing() {
   if (missing.length) err('catalog', '-', `${missing.length} untranslated key(s): ${missing.slice(0, 15).join(' ')}`)
 }
 
-const files = process.argv.slice(2)
+const files = argsWithoutGame()
 let count = 0
 if (files.length) {
-  for (const f of files) count += f.endsWith('objects.json') ? checkObjects() : checkPart(f, f.split('/').pop()!)
+  for (const f of files) count += f.endsWith('objects.json') ? checkObjects() : /objects[^/]*\.json$/.test(f) ? checkObjects(f, true) : checkPart(f, f.split('/').pop()!)
 } else {
   if (existsSync(partsDir)) for (const f of readdirSync(partsDir).filter((x) => x.endsWith('.json'))) count += checkPart(new URL(f, partsDir), f)
   count += checkObjects()

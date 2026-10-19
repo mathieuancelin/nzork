@@ -3,7 +3,7 @@ import { describe, it, expect } from 'vitest'
 import { Game } from '../src/engine/game'
 import { World } from '../src/engine/assist/world'
 import { allRooms, mapOf, pathTo, visitedRooms } from '../src/engine/assist/map'
-import mapData from '../src/data/map.json'
+import mapData from '../src/data/zork1/map.json'
 import { loadStory } from './helpers/plain'
 import { playWalkthrough } from './helpers/walkthrough'
 
@@ -40,7 +40,7 @@ describe('map', () => {
   })
 
   it('remembers the maze, which the game forgets', () => {
-    const run = playWalkthrough(new URL('./walkthrough/en.txt', import.meta.url), 'en', 1234)
+    const run = playWalkthrough(new URL('./walkthrough/zork1/en.txt', import.meta.url), 'en', 1234)
     const game = newGame()
     const remembered = new Set<string>()
     for (const c of run.commands) {

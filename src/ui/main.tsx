@@ -12,6 +12,7 @@ import { Modals } from './components/Modals'
 import { t } from './i18n'
 import { useSoundtrack } from './sound/useSoundtrack'
 import { useNarrator } from './sound/useNarrator'
+import { GAMES } from '../engine/games'
 
 function App() {
   const ready = useGame((s) => s.ready)
@@ -21,6 +22,7 @@ function App() {
   const undo = useGame((s) => s.undo)
   const sideCollapsed = useGame((s) => s.sideCollapsed)
   const mapLarge = useGame((s) => s.mapLarge)
+  const gameId = useGame((s) => s.gameId)
   useSoundtrack()
   useNarrator()
 
@@ -32,6 +34,11 @@ function App() {
     document.documentElement.dataset.font = settings.fontSize
     document.documentElement.lang = settings.lang
   }, [settings.fontSize, settings.lang])
+
+  useEffect(() => {
+    const g = GAMES[gameId]
+    document.title = `${g.title} — ${g.subtitle[settings.lang]}`
+  }, [gameId, settings.lang])
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {

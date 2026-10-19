@@ -1,21 +1,26 @@
-// Builds src/engine/story/symbols.json: names of routines, objects, attributes, properties and
-// globals of the compiled story, recovered by matching the ZIL source with the story file.
+// Builds src/engine/story/<game>/symbols.json: names of routines, objects, attributes,
+// properties and globals of the compiled story, recovered by matching the ZIL source with the
+// story file.
 //
-//   npx tsx tools/symbols/build.ts
+//   npx tsx tools/symbols/build.ts [--game zork2] [--out file.json]
 
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
+import { writeFileSync } from 'node:fs'
 import { loadZil, type ZilObject } from '../zil/load'
 import { analyzeStory } from '../../src/engine/zmachine/disasm'
 import { decodeZString } from '../../src/engine/zmachine/text'
 import { alignRoutines, storyRoutineStrings } from './align'
 import { walk, atomName, isForm, zilText, type Node } from '../zil/reader'
+import { gamePaths, readStory, toolGame } from '../game'
 
-const mem = new Uint8Array(readFileSync(new URL('../../src/engine/story/zork1.z3', import.meta.url)))
+const gameId = toolGame()
+const outArg = process.argv.indexOf('--out')
+const outFile = outArg >= 0 ? process.argv[outArg + 1] : gamePaths(gameId).symbols
+const mem = readStory(gameId)
 const w = (a: number) => (mem[a] << 8) | mem[a + 1]
 const abbrevs = w(0x18)
 const objTable = w(0x0a)
 const analysis = analyzeStory(mem)
-const zil = loadZil()
+const zil = loadZil(gameId)
 
 // ------------------------------------------------------------------ routines
 const storyStrings = analysis.routines.map((r) => storyRoutineStrings(mem, r, analysis.strings))
@@ -24,7 +29,12 @@ const routines: Record<string, number> = {}
 for (const [addr, name] of routineByAddr) routines[name] = addr
 
 // ------------------------------------------------------------------ objects
-const DIRECTIONS = ['NORTH', 'EAST', 'WEST', 'SOUTH', 'NE', 'NW', 'SE', 'SW', 'UP', 'DOWN', 'IN', 'OUT', 'LAND']
+// the <DIRECTIONS ...> declaration of the dungeon file (Zork II and III add CROSS)
+const DIRECTIONS = (() => {
+  const d = zil.topForms.find((n) => isForm(n, 'DIRECTIONS'))
+  return d && d.t === 'form' ? d.items.slice(1).map((x) => atomName(x)!).filter(Boolean) : []
+})()
+if (!DIRECTIONS.length) throw new Error('no DIRECTIONS declaration in the sources')
 const objAddr = (o: number) => objTable + 62 + (o - 1) * 9
 const firstPropTable = w(objAddr(1) + 7)
 const objectCount = (firstPropTable - objTable - 62) / 9
@@ -343,9 +353,8 @@ console.log('unmatched globals:', zil.globals.map((g) => g.name).filter((g) => g
 console.log('unmatched props:', [...propSets.keys()].filter((p) => properties[p] === undefined).join(' '))
 
 const sortObj = <T>(o: Record<string, T>) => Object.fromEntries(Object.entries(o).sort(([a], [b]) => a.localeCompare(b)))
-mkdirSync(new URL('../../src/engine/story/', import.meta.url), { recursive: true })
 writeFileSync(
-  new URL('../../src/engine/story/symbols.json', import.meta.url),
+  outFile,
   JSON.stringify(
     {
       routines: sortObj(routines),

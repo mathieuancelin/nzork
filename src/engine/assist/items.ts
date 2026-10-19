@@ -1,6 +1,6 @@
 // What the player carries and which treasures they found, for the side panel. Read from the
 // game state: showing it costs no turn and changes nothing.
-import type { Game } from '../game'
+import type { Game, GameId } from '../game'
 import { capitalize } from '../i18n/grammar'
 import { World } from './world'
 
@@ -23,31 +23,59 @@ export interface TreasureSlot {
   id: string
   obj: number
   name: string
-  /** unknown: never touched (shown as "?"); found: taken at least once; case: in the trophy case. */
+  /** unknown: never touched (shown as "?"); found: taken at least once; case: stored where it counts. */
   state: 'unknown' | 'found' | 'case'
 }
 
 export interface Treasures {
   slots: TreasureSlot[]
   found: number
-  inCase: number
+  /** Treasures stored where they count (Zork I's trophy case); absent when the game has no such place. */
+  inCase?: number
 }
 
-/** The 19 treasures, with the damaged version some of them can turn into. */
-const TREASURES: [string, string?][] = [
-  ['EGG', 'BROKEN-EGG'], ['CANARY', 'BROKEN-CANARY'], ['BAUBLE'], ['PAINTING'], ['BAR'], ['TORCH'], ['SCEPTRE'],
-  ['POT-OF-GOLD'], ['TRUNK'], ['COFFIN'], ['JADE'], ['SKULL'], ['BAG-OF-COINS'], ['BRACELET'], ['DIAMOND'],
-  ['EMERALD'], ['SCARAB'], ['TRIDENT'], ['CHALICE'],
-]
-const TREASURE_NAMES = new Set(TREASURES.flat().filter(Boolean) as string[])
+interface TreasureList {
+  /** The treasures, with the damaged version some of them can turn into. */
+  list: [string, string?][]
+  /** Where a treasure counts once stored (Zork I: the trophy case). */
+  stored?: (w: World, id: string) => boolean
+}
+
+const TREASURES: Record<GameId, TreasureList> = {
+  zork1: {
+    list: [
+      ['EGG', 'BROKEN-EGG'], ['CANARY', 'BROKEN-CANARY'], ['BAUBLE'], ['PAINTING'], ['BAR'], ['TORCH'], ['SCEPTRE'],
+      ['POT-OF-GOLD'], ['TRUNK'], ['COFFIN'], ['JADE'], ['SKULL'], ['BAG-OF-COINS'], ['BRACELET'], ['DIAMOND'],
+      ['EMERALD'], ['SCARAB'], ['TRIDENT'], ['CHALICE'],
+    ],
+    stored: (w, id) => w.within(id, 'TROPHY-CASE'),
+  },
+  // the ten treasures of the demon's fee (TREASURES-MAX in 2actions.zil: every object with a
+  // value but the spheres, the candy, the collar and the wand); where they go is the game's
+  // secret, so the tracker only counts the ones found
+  zork2: {
+    list: [['STATUETTE'], ['PORTRAIT'], ['BILLS'], ['CROWN'], ['VIOLIN'], ['PEARL'], ['RUBY'], ['STAMP'], ['COIN'], ['GOLD-KEY']],
+  },
+  zork3: { list: [] },
+}
+
+/** Whether the game has treasures to track. */
+export const hasTreasures = (game: GameId) => TREASURES[game].list.length > 0
 
 function nameOf(game: Game, obj: number): string {
   return capitalize(game.presenter.noun(obj).nom)
 }
 
+const treasureNames = new Map<GameId, Set<string>>()
+function isTreasure(w: World, obj: number): boolean {
+  let names = treasureNames.get(w.id)
+  if (!names) treasureNames.set(w.id, (names = new Set(TREASURES[w.id].list.flat().filter(Boolean) as string[])))
+  return names.has(w.name(obj))
+}
+
 function kindOf(w: World, obj: number): ItemKind {
   const has = (a: string) => w.attrOf(obj, a)
-  if (TREASURE_NAMES.has(w.name(obj))) return 'treasure'
+  if (isTreasure(w, obj)) return 'treasure'
   if (has('LIGHTBIT') || has('FLAMEBIT')) return 'light'
   if (has('WEAPONBIT')) return 'weapon'
   if (has('READBIT')) return 'paper'
@@ -98,17 +126,19 @@ function hidden(w: World, obj: number): boolean {
   return false
 }
 
-/** The treasures: which ones were found, which ones are in the trophy case. */
+/** The treasures: which ones were found, which ones are stored where they count. */
 export function treasuresOf(game: Game): Treasures {
   const w = new World(game)
-  const slots = TREASURES.map(([main, damaged]): TreasureSlot => {
+  const { list, stored } = TREASURES[game.id]
+  const slots = list.map(([main, damaged]): TreasureSlot => {
     // the damaged version replaces the original once it exists
     const id = damaged && inPlay(w, w.obj(damaged)) ? damaged : main
     const obj = w.obj(id)
     // unknown until touched; the game also touches what is inside a treasure put in the case,
     // so a treasure shut away in another one stays unknown too
-    const state = !w.attrOf(obj, 'TOUCHBIT') || hidden(w, obj) ? 'unknown' : w.within(id, 'TROPHY-CASE') ? 'case' : 'found'
+    const state = !w.attrOf(obj, 'TOUCHBIT') || hidden(w, obj) ? 'unknown' : stored?.(w, id) ? 'case' : 'found'
     return { id, obj, name: nameOf(game, obj), state }
   })
-  return { slots, found: slots.filter((s) => s.state !== 'unknown').length, inCase: slots.filter((s) => s.state === 'case').length }
+  const found = slots.filter((s) => s.state !== 'unknown').length
+  return stored ? { slots, found, inCase: slots.filter((s) => s.state === 'case').length } : { slots, found }
 }

@@ -19,12 +19,12 @@ export function SidePanel() {
   // folding only exists on small screens, where the panel sits under the text
   const fold = () => window.matchMedia('(max-width: 900px)').matches && setCollapsed(!collapsed)
 
-  const tabs: SideTab[] = [...(mode !== 'classic' ? (['actions'] as const) : []), 'map', 'inventory', ...(showTreasures ? (['treasures'] as const) : [])]
+  const tabs: SideTab[] = [...(mode !== 'classic' ? (['actions'] as const) : []), 'map', 'inventory', ...(showTreasures && side?.treasures.slots.length ? (['treasures'] as const) : [])]
   const current = tabs.includes(tab) ? tab : tabs[0]
   const name = (k: SideTab) => t(lang, k === 'actions' ? 'actions' : k === 'map' ? 'map' : k === 'inventory' ? 'inventory' : 'treasures')
   const count = (k: SideTab) => {
     if (k === 'inventory') return side?.items.length ? String(side.items.length) : ''
-    if (k === 'treasures') return side ? `${side.treasures.inCase}/${side.treasures.slots.length}` : ''
+    if (k === 'treasures') return side ? `${side.treasures.inCase ?? side.treasures.found}/${side.treasures.slots.length}` : ''
     return ''
   }
   const ICON = { actions: 'actions', map: 'map', inventory: 'container', treasures: 'treasure' } as const
@@ -105,7 +105,7 @@ function TreasureTracker() {
   return (
     <div className="treasures">
       <p className="treasure-count">
-        {t(lang, 'inCase', inCase, slots.length)} · {t(lang, 'foundCount', found)}
+        {inCase === undefined ? t(lang, 'foundOf', found, slots.length) : `${t(lang, 'inCase', inCase, slots.length)} · ${t(lang, 'foundCount', found)}`}
       </p>
       <ul className="treasure-grid">
         {slots.map((s, i) => (

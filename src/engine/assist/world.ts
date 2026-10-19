@@ -1,12 +1,6 @@
 // Read-only view of the game state, by ZIL names, for the choices and the guide.
-import type { Game } from '../game'
-import symbols from '../story/symbols.json'
-
-const O = symbols.objects as Record<string, number>
-const A = symbols.attributes as Record<string, number>
-const P = symbols.properties as Record<string, number>
-const G = symbols.globals as Record<string, number>
-const nameOf = new Map(Object.entries(O).map(([n, v]) => [v, n]))
+import type { Game, GameId } from '../game'
+import { indexOf } from '../symbols'
 
 export const DIRECTIONS = ['NORTH', 'EAST', 'WEST', 'SOUTH', 'NE', 'NW', 'SE', 'SW', 'UP', 'DOWN', 'IN', 'OUT'] as const
 export type Direction = (typeof DIRECTIONS)[number]
@@ -21,30 +15,63 @@ export type Exit =
   | { kind: 'none' }
 
 export class World {
-  constructor(readonly game: Game) {}
+  private O: Record<string, number>
+  private A: Record<string, number>
+  private P: Record<string, number>
+  private G: Record<string, number>
+  private nameOf: Map<number, string>
+
+  constructor(readonly game: Game) {
+    const s = game.symbols
+    this.O = s.objects
+    this.A = s.attributes
+    this.P = s.properties
+    this.G = s.globals
+    this.nameOf = indexOf(s).objectName
+  }
 
   get vm() {
     return this.game.vm
   }
 
+  /** Zork I, II or III. */
+  get id(): GameId {
+    return this.game.id
+  }
+
   obj(name: string): number {
-    const n = O[name]
+    const n = this.O[name]
     if (n === undefined) throw new Error(`Unknown object ${name}`)
     return n
   }
 
+  /** Whether the game has an object of that name. */
+  hasObject(name: string): boolean {
+    return this.O[name] !== undefined
+  }
+
   name(num: number): string {
-    return nameOf.get(num) ?? String(num)
+    return this.nameOf.get(num) ?? String(num)
   }
 
   here(): string {
-    return this.name(this.vm.global(G.HERE))
+    return this.name(this.vm.global(this.G.HERE))
   }
 
   global(name: string): number {
-    const g = G[name]
+    const g = this.G[name]
     if (g === undefined) throw new Error(`Unknown global ${name}`)
     return this.vm.global(g)
+  }
+
+  /** Whether the game has a global of that name. */
+  hasGlobal(name: string): boolean {
+    return this.G[name] !== undefined
+  }
+
+  /** The English words naming an object, for the canonical commands ("brass lantern"). */
+  word(num: number): string | undefined {
+    return this.game.symbols.words[String(num)]
   }
 
   flag(name: string): boolean {
@@ -60,7 +87,7 @@ export class World {
   }
 
   has(name: string): boolean {
-    return this.vm.parent(this.obj(name)) === this.vm.global(G.WINNER)
+    return this.vm.parent(this.obj(name)) === this.vm.global(this.G.WINNER)
   }
 
   /** True when the object is (directly or not) inside `container`. */
@@ -80,11 +107,13 @@ export class World {
   }
 
   attr(name: string, flag: string): boolean {
-    return this.vm.hasAttr(this.obj(name), A[flag])
+    return this.attrOf(this.obj(name), flag)
   }
 
   attrOf(num: number, flag: string): boolean {
-    return this.vm.hasAttr(num, A[flag])
+    const a = this.A[flag]
+    // a flag the game does not use (FIGHTBIT in Zork II) is never set
+    return a !== undefined && this.vm.hasAttr(num, a)
   }
 
   children(num: number): number[] {
@@ -100,7 +129,7 @@ export class World {
 
   /** Whether the player carries a light source that is on. */
   carriesLight(): boolean {
-    const winner = this.vm.global(G.WINNER)
+    const winner = this.vm.global(this.G.WINNER)
     const stack = this.children(winner)
     while (stack.length) {
       const o = stack.pop()!
@@ -113,7 +142,7 @@ export class World {
   /** Room lit independently of what the player carries: daylight, or a light source lying there. */
   roomLit(room: string): boolean {
     if (this.attr(room, 'ONBIT')) return true
-    const winner = this.vm.global(G.WINNER)
+    const winner = this.vm.global(this.G.WINNER)
     const stack = this.children(this.obj(room)).filter((c) => c !== winner)
     while (stack.length) {
       const o = stack.pop()!
@@ -125,8 +154,8 @@ export class World {
 
   /** Objects the player can see: in the room (and open containers), carried. */
   visible(): number[] {
-    const here = this.vm.global(G.HERE)
-    const winner = this.vm.global(G.WINNER)
+    const here = this.vm.global(this.G.HERE)
+    const winner = this.vm.global(this.G.WINNER)
     const out: number[] = []
     const visit = (o: number, depth: number) => {
       for (const c of this.children(o)) {
@@ -146,8 +175,8 @@ export class World {
 
   /** Local "scenery" objects of the room (GLOBAL property). */
   localGlobals(): number[] {
-    const here = this.vm.global(G.HERE)
-    const addr = this.vm.getPropAddr(here, P.GLOBAL)
+    const here = this.vm.global(this.G.HERE)
+    const addr = this.vm.getPropAddr(here, this.P.GLOBAL)
     const len = this.vm.getPropLen(addr)
     const out: number[] = []
     for (let i = 0; i < len; i++) out.push(this.vm.mem[addr + i])
@@ -157,7 +186,7 @@ export class World {
   /** Exit of a room in a direction, decoded from the property (see V-WALK in gverbs.zil). */
   exit(room: string, dir: Direction): Exit {
     const vm = this.vm
-    const addr = vm.getPropAddr(this.obj(room), P[dir])
+    const addr = vm.getPropAddr(this.obj(room), this.P[dir])
     if (!addr) return { kind: 'none' }
     const size = vm.getPropLen(addr)
     const to = () => this.name(vm.mem[addr])
@@ -171,7 +200,7 @@ export class World {
       case 4: // CEXIT: global flag
         return vm.global(vm.mem[addr + 1] - 16) ? { kind: 'open', to: to() } : { kind: 'closed', to: to() }
       case 5: // DEXIT: door
-        return vm.hasAttr(vm.mem[addr + 1], A.OPENBIT) ? { kind: 'open', to: to() } : { kind: 'closed', to: to(), door: true }
+        return vm.hasAttr(vm.mem[addr + 1], this.A.OPENBIT) ? { kind: 'open', to: to() } : { kind: 'closed', to: to(), door: true }
     }
     return { kind: 'none' }
   }
@@ -179,13 +208,13 @@ export class World {
   /**
    * Turns of light left in the brass lantern: the countdown of its interrupt in the clock table
    * (C-TABLE, entries of [enabled, tick, routine]) plus the stages still to come in LAMP-TABLE.
-   * 385 when new, 0 when burned out.
+   * In Zork I, 385 when new, 0 when burned out.
    */
   lampTurnsLeft(): number {
     const vm = this.vm
     if (this.attr('LAMP', 'RMUNGBIT')) return 0
     const table = this.global('C-TABLE')
-    const routine = symbols.routines['I-LANTERN' as keyof typeof symbols.routines] as number
+    const routine = this.game.symbols.routines['I-LANTERN']
     let tick = 0
     for (let off = this.global('C-INTS'); off < 180; off += 6) {
       if (vm.unpack(vm.word(table + off + 4)) === routine) tick = vm.word(table + off + 2)
@@ -201,8 +230,8 @@ export class World {
 
   /** In a vehicle (the boat)? */
   inVehicle(): string | null {
-    const winner = this.vm.global(G.WINNER)
+    const winner = this.vm.global(this.G.WINNER)
     const loc = this.vm.parent(winner)
-    return loc !== this.vm.global(G.HERE) ? this.name(loc) : null
+    return loc !== this.vm.global(this.G.HERE) ? this.name(loc) : null
   }
 }

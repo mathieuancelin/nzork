@@ -1,0 +1,760 @@
+[
+ {
+  "key": "gee1d",
+  "en": "You look around, and strangely, the topiary animals seem to have changed position slightly.\n",
+  "args": [],
+  "routine": "I-GARDEN",
+  "zil": "<TELL \"You look around, and strangely, the topiary animals seem to have changed position slightly.\" CR>"
+ },
+ {
+  "key": "gee68",
+  "en": "The topiary animals seem to close in on you. You turn and they are very close. They seem to be leering at you.\n",
+  "args": [],
+  "routine": "I-GARDEN",
+  "zil": "<TELL \"The topiary animals seem to close in on you. You turn and they are very close. They seem to be leering at you.\" CR>"
+ },
+ {
+  "key": "geeed",
+  "en": "The unicorn is way up at the north end of the garden.\n",
+  "args": [],
+  "routine": "GLOBAL-UNICORN-FCN",
+  "zil": "<TELL \"The unicorn is way up at the north end of the garden.\" CR>"
+ },
+ {
+  "key": "gef10",
+  "en": "I don't know where it is now.\n",
+  "args": [],
+  "routine": "GLOBAL-UNICORN-FCN",
+  "zil": "<TELL \"I don't know where it is now.\" CR>"
+ },
+ {
+  "key": "gef21",
+  "en": "The unicorn is a mythical beast.\n",
+  "args": [],
+  "routine": "GLOBAL-UNICORN-FCN",
+  "zil": "<TELL \"The unicorn is a mythical beast.\" CR>"
+ },
+ {
+  "key": "gef32",
+  "en": "Unicorn? What unicorn?\n",
+  "args": [],
+  "routine": "GLOBAL-UNICORN-FCN",
+  "zil": "<TELL \"Unicorn? What unicorn?\" CR>"
+ },
+ {
+  "key": "gef50",
+  "en": "The unicorn listens distractedly, then goes back to cropping grass.\n",
+  "args": [],
+  "routine": "UNICORN-FCN",
+  "zil": "<TELL \"The unicorn listens distractedly, then goes back to cropping grass.\" CR>"
+ },
+ {
+  "key": "gef7d",
+  "en": "The unicorn shies away as you approach.\n",
+  "args": [],
+  "routine": "UNICORN-FCN",
+  "zil": "<TELL \"The unicorn shies away as you approach.\" CR>"
+ },
+ {
+  "key": "gef9c",
+  "en": "The unicorn shies away as you approach for a closer look, but you do notice a tiny gold key hanging from a red satin ribbon looped around the animal's neck.\n",
+  "args": [],
+  "routine": "UNICORN-FCN",
+  "zil": "<TELL \"The unicorn shies away as you approach for a closer look, but you do notice a tiny gold key hanging from a red satin ribbon looped around the animal's neck.\" CR>"
+ },
+ {
+  "key": "geff7",
+  "en": "The unicorn shies away as you approach.\n",
+  "args": [],
+  "routine": "UNICORN-FCN",
+  "zil": "<TELL \"The unicorn shies away as you approach.\" CR>"
+ },
+ {
+  "key": "gf01e",
+  "en": "The unicorn, unsurprised by this evidence that you are indeed the uncouth sort of vagabond it suspected you were, melts into the hedges and is gone.\n",
+  "args": [],
+  "routine": "UNICORN-FCN",
+  "zil": "<TELL \"The unicorn, unsurprised by this evidence that you are indeed the uncouth sort of vagabond it suspected you were, melts into the hedges and is gone.\" CR>"
+ },
+ {
+  "key": "gf08a",
+  "en": "You're already in it.\n",
+  "args": [],
+  "routine": "GAZEBO-FCN",
+  "zil": "<TELL \"You're already in it.\" CR>"
+ },
+ {
+  "key": "gf0c3",
+  "en": "The opening of the squeaky lid startles the young woman.\n",
+  "args": [],
+  "routine": "CHEST-FCN",
+  "zil": "<TELL \"The opening of the squeaky lid startles the young woman.\" CR>"
+ },
+ {
+  "key": "gf0ea",
+  "en": "The hinges are very rusty, but they seem to be starting to give. You can probably open it if you try again. There is something bumping around inside.",
+  "args": [],
+  "routine": "CHEST-FCN",
+  "zil": "<TELL \"The hinges are very rusty, but they seem to be starting to give. You can probably open it if you try again. There is something bumping around inside.\">"
+ },
+ {
+  "key": "gf13a",
+  "en": " All this rummaging around has startled the young woman.",
+  "args": [],
+  "routine": "CHEST-FCN",
+  "zil": "<TELL \" All this rummaging around has startled the young woman.\">"
+ },
+ {
+  "key": "gf183",
+  "en": "You can't follow her until she leaves...\n",
+  "args": [],
+  "routine": "PRINCESS-FCN",
+  "zil": "<TELL \"You can't follow her until she leaves...\" CR>"
+ },
+ {
+  "key": "gf1a8",
+  "en": "I seem to have lost track of her.\n",
+  "args": [],
+  "routine": "PRINCESS-FCN",
+  "zil": "<TELL \"I seem to have lost track of her.\" CR>"
+ },
+ {
+  "key": "gf1c1",
+  "en": "There is no princess here.\n",
+  "args": [],
+  "routine": "PRINCESS-FCN",
+  "zil": "<TELL \"There is no princess here.\" CR>"
+ },
+ {
+  "key": "gf1d6",
+  "en": "The princess screams as you approach. \"Won't someone deliver me from this awful fate?\" she cries. ",
+  "args": [],
+  "routine": "PRINCESS-FCN",
+  "zil": "<TELL \"The princess screams as you approach. \\\"Won't someone deliver me from this awful fate?\\\" she cries. \">"
+ },
+ {
+  "key": "gf215",
+  "en": "Shocked, the Wizard of Frobozz turns toward you.",
+  "args": [],
+  "routine": "PRINCESS-FCN",
+  "zil": "<TELL \"Shocked, the Wizard of Frobozz turns toward you.\">"
+ },
+ {
+  "key": "gf231",
+  "en": "Just in time, the Wizard of Frobozz appears, seeming to unroll himself out of nothing like a window shade.",
+  "args": [],
+  "routine": "PRINCESS-FCN",
+  "zil": "<TELL \"Just in time, the Wizard of Frobozz appears, seeming to unroll himself out of nothing like a window shade.\">"
+ },
+ {
+  "key": "gf268",
+  "en": " \"Fry!\" he intones, and a massive bolt of lightning reduces you to a pile of smoking ashes. (Serves you right, too, if you ask me.)",
+  "args": [],
+  "routine": "PRINCESS-FCN",
+  "zil": "<TELL \" \\\"Fry!\\\" he intones, and a massive bolt of lightning reduces you to a pile of smoking ashes. (Serves you right, too, if you ask me.)\">"
+ },
+ {
+  "key": "gf2fd",
+  "en": "The princess (for she is obviously one) shakes herself awake, then notices you for the first time. She smiles. \"Thank you for rescuing me from that horrid worm,\" she says. \"I must depart. My parents will be worried about me.\" With that, she arises, looking purposefully out of the lair.\n",
+  "args": [],
+  "routine": "PRINCESS-FCN",
+  "zil": "<TELL \"The princess (for she is obviously one) shakes herself awake, then notices you for the first time. She smiles. \\\"Thank you for rescuing me from that horrid worm,\\\" she says. \\\"I must depart. My parents will be worried about me.\\\" With that, she arises, looking purposefully out of the lair.\" CR>"
+ },
+ {
+  "key": "gf3ac",
+  "en": "The princess ignores you. She looks about the room, but her eyes fix on the ",
+  "args": [],
+  "routine": "PRINCESS-FCN",
+  "zil": "<TELL \"The princess ignores you. She looks about the room, but her eyes fix on the \">"
+ },
+ {
+  "key": "gf3d3",
+  "en": "garden outside",
+  "args": [],
+  "routine": "PRINCESS-FCN",
+  "zil": "<TELL \"garden outside\">"
+ },
+ {
+  "key": "gf3e5",
+  "en": "gazebo",
+  "args": [],
+  "routine": "PRINCESS-FCN",
+  "zil": "<TELL \"gazebo\">"
+ },
+ {
+  "key": "gf3f1",
+  "en": "ledge",
+  "args": [],
+  "routine": "PRINCESS-FCN",
+  "zil": "<TELL \"ledge\">"
+ },
+ {
+  "key": "gf403",
+  "en": ".\n",
+  "args": [],
+  "routine": "PRINCESS-FCN",
+  "zil": "<TELL \".\" CR>"
+ },
+ {
+  "key": "gf409",
+  "en": "She's in a trance!\n",
+  "args": [],
+  "routine": "PRINCESS-FCN",
+  "zil": "<TELL \"She's in a trance!\" CR>"
+ },
+ {
+  "key": "gf445",
+  "en": "The princess presses a loose piece of marble in the wall and a large section of the wall slides away, revealing a passage to the east. She enters it.\n",
+  "args": [],
+  "routine": "I-PRINCESS",
+  "zil": "<TELL \"The princess presses a loose piece of marble in the wall and a large section of the wall slides away, revealing a passage to the east. She enters it.\" CR>"
+ },
+ {
+  "key": "gf4b4",
+  "en": "The princess appears from behind some rocks, as though she had walked through a wall.\n",
+  "args": [],
+  "routine": "I-PRINCESS",
+  "zil": "<TELL \"The princess appears from behind some rocks, as though she had walked through a wall.\" CR>"
+ },
+ {
+  "key": "gf4f3",
+  "en": "The princess enters the gazebo",
+  "args": [],
+  "routine": "I-PRINCESS",
+  "zil": "<TELL \"The princess enters the gazebo\">"
+ },
+ {
+  "key": "gf506",
+  "en": ", although you would never get past the debris. She must be magically protected.",
+  "args": [],
+  "routine": "I-PRINCESS",
+  "zil": "<TELL \", although you would never get past the debris. She must be magically protected.\">"
+ },
+ {
+  "key": "gf539",
+  "en": ".\n",
+  "args": [],
+  "routine": "I-PRINCESS",
+  "zil": "<TELL \".\" CR>"
+ },
+ {
+  "key": "gf544",
+  "en": "The princess climbs daintily down the rock face.\n",
+  "args": [],
+  "routine": "I-PRINCESS",
+  "zil": "<TELL \"The princess climbs daintily down the rock face.\" CR>"
+ },
+ {
+  "key": "gf563",
+  "en": "The princess walks ",
+  "args": [],
+  "routine": "I-PRINCESS",
+  "zil": "<TELL \"The princess walks \">"
+ },
+ {
+  "key": "gf570",
+  "en": "{0}. She glances back at you as she goes.\n",
+  "args": [
+   "s"
+  ],
+  "routine": "I-PRINCESS",
+  "zil": "<TELL \". She glances back at you as she goes.\" CR>"
+ },
+ {
+  "key": "gf598",
+  "en": "The princess joins you in the gazebo.\n",
+  "args": [],
+  "routine": "I-PRINCESS",
+  "zil": "<TELL \"The princess joins you in the gazebo.\" CR>"
+ },
+ {
+  "key": "gf5b1",
+  "en": "The princess climbs down the rock wall onto the beach.\n",
+  "args": [],
+  "routine": "I-PRINCESS",
+  "zil": "<TELL \"The princess climbs down the rock wall onto the beach.\" CR>"
+ },
+ {
+  "key": "gf5d0",
+  "en": "The princess enters from the ",
+  "args": [],
+  "routine": "I-PRINCESS",
+  "zil": "<TELL \"The princess enters from the \">"
+ },
+ {
+  "key": "gf5e3",
+  "en": "{0}. She seems surprised to see you.\n",
+  "args": [
+   "s"
+  ],
+  "routine": "I-PRINCESS",
+  "zil": "<TELL \". She seems surprised to see you.\" CR>"
+ },
+ {
+  "key": "gf650",
+  "en": "Shyly, a unicorn peeks out of the hedges. It notices the princess and seems captivated. It approaches her and bows its head as though curtseying to her. Around its neck is a red satin ribbon on which is strung a delicate gold key. The princess takes the ribbon and uses it to tie up her hair. She looks at you and then, smiling, hands you the key and a fresh rose which she plucks from the arbor. \"You may have use of such a thing,\" she says. \"It is the least I can do for one who rescued me from a fate I dare not contemplate.\" With that, she mounts the unicorn (side-saddle, of course) and rides off into the gloom.\n",
+  "args": [],
+  "routine": "I-UNICORN",
+  "zil": "<TELL \"Shyly, a unicorn peeks out of the hedges. It notices the princess and seems captivated. It approaches her and bows its head as though curtseying to her. Around its neck is a red satin ribbon on which is strung a delicate gold key. The princess takes the ribbon and uses it to tie up her hair. She looks at you and then, smiling, hands you the key and a fresh rose which she plucks from the arbor. \\\"You may have use of such a thing,\\\" she says. \\\"It is the least I can do for one who rescued me from a fate I dare not contemplate.\\\" With that, she mounts the unicorn (side-saddle, of course) and rides off into the gloom.\" CR>"
+ },
+ {
+  "key": "gf7c6",
+  "en": "This is a large room which was evidently used once as a quarry. Many large limestone chunks lie helter-skelter around the room. Some are rough-hewn and unworked, others smooth and well-finished. One side of the room appears to have been used to quarry building blocks, the other to produce menhirs (standing stones). Obvious passages lead north and south.\n",
+  "args": [],
+  "routine": "MENHIR-ROOM-FCN",
+  "zil": "<TELL \"This is a large room which was evidently used once as a quarry. Many large limestone chunks lie helter-skelter around the room. Some are rough-hewn and unworked, others smooth and well-finished. One side of the room appears to have been used to quarry building blocks, the other to produce menhirs (standing stones). Obvious passages lead north and south.\" CR>"
+ },
+ {
+  "key": "gf8a5",
+  "en": "One particularly large menhir, at least twenty feet tall and eight feet thick, is leaning against the wall blocking a dark opening leading southwest. On this side of the menhir is carved an ornate letter \"F\".\n",
+  "args": [],
+  "routine": "DESCRIBE-MENHIR",
+  "zil": "<TELL \"One particularly large menhir, at least twenty feet tall and eight feet thick, is leaning against the wall blocking a dark opening leading southwest. On this side of the menhir is carved an ornate letter \\\"F\\\".\" CR>"
+ },
+ {
+  "key": "gf930",
+  "en": "There is a huge menhir lying on the floor near a southwest passage.\n",
+  "args": [],
+  "routine": "DESCRIBE-MENHIR",
+  "zil": "<TELL \"There is a huge menhir lying on the floor near a southwest passage.\" CR>"
+ },
+ {
+  "key": "gf95d",
+  "en": "A dark opening leads southwest.\n",
+  "args": [],
+  "routine": "DESCRIBE-MENHIR",
+  "zil": "<TELL \"A dark opening leads southwest.\" CR>"
+ },
+ {
+  "key": "gf97a",
+  "en": "There is a huge menhir here.\n",
+  "args": [],
+  "routine": "DESCRIBE-MENHIR",
+  "zil": "<TELL \"There is a huge menhir here.\" CR>"
+ },
+ {
+  "key": "gf98d",
+  "en": "There is a huge menhir floating like a feather in midair here. A passage to the southwest opens beneath it.\n",
+  "args": [],
+  "routine": "DESCRIBE-MENHIR",
+  "zil": "<TELL \"There is a huge menhir floating like a feather in midair here. A passage to the southwest opens beneath it.\" CR>"
+ },
+ {
+  "key": "gf9d1",
+  "en": "The explosion appears to have had no effect on the menhir.\n",
+  "args": [],
+  "routine": "DESCRIBE-MENHIR",
+  "zil": "<TELL \"The explosion appears to have had no effect on the menhir.\" CR>"
+ },
+ {
+  "key": "gf9f0",
+  "en": "A dark opening leads southwest.\n",
+  "args": [],
+  "routine": "DESCRIBE-MENHIR",
+  "zil": "<TELL \"A dark opening leads southwest.\" CR>"
+ },
+ {
+  "key": "gfa11",
+  "en": "Behind the menhir is some air and then a wall.\n",
+  "args": [],
+  "routine": "MENHIR-FCN",
+  "zil": "<TELL \"Behind the menhir is some air and then a wall.\" CR>"
+ },
+ {
+  "key": "gfa2e",
+  "en": "The gap between the menhir and the wall is very narrow, but it is clear that there is a sizeable room in there. Your light only reveals a part of the far wall.\n",
+  "args": [],
+  "routine": "MENHIR-FCN",
+  "zil": "<TELL \"The gap between the menhir and the wall is very narrow, but it is clear that there is a sizeable room in there. Your light only reveals a part of the far wall.\" CR>"
+ },
+ {
+  "key": "gfa85",
+  "en": "The menhir weighs many tons and is eight feet wide. You can't even get a grip on it, much less move it.\n",
+  "args": [],
+  "routine": "MENHIR-FCN",
+  "zil": "<TELL \"The menhir weighs many tons and is eight feet wide. You can't even get a grip on it, much less move it.\" CR>"
+ },
+ {
+  "key": "gfac8",
+  "en": "\"F\"\n",
+  "args": [],
+  "routine": "MENHIR-FCN",
+  "zil": "<TELL \"\\\"F\\\"\" CR>"
+ },
+ {
+  "key": "gfad1",
+  "en": "It is nicely finished, and the letter \"F\" on it is particularly well carved.\n",
+  "args": [],
+  "routine": "MENHIR-FCN",
+  "zil": "<TELL \"It is nicely finished, and the letter \\\"F\\\" on it is particularly well carved.\" CR>"
+ },
+ {
+  "key": "gfb0e",
+  "en": "The menhir floats majestically into the air, rising about ten feet. The passage beneath it beckons invitingly.\n",
+  "args": [],
+  "routine": "MENHIR-FCN",
+  "zil": "<TELL \"The menhir floats majestically into the air, rising about ten feet. The passage beneath it beckons invitingly.\" CR>"
+ },
+ {
+  "key": "gfb6a",
+  "en": "The menhir sinks to the ground.\n",
+  "args": [],
+  "routine": "MENHIR-FCN",
+  "zil": "<TELL \"The menhir sinks to the ground.\" CR>"
+ },
+ {
+  "key": "gfb86",
+  "en": "Try as you may, you can't wake it.\n",
+  "args": [],
+  "routine": "DOOR-KEEPER-FCN",
+  "zil": "<TELL \"Try as you may, you can't wake it.\" CR>"
+ },
+ {
+  "key": "gfba6",
+  "en": "He is asleep, at least for the moment.\n",
+  "args": [],
+  "routine": "DOOR-KEEPER-FCN",
+  "zil": "<TELL \"He is asleep, at least for the moment.\" CR>"
+ },
+ {
+  "key": "gfbc7",
+  "en": "The guardian greedily wolfs down the candy, including the package. (It seemed to enjoy the grasshoppers particularly.) It then becomes quiet and its eyes close. (Lizards are known to sleep a long time while digesting their meals.)\n",
+  "args": [],
+  "routine": "DOOR-KEEPER-FCN",
+  "zil": "<TELL \"The guardian greedily wolfs down the candy, including the package. (It seemed to enjoy the grasshoppers particularly.) It then becomes quiet and its eyes close. (Lizards are known to sleep a long time while digesting their meals.)\" CR>"
+ },
+ {
+  "key": "gfc60",
+  "en": "The lizard sniffs it experimentally, then looks at you angrily, hissing and snapping.\n",
+  "args": [],
+  "routine": "DOOR-KEEPER-FCN",
+  "zil": "<TELL \"The lizard sniffs it experimentally, then looks at you angrily, hissing and snapping.\" CR>"
+ },
+ {
+  "key": "gfc9f",
+  "en": "The guardian greedily wolfs it down. After a while, you hear a very small pop and the guardian's eyes bulge out. It hisses nastily at you.\n",
+  "args": [],
+  "routine": "DOOR-KEEPER-FCN",
+  "zil": "<TELL \"The guardian greedily wolfs it down. After a while, you hear a very small pop and the guardian's eyes bulge out. It hisses nastily at you.\" CR>"
+ },
+ {
+  "key": "gfcfa",
+  "en": "The guardian greedily gobbles the sphere, but finds it unchewable. He then tries repeatedly to swallow it whole, with disappointing results. Finally, he spits it on the ground.\n",
+  "args": [],
+  "routine": "DOOR-KEEPER-FCN",
+  "zil": "<TELL \"The guardian greedily gobbles the sphere, but finds it unchewable. He then tries repeatedly to swallow it whole, with disappointing results. Finally, he spits it on the ground.\" CR>"
+ },
+ {
+  "key": "gfd6c",
+  "en": "The lizard wolfs down the {0}, crunching greedily.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "DOOR-KEEPER-FCN",
+  "zil": "<TELL \"The lizard wolfs down the \" D ,PRSO \", crunching greedily.\" CR>"
+ },
+ {
+  "key": "gfd96",
+  "en": "The guardian seems impervious to your attack. In fact, your blows don't even seem to be landing.\n",
+  "args": [],
+  "routine": "DOOR-KEEPER-FCN",
+  "zil": "<TELL \"The guardian seems impervious to your attack. In fact, your blows don't even seem to be landing.\" CR>"
+ },
+ {
+  "key": "gfdd7",
+  "en": "The lizard comes to life and snaps at you as you reach for the handle.\n",
+  "args": [],
+  "routine": "WIZ-DOOR-FCN",
+  "zil": "<TELL \"The lizard comes to life and snaps at you as you reach for the handle.\" CR>"
+ },
+ {
+  "key": "gfe02",
+  "en": "The lizard door keeper comes awake and bites at your hand. You jerk away just in time.",
+  "args": [],
+  "routine": "WIZ-DOOR-FCN",
+  "zil": "<TELL \"The lizard door keeper comes awake and bites at your hand. You jerk away just in time.\">"
+ },
+ {
+  "key": "gfe43",
+  "en": " The guardian does get the key, though. It grins maniacally.\n",
+  "args": [],
+  "routine": "WIZ-DOOR-FCN",
+  "zil": "<TELL \" The guardian does get the key, though. It grins maniacally.\" CR>"
+ },
+ {
+  "key": "gfe75",
+  "en": " You drop the key, though.\n",
+  "args": [],
+  "routine": "WIZ-DOOR-FCN",
+  "zil": "<TELL \" You drop the key, though.\" CR>"
+ },
+ {
+  "key": "gfe90",
+  "en": "It is already!\n",
+  "args": [],
+  "routine": "WIZ-DOOR-FCN",
+  "zil": "<TELL \"It is already!\" CR>"
+ },
+ {
+  "key": "gfea2",
+  "en": "The key turns and the bolt clicks. The door is unlocked.\n",
+  "args": [],
+  "routine": "WIZ-DOOR-FCN",
+  "zil": "<TELL \"The key turns and the bolt clicks. The door is unlocked.\" CR>"
+ },
+ {
+  "key": "gfec4",
+  "en": "That won't unlock it.\n",
+  "args": [],
+  "routine": "WIZ-DOOR-FCN",
+  "zil": "<TELL \"That won't unlock it.\" CR>"
+ },
+ {
+  "key": "gfedc",
+  "en": "It is locked already.\n",
+  "args": [],
+  "routine": "WIZ-DOOR-FCN",
+  "zil": "<TELL \"It is locked already.\" CR>"
+ },
+ {
+  "key": "gfeef",
+  "en": "The door is now locked.\n",
+  "args": [],
+  "routine": "WIZ-DOOR-FCN",
+  "zil": "<TELL \"The door is now locked.\" CR>"
+ },
+ {
+  "key": "gff01",
+  "en": "That won't lock it.\n",
+  "args": [],
+  "routine": "WIZ-DOOR-FCN",
+  "zil": "<TELL \"That won't lock it.\" CR>"
+ },
+ {
+  "key": "gff28",
+  "en": "The door is locked!\n",
+  "args": [],
+  "routine": "WIZ-DOOR-FCN",
+  "zil": "<TELL \"The door is locked!\" CR>"
+ },
+ {
+  "key": "gff3b",
+  "en": "This room is cobwebby and musty, but tracks in the dust show that it has seen visitors recently. At the south end of the room is a stained and battered (but very strong-looking) door. To the north, a corridor exits.\n",
+  "args": [],
+  "routine": "GUARDIAN-ROOM-FCN",
+  "zil": "<TELL \"This room is cobwebby and musty, but tracks in the dust show that it has seen visitors recently. At the south end of the room is a stained and battered (but very strong-looking) door. To the north, a corridor exits.\" CR>"
+ },
+ {
+  "key": "gffb9",
+  "en": "The door is open.\n",
+  "args": [],
+  "routine": "GUARDIAN-ROOM-FCN",
+  "zil": "<TELL \"The door is open.\" CR>"
+ },
+ {
+  "key": "gffc7",
+  "en": "Imbedded in the door is a nasty-looking lizard head, with sharp teeth and beady eyes. ",
+  "args": [],
+  "routine": "GUARDIAN-ROOM-FCN",
+  "zil": "<TELL \"Imbedded in the door is a nasty-looking lizard head, with sharp teeth and beady eyes. \">"
+ },
+ {
+  "key": "g10000",
+  "en": "The lizard is sniffing at you.\n",
+  "args": [],
+  "routine": "GUARDIAN-ROOM-FCN",
+  "zil": "<TELL \"The lizard is sniffing at you.\" CR>"
+ },
+ {
+  "key": "g10013",
+  "en": "The eyes move to watch you approach.\n",
+  "args": [],
+  "routine": "GUARDIAN-ROOM-FCN",
+  "zil": "<TELL \"The eyes move to watch you approach.\" CR>"
+ },
+ {
+  "key": "g1002a",
+  "en": "A sleepy-looking lizard head is mounted on the door.\n",
+  "args": [],
+  "routine": "GUARDIAN-ROOM-FCN",
+  "zil": "<TELL \"A sleepy-looking lizard head is mounted on the door.\" CR>"
+ },
+ {
+  "key": "g10055",
+  "en": "You are standing in the entry hall of the Wizard's Workshop. Dark corridors lead west and south from here. The corridor to the west smells slightly of incense or candle smoke.",
+  "args": [],
+  "routine": "WORKSHOP-FCN",
+  "zil": "<TELL \"You are standing in the entry hall of the Wizard's Workshop. Dark corridors lead west and south from here. The corridor to the west smells slightly of incense or candle smoke.\">"
+ },
+ {
+  "key": "g100ba",
+  "en": " The workshop door is open.",
+  "args": [],
+  "routine": "WORKSHOP-FCN",
+  "zil": "<TELL \" The workshop door is open.\">"
+ },
+ {
+  "key": "g100d3",
+  "en": "The stuff on the bench appears to be so much junk, and you decide that it would only get in your way if you took it.\n",
+  "args": [],
+  "routine": "ARCANA-PSEUDO",
+  "zil": "<TELL \"The stuff on the bench appears to be so much junk, and you decide that it would only get in your way if you took it.\" CR>"
+ },
+ {
+  "key": "g10119",
+  "en": "As your fingers near it, you get a nasty shock (but fortunately not a fatal one).\n",
+  "args": [],
+  "routine": "TROPHY-PSEUDO",
+  "zil": "<TELL \"As your fingers near it, you get a nasty shock (but fortunately not a fatal one).\" CR>"
+ },
+ {
+  "key": "g10153",
+  "en": "The {0} is firmly attached to the bench.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "STAND-FCN",
+  "zil": "<TELL \"The \" D ,PRSO \" is firmly attached to the bench.\" CR>"
+ },
+ {
+  "key": "g1019b",
+  "en": "As you place the {0} in the {1}, a low humming noise begins, and you can feel the hairs on the back of your neck begin to stand up. The three spheres begin to vibrate, faster and faster, as the noise becomes higher and higher pitched. Three puffs of smoke, one red, one blue, one white, rise up from empty stands. The spheres are gone! But in the center of the triangle formed by the stands is now a black stand of obsidian in which rests a strange black sphere.\n",
+  "args": [
+   "o",
+   "o"
+  ],
+  "routine": "STAND-FCN",
+  "zil": "<TELL \"As you place the \" D ,PRSO \" in the \" D ,PRSI \", a low humming noise begins, and you can feel the hairs on the back of your neck begin to stand up. The three spheres begin to vibrate, faster and faster, as the noise becomes higher and higher pitched. Three puffs of smoke, one red, one blue, one white, rise up from empty stands. The spheres are gone! But in the center of the triangle formed by the stands is now a black stand of obsidian in which rests a strange black sphere.\" CR>"
+ },
+ {
+  "key": "g102ac",
+  "en": "There is a sandy floor here, and your vision seems murky and blurred. The wall you are looking at is nicely dressed stone.\n",
+  "args": [],
+  "routine": "IN-AQUARIUM-FCN",
+  "zil": "<TELL \"There is a sandy floor here, and your vision seems murky and blurred. The wall you are looking at is nicely dressed stone.\" CR>"
+ },
+ {
+  "key": "g102f6",
+  "en": "While you watch a shadow seems to pass overhead.\n",
+  "args": [],
+  "routine": "IN-AQUARIUM-FCN",
+  "zil": "<TELL \"While you watch a shadow seems to pass overhead.\" CR>"
+ },
+ {
+  "key": "g1031d",
+  "en": "The head of some horrible serpent pokes into view, its beady green eyes almost seeming to see you.\n",
+  "args": [],
+  "routine": "IN-AQUARIUM-FCN",
+  "zil": "<TELL \"The head of some horrible serpent pokes into view, its beady green eyes almost seeming to see you.\" CR>"
+ },
+ {
+  "key": "g1038a",
+  "en": "In the aquarium is a baby sea-serpent who eyes you suspiciously. His scaly body writhes about in the huge tank.\n",
+  "args": [],
+  "routine": "AQUARIUM-FCN",
+  "zil": "<TELL \"In the aquarium is a baby sea-serpent who eyes you suspiciously. His scaly body writhes about in the huge tank.\" CR>"
+ },
+ {
+  "key": "g103f6",
+  "en": "The aquarium is already broken!\n",
+  "args": [],
+  "routine": "AQUARIUM-FCN",
+  "zil": "<TELL \"The aquarium is already broken!\" CR>"
+ },
+ {
+  "key": "g10447",
+  "en": "The {0} shatters the glass wall of the aquarium, spilling out an impressive amount of salt water and wet sand. It also spills out an extremely annoyed sea serpent who bites angrily at the {1}, and then at you. He is having difficulty breathing, and he seems to hold you responsible for his current problem.",
+  "args": [
+   "o",
+   "o"
+  ],
+  "routine": "AQUARIUM-FCN",
+  "zil": "<TELL \"The \" D .OBJ \" shatters the glass wall of the aquarium, spilling out an impressive amount of salt water and wet sand. It also spills out an extremely annoyed sea serpent who bites angrily at the \" D .OBJ \", and then at you. He is having difficulty breathing, and he seems to hold you responsible for his current problem.\">"
+ },
+ {
+  "key": "g10502",
+  "en": " He manages to rend you limb from limb before he drowns in the air.\n",
+  "args": [],
+  "routine": "AQUARIUM-FCN",
+  "zil": "<TELL \" He manages to rend you limb from limb before he drowns in the air.\" CR>"
+ },
+ {
+  "key": "g10534",
+  "en": " He tries to slither across the stone floor towards you. Fortunately, he expires mere inches away from biting off your foot. A clear crystal sphere sits amid the sand and broken glass on the bottom of the aquarium.\n",
+  "args": [],
+  "routine": "AQUARIUM-FCN",
+  "zil": "<TELL \" He tries to slither across the stone floor towards you. Fortunately, he expires mere inches away from biting off your foot. A clear crystal sphere sits amid the sand and broken glass on the bottom of the aquarium.\" CR>"
+ },
+ {
+  "key": "g105ad",
+  "en": "The {0} bounces harmlessly off the glass.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "AQUARIUM-FCN",
+  "zil": "<TELL \"The \" D .OBJ \" bounces harmlessly off the glass.\" CR>"
+ },
+ {
+  "key": "g105cf",
+  "en": "The serpent only stares hungrily at you.\n",
+  "args": [],
+  "routine": "SERPENT-FCN",
+  "zil": "<TELL \"The serpent only stares hungrily at you.\" CR>"
+ },
+ {
+  "key": "g105f1",
+  "en": "He swims towards you with a powerful stroke of his flippers, dagger-like teeth dripping. Fortunately, he doesn't want to crash into the aquarium wall, and contents himself with splashing you with water.\n",
+  "args": [],
+  "routine": "SERPENT-FCN",
+  "zil": "<TELL \"He swims towards you with a powerful stroke of his flippers, dagger-like teeth dripping. Fortunately, he doesn't want to crash into the aquarium wall, and contents himself with splashing you with water.\" CR>"
+ },
+ {
+  "key": "g1066c",
+  "en": "Impossible for many reasons.\n",
+  "args": [],
+  "routine": "SERPENT-FCN",
+  "zil": "<TELL \"Impossible for many reasons.\" CR>"
+ },
+ {
+  "key": "g10695",
+  "en": "This may only be a baby sea serpent, but it's as big as a small whale.\n",
+  "args": [],
+  "routine": "DEAD-SERPENT-FCN",
+  "zil": "<TELL \"This may only be a baby sea serpent, but it's as big as a small whale.\" CR>"
+ },
+ {
+  "key": "g106c9",
+  "en": "The genie grins demonically, but says nothing.\n",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"The genie grins demonically, but says nothing.\" CR>"
+ },
+ {
+  "key": "g106f1",
+  "en": "\"My fee is not paid! I perform no tasks for free! We demons have a strong union these days.\"\n",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"\\\"My fee is not paid! I perform no tasks for free! We demons have a strong union these days.\\\"\" CR>"
+ },
+ {
+  "key": "g10745",
+  "en": "\"I will do one thing only, oh gracious master!\"\n",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"\\\"I will do one thing only, oh gracious master!\\\"\" CR>"
+ },
+ {
+  "key": "g10778",
+  "en": "The demon is gone for a moment. \"A trifle... My little finger alone was enough.\"\n",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"The demon is gone for a moment. \\\"A trifle... My little finger alone was enough.\\\"\" CR>"
+ },
+ {
+  "key": "g107c3",
+  "en": "The demon flashes away for a second. \"I have little use for such a thing, but perhaps as a doorstop...\"\n",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"The demon flashes away for a second. \\\"I have little use for such a thing, but perhaps as a doorstop...\\\"\" CR>"
+ }
+]

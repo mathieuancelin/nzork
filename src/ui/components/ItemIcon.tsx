@@ -2,6 +2,7 @@
 import { useEffect, useState, type ReactElement } from 'react'
 import type { ItemKind } from '../../engine/assist/items'
 import { itemImageId, itemManifest } from '../items'
+import { useGame } from '../store'
 
 // 12×12 glyphs: '#' full, '+' half-tone
 type GlyphName = ItemKind | 'unknown' | 'map' | 'actions'
@@ -204,7 +205,8 @@ export function Glyph({ name, className = '' }: { name: GlyphName; className?: s
 
 export function ItemIcon({ id, kind, lit }: { id: string | null; kind: ItemKind | 'unknown'; lit?: boolean }) {
   const available = useItemManifest()
-  const image = id ? itemImageId(id) : null
+  const game = useGame((s) => s.gameId)
+  const image = id ? itemImageId(id, game) : null
   const cls = `item-icon k-${kind} ${lit ? 'lit' : ''}`
   if (image && available?.has(image)) return <img className={cls} src={`${import.meta.env.BASE_URL}items/${image}.png`} alt="" />
   return (

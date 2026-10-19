@@ -1,0 +1,1154 @@
+[
+ {
+  "key": "g4e4b",
+  "en": "The hedges are shaped like various animals: dogs, serpents, dragons, and the like, and they are vaguely troubling to look at.\n",
+  "args": [],
+  "routine": "HEDGES-F",
+  "zil": "<TELL \"The hedges are shaped like various animals: dogs, serpents, dragons, and the like, and they are vaguely troubling to look at.\" CR>"
+ },
+ {
+  "key": "g4eb8",
+  "en": "The crack is fairly wide. You should be able to get into it.\n",
+  "args": [],
+  "routine": "CC-CRACK-PSEUDO",
+  "zil": "<TELL \"The crack is fairly wide. You should be able to get into it.\" CR>"
+ },
+ {
+  "key": "g4edd",
+  "en": "It's not here.\n",
+  "args": [],
+  "routine": "GLOBAL-MENHIR-F",
+  "zil": "<TELL \"It's not here.\" CR>"
+ },
+ {
+  "key": "g4ee9",
+  "en": "He's not here.\n",
+  "args": [],
+  "routine": "GLOBAL-CERBERUS-F",
+  "zil": "<TELL \"He's not here.\" CR>"
+ },
+ {
+  "key": "g4ef9",
+  "en": "It is a small crack (as advertised) with no redeeming value.\n",
+  "args": [],
+  "routine": "CRACK-PSEUDO",
+  "zil": "<TELL \"It is a small crack (as advertised) with no redeeming value.\" CR>"
+ },
+ {
+  "key": "g4f23",
+  "en": "The hole is very small. You could never enter it.\n",
+  "args": [],
+  "routine": "ALICE-HOLE",
+  "zil": "<TELL \"The hole is very small. You could never enter it.\" CR>"
+ },
+ {
+  "key": "g4f44",
+  "en": "You can't see what's beyond the hole from here.\n",
+  "args": [],
+  "routine": "ALICE-HOLE",
+  "zil": "<TELL \"You can't see what's beyond the hole from here.\" CR>"
+ },
+ {
+  "key": "g4f65",
+  "en": "It doesn't fit through the hole.\n",
+  "args": [],
+  "routine": "ALICE-HOLE",
+  "zil": "<TELL \"It doesn't fit through the hole.\" CR>"
+ },
+ {
+  "key": "g4f7b",
+  "en": "There's nothing in the hole.\n",
+  "args": [],
+  "routine": "SLOT-F",
+  "zil": "<TELL \"There's nothing in the hole.\" CR>"
+ },
+ {
+  "key": "g4f8e",
+  "en": "The oblong hole has been chipped out of the box, probably by someone wanting whatever is inside the box. The attempt was a pathetic failure, however.\n",
+  "args": [],
+  "routine": "SLOT-F",
+  "zil": "<TELL \"The oblong hole has been chipped out of the box, probably by someone wanting whatever is inside the box. The attempt was a pathetic failure, however.\" CR>"
+ },
+ {
+  "key": "g4fe9",
+  "en": "The teapot has no lid.\n",
+  "args": [],
+  "routine": "TEAPOT-F",
+  "zil": "<TELL \"The teapot has no lid.\" CR>"
+ },
+ {
+  "key": "g4ffd",
+  "en": "Unlike your efforts here, it comes out smelling like a rose.\n",
+  "args": [],
+  "routine": "ROSE-F",
+  "zil": "<TELL \"Unlike your efforts here, it comes out smelling like a rose.\" CR>"
+ },
+ {
+  "key": "g5022",
+  "en": "A rose is a rose is a rose....\n",
+  "args": [],
+  "routine": "ROSE-F",
+  "zil": "<TELL \"A rose is a rose is a rose....\" CR>"
+ },
+ {
+  "key": "g503f",
+  "en": "A footpad is a thief.\n",
+  "args": [],
+  "routine": "FOOTPAD-F",
+  "zil": "<TELL \"A footpad is a thief.\" CR>"
+ },
+ {
+  "key": "g5053",
+  "en": "It's on your person. And lucky for you, or you would become hopelessly lost.\n",
+  "args": [],
+  "routine": "COMPASS-F",
+  "zil": "<TELL \"It's on your person. And lucky for you, or you would become hopelessly lost.\" CR>"
+ },
+ {
+  "key": "g5089",
+  "en": "You can't get rid of it. It is an extension of yourself.\n",
+  "args": [],
+  "routine": "COMPASS-F",
+  "zil": "<TELL \"You can't get rid of it. It is an extension of yourself.\" CR>"
+ },
+ {
+  "key": "g50af",
+  "en": "It's one of those gizmos with a needle and a card with the eight major compass directions. Simple, but effective.\n",
+  "args": [],
+  "routine": "COMPASS-F",
+  "zil": "<TELL \"It's one of those gizmos with a needle and a card with the eight major compass directions. Simple, but effective.\" CR>"
+ },
+ {
+  "key": "g50fa",
+  "en": "It doesn't make very interesting reading - just the compass directions.\n",
+  "args": [],
+  "routine": "COMPASS-F",
+  "zil": "<TELL \"It doesn't make very interesting reading - just the compass directions.\" CR>"
+ },
+ {
+  "key": "g5125",
+  "en": "You can't do that. And don't bother to ask why.\n",
+  "args": [],
+  "routine": "COMPASS-F",
+  "zil": "<TELL \"You can't do that. And don't bother to ask why.\" CR>"
+ },
+ {
+  "key": "g57bc",
+  "en": "s",
+  "args": [],
+  "routine": "MAIN-LOOP-1",
+  "zil": "<TELL \"s\">"
+ },
+ {
+  "key": "g5abe",
+  "en": ">",
+  "args": [],
+  "routine": "PARSER",
+  "zil": "<TELL \">\">"
+ },
+ {
+  "key": "g682b",
+  "en": " ",
+  "args": [],
+  "routine": "SYNTAX-CHECK",
+  "zil": "<TELL \" \">"
+ },
+ {
+  "key": "g684c",
+  "en": "?\n",
+  "args": [],
+  "routine": "SYNTAX-CHECK",
+  "zil": "<TELL \"?\" CR>"
+ },
+ {
+  "key": "g696c",
+  "en": " ",
+  "args": [],
+  "routine": "BUFFER-PRINT",
+  "zil": "<TELL \" \">"
+ },
+ {
+  "key": "g69e6",
+  "en": " ",
+  "args": [],
+  "routine": "PREP-PRINT",
+  "zil": "<TELL \" \">"
+ },
+ {
+  "key": "g6af0",
+  "en": "(",
+  "args": [],
+  "routine": "GWIM",
+  "zil": "<TELL \"(\">"
+ },
+ {
+  "key": "g6b0a",
+  "en": " ",
+  "args": [],
+  "routine": "GWIM",
+  "zil": "<TELL \" \">"
+ },
+ {
+  "key": "g6b20",
+  "en": ")\n",
+  "args": [],
+  "routine": "GWIM",
+  "zil": "<TELL \")\" CR>"
+ },
+ {
+  "key": "g6b26",
+  "en": "{0})\n",
+  "args": [
+   "o"
+  ],
+  "routine": "GWIM",
+  "zil": "<TELL \")\" CR>"
+ },
+ {
+  "key": "g6f7e",
+  "en": ",",
+  "args": [],
+  "routine": "WHICH-PRINT",
+  "zil": "<TELL \",\">"
+ },
+ {
+  "key": "g7623",
+  "en": "ZORK II: The Wizard of Frobozz\nInfocom interactive fiction - a fantasy story\nCopyright (c) 1981, 1982, 1983, 1986 Infocom, Inc. All rights reserved.\nZORK is a registered trademark of Infocom, Inc.\nRelease ",
+  "args": [],
+  "routine": "V-VERSION",
+  "zil": "<TELL \"ZORK II: The Wizard of Frobozz\\n Infocom interactive fiction - a fantasy story\\n Copyright (c) 1981, 1982, 1983, 1986\">"
+ },
+ {
+  "key": "g786d",
+  "en": "You can't.\n",
+  "args": [],
+  "routine": "V-ATTACK",
+  "zil": "<TELL \"You can't.\" CR>"
+ },
+ {
+  "key": "g7e54",
+  "en": "The {0} seems stronger now.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-DISENCHANT",
+  "zil": "<TELL \"The \" D ,PRSO \" seems stronger now.\" CR>"
+ },
+ {
+  "key": "g7e6c",
+  "en": "The {0} no longer appears clumsy.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-DISENCHANT",
+  "zil": "<TELL \"The \" D ,PRSO \" no longer appears clumsy.\" CR>"
+ },
+ {
+  "key": "g7e86",
+  "en": "The {0} no longer appears afraid.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-DISENCHANT",
+  "zil": "<TELL \"The \" D ,PRSO \" no longer appears afraid.\" CR>"
+ },
+ {
+  "key": "g7ea0",
+  "en": "The {0} moves again.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-DISENCHANT",
+  "zil": "<TELL \"The \" D ,PRSO \" moves again.\" CR>"
+ },
+ {
+  "key": "g7eb6",
+  "en": "The {0} stops swaying.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-DISENCHANT",
+  "zil": "<TELL \"The \" D ,PRSO \" stops swaying.\" CR>"
+ },
+ {
+  "key": "g7ece",
+  "en": "The {0} appears more peaceful.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-DISENCHANT",
+  "zil": "<TELL \"The \" D ,PRSO \" appears more peaceful.\" CR>"
+ },
+ {
+  "key": "g7ee6",
+  "en": "The {0} sinks to the ground.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-DISENCHANT",
+  "zil": "<TELL \"The \" D ,PRSO \" sinks to the ground.\" CR>"
+ },
+ {
+  "key": "g7f00",
+  "en": "The sweet smell has dispersed.\n",
+  "args": [],
+  "routine": "V-DISENCHANT",
+  "zil": "<TELL \"The sweet smell has dispersed.\" CR>"
+ },
+ {
+  "key": "g7f89",
+  "en": "How can you drink that?",
+  "args": [],
+  "routine": "V-EAT",
+  "zil": "<TELL \"How can you drink that?\">"
+ },
+ {
+  "key": "g80c8",
+  "en": "You must be more specific.\n",
+  "args": [],
+  "routine": "V-ENCHANT",
+  "zil": "<TELL \"You must be more specific.\" CR>"
+ },
+ {
+  "key": "g80fc",
+  "en": "The wand stops glowing, but there is no other obvious effect.\n",
+  "args": [],
+  "routine": "V-ENCHANT",
+  "zil": "<TELL \"The wand stops glowing, but there is no other obvious effect.\" CR>"
+ },
+ {
+  "key": "g811f",
+  "en": "That might have done something, but it's hard to tell with a {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-ENCHANT",
+  "zil": "<TELL \"That might have done something, but it's hard to tell with a \" D ,PRSO \".\" CR>"
+ },
+ {
+  "key": "g814f",
+  "en": "A strong odor of chocolate permeates the room.\n",
+  "args": [],
+  "routine": "V-ENCHANT",
+  "zil": "<TELL \"A strong odor of chocolate permeates the room.\" CR>"
+ },
+ {
+  "key": "g817b",
+  "en": "The {0} begins to glow.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-ENCHANT",
+  "zil": "<TELL \"The \" D ,PRSO \" begins to glow.\" CR>"
+ },
+ {
+  "key": "g81a3",
+  "en": "Filched!\n",
+  "args": [],
+  "routine": "V-ENCHANT",
+  "zil": "<TELL \"Filched!\" CR>"
+ },
+ {
+  "key": "g81ac",
+  "en": "You can't filch the {0}!\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-ENCHANT",
+  "zil": "<TELL \"You can't filch the \" D ,PRSO \"!\" CR>"
+ },
+ {
+  "key": "g81cf",
+  "en": "The {0} floats serenely in midair.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-ENCHANT",
+  "zil": "<TELL \"The \" D ,PRSO \" floats serenely in midair.\" CR>"
+ },
+ {
+  "key": "g81fa",
+  "en": "The {0} goes up in a puff of smoke.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "V-ENCHANT",
+  "zil": "<TELL \"The \" D ,PRSO \" goes up in a puff of smoke.\" CR>"
+ },
+ {
+  "key": "g8215",
+  "en": "The wand stops glowing, but there is no other apparent effect.\n",
+  "args": [],
+  "routine": "V-ENCHANT",
+  "zil": "<TELL \"The wand stops glowing, but there is no other apparent effect.\" CR>"
+ },
+ {
+  "key": "g823d",
+  "en": "Nothing happens.\n",
+  "args": [],
+  "routine": "V-ENCHANT",
+  "zil": "<TELL \"Nothing happens.\" CR>"
+ },
+ {
+  "key": "g8568",
+  "en": "Nothing happens.\n",
+  "args": [],
+  "routine": "V-INCANT",
+  "zil": "<TELL \"Nothing happens.\" CR>"
+ },
+ {
+  "key": "g8580",
+  "en": "The wand glows very brightly for a moment.\n",
+  "args": [],
+  "routine": "V-INCANT",
+  "zil": "<TELL \"The wand glows very brightly for a moment.\" CR>"
+ },
+ {
+  "key": "g881b",
+  "en": "The {0} is open, but I can't tell what's beyond it.",
+  "args": [
+   "o"
+  ],
+  "routine": "V-LOOK-INSIDE",
+  "zil": "<TELL \"The \" D ,PRSO \" is open, but I can't tell what's beyond it.\">"
+ },
+ {
+  "key": "g883e",
+  "en": "The {0} is closed.",
+  "args": [
+   "o"
+  ],
+  "routine": "V-LOOK-INSIDE",
+  "zil": "<TELL \"The \" D ,PRSO \" is closed.\">"
+ },
+ {
+  "key": "g8ffb",
+  "en": "The {0} does not understand this.",
+  "args": [
+   "o"
+  ],
+  "routine": "V-SQUEEZE",
+  "zil": "<TELL \"The \" D ,PRSO \" does not understand this.\">"
+ },
+ {
+  "key": "g9014",
+  "en": "How singularly useless.",
+  "args": [],
+  "routine": "V-SQUEEZE",
+  "zil": "<TELL \"How singularly useless.\">"
+ },
+ {
+  "key": "g911a",
+  "en": "{0}.",
+  "args": [
+   "o"
+  ],
+  "routine": "V-SWIM",
+  "zil": "<TELL D ,PRSO \".\">"
+ },
+ {
+  "key": "g9122",
+  "en": "dungeon.",
+  "args": [],
+  "routine": "V-SWIM",
+  "zil": "<TELL \"dungeon.\">"
+ },
+ {
+  "key": "g92f5",
+  "en": "You can't go more than part way through the curtain.\n",
+  "args": [],
+  "routine": "V-THROUGH",
+  "zil": "<TELL \"You can't go more than part way through the curtain.\" CR>"
+ },
+ {
+  "key": "g97f1",
+  "en": ".",
+  "args": [],
+  "routine": "DESCRIBE-OBJECT",
+  "zil": "<TELL \".\">"
+ },
+ {
+  "key": "g9835",
+  "en": " (floating in midair)",
+  "args": [],
+  "routine": "DESCRIBE-OBJECT",
+  "zil": "<TELL \" (floating in midair)\">"
+ },
+ {
+  "key": "g991f",
+  "en": "There is a ",
+  "args": [],
+  "routine": "PRINT-CONT",
+  "zil": "<TELL \"There is a \" <PICK-ONE ,FANTASIES> \" here.\" CR>"
+ },
+ {
+  "key": "g992a",
+  "en": "{0} here.\n",
+  "args": [
+   "s"
+  ],
+  "routine": "PRINT-CONT",
+  "zil": "<TELL \"There is a \" <PICK-ONE ,FANTASIES> \" here.\" CR>"
+ },
+ {
+  "key": "g9ac3",
+  "en": ">",
+  "args": [],
+  "routine": "YES?"
+ },
+ {
+  "key": "g9b0f",
+  "en": "You can't reach that. It's floating above your head.\n",
+  "args": [],
+  "routine": "ITAKE",
+  "zil": "<TELL \"You can't reach that. It's floating above your head.\" CR>"
+ },
+ {
+  "key": "g9b2e",
+  "en": "It seems rooted to the spot.\n",
+  "args": [],
+  "routine": "ITAKE",
+  "zil": "<TELL \"It seems rooted to the spot.\" CR>"
+ },
+ {
+  "key": "g9b97",
+  "en": ".",
+  "args": [],
+  "routine": "ITAKE",
+  "zil": "<TELL \".\">"
+ },
+ {
+  "key": "g9bed",
+  "en": "When you touch the {0} it immediately disappears!\n",
+  "args": [
+   "o"
+  ],
+  "routine": "ITAKE",
+  "zil": "<TELL \"When you touch the \" D ,PRSO \" it immediately disappears!\" CR>"
+ },
+ {
+  "key": "g9cd4",
+  "en": "You can't go there in a {0}.",
+  "args": [
+   "o"
+  ],
+  "routine": "NO-GO-TELL",
+  "zil": "<TELL \"You can't go there in a \" D .WLOC \".\">"
+ },
+ {
+  "key": "g9ce7",
+  "en": "You can't go there without a vehicle.",
+  "args": [],
+  "routine": "NO-GO-TELL",
+  "zil": "<TELL \"You can't go there without a vehicle.\">"
+ },
+ {
+  "key": "g9d81",
+  "en": "The balloon lands.\n",
+  "args": [],
+  "routine": "GOTO",
+  "zil": "<TELL \"The balloon lands.\" CR>"
+ },
+ {
+  "key": "g9d92",
+  "en": "The {0} comes to a stop.\n\n",
+  "args": [
+   "o"
+  ],
+  "routine": "GOTO",
+  "zil": "<TELL \"The \" D .WLOC \" comes to a stop.\" CR CR>"
+ },
+ {
+  "key": "ga05e",
+  "en": "You are in a large circular room whose high ceiling is lost in gloom. Eight identical passages leave the room.\n",
+  "args": [],
+  "routine": "CAROUSEL-ROOM-FCN",
+  "zil": "<TELL \"You are in a large circular room whose high ceiling is lost in gloom. Eight identical passages leave the room.\" CR>"
+ },
+ {
+  "key": "ga0a3",
+  "en": "A loud whirring sound comes from all around, and you feel sort of disoriented in here.\n",
+  "args": [],
+  "routine": "CAROUSEL-ROOM-FCN",
+  "zil": "<TELL \"A loud whirring sound comes from all around, and you feel sort of disoriented in here.\" CR>"
+ },
+ {
+  "key": "ga0ed",
+  "en": "Feeling dizzy, you pick a direction at random.\n\n",
+  "args": [],
+  "routine": "CAROUSEL-ROOM-FCN",
+  "zil": "<TELL \"Feeling dizzy, you pick a direction at random.\" CR CR>"
+ },
+ {
+  "key": "ga114",
+  "en": "You're not sure which direction is which. This room is very disorienting.\n\n",
+  "args": [],
+  "routine": "CAROUSEL-ROOM-FCN",
+  "zil": "<TELL \"You're not sure which direction is which. This room is very disorienting.\" CR CR>"
+ },
+ {
+  "key": "ga167",
+  "en": "An amazingly offensive noise issues from the violin.\n",
+  "args": [],
+  "routine": "VIOLIN-FCN",
+  "zil": "<TELL \"An amazingly offensive noise issues from the violin.\" CR>"
+ },
+ {
+  "key": "ga1d8",
+  "en": "The cloth bag is inflated and ",
+  "args": [],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \"The cloth bag is inflated and \">"
+ },
+ {
+  "key": "ga1ef",
+  "en": "there is a {0} burning in the receptacle.",
+  "args": [
+   "o"
+  ],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \"there is a \" D ,BINF-FLAG \" burning in the receptacle.\">"
+ },
+ {
+  "key": "ga20c",
+  "en": "some smoke is leaking out of the closed receptacle.",
+  "args": [],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \"some smoke is leaking out of the closed receptacle.\">"
+ },
+ {
+  "key": "ga22e",
+  "en": "The cloth bag is draped over the side of the basket. Directly in the middle of the basket is a metal receptacle which is ",
+  "args": [],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \"The cloth bag is draped over the side of the basket. Directly in the middle of the basket is a metal receptacle which is \">"
+ },
+ {
+  "key": "ga277",
+  "en": "open",
+  "args": [],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \"open\">"
+ },
+ {
+  "key": "ga283",
+  "en": ". A {0} is ",
+  "args": [
+   "o"
+  ],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \". A \" D .RC \" is \" <COND (<EQUAL? ,BINF-FLAG .RC> \"burning\") (T \"nestled\")> \" inside\">"
+ },
+ {
+  "key": "ga29c",
+  "en": "{0} inside",
+  "args": [
+   "s"
+  ],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \". A \" D .RC \" is \" <COND (<EQUAL? ,BINF-FLAG .RC> \"burning\") (T \"nestled\")> \" inside\">"
+ },
+ {
+  "key": "ga2a8",
+  "en": "closed",
+  "args": [],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \"closed\">"
+ },
+ {
+  "key": "ga2ad",
+  "en": ".",
+  "args": [],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \".\">"
+ },
+ {
+  "key": "ga2b3",
+  "en": " The balloon is tied to a hook by the braided wire.\n",
+  "args": [],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \" The balloon is tied to a hook by the braided wire.\" CR>"
+ },
+ {
+  "key": "ga2d0",
+  "en": " A braided wire is dangling over the side of the basket.\n",
+  "args": [],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \" A braided wire is dangling over the side of the basket.\" CR>"
+ },
+ {
+  "key": "ga2f8",
+  "en": "There is a large and extremely heavy wicker basket here. An enormous cloth bag ",
+  "args": [],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \"There is a large and extremely heavy wicker basket here. An enormous cloth bag \">"
+ },
+ {
+  "key": "ga325",
+  "en": "attached to the basket is inflated. A metal receptacle is fastened to the center of the basket. ",
+  "args": [],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \"attached to the basket is inflated. A metal receptacle is fastened to the center of the basket. \">"
+ },
+ {
+  "key": "ga360",
+  "en": "In it is a burning {0}",
+  "args": [
+   "o"
+  ],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \"In it is a burning \" D ,BINF-FLAG>"
+ },
+ {
+  "key": "ga372",
+  "en": "Some smoke leaks out around its closed lid",
+  "args": [],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \"Some smoke leaks out around its closed lid\">"
+ },
+ {
+  "key": "ga38e",
+  "en": "is draped over the side and is firmly attached to the basket. A metal receptacle is fastened to the center of the basket",
+  "args": [],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \"is draped over the side and is firmly attached to the basket. A metal receptacle is fastened to the center of the basket\">"
+ },
+ {
+  "key": "ga3d4",
+  "en": ". A piece of wire tied to a hook holds the balloon in place.\n",
+  "args": [],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \". A piece of wire tied to a hook holds the balloon in place.\" CR>"
+ },
+ {
+  "key": "ga3f7",
+  "en": ". Dangling from the basket is a piece of braided wire.\n",
+  "args": [],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \". Dangling from the basket is a piece of braided wire.\" CR>"
+ },
+ {
+  "key": "ga42d",
+  "en": "You are tied to the ledge.\n",
+  "args": [],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \"You are tied to the ledge.\" CR>"
+ },
+ {
+  "key": "ga45c",
+  "en": "You can't control the balloon this way.\n",
+  "args": [],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \"You can't control the balloon this way.\" CR>"
+ },
+ {
+  "key": "ga47c",
+  "en": "Opening it reveals a burning {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \"Opening it reveals a burning \" D ,BINF-FLAG \".\" CR>"
+ },
+ {
+  "key": "ga4a3",
+  "en": "You don't really want to hold a burning {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \"You don't really want to hold a burning \" D ,PRSO \".\" CR>"
+ },
+ {
+  "key": "ga4cb",
+  "en": "The receptacle is already occupied.\n",
+  "args": [],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \"The receptacle is already occupied.\" CR>"
+ },
+ {
+  "key": "ga4ee",
+  "en": "It takes more than words to inflate a balloon.\n",
+  "args": [],
+  "routine": "BALLOON-FCN",
+  "zil": "<TELL \"It takes more than words to inflate a balloon.\" CR>"
+ },
+ {
+  "key": "ga52f",
+  "en": "The {0} burns inside the receptacle.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "BALLOON-BURN",
+  "zil": "<TELL \"The \" D ,PRSO \" burns inside the receptacle.\" CR>"
+ },
+ {
+  "key": "ga56e",
+  "en": "The cloth bag inflates as it fills with hot air.\n",
+  "args": [],
+  "routine": "BALLOON-BURN",
+  "zil": "<TELL \"The cloth bag inflates as it fills with hot air.\" CR>"
+ },
+ {
+  "key": "ga58f",
+  "en": "A small label drops from the bag into the basket.\n",
+  "args": [],
+  "routine": "BALLOON-BURN",
+  "zil": "<TELL \"A small label drops from the bag into the basket.\" CR>"
+ },
+ {
+  "key": "ga5cc",
+  "en": "You watch as the balloon slowly {0}\n",
+  "args": [
+   "s"
+  ],
+  "routine": "PUT-BALLOON",
+  "zil": "<TELL \"You watch as the balloon slowly \" .STR CR>"
+ },
+ {
+  "key": "ga63b",
+  "en": "You watch the balloon drift out over the rim and away on the wind.\n",
+  "args": [],
+  "routine": "RISE-AND-SHINE",
+  "zil": "<TELL \"You watch the balloon drift out over the rim and away on the wind.\" CR>"
+ },
+ {
+  "key": "ga66f",
+  "en": "The balloon ascends.\n\n",
+  "args": [],
+  "routine": "RISE-AND-SHINE",
+  "zil": "<TELL \"The balloon ascends.\" CR CR>"
+ },
+ {
+  "key": "ga69c",
+  "en": "The balloon leaves the ledge.\n\n",
+  "args": [],
+  "routine": "RISE-AND-SHINE",
+  "zil": "<TELL \"The balloon leaves the ledge.\" CR CR>"
+ },
+ {
+  "key": "ga6d6",
+  "en": "The balloon rises slowly from the ground.\n\n",
+  "args": [],
+  "routine": "RISE-AND-SHINE",
+  "zil": "<TELL \"The balloon rises slowly from the ground.\" CR CR>"
+ },
+ {
+  "key": "ga72f",
+  "en": "The balloon has landed.\n\n",
+  "args": [],
+  "routine": "DECLINE-AND-FALL",
+  "zil": "<TELL \"The balloon has landed.\" CR CR>"
+ },
+ {
+  "key": "ga757",
+  "en": "You have landed, but the balloon did not survive.\n\n",
+  "args": [],
+  "routine": "DECLINE-AND-FALL",
+  "zil": "<TELL \"You have landed, but the balloon did not survive.\" CR CR>"
+ },
+ {
+  "key": "ga78d",
+  "en": "The balloon descends.\n\n",
+  "args": [],
+  "routine": "DECLINE-AND-FALL",
+  "zil": "<TELL \"The balloon descends.\" CR CR>"
+ },
+ {
+  "key": "ga7b4",
+  "en": "The {0} is an integral part of the basket and cannot be removed.",
+  "args": [
+   "o"
+  ],
+  "routine": "BCONTENTS",
+  "zil": "<TELL \"The \" D ,PRSO \" is an integral part of the basket and cannot be removed.\">"
+ },
+ {
+  "key": "ga7de",
+  "en": " The wire might possibly be tied, though.",
+  "args": [],
+  "routine": "BCONTENTS",
+  "zil": "<TELL \" The wire might possibly be tied, though.\">"
+ },
+ {
+  "key": "ga80b",
+  "en": "The bag is enormous. The concept of opening it here is ludicrous.\n",
+  "args": [],
+  "routine": "BCONTENTS",
+  "zil": "<TELL \"The bag is enormous. The concept of opening it here is ludicrous.\" CR>"
+ },
+ {
+  "key": "ga832",
+  "en": "It doesn't appear that there's anything inside.\n",
+  "args": [],
+  "routine": "BCONTENTS",
+  "zil": "<TELL \"It doesn't appear that there's anything inside.\" CR>"
+ },
+ {
+  "key": "ga855",
+  "en": "The receptacle is ",
+  "args": [],
+  "routine": "BCONTENTS",
+  "zil": "<TELL \"The receptacle is \">"
+ },
+ {
+  "key": "ga864",
+  "en": "open.\n",
+  "args": [],
+  "routine": "BCONTENTS",
+  "zil": "<TELL \"open.\" CR>"
+ },
+ {
+  "key": "ga869",
+  "en": "closed.\n",
+  "args": [],
+  "routine": "BCONTENTS",
+  "zil": "<TELL \"closed.\" CR>"
+ },
+ {
+  "key": "ga876",
+  "en": "The {0} is part of the basket. It may be manipulated within the basket but cannot be removed.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "BCONTENTS",
+  "zil": "<TELL \"The \" D ,PRSO \" is part of the basket. It may be manipulated within the basket but cannot be removed.\" CR>"
+ },
+ {
+  "key": "ga8da",
+  "en": "The balloon is fastened to the hook.\n",
+  "args": [],
+  "routine": "WIRE-FCN",
+  "zil": "<TELL \"The balloon is fastened to the hook.\" CR>"
+ },
+ {
+  "key": "ga90b",
+  "en": "The wire falls off of the hook.\n",
+  "args": [],
+  "routine": "WIRE-FCN",
+  "zil": "<TELL \"The wire falls off of the hook.\" CR>"
+ },
+ {
+  "key": "ga91e",
+  "en": "The wire is not tied to anything.\n",
+  "args": [],
+  "routine": "WIRE-FCN",
+  "zil": "<TELL \"The wire is not tied to anything.\" CR>"
+ },
+ {
+  "key": "ga93f",
+  "en": "The {0} has now burned out, and the cloth bag starts to deflate.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "I-BURNUP",
+  "zil": "<TELL \"The \" D .OBJ \" has now burned out, and the cloth bag starts to deflate.\" CR>"
+ },
+ {
+  "key": "ga975",
+  "en": "You are in a dusty old room which is featureless, except for an exit on the north side.\n",
+  "args": [],
+  "routine": "SAFE-ROOM-FCN",
+  "zil": "<TELL \"You are in a dusty old room which is featureless, except for an exit on the north side.\" CR>"
+ },
+ {
+  "key": "ga9a7",
+  "en": "Imbedded in the far wall is a rusty box. It appears to be somewhat damaged, since an oblong hole has been chipped out of the front of it.\n",
+  "args": [],
+  "routine": "SAFE-ROOM-FCN",
+  "zil": "<TELL \"Imbedded in the far wall is a rusty box. It appears to be somewhat damaged, since an oblong hole has been chipped out of the front of it.\" CR>"
+ },
+ {
+  "key": "ga9f2",
+  "en": "On the far wall is a rusty box, whose door has been blown off.\n",
+  "args": [],
+  "routine": "SAFE-ROOM-FCN",
+  "zil": "<TELL \"On the far wall is a rusty box, whose door has been blown off.\" CR>"
+ },
+ {
+  "key": "gaa1f",
+  "en": "The box is imbedded in the wall.\n",
+  "args": [],
+  "routine": "SAFE-FCN",
+  "zil": "<TELL \"The box is imbedded in the wall.\" CR>"
+ },
+ {
+  "key": "gaa39",
+  "en": "The box has no door!\n",
+  "args": [],
+  "routine": "SAFE-FCN",
+  "zil": "<TELL \"The box has no door!\" CR>"
+ },
+ {
+  "key": "gaa46",
+  "en": "The box is rusted and will not open.\n",
+  "args": [],
+  "routine": "SAFE-FCN",
+  "zil": "<TELL \"The box is rusted and will not open.\" CR>"
+ },
+ {
+  "key": "gaa62",
+  "en": "The box has no door!\n",
+  "args": [],
+  "routine": "SAFE-FCN",
+  "zil": "<TELL \"The box has no door!\" CR>"
+ },
+ {
+  "key": "gaa6f",
+  "en": "The box isn't open!\n",
+  "args": [],
+  "routine": "SAFE-FCN",
+  "zil": "<TELL \"The box isn't open!\" CR>"
+ },
+ {
+  "key": "gaa9d",
+  "en": "The string starts to burn.\n",
+  "args": [],
+  "routine": "FUSE-FCN",
+  "zil": "<TELL \"The string starts to burn.\" CR>"
+ },
+ {
+  "key": "gab0a",
+  "en": "There is an explosion nearby.\n",
+  "args": [],
+  "routine": "I-FUSE",
+  "zil": "<TELL \"There is an explosion nearby.\" CR>"
+ },
+ {
+  "key": "gab30",
+  "en": "There is an explosion nearby.\n",
+  "args": [],
+  "routine": "I-FUSE",
+  "zil": "<TELL \"There is an explosion nearby.\" CR>"
+ },
+ {
+  "key": "gab70",
+  "en": "The string rapidly burns into nothingness.\n",
+  "args": [],
+  "routine": "I-FUSE",
+  "zil": "<TELL \"The string rapidly burns into nothingness.\" CR>"
+ },
+ {
+  "key": "gaba3",
+  "en": "You may recall that recent explosion. Probably as a result of it, you hear an ominous rumbling, as if a nearby room had collapsed.\n",
+  "args": [],
+  "routine": "I-SAFE",
+  "zil": "<TELL \"You may recall that recent explosion. Probably as a result of it, you hear an ominous rumbling, as if a nearby room had collapsed.\" CR>"
+ },
+ {
+  "key": "gac50",
+  "en": "The ledge collapses, leaving you with no place to land.\n",
+  "args": [],
+  "routine": "I-LEDGE",
+  "zil": "<TELL \"The ledge collapses, leaving you with no place to land.\" CR>"
+ },
+ {
+  "key": "gac80",
+  "en": "The ledge collapses. (That was a narrow escape!)\n",
+  "args": [],
+  "routine": "I-LEDGE",
+  "zil": "<TELL \"The ledge collapses. (That was a narrow escape!)\" CR>"
+ },
+ {
+  "key": "gacad",
+  "en": "You are on a wide ledge high in the volcano. The rim of the volcano is about 200 feet above and there is a precipitous drop to the bottom.",
+  "args": [],
+  "routine": "LEDGE-FCN",
+  "zil": "<TELL \"You are on a wide ledge high in the volcano. The rim of the volcano is about 200 feet above and there is a precipitous drop to the bottom.\">"
+ },
+ {
+  "key": "gacf2",
+  "en": " The way to the south is blocked by rubble.\n",
+  "args": [],
+  "routine": "LEDGE-FCN",
+  "zil": "<TELL \" The way to the south is blocked by rubble.\" CR>"
+ },
+ {
+  "key": "gad0b",
+  "en": " There is a small door to the south.\n",
+  "args": [],
+  "routine": "LEDGE-FCN",
+  "zil": "<TELL \" There is a small door to the south.\" CR>"
+ },
+ {
+  "key": "gad24",
+  "en": "A volcano gnome seems to walk straight out of the wall and ",
+  "args": [],
+  "routine": "I-GNOME",
+  "zil": "<TELL \"A volcano gnome seems to walk straight out of the wall and \">"
+ },
+ {
+  "key": "gad43",
+  "en": "noticing the wand, straight back in.\n",
+  "args": [],
+  "routine": "I-GNOME",
+  "zil": "<TELL \"noticing the wand, straight back in.\" CR>"
+ },
+ {
+  "key": "gad5c",
+  "en": "says \"I have a busy appointment schedule and little time to waste on trespassers, but for a small fee I'll show you the way out.\" You notice the gnome nervously glancing at his watch.\n",
+  "args": [],
+  "routine": "I-GNOME",
+  "zil": "<TELL \"says \\\"I have a busy appointment schedule and little time to waste on trespassers, but for a small fee I'll show you the way out.\\\" You notice the gnome nervously glancing at his watch.\" CR>"
+ },
+ {
+  "key": "gadfc",
+  "en": "The gnome appears increasingly nervous.\n",
+  "args": [],
+  "routine": "GNOME-FCN",
+  "zil": "<TELL \"The gnome appears increasingly nervous.\" CR>"
+ },
+ {
+  "key": "gae27",
+  "en": "\"Thank you very much for the {0}. I don't believe I've ever seen one as beautiful. Follow me,\" he says, and a door appears on the west end of the ledge. Through the door, you can see a narrow chimney sloping steeply downward. The gnome moves quickly, and disappears from sight.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "GNOME-FCN",
+  "zil": "<TELL \"\\\"Thank you very much for the \" D ,PRSO \". I don't believe I've ever seen one as beautiful. Follow me,\\\" he says, and a door appears on the west end of the ledge. Through the door, you can see a narrow chimney sloping steeply downward. The gnome moves quickly, and disappears from sight.\" CR>"
+ },
+ {
+  "key": "gaef4",
+  "en": "\"That certainly wasn't what I had in mind,\" he says, and disappears.\n",
+  "args": [],
+  "routine": "GNOME-FCN",
+  "zil": "<TELL \"\\\"That certainly wasn't what I had in mind,\\\" he says, and disappears.\" CR>"
+ },
+ {
+  "key": "gaf25",
+  "en": "\"That wasn't quite what I had in mind,\" he says, crunching the {0} in his rock-hard hands.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "GNOME-FCN",
+  "zil": "<TELL \"\\\"That wasn't quite what I had in mind,\\\" he says, crunching the \" D ,PRSO \" in his rock-hard hands.\" CR>"
+ },
+ {
+  "key": "gaf63",
+  "en": "The gnome appears increasingly nervous.\n",
+  "args": [],
+  "routine": "GNOME-FCN",
+  "zil": "<TELL \"The gnome appears increasingly nervous.\" CR>"
+ },
+ {
+  "key": "gaf96",
+  "en": "The gnome glances at his watch. \"Oops. I'm late for an appointment!\" He disappears, leaving you alone on the ledge.\n",
+  "args": [],
+  "routine": "I-NERVOUS",
+  "zil": "<TELL \"The gnome glances at his watch. \\\"Oops. I'm late for an appointment!\\\" He disappears, leaving you alone on the ledge.\" CR>"
+ },
+ {
+  "key": "gb01d",
+  "en": "The Flatheads are dead; therefore they do not respond.\n",
+  "args": [],
+  "routine": "HEAD-FCN",
+  "zil": "<TELL \"The Flatheads are dead; therefore they do not respond.\" CR>"
+ },
+ {
+  "key": "gb05d",
+  "en": "The anteroom is large and empty. Marble bas reliefs depict the stirring times and afterlife of the Flatheads (the latter a bit optimistically). The exit is to the west. A huge marble door stands to the south. The door is ",
+  "args": [],
+  "routine": "CRYPT-ANTEROOM-FCN",
+  "zil": "<TELL \"The anteroom is large and empty. Marble bas reliefs depict the stirring times and afterlife of the Flatheads (the latter a bit optimistically). The exit is to the west. A huge marble door stands to the south. \">"
+ }
+]

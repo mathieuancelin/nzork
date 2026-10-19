@@ -6,14 +6,14 @@ import { readFileSync, writeFileSync } from 'node:fs'
 import { loadZil } from '../zil/load'
 import { atomName } from '../zil/reader'
 
-const en = JSON.parse(readFileSync(new URL('../catalog/out/catalog.en.json', import.meta.url), 'utf8'))
-const scenes = JSON.parse(readFileSync(new URL('../../src/data/scenes.json', import.meta.url), 'utf8')).scenes as { id: string; rooms: string[] }[]
+const en = JSON.parse(readFileSync(new URL('../catalog/zork1/out/catalog.en.json', import.meta.url), 'utf8'))
+const scenes = JSON.parse(readFileSync(new URL('../../src/data/zork1/scenes.json', import.meta.url), 'utf8')).scenes as { id: string; rooms: string[] }[]
 const zil = loadZil()
 const strings = Object.values(en.strings as Record<string, { en: string; uses: string[] }>)
 const groups = Object.values(en.groups as Record<string, { en: string; routine: string }>)
 
 if (process.argv.includes('--items')) {
-  const items = JSON.parse(readFileSync(new URL('../../src/data/items.json', import.meta.url), 'utf8')).items as { id: string; objects: string[] }[]
+  const items = JSON.parse(readFileSync(new URL('../../src/data/zork1/items.json', import.meta.url), 'utf8')).items as { id: string; objects: string[] }[]
   const out = items.map((it) => ({
     id: it.id,
     objects: it.objects.map((name) => {

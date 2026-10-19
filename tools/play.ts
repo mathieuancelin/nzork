@@ -1,18 +1,15 @@
 // Plays a list of commands and prints the transcript with the score after each command.
-//   npx tsx tools/play.ts <commands.txt> [--fr] [--seed N] [--quiet]
+//   npx tsx tools/play.ts <commands.txt> [--game zork2] [--fr] [--seed N] [--quiet]
 import { readFileSync } from 'node:fs'
-import { Game } from '../src/engine/game'
-import { loadFrench } from '../src/engine/i18n/fr'
+import { argsWithoutGame, newGame, toolGame } from './game'
 
-const args = process.argv.slice(2)
-const file = args.find((a) => !a.startsWith('--') && !/^\d+$/.test(a))!
+const args = argsWithoutGame()
+const seedIdx = args.indexOf('--seed')
+const file = args.find((a, i) => !a.startsWith('--') && i !== seedIdx + 1)!
 const fr = args.includes('--fr')
 const quiet = args.includes('--quiet')
-const seedIdx = args.indexOf('--seed')
 const seed = seedIdx >= 0 ? Number(args[seedIdx + 1]) : 1234
-const story = new Uint8Array(readFileSync(new URL('../src/engine/story/zork1.z3', import.meta.url)))
-const french = fr ? loadFrench() : undefined
-const game = new Game({ story, lang: fr ? 'fr' : 'en', seed, catalog: french?.catalog, input: french?.input })
+const game = await newGame(toolGame(), fr ? 'fr' : 'en', seed)
 const commands = readFileSync(file, 'utf8')
   .split('\n')
   .map((l) => l.replace(/#.*/, '').trim())

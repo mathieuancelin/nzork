@@ -1,0 +1,772 @@
+[
+ {
+  "key": "g1080e",
+  "en": "\"This I do gladly, oh fool!\" cackles the demon gleefully. He stretches out an enormous hand towards the wand and taking it like a toothpick (this is a large demon), points it at himself. \"Free!\" he commands, and the demon and his wand vanish forever.\n",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"\\\"This I do gladly, oh fool!\\\" cackles the demon gleefully. He stretches out an enormous hand towards the wand and taking it like a toothpick (this is a large demon), points it at himself. \\\"Free!\\\" he commands, and the demon and his wand vanish forever.\" CR>"
+ },
+ {
+  "key": "g108b0",
+  "en": "The demon snaps his fingers, the {0} spins wildly in the air in front of him, then he and it depart.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"The demon snaps his fingers, the \" D ,PRSO \" spins wildly in the air in front of him, then he and it depart.\" CR>"
+ },
+ {
+  "key": "g108ea",
+  "en": "\"I fear that I cannot take such a thing.\"\n",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"\\\"I fear that I cannot take such a thing.\\\"\" CR>"
+ },
+ {
+  "key": "g10912",
+  "en": "\"I hear and obey!\" says the demon. He stretches out an enormous hand towards the wand. The Wizard is unsure what to do, pointing it threateningly at the demon, then at you. \"Fudge!\" he cries, but aside from a strong odor of chocolate in the air, there is no effect. The demon plucks the wand out of his hand (it's about toothpick-size to him) and gingerly lays it before you. He fades into the smoke, which disperses. The wizard runs from the room in terror.\n",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"\\\"I hear and obey!\\\" says the demon. He stretches out an enormous hand towards the wand. The Wizard is unsure what to do, pointing it threateningly at the demon, then at you. \\\"Fudge!\\\" he cries, but aside from a strong odor of chocolate in the air, there is no effect. The demon plucks the wand out of his hand (it's about toothpick-size to him) and gingerly lays it before you. He fades into the smoke, which disperses. The wizard runs from the room in terror.\" CR>"
+ },
+ {
+  "key": "g10a2f",
+  "en": "He waves his hands, and the menhir drops softly at your feet.\n",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"He waves his hands, and the menhir drops softly at your feet.\" CR>"
+ },
+ {
+  "key": "g10a60",
+  "en": "The {0} appears before you and settles to the ground.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"The \" D ,PRSO \" appears before you and settles to the ground.\" CR>"
+ },
+ {
+  "key": "g10a85",
+  "en": "\"Were it possible, this would be my fondest wish, but alas...\"\n",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"\\\"Were it possible, this would be my fondest wish, but alas...\\\"\" CR>"
+ },
+ {
+  "key": "g10ab6",
+  "en": "\"This may prove taxing, but we'll see. Perhaps I'll tame him for a pup instead.\" The demon disappears for an instant, then reappears. He looks rather gnawed and scratched. He winces. \"Too much for me. Puppy dog, indeed. You're welcome to him. Never did like dogs anyway... Any other orders, oh beneficent one?\"\n",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"\\\"This may prove taxing, but we'll see. Perhaps I'll tame him for a pup instead.\\\" The demon disappears for an instant, then reappears. He looks rather gnawed and scratched. He winces. \\\"Too much for me. Puppy dog, indeed. You're welcome to him. Never did like dogs anyway... Any other orders, oh beneficent one?\\\"\" CR>"
+ },
+ {
+  "key": "g10b7e",
+  "en": "The demon grins hideously. \"This has been my desire e'er since this charlatan bent me to his service. I perform this deed with pleasure!\" The demon forms himself back into a cloud of greasy smoke. The cloud envelops the Wizard, who waves his wand fruitlessly, mumbling various phrases which begin with \"F\". A horrible scream is heard, and the smoke begins to clear. Nothing remains of the Wizard but his wand.\n",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"The demon grins hideously. \\\"This has been my desire e'er since this charlatan bent me to his service. I perform this deed with pleasure!\\\" The demon forms himself back into a cloud of greasy smoke. The cloud envelops the Wizard, who waves his wand fruitlessly, mumbling various phrases which begin with \\\"F\\\". A horrible scream is heard, and the smoke begins to clear. Nothing remains of the Wizard but his wand.\" CR>"
+ },
+ {
+  "key": "g10c87",
+  "en": "\"I know no way to kill a {0}.\"\n",
+  "args": [
+   "o"
+  ],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"\\\"I know no way to kill a \" D ,PRSO \".\\\"\" CR>"
+ },
+ {
+  "key": "g10ca8",
+  "en": "\"I am not permitted to ",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"\\\"I am not permitted to \">"
+ },
+ {
+  "key": "g10cbb",
+  "en": "answer questions",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"answer questions\">"
+ },
+ {
+  "key": "g10ccb",
+  "en": "perform such menial tasks",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"perform such menial tasks\">"
+ },
+ {
+  "key": "g10cde",
+  "en": ". The terms of my contract are explicit on this matter, learned one. Surely you would not wish to violate my contract?\" He licks his lips with a forked tongue like a snake's. \"The penalty clauses are ... hmm ... devilish.\"\n",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \". The terms of my contract are explicit on this matter, learned one. Surely you would not wish to violate my contract?\\\" He licks his lips with a forked tongue like a snake's. \\\"The penalty clauses are ... hmm ... devilish.\\\"\" CR>"
+ },
+ {
+  "key": "g10d65",
+  "en": "\"Apologies, oh master, but even for such a one as I this is not possible.\" He seems somewhat chagrined to have to admit this.\n",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"\\\"Apologies, oh master, but even for such a one as I this is not possible.\\\" He seems somewhat chagrined to have to admit this.\" CR>"
+ },
+ {
+  "key": "g10db5",
+  "en": "The demon laughs uproariously.\n",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"The demon laughs uproariously.\" CR>"
+ },
+ {
+  "key": "g10dda",
+  "en": "The genie frowns briefly, then ",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"The genie frowns briefly, then \">"
+ },
+ {
+  "key": "g10df3",
+  "en": "looks inside",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"looks inside\">"
+ },
+ {
+  "key": "g10dfd",
+  "en": "opens",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"opens\">"
+ },
+ {
+  "key": "g10e02",
+  "en": " the box. He smiles horribly.\n",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \" the box. He smiles horribly.\" CR>"
+ },
+ {
+  "key": "g10e51",
+  "en": "\"This will do for my fee. 'Tis a paltry hoard, but as you have done me a small service by loosing me from this wizard, it will suffice.\"\n",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"\\\"This will do for my fee. 'Tis a paltry hoard, but as you have done me a small service by loosing me from this wizard, it will suffice.\\\"\" CR>"
+ },
+ {
+  "key": "g10ea0",
+  "en": "\"",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"\\\"\" <GET ,GENIE-THANKS .HOARD> \"\\\"\" CR>"
+ },
+ {
+  "key": "g10ea7",
+  "en": "{0}\"\n",
+  "args": [
+   "s"
+  ],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"\\\"\" <GET ,GENIE-THANKS .HOARD> \"\\\"\" CR>"
+ },
+ {
+  "key": "g10eb1",
+  "en": "The Wizard looks at you as if you are a madman. He tears his beard and stares at you fearfully.\n",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"The Wizard looks at you as if you are a madman. He tears his beard and stares at you fearfully.\" CR>"
+ },
+ {
+  "key": "g10ef0",
+  "en": "\"I fear that this violates my contract, oh foolish one. Thus, I am free to depart.\"\n",
+  "args": [],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"\\\"I fear that this violates my contract, oh foolish one. Thus, I am free to depart.\\\"\" CR>"
+ },
+ {
+  "key": "g10f2d",
+  "en": "The demon gladly takes the {0} and smiles balefully, revealing enormous fangs.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "GENIE-FCN",
+  "zil": "<TELL \"The demon gladly takes the \" D ,PRSO \" and smiles balefully, revealing enormous fangs.\" CR>"
+ },
+ {
+  "key": "g10f65",
+  "en": "The genie departs, his agreement fulfilled.\n",
+  "args": [],
+  "routine": "GENIE-LEAVES",
+  "zil": "<TELL \"The genie departs, his agreement fulfilled.\" CR>"
+ },
+ {
+  "key": "g10fb3",
+  "en": "You try to enter the pentagram, but are forced back by an invisible power.\n",
+  "args": [],
+  "routine": "PENTAGRAM-FCN",
+  "zil": "<TELL \"You try to enter the pentagram, but are forced back by an invisible power.\" CR>"
+ },
+ {
+  "key": "g10ff2",
+  "en": "A cold wind blows outward from the sphere. The candles flicker, and a low moan, almost inaudible, is heard. It rises in volume and pitch until it becomes a high-pitched keening. A dim shape becomes visible in the air above the sphere. The shape resolves into a large and somewhat formidable looking demon. He looks around, tests the walls of the pentagram experimentally, then sees you! \"Hmm, a new master...\" he says under his breath. \"Greetings, oh master! Wouldst desire a service, as our contract stateth? For some pittance of wealth, some trifle, I will gratify thy desires to the utmost limit of my powers, and they are not inconsiderable.\" He makes a pass with his massive arms and the walls begin to shake a little. Another pass and the shaking stops. \"A nice effect... I find it makes for a better relationship to give such a demonstration early on.\" He grins vilely.\n",
+  "args": [],
+  "routine": "PENTAGRAM-FCN",
+  "zil": "<TELL \"A cold wind blows outward from the sphere. The candles flicker, and a low moan, almost inaudible, is heard. It rises in volume and pitch until it becomes a high-pitched keening. A dim shape becomes visible in the air above the sphere. The shape resolves into a large and somewhat formidable looking demon. He looks around, tests the walls of the pentagram experimentally, then sees you! \\\"Hmm, a new master...\\\" he says under his breath. \\\"Greetings, oh master! Wouldst desire a service, as our contract stateth? For some pittance of wealth, some trifle, I will gratify thy desires to the utmost limit of my powers, and they are not inconsiderable.\\\" He makes a pass with his massive arms and the walls begin to shake a little. Another pass and the shaking stops. \\\"A nice effect... I find it makes for a better relationship to give such a demonstration early on.\\\" He grins vilely.\" CR>"
+ },
+ {
+  "key": "g11210",
+  "en": "The Wizard replies \"Foolishment!\"\n",
+  "args": [],
+  "routine": "WIZARD-FCN",
+  "zil": "<TELL \"The Wizard replies \\\"Foolishment!\\\"\" CR>"
+ },
+ {
+  "key": "g11225",
+  "en": "The Wizard considers your statement carefully. His expression indicates he regards it as fanciful.\n",
+  "args": [],
+  "routine": "WIZARD-FCN",
+  "zil": "<TELL \"The Wizard considers your statement carefully. His expression indicates he regards it as fanciful.\" CR>"
+ },
+ {
+  "key": "g11284",
+  "en": "The wizard accepts this final folly resignedly.\n",
+  "args": [],
+  "routine": "WIZARD-FCN",
+  "zil": "<TELL \"The wizard accepts this final folly resignedly.\" CR>"
+ },
+ {
+  "key": "g112a5",
+  "en": "\"Hmm...\" The Wizard mutters something, then waves his wand over the bomb. It transforms into a bouquet of flowers. Both Wizard and flowers disappear.\n",
+  "args": [],
+  "routine": "WIZARD-FCN",
+  "zil": "<TELL \"\\\"Hmm...\\\" The Wizard mutters something, then waves his wand over the bomb. It transforms into a bouquet of flowers. Both Wizard and flowers disappear.\" CR>"
+ },
+ {
+  "key": "g11304",
+  "en": "\"Thank you.\" As the Wizard places the {0} under his robe, the room becomes dark.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "WIZARD-FCN",
+  "zil": "<TELL \"\\\"Thank you.\\\" As the Wizard places the \" D ,PRSO \" under his robe, the room becomes dark.\" CR>"
+ },
+ {
+  "key": "g11336",
+  "en": "\"Thank you.\"\n",
+  "args": [],
+  "routine": "WIZARD-FCN",
+  "zil": "<TELL \"\\\"Thank you.\\\"\" CR>"
+ },
+ {
+  "key": "g1134c",
+  "en": "The Wizard seems surprised, much as you might be if a dog talked.\n",
+  "args": [],
+  "routine": "WIZARD-FCN",
+  "zil": "<TELL \"The Wizard seems surprised, much as you might be if a dog talked.\" CR>"
+ },
+ {
+  "key": "g1137b",
+  "en": "The Wizard retreats, waving his wand and chanting. He says \"Fear!\" ",
+  "args": [],
+  "routine": "WIZARD-FCN",
+  "zil": "<TELL \"The Wizard retreats, waving his wand and chanting. He says \\\"Fear!\\\" \">"
+ },
+ {
+  "key": "g113a5",
+  "en": "The Wizard tries to cast the \"Fear!\" spell, but without his wand! ",
+  "args": [],
+  "routine": "WIZARD-FCN",
+  "zil": "<TELL \"The Wizard tries to cast the \\\"Fear!\\\" spell, but without his wand! \">"
+ },
+ {
+  "key": "g113d0",
+  "en": "Nothing happens! With a terrified glance at the demon, the wizard runs past you and out of the room.\n",
+  "args": [],
+  "routine": "WIZARD-FCN",
+  "zil": "<TELL \"Nothing happens! With a terrified glance at the demon, the wizard runs past you and out of the room.\" CR>"
+ },
+ {
+  "key": "g11407",
+  "en": "You are suddenly terrified. The Wizard seems huge and terrible, looming over you. You flee, terrified. He chuckles, snaps his fingers, and disappears.\n\n",
+  "args": [],
+  "routine": "WIZARD-FCN",
+  "zil": "<TELL \"You are suddenly terrified. The Wizard seems huge and terrible, looming over you. You flee, terrified. He chuckles, snaps his fingers, and disappears.\" CR CR>"
+ },
+ {
+  "key": "g11507",
+  "en": "Suddenly the Wizard materializes in the room. He is astonished by what he sees: his servant in deep conversation with a common adventurer! He draws forth his wand, waves it frantically, and incants \"Frobizz! Frobozzle! Frobnoid!\" The demon laughs heartily. \"You no longer control the Black Crystal, hedge-wizard! Your wand is powerless! Your doom is sealed!\" The demon turns to you, expectantly.\n",
+  "args": [],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"Suddenly the Wizard materializes in the room. He is astonished by what he sees: his servant in deep conversation with a common adventurer! He draws forth his wand, waves it frantically, and incants \\\"Frobizz! Frobozzle! Frobnoid!\\\" The demon laughs heartily. \\\"You no longer control the Black Crystal, hedge-wizard! Your wand is powerless! Your doom is sealed!\\\" The demon turns to you, expectantly.\" CR>"
+ },
+ {
+  "key": "g1160e",
+  "en": "In the darkness you hear the voice of the Wizard. \"Dear me, you seem to have gotten into quite a pickle.\" He chuckles. \"Fluoresce!\" he incants. It is no longer dark.\n",
+  "args": [],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"In the darkness you hear the voice of the Wizard. \\\"Dear me, you seem to have gotten into quite a pickle.\\\" He chuckles. \\\"Fluoresce!\\\" he incants. It is no longer dark.\" CR>"
+ },
+ {
+  "key": "g1168c",
+  "en": "The Wizard vanishes.\n",
+  "args": [],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"The Wizard vanishes.\" CR>"
+ },
+ {
+  "key": "g116a6",
+  "en": "You feel a slight outrush of air as something moves nearby.\n",
+  "args": [],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"You feel a slight outrush of air as something moves nearby.\" CR>"
+ },
+ {
+  "key": "g116d0",
+  "en": "A huge and terrible wizard appears before you, as large as the largest tree! He looks down on you as you would look upon a gnat!\n",
+  "args": [],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"A huge and terrible wizard appears before you, as large as the largest tree! He looks down on you as you would look upon a gnat!\" CR>"
+ },
+ {
+  "key": "g11719",
+  "en": "The Wizard appears, floating nonchalantly in the air beside you. He grins sideways at you.\n",
+  "args": [],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"The Wizard appears, floating nonchalantly in the air beside you. He grins sideways at you.\" CR>"
+ },
+ {
+  "key": "g11754",
+  "en": "A strange little man in a long cloak appears suddenly in the room. He is wearing a high pointed hat embroidered with astrological signs. He has a long, stringy, and unkempt beard.\n",
+  "args": [],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"A strange little man in a long cloak appears suddenly in the room. He is wearing a high pointed hat embroidered with astrological signs. He has a long, stringy, and unkempt beard.\" CR>"
+ },
+ {
+  "key": "g117c8",
+  "en": "The Wizard notices that you carry the Black Crystal, and with an unseemly haste, he disappears.\n",
+  "args": [],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"The Wizard notices that you carry the Black Crystal, and with an unseemly haste, he disappears.\" CR>"
+ },
+ {
+  "key": "g117fd",
+  "en": "You feel a sudden inrush of air as though something disappeared.\n",
+  "args": [],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"You feel a sudden inrush of air as though something disappeared.\" CR>"
+ },
+ {
+  "key": "g11832",
+  "en": "He mutters something (muffled by his beard) and disappears as suddenly as he came.\n",
+  "args": [],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"He mutters something (muffled by his beard) and disappears as suddenly as he came.\" CR>"
+ },
+ {
+  "key": "g11861",
+  "en": "You hear low, confused muttering.\n",
+  "args": [],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"You hear low, confused muttering.\" CR>"
+ },
+ {
+  "key": "g1189a",
+  "en": "The Wizard draws forth his wand and waves it in your direction. It begins to glow with a faint blue glow.\n",
+  "args": [],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"The Wizard draws forth his wand and waves it in your direction. It begins to glow with a faint blue glow.\" CR>"
+ },
+ {
+  "key": "g118d7",
+  "en": "Suddenly, illuminated by the faint blue glow of a magic wand pointed in your direction, you see the Wizard!\n",
+  "args": [],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"Suddenly, illuminated by the faint blue glow of a magic wand pointed in your direction, you see the Wizard!\" CR>"
+ },
+ {
+  "key": "g11957",
+  "en": "The Wizard, in a deep and resonant voice, speaks the word \"",
+  "args": [],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"The Wizard, in a deep and resonant voice, speaks the word \\\"\" <GET ,SPELL-NAMES ,SPELL?> \"!\\\" He then vanishes, cackling gleefully.\" CR>"
+ },
+ {
+  "key": "g11980",
+  "en": "{0}!\" He then vanishes, cackling gleefully.\n",
+  "args": [
+   "s"
+  ],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"The Wizard, in a deep and resonant voice, speaks the word \\\"\" <GET ,SPELL-NAMES ,SPELL?> \"!\\\" He then vanishes, cackling gleefully.\" CR>"
+ },
+ {
+  "key": "g119a3",
+  "en": "The Wizard, almost inaudibly, whispers a word beginning with \"F,\" and then disappears, chuckling nastily.\n",
+  "args": [],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"The Wizard, almost inaudibly, whispers a word beginning with \\\"F,\\\" and then disappears, chuckling nastily.\" CR>"
+ },
+ {
+  "key": "g119fc",
+  "en": "You suddenly fall headlong out of the {0} as though someone had flipped it over.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"You suddenly fall headlong out of the \" D .WLOC \" as though someone had flipped it over.\" CR>"
+ },
+ {
+  "key": "g11a5c",
+  "en": " You rise majestically out of the {0}, coming to a stop about five feet above it and to one side.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \" You rise majestically out of the \" D .WLOC \", coming to a stop about five feet above it and to one side.\" CR>"
+ },
+ {
+  "key": "g11a97",
+  "en": "Slowly, you and all your belongings rise into the air, stopping after about five feet.\n",
+  "args": [],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"Slowly, you and all your belongings rise into the air, stopping after about five feet.\" CR>"
+ },
+ {
+  "key": "g11ad3",
+  "en": "In fact, you feel so weak that you drop the {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"In fact, you feel so weak that you drop the \" D .F \".\" CR>"
+ },
+ {
+  "key": "g11afe",
+  "en": "You cower in the corner of the {0}, hoping the wizard won't see you.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"You cower in the corner of the \" D .WLOC \", hoping the wizard won't see you.\" CR>"
+ },
+ {
+  "key": "g11b3f",
+  "en": "Ooops! You dropped the {0}.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"Ooops! You dropped the \" D .F \".\" CR>"
+ },
+ {
+  "key": "g11b66",
+  "en": "Something you are carrying has disappeared!\n",
+  "args": [],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"Something you are carrying has disappeared!\" CR>"
+ },
+ {
+  "key": "g11b85",
+  "en": "The Wizard mumbles something under his breath, and just before you reach him, he vanishes.\n",
+  "args": [],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"The Wizard mumbles something under his breath, and just before you reach him, he vanishes.\" CR>"
+ },
+ {
+  "key": "g11bc0",
+  "en": "There is a loud crackling noise. Blue smoke rises from out of the Wizard's sleeve. He sighs and disappears.\n",
+  "args": [],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"There is a loud crackling noise. Blue smoke rises from out of the Wizard's sleeve. He sighs and disappears.\" CR>"
+ },
+ {
+  "key": "g11c00",
+  "en": "The Wizard incants \"",
+  "args": [],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"The Wizard incants \\\"\" <RANDOM-ELEMENT ,SPELL-NAMES> \"!\\\" but nothing happens. He shakes the wand. Nothing happens. With a slightly embarrassed glance in your direction, he vanishes.\" CR>"
+ },
+ {
+  "key": "g11c11",
+  "en": "{0}!\" but nothing happens. He shakes the wand. Nothing happens. With a slightly embarrassed glance in your direction, he vanishes.\n",
+  "args": [
+   "s"
+  ],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"The Wizard incants \\\"\" <RANDOM-ELEMENT ,SPELL-NAMES> \"!\\\" but nothing happens. He shakes the wand. Nothing happens. With a slightly embarrassed glance in your direction, he vanishes.\" CR>"
+ },
+ {
+  "key": "g11c61",
+  "en": "The Wizard seems about to say something, but thinks better of it, and peers at you from under his bushy eyebrows.\n",
+  "args": [],
+  "routine": "I-WIZARD",
+  "zil": "<TELL \"The Wizard seems about to say something, but thinks better of it, and peers at you from under his bushy eyebrows.\" CR>"
+ },
+ {
+  "key": "g11d04",
+  "en": "The demon smashes the case into smithereens. Everything in it smashes as well.\n",
+  "args": [],
+  "routine": "WIZARD-CASE-FCN",
+  "zil": "<TELL \"The demon smashes the case into smithereens. Everything in it smashes as well.\" CR>"
+ },
+ {
+  "key": "g11d45",
+  "en": "The contents of the case are arrayed at your feet.\n",
+  "args": [],
+  "routine": "WIZARD-CASE-FCN",
+  "zil": "<TELL \"The contents of the case are arrayed at your feet.\" CR>"
+ },
+ {
+  "key": "g11d6d",
+  "en": "The case is protected by a fearful spell. You cannot touch it in any way.\n",
+  "args": [],
+  "routine": "WIZARD-CASE-FCN",
+  "zil": "<TELL \"The case is protected by a fearful spell. You cannot touch it in any way.\" CR>"
+ },
+ {
+  "key": "g11da8",
+  "en": "The Wizard snatches it away.\n",
+  "args": [],
+  "routine": "WAND-FCN",
+  "zil": "<TELL \"The Wizard snatches it away.\" CR>"
+ },
+ {
+  "key": "g11dcb",
+  "en": "There is no grue in sight, but a hissing sound issues forth from the darkness.\n",
+  "args": [],
+  "routine": "WAND-FCN",
+  "zil": "<TELL \"There is no grue in sight, but a hissing sound issues forth from the darkness.\" CR>"
+ },
+ {
+  "key": "g11e07",
+  "en": "You don't have the wand!\n",
+  "args": [],
+  "routine": "WAND-FCN",
+  "zil": "<TELL \"You don't have the wand!\" CR>"
+ },
+ {
+  "key": "g11e2c",
+  "en": "A lot you know about magic! A magic wand takes a while to recharge after use! You might cause it to short-circuit!\n",
+  "args": [],
+  "routine": "WAND-FCN",
+  "zil": "<TELL \"A lot you know about magic! A magic wand takes a while to recharge after use! You might cause it to short-circuit!\" CR>"
+ },
+ {
+  "key": "g11e87",
+  "en": "At what?\n",
+  "args": [],
+  "routine": "WAND-FCN",
+  "zil": "<TELL \"At what?\" CR>"
+ },
+ {
+  "key": "g11ea1",
+  "en": "Touch what?\n",
+  "args": [],
+  "routine": "WAND-FCN",
+  "zil": "<TELL \"Touch what?\" CR>"
+ },
+ {
+  "key": "g11eb0",
+  "en": "The wand grows warm and seems to vibrate.\n",
+  "args": [],
+  "routine": "WAND-FCN",
+  "zil": "<TELL \"The wand grows warm and seems to vibrate.\" CR>"
+ },
+ {
+  "key": "g11ed9",
+  "en": "Fortunately a safety interlock prevents the fatal feedback loop that this would cause.\n",
+  "args": [],
+  "routine": "WAND-FCN",
+  "zil": "<TELL \"Fortunately a safety interlock prevents the fatal feedback loop that this would cause.\" CR>"
+ },
+ {
+  "key": "g11f12",
+  "en": "The wand grows warm, the {0} seems to glow dimly with magical essences, and you feel suffused with power.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "WAND-FCN",
+  "zil": "<TELL \"The wand grows warm, the \" D ,WAND-ON \" seems to glow dimly with magical essences, and you feel suffused with power.\" CR>"
+ },
+ {
+  "key": "g11f6a",
+  "en": "The {0} stops glowing and the power within you weakens.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "I-WAND",
+  "zil": "<TELL \"The \" D ,WAND-ON \" stops glowing and the power within you weakens.\" CR>"
+ },
+ {
+  "key": "g11fa3",
+  "en": "This is where the Wizard of Frobozz lives. The room is ",
+  "args": [],
+  "routine": "WIZARD-QUARTERS-FCN",
+  "zil": "<TELL \"This is where the Wizard of Frobozz lives. The room is \">"
+ },
+ {
+  "key": "g1200c",
+  "en": "You'll have to find a ford or a bridge.\n",
+  "args": [],
+  "routine": "STREAM-FCN",
+  "zil": "<TELL \"You'll have to find a ford or a bridge.\" CR>"
+ },
+ {
+  "key": "g12035",
+  "en": "For a change, you look before leaping. You realize you would never survive.\n",
+  "args": [],
+  "routine": "CHASM-FCN",
+  "zil": "<TELL \"For a change, you look before leaping. You realize you would never survive.\" CR>"
+ },
+ {
+  "key": "g12068",
+  "en": "You'll have to find a bridge.\n",
+  "args": [],
+  "routine": "CHASM-FCN",
+  "zil": "<TELL \"You'll have to find a bridge.\" CR>"
+ },
+ {
+  "key": "g120c5",
+  "en": "The only ones you can reach are too large to successfully break off.\n",
+  "args": [],
+  "routine": "STALA-PSEUDO",
+  "zil": "<TELL \"The only ones you can reach are too large to successfully break off.\" CR>"
+ },
+ {
+  "key": "g120f3",
+  "en": "Some of the moss rubs off on you, but it stops glowing very quickly once plucked from its environment.\n",
+  "args": [],
+  "routine": "MOSS-FCN",
+  "zil": "<TELL \"Some of the moss rubs off on you, but it stops glowing very quickly once plucked from its environment.\" CR>"
+ },
+ {
+  "key": "g12137",
+  "en": "You prick your finger trying to take a rose, and jump back annoyed. The rose almost seemed to move its thorns into your path.\n",
+  "args": [],
+  "routine": "ROSE-BUSH-FCN",
+  "zil": "<TELL \"You prick your finger trying to take a rose, and jump back annoyed. The rose almost seemed to move its thorns into your path.\" CR>"
+ },
+ {
+  "key": "g1219e",
+  "en": "You are dead.",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"You are dead.\">"
+ },
+ {
+  "key": "g121ae",
+  "en": "You are drunk.",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"You are drunk.\">"
+ },
+ {
+  "key": "g121be",
+  "en": "You seem unusually weak right now.",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"You seem unusually weak right now.\">"
+ },
+ {
+  "key": "g121dc",
+  "en": "You seem somewhat light.",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"You seem somewhat light.\">"
+ },
+ {
+  "key": "g121f4",
+  "en": "You are frozen stiff.",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"You are frozen stiff.\">"
+ },
+ {
+  "key": "g12228",
+  "en": "once.",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"once.\">"
+ },
+ {
+  "key": "g12234",
+  "en": "twice.",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"twice.\">"
+ },
+ {
+  "key": "g1223e",
+  "en": "an awful lot.",
+  "args": [],
+  "routine": "V-DIAGNOSE",
+  "zil": "<TELL \"an awful lot.\">"
+ },
+ {
+  "key": "g1224f",
+  "en": "Your score ",
+  "args": [],
+  "routine": "V-SCORE",
+  "zil": "<TELL \"Your score \">"
+ },
+ {
+  "key": "g12259",
+  "en": "would be ",
+  "args": [],
+  "routine": "V-SCORE",
+  "zil": "<TELL \"would be \">"
+ },
+ {
+  "key": "g12261",
+  "en": "is ",
+  "args": [],
+  "routine": "V-SCORE",
+  "zil": "<TELL \"is \">"
+ },
+ {
+  "key": "g12264",
+  "en": "{0} (total of 400 points), in {1}",
+  "args": [
+   "n",
+   "n"
+  ],
+  "routine": "V-SCORE",
+  "zil": "<TELL \" (total of 400 points), in \">"
+ },
+ {
+  "key": "g12294",
+  "en": "\nThis score gives you the rank of ",
+  "args": [],
+  "routine": "V-SCORE",
+  "zil": "<TELL \"This score gives you the rank of \">"
+ },
+ {
+  "key": "g122c1",
+  "en": ", but somehow you don't feel done",
+  "args": [],
+  "routine": "V-SCORE",
+  "zil": "<TELL \", but somehow you don't feel done\">"
+ },
+ {
+  "key": "g12350",
+  "en": ".\n",
+  "args": [],
+  "routine": "V-SCORE",
+  "zil": "<TELL \".\" CR>"
+ },
+ {
+  "key": "g12365",
+  "en": " \n    ****  The {0} has died  **** \n\n",
+  "args": [
+   "o"
+  ],
+  "routine": "JIGS-UP",
+  "zil": "<TELL \" \\n    ****  The \" D ,WINNER \" has died  **** \\n \\n\">"
+ },
+ {
+  "key": "g12519",
+  "en": "You'll need to get in the bucket to reach it.\n",
+  "args": [],
+  "routine": "BUCKET-CONT",
+  "zil": "<TELL \"You'll need to get in the bucket to reach it.\" CR>"
+ }
+]

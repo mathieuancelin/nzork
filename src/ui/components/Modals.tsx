@@ -2,9 +2,14 @@
 import { useEffect, useRef, useState } from 'react'
 import { useGame, type Mode } from '../store'
 import { t } from '../i18n'
-import { AUTOSAVE, SLOT_COUNT, exportAll, importAll } from '../saves'
+import { AUTOSAVE, SLOT_COUNT, exportAll, importAll, readSlot } from '../saves'
 import { ItemIcon } from './ItemIcon'
 import { narrator } from '../sound/narrator'
+import { GAMES, GAME_IDS, type GameId } from '../../engine/games'
+import { hasGuide } from '../../engine/assist/guide'
+import { hasHints } from '../../engine/assist/hints'
+import { hasDocuments } from '../../engine/assist/documents'
+import type { Lang } from '../../engine/game'
 
 function Modal({ title, children }: { title: string; children: React.ReactNode }) {
   const close = useGame((s) => s.openModal)
@@ -39,7 +44,75 @@ export function Modals() {
   if (modal === 'welcome') return <WelcomeModal />
   if (modal === 'hints') return <HintsModal />
   if (modal === 'documents') return <DocumentsModal />
+  if (modal === 'games') return <GamesModal />
   return null
+}
+
+const ROMAN = ['I', 'II', 'III']
+
+/** "Zork II : Le Sorcier de Frobozz" */
+const fullTitle = (id: GameId, lang: Lang) => `${GAMES[id].title}${lang === 'fr' ? ' : ' : ': '}${GAMES[id].subtitle[lang]}`
+
+/** The three games, each with the state of its game in progress. */
+function GameList({ onPicked }: { onPicked?: () => void }) {
+  const lang = useGame((s) => s.settings.lang)
+  const current = useGame((s) => s.gameId)
+  const switching = useGame((s) => s.switching)
+  const switchGame = useGame((s) => s.switchGame)
+  return (
+    <div className="game-list" role="list">
+      {GAME_IDS.map((id) => {
+        const g = GAMES[id]
+        const auto = id === current ? null : readSlot(AUTOSAVE, id)
+        return (
+          <button
+            key={id}
+            role="listitem"
+            className={`option game ${id === current ? 'selected' : ''}`}
+            aria-current={id === current}
+            disabled={switching}
+            onClick={() => switchGame(id).then(() => onPicked?.())}
+          >
+            <span className="game-number" aria-hidden="true">
+              {ROMAN[g.number - 1]}
+            </span>
+            <span>
+              {fullTitle(id, lang)} ({g.year})
+              <small>{id === current ? t(lang, 'playing') : auto ? t(lang, 'inProgress', auto.save.status.room, auto.save.status.score) : t(lang, 'notStarted')}</small>
+              {!g.french && lang === 'fr' && <small>{t(lang, 'englishOnly')}</small>}
+            </span>
+          </button>
+        )
+      })}
+    </div>
+  )
+}
+
+function GamesModal() {
+  const lang = useGame((s) => s.settings.lang)
+  const close = useGame((s) => s.openModal)
+  return (
+    <Modal title={t(lang, 'chooseGame')}>
+      <p className="hint-intro">{t(lang, 'chooseGameIntro')}</p>
+      <GameList onPicked={() => close(null)} />
+    </Modal>
+  )
+}
+
+/** The opening words of the welcome screen, for each game. */
+const WELCOME: Record<GameId, Record<Lang, string>> = {
+  zork1: {
+    fr: 'Vous vous tenez devant une maison blanche, à l’orée du Grand Empire Souterrain. Trésors, énigmes et un grue qui rôde dans le noir vous attendent. Comment voulez-vous jouer ?',
+    en: 'You stand before a white house, at the edge of the Great Underground Empire. Treasures, puzzles and a lurking grue await. How do you want to play?',
+  },
+  zork2: {
+    fr: 'Au fond d’un tumulus, une lanterne étrangement familière vous attend. Plus loin règne le Sorcier de Frobozz, avec ses sortilèges qui commencent tous par F. Comment voulez-vous jouer ?',
+    en: 'Deep inside a barrow, a strangely familiar lantern awaits. Beyond lies the realm of the Wizard of Frobozz and his spells that all begin with F. How do you want to play?',
+  },
+  zork3: {
+    fr: 'Au pied d’un escalier sans fin, le Maître du Donjon vous attend pour l’ultime épreuve. Comment voulez-vous jouer ?',
+    en: 'At the foot of an endless stair, the Dungeon Master awaits you for the final test. How do you want to play?',
+  },
 }
 
 /** The "feelies": the documents of the game, each on its own kind of paper. */
@@ -146,6 +219,7 @@ function WelcomeModal() {
   const settings = useGame((s) => s.settings)
   const set = useGame((s) => s.setSetting)
   const close = useGame((s) => s.openModal)
+  const gameId = useGame((s) => s.gameId)
   const lang = settings.lang
   const modes: [Mode, string, string][] = [
     ['classic', t(lang, 'modeClassic'), t(lang, 'modeClassicHint')],
@@ -154,11 +228,10 @@ function WelcomeModal() {
   ]
   return (
     <Modal title={lang === 'fr' ? 'Bienvenue dans Zork' : 'Welcome to Zork'}>
-      <p>
-        {lang === 'fr'
-          ? 'Vous vous tenez devant une maison blanche, à l’orée du Grand Empire Souterrain. Trésors, énigmes et un grue qui rôde dans le noir vous attendent. Comment voulez-vous jouer ?'
-          : 'You stand before a white house, at the edge of the Great Underground Empire. Treasures, puzzles and a lurking grue await. How do you want to play?'}
-      </p>
+      <p>{WELCOME[gameId][lang]}</p>
+      <h3>{t(lang, 'games')}</h3>
+      <GameList />
+      <h3>{t(lang, 'mode')}</h3>
       {modes.map(([m, label, hint]) => (
         <button
           key={m}
@@ -186,6 +259,7 @@ function MenuModal() {
   const lang = useGame((s) => s.settings.lang)
   const open = useGame((s) => s.openModal)
   const newGame = useGame((s) => s.newGame)
+  const gameId = useGame((s) => s.gameId)
   return (
     <Modal title={t(lang, 'menu')}>
       <div className="menu-list">
@@ -200,6 +274,9 @@ function MenuModal() {
         >
           {t(lang, 'newGame')}
         </button>
+        <button className="btn" onClick={() => open('games')}>
+          {t(lang, 'chooseGame')}
+        </button>
         <button className="btn" onClick={() => open('saves', 'save')}>
           {t(lang, 'save')}
         </button>
@@ -209,12 +286,16 @@ function MenuModal() {
         <button className="btn" onClick={() => open('settings')}>
           {t(lang, 'settings')}
         </button>
-        <button className="btn" onClick={() => open('hints')}>
-          {t(lang, 'hints')}
-        </button>
-        <button className="btn" onClick={() => open('documents')}>
-          {t(lang, 'documents')}
-        </button>
+        {hasHints(gameId) && (
+          <button className="btn" onClick={() => open('hints')}>
+            {t(lang, 'hints')}
+          </button>
+        )}
+        {hasDocuments(gameId) && (
+          <button className="btn" onClick={() => open('documents')}>
+            {t(lang, 'documents')}
+          </button>
+        )}
         <button className="btn" onClick={() => open('help')}>
           {t(lang, 'help')}
         </button>
@@ -351,6 +432,7 @@ function SavesModal() {
 function SettingsModal() {
   const settings = useGame((s) => s.settings)
   const set = useGame((s) => s.setSetting)
+  const gameId = useGame((s) => s.gameId)
   const lang = settings.lang
   const modes: [Mode, string, string][] = [
     ['classic', t(lang, 'modeClassic'), t(lang, 'modeClassicHint')],
@@ -369,6 +451,7 @@ function SettingsModal() {
           </span>
         </label>
       ))}
+      {settings.mode === 'hypernoob' && !hasGuide(gameId) && <p className="hint-intro">{t(lang, 'hyperOnlyZork1')}</p>}
       <h3>{t(lang, 'settings')}</h3>
       <div className="setting">
         <span>{t(lang, 'language')}</span>
@@ -485,7 +568,6 @@ function HelpModal() {
   )
 }
 
-const ZORK_SOURCES = 'https://github.com/historicalsource/zork1'
 const THIS_PROJECT = 'https://github.com/mathieuancelin/zork-in-your-browser'
 
 function Link({ href }: { href: string }) {
@@ -496,19 +578,25 @@ function Link({ href }: { href: string }) {
   )
 }
 
+/** "A, B, C and D" */
+const andList = (names: string, lang: Lang) => names.replace(/, ([^,]+)$/, lang === 'fr' ? ' et $1' : ' and $1')
+
 function AboutModal() {
   const lang = useGame((s) => s.settings.lang)
+  const gameId = useGame((s) => s.gameId)
+  const g = GAMES[gameId]
+  const release = g.release.split(' / ')[0]
   if (lang === 'en')
     return (
       <Modal title={t(lang, 'about')}>
         <p>
-          <b>Zork I: The Great Underground Empire</b> (Infocom, 1980), written by <b>Marc Blank, Dave Lebling, Bruce Daniels and Tim Anderson</b>.
+          <b>{fullTitle(gameId, lang)}</b> (Infocom, {g.year}), written by <b>{andList(g.authors, lang)}</b>.
         </p>
         <p>
-          Its source code and compiled game were released by Microsoft under the MIT license in 2025: <Link href={ZORK_SOURCES} />
+          Its source code and compiled game were released by Microsoft under the MIT license in 2025: <Link href={g.sources} />
         </p>
         <p>
-          This version runs the original game (<code>zork1.z3</code>, Release 119) in a Z-machine written in TypeScript, with a French translation, help modes, illustrations and a soundtrack. An unofficial fan
+          This version runs the original game (<code>{g.file}</code>, {release}) in a Z-machine written in TypeScript, with {g.french ? 'a French translation, ' : ''}help modes, illustrations and a soundtrack. An unofficial fan
           tribute, not affiliated with Infocom, Activision or Microsoft.
         </p>
         <p className="credit">
@@ -519,13 +607,13 @@ function AboutModal() {
   return (
     <Modal title={t(lang, 'about')}>
       <p>
-        <b>Zork I : Le Grand Empire Souterrain</b> (Infocom, 1980), écrit par <b>Marc Blank, Dave Lebling, Bruce Daniels et Tim Anderson</b>.
+        <b>{fullTitle(gameId, lang)}</b> (Infocom, {g.year}), écrit par <b>{andList(g.authors, lang)}</b>.
       </p>
       <p>
-        Son code source et le jeu compilé ont été publiés par Microsoft sous licence MIT en 2025 : <Link href={ZORK_SOURCES} />
+        Son code source et le jeu compilé ont été publiés par Microsoft sous licence MIT en 2025 : <Link href={g.sources} />
       </p>
       <p>
-        Cette version fait tourner le jeu original (fichier <code>zork1.z3</code>, Release 119) dans une machine Z écrite en TypeScript, avec une traduction française, des modes d'aide, des
+        Cette version fait tourner le jeu original (fichier <code>{g.file}</code>, {release}) dans une machine Z écrite en TypeScript, avec {g.french ? 'une traduction française, ' : ''}des modes d'aide, des
         illustrations et une ambiance sonore. Un hommage de fan, non officiel, sans lien avec Infocom, Activision ou Microsoft.
       </p>
       <p className="credit">

@@ -1,6 +1,6 @@
 // The soundtrack follows the game: one ambience per place, darkness, villains, cues.
 import { describe, it, expect } from 'vitest'
-import scenes from '../src/data/scenes.json'
+import scenes from '../src/data/zork1/scenes.json'
 import { AMBIENCES, OVERLAYS, PLACES } from '../src/ui/sound/presets'
 import { moodFor, turnCue, type Mood } from '../src/ui/sound/mood'
 import { Game } from '../src/engine/game'
@@ -24,7 +24,7 @@ describe('soundtrack data', () => {
 
 describe('mood of the game', () => {
   it('follows the places, the villains and the end of the full game', () => {
-    const run = playWalkthrough(new URL('./walkthrough/en.txt', import.meta.url), 'en', 1234)
+    const run = playWalkthrough(new URL('./walkthrough/zork1/en.txt', import.meta.url), 'en', 1234)
     const game = new Game({ story: loadStory(), lang: 'en', seed: 1234 })
     game.start()
     const seen = new Map<string, Mood>()

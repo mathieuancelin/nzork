@@ -1,0 +1,855 @@
+[
+ {
+  "key": "gd09e",
+  "en": "You are inside a huge crystalline sphere filled with thin ",
+  "args": [],
+  "routine": "DEAD-PALANTIR",
+  "zil": "<TELL \"You are inside a huge crystalline sphere filled with thin \" <COND (<EQUAL? ,HERE ,DEAD-PALANTIR-1> <SET P ,PALANTIR-1> \"red\") (<EQUAL? ,HERE ,DEAD-PALANTIR-2> <SET P ,PALANTIR-2> \"blue\") (T <SET P ,PALANTIR-3> \"white\")> \" mist. The mist becomes \" <COND (<EQUAL? ,HERE ,DEAD-PALANTIR-1> \"blue\") (<EQUAL? ,HERE ,DEAD-PALANTIR-2> \"white\") (T \"black\")> \" to the west.\" CR>"
+ },
+ {
+  "key": "gd0e0",
+  "en": "{0} mist. The mist becomes ",
+  "args": [
+   "s"
+  ],
+  "routine": "DEAD-PALANTIR",
+  "zil": "<TELL \"You are inside a huge crystalline sphere filled with thin \" <COND (<EQUAL? ,HERE ,DEAD-PALANTIR-1> <SET P ,PALANTIR-1> \"red\") (<EQUAL? ,HERE ,DEAD-PALANTIR-2> <SET P ,PALANTIR-2> \"blue\") (T <SET P ,PALANTIR-3> \"white\")> \" mist. The mist becomes \" <COND (<EQUAL? ,HERE ,DEAD-PALANTIR-1> \"blue\") (<EQUAL? ,HERE ,DEAD-PALANTIR-2> \"white\") (T \"black\")> \" to the west.\" CR>"
+ },
+ {
+  "key": "gd10d",
+  "en": "{0} to the west.\nYou strain to look out through the mist... \n",
+  "args": [
+   "s"
+  ],
+  "routine": "DEAD-PALANTIR",
+  "zil": "<TELL \"You are inside a huge crystalline sphere filled with thin \" <COND (<EQUAL? ,HERE ,DEAD-PALANTIR-1> <SET P ,PALANTIR-1> \"red\") (<EQUAL? ,HERE ,DEAD-PALANTIR-2> <SET P ,PALANTIR-2> \"blue\") (T <SET P ,PALANTIR-3> \"white\")> \" mist. The mist becomes \" <COND (<EQUAL? ,HERE ,DEAD-PALANTIR-1> \"blue\") (<EQUAL? ,HERE ,DEAD-PALANTIR-2> \"white\") (T \"black\")> \" to the west.\" CR>"
+ },
+ {
+  "key": "gd141",
+  "en": "You see a small room with a sign on the wall, but it is too blurry to read.\n",
+  "args": [],
+  "routine": "DEAD-PALANTIR",
+  "zil": "<TELL \"You see a small room with a sign on the wall, but it is too blurry to read.\" CR>"
+ },
+ {
+  "key": "gd16c",
+  "en": "You look out into a large, dreary room with a great door and a huge table. There is an odd glow to the mist.\n",
+  "args": [],
+  "routine": "DEAD-PALANTIR",
+  "zil": "<TELL \"You look out into a large, dreary room with a great door and a huge table. There is an odd glow to the mist.\" CR>"
+ },
+ {
+  "key": "gd1a7",
+  "en": "A strange blurry room is barely visible.",
+  "args": [],
+  "routine": "DEAD-PALANTIR",
+  "zil": "<TELL \"A strange blurry room is barely visible.\">"
+ },
+ {
+  "key": "gd1ce",
+  "en": " An odd sinuous shadow crosses the mist as you look.",
+  "args": [],
+  "routine": "DEAD-PALANTIR",
+  "zil": "<TELL \" An odd sinuous shadow crosses the mist as you look.\">"
+ },
+ {
+  "key": "gd1fb",
+  "en": "You follow a corridor of black mist into a black walled spherical room.",
+  "args": [],
+  "routine": "DEAD-PALANTIR",
+  "zil": "<TELL \"You follow a corridor of black mist into a black walled spherical room.\">"
+ },
+ {
+  "key": "gd22d",
+  "en": " The room is empty. A huge face looks down on you from outside and laughs sardonically. It doesn't look like you're getting out of this predicament!\n",
+  "args": [],
+  "routine": "DEAD-PALANTIR",
+  "zil": "<TELL \" The room is empty. A huge face looks down on you from outside and laughs sardonically. It doesn't look like you're getting out of this predicament!\" CR>"
+ },
+ {
+  "key": "gd280",
+  "en": " As you enter, a huge and horrible face materializes out of the mist.\n\n\"What brings you here to trouble my imprisonment, wanderer?\" it asks. Hearing no immediate answer, it studies you for a moment.\n",
+  "args": [],
+  "routine": "DEAD-PALANTIR",
+  "zil": "<TELL \" As you enter, a huge and horrible face materializes out of the mist.\\n \\n \\\"What brings you here to trouble my imprisonment, wanderer?\\\" it asks. Hearing no immediate answer, it studies you for a moment.\" CR>"
+ },
+ {
+  "key": "gd303",
+  "en": "\"Not you again! This is getting tedious. You'll obviously never be much help to me. Better luck next time, oh wondrous adventurer.\" The face disappears and everything goes black.\n",
+  "args": [],
+  "routine": "DEAD-PALANTIR",
+  "zil": "<TELL \"\\\"Not you again! This is getting tedious. You'll obviously never be much help to me. Better luck next time, oh wondrous adventurer.\\\" The face disappears and everything goes black.\" CR>"
+ },
+ {
+  "key": "gd37b",
+  "en": "\"Perhaps you may be of some use to me in gaining my freedom from this place. Return to your foolish quest! I shall not destroy you this time. Mayhap you will repay this favor in kind someday.\" The face vanishes and the mist begins to swirl. When it clears you are returned to the world of life.\n",
+  "args": [],
+  "routine": "DEAD-PALANTIR",
+  "zil": "<TELL \"\\\"Perhaps you may be of some use to me in gaining my freedom from this place. Return to your foolish quest! I shall not destroy you this time. Mayhap you will repay this favor in kind someday.\\\" The face vanishes and the mist begins to swirl. When it clears you are returned to the world of life.\" CR>"
+ },
+ {
+  "key": "gd444",
+  "en": "The sphere is unbreakable.\n",
+  "args": [],
+  "routine": "GLOBAL-PALANTIRS",
+  "zil": "<TELL \"The sphere is unbreakable.\" CR>"
+ },
+ {
+  "key": "gd462",
+  "en": "As you peer into the sphere, a strange vision takes shape...a huge and fearful face with yellow eyes. The face peers out at you expectantly.\n",
+  "args": [],
+  "routine": "PALANTIR-LOOK",
+  "zil": "<TELL \"As you peer into the sphere, a strange vision takes shape...a huge and fearful face with yellow eyes. The face peers out at you expectantly.\" CR>"
+ },
+ {
+  "key": "gd4cf",
+  "en": "You see only darkness.\n",
+  "args": [],
+  "routine": "PALANTIR-LOOK",
+  "zil": "<TELL \"You see only darkness.\" CR>"
+ },
+ {
+  "key": "gd4f5",
+  "en": "As you peer through the mist, a strangely colored vision of a huge room takes shape...\n\n",
+  "args": [],
+  "routine": "PALANTIR-LOOK",
+  "zil": "<TELL \"As you peer through the mist, a strangely colored vision of a huge room takes shape...\" CR CR>"
+ },
+ {
+  "key": "gd52b",
+  "en": "As you peer into the sphere, a strange vision takes shape of a distant room, which can be described clearly....\n\n",
+  "args": [],
+  "routine": "PALANTIR-LOOK",
+  "zil": "<TELL \"As you peer into the sphere, a strange vision takes shape of a distant room, which can be described clearly....\" CR CR>"
+ },
+ {
+  "key": "gd57b",
+  "en": "An astonished adventurer is staring into a crystal sphere.\n",
+  "args": [],
+  "routine": "PALANTIR-LOOK",
+  "zil": "<TELL \"An astonished adventurer is staring into a crystal sphere.\" CR>"
+ },
+ {
+  "key": "gd5a3",
+  "en": "The vision fades, revealing only an ordinary crystal sphere.\n",
+  "args": [],
+  "routine": "PALANTIR-LOOK",
+  "zil": "<TELL \"The vision fades, revealing only an ordinary crystal sphere.\" CR>"
+ },
+ {
+  "key": "gd5c4",
+  "en": "You see only darkness.\n",
+  "args": [],
+  "routine": "PALANTIR-LOOK",
+  "zil": "<TELL \"You see only darkness.\" CR>"
+ },
+ {
+  "key": "gd5e0",
+  "en": "The door is open, dummy.\n",
+  "args": [],
+  "routine": "PWINDOW-FCN",
+  "zil": "<TELL \"The door is open, dummy.\" CR>"
+ },
+ {
+  "key": "gd605",
+  "en": "Perhaps if you were diced....\n",
+  "args": [],
+  "routine": "PWINDOW-FCN",
+  "zil": "<TELL \"Perhaps if you were diced....\" CR>"
+ },
+ {
+  "key": "gd626",
+  "en": "The place mat is under the door.\n",
+  "args": [],
+  "routine": "PDOOR-FCN",
+  "zil": "<TELL \"The place mat is under the door.\" CR>"
+ },
+ {
+  "key": "gd651",
+  "en": "The keyhole is blocked.\n",
+  "args": [],
+  "routine": "PDOOR-FCN",
+  "zil": "<TELL \"The keyhole is blocked.\" CR>"
+ },
+ {
+  "key": "gd660",
+  "en": "The door is now unlocked.\n",
+  "args": [],
+  "routine": "PDOOR-FCN",
+  "zil": "<TELL \"The door is now unlocked.\" CR>"
+ },
+ {
+  "key": "gd679",
+  "en": "It doesn't fit the lock.\n",
+  "args": [],
+  "routine": "PDOOR-FCN",
+  "zil": "<TELL \"It doesn't fit the lock.\" CR>"
+ },
+ {
+  "key": "gd684",
+  "en": "It can't be unlocked with that.\n",
+  "args": [],
+  "routine": "PDOOR-FCN",
+  "zil": "<TELL \"It can't be unlocked with that.\" CR>"
+ },
+ {
+  "key": "gd69b",
+  "en": "The door is locked.\n",
+  "args": [],
+  "routine": "PDOOR-FCN",
+  "zil": "<TELL \"The door is locked.\" CR>"
+ },
+ {
+  "key": "gd6af",
+  "en": "It doesn't fit the lock.\n",
+  "args": [],
+  "routine": "PDOOR-FCN",
+  "zil": "<TELL \"It doesn't fit the lock.\" CR>"
+ },
+ {
+  "key": "gd6ba",
+  "en": "It can't be locked with that.\n",
+  "args": [],
+  "routine": "PDOOR-FCN",
+  "zil": "<TELL \"It can't be locked with that.\" CR>"
+ },
+ {
+  "key": "gd6d2",
+  "en": "The paper is very small and vanishes under the door.\n",
+  "args": [],
+  "routine": "PDOOR-FCN",
+  "zil": "<TELL \"The paper is very small and vanishes under the door.\" CR>"
+ },
+ {
+  "key": "gd703",
+  "en": "The newspaper crumples up and won't go under the door.\n",
+  "args": [],
+  "routine": "PDOOR-FCN",
+  "zil": "<TELL \"The newspaper crumples up and won't go under the door.\" CR>"
+ },
+ {
+  "key": "gd73a",
+  "en": "The door is locked.\n",
+  "args": [],
+  "routine": "PDOOR-FCN",
+  "zil": "<TELL \"The door is locked.\" CR>"
+ },
+ {
+  "key": "gd76a",
+  "en": "The place mat fits easily under the door.\n",
+  "args": [],
+  "routine": "PLACE-MAT-FCN",
+  "zil": "<TELL \"The place mat fits easily under the door.\" CR>"
+ },
+ {
+  "key": "gd795",
+  "en": "There's not enough room under this door.\n",
+  "args": [],
+  "routine": "PLACE-MAT-FCN",
+  "zil": "<TELL \"There's not enough room under this door.\" CR>"
+ },
+ {
+  "key": "gd7b8",
+  "en": "As the place mat is moved, a {0} falls from it and onto the floor.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "PLACE-MAT-FCN",
+  "zil": "<TELL \"As the place mat is moved, a \" D ,MATOBJ \" falls from it and onto the floor.\" CR>"
+ },
+ {
+  "key": "gd7f7",
+  "en": "A whispering voice replies: \"Water makes the bucket go.\" Unfortunately, wishing makes the coin go....\n",
+  "args": [],
+  "routine": "WISH-FCN",
+  "zil": "<TELL \"A whispering voice replies: \\\"Water makes the bucket go.\\\" Unfortunately, wishing makes the coin go....\" CR>"
+ },
+ {
+  "key": "gd844",
+  "en": "No one is listening.\n",
+  "args": [],
+  "routine": "WISH-FCN",
+  "zil": "<TELL \"No one is listening.\" CR>"
+ },
+ {
+  "key": "gd860",
+  "en": "The {0} is now sitting at the bottom of the well.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "WELL-FCN",
+  "zil": "<TELL \"The \" D ,PRSO \" is now sitting at the bottom of the well.\" CR>"
+ },
+ {
+  "key": "gd88a",
+  "en": "You can't climb the well.\n",
+  "args": [],
+  "routine": "WELL-FCN",
+  "zil": "<TELL \"You can't climb the well.\" CR>"
+ },
+ {
+  "key": "gd8b1",
+  "en": "I'm afraid you have run out of matches.\n",
+  "args": [],
+  "routine": "MATCH-FCN",
+  "zil": "<TELL \"I'm afraid you have run out of matches.\" CR>"
+ },
+ {
+  "key": "gd8fc",
+  "en": "The match is out.\n",
+  "args": [],
+  "routine": "MATCH-FCN",
+  "zil": "<TELL \"The match is out.\" CR>"
+ },
+ {
+  "key": "gd91b",
+  "en": "You have ",
+  "args": [],
+  "routine": "MATCH-FCN",
+  "zil": "<TELL \"You have \">"
+ },
+ {
+  "key": "gd924",
+  "en": "{0} match",
+  "args": [
+   "n"
+  ],
+  "routine": "MATCH-FCN",
+  "zil": "<TELL N .CNT \" match\">"
+ },
+ {
+  "key": "gd930",
+  "en": "es.",
+  "args": [],
+  "routine": "MATCH-FCN",
+  "zil": "<TELL \"es.\">"
+ },
+ {
+  "key": "gd938",
+  "en": ".",
+  "args": [],
+  "routine": "MATCH-FCN",
+  "zil": "<TELL \".\">"
+ },
+ {
+  "key": "gd945",
+  "en": "A match is burning.",
+  "args": [],
+  "routine": "MATCH-FCN",
+  "zil": "<TELL \"A match is burning.\">"
+ },
+ {
+  "key": "gd957",
+  "en": "No match is burning.",
+  "args": [],
+  "routine": "MATCH-FCN",
+  "zil": "<TELL \"No match is burning.\">"
+ },
+ {
+  "key": "gda17",
+  "en": "The lamp has burned out.",
+  "args": [],
+  "routine": "LANTERN",
+  "zil": "<TELL \"The lamp has burned out.\">"
+ },
+ {
+  "key": "gda2d",
+  "en": "The lamp is on.",
+  "args": [],
+  "routine": "LANTERN",
+  "zil": "<TELL \"The lamp is on.\">"
+ },
+ {
+  "key": "gda3b",
+  "en": "The lamp is turned off.",
+  "args": [],
+  "routine": "LANTERN",
+  "zil": "<TELL \"The lamp is turned off.\">"
+ },
+ {
+  "key": "gdac2",
+  "en": "This is a room which is bare on all sides. There is an exit down in the northwest corner of the room. To the east is a great ",
+  "args": [],
+  "routine": "RIDDLE-ROOM-FCN",
+  "zil": "<TELL \"This is a room which is bare on all sides. There is an exit down in the northwest corner of the room. To the east is a great \">"
+ },
+ {
+  "key": "gdb05",
+  "en": "open",
+  "args": [],
+  "routine": "RIDDLE-ROOM-FCN",
+  "zil": "<TELL \"open\">"
+ },
+ {
+  "key": "gdb0d",
+  "en": "closed",
+  "args": [],
+  "routine": "RIDDLE-ROOM-FCN",
+  "zil": "<TELL \"closed\">"
+ },
+ {
+  "key": "gdb12",
+  "en": " door made of stone. Above the stone, the following words are written: \"No man shall pass this door without solving this riddle:\n\n  What is tall as a house,\n    round as a cup,\n      and all the king's horses\n        can't draw it up?\"\n",
+  "args": [],
+  "routine": "RIDDLE-ROOM-FCN",
+  "zil": "<TELL \" door made of stone. Above the stone, the following words are written: \\\"No man shall pass this door without solving this riddle:\\n \\n   What is tall as a house,\\n     round as a cup,\\n       and all the king's horses\\n         can't draw it up?\\\"\\n \">"
+ },
+ {
+  "key": "gdbcd",
+  "en": "There is a deafening clap of thunder and the stone door quietly swings open to reveal a passageway beyond.\n",
+  "args": [],
+  "routine": "RIDDLE-ROOM-FCN",
+  "zil": "<TELL \"There is a deafening clap of thunder and the stone door quietly swings open to reveal a passageway beyond.\" CR>"
+ },
+ {
+  "key": "gdc19",
+  "en": "A hollow laugh seems to come from the stone door.\n",
+  "args": [],
+  "routine": "RIDDLE-ROOM-FCN",
+  "zil": "<TELL \"A hollow laugh seems to come from the stone door.\" CR>"
+ },
+ {
+  "key": "gdc47",
+  "en": "It is open!\n",
+  "args": [],
+  "routine": "RIDDLE-DOOR-FCN",
+  "zil": "<TELL \"It is open!\" CR>"
+ },
+ {
+  "key": "gdc50",
+  "en": "The door can only be opened by answering the riddle.\n",
+  "args": [],
+  "routine": "RIDDLE-DOOR-FCN",
+  "zil": "<TELL \"The door can only be opened by answering the riddle.\" CR>"
+ },
+ {
+  "key": "gdc77",
+  "en": "Not a chance. The door weighs many tons.\n",
+  "args": [],
+  "routine": "RIDDLE-DOOR-FCN",
+  "zil": "<TELL \"Not a chance. The door weighs many tons.\" CR>"
+ },
+ {
+  "key": "gdc92",
+  "en": "It is closed!\n",
+  "args": [],
+  "routine": "RIDDLE-DOOR-FCN",
+  "zil": "<TELL \"It is closed!\" CR>"
+ },
+ {
+  "key": "gdca1",
+  "en": "Use the \"Look\" command.\n",
+  "args": [],
+  "routine": "RIDDLE-PSEUDO",
+  "zil": "<TELL \"Use the \\\"Look\\\" command.\" CR>"
+ },
+ {
+  "key": "gdcfd",
+  "en": "You just tripped on an invisible cord, or perhaps your own feet. But this must be your lucky day, as you managed to regain your balance before what could have been a fatal fall.\n",
+  "args": [],
+  "routine": "MAGIC-ACTOR",
+  "zil": "<TELL \"You just tripped on an invisible cord, or perhaps your own feet. But this must be your lucky day, as you managed to regain your balance before what could have been a fatal fall.\" CR>"
+ },
+ {
+  "key": "gdd68",
+  "en": "You get in the {0} but you fall out again, almost as though an invisible hand had tipped it over.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "MAGIC-ACTOR",
+  "zil": "<TELL \"You get in the \" D ,PRSO \" but you fall out again, almost as though an invisible hand had tipped it over.\" CR>"
+ },
+ {
+  "key": "gddaf",
+  "en": "I suppose you plan to do that by flapping your arms?\n",
+  "args": [],
+  "routine": "MAGIC-ACTOR",
+  "zil": "<TELL \"I suppose you plan to do that by flapping your arms?\" CR>"
+ },
+ {
+  "key": "gddd5",
+  "en": "The {0} drops to the ground.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "MAGIC-ACTOR",
+  "zil": "<TELL \"The \" D ,PRSO \" drops to the ground.\" CR>"
+ },
+ {
+  "key": "gddf1",
+  "en": "You can't reach that! It's on the ground.\n",
+  "args": [],
+  "routine": "MAGIC-ACTOR",
+  "zil": "<TELL \"You can't reach that! It's on the ground.\" CR>"
+ },
+ {
+  "key": "gde15",
+  "en": "You are frozen solid. You might as well wait it out, because you can't do anything else in this state.\n",
+  "args": [],
+  "routine": "MAGIC-ACTOR",
+  "zil": "<TELL \"You are frozen solid. You might as well wait it out, because you can't do anything else in this state.\" CR>"
+ },
+ {
+  "key": "gde56",
+  "en": "An invisible fence of magical force bars your way.\n",
+  "args": [],
+  "routine": "MAGIC-ACTOR",
+  "zil": "<TELL \"An invisible fence of magical force bars your way.\" CR>"
+ },
+ {
+  "key": "gdea0",
+  "en": "Oops, you seem a little unsteady... I'm not sure you got where you intended going.\n\n",
+  "args": [],
+  "routine": "MAGIC-ACTOR",
+  "zil": "<TELL \"Oops, you seem a little unsteady... I'm not sure you got where you intended going.\" CR CR>"
+ },
+ {
+  "key": "gdeea",
+  "en": "All at once, you are overcome by fear! There's is a {0} in here! Maybe it's after you! ",
+  "args": [
+   "o"
+  ],
+  "routine": "MAGIC-ACTOR",
+  "zil": "<TELL \"All at once, you are overcome by fear! There's is a \" D .V \" in here! Maybe it's after you! \">"
+ },
+ {
+  "key": "gdf2b",
+  "en": "You huddle in the corner, terrified.\n",
+  "args": [],
+  "routine": "MAGIC-ACTOR",
+  "zil": "<TELL \"You huddle in the corner, terrified.\" CR>"
+ },
+ {
+  "key": "gdf42",
+  "en": "You run from the room screaming in terror!\n\n",
+  "args": [],
+  "routine": "MAGIC-ACTOR",
+  "zil": "<TELL \"You run from the room screaming in terror!\" CR CR>"
+ },
+ {
+  "key": "gdfe2",
+  "en": "You are maddened by an overwhelming ferocity, and attack the {0} instead.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "FORCE-FIGHT",
+  "zil": "<TELL \"You are maddened by an overwhelming ferocity, and attack the \" D .V \" instead.\" CR>"
+ },
+ {
+  "key": "ge01d",
+  "en": "On the floor is a very small diamond shaped window which is ",
+  "args": [],
+  "routine": "DWINDOW-DESC",
+  "zil": "<TELL \"On the floor is a very small diamond shaped window which is \">"
+ },
+ {
+  "key": "ge03d",
+  "en": "glowing serenely",
+  "args": [],
+  "routine": "DWINDOW-DESC",
+  "zil": "<TELL \"glowing serenely\">"
+ },
+ {
+  "key": "ge053",
+  "en": ".\n",
+  "args": [],
+  "routine": "DWINDOW-DESC",
+  "zil": "<TELL \".\" CR>"
+ },
+ {
+  "key": "ge05b",
+  "en": "The window is an integral part of the floor.\n",
+  "args": [],
+  "routine": "DWINDOW-FCN",
+  "zil": "<TELL \"The window is an integral part of the floor.\" CR>"
+ },
+ {
+  "key": "ge07a",
+  "en": "The window is diamond-hard and cannot be broken.\n",
+  "args": [],
+  "routine": "DWINDOW-FCN",
+  "zil": "<TELL \"The window is diamond-hard and cannot be broken.\" CR>"
+ },
+ {
+  "key": "ge0b0",
+  "en": "This is a room with oddly angled walls and passages in all directions. The walls are made of some glassy substance.\n",
+  "args": [],
+  "routine": "DIAMOND-MOTION",
+  "zil": "<TELL \"This is a room with oddly angled walls and passages in all directions. The walls are made of some glassy substance.\" CR>"
+ },
+ {
+  "key": "ge0f1",
+  "en": "A marble stairway leads upward.",
+  "args": [],
+  "routine": "DIAMOND-MOTION",
+  "zil": "<TELL \"A marble stairway leads upward.\">"
+ },
+ {
+  "key": "ge10a",
+  "en": " The floor has swung down at the end of the stairway to reveal a secret passage leading down into unrelieved darkness.",
+  "args": [],
+  "routine": "DIAMOND-MOTION",
+  "zil": "<TELL \" The floor has swung down at the end of the stairway to reveal a secret passage leading down into unrelieved darkness.\">"
+ },
+ {
+  "key": "ge196",
+  "en": "You hear a strange rusty squeal echoing in the distance.\n",
+  "args": [],
+  "routine": "DIAMOND-MOTION",
+  "zil": "<TELL \"You hear a strange rusty squeal echoing in the distance.\" CR>"
+ },
+ {
+  "key": "ge20d",
+  "en": "There is no way to go in that direction.\n",
+  "args": [],
+  "routine": "DIAMOND-MOTION",
+  "zil": "<TELL \"There is no way to go in that direction.\" CR>"
+ },
+ {
+  "key": "ge264",
+  "en": "As you thrash about in the maze, the mirthful voice of the Wizard taunts you: \"Fool! You'll never get past ",
+  "args": [],
+  "routine": "DIAMOND-LOSS",
+  "zil": "<TELL \"As you thrash about in the maze, the mirthful voice of the Wizard taunts you: \\\"Fool! You'll never get past \">"
+ },
+ {
+  "key": "ge2a9",
+  "en": "{0} base at this rate!\"\n",
+  "args": [
+   "s"
+  ],
+  "routine": "DIAMOND-LOSS",
+  "zil": "<TELL \" base at this rate!\\\"\" CR>"
+ },
+ {
+  "key": "ge2d8",
+  "en": "The dog looks puzzled.\n",
+  "args": [],
+  "routine": "CERBERUS-FCN",
+  "zil": "<TELL \"The dog looks puzzled.\" CR>"
+ },
+ {
+  "key": "ge2fc",
+  "en": "\"Arf! Arf! Arf!\"\n",
+  "args": [],
+  "routine": "CERBERUS-FCN",
+  "zil": "<TELL \"\\\"Arf! Arf! Arf!\\\"\" CR>"
+ },
+ {
+  "key": "ge30d",
+  "en": "\"Grrrr!\"\n",
+  "args": [],
+  "routine": "CERBERUS-FCN",
+  "zil": "<TELL \"\\\"Grrrr!\\\"\" CR>"
+ },
+ {
+  "key": "ge324",
+  "en": "With a quiet bark of disappointment, the creature expires. Its six eyes look at you reproachfully. As it dies, it collapses into a small pile of dust which blows away into nothing.\n",
+  "args": [],
+  "routine": "CERBERUS-FCN",
+  "zil": "<TELL \"With a quiet bark of disappointment, the creature expires. Its six eyes look at you reproachfully. As it dies, it collapses into a small pile of dust which blows away into nothing.\" CR>"
+ },
+ {
+  "key": "ge3a1",
+  "en": "The maddened dog-thing snaps viciously at you.\n",
+  "args": [],
+  "routine": "CERBERUS-FCN",
+  "zil": "<TELL \"The maddened dog-thing snaps viciously at you.\" CR>"
+ },
+ {
+  "key": "ge3de",
+  "en": "The creature whines happily, then the center head licks your face (which is roughly like experiencing a sandpaper washcloth). The other two heads look about, as though the monster felt a sudden need to find a pair of slippers somewhere. Its huge tail wags enthusiastically, knocking small rocks around and almost blowing you over from the breeze it creates.\n",
+  "args": [],
+  "routine": "CERBERUS-FCN",
+  "zil": "<TELL \"The creature whines happily, then the center head licks your face (which is roughly like experiencing a sandpaper washcloth). The other two heads look about, as though the monster felt a sudden need to find a pair of slippers somewhere. Its huge tail wags enthusiastically, knocking small rocks around and almost blowing you over from the breeze it creates.\" CR>"
+ },
+ {
+  "key": "ge4b9",
+  "en": "The huge dog rises about an inch off the ground, for a moment.\n",
+  "args": [],
+  "routine": "CERBERUS-FCN",
+  "zil": "<TELL \"The huge dog rises about an inch off the ground, for a moment.\" CR>"
+ },
+ {
+  "key": "ge4f3",
+  "en": "What an effect! He now has the strength of just one elephant, rather than ten!\n",
+  "args": [],
+  "routine": "CERBERUS-FCN",
+  "zil": "<TELL \"What an effect! He now has the strength of just one elephant, rather than ten!\" CR>"
+ },
+ {
+  "key": "ge529",
+  "en": "The three-headed dog snaps at you viciously!\n",
+  "args": [],
+  "routine": "CERBERUS-FCN",
+  "zil": "<TELL \"The three-headed dog snaps at you viciously!\" CR>"
+ },
+ {
+  "key": "ge54d",
+  "en": "The dog is now insanely happy, slobbering all over the place and whining with uncontained doggish joy.\n",
+  "args": [],
+  "routine": "CERBERUS-FCN",
+  "zil": "<TELL \"The dog is now insanely happy, slobbering all over the place and whining with uncontained doggish joy.\" CR>"
+ },
+ {
+  "key": "ge5b3",
+  "en": "This is a big glacier; you'll need a lot of heat.\n",
+  "args": [],
+  "routine": "GLACIER-FCN",
+  "zil": "<TELL \"This is a big glacier; you'll need a lot of heat.\" CR>"
+ },
+ {
+  "key": "ge5dd",
+  "en": "This is a large hall of ancient lava, since worn smooth by the movement of a glacier. A large passage exits to the east and an upward lava tube is at the top of a jumble of fallen rocks.\n",
+  "args": [],
+  "routine": "GLACIER-ROOM-FCN",
+  "zil": "<TELL \"This is a large hall of ancient lava, since worn smooth by the movement of a glacier. A large passage exits to the east and an upward lava tube is at the top of a jumble of fallen rocks.\" CR>"
+ },
+ {
+  "key": "ge64c",
+  "en": "A damp and scorched passage leads west. It is still partly full of steam.\n",
+  "args": [],
+  "routine": "GLACIER-ROOM-FCN",
+  "zil": "<TELL \"A damp and scorched passage leads west. It is still partly full of steam.\" CR>"
+ },
+ {
+  "key": "ge693",
+  "en": "The dragon looks amused. He speaks in a voice so deep you feel it rather than hear it, but the tongue is unknown to you. You find yourself almost hypnotized.\n",
+  "args": [],
+  "routine": "DRAGON-FCN",
+  "zil": "<TELL \"The dragon looks amused. He speaks in a voice so deep you feel it rather than hear it, but the tongue is unknown to you. You find yourself almost hypnotized.\" CR>"
+ },
+ {
+  "key": "ge6f6",
+  "en": "He turns and looks back at you, his cat's eyes yellow in the gloom. You start to feel weak, and quickly turn away.\n",
+  "args": [],
+  "routine": "DRAGON-FCN",
+  "zil": "<TELL \"He turns and looks back at you, his cat's eyes yellow in the gloom. You start to feel weak, and quickly turn away.\" CR>"
+ },
+ {
+  "key": "ge755",
+  "en": "With your bare hands? I doubt the dragon even noticed.\n",
+  "args": [],
+  "routine": "DRAGON-FCN",
+  "zil": "<TELL \"With your bare hands? I doubt the dragon even noticed.\" CR>"
+ },
+ {
+  "key": "ge79d",
+  "en": "The dragon is pleased by your gift, excuses himself for a moment, and returns without it.\n",
+  "args": [],
+  "routine": "DRAGON-FCN",
+  "zil": "<TELL \"The dragon is pleased by your gift, excuses himself for a moment, and returns without it.\" CR>"
+ },
+ {
+  "key": "ge7e0",
+  "en": "The dragon snakes his long red tongue around the bomb and politely swallows it. A few moments later he belches and smoke curls out of his nostrils.\n",
+  "args": [],
+  "routine": "DRAGON-FCN",
+  "zil": "<TELL \"The dragon snakes his long red tongue around the bomb and politely swallows it. A few moments later he belches and smoke curls out of his nostrils.\" CR>"
+ },
+ {
+  "key": "ge833",
+  "en": "The dragon refuses your gift.\n",
+  "args": [],
+  "routine": "DRAGON-FCN",
+  "zil": "<TELL \"The dragon refuses your gift.\" CR>"
+ },
+ {
+  "key": "ge852",
+  "en": "The dragon puts out a claw, grins (all of his sword-sharp teeth glinting in the light), and blocks your way.\n",
+  "args": [],
+  "routine": "DRAGON-FCN",
+  "zil": "<TELL \"The dragon puts out a claw, grins (all of his sword-sharp teeth glinting in the light), and blocks your way.\" CR>"
+ },
+ {
+  "key": "ge8fe",
+  "en": "The dragon tires of this game. With an almost bored yawn, he opens his mouth and ",
+  "args": [],
+  "routine": "I-DRAGON",
+  "zil": "<TELL \"The dragon tires of this game. With an almost bored yawn, he opens his mouth and \">"
+ },
+ {
+  "key": "ge92d",
+  "en": "blasts you with a great gout of fire, but it washes over you harmlessly.\n",
+  "args": [],
+  "routine": "I-DRAGON",
+  "zil": "<TELL \"blasts you with a great gout of fire, but it washes over you harmlessly.\" CR>"
+ },
+ {
+  "key": "ge976",
+  "en": "The dragon doubles back and charges into the room, maddened by your attempt to sneak past him. His eyes glow with a white heat of anger.\n",
+  "args": [],
+  "routine": "I-DRAGON",
+  "zil": "<TELL \"The dragon doubles back and charges into the room, maddened by your attempt to sneak past him. His eyes glow with a white heat of anger.\" CR>"
+ },
+ {
+  "key": "ge9ed",
+  "en": "The dragon looks bored.\n",
+  "args": [],
+  "routine": "I-DRAGON",
+  "zil": "<TELL \"The dragon looks bored.\" CR>"
+ },
+ {
+  "key": "gea05",
+  "en": "The dragon is no longer around. He must have become bored with you.\n",
+  "args": [],
+  "routine": "I-DRAGON",
+  "zil": "<TELL \"The dragon is no longer around. He must have become bored with you.\" CR>"
+ },
+ {
+  "key": "gea33",
+  "en": "The dragon seems to have lost interest in you.",
+  "args": [],
+  "routine": "I-DRAGON",
+  "zil": "<TELL \"The dragon seems to have lost interest in you.\">"
+ },
+ {
+  "key": "gea52",
+  "en": " He wanders off.\n",
+  "args": [],
+  "routine": "I-DRAGON",
+  "zil": "<TELL \" He wanders off.\" CR>"
+ },
+ {
+  "key": "gea96",
+  "en": "The dragon will follow no further.\n",
+  "args": [],
+  "routine": "I-DRAGON",
+  "zil": "<TELL \"The dragon will follow no further.\" CR>"
+ },
+ {
+  "key": "geab4",
+  "en": "\nAs the dragon enters, he sees his reflection on the icy surface of the glacier at its western end. He becomes enraged: There is another dragon here, behind that glass, he thinks! Dragons are smart, but sometimes naive, and this one has never seen ice before. He rears up to his full height to challenge this intruder into his territory. He roars a challenge! The intruder responds! The dragon takes a deep breath, and out of his mouth pours a massive gout of flame. It washes over the ice, which melts rapidly, sending out torrents of water and a huge cloud of steam! You manage to clamber up to a small shelf, but the dragon is terrified! A huge splash goes down his throat! There is a muffled explosion and the dragon, a puzzled expression on his face, dies. He is carried away by the water.\n\nWhen the flood recedes you climb gingerly down. While no trace of the dragon can be found, the melting of the ice has revealed a passage leading west.\n",
+  "args": [],
+  "routine": "I-DRAGON",
+  "zil": "<TELL CR \"As the dragon enters, he sees his reflection on the icy surface of the glacier at its western end. He becomes enraged: There is another dragon here, behind that glass, he thinks! Dragons are smart, but sometimes naive, and this one has never seen ice before. He rears up to his full height to challenge this intruder into his territory. He roars a challenge! The intruder responds! The dragon takes a deep breath, and out of his mouth pours a massive gout of flame. It washes over the ice, which melts rapidly, sending out torrents of water and a huge cloud of steam! You manage to clamber up to a small shelf, but the dragon is terrified! A huge splash goes down his throat! There is a muffled explosion and the dragon, a puzzled expression on his face, dies. He is carried away by the water.\\n \\n When the flood recedes you climb gingerly down. While no trace of the dragon can be found, the melting of the ice has revealed a passage leading west.\" CR>"
+ },
+ {
+  "key": "gecf5",
+  "en": "The dragon follows you, out of mingled curiosity and anger.\n",
+  "args": [],
+  "routine": "I-DRAGON",
+  "zil": "<TELL \"The dragon follows you, out of mingled curiosity and anger.\" CR>"
+ },
+ {
+  "key": "ged1a",
+  "en": "The dragon continues to watch you carefully.\n",
+  "args": [],
+  "routine": "I-DRAGON",
+  "zil": "<TELL \"The dragon continues to watch you carefully.\" CR>"
+ },
+ {
+  "key": "ged90",
+  "en": "The unicorn bounds lightly away.\n",
+  "args": [],
+  "routine": "I-GARDEN",
+  "zil": "<TELL \"The unicorn bounds lightly away.\" CR>"
+ },
+ {
+  "key": "gedd3",
+  "en": "A unicorn is peacefully cropping grass at the north end of the garden. There is something hanging around its neck.\n",
+  "args": [],
+  "routine": "I-GARDEN",
+  "zil": "<TELL \"A unicorn is peacefully cropping grass at the north end of the garden. There is something hanging around its neck.\" CR>"
+ }
+]

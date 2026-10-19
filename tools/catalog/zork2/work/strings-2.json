@@ -1,0 +1,1164 @@
+[
+ {
+  "key": "s143dc",
+  "en": "This room was used by holders of safety deposit boxes to view their contents. On the north side of the room is a sign which says:\n\n\"Remain here while the teller retrieves your safety deposit box. When you are finished, leave the box, and exit to the south. Safety deposit boxes cannot be removed from this room!\n\nThank You for Banking at the Zork!\" ",
+  "uses": [
+   "VIEWING-WEST.LDESC",
+   "table"
+  ],
+  "zil": "VIEWING-WEST.LDESC (2dungeon.zil:1605)"
+ },
+ {
+  "key": "s144a2",
+  "en": "This room was used by holders of safety deposit boxes to view their contents. On the north side of the room is a sign which says\n\n\"Remain here while the teller retrieves your safety deposit box. When you are finished, leave the box, and exit to the south. Safety deposit boxes cannot be removed from this room!\n\nThank You for Banking at the Zork!\" ",
+  "uses": [
+   "VIEWING-EAST.LDESC"
+  ],
+  "zil": "VIEWING-EAST.LDESC (2dungeon.zil:1622)"
+ },
+ {
+  "key": "s14566",
+  "en": "This is a small, bare room with no distinguishing features. There are no exits from this room.",
+  "uses": [
+   "SMALL-ROOM.LDESC"
+  ],
+  "zil": "SMALL-ROOM.LDESC (2dungeon.zil:1639)"
+ },
+ {
+  "key": "s14594",
+  "en": "This is the Vault of the Bank of Zork, in which there are no doors.",
+  "uses": [
+   "VAULT.LDESC"
+  ],
+  "zil": "VAULT.LDESC (2dungeon.zil:1648)"
+ },
+ {
+  "key": "s145b6",
+  "en": "This is a large rectangular room. The east and west walls were used for storing safety deposit boxes, but all have been carefully removed by evil persons. To the east, west, and south of the room are large doorways. The northern \"wall\" of the room is a shimmering curtain of light. In the center of the room is a large stone cube, about 10 feet on a side. Engraved on the side of the cube is some lettering.",
+  "uses": [
+   "DEPOSITORY.LDESC"
+  ],
+  "zil": "DEPOSITORY.LDESC (2dungeon.zil:1656)"
+ },
+ {
+  "key": "s1468c",
+  "en": "There is a curtain of light there.",
+  "uses": [
+   "DEPOSITORY.NORTH"
+  ],
+  "zil": "DEPOSITORY.NORTH (2dungeon.zil:1663)"
+ },
+ {
+  "key": "s1469c",
+  "en": "This room was the office of the Chairman of the Bank of Zork. Like the other rooms here, it has been extensively vandalized. The lone exit is to the north.",
+  "uses": [
+   "OFFICE.LDESC"
+  ],
+  "zil": "OFFICE.LDESC (2dungeon.zil:1674)"
+ },
+ {
+  "key": "s146f0",
+  "en": "There is a matchbook saying \"Visit ZORK I\" here.",
+  "uses": [
+   "MATCH.LDESC"
+  ],
+  "zil": "MATCH.LDESC (2dungeon.zil:1689)"
+ },
+ {
+  "key": "s14712",
+  "en": "\">> Visit Exotic ZORK I <<\n\nConsult the Frobozz Magic Travel Agency, or visit your local computer store for more details.\"",
+  "uses": [
+   "MATCH.TEXT",
+   "table"
+  ],
+  "zil": "MATCH.TEXT (2dungeon.zil:1691)"
+ },
+ {
+  "key": "s1476c",
+  "en": "There is a nervous Volcano Gnome here.",
+  "uses": [
+   "GNOME.LDESC",
+   "table"
+  ],
+  "zil": "GNOME.LDESC (2dungeon.zil:1733)"
+ },
+ {
+  "key": "s14784",
+  "en": "There is a blue label here.",
+  "uses": [
+   "BALLOON-LABEL.LDESC"
+  ],
+  "zil": "BALLOON-LABEL.LDESC (2dungeon.zil:1752)"
+ },
+ {
+  "key": "s14792",
+  "en": " !! FROBOZZ MAGIC BALLOON COMPANY !!\n\nHello, Aviator!\n\nTo land your balloon, say LAND\nOtherwise, you're on your own!\n\nNo warranty expressed or implied.",
+  "uses": [
+   "BALLOON-LABEL.TEXT",
+   "table"
+  ],
+  "zil": "BALLOON-LABEL.TEXT (2dungeon.zil:1755)"
+ },
+ {
+  "key": "s14812",
+  "en": "There is a square brick here which feels like clay.",
+  "uses": [
+   "BRICK.LDESC"
+  ],
+  "zil": "BRICK.LDESC (2dungeon.zil:1789)"
+ },
+ {
+  "key": "s1482a",
+  "en": "The room is cluttered with debris from an explosion. The walls seem ready to collapse.",
+  "uses": [
+   "EXPLOSION.LDESC",
+   "table"
+  ],
+  "zil": "EXPLOSION.LDESC (2dungeon.zil:1797)"
+ },
+ {
+  "key": "s14858",
+  "en": "There is a balloon here, broken into pieces.",
+  "uses": [
+   "DEAD-BALLOON.LDESC",
+   "table"
+  ],
+  "zil": "DEAD-BALLOON.LDESC (2dungeon.zil:1805)"
+ },
+ {
+  "key": "s1486c",
+  "en": "There is a card with writing on it here.",
+  "uses": [
+   "CARD.LDESC"
+  ],
+  "zil": "CARD.LDESC (2dungeon.zil:1837)"
+ },
+ {
+  "key": "s14880",
+  "en": " Warning:\n    This room was constructed over very weak rock strata. Detonation of explosives in this room is strictly prohibited!\n         Frobozz Magic Cave Company\n         per M. Agrippa, foreman\n",
+  "uses": [
+   "CARD.TEXT",
+   "table"
+  ],
+  "zil": "CARD.TEXT (2dungeon.zil:1840)"
+ },
+ {
+  "key": "s148fc",
+  "en": "The excessively gaudy crown of Lord Dimwit Flathead sits in the safe.",
+  "uses": [
+   "CROWN.FDESC",
+   "table"
+  ],
+  "zil": "CROWN.FDESC (2dungeon.zil:1863)"
+ },
+ {
+  "key": "s14928",
+  "en": "Lord Dimwit's crown is here.",
+  "uses": [
+   "CROWN.LDESC"
+  ],
+  "zil": "CROWN.LDESC (2dungeon.zil:1864)"
+ },
+ {
+  "key": "s1493c",
+  "en": "There is a beautiful red crystal sphere here.",
+  "uses": [
+   "PALANTIR-1.LDESC",
+   "table"
+  ],
+  "zil": "PALANTIR-1.LDESC (2dungeon.zil:1875)"
+ },
+ {
+  "key": "s1494a",
+  "en": "There is a Stradivarius here.",
+  "uses": [
+   "VIOLIN.LDESC",
+   "table"
+  ],
+  "zil": "VIOLIN.LDESC (2dungeon.zil:1885)"
+ },
+ {
+  "key": "s1495a",
+  "en": "A mass of ice fills the western half of the room.",
+  "uses": [
+   "ICE.LDESC"
+  ],
+  "zil": "ICE.LDESC (2dungeon.zil:1896)"
+ },
+ {
+  "key": "s14976",
+  "en": "A stoppered glass flask with a skull-and-crossbones marking is here. The flask is filled with some clear liquid.",
+  "uses": [
+   "FLASK.LDESC"
+  ],
+  "zil": "FLASK.LDESC (2dungeon.zil:1906)"
+ },
+ {
+  "key": "s149ba",
+  "en": "There is a skull-and-crossbones engraved on the glass.",
+  "uses": [
+   "FLASK.TEXT"
+  ],
+  "zil": "FLASK.TEXT (2dungeon.zil:1909)"
+ },
+ {
+  "key": "s149dc",
+  "en": "There is a green piece of paper here.",
+  "uses": [
+   "ROBOT-LABEL.LDESC",
+   "table"
+  ],
+  "zil": "ROBOT-LABEL.LDESC (2dungeon.zil:1918)"
+ },
+ {
+  "key": "s149f0",
+  "en": "!!  FROBOZZ MAGIC ROBOT COMPANY  !!\n\n Hello, Master!\n\n   I am a late-model robot, trained at GUE Tech to perform various simple household functions.\n\n   To activate me, say the following:\n\n        >ROBOT, <things to do>\n\nAt your service!",
+  "uses": [
+   "ROBOT-LABEL.TEXT"
+  ],
+  "zil": "ROBOT-LABEL.TEXT (2dungeon.zil:1921)"
+ },
+ {
+  "key": "s14ab4",
+  "en": "There is a small hook attached to the rock here.",
+  "uses": [
+   "HOOK-1.LDESC",
+   "HOOK-2.LDESC",
+   "table"
+  ],
+  "zil": "HOOK-1.LDESC (2dungeon.zil:1963)"
+ },
+ {
+  "key": "s14acc",
+  "en": "A strangely familiar brass lantern is lying on the ground.",
+  "uses": [
+   "LAMP.FDESC"
+  ],
+  "zil": "LAMP.FDESC (2dungeon.zil:1971)"
+ },
+ {
+  "key": "s14af2",
+  "en": "There is a mangled steel cage here.",
+  "uses": [
+   "MANGLED-CAGE.LDESC"
+  ],
+  "zil": "MANGLED-CAGE.LDESC (2dungeon.zil:1995)"
+ },
+ {
+  "key": "s14b06",
+  "en": "There is a pearl necklace here with hundreds of large pearls.",
+  "uses": [
+   "PEARL.LDESC"
+  ],
+  "zil": "PEARL.LDESC (2dungeon.zil:2004)"
+ },
+ {
+  "key": "s14b26",
+  "en": "The icing spells out \"Eat Me.\"",
+  "uses": [
+   "EAT-ME-CAKE.TEXT",
+   "table"
+  ],
+  "zil": "EAT-ME-CAKE.TEXT (2dungeon.zil:2015)"
+ },
+ {
+  "key": "s14b3a",
+  "en": "The leak has submerged the depressed area in a pool of tears. There is a hazy something at the deepest part of the pool.",
+  "uses": [
+   "POOL.LDESC",
+   "table"
+  ],
+  "zil": "POOL.LDESC (2dungeon.zil:2059)"
+ },
+ {
+  "key": "s14b7a",
+  "en": "On the floor is a priceless gold zorkmid (a valuable collector's item).",
+  "uses": [
+   "COIN.FDESC"
+  ],
+  "zil": "COIN.FDESC (2dungeon.zil:2070)"
+ },
+ {
+  "key": "s14ba8",
+  "en": "There is an engraved zorkmid here.",
+  "uses": [
+   "COIN.LDESC",
+   "table"
+  ],
+  "zil": "COIN.LDESC (2dungeon.zil:2071)"
+ },
+ {
+  "key": "s14bbc",
+  "en": "This is a beautiful octagonal coin bearing the legends \"Ten Thousand Zorkmids\" and \"In Frobs We Trust\".",
+  "uses": [
+   "COIN.TEXT"
+  ],
+  "zil": "COIN.TEXT (2dungeon.zil:2075)"
+ },
+ {
+  "key": "s14bfc",
+  "en": "There is a Flathead stamp here.",
+  "uses": [
+   "STAMP.LDESC"
+  ],
+  "zil": "STAMP.LDESC (2dungeon.zil:2106)"
+ },
+ {
+  "key": "s14c0e",
+  "en": "This three zorkmid stamp bears a portrait of Lord Dimwit Flathead, \"Our Excessive Leader\".",
+  "uses": [
+   "STAMP.TEXT"
+  ],
+  "zil": "STAMP.TEXT (2dungeon.zil:2109)"
+ },
+ {
+  "key": "s14c4c",
+  "en": "A handsome book, bound in green leather, sits in the center of the room.",
+  "uses": [
+   "GREEN-BOOK.FDESC"
+  ],
+  "zil": "GREEN-BOOK.FDESC (2dungeon.zil:2136)"
+ },
+ {
+  "key": "s14c72",
+  "en": "This book is written in a tongue with which I am unfamiliar.",
+  "uses": [
+   "BLUE-BOOK.TEXT",
+   "GREEN-BOOK.TEXT",
+   "table"
+  ],
+  "zil": "BLUE-BOOK.TEXT (2dungeon.zil:2151)"
+ },
+ {
+  "key": "s14c94",
+  "en": "Worn and battered in one corner of the room is a blue book.",
+  "uses": [
+   "BLUE-BOOK.FDESC",
+   "table"
+  ],
+  "zil": "BLUE-BOOK.FDESC (2dungeon.zil:2148)"
+ },
+ {
+  "key": "s14cb6",
+  "en": "Right beside the purple book sits a white one.",
+  "uses": [
+   "WHITE-BOOK.FDESC"
+  ],
+  "zil": "WHITE-BOOK.FDESC (2dungeon.zil:2161)"
+ },
+ {
+  "key": "s14cd6",
+  "en": "It is written in an unfamiliar tongue and details the use of various magical objects, chiefly the so-called \"magic wand\". Apparently these devices work by pointing them at the object to be ensorcelled, and then chanting the appropriate magic words. (It's truly amazing how credulous these ancients were, isn't it?)",
+  "uses": [
+   "WHITE-BOOK.TEXT"
+  ],
+  "zil": "WHITE-BOOK.TEXT (2dungeon.zil:2165)"
+ },
+ {
+  "key": "s14da2",
+  "en": "Lying in the dust, and covered with mold, is a purple book.",
+  "uses": [
+   "PURPLE-BOOK.LDESC",
+   "table"
+  ],
+  "zil": "PURPLE-BOOK.LDESC (2dungeon.zil:2179)"
+ },
+ {
+  "key": "s14dc6",
+  "en": "This book is written in a tongue with which I am unfamiliar. Assuming that one can indeed tell a book by its cover, it is likely filled with purple prose, the like of which is rarely seen outside the Great Underground Empire.",
+  "uses": [
+   "PURPLE-BOOK.TEXT",
+   "table"
+  ],
+  "zil": "PURPLE-BOOK.TEXT (2dungeon.zil:2184)"
+ },
+ {
+  "key": "s14e48",
+  "en": "There is a robot here.",
+  "uses": [
+   "ROBOT.LDESC",
+   "table"
+  ],
+  "zil": "ROBOT.LDESC (2dungeon.zil:2203)"
+ },
+ {
+  "key": "s14e54",
+  "en": "On the floor lies a moby ruby.",
+  "uses": [
+   "RUBY.FDESC",
+   "table"
+  ],
+  "zil": "RUBY.FDESC (2dungeon.zil:2211)"
+ },
+ {
+  "key": "s14e66",
+  "en": "There is a moby ruby lying here.",
+  "uses": [
+   "RUBY.LDESC",
+   "table"
+  ],
+  "zil": "RUBY.LDESC (2dungeon.zil:2212)"
+ },
+ {
+  "key": "s14e78",
+  "en": "There is a dented steel box here.",
+  "uses": [
+   "IRON-BOX.LDESC",
+   "table"
+  ],
+  "zil": "IRON-BOX.LDESC (2dungeon.zil:2221)"
+ },
+ {
+  "key": "s14e8a",
+  "en": "There is a solid steel cage in the middle of the room.",
+  "uses": [
+   "CAGE.LDESC",
+   "table"
+  ],
+  "zil": "CAGE.LDESC (2dungeon.zil:2231)"
+ },
+ {
+  "key": "s14ea6",
+  "en": "There is a package of candied goodies here.",
+  "uses": [
+   "CANDY.LDESC",
+   "table"
+  ],
+  "zil": "CANDY.LDESC (2dungeon.zil:2239)"
+ },
+ {
+  "key": "s14ebe",
+  "en": "There is a coil of black, braided string here.",
+  "uses": [
+   "FUSE.LDESC",
+   "table"
+  ],
+  "zil": "FUSE.LDESC (2dungeon.zil:2265)"
+ },
+ {
+  "key": "s14ed8",
+  "en": "There is a wooden bucket here, 3 feet in diameter and 3 feet high.",
+  "uses": [
+   "BUCKET.LDESC"
+  ],
+  "zil": "BUCKET.LDESC (2dungeon.zil:2277)"
+ },
+ {
+  "key": "s14efc",
+  "en": "200 neatly stacked zorkmid bills are here.",
+  "uses": [
+   "BILLS.LDESC",
+   "table"
+  ],
+  "zil": "BILLS.LDESC (2dungeon.zil:2299)"
+ },
+ {
+  "key": "s14f18",
+  "en": "On the floor sit 200 neatly stacked zorkmid bills.",
+  "uses": [
+   "BILLS.FDESC"
+  ],
+  "zil": "BILLS.FDESC (2dungeon.zil:2301)"
+ },
+ {
+  "key": "s14f38",
+  "en": "Each bill is worth 100 zorkmids, and bears the legend \"In Frobs We Trust\".",
+  "uses": [
+   "BILLS.TEXT"
+  ],
+  "zil": "BILLS.TEXT (2dungeon.zil:2304)"
+ },
+ {
+  "key": "s14f6e",
+  "en": "The portrait of J. Pierpont Flathead is here.",
+  "uses": [
+   "PORTRAIT.LDESC"
+  ],
+  "zil": "PORTRAIT.LDESC (2dungeon.zil:2335)"
+ },
+ {
+  "key": "s14f8a",
+  "en": "A portrait of J. Pierpont Flathead hangs on the wall.",
+  "uses": [
+   "PORTRAIT.FDESC",
+   "table"
+  ],
+  "zil": "PORTRAIT.FDESC (2dungeon.zil:2337)"
+ },
+ {
+  "key": "s14fae",
+  "en": "On the ground is a small, worn piece of paper.",
+  "uses": [
+   "BANK-BROCHURE.FDESC",
+   "table"
+  ],
+  "zil": "BANK-BROCHURE.FDESC (2dungeon.zil:2363)"
+ },
+ {
+  "key": "s14fcc",
+  "en": "The paper is barely readable. You can only make out \"... valuables are completely safe ... advanced magic technology ... impossible to take valuables from the depository ... either teller's ... Many customers faint ... teller pops in ... seems to walk through ... walls ...\"",
+  "uses": [
+   "BANK-BROCHURE.TEXT"
+  ],
+  "zil": "BANK-BROCHURE.TEXT (2dungeon.zil:2367)"
+ },
+ {
+  "key": "s1507c",
+  "en": "There is a Gnome of Zurich here.",
+  "uses": [
+   "GNOME-OF-ZURICH.LDESC",
+   "table"
+  ],
+  "zil": "GNOME-OF-ZURICH.LDESC (2dungeon.zil:2395)"
+ },
+ {
+  "key": "s1508e",
+  "en": "In the center of the table sits a blue crystal sphere.",
+  "uses": [
+   "PALANTIR-2.FDESC"
+  ],
+  "zil": "PALANTIR-2.FDESC (2dungeon.zil:2495)"
+ },
+ {
+  "key": "s150a6",
+  "en": "** U.S. News and Dungeon Report **\n\nFAMED ADVENTURER TO EXPLORE GREAT UNDERGROUND EMPIRE\n\nOur correspondents report that a world-famous and battle-hardened adventurer has been seen in the vicinity of the Great Underground Empire. Local grues have been reported sharpening their (slavering) fangs....\n\n\"Zork II: The Wizard of Frobozz\" was written by Dave Lebling and Marc Blank, and is (c) Copyright 1981, 1982, 1983 by Infocom, Inc.",
+  "uses": [
+   "NEWSPAPER.TEXT",
+   "table"
+  ],
+  "zil": "NEWSPAPER.TEXT (2dungeon.zil:2520)"
+ },
+ {
+  "key": "s151f6",
+  "en": "There is some water here.",
+  "uses": [
+   "SALTY-WATER.LDESC",
+   "WATER.LDESC",
+   "table"
+  ],
+  "zil": "SALTY-WATER.LDESC (2dungeon.zil:2568)"
+ },
+ {
+  "key": "s15202",
+  "en": "There is a demon floating in midair here.",
+  "uses": [
+   "GENIE.LDESC"
+  ],
+  "zil": "GENIE.LDESC (2dungeon.zil:2609)"
+ },
+ {
+  "key": "s15216",
+  "en": "The Wizard of Frobozz is here, eyeing you warily.",
+  "uses": [
+   "WIZARD.LDESC"
+  ],
+  "zil": "WIZARD.LDESC (2dungeon.zil:2616)"
+ },
+ {
+  "key": "s1522c",
+  "en": "An Elvish sword of great antiquity is here.",
+  "uses": [
+   "SWORD.LDESC"
+  ],
+  "zil": "SWORD.LDESC (2dungeon.zil:2636)"
+ },
+ {
+  "key": "s15248",
+  "en": "A sword of Elvish workmanship is on the ground.",
+  "uses": [
+   "SWORD.FDESC",
+   "table"
+  ],
+  "zil": "SWORD.FDESC (2dungeon.zil:2637)"
+ },
+ {
+  "key": "s15266",
+  "en": "A spray can is in the corner. In large type is the legend \"Frobozz Magic Grue Repellent\".",
+  "uses": [
+   "REPELLENT.FDESC",
+   "table"
+  ],
+  "zil": "REPELLENT.FDESC (2dungeon.zil:2648)"
+ },
+ {
+  "key": "s1529a",
+  "en": "!!! FROBOZZ MAGIC GRUE REPELLENT !!!\n\nInstructions for use: Apply liberally to creature to be protected. Duration of effect is unpredictable. Use only in place of death!\n\n(No warranty expressed or implied)",
+  "uses": [
+   "REPELLENT.TEXT"
+  ],
+  "zil": "REPELLENT.TEXT (2dungeon.zil:2651)"
+ },
+ {
+  "key": "s155c0",
+  "en": "burning",
+  "uses": [
+   "routine BALLOON-FCN"
+  ],
+  "zil": "BALLOON-FCN (2actions.zil:140)"
+ },
+ {
+  "key": "s155c6",
+  "en": "nestled",
+  "uses": [
+   "routine BALLOON-FCN",
+   "table"
+  ],
+  "zil": "BALLOON-FCN (2actions.zil:142)"
+ },
+ {
+  "key": "s155cc",
+  "en": "The balloon floats majestically out of the volcano, revealing a breathtaking view of a wooded river valley surrounded by impassable mountains. In a clearing stands a white house. You drift into high winds, which carry you towards the snow-capped peaks. Oh, no! You crash into the jagged cliffs of the Flathead Mountains!",
+  "uses": [
+   "routine RISE-AND-SHINE"
+  ],
+  "zil": "RISE-AND-SHINE (2actions.zil:271)"
+ },
+ {
+  "key": "s1568a",
+  "en": "ascends.",
+  "uses": [
+   "routine RISE-AND-SHINE",
+   "table"
+  ],
+  "zil": "RISE-AND-SHINE (2actions.zil:286)"
+ },
+ {
+  "key": "s15690",
+  "en": "floats away. It seems to be ascending, due to its light load.",
+  "uses": [
+   "routine RISE-AND-SHINE"
+  ],
+  "zil": "RISE-AND-SHINE (2actions.zil:295)"
+ },
+ {
+  "key": "s156b2",
+  "en": "lifts off.",
+  "uses": [
+   "routine RISE-AND-SHINE"
+  ],
+  "zil": "RISE-AND-SHINE (2actions.zil:302)"
+ },
+ {
+  "key": "s156ba",
+  "en": "lands.",
+  "uses": [
+   "routine DECLINE-AND-FALL"
+  ],
+  "zil": "DECLINE-AND-FALL (2actions.zil:323)"
+ },
+ {
+  "key": "s156c0",
+  "en": "descends.",
+  "uses": [
+   "routine DECLINE-AND-FALL"
+  ],
+  "zil": "DECLINE-AND-FALL (2actions.zil:329)"
+ },
+ {
+  "key": "s15710",
+  "en": "The way is blocked by debris from an explosion.",
+  "uses": [
+   "routine I-FUSE",
+   "routine I-SAFE"
+  ],
+  "zil": "I-SAFE (2actions.zil:474)"
+ },
+ {
+  "key": "s1572c",
+  "en": "The room trembles and 5000 tons of rock fall on you, turning you into a pancake.",
+  "uses": [
+   "routine I-SAFE"
+  ],
+  "zil": "I-SAFE (2actions.zil:465)"
+ },
+ {
+  "key": "s1575c",
+  "en": "The ledge collapses, probably as a result of the explosion, and plummets to the ground far below. Sadly, you were still attached to the ledge.",
+  "uses": [
+   "routine I-LEDGE"
+  ],
+  "zil": "I-LEDGE (2actions.zil:488)"
+ },
+ {
+  "key": "s157aa",
+  "en": "The force of the recent explosion has caused the ledge to collapse.",
+  "uses": [
+   "routine I-LEDGE"
+  ],
+  "zil": "I-LEDGE (2actions.zil:495)"
+ },
+ {
+  "key": "s157ce",
+  "en": "The ledge has collapsed and cannot be landed on.",
+  "uses": [
+   "routine I-LEDGE"
+  ],
+  "zil": "I-LEDGE (2actions.zil:498)"
+ },
+ {
+  "key": "s157e4",
+  "en": "Although the Flatheads are dead, they foresaw that some cretin might tamper with their remains. Therefore, they took steps to punish such actions.",
+  "uses": [
+   "routine HEAD-FCN"
+  ],
+  "zil": "HEAD-FCN (2actions.zil:604)"
+ },
+ {
+  "key": "s1583e",
+  "en": "The crypt door squeaks open.",
+  "uses": [
+   "routine CRYPT-DOOR-FCN"
+  ],
+  "zil": "CRYPT-DOOR-FCN (2actions.zil:669)"
+ },
+ {
+  "key": "s1584e",
+  "en": "The crypt door squeaks closed.",
+  "uses": [
+   "routine CRYPT-DOOR-FCN"
+  ],
+  "zil": "CRYPT-DOOR-FCN (2actions.zil:670)"
+ },
+ {
+  "key": "s15860",
+  "en": "The secret door opens noiselessly.",
+  "uses": [
+   "routine DIM-DOOR-FCN"
+  ],
+  "zil": "DIM-DOOR-FCN (2actions.zil:685)"
+ },
+ {
+  "key": "s15874",
+  "en": "The secret door closes noiselessly.",
+  "uses": [
+   "routine DIM-DOOR-FCN"
+  ],
+  "zil": "DIM-DOOR-FCN (2actions.zil:686)"
+ },
+ {
+  "key": "s1588a",
+  "en": "The green curves begin to vibrate toward you, as if searching for something. One by one your possessions glow bright green. Finally, you are attacked by these magical wardens, and destroyed!",
+  "uses": [
+   "routine ZORK3-FCN"
+  ],
+  "zil": "ZORK3-FCN (2actions.zil:742)"
+ },
+ {
+  "key": "s15900",
+  "en": "If you insist.",
+  "uses": [
+   "routine BUCKET-FCN"
+  ],
+  "zil": "BUCKET-FCN (2actions.zil:852)"
+ },
+ {
+  "key": "s1590a",
+  "en": "That was delicious, but your dying memory is of feeling horribly dehydrated and thirsty.",
+  "uses": [
+   "routine CAKE-FCN"
+  ],
+  "zil": "CAKE-FCN (2actions.zil:957)"
+ },
+ {
+  "key": "s15940",
+  "en": "The room seems to have become too small to hold you. The walls are not as compressible as your body, which is demolished.",
+  "uses": [
+   "routine CAKE-FCN"
+  ],
+  "zil": "CAKE-FCN (2actions.zil:980)"
+ },
+ {
+  "key": "s15978",
+  "en": "You enter the pool, thrash around for a good while, and then drown. Sad, but true.",
+  "uses": [
+   "routine POOL-FCN"
+  ],
+  "zil": "POOL-FCN (2actions.zil:1073)"
+ },
+ {
+  "key": "s159a6",
+  "en": "Noxious vapors prevent your entry.",
+  "uses": [
+   "routine FLASK-FCN"
+  ],
+  "zil": "FLASK-FCN (2actions.zil:1087)"
+ },
+ {
+  "key": "s159ea",
+  "en": "The entrance is blocked by sticky orange rubble. Probably some careless adventurer was playing with blasting cakes.",
+  "uses": [
+   "routine ICEBOOM"
+  ],
+  "zil": "ICEBOOM (2actions.zil:1106)"
+ },
+ {
+  "key": "s15a32",
+  "en": "You have been blasted to smithereens (wherever they are).",
+  "uses": [
+   "routine ICEBOOM"
+  ],
+  "zil": "ICEBOOM (2actions.zil:1109)"
+ },
+ {
+  "key": "s15a52",
+  "en": "According to Prof. TAA of GUE Tech, the rapidly changing magnetic fields in the room are intense enough to electrocute you. I really don't know, but in any event, something just killed you.",
+  "uses": [
+   "routine MAGNET-ROOM-FCN"
+  ],
+  "zil": "MAGNET-ROOM-FCN (2actions.zil:1120)"
+ },
+ {
+  "key": "s15ac4",
+  "en": "According to Prof. TAA of GUE Tech, the magnetic fields in the room are intense enough to fry the delicate innards of the robot. I really don't know, but in any event, smoke pours from its ears and it has stopped moving.",
+  "uses": [
+   "routine MAGNET-ROOM-FCN"
+  ],
+  "zil": "MAGNET-ROOM-FCN (2actions.zil:1124)"
+ },
+ {
+  "key": "s15b48",
+  "en": "There is a giant spark and you are fried to a crisp.",
+  "uses": [
+   "routine BUTTONS"
+  ],
+  "zil": "BUTTONS (2actions.zil:1163)"
+ },
+ {
+  "key": "s15b64",
+  "en": "As the robot reaches for the sphere, a solid steel cage falls from the ceiling, trapping him. You can faintly hear his last words: \"Whirr, buzz, click!\" A cloud of smoke rising from beneath the cage confirms your fears about the fate of your brave mechanical friend.",
+  "uses": [
+   "routine SPHERE-FCN"
+  ],
+  "zil": "SPHERE-FCN (2actions.zil:1218)"
+ },
+ {
+  "key": "s15c00",
+  "en": "You are stopped by a cloud of poisonous gas.",
+  "uses": [
+   "routine I-SPHERE",
+   "table"
+  ],
+  "zil": "I-SPHERE (2actions.zil:1230)"
+ },
+ {
+  "key": "s15c1c",
+  "en": "Time passes...and you die from some obscure poisoning.",
+  "uses": [
+   "routine I-SPHERE"
+  ],
+  "zil": "I-SPHERE (2actions.zil:1232)"
+ },
+ {
+  "key": "s15c3e",
+  "en": "A metallic voice says \"Hello, Intruder! Your unauthorized presence in the vault of the Bank of Zork has set off all sorts of nasty surprises, most of which are fatal. This message brought to you by the Frobozz Magic Vault Company.\"",
+  "uses": [
+   "routine I-CURTAIN"
+  ],
+  "zil": "I-CURTAIN (2actions.zil:1431)"
+ },
+ {
+  "key": "s15cca",
+  "en": "north",
+  "uses": [
+   "routine TINY-ROOM-FCN"
+  ],
+  "zil": "TINY-ROOM-FCN (2actions.zil:1547)"
+ },
+ {
+  "key": "s15cce",
+  "en": "south",
+  "uses": [
+   "routine DREARY-ROOM-FCN"
+  ],
+  "zil": "DREARY-ROOM-FCN (2actions.zil:1558)"
+ },
+ {
+  "key": "s15cd2",
+  "en": "red",
+  "uses": [
+   "routine DEAD-PALANTIR"
+  ],
+  "zil": "DEAD-PALANTIR (2actions.zil:1700)"
+ },
+ {
+  "key": "s15cd4",
+  "en": "blue",
+  "uses": [
+   "routine DEAD-PALANTIR"
+  ],
+  "zil": "DEAD-PALANTIR (2actions.zil:1706)"
+ },
+ {
+  "key": "s15cd8",
+  "en": "white",
+  "uses": [
+   "routine DEAD-PALANTIR"
+  ],
+  "zil": "DEAD-PALANTIR (2actions.zil:1707)"
+ },
+ {
+  "key": "s15cdc",
+  "en": "black",
+  "uses": [
+   "routine DEAD-PALANTIR"
+  ],
+  "zil": "DEAD-PALANTIR (2actions.zil:1708)"
+ },
+ {
+  "key": "s15ce0",
+  "en": "The door is now open.",
+  "uses": [
+   "routine PDOOR-FCN"
+  ],
+  "zil": "PDOOR-FCN (2actions.zil:1847)"
+ },
+ {
+  "key": "s15cec",
+  "en": "The door is now closed.",
+  "uses": [
+   "routine PDOOR-FCN"
+  ],
+  "zil": "PDOOR-FCN (2actions.zil:1848)"
+ },
+ {
+  "key": "s15d4a",
+  "en": "You find yourself drawn toward the edge of the bridge. You peer over the side. Oops, that was clumsy of you! You tripped on something and fell in. Too bad.",
+  "uses": [
+   "routine MAGIC-ACTOR"
+  ],
+  "zil": "MAGIC-ACTOR (2actions.zil:2074)"
+ },
+ {
+  "key": "s15da2",
+  "en": "For some odd reason you have tripped on your own feet, or perhaps an invisible cord stretched across the path. The resulting fall seems to have done you in.",
+  "uses": [
+   "routine MAGIC-ACTOR"
+  ],
+  "zil": "MAGIC-ACTOR (2actions.zil:2079)"
+ },
+ {
+  "key": "s15e36",
+  "en": "The dog-thing snaps at you viciously, and succeeds. Your head, it seems, is only a small mouthful for the poor animal, who is just as hungry afterward.",
+  "uses": [
+   "routine CERBERUS-FCN"
+  ],
+  "zil": "CERBERUS-FCN (2actions.zil:2315)"
+ },
+ {
+  "key": "s15e8e",
+  "en": "An insipidly grinning three-headed dog is wagging its tail here. It is wearing a huge dog collar.",
+  "uses": [
+   "routine CERBERUS-FCN"
+  ],
+  "zil": "CERBERUS-FCN (2actions.zil:2326)"
+ },
+ {
+  "key": "s15ecc",
+  "en": "Cerberus tears you limb from limb! What ferocity!",
+  "uses": [
+   "routine CERBERUS-FCN"
+  ],
+  "zil": "CERBERUS-FCN (2actions.zil:2344)"
+ },
+ {
+  "key": "s15eec",
+  "en": "That wasn't such a good idea. The creature was enjoying being your pet. As you unfasten the collar, the disappointed monster hound begins to growl, and then its three fang-crammed mouths rend you into little doggy biscuits.",
+  "uses": [
+   "routine COLLAR-FCN"
+  ],
+  "zil": "COLLAR-FCN (2actions.zil:2359)"
+ },
+ {
+  "key": "s1605e",
+  "en": "incinerates you in a blast of white-hot dragon fire.",
+  "uses": [
+   "routine I-DRAGON",
+   "table"
+  ],
+  "zil": "I-DRAGON (2actions.zil:2483)"
+ },
+ {
+  "key": "s1607c",
+  "en": "A huge ball of flame envelops you, but you don't even feel the heat. The dragon is puzzled, but not too puzzled to crush you in his jaws.",
+  "uses": [
+   "routine I-DRAGON"
+  ],
+  "zil": "I-DRAGON (2actions.zil:2492)"
+ },
+ {
+  "key": "s160c4",
+  "en": "Worse for you, his mouth opens and a great gout of flame puffs out and consumes you on the spot.",
+  "uses": [
+   "routine I-DRAGON"
+  ],
+  "zil": "I-DRAGON (2actions.zil:2496)"
+ },
+ {
+  "key": "s160fa",
+  "en": "The topiary animals attack! You are crushed by their branches and clawed by their thorns.",
+  "uses": [
+   "routine I-GARDEN"
+  ],
+  "zil": "I-GARDEN (2actions.zil:2603)"
+ },
+ {
+  "key": "s16158",
+  "en": "You catch a glimpse of something white between two hedges.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:2616"
+ },
+ {
+  "key": "s161ea",
+  "en": "There is a dishevelled and slightly unkempt princess here.",
+  "uses": [
+   "routine PRINCESS-FCN"
+  ],
+  "zil": "PRINCESS-FCN (2actions.zil:2730)"
+ },
+ {
+  "key": "s1621a",
+  "en": "The door creaks open.",
+  "uses": [
+   "routine WIZ-DOOR-FCN"
+  ],
+  "zil": "WIZ-DOOR-FCN (2actions.zil:3005)"
+ },
+ {
+  "key": "s16226",
+  "en": "The door reluctantly closes.",
+  "uses": [
+   "routine WIZ-DOOR-FCN"
+  ],
+  "zil": "WIZ-DOOR-FCN (2actions.zil:3006)"
+ },
+ {
+  "key": "s16236",
+  "en": "You drop into the aquarium with a splash (which attracts the serpent). He greedily eats you. He's just a baby, after all, and needs all the food he can get.",
+  "uses": [
+   "routine IN-AQUARIUM-FCN"
+  ],
+  "zil": "IN-AQUARIUM-FCN (2actions.zil:3096)"
+ },
+ {
+  "key": "s16292",
+  "en": "Oh dear, you have cut yourself severely on the broken glass. I'm afraid you've bled to death.",
+  "uses": [
+   "routine IN-AQUARIUM-FCN"
+  ],
+  "zil": "IN-AQUARIUM-FCN (2actions.zil:3100)"
+ },
+ {
+  "key": "s162ce",
+  "en": "The flask shatters, and poison gas fills the room!",
+  "uses": [
+   "routine AQUARIUM-FCN"
+  ],
+  "zil": "AQUARIUM-FCN (2actions.zil:3123)"
+ },
+ {
+  "key": "s162ea",
+  "en": "A shattered aquarium fills the northern half of the room.",
+  "uses": [
+   "routine AQUARIUM-FCN"
+  ],
+  "zil": "AQUARIUM-FCN (2actions.zil:3133)"
+ },
+ {
+  "key": "s1630c",
+  "en": "I guess you were too careless.",
+  "uses": [
+   "routine AQUARIUM-FCN"
+  ],
+  "zil": "AQUARIUM-FCN (2actions.zil:3145)"
+ },
+ {
+  "key": "s16320",
+  "en": "He takes you instead. *Uurrp!*",
+  "uses": [
+   "routine SERPENT-FCN"
+  ],
+  "zil": "SERPENT-FCN (2actions.zil:3170)"
+ },
+ {
+  "key": "s16338",
+  "en": "\"Foolish mortal, if you insist...\" The demon crushes you with one blow of his enormous hand.",
+  "uses": [
+   "routine GENIE-FCN"
+  ],
+  "zil": "GENIE-FCN (2actions.zil:3278)"
+ },
+ {
+  "key": "s1636c",
+  "en": "A dejected and fearful Wizard watches from the corner.",
+  "uses": [
+   "routine GENIE-FCN"
+  ],
+  "zil": "GENIE-FCN (2actions.zil:3320)"
+ },
+ {
+  "key": "s16400",
+  "en": "Almost halfway there, oh worthy one!",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3360"
+ },
+ {
+  "key": "s164d6",
+  "en": "You plunge to the bottom of the shaft as the spell wears off.",
+  "uses": [
+   "routine I-WIZARD"
+  ],
+  "zil": "I-WIZARD (2actions.zil:3462)"
+ },
+ {
+  "key": "s164f8",
+  "en": "As the spell wears off, you find yourself making a half-gainer towards the bottom of the volcano.",
+  "uses": [
+   "routine I-WIZARD"
+  ],
+  "zil": "I-WIZARD (2actions.zil:3468)"
+ },
+ {
+  "key": "s16532",
+  "en": "You plummet to the bottom of the shaft.",
+  "uses": [
+   "routine I-WIZARD"
+  ],
+  "zil": "I-WIZARD (2actions.zil:3589)"
+ },
+ {
+  "key": "s16548",
+  "en": "You make a rather messy swan dive to the bottom of the volcano.",
+  "uses": [
+   "routine I-WIZARD"
+  ],
+  "zil": "I-WIZARD (2actions.zil:3595)"
+ },
+ {
+  "key": "s166f0",
+  "en": "The Wizard snatches the wand away, muttering the word \"Float\" at the robot. Unfortunately he has no floating-point processor and dies in a vain attempt to divide 4.85 by 3.62.",
+  "uses": [
+   "routine WAND-FCN"
+  ],
+  "zil": "WAND-FCN (2actions.zil:3757)"
+ },
+ {
+  "key": "s16760",
+  "en": "The wand was still recharging from its last use. It discharges magic all over everything. You turn into a toad, the room fills with a fetid smell, and all sorts of other grubby things happen. Then the wand explodes!",
+  "uses": [
+   "routine WAND-FCN"
+  ],
+  "zil": "WAND-FCN (2actions.zil:3773)"
+ },
+ {
+  "key": "s16904",
+  "en": "You execute a perfect swan-dive into the depths below.",
+  "uses": [
+   "routine BRIDGE-FCN"
+  ],
+  "zil": "BRIDGE-FCN (2actions.zil:3855)"
+ }
+]

@@ -4,12 +4,12 @@ import { describe, it, expect } from 'vitest'
 import { readFileSync } from 'node:fs'
 import { ZMachine } from '../src/engine/zmachine/vm'
 import { Presenter, type Catalog } from '../src/engine/i18n/presenter'
-import sym from '../src/engine/story/symbols.json'
+import sym from '../src/engine/story/zork1/symbols.json'
 import { loadStory, playPlain } from './helpers/plain'
 import { TROLL_FIGHT } from './fixtures-cmds'
 import { firstDiff } from '../tools/oracle/firstdiff'
 
-const en = JSON.parse(readFileSync(new URL('../tools/catalog/out/catalog.en.json', import.meta.url), 'utf8'))
+const en = JSON.parse(readFileSync(new URL('../tools/catalog/zork1/out/catalog.en.json', import.meta.url), 'utf8'))
 const map = <T, U>(o: Record<string, T>, f: (v: T) => U) => Object.fromEntries(Object.entries(o).map(([k, v]) => [k, f(v)]))
 const identity: Catalog = {
   groups: map(en.groups, (v: { en: string }) => v.en),

@@ -2,9 +2,11 @@ import { useEffect, useState } from 'react'
 import { useGame } from '../store'
 import { t } from '../i18n'
 import type { Lang } from '../../engine/game'
+import { GAMES } from '../../engine/games'
 
 export function StatusBar() {
   const status = useGame((s) => s.status)
+  const gameId = useGame((s) => s.gameId)
   const lang = useGame((s) => s.settings.lang)
   const canUndo = useGame((s) => s.canUndo)
   const undoAllowed = useGame((s) => s.settings.undo)
@@ -15,7 +17,9 @@ export function StatusBar() {
   const sideLabel = t(lang, sidebar ? 'hideSide' : 'showSide')
   return (
     <header className="statusbar">
-      <span className="brand">ZORK I</span>
+      <button className="brand" onClick={() => openModal('games')} title={t(lang, 'chooseGame')}>
+        {GAMES[gameId].title.toUpperCase()}
+      </button>
       <span className="room" title={status?.room}>
         {status?.room ?? ''}
       </span>

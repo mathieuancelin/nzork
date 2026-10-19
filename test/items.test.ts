@@ -3,8 +3,8 @@ import { describe, it, expect } from 'vitest'
 import { Game } from '../src/engine/game'
 import { inventoryOf, treasuresOf } from '../src/engine/assist/items'
 import { computeAssist } from '../src/engine/assist/assist'
-import items from '../src/data/items.json'
-import symbols from '../src/engine/story/symbols.json'
+import items from '../src/data/zork1/items.json'
+import symbols from '../src/engine/story/zork1/symbols.json'
 import { loadStory } from './helpers/plain'
 import { frenchGame } from './helpers/french'
 import { playWalkthrough } from './helpers/walkthrough'
@@ -69,7 +69,7 @@ describe('treasure tracker', () => {
   })
 
   it('ends with all of them in the trophy case', () => {
-    const run = playWalkthrough(new URL('./walkthrough/en.txt', import.meta.url), 'en', 1234)
+    const run = playWalkthrough(new URL('./walkthrough/zork1/en.txt', import.meta.url), 'en', 1234)
     const game = new Game({ story: loadStory(), lang: 'en', seed: 1234 })
     game.start()
     let sawFound = false

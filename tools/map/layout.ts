@@ -1,17 +1,21 @@
-// Places the 110 rooms on a grid for the in-game map, from their exits (north up, east right):
-//   npx tsx tools/map/layout.ts [--png out.png]   → src/data/map.json
-// A breadth-first placement from West of House, then simulated annealing that moves and swaps
+// Places the rooms of a game on a grid for the in-game map, from their exits (north up, east
+// right):
+//   npx tsx tools/map/layout.ts [--game zork2] [--png out.png]   → src/data/<game>/map.json
+// A breadth-first placement from the first room, then simulated annealing that moves and swaps
 // rooms so that exits point the right way and passages cross as little as possible. Rooms can
 // be pinned by hand (PINS) where the geography of Zork is not a flat grid.
-import { readFileSync, writeFileSync } from 'node:fs'
-import { Game } from '../../src/engine/game'
+import { mkdirSync, writeFileSync } from 'node:fs'
 import { World } from '../../src/engine/assist/world'
 import { allRooms, exitsOf, type MapDir } from '../../src/engine/assist/map'
+import { gamePaths, newGame, toolGame } from '../game'
+import type { GameId } from '../../src/engine/games'
 
-const story = new Uint8Array(readFileSync(new URL('../../src/engine/story/zork1.z3', import.meta.url)))
-const game = new Game({ story, lang: 'en', seed: 1 })
+const gameId = toolGame()
+const game = await newGame(gameId, 'en', 1)
 game.start()
 const w = new World(game)
+/** Where the game starts: the first room placed. */
+const START = w.here()
 
 const VEC: Record<MapDir, [number, number] | null> = {
   NORTH: [0, -1], SOUTH: [0, 1], EAST: [1, 0], WEST: [-1, 0],
@@ -20,12 +24,41 @@ const VEC: Record<MapDir, [number, number] | null> = {
 }
 const PRIORITY: MapDir[] = ['NORTH', 'SOUTH', 'EAST', 'WEST', 'NE', 'NW', 'SE', 'SW', 'UP', 'DOWN', 'LAND', 'IN', 'OUT']
 
-/** Rooms placed by hand, relative to West of House (x right, y down). */
+/** Rooms placed by hand, relative to the first room (x right, y down). */
 const PINS: Record<string, [number, number]> = {}
+
+/**
+ * Ways between rooms that no exit describes (an object or a routine takes the player there):
+ * they only place the rooms next to each other, the map never draws them.
+ */
+const EXTRA: Record<GameId, { from: string; to: string; dir: MapDir }[]> = {
+  zork1: [],
+  zork2: [
+    // the bucket of the well
+    { from: 'WELL-TOP', to: 'WELL-BOTTOM', dir: 'DOWN' },
+    // eating the cake in the Tea Room: the posts are the legs of the table
+    { from: 'TEA-ROOM', to: 'POSTS-ROOM', dir: 'EAST' },
+    // the balloon, up the volcano
+    { from: 'VOLCANO-BOTTOM', to: 'VAIR-1', dir: 'UP' },
+    { from: 'VAIR-1', to: 'VAIR-2', dir: 'UP' },
+    { from: 'VAIR-2', to: 'VAIR-3', dir: 'UP' },
+    { from: 'VAIR-3', to: 'VAIR-4', dir: 'UP' },
+    { from: 'VOLCANO-VIEW', to: 'VAIR-3', dir: 'WEST' },
+    // the walls of the bank, walked through behind the curtain of light (SCOL-ROOMS)
+    { from: 'DEPOSITORY', to: 'SMALL-ROOM', dir: 'NORTH' },
+    { from: 'DEPOSITORY', to: 'VAULT', dir: 'SOUTH' },
+    // the robot's cage
+    { from: 'CAGE-ROOM', to: 'IN-CAGE', dir: 'IN' },
+    // where a dead adventurer wakes up
+    { from: 'INSIDE-BARROW', to: 'DEAD-PALANTIR-1', dir: 'NORTH' },
+  ],
+  zork3: [],
+}
 
 const rooms = allRooms(w)
 const edges: { from: string; to: string; dir: MapDir }[] = []
 for (const r of rooms) for (const e of exitsOf(w, r)) if (e.to !== r && rooms.includes(e.to)) edges.push({ from: r, to: e.to, dir: e.dir })
+edges.push(...EXTRA[gameId])
 
 const pos = new Map<string, [number, number]>()
 const taken = new Map<string, string>()
@@ -47,7 +80,7 @@ function free(x: number, y: number): [number, number] {
 
 // 1. breadth-first placement
 for (const [r, p] of Object.entries(PINS)) place(r, p[0], p[1])
-if (!pos.has('WEST-OF-HOUSE')) place('WEST-OF-HOUSE', 0, 0)
+if (!pos.has(START)) place(START, 0, 0)
 const queue = [...pos.keys()]
 while (queue.length || pos.size < rooms.length) {
   if (!queue.length) {
@@ -112,6 +145,17 @@ function crossings(room: string): number {
 }
 const local = (rooms_: string[]) => rooms_.reduce((sum, r) => sum + fit(r) + CROSS * crossings(r), 0)
 
+// moves stay inside the area of the first placement: a room reached only through an object
+// (Zork II's balloon, bucket, cake) would drift away. Zork I, whose rooms are all connected,
+// keeps its unbounded layout (src/data/zork1/map.json is reproduced as it is).
+const BOUNDED = gameId !== 'zork1'
+const bounds = (() => {
+  const xs = [...pos.values()].map((p) => p[0])
+  const ys = [...pos.values()].map((p) => p[1])
+  return { x0: Math.min(...xs) - 1, x1: Math.max(...xs) + 1, y0: Math.min(...ys) - 1, y1: Math.max(...ys) + 1 }
+})()
+const inBounds = (x: number, y: number) => !BOUNDED || x >= bounds.x0 && x <= bounds.x1 && y >= bounds.y0 && y <= bounds.y1
+
 let seed = Number(process.env.SEED ?? 1)
 const random = () => ((seed = (seed * 1103515245 + 12345) & 0x7fffffff) / 0x7fffffff)
 const movable = rooms.filter((r) => !PINS[r])
@@ -135,7 +179,7 @@ for (let step = 0; step < STEPS; step++) {
   } else {
     const nx = x + Math.floor(random() * 7) - 3
     const ny = y + Math.floor(random() * 7) - 3
-    if (taken.has(key(nx, ny))) continue
+    if (taken.has(key(nx, ny)) || !inBounds(nx, ny)) continue
     const before = local([room])
     taken.delete(key(x, y))
     place(room, nx, ny)
@@ -161,7 +205,9 @@ for (const r of [...rooms].sort()) {
   out[r] = [x - minX, y - minY]
 }
 const size = [Math.max(...xs) - minX + 1, Math.max(...ys) - minY + 1]
-writeFileSync(new URL('../../src/data/map.json', import.meta.url), JSON.stringify({ size, rooms: out }, null, 1) + '\n')
+const outArg = process.argv.indexOf('--out')
+mkdirSync(gamePaths(gameId).data, { recursive: true })
+writeFileSync(outArg > 0 ? process.argv[outArg + 1] : new URL('map.json', gamePaths(gameId).data), JSON.stringify({ size, rooms: out }, null, 1) + '\n')
 const total = rooms.reduce((sum, r) => sum + cost(r), 0) / 2
 const crossed = rooms.reduce((sum, r) => sum + crossings(r), 0) / 2
 console.log(`${rooms.length} rooms on a ${size[0]}×${size[1]} grid, misfit ${total.toFixed(0)}, ${crossed} crossings`)

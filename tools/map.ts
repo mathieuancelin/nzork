@@ -1,9 +1,10 @@
-// Prints the room map from the ZIL source: npx tsx tools/map.ts
+// Prints the room map from the ZIL source: npx tsx tools/map.ts [--game zork2]
 import { loadZil } from './zil/load'
 import { atomName, type Node } from './zil/reader'
-const DIRS = ['NORTH', 'EAST', 'WEST', 'SOUTH', 'NE', 'NW', 'SE', 'SW', 'UP', 'DOWN', 'IN', 'OUT', 'LAND']
+import { toolGame } from './game'
+const DIRS = ['NORTH', 'EAST', 'WEST', 'SOUTH', 'NE', 'NW', 'SE', 'SW', 'UP', 'DOWN', 'IN', 'OUT', 'LAND', 'CROSS']
 const show = (n: Node): string => (n.t === 'atom' ? n.v : n.t === 'str' ? '"msg"' : n.t === 'prefix' ? n.p + show(n.v) : n.t === 'form' ? `<${n.items.map(show).join(' ')}>` : '?')
-for (const o of loadZil().objects.filter((x) => x.kind === 'ROOM')) {
+for (const o of loadZil(toolGame()).objects.filter((x) => x.kind === 'ROOM')) {
   const exits: string[] = []
   for (const d of DIRS) {
     const v = o.props.get(d)

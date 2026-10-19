@@ -1,6 +1,6 @@
 // Plays a walkthrough file ("until /re/ :: cmd" lines repeat a command until the output matches).
 import { readFileSync } from 'node:fs'
-import { Game, type Status } from '../../src/engine/game'
+import { Game, type GameId, type Status } from '../../src/engine/game'
 import { loadFrench } from '../../src/engine/i18n/fr'
 import { loadStory } from './plain'
 
@@ -12,9 +12,9 @@ export interface WalkthroughResult {
   ended: boolean
 }
 
-export function playWalkthrough(file: URL, lang: 'en' | 'fr', seed: number): WalkthroughResult {
-  const french = lang === 'fr' ? loadFrench() : undefined
-  const game = new Game({ story: loadStory(), lang, seed, catalog: french?.catalog, input: french?.input })
+export function playWalkthrough(file: URL, lang: 'en' | 'fr', seed: number, id: GameId = 'zork1'): WalkthroughResult {
+  const french = lang === 'fr' ? loadFrench(id) : undefined
+  const game = new Game({ game: id, story: loadStory(id), lang, seed, catalog: french?.catalog, input: french?.input })
   const lines = readFileSync(file, 'utf8')
     .split('\n')
     .map((l) => l.replace(/#.*/, '').trim())

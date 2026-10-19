@@ -1,0 +1,594 @@
+[
+ {
+  "key": "s156c8",
+  "en": "Now you've done it. It seems that the brick has other properties than weight, namely the ability to blow you to smithereens.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:413"
+ },
+ {
+  "key": "s159bc",
+  "en": "As you pass out, you realize that the vapors from the flask's contents are fatal.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:1095"
+ },
+ {
+  "key": "s15d2c",
+  "en": "You think it isn't?",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:2058"
+ },
+ {
+  "key": "s15d38",
+  "en": "I think you've already done that.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:2059"
+ },
+ {
+  "key": "s15dfa",
+  "en": "dark",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:2181"
+ },
+ {
+  "key": "s15dfe",
+  "en": "flickering dimly",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:2182"
+ },
+ {
+  "key": "s15e0a",
+  "en": "dimly glowing",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:2183"
+ },
+ {
+  "key": "s15e14",
+  "en": "glowing",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:2184"
+ },
+ {
+  "key": "s15e1a",
+  "en": "glowing brightly",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:2185"
+ },
+ {
+  "key": "s15e26",
+  "en": "first",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:2284"
+ },
+ {
+  "key": "s15e2a",
+  "en": "second",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:2284"
+ },
+ {
+  "key": "s15e2e",
+  "en": "third",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:2284"
+ },
+ {
+  "key": "s15e32",
+  "en": "home",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:2284"
+ },
+ {
+  "key": "s15f76",
+  "en": "Dragon hide is tough as steel, but you have succeeded in annoying him a bit. He looks at you as if deciding whether or not to eat you.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:2438"
+ },
+ {
+  "key": "s15fc2",
+  "en": "That captured his interest. He stares at you balefully.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:2440"
+ },
+ {
+  "key": "s15fe4",
+  "en": "The dragon is surprised and interested (for the moment).",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:2441"
+ },
+ {
+  "key": "s16002",
+  "en": "You've made him rather angry. You had better be very careful now.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:2442"
+ },
+ {
+  "key": "s1602c",
+  "en": "That did no damage, but he turns his smoky yellow eyes in your direction and sighs.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:2443"
+ },
+ {
+  "key": "s16132",
+  "en": "There is a large, white animal partly hidden behind some trees.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:2615"
+ },
+ {
+  "key": "s16178",
+  "en": "A unicorn is cropping grass on the other side of the room. A gold key hangs from a ribbon around its neck.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:2617"
+ },
+ {
+  "key": "s161b0",
+  "en": "There is a beautiful unicorn eating roses here. Around his neck is a red satin ribbon on which is strung a tiny key.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:2619"
+ },
+ {
+  "key": "s16208",
+  "en": "east",
+  "uses": [
+   "table"
+  ],
+  "zil": "TELLER-ROOM (2actions.zil:1370)"
+ },
+ {
+  "key": "s1620c",
+  "en": "west",
+  "uses": [
+   "table"
+  ],
+  "zil": "TELLER-ROOM (2actions.zil:1369)"
+ },
+ {
+  "key": "s16210",
+  "en": "down",
+  "uses": [
+   "table"
+  ],
+  "zil": "V-CLIMB-UP (gverbs.zil:334)"
+ },
+ {
+  "key": "s16214",
+  "en": "up",
+  "uses": [
+   "table"
+  ],
+  "zil": "V-CLIMB-UP (gverbs.zil:333)"
+ },
+ {
+  "key": "s16216",
+  "en": "in",
+  "uses": [
+   "table"
+  ],
+  "zil": "V-BURN (gverbs.zil:285)"
+ },
+ {
+  "key": "s16218",
+  "en": "out",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:2768"
+ },
+ {
+  "key": "s1638a",
+  "en": "Most fine, master! But 'tis not enough. I will do a great service, and are not great services bought at great price?",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3356"
+ },
+ {
+  "key": "s163d2",
+  "en": "Very nice, but not enough!",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3358"
+ },
+ {
+  "key": "s163e2",
+  "en": "Ah, truly magnificent! Keep them coming.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3359"
+ },
+ {
+  "key": "s16418",
+  "en": "Oh, such beauty! Your generosity almost overwhelms me!",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3361"
+ },
+ {
+  "key": "s1643a",
+  "en": "Truly I shall do thee a wonderful service when thou hast finished!",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3362"
+ },
+ {
+  "key": "s16468",
+  "en": "Truly you are most generous! But still, this is yet not enough.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3363"
+ },
+ {
+  "key": "s1648e",
+  "en": "A fine gift, mighty one, you have almost reached my fee.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3364"
+ },
+ {
+  "key": "s164ae",
+  "en": "Wondrous fine, master! But one treasure is yet to be given!",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3365"
+ },
+ {
+  "key": "s1656a",
+  "en": "Feeble",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3671"
+ },
+ {
+  "key": "s16570",
+  "en": "Fumble",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3671"
+ },
+ {
+  "key": "s16576",
+  "en": "Fear",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3671"
+ },
+ {
+  "key": "s1657a",
+  "en": "Filch",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3671"
+ },
+ {
+  "key": "s1657e",
+  "en": "Freeze",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3671"
+ },
+ {
+  "key": "s16584",
+  "en": "Fall",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3672"
+ },
+ {
+  "key": "s16588",
+  "en": "Ferment",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3672"
+ },
+ {
+  "key": "s1658e",
+  "en": "Fierce",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3672"
+ },
+ {
+  "key": "s16594",
+  "en": "Float",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3672"
+ },
+ {
+  "key": "s16598",
+  "en": "Fireproof",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3672"
+ },
+ {
+  "key": "s165a0",
+  "en": "Fence",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3673"
+ },
+ {
+  "key": "s165a4",
+  "en": "Fantasize",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3673"
+ },
+ {
+  "key": "s165ac",
+  "en": "All at once you feel very tired.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3677"
+ },
+ {
+  "key": "s165c0",
+  "en": "You look at the Wizard in terror. You scramble away, trying to get as far as possible from him.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3679"
+ },
+ {
+  "key": "s165f4",
+  "en": "Your limbs suddenly feel like they have turned to stone. You can't move a muscle.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3682"
+ },
+ {
+  "key": "s16620",
+  "en": "You begin to feel lightheaded.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3685"
+ },
+ {
+  "key": "s16632",
+  "en": "You rush at the Wizard, intending to tear him limb from limb.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3686"
+ },
+ {
+  "key": "s16656",
+  "en": "You feel more energetic now.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3694"
+ },
+ {
+  "key": "s16668",
+  "en": "You suddenly decide that the Wizard isn't that terrifying...",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3696"
+ },
+ {
+  "key": "s1668a",
+  "en": "Your little finger begins to twitch, and then your whole body is free again.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3698"
+ },
+ {
+  "key": "s166b8",
+  "en": "Your head is clearer now.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3701"
+ },
+ {
+  "key": "s166c8",
+  "en": "You feel cooler and less angry now.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3702"
+ },
+ {
+  "key": "s166de",
+  "en": "You sink quietly down again.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3703"
+ },
+ {
+  "key": "s167de",
+  "en": "sparsely furnished and almost monkish in its austerity.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3840"
+ },
+ {
+  "key": "s167fe",
+  "en": "an opulently furnished seraglio out of an Arabian folktale.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3841"
+ },
+ {
+  "key": "s16826",
+  "en": "decorated in the Louis XIV style.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3842"
+ },
+ {
+  "key": "s1683e",
+  "en": "overhung with palm-trees and lianas. The only furniture is a hammock.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3843"
+ },
+ {
+  "key": "s16868",
+  "en": "constructed of delicate and wispy cloud-stuffs.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3844"
+ },
+ {
+  "key": "s16888",
+  "en": "furnished in plastic and metal and looks like the control deck of a spaceship.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3845"
+ },
+ {
+  "key": "s168b4",
+  "en": "a suburban bedroom out of the 1950's, complete with bunk beds.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3847"
+ },
+ {
+  "key": "s168da",
+  "en": "a dank and dimly lighted cave, its floor piled with furs and old bones.",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3848"
+ },
+ {
+  "key": "s16926",
+  "en": "pile of jewels",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3909"
+ },
+ {
+  "key": "s16930",
+  "en": "gold ingot",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3909"
+ },
+ {
+  "key": "s16938",
+  "en": "basilisk",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3909"
+ },
+ {
+  "key": "s1693e",
+  "en": "bulging chest",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3910"
+ },
+ {
+  "key": "s16948",
+  "en": "yellow sphere",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3910"
+ },
+ {
+  "key": "s1694e",
+  "en": "grue",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3910"
+ },
+ {
+  "key": "s16952",
+  "en": "convention of wizards",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3911"
+ },
+ {
+  "key": "s16960",
+  "en": "copy of ZORK I",
+  "uses": [
+   "table"
+  ],
+  "zil": "2actions.zil:3911"
+ }
+]

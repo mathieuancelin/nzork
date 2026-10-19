@@ -1,9 +1,12 @@
-// The game facade used by the UI and the CLI: one playing session of Zork I.
+// The game facade used by the UI and the CLI: one playing session of Zork I, II or III.
 
 import { ZMachine, type ParseEntry, type Snapshot } from './zmachine/vm'
 import { Presenter, type Catalog } from './i18n/presenter'
-import symbols from './story/symbols.json'
 import { frenchCleanup } from './i18n/cleanup'
+import { GAMES, type GameId, type GameInfo } from './games'
+import { indexOf, symbolsOf, type GameSymbols } from './symbols'
+
+export type { GameId } from './games'
 
 export type Lang = 'fr' | 'en'
 
@@ -54,6 +57,8 @@ export interface Turn {
 
 export interface SaveData {
   version: 1
+  /** The game the snapshot belongs to (absent in the saves of Zork I made before Zork II). */
+  game?: GameId
   lang: Lang
   snapshot: Snapshot
   status: Status
@@ -62,6 +67,8 @@ export interface SaveData {
 }
 
 export interface GameOptions {
+  /** Zork I by default. */
+  game?: GameId
   story: Uint8Array
   lang: Lang
   catalog?: Catalog
@@ -70,11 +77,10 @@ export interface GameOptions {
   undoDepth?: number
 }
 
-const routineByAddr = new Map(Object.entries(symbols.routines).map(([n, a]) => [a as number, n]))
-const objectByNum = new Map(Object.entries(symbols.objects).map(([n, o]) => [o as number, n]))
-const G = symbols.globals as Record<string, number>
-
 export class Game {
+  readonly id: GameId
+  readonly info: GameInfo
+  readonly symbols: GameSymbols
   readonly vm: ZMachine
   readonly presenter: Presenter
   readonly lang: Lang
@@ -84,9 +90,12 @@ export class Game {
   state: GameState = 'playing'
 
   constructor(opts: GameOptions) {
+    this.id = opts.game ?? 'zork1'
+    this.info = GAMES[this.id]
+    this.symbols = symbolsOf(this.id)
     this.lang = opts.lang
     this.vm = new ZMachine(opts.story, null as never, opts.seed ?? 0)
-    this.presenter = new Presenter(this.vm, opts.lang === 'fr' ? (opts.catalog ?? null) : null, symbols)
+    this.presenter = new Presenter(this.vm, opts.lang === 'fr' ? (opts.catalog ?? null) : null, this.symbols)
     this.presenter.install()
     this.input = opts.lang === 'fr' ? opts.input : undefined
     if (this.input?.displayWord) this.presenter.dictWord = (w) => this.input!.displayWord!(w)
@@ -157,9 +166,10 @@ export class Game {
 
   status(): Status {
     const vm = this.vm
+    const G = this.symbols.globals
     const here = vm.global(G.HERE)
     return {
-      roomId: objectByNum.get(here) ?? String(here),
+      roomId: indexOf(this.symbols).objectName.get(here) ?? String(here),
       room: here ? this.presenter.noun(here).nom : '',
       score: (vm.global(G.SCORE) << 16) >> 16,
       moves: vm.global(G.MOVES),
@@ -168,10 +178,11 @@ export class Game {
   }
 
   save(transcript: string): SaveData {
-    return { version: 1, lang: this.lang, snapshot: this.vm.snapshot(), status: this.status(), transcript }
+    return { version: 1, game: this.id, lang: this.lang, snapshot: this.vm.snapshot(), status: this.status(), transcript }
   }
 
   load(data: SaveData): Status {
+    if ((data.game ?? 'zork1') !== this.id) throw new Error(`This save belongs to ${GAMES[data.game ?? 'zork1'].title}, not ${this.info.title}`)
     this.vm.restore(data.snapshot)
     this.undoStack = []
     this.state = 'playing'
@@ -200,16 +211,16 @@ export class Game {
   /** Whether an object is in the current room (possibly in a container), carried, or global. */
   inScope(obj: number): boolean {
     const vm = this.vm
+    const { globals: G, objects: O, properties } = this.symbols
     const here = vm.global(G.HERE)
     const winner = vm.global(G.WINNER)
-    const O = symbols.objects as Record<string, number>
     let o = obj
     for (let guard = 0; o && guard < 20; guard++) {
       const p = vm.parent(o)
       if (p === here || p === winner || o === here) return true
       if (p === O['GLOBAL-OBJECTS']) return true
       if (p === O['LOCAL-GLOBALS']) {
-        const addr = vm.getPropAddr(here, symbols.properties.GLOBAL)
+        const addr = vm.getPropAddr(here, properties.GLOBAL)
         const len = vm.getPropLen(addr)
         for (let i = 0; i < len; i++) if (vm.mem[addr + i] === o) return true
         return false
@@ -223,7 +234,7 @@ export class Game {
 
   private inputRoutine(): string {
     const f = this.vm.frames[this.vm.frames.length - 1]
-    return routineByAddr.get(f.routine) ?? ''
+    return indexOf(this.symbols).routineName.get(f.routine) ?? ''
   }
 
   /** ZIL name of the routine waiting for input ("" when the game is over). */

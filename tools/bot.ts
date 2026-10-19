@@ -1,17 +1,13 @@
-// Plays only the guide's suggestions: npx tsx tools/bot.ts [seed] [--fr] [--verbose]
-import { readFileSync } from 'node:fs'
-import { Game } from '../src/engine/game'
-import { loadFrench } from '../src/engine/i18n/fr'
+// Plays only the guide's suggestions (Zork I): npx tsx tools/bot.ts [seed] [--fr] [--verbose]
 import { World } from '../src/engine/assist/world'
 import { guideStep } from '../src/engine/assist/guide'
+import { newGame } from './game'
 
 const args = process.argv.slice(2)
 const seed = Number(args.find((a) => /^\d+$/.test(a)) ?? 1234)
 const fr = args.includes('--fr')
 const verbose = args.includes('--verbose')
-const story = new Uint8Array(readFileSync(new URL('../src/engine/story/zork1.z3', import.meta.url)))
-const french = fr ? loadFrench() : undefined
-const game = new Game({ story, lang: fr ? 'fr' : 'en', seed, catalog: french?.catalog, input: french?.input })
+const game = await newGame('zork1', fr ? 'fr' : 'en', seed)
 let t = game.start()
 const w = new World(game)
 let last = ''

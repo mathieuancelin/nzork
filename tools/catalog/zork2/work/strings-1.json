@@ -1,0 +1,851 @@
+[
+ {
+  "key": "s12538",
+  "en": "You are inside an ancient barrow hidden deep within a dark forest. The barrow opens into a narrow tunnel at its southern end. You can see a faint glow at the far end.",
+  "uses": [
+   "INSIDE-BARROW.LDESC",
+   "table"
+  ],
+  "zil": "INSIDE-BARROW.LDESC (2dungeon.zil:181)"
+ },
+ {
+  "key": "s12598",
+  "en": "You may not recall, but when you entered, the door of the barrow shut behind you. There is no way out.",
+  "uses": [
+   "INSIDE-BARROW.OUT",
+   "table"
+  ],
+  "zil": "INSIDE-BARROW.OUT (2dungeon.zil:188)"
+ },
+ {
+  "key": "s125d0",
+  "en": "You are standing at the southern end of a narrow tunnel where it opens into a wide cavern. The cavern is dimly illuminated by phosphorescent mosses clinging to its high ceiling. A deep ravine winds through the cavern, with a small stream at the bottom. The walls of the ravine are steep and crumbly. A foot bridge crosses the ravine to the south.",
+  "uses": [
+   "NARROW-TUNNEL.LDESC",
+   "table"
+  ],
+  "zil": "NARROW-TUNNEL.LDESC (2dungeon.zil:194)"
+ },
+ {
+  "key": "s12690",
+  "en": "As you start down, you slip on the crumbling rocks and pull back, narrowly averting a fatal fall.",
+  "uses": [
+   "NARROW-TUNNEL.DOWN"
+  ],
+  "zil": "NARROW-TUNNEL.DOWN (2dungeon.zil:204)"
+ },
+ {
+  "key": "s126cc",
+  "en": "You are standing on a crude but sturdy wooden foot bridge crossing a deep ravine. The path runs north and south from here.",
+  "uses": [
+   "FOOT-BRIDGE.LDESC"
+  ],
+  "zil": "FOOT-BRIDGE.LDESC (2dungeon.zil:211)"
+ },
+ {
+  "key": "s1270c",
+  "en": "The drop would be fatal.",
+  "uses": [
+   "FOOT-BRIDGE.DOWN"
+  ],
+  "zil": "FOOT-BRIDGE.DOWN (2dungeon.zil:217)"
+ },
+ {
+  "key": "s12718",
+  "en": "You'll have to specify a direction.",
+  "uses": [
+   "FOOT-BRIDGE.CROSS",
+   "STONE-BRIDGE.CROSS",
+   "table"
+  ],
+  "zil": "STONE-BRIDGE.CROSS (2dungeon.zil:550)"
+ },
+ {
+  "key": "s12730",
+  "en": "This is the center of the great cavern, carved out of the limestone. Stalactites and stalagmites of many sizes are everywhere. The room glows with dim light provided by phosphorescent moss, and weird shadows move all around you. A narrow path winds southwest among the stalagmites, and another leads northeast.",
+  "uses": [
+   "GREAT-CAVERN.LDESC"
+  ],
+  "zil": "GREAT-CAVERN.LDESC (2dungeon.zil:224)"
+ },
+ {
+  "key": "s127da",
+  "en": "You are at the southern edge of a great cavern. To the south across a shallow ford is a dark tunnel which looks like it was once enlarged and smoothed. To the north a narrow path winds among stalagmites. Dim light illuminates the cavern.",
+  "uses": [
+   "SHALLOW-FORD.LDESC"
+  ],
+  "zil": "SHALLOW-FORD.LDESC (2dungeon.zil:239)"
+ },
+ {
+  "key": "s1285c",
+  "en": "This is a dark tunnel with dim light to the northeast. The tunnel is smooth but dusty and filled with twigs and leaves, debris which becomes deeper as the tunnel branches into a wide corridor leading southwest and a narrower one leading southeast.",
+  "uses": [
+   "DARK-TUNNEL.LDESC",
+   "table"
+  ],
+  "zil": "DARK-TUNNEL.LDESC (2dungeon.zil:253)"
+ },
+ {
+  "key": "s128e8",
+  "en": "There is a beautiful unicorn here cropping grass.",
+  "uses": [
+   "UNICORN.LDESC"
+  ],
+  "zil": "UNICORN.LDESC (2dungeon.zil:277)"
+ },
+ {
+  "key": "s128fc",
+  "en": "This is the northern end of a formal garden. Hedges hide the cavern walls, and if you don't look up, the illusion is of a cloudy day outside. The light comes from a large growth of glowing mosses on the roof of the cave. A break in the hedge is almost overgrown to the north. A carefully manicured path leads south. In the center of a rosebed is a small open structure, painted white. It appears to be a gazebo.",
+  "uses": [
+   "GARDEN-NORTH.LDESC",
+   "table"
+  ],
+  "zil": "GARDEN-NORTH.LDESC (2dungeon.zil:284)"
+ },
+ {
+  "key": "s129da",
+  "en": "This is a gazebo in the midst of a formal garden. It is cool and restful here. A tea table adorns the center of the gazebo.",
+  "uses": [
+   "GAZEBO-ROOM.LDESC",
+   "table"
+  ],
+  "zil": "GAZEBO-ROOM.LDESC (2dungeon.zil:301)"
+ },
+ {
+  "key": "s12a1e",
+  "en": "This is the middle part of a formal garden. Hedges hide the cavern walls and a dim illumination comes from mosses far above. The path is of small crushed white stones. It winds among bushes and flower beds from south to north. To the north a small structure can be seen. To the south are peculiarly shaped bushes. There is a small gap in the hedges to the west.",
+  "uses": [
+   "FORMAL-GARDEN.LDESC"
+  ],
+  "zil": "FORMAL-GARDEN.LDESC (2dungeon.zil:311)"
+ },
+ {
+  "key": "s12ae0",
+  "en": "This is the southern end of a formal garden. Hedges hide the cavern walls and mosses provide dim illumination. Fantastically shaped hedges and bushes are arrayed with geometric precision. They have not recently been clipped, but you can discern creatures in the shapes of the bushes: There is a dragon, a unicorn, a great serpent, a huge misshapen dog, and several human figures. On the west side of the garden the path leads through a rose arbor into a tunnel.",
+  "uses": [
+   "TOPIARY-ROOM.LDESC"
+  ],
+  "zil": "TOPIARY-ROOM.LDESC (2dungeon.zil:328)"
+ },
+ {
+  "key": "s12be8",
+  "en": "The path follows the south edge of a deep ravine and heads northeast. A tunnel heads southwest, narrowing to a rather tight crawl. A faint whirring sound can be heard in that direction. On the east is a ruined archway choked with vegetation.",
+  "uses": [
+   "STREAM-PATH.LDESC"
+  ],
+  "zil": "STREAM-PATH.LDESC (2dungeon.zil:358)"
+ },
+ {
+  "key": "s12c7a",
+  "en": "The ravine is extremely deep. You would never make it.",
+  "uses": [
+   "STREAM-PATH.DOWN",
+   "table"
+  ],
+  "zil": "STREAM-PATH.DOWN (2dungeon.zil:368)"
+ },
+ {
+  "key": "s12c9a",
+  "en": "This is an arched hall of fine marble. The hall stops abruptly to the north at a ford across a stream, where the marble is cracked and broken. Perhaps a flood or collapse of the cave was responsible. To the south the hall opens into a large room. There is rather annoying whirring sound coming from that room.",
+  "uses": [
+   "MARBLE-HALL.LDESC"
+  ],
+  "zil": "MARBLE-HALL.LDESC (2dungeon.zil:374)"
+ },
+ {
+  "key": "s12d46",
+  "en": "That's a wall there.",
+  "uses": [
+   "table"
+  ],
+  "zil": "MARBLE-HALL.EAST (2dungeon.zil:381)"
+ },
+ {
+  "key": "s12d52",
+  "en": "You are fording the stream at a deep but not impossible spot. The water is very cold. The walls of the ravine rise to east and west. There is a small ledge along the north wall of the ravine. To the south is the entrance to a well-constructed but somewhat ruined hall.",
+  "uses": [
+   "DEEP-FORD.LDESC",
+   "table"
+  ],
+  "zil": "DEEP-FORD.LDESC (2dungeon.zil:389)"
+ },
+ {
+  "key": "s12dda",
+  "en": "The stream deepens rapidly, and you wisely return before drowning.",
+  "uses": [
+   "DEEP-FORD.EAST",
+   "table"
+  ],
+  "zil": "DEEP-FORD.EAST (2dungeon.zil:399)"
+ },
+ {
+  "key": "s12e04",
+  "en": "You notice that the ledge above would be a drier route west.",
+  "uses": [
+   "DEEP-FORD.WEST"
+  ],
+  "zil": "DEEP-FORD.WEST (2dungeon.zil:401)"
+ },
+ {
+  "key": "s12e20",
+  "en": "You are on a narrow ledge near the bottom of a deep ravine. The ledge continues to the west. A precarious climb up to another tiny ledge is possible. A short scramble down the rock face leads to a stream.",
+  "uses": [
+   "RAVINE-LEDGE.LDESC"
+  ],
+  "zil": "RAVINE-LEDGE.LDESC (2dungeon.zil:407)"
+ },
+ {
+  "key": "s12e90",
+  "en": "A ledge from the east ends here, and a tunnel leads north into the wall. There is a rather odd smokey odor in the warm air of the tunnel.",
+  "uses": [
+   "LEDGE-TUNNEL.LDESC"
+  ],
+  "zil": "LEDGE-TUNNEL.LDESC (2dungeon.zil:422)"
+ },
+ {
+  "key": "s12ed4",
+  "en": "There are a lot of sharp rocks down there.",
+  "uses": [
+   "LEDGE-TUNNEL.DOWN",
+   "table"
+  ],
+  "zil": "LEDGE-TUNNEL.DOWN (2dungeon.zil:429)"
+ },
+ {
+  "key": "s12eec",
+  "en": "The room is a large cavern full of broken stone. The walls are scorched and there are deep scratches on the floor. A sooty dry smell is very strong here. A paved path winds from a large passage to the west, through the room, and across a huge stone bridge to the south. To the east a small crack is visible. A dark and smokey tunnel leads north.",
+  "uses": [
+   "DRAGON-ROOM.LDESC",
+   "table"
+  ],
+  "zil": "DRAGON-ROOM.LDESC (2dungeon.zil:434)"
+ },
+ {
+  "key": "s12fa0",
+  "en": "The dragon hisses at you and blocks your way.",
+  "uses": [
+   "table"
+  ],
+  "zil": "DRAGON-ROOM.NORTH (2dungeon.zil:444)"
+ },
+ {
+  "key": "s12fb6",
+  "en": "You are in the dragon's lair, where the rock walls are scarred by flame. A blackened doorway leads to the south.",
+  "uses": [
+   "DRAGON-LAIR.LDESC",
+   "table"
+  ],
+  "zil": "DRAGON-LAIR.LDESC (2dungeon.zil:455)"
+ },
+ {
+  "key": "s12ff2",
+  "en": "A rotten old wooden chest is in one corner among the debris.",
+  "uses": [
+   "CHEST.FDESC"
+  ],
+  "zil": "CHEST.FDESC (2dungeon.zil:468)"
+ },
+ {
+  "key": "s13016",
+  "en": "Nestled in the chest is a wrought gold statuette of a dragon.",
+  "uses": [
+   "STATUETTE.FDESC",
+   "table"
+  ],
+  "zil": "STATUETTE.FDESC (2dungeon.zil:480)"
+ },
+ {
+  "key": "s1303e",
+  "en": "A huge red dragon is lying on the rocks here, watching.",
+  "uses": [
+   "DRAGON.LDESC",
+   "table"
+  ],
+  "zil": "DRAGON.LDESC (2dungeon.zil:490)"
+ },
+ {
+  "key": "s1305a",
+  "en": "A huge red dragon is lying here, blocking the entrance to a tunnel leading north. Smoke curls from his nostrils and out between his teeth.",
+  "uses": [
+   "DRAGON.FDESC",
+   "table"
+  ],
+  "zil": "DRAGON.FDESC (2dungeon.zil:492)"
+ },
+ {
+  "key": "s130a8",
+  "en": "A huge dead dragon is lying half blocking the stream.",
+  "uses": [
+   "DEAD-DRAGON.LDESC",
+   "table"
+  ],
+  "zil": "DEAD-DRAGON.LDESC (2dungeon.zil:503)"
+ },
+ {
+  "key": "s130c6",
+  "en": "A beautiful young woman, wearing a dirty and bedraggled gown, sits on a rock in the corner. Her hair is unkempt and she is oblivious to your presence, almost in a trance.",
+  "uses": [
+   "PRINCESS.LDESC"
+  ],
+  "zil": "PRINCESS.LDESC (2dungeon.zil:520)"
+ },
+ {
+  "key": "s13126",
+  "en": "A path leads east-west through a room decorated with beautiful frescoes of someone battling dragons and rescuing fair maidens. It is hard to tell who is doing this as those parts of the frescoes have been blackened and cracked by intense heat.",
+  "uses": [
+   "FRESCO-ROOM.LDESC",
+   "table"
+  ],
+  "zil": "FRESCO-ROOM.LDESC (2dungeon.zil:529)"
+ },
+ {
+  "key": "s131ac",
+  "en": "This is the middle of a ruined but still impressive stone bridge spanning a deep chasm. Water flows far beneath. A paved path leads north into a large open space. To the south, the path leads into a misty tunnel.",
+  "uses": [
+   "STONE-BRIDGE.LDESC",
+   "table"
+  ],
+  "zil": "STONE-BRIDGE.LDESC (2dungeon.zil:541)"
+ },
+ {
+  "key": "s13224",
+  "en": "It's a long way down.",
+  "uses": [
+   "LEDGE-2.DOWN",
+   "STONE-BRIDGE.DOWN",
+   "table"
+  ],
+  "zil": "LEDGE-2.DOWN (2dungeon.zil:1390)"
+ },
+ {
+  "key": "s13234",
+  "en": "The room is cool and damp. The air is misty. A twisty path from the southeast splits here toward a wide northerly stone bridge, and a narrow westerly tunnel. It is from the latter that the mist and chill seem to originate.",
+  "uses": [
+   "COOL-ROOM.LDESC",
+   "table"
+  ],
+  "zil": "COOL-ROOM.LDESC (2dungeon.zil:556)"
+ },
+ {
+  "key": "s132ae",
+  "en": " ",
+  "uses": [
+   "CAROUSEL-ROOM.LDESC",
+   "CRYPT-ANTEROOM.LDESC",
+   "CRYPT-ROOM.LDESC",
+   "DEAD-PALANTIR-1.LDESC",
+   "DEAD-PALANTIR-2.LDESC",
+   "DEAD-PALANTIR-3.LDESC",
+   "DEAD-PALANTIR-4.LDESC",
+   "DREARY-ROOM.LDESC",
+   "GLACIER-ROOM.LDESC",
+   "GUARDIAN-ROOM.LDESC",
+   "LEDGE-2.LDESC",
+   "MAGNET-ROOM.LDESC",
+   "MENHIR-ROOM.LDESC",
+   "RIDDLE-ROOM.LDESC",
+   "SAFE-ROOM.LDESC",
+   "TELLER-EAST.LDESC",
+   "TELLER-WEST.LDESC",
+   "TINY-ROOM.LDESC",
+   "WIZARDS-QUARTERS.LDESC",
+   "ZORK3.LDESC",
+   "table"
+  ],
+  "zil": "DEAD-PALANTIR-4.LDESC (2dungeon.zil:2686)"
+ },
+ {
+  "key": "s132b0",
+  "en": "You don't even have an ice-pick.",
+  "uses": [
+   "table"
+  ],
+  "zil": "GLACIER-ROOM.WEST (2dungeon.zil:575)"
+ },
+ {
+  "key": "s132c2",
+  "en": "You are in a tight chimney of solidified lava. It extends up at least another hundred feet and down to a large room far below. A large crack opens to the south, probably the result of a shift in the rock strata.",
+  "uses": [
+   "LAVA-TUBE.LDESC"
+  ],
+  "zil": "LAVA-TUBE.LDESC (2dungeon.zil:582)"
+ },
+ {
+  "key": "s13336",
+  "en": "A winding corridor is filled with cobwebs. Some are broken and the dust on the floor is disturbed. The trend of the twists and turns is northeast to southwest. On the north side of one twist, high up, is a narrow crack.",
+  "uses": [
+   "COBWEBBY-CORRIDOR.LDESC",
+   "table"
+  ],
+  "zil": "COBWEBBY-CORRIDOR.LDESC (2dungeon.zil:602)"
+ },
+ {
+  "key": "s133b0",
+  "en": "This is a small chamber carved out of the rock at the end of a short crawl. On the wall is crudely chiseled the number \"8\".",
+  "uses": [
+   "ROOM-8.LDESC",
+   "table"
+  ],
+  "zil": "ROOM-8.LDESC (2dungeon.zil:635)"
+ },
+ {
+  "key": "s133f6",
+  "en": "You are trying to walk through an enormous rock.",
+  "uses": [
+   "table"
+  ],
+  "zil": "KENNEL.OUT (2dungeon.zil:687)"
+ },
+ {
+  "key": "s1340c",
+  "en": "This room looks like it was once a kennel for a very large dog (some of the bones would fit a dinosaur). It apparently hasn't been used for a long time, as the dust is fairly thick all over. The only exit is northeast.",
+  "uses": [
+   "KENNEL.LDESC"
+  ],
+  "zil": "KENNEL.LDESC (2dungeon.zil:676)"
+ },
+ {
+  "key": "s13480",
+  "en": "A gigantic dog collar, large enough for three rhinoceros-sized dogs, is lying amidst the debris.",
+  "uses": [
+   "COLLAR.FDESC",
+   "table"
+  ],
+  "zil": "COLLAR.FDESC (2dungeon.zil:695)"
+ },
+ {
+  "key": "s134bc",
+  "en": "A long wooden club lies on the ground near the diamond-shaped window. The club is curiously burned at the thick end.",
+  "uses": [
+   "BAT.FDESC",
+   "table"
+  ],
+  "zil": "BAT.FDESC (2dungeon.zil:710)"
+ },
+ {
+  "key": "s13500",
+  "en": "The words \"Babe Flathead\" are burned into the wood.",
+  "uses": [
+   "BAT.TEXT"
+  ],
+  "zil": "BAT.TEXT (2dungeon.zil:715)"
+ },
+ {
+  "key": "s13520",
+  "en": "A marble stairway leads down into the gloom and a passage leads north.",
+  "uses": [
+   "STAIRWAY-TOP.LDESC"
+  ],
+  "zil": "STAIRWAY-TOP.LDESC (2dungeon.zil:720)"
+ },
+ {
+  "key": "s13546",
+  "en": "A small room with oddly angled walls and passages in all directions.",
+  "uses": [
+   "DIAMOND-1.LDESC",
+   "DIAMOND-2.LDESC",
+   "DIAMOND-3.LDESC",
+   "DIAMOND-4.LDESC",
+   "DIAMOND-5.LDESC",
+   "DIAMOND-6.LDESC",
+   "DIAMOND-7.LDESC",
+   "DIAMOND-8.LDESC",
+   "DIAMOND-9.LDESC",
+   "table"
+  ],
+  "zil": "DIAMOND-9.LDESC (2dungeon.zil:837)"
+ },
+ {
+  "key": "s1356a",
+  "en": "This is the entrance to a huge crypt or tomb. A marble stairway leads up from a gateway arch.",
+  "uses": [
+   "CERBERUS-ROOM.LDESC"
+  ],
+  "zil": "CERBERUS-ROOM.LDESC (2dungeon.zil:854)"
+ },
+ {
+  "key": "s1359e",
+  "en": "The huge dog snaps nastily at you.",
+  "uses": [
+   "table"
+  ],
+  "zil": "CERBERUS-ROOM.EAST (2dungeon.zil:859)"
+ },
+ {
+  "key": "s135b2",
+  "en": "There is a vicious-looking dog guarding the entrance. It is more or less your usual dog, except that it has three heads and is the size of an elephant.",
+  "uses": [
+   "CERBERUS.LDESC",
+   "FORMAL-GARDEN.GLOBAL",
+   "table"
+  ],
+  "zil": "CERBERUS.LDESC (2dungeon.zil:883)"
+ },
+ {
+  "key": "s13608",
+  "en": "\"Here lie the Flatheads, whose heads were placed on poles by the Keeper of the Dungeon for amazing untastefulness.\"",
+  "uses": [
+   "CRYPT.TEXT",
+   "table"
+  ],
+  "zil": "CRYPT.TEXT (2dungeon.zil:927)"
+ },
+ {
+  "key": "s13652",
+  "en": "This is the workshop of the Wizard of Frobozz.",
+  "uses": [
+   "WIZARDS-WORKSHOP.LDESC"
+  ],
+  "zil": "WIZARDS-WORKSHOP.LDESC (2dungeon.zil:981)"
+ },
+ {
+  "key": "s13668",
+  "en": "This room is the Wizard's workroom. A hall continues east and west, and a larger room lies to the south. There are many shelves and racks on the walls, but the Wizard's workbench dominates the room. It is made of dark, heavy wood bound with iron. The workbench is stained from many years of use, and is deeply gouged as though some huge clawed animal was imprisoned on it. There are burn marks and even notes written in a crabbed hand. Many arcane items are scattered about the bench; alembics, mortar and pestle, small knives of various sizes, odd scraps of vellum, wax candles, and much more. In the center of a relatively clear area of the bench are affixed three stands - ruby, sapphire, and diamond - which form a triangle.",
+  "uses": [
+   "WORKBENCH-ROOM.LDESC",
+   "table"
+  ],
+  "zil": "WORKBENCH-ROOM.LDESC (2dungeon.zil:995)"
+ },
+ {
+  "key": "s13800",
+  "en": "There is a strange black sphere here.",
+  "uses": [
+   "PALANTIR-4.LDESC",
+   "table"
+  ],
+  "zil": "PALANTIR-4.LDESC (2dungeon.zil:1072)"
+ },
+ {
+  "key": "s13812",
+  "en": "This is the Wizard's trophy room, filled with memorabilia of various sorts. On one wall is the Wizard's D. T. (Doctor of Thaumaturgy) degree from GUE Tech. Several old magic wands are mounted on a wand rack. A collection of dull and nicked swords testify to the fate of many foolhardy adventurers. Small bottles contain discarded homunculi (a few preserved in alcohol). There is a stuffed owl on a perch.",
+  "uses": [
+   "TROPHY-ROOM.LDESC"
+  ],
+  "zil": "TROPHY-ROOM.LDESC (2dungeon.zil:1079)"
+ },
+ {
+  "key": "s13904",
+  "en": "The text is in some obscure tongue. All that can be made out is a reference to \"sending in a matchbook cover.\"",
+  "uses": [
+   "DEGREE.TEXT",
+   "table"
+  ],
+  "zil": "DEGREE.TEXT (2dungeon.zil:1099)"
+ },
+ {
+  "key": "s13944",
+  "en": "A hand-lettered label is affixed to the wall.",
+  "uses": [
+   "WARNING-LABEL.LDESC"
+  ],
+  "zil": "WARNING-LABEL.LDESC (2dungeon.zil:1131)"
+ },
+ {
+  "key": "s13962",
+  "en": "Warning!\n\nThe exhibits in this room are the property of the mighty Wizard of Frobozz (me), and are the fruits of diligent labor and study over many years. He who touches anything will regret it.\n\n(signed)\nFrobozz\n",
+  "uses": [
+   "WARNING-LABEL.TEXT",
+   "table"
+  ],
+  "zil": "WARNING-LABEL.TEXT (2dungeon.zil:1134)"
+ },
+ {
+  "key": "s139e0",
+  "en": "Imbedded in the wall is an ornate trophy cabinet.",
+  "uses": [
+   "WIZARD-CASE.LDESC"
+  ],
+  "zil": "WIZARD-CASE.LDESC (2dungeon.zil:1156)"
+ },
+ {
+  "key": "s139fe",
+  "en": "Shards of a smashed trophy case litter the room.",
+  "uses": [
+   "BROKEN-CASE.LDESC"
+  ],
+  "zil": "BROKEN-CASE.LDESC (2dungeon.zil:1165)"
+ },
+ {
+  "key": "s13a1c",
+  "en": "In this room, inscribed on the floor, is a great pentagram drawn with black chalk. In its center is a black circle.",
+  "uses": [
+   "PENTAGRAM-ROOM.LDESC"
+  ],
+  "zil": "PENTAGRAM-ROOM.LDESC (2dungeon.zil:1170)"
+ },
+ {
+  "key": "s13a5e",
+  "en": "Here a dark hallway turns a corner. To the south is a dark room, to the east is fitful light.",
+  "uses": [
+   "AQUARIUM-ROOM.LDESC",
+   "table"
+  ],
+  "zil": "AQUARIUM-ROOM.LDESC (2dungeon.zil:1189)"
+ },
+ {
+  "key": "s13a96",
+  "en": "Filling the northern half of the room is a huge aquarium.",
+  "uses": [
+   "AQUARIUM.LDESC",
+   "table"
+  ],
+  "zil": "AQUARIUM.LDESC (2dungeon.zil:1202)"
+ },
+ {
+  "key": "s13ab6",
+  "en": "There is a clear crystal sphere lying in the sand.",
+  "uses": [
+   "PALANTIR-3.LDESC",
+   "table"
+  ],
+  "zil": "PALANTIR-3.LDESC (2dungeon.zil:1212)"
+ },
+ {
+  "key": "s13acc",
+  "en": "There is a baby sea serpent swimming in the aquarium.",
+  "uses": [
+   "SERPENT.LDESC"
+  ],
+  "zil": "SERPENT.LDESC (2dungeon.zil:1222)"
+ },
+ {
+  "key": "s13aec",
+  "en": "There is a dead sea serpent in a heap here.",
+  "uses": [
+   "DEAD-SERPENT.LDESC"
+  ],
+  "zil": "DEAD-SERPENT.LDESC (2dungeon.zil:1230)"
+ },
+ {
+  "key": "s13b04",
+  "en": "The floor here seems to be made of sand, but it is hard to see anything else.",
+  "uses": [
+   "IN-AQUARIUM.LDESC",
+   "table"
+  ],
+  "zil": "IN-AQUARIUM.LDESC (2dungeon.zil:1238)"
+ },
+ {
+  "key": "s13b2c",
+  "en": "This is a former broom closet. The exits are to the east and west.",
+  "uses": [
+   "PEARL-ROOM.LDESC"
+  ],
+  "zil": "PEARL-ROOM.LDESC (2dungeon.zil:1292)"
+ },
+ {
+  "key": "s13b4e",
+  "en": "You are at the bottom of a large dormant volcano. High above you light enters from the cone of the volcano. The only exit is to the north.",
+  "uses": [
+   "VOLCANO-BOTTOM.LDESC"
+  ],
+  "zil": "VOLCANO-BOTTOM.LDESC (2dungeon.zil:1305)"
+ },
+ {
+  "key": "s13b8c",
+  "en": "You are about one hundred feet above the bottom of the volcano. The top of the volcano is clearly visible here.",
+  "uses": [
+   "VAIR-1.LDESC"
+  ],
+  "zil": "VAIR-1.LDESC (2dungeon.zil:1314)"
+ },
+ {
+  "key": "s13bc0",
+  "en": "You are about two hundred feet above the volcano floor. Looming above is the rim of the volcano. There is a small ledge on the west side.",
+  "uses": [
+   "VAIR-2.LDESC",
+   "table"
+  ],
+  "zil": "VAIR-2.LDESC (2dungeon.zil:1322)"
+ },
+ {
+  "key": "s13bfc",
+  "en": "You are high above the floor of the volcano. The rim of the volcano looks very narrow and you are very near it. To the east is what appears to be a viewing ledge, too thin to land on.",
+  "uses": [
+   "VAIR-3.LDESC"
+  ],
+  "zil": "VAIR-3.LDESC (2dungeon.zil:1333)"
+ },
+ {
+  "key": "s13c4a",
+  "en": "You are near the rim of the volcano. Above you it is open to the sky. To the west, there is a place to land on a wide ledge.",
+  "uses": [
+   "VAIR-4.LDESC",
+   "table"
+  ],
+  "zil": "VAIR-4.LDESC (2dungeon.zil:1342)"
+ },
+ {
+  "key": "s13c8a",
+  "en": "You are on a narrow ledge within an old dormant volcano. This ledge is about halfway between the floor below and the rim above. There is an exit to the south.",
+  "uses": [
+   "LEDGE-1.LDESC",
+   "table"
+  ],
+  "zil": "LEDGE-1.LDESC (2dungeon.zil:1352)"
+ },
+ {
+  "key": "s13cd2",
+  "en": "I wouldn't jump from here.",
+  "uses": [
+   "LEDGE-1.DOWN"
+  ],
+  "zil": "LEDGE-1.DOWN (2dungeon.zil:1356)"
+ },
+ {
+  "key": "s13ce2",
+  "en": "This must have been a large library, probably for the royal family. All of the shelves have been gnawed to pieces by unfriendly gnomes. To the north is an exit.",
+  "uses": [
+   "LIBRARY.LDESC"
+  ],
+  "zil": "LIBRARY.LDESC (2dungeon.zil:1364)"
+ },
+ {
+  "key": "s13d34",
+  "en": "You are on a ledge in the middle of a large volcano. Below you the volcano bottom can be seen and above is the rim of the volcano. A couple of ledges can be seen on the other side of the volcano; it appears that this ledge is intermediate in elevation between those on the other side. The exit from this room is to the east.",
+  "uses": [
+   "VOLCANO-VIEW.LDESC"
+  ],
+  "zil": "VOLCANO-VIEW.LDESC (2dungeon.zil:1375)"
+ },
+ {
+  "key": "s13dca",
+  "en": "I wouldn't try that.",
+  "uses": [
+   "VOLCANO-VIEW.DOWN"
+  ],
+  "zil": "VOLCANO-VIEW.DOWN (2dungeon.zil:1381)"
+ },
+ {
+  "key": "s13dd8",
+  "en": "It is impossible to cross this distance.",
+  "uses": [
+   "VOLCANO-VIEW.CROSS",
+   "table"
+  ],
+  "zil": "VOLCANO-VIEW.CROSS (2dungeon.zil:1382)"
+ },
+ {
+  "key": "s13df0",
+  "en": "This is a small room, whose walls are formed by an old lava flow. There are exits here to the east and the south.",
+  "uses": [
+   "LAVA-ROOM.LDESC"
+  ],
+  "zil": "LAVA-ROOM.LDESC (2dungeon.zil:1407)"
+ },
+ {
+  "key": "s13e28",
+  "en": "This is a large room full of assorted heavy machinery, whirring noisily. The room smells of burned resistors. Along one wall are three buttons which are, respectively, round, triangular, and square. Naturally, above these buttons are instructions written in EBCDIC. A large sign in English above all the buttons says\n       \"DANGER -- HIGH VOLTAGE\"\nThere are exits to the west and the south.",
+  "uses": [
+   "MACHINE-ROOM.LDESC",
+   "table"
+  ],
+  "zil": "MACHINE-ROOM.LDESC (2dungeon.zil:1439)"
+ },
+ {
+  "key": "s13f1c",
+  "en": "This is a dingy closet adjacent to a larger room to the north. Chiselled into a wall are these words:\n\n     Protected by\n       FROBOZZ\n Magic Alarm Company\n  (Hello, footpad!)\n\nThere doesn't seem to be any footpad here, however.",
+  "uses": [
+   "CAGE-ROOM.LDESC",
+   "table"
+  ],
+  "zil": "CAGE-ROOM.LDESC (2dungeon.zil:1454)"
+ },
+ {
+  "key": "s13fb0",
+  "en": "You are trapped inside a solid steel cage.",
+  "uses": [
+   "IN-CAGE.LDESC"
+  ],
+  "zil": "IN-CAGE.LDESC (2dungeon.zil:1469)"
+ },
+ {
+  "key": "s13fca",
+  "en": "You are at the top of the well. Well done. There are etchings on the side of the well. There is a small crack across the floor at the entrance to a room on the east, but it can be crossed easily.",
+  "uses": [
+   "WELL-TOP.LDESC",
+   "table"
+  ],
+  "zil": "WELL-TOP.LDESC (2dungeon.zil:1477)"
+ },
+ {
+  "key": "s1402a",
+  "en": "It's a long way down!",
+  "uses": [
+   "WELL-TOP.DOWN"
+  ],
+  "zil": "WELL-TOP.DOWN (2dungeon.zil:1482)"
+ },
+ {
+  "key": "s1403a",
+  "en": "This is a damp circular room, whose walls are made of brick and mortar. The roof of this room is not visible, but there appear to be some etchings on the walls. There is a passageway to the west.",
+  "uses": [
+   "WELL-BOTTOM.LDESC"
+  ],
+  "zil": "WELL-BOTTOM.LDESC (2dungeon.zil:1496)"
+ },
+ {
+  "key": "s1409c",
+  "en": "The walls cannot be climbed.",
+  "uses": [
+   "WELL-BOTTOM.UP",
+   "table"
+  ],
+  "zil": "WELL-BOTTOM.UP (2dungeon.zil:1501)"
+ },
+ {
+  "key": "s140a8",
+  "en": "This is a small room containing a large oblong table, no doubt set for afternoon tea. It is clear from the objects on the table that the users were indeed mad. In the eastern corner of the room is a small hole (no more than four inches high). There are passageways leading away to the west and the northwest.",
+  "uses": [
+   "TEA-ROOM.LDESC"
+  ],
+  "zil": "TEA-ROOM.LDESC (2dungeon.zil:1508)"
+ },
+ {
+  "key": "s14152",
+  "en": "Only a mouse could get in there.",
+  "uses": [
+   "TEA-ROOM.EAST",
+   "table"
+  ],
+  "zil": "TEA-ROOM.EAST (2dungeon.zil:1514)"
+ },
+ {
+  "key": "s14168",
+  "en": "This is an enormous room, in the center of which are four wooden posts delineating a rectangular area, above which is what appears to be a wooden roof. In fact, all objects in this room appear to be abnormally large. To the east is a passageway. There are large gaping chasms to the west and northwest.",
+  "uses": [
+   "POSTS-ROOM.LDESC",
+   "table"
+  ],
+  "zil": "POSTS-ROOM.LDESC (2dungeon.zil:1531)"
+ },
+ {
+  "key": "s141fc",
+  "en": "A great chasm blocks your way.",
+  "uses": [
+   "POSTS-ROOM.WEST",
+   "POSTS-ROOM.NW",
+   "POSTS-ROOM.DOWN",
+   "table"
+  ],
+  "zil": "POSTS-ROOM.DOWN (2dungeon.zil:1540)"
+ },
+ {
+  "key": "s1420e",
+  "en": "This is a large room, one half of which is depressed. Salty water flows from a large leak in the ceiling. The only exit is to the west.",
+  "uses": [
+   "POOL-ROOM.LDESC"
+  ],
+  "zil": "POOL-ROOM.LDESC (2dungeon.zil:1548)"
+ },
+ {
+  "key": "s14254",
+  "en": "This is the entrance hall of the Bank of Zork, the largest banking institution of the Great Underground Empire. A partial account of its history is in \"The Lives of the Twelve Flatheads,\" in the chapter on J. Pierpont Flathead. A more detailed history (albeit less objective) may be found in Flathead's outrageous autobiography \"I'm Rich and You Aren't - So There!\". Most of the furniture has been ravaged by passing scavengers. All that remains are two signs at the northwest and northeast corners of the room, which say:\n\n    <--  VIEWING ROOMS  -->\n\nThe way out (ornate but tasteful) is to the east. ",
+  "uses": [
+   "BANK-ENTRANCE.LDESC",
+   "table"
+  ],
+  "zil": "BANK-ENTRANCE.LDESC (2dungeon.zil:1562)"
+ }
+]

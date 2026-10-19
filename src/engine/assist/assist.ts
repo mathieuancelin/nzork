@@ -1,11 +1,8 @@
 // Clickable choices for the "noob" modes, and the guide's suggestion for "hyper noob".
 import type { Game } from '../game'
-import symbols from '../story/symbols.json'
 import { World, DIRECTIONS, DIR_COMMAND } from './world'
 import { Labeler } from './labels'
 import { guideStep, type GuideStep } from './guide'
-
-const WORDS = symbols.words as Record<string, string>
 
 export type ChoiceGroup = 'move' | 'action' | 'object' | 'inventory' | 'examine' | 'meta'
 
@@ -37,7 +34,7 @@ export function computeAssist(game: Game, withHint: boolean): Assist {
     seen.add(c.command)
     choices.push({ ...c, id: c.command })
   }
-  const word = (n: number) => WORDS[String(n)]
+  const word = (n: number) => w.word(n)
 
   // --- moves: exits that really lead somewhere (checked by simulation)
   const here = game.status().roomId

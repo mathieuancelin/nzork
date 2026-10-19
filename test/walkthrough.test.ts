@@ -4,7 +4,7 @@ import { playPlain } from './helpers/plain'
 import { dfrotzTranscript, flatten, HAS_DFROTZ } from '../tools/oracle/dfrotz'
 import { firstDiff } from '../tools/oracle/firstdiff'
 
-const EN = new URL('./walkthrough/en.txt', import.meta.url)
+const EN = new URL('./walkthrough/zork1/en.txt', import.meta.url)
 
 describe('full game (English)', () => {
   const run = playWalkthrough(EN, 'en', 1234)
@@ -22,7 +22,7 @@ describe('full game (English)', () => {
 })
 
 describe('full game (French)', () => {
-  const FR = new URL('./walkthrough/fr.txt', import.meta.url)
+  const FR = new URL('./walkthrough/zork1/fr.txt', import.meta.url)
   const run = playWalkthrough(FR, 'fr', 1234)
 
   it('wins with 350 points with French commands', () => {

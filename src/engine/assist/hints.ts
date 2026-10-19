@@ -1,7 +1,7 @@
 // Hints in the spirit of Infocom's InvisiClues booklets: questions about the puzzles of the
 // places already visited, each with hints from vague to explicit, revealed one at a time.
 // A question appears only once its place has been seen, so the list itself spoils nothing.
-import type { Game } from '../game'
+import type { Game, GameId } from '../game'
 import { World } from './world'
 
 type Lang2 = [fr: string, en: string]
@@ -21,7 +21,8 @@ const touched = (w: World, o: string) => w.attr(o, 'TOUCHBIT')
 const inPlay = (w: World, o: string) => w.vm.parent(w.obj(o)) !== 0
 const saw = (...rooms: string[]): Check => (_w, seen) => rooms.some((r) => seen.has(r))
 
-const QUESTIONS: Question[] = [
+// Zork I's questions (the other games have none yet)
+const ZORK1: Question[] = [
   {
     id: 'house',
     q: ['Comment entrer dans la maison ?', 'How do I get into the house?'],
@@ -318,10 +319,15 @@ export interface HintQuestion {
 }
 
 /** The questions the player can ask now (places seen), in the language of the game. */
+const QUESTIONS: Record<GameId, Question[]> = { zork1: ZORK1, zork2: [], zork3: [] }
+
+/** Whether the game has InvisiClues hints. */
+export const hasHints = (game: GameId) => QUESTIONS[game].length > 0
+
 export function hintsFor(game: Game, seen: Set<string>): HintQuestion[] {
   const w = new World(game)
   const fr = game.lang === 'fr'
-  return QUESTIONS.filter((q) => q.shown(w, seen)).map((q) => ({
+  return QUESTIONS[game.id].filter((q) => q.shown(w, seen)).map((q) => ({
     id: q.id,
     question: q.q[fr ? 0 : 1],
     hints: q.hints.map((h) => h[fr ? 0 : 1]),

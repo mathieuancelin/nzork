@@ -1,5 +1,7 @@
 // French verbs and their translation into the English commands understood by the original
-// parser (see gsyntax.zil). Forms are written without accents (input is normalised).
+// parser (see gsyntax.zil, shared by the three games). Forms are written without accents
+// (input is normalised).
+import type { GameId } from '../games'
 
 export interface VerbDef {
   /** Accepted forms (infinitive, imperative, present), without accents. */
@@ -257,4 +259,52 @@ export const PREP_DISPLAY: Record<string, string> = {
   around: 'autour de',
   up: 'en haut',
   down: 'en bas',
+}
+
+/** What one game adds to the common verbs and words. */
+export interface GameWords {
+  verbs?: VerbDef[]
+  magic?: Record<string, string>
+}
+
+export const GAME_WORDS: Record<GameId, GameWords> = {
+  zork1: {},
+  zork2: {
+    // the Wizard's spells (see the glossary of GUIDE-TRADUCTION.md), said with the wand:
+    // "dire flotte" = "say float"
+    magic: {
+      faiblesse: 'feeble',
+      febrile: 'fumble',
+      frayeur: 'fear',
+      filoute: 'filch',
+      fige: 'freeze',
+      fauche: 'fall',
+      fermente: 'ferment',
+      feroce: 'fierce',
+      flotte: 'float',
+      flammifuge: 'fireproof',
+      fortifie: 'fence',
+      fantasme: 'fantasize',
+      fluorescence: 'fluoresce',
+      fondant: 'fudge',
+      friture: 'fry',
+      // the English names still work, as in the original
+      feeble: 'feeble',
+      fumble: 'fumble',
+      fear: 'fear',
+      filch: 'filch',
+      freeze: 'freeze',
+      fall: 'fall',
+      ferment: 'ferment',
+      fierce: 'fierce',
+      float: 'float',
+      fireproof: 'fireproof',
+      fence: 'fence',
+      fantasize: 'fantasize',
+      fluoresce: 'fluoresce',
+      fudge: 'fudge',
+      fry: 'fry',
+    },
+  },
+  zork3: {},
 }

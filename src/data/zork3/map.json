@@ -1,0 +1,364 @@
+{
+ "size": [
+  14,
+  21
+ ],
+ "rooms": {
+  "AQ-1": [
+   8,
+   3
+  ],
+  "AQ-2": [
+   7,
+   2
+  ],
+  "AQ-3": [
+   6,
+   2
+  ],
+  "AQ-VIEW": [
+   7,
+   7
+  ],
+  "BEHIND-DOOR": [
+   7,
+   13
+  ],
+  "CELL": [
+   8,
+   11
+  ],
+  "CLEARING": [
+   4,
+   3
+  ],
+  "CLIFF": [
+   3,
+   4
+  ],
+  "CLIFF-BASE": [
+   1,
+   5
+  ],
+  "CLIFF-LEDGE": [
+   2,
+   4
+  ],
+  "CP": [
+   9,
+   9
+  ],
+  "CP-ANTE": [
+   9,
+   7
+  ],
+  "CP-OUT": [
+   9,
+   8
+  ],
+  "CREEPY-CRAWL": [
+   4,
+   4
+  ],
+  "DAMP-PASSAGE": [
+   5,
+   3
+  ],
+  "DARK-1": [
+   7,
+   5
+  ],
+  "DARK-2": [
+   7,
+   4
+  ],
+  "DEAD-END": [
+   6,
+   3
+  ],
+  "DEAD-END-5": [
+   7,
+   20
+  ],
+  "EAST-CORRIDOR": [
+   8,
+   12
+  ],
+  "FAR-SHORE": [
+   5,
+   8
+  ],
+  "FLATHEAD-OCEAN": [
+   1,
+   7
+  ],
+  "FOGGY-ROOM": [
+   5,
+   6
+  ],
+  "FRONT-DOOR": [
+   8,
+   13
+  ],
+  "GOOD-CELL": [
+   11,
+   20
+  ],
+  "IN-LAKE": [
+   7,
+   8
+  ],
+  "IN-MIRROR": [
+   1,
+   2
+  ],
+  "JEWEL-ROOM": [
+   10,
+   6
+  ],
+  "JUNCTION": [
+   4,
+   2
+  ],
+  "KEY-ROOM": [
+   8,
+   4
+  ],
+  "LADDER-BOTTOM": [
+   6,
+   19
+  ],
+  "LADDER-TOP": [
+   5,
+   18
+  ],
+  "LAKE-SHORE": [
+   6,
+   7
+  ],
+  "LOWER-SHAFT": [
+   4,
+   20
+  ],
+  "MACHINE-ROOM": [
+   3,
+   20
+  ],
+  "MID-CP-ANTE": [
+   11,
+   17
+  ],
+  "MID-CP-OUT": [
+   10,
+   18
+  ],
+  "MID-JEWEL-ROOM": [
+   12,
+   15
+  ],
+  "MID-MUSEUM-ENTRANCE": [
+   11,
+   15
+  ],
+  "MID-TECH-MUSEUM": [
+   11,
+   14
+  ],
+  "MR-ANTE": [
+   8,
+   6
+  ],
+  "MRA": [
+   7,
+   10
+  ],
+  "MRAE": [
+   8,
+   10
+  ],
+  "MRAW": [
+   9,
+   10
+  ],
+  "MRB": [
+   9,
+   11
+  ],
+  "MRBE": [
+   6,
+   11
+  ],
+  "MRBW": [
+   6,
+   10
+  ],
+  "MRC": [
+   5,
+   11
+  ],
+  "MRCE": [
+   10,
+   12
+  ],
+  "MRCW": [
+   9,
+   12
+  ],
+  "MRD": [
+   7,
+   14
+  ],
+  "MRDE": [
+   9,
+   13
+  ],
+  "MRDW": [
+   8,
+   14
+  ],
+  "MREYE": [
+   8,
+   8
+  ],
+  "MRG": [
+   10,
+   13
+  ],
+  "MRGE": [
+   5,
+   13
+  ],
+  "MRGW": [
+   6,
+   13
+  ],
+  "MSTAIRS": [
+   6,
+   4
+  ],
+  "MUSEUM-ANTE": [
+   7,
+   6
+  ],
+  "MUSEUM-ENTRANCE": [
+   9,
+   6
+  ],
+  "NIRVANA": [
+   12,
+   20
+  ],
+  "NORTH-CORRIDOR": [
+   7,
+   11
+  ],
+  "OLD-JEWEL-ROOM": [
+   1,
+   14
+  ],
+  "OLD-MUSEUM-ENTRANCE": [
+   0,
+   14
+  ],
+  "OLD-TECH-MUSEUM": [
+   0,
+   13
+  ],
+  "ON-LAKE": [
+   6,
+   8
+  ],
+  "PARAPET": [
+   7,
+   9
+  ],
+  "PRISON-CELL": [
+   2,
+   16
+  ],
+  "ROCKY-ROOM": [
+   5,
+   4
+  ],
+  "ROOM-8": [
+   13,
+   1
+  ],
+  "SHADOW-1": [
+   4,
+   6
+  ],
+  "SHADOW-2": [
+   3,
+   5
+  ],
+  "SHADOW-3": [
+   3,
+   7
+  ],
+  "SHADOW-4": [
+   3,
+   8
+  ],
+  "SHADOW-5": [
+   4,
+   9
+  ],
+  "SHADOW-6": [
+   2,
+   8
+  ],
+  "SHADOW-7": [
+   2,
+   7
+  ],
+  "SHADOW-8": [
+   2,
+   6
+  ],
+  "SLOPE": [
+   2,
+   3
+  ],
+  "SOUTH-CORRIDOR": [
+   7,
+   12
+  ],
+  "SOUTH-SHORE": [
+   6,
+   6
+  ],
+  "TECH-MUSEUM": [
+   9,
+   4
+  ],
+  "TIGHT-SQUEEZE": [
+   5,
+   5
+  ],
+  "TIMBER-ROOM": [
+   5,
+   19
+  ],
+  "VIEW-ROOM": [
+   5,
+   9
+  ],
+  "WEST-CORRIDOR": [
+   6,
+   12
+  ],
+  "WIDE-HALL": [
+   6,
+   5
+  ],
+  "ZORK-IV": [
+   1,
+   1
+  ],
+  "ZORK2-STAIR": [
+   4,
+   0
+  ]
+ }
+}

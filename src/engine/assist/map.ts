@@ -1,24 +1,38 @@
 // The map of the rooms: their exits (from the room properties, plus the few a routine decides),
 // the rooms the player has seen, and a path between them. Nothing here reveals a room that was
 // not visited.
-import type { Game } from '../game'
+import type { Game, GameId } from '../game'
 import { World, DIRECTIONS, type Direction } from './world'
 
 export type MapDir = Direction | 'LAND'
 export const MAP_DIRS: MapDir[] = [...DIRECTIONS, 'LAND']
 
+type Special = { from: string; dir: MapDir; to: string; open: (w: World) => boolean }
+
 /** Exits a routine decides (PER in the ZIL source): where they lead, when they can be walked. */
-const SPECIAL: { from: string; dir: MapDir; to: string; open: (w: World) => boolean }[] = [
-  { from: 'LIVING-ROOM', dir: 'DOWN', to: 'CELLAR', open: (w) => w.flag('RUG-MOVED') && w.attr('TRAP-DOOR', 'OPENBIT') },
-  { from: 'GRATING-CLEARING', dir: 'DOWN', to: 'GRATING-ROOM', open: (w) => w.attr('GRATE', 'OPENBIT') },
-  // only with almost nothing in hand: never used to travel
-  { from: 'STUDIO', dir: 'UP', to: 'KITCHEN', open: () => false },
-  // one-way slides of the maze
-  { from: 'MAZE-2', dir: 'DOWN', to: 'MAZE-4', open: () => true },
-  { from: 'MAZE-7', dir: 'DOWN', to: 'DEAD-END-1', open: () => true },
-  { from: 'MAZE-9', dir: 'DOWN', to: 'MAZE-11', open: () => true },
-  { from: 'MAZE-12', dir: 'DOWN', to: 'MAZE-5', open: () => true },
-]
+const SPECIAL: Record<GameId, Special[]> = {
+  zork1: [
+    { from: 'LIVING-ROOM', dir: 'DOWN', to: 'CELLAR', open: (w) => w.flag('RUG-MOVED') && w.attr('TRAP-DOOR', 'OPENBIT') },
+    { from: 'GRATING-CLEARING', dir: 'DOWN', to: 'GRATING-ROOM', open: (w) => w.attr('GRATE', 'OPENBIT') },
+    // only with almost nothing in hand: never used to travel
+    { from: 'STUDIO', dir: 'UP', to: 'KITCHEN', open: () => false },
+    // one-way slides of the maze
+    { from: 'MAZE-2', dir: 'DOWN', to: 'MAZE-4', open: () => true },
+    { from: 'MAZE-7', dir: 'DOWN', to: 'DEAD-END-1', open: () => true },
+    { from: 'MAZE-9', dir: 'DOWN', to: 'MAZE-11', open: () => true },
+    { from: 'MAZE-12', dir: 'DOWN', to: 'MAZE-5', open: () => true },
+  ],
+  zork2: [
+    // the Carousel Room (MAGNET-ROOM-EXIT): while it spins, every exit is a gamble
+    { from: 'MAGNET-ROOM', dir: 'EAST', to: 'MACHINE-ROOM', open: (w) => !w.flag('CAROUSEL-FLIP-FLAG') },
+    { from: 'MAGNET-ROOM', dir: 'SE', to: 'TEA-ROOM', open: (w) => !w.flag('CAROUSEL-FLIP-FLAG') },
+    { from: 'MAGNET-ROOM', dir: 'OUT', to: 'TEA-ROOM', open: (w) => !w.flag('CAROUSEL-FLIP-FLAG') },
+    // the bank lets nobody out with its money (BKLEAVEE)
+    { from: 'DEPOSITORY', dir: 'EAST', to: 'TELLER-EAST', open: (w) => !w.carried('BILLS') && !w.carried('PORTRAIT') },
+    { from: 'DEPOSITORY', dir: 'WEST', to: 'TELLER-WEST', open: (w) => !w.carried('BILLS') && !w.carried('PORTRAIT') },
+  ],
+  zork3: [],
+}
 
 export interface RoomExit {
   dir: MapDir
@@ -36,7 +50,7 @@ export function exitsOf(w: World, room: string): RoomExit[] {
     if (e.kind === 'open') out.push({ dir, to: e.to, open: true, visible: true })
     else if (e.kind === 'closed') out.push({ dir, to: e.to, open: false, visible: !!e.door })
     else if (e.kind === 'function') {
-      const s = SPECIAL.find((x) => x.from === room && x.dir === dir)
+      const s = SPECIAL[w.id].find((x) => x.from === room && x.dir === dir)
       if (s) {
         const open = s.open(w)
         out.push({ dir, to: s.to, open, visible: open })

@@ -19,7 +19,7 @@ describe('hints', () => {
   })
 
   it('marks the puzzles solved along the full game', () => {
-    const run = playWalkthrough(new URL('./walkthrough/en.txt', import.meta.url), 'en', 1234)
+    const run = playWalkthrough(new URL('./walkthrough/zork1/en.txt', import.meta.url), 'en', 1234)
     const game = new Game({ story: loadStory(), lang: 'en', seed: 1234 })
     game.start()
     const remembered = new Set<string>()

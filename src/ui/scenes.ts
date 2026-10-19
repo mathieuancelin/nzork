@@ -1,9 +1,12 @@
-// Which illustration goes with which room (and state). The scene list lives in
-// src/data/scenes.json, the prompts in tools/images/prompts.json; generated images are
-// published in public/scenes/ with a manifest.
-import scenes from '../data/scenes.json'
-import type { Game } from '../engine/game'
+// Which illustration goes with which room (and state). The scene list of each game lives in
+// src/data/<game>/scenes.json, the prompts in tools/images/prompts.json; generated images are
+// published in public/scenes/ with a manifest (Zork I so far: the scenes of the other games
+// show their placeholder).
+import zork1 from '../data/zork1/scenes.json'
+import zork2 from '../data/zork2/scenes.json'
+import type { Game, GameId } from '../engine/game'
 import { World } from '../engine/assist/world'
+import { allRooms } from '../engine/assist/map'
 import type { PlaceId } from './sound/presets'
 
 type Condition = { flag?: string; notFlag?: string; objectIn?: [string, string] }
@@ -16,8 +19,16 @@ interface SceneDef {
   variants?: { id: string; when: Condition }[]
 }
 
-const byRoom = new Map<string, SceneDef>()
-for (const s of (scenes as { scenes: SceneDef[] }).scenes) for (const r of s.rooms) byRoom.set(r, s)
+const SCENES = { zork1, zork2, zork3: { scenes: [] } } as unknown as Record<GameId, { scenes: SceneDef[] }>
+const byRoom = new Map<GameId, Map<string, SceneDef>>()
+function sceneDef(game: GameId, room: string): SceneDef | undefined {
+  let m = byRoom.get(game)
+  if (!m) {
+    byRoom.set(game, (m = new Map()))
+    for (const s of SCENES[game].scenes) for (const r of s.rooms) m.set(r, s)
+  }
+  return m.get(room)
+}
 
 export interface SceneInfo {
   /** Image to show: a state variant if one applies, else the base scene. */
@@ -34,13 +45,13 @@ export interface SceneInfo {
   ambience: PlaceId
 }
 
-/** Turns of light of a new lantern (LAMP-TABLE: 200 + 100 + 70 + 15). */
-const LAMP_LIFE = 385
+/** Turns of light of a new lantern: the stages of LAMP-TABLE (Zork I 200 + 100 + 70 + 15, Zork II 200 + 300 + 100 + 50). */
+const LAMP_LIFE: Record<GameId, number> = { zork1: 385, zork2: 650, zork3: 385 }
 
 function lightOf(w: World, room: string): Pick<SceneInfo, 'light' | 'strength'> {
   if (w.roomLit(room)) return { light: 'day', strength: 1 }
-  const on = (o: string) => w.carried(o) && w.attr(o, 'ONBIT')
-  if (on('LAMP')) return { light: 'lamp', strength: Math.min(1, w.lampTurnsLeft() / LAMP_LIFE) }
+  const on = (o: string) => w.hasObject(o) && w.carried(o) && w.attr(o, 'ONBIT')
+  if (on('LAMP')) return { light: 'lamp', strength: Math.min(1, w.lampTurnsLeft() / LAMP_LIFE[w.id]) }
   return { light: 'flame', strength: 1 }
 }
 
@@ -51,36 +62,37 @@ function holds(w: World, c: Condition): boolean {
   return true
 }
 
+/** Without a scene, a room still gets its own (missing) picture, named after the game. */
+const fallbackId = (game: GameId, roomId: string) => (game === 'zork1' ? roomId.toLowerCase() : `${game}/${roomId.toLowerCase()}`)
+
 export function sceneFor(game: Game): SceneInfo {
   const roomId = game.status().roomId
-  const s = byRoom.get(roomId)
-  const base = s?.id ?? roomId.toLowerCase()
+  const s = sceneDef(game.id, roomId)
+  const base = s?.id ?? fallbackId(game.id, roomId)
   const w = new World(game)
   let id = base
   if (s?.variants) {
     const v = s.variants.find((x) => holds(w, x.when))
     if (v) id = v.id
   }
-  return { id, base, sky: s?.palette?.sky ?? '#1b2130', ground: s?.palette?.ground ?? '#2a2016', ...lightOf(w, roomId), ambience: ambienceFor(roomId) }
+  return { id, base, sky: s?.palette?.sky ?? '#1b2130', ground: s?.palette?.ground ?? '#2a2016', ...lightOf(w, roomId), ambience: ambienceFor(game.id, roomId) }
 }
 
 /** The base scene of a room (its picture, without the state variants). */
-export function sceneOfRoom(roomId: string): { id: string; sky: string; ground: string } | undefined {
-  const s = byRoom.get(roomId)
+export function sceneOfRoom(game: GameId, roomId: string): { id: string; sky: string; ground: string } | undefined {
+  const s = sceneDef(game, roomId)
   return s && { id: s.id, sky: s.palette?.sky ?? '#1b2130', ground: s.palette?.ground ?? '#2a2016' }
 }
 
 /** The soundtrack's ambience for a room. */
-export function ambienceFor(roomId: string): PlaceId {
-  return (byRoom.get(roomId)?.ambience as PlaceId | undefined) ?? 'cave'
+export function ambienceFor(game: GameId, roomId: string): PlaceId {
+  return (sceneDef(game, roomId)?.ambience as PlaceId | undefined) ?? 'cave'
 }
-
-import symbols from '../engine/story/symbols.json'
 
 /** Names of all the rooms in the current language (to style room titles in the text). */
 export function roomTitles(game: Game): Set<string> {
-  const O = symbols.objects as Record<string, number>
-  return new Set((scenes as { scenes: SceneDef[] }).scenes.flatMap((s) => s.rooms).map((r) => game.presenter.noun(O[r]).nom))
+  const w = new World(game)
+  return new Set(allRooms(w).map((r) => game.presenter.noun(w.obj(r)).nom))
 }
 
 let manifest: Promise<Set<string>> | null = null

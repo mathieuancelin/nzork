@@ -1,3 +1,9 @@
 [submodule "vendor/zork1"]
 	path = vendor/zork1
 	url = https://github.com/historicalsource/zork1.git
+[submodule "vendor/zork2"]
+	path = vendor/zork2
+	url = https://github.com/historicalsource/zork2.git
+[submodule "vendor/zork3"]
+	path = vendor/zork3
+	url = https://github.com/historicalsource/zork3.git

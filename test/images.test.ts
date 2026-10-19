@@ -3,8 +3,8 @@
 import { describe, it, expect } from 'vitest'
 import sharp from 'sharp'
 import { pixelize, pixelizeItem, buildPalette, DEFAULT_PALETTE, WIDTH, HEIGHT, ITEM_SIZE } from '../tools/images/lib/pixel'
-import scenes from '../src/data/scenes.json'
-import items from '../src/data/items.json'
+import scenes from '../src/data/zork1/scenes.json'
+import items from '../src/data/zork1/items.json'
 import itemPrompts from '../tools/images/item-prompts.json'
 
 async function synthetic(w = 1536, h = 1024): Promise<Buffer> {

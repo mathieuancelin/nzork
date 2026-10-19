@@ -4,21 +4,25 @@
 //   - object short names, keyed o<object number>
 //   - combat messages (REMARK tables), keyed m<hex table address>
 //
-//   npx tsx tools/catalog/extract.ts   → tools/catalog/out/catalog.en.json
+//   npx tsx tools/catalog/extract.ts [--game zork2]   → tools/catalog/<game>/out/catalog.en.json
 
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
-import sym from '../../src/engine/story/symbols.json'
 import { analyzeStory, findPrintGroups } from '../../src/engine/zmachine/disasm'
 import { decodeZString } from '../../src/engine/zmachine/text'
+import type { GameSymbols } from '../../src/engine/symbols'
 import { loadZil } from '../zil/load'
 import { walk, isForm, atomName, zilText, type Node } from '../zil/reader'
+import { gamePaths, readStory, toolGame } from '../game'
 
-const mem = new Uint8Array(readFileSync(new URL('../../src/engine/story/zork1.z3', import.meta.url)))
+const gameId = toolGame()
+const paths = gamePaths(gameId)
+const sym = JSON.parse(readFileSync(paths.symbols, 'utf8')) as GameSymbols
+const mem = readStory(gameId)
 const w = (a: number) => (mem[a] << 8) | mem[a + 1]
 const abbrevs = w(0x18)
 const analysis = analyzeStory(mem)
 const groups = findPrintGroups(mem, analysis)
-const zil = loadZil()
+const zil = loadZil(gameId)
 const routineName = new Map(Object.entries(sym.routines).map(([n, a]) => [a as number, n]))
 const objectName = new Map(Object.entries(sym.objects).map(([n, o]) => [o as number, n]))
 const hex = (n: number) => n.toString(16)
@@ -98,8 +102,9 @@ for (const r of analysis.routines) {
   const rn = routineName.get(r.addr) ?? hex(r.addr)
   for (const i of r.instrs) i.operands.forEach((v, k) => i.types[k] === 0 && addUse(v * 2, `routine ${rn}`))
 }
-// words in tables (everything before the code)
-for (let a = 0x40; a < analysis.codeStart; a += 2) addUse(w(a) * 2, 'table')
+// words in tables (everything before the code); Zork II and III do not align their tables on
+// even addresses, so every byte offset is tried
+for (let a = 0x40; a < analysis.codeStart; a++) addUse(w(a) * 2, 'table')
 
 // ZIL location of a string literal
 const zilStringLoc = new Map<string, string>()
@@ -182,9 +187,11 @@ function meleeRows(name: string): number {
   const t = def?.init
   return t && isForm(t, 'TABLE') ? t.items.filter((x) => isForm(x, 'LTABLE')).length : 0
 }
-addMeleeTable('HERO-MELEE', g('HERO-MELEE'), meleeRows('HERO-MELEE'))
+// only Zork I has the combat system with message tables (the fights of Zork II and III are
+// written in the action routines)
+if (sym.globals['HERO-MELEE'] !== undefined) addMeleeTable('HERO-MELEE', g('HERO-MELEE'), meleeRows('HERO-MELEE'))
 // villain tables are referenced from VILLAINS: each entry is a table <villain weapon prob melee...>
-{
+if (sym.globals['VILLAINS'] !== undefined) {
   const villains = g('VILLAINS')
   const n = w(villains)
   const names = ['TROLL-MELEE', 'THIEF-MELEE', 'CYCLOPS-MELEE']
@@ -199,8 +206,8 @@ addMeleeTable('HERO-MELEE', g('HERO-MELEE'), meleeRows('HERO-MELEE'))
 
 // ------------------------------------------------------------------ write
 const out = { groups: groupEntries, strings: stringEntries, objects: objectEntries, melee: meleeEntries }
-mkdirSync(new URL('./out/', import.meta.url), { recursive: true })
-writeFileSync(new URL('./out/catalog.en.json', import.meta.url), JSON.stringify(out, null, 1) + '\n')
+mkdirSync(new URL('out/', paths.catalog), { recursive: true })
+writeFileSync(new URL('out/catalog.en.json', paths.catalog), JSON.stringify(out, null, 1) + '\n')
 console.log({
   groups: Object.keys(groupEntries).length,
   groupsWithZil: Object.values(groupEntries).filter((x) => x.zil).length,

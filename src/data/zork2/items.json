@@ -1,0 +1,28 @@
+{
+ "items": [
+  {
+   "id": "lamp",
+   "objects": [
+    "LAMP"
+   ]
+  },
+  {
+   "id": "lamp-broken",
+   "objects": [
+    "BROKEN-LAMP"
+   ]
+  },
+  {
+   "id": "sword",
+   "objects": [
+    "SWORD"
+   ]
+  },
+  {
+   "id": "matches",
+   "objects": [
+    "MATCH"
+   ]
+  }
+ ]
+}

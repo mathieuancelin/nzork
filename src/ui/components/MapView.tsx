@@ -6,12 +6,16 @@ import { useEffect, useRef, useState, type PointerEvent } from 'react'
 import { useGame } from '../store'
 import { t } from '../i18n'
 import { sceneManifest, sceneOfRoom } from '../scenes'
-import mapData from '../../data/map.json'
+import zork1Map from '../../data/zork1/map.json'
+import zork2Map from '../../data/zork2/map.json'
+import zork3Map from '../../data/zork3/map.json'
 import type { MapDir } from '../../engine/assist/map'
+import type { GameId } from '../../engine/games'
 
 const CELL = { x: 84, y: 60 }
 const NODE = { w: 64, h: 36 }
-const GRID = mapData.rooms as Record<string, number[]>
+/** Where each room sits on the grid (tools/map/layout.ts). */
+const GRIDS: Record<GameId, Record<string, number[]>> = { zork1: zork1Map.rooms, zork2: zork2Map.rooms, zork3: zork3Map.rooms }
 const STUB: Partial<Record<MapDir, [number, number]>> = {
   NORTH: [0, -1], SOUTH: [0, 1], EAST: [1, 0], WEST: [-1, 0], NE: [1, -1], NW: [-1, -1], SE: [1, 1], SW: [-1, 1], UP: [0.6, -1], DOWN: [-0.6, 1],
 }
@@ -19,8 +23,8 @@ const STUB: Partial<Record<MapDir, [number, number]>> = {
 const HOVER_DELAY = 700
 const PREVIEW = { w: 240, h: 165 }
 
-const at = (room: string): [number, number] => {
-  const [x, y] = GRID[room] ?? [0, 0]
+const at = (game: GameId, room: string): [number, number] => {
+  const [x, y] = GRIDS[game][room] ?? [0, 0]
   return [x * CELL.x, y * CELL.y]
 }
 
@@ -45,6 +49,7 @@ export function MapOverlay() {
 
 export function MapView({ large = false }: { large?: boolean }) {
   const map = useGame((s) => s.side?.map)
+  const gameId = useGame((s) => s.gameId)
   const setLarge = useGame((s) => s.setMapLarge)
   const lang = useGame((s) => s.settings.lang)
   const traveling = useGame((s) => s.traveling)
@@ -87,9 +92,9 @@ export function MapView({ large = false }: { large?: boolean }) {
   )
 
   if (!map) return null
-  const [cx, cy] = at(map.here)
+  const [cx, cy] = at(gameId, map.here)
   const screen = (room: string): [number, number] => {
-    const [x, y] = at(room)
+    const [x, y] = at(gameId, room)
     return [size.w / 2 + offset[0] + (x - cx) * zoom, size.h / 2 + offset[1] + (y - cy) * zoom]
   }
   const transform = `translate(${size.w / 2 + offset[0]} ${size.h / 2 + offset[1]}) scale(${zoom}) translate(${-cx} ${-cy})`
@@ -138,19 +143,19 @@ export function MapView({ large = false }: { large?: boolean }) {
         <svg width={size.w} height={size.h} onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerCancel={onUp}>
           <g transform={transform}>
             {map.links.map(([a, b]) => {
-              const [x1, y1] = at(a)
-              const [x2, y2] = at(b)
+              const [x1, y1] = at(gameId, a)
+              const [x2, y2] = at(gameId, b)
               return <line key={`${a}|${b}`} className="map-link" x1={x1} y1={y1} x2={x2} y2={y2} />
             })}
             {map.stubs.map(({ room, dir }) => {
               const v = STUB[dir]
               if (!v) return null
-              const [x, y] = at(room)
+              const [x, y] = at(gameId, room)
               return <line key={`${room}-${dir}`} className="map-stub" x1={x} y1={y} x2={x + v[0] * CELL.x * 0.62} y2={y + v[1] * CELL.y * 0.62} />
             })}
             {map.rooms.map((room) => {
-              const [x, y] = at(room)
-              const scene = sceneOfRoom(room)
+              const [x, y] = at(gameId, room)
+              const scene = sceneOfRoom(gameId, room)
               const img = scene && images?.has(scene.id) ? `${import.meta.env.BASE_URL}scenes/${scene.id}.png` : null
               return (
                 <g
@@ -169,7 +174,7 @@ export function MapView({ large = false }: { large?: boolean }) {
             })}
           </g>
         </svg>
-        {preview && <Preview room={preview} name={map.names[preview]} at={screen(preview)} box={size} hasImage={!!images?.has(sceneOfRoom(preview)?.id ?? '')} />}
+        {preview && <Preview room={preview} name={map.names[preview]} at={screen(preview)} box={size} game={gameId} hasImage={!!images?.has(sceneOfRoom(gameId, preview)?.id ?? '')} />}
         <div className="map-tools">
           <button className="icon-btn" onClick={() => setZoom((z) => Math.min(1.8, z * 1.25))} aria-label={t(lang, 'zoomIn')} title={t(lang, 'zoomIn')}>
             +
@@ -239,8 +244,8 @@ export function MapView({ large = false }: { large?: boolean }) {
 }
 
 /** The picture of a room, floating next to it on the map. */
-function Preview({ room, name, at: [x, y], box, hasImage }: { room: string; name: string; at: [number, number]; box: { w: number; h: number }; hasImage: boolean }) {
-  const scene = sceneOfRoom(room)
+function Preview({ room, name, at: [x, y], box, game, hasImage }: { room: string; name: string; at: [number, number]; box: { w: number; h: number }; game: GameId; hasImage: boolean }) {
+  const scene = sceneOfRoom(game, room)
   const w = Math.min(PREVIEW.w, box.w - 16)
   const left = Math.max(8, Math.min(box.w - w - 8, x - w / 2))
   // above the room when there is space for it, else below

@@ -1,8 +1,9 @@
-// Merges the French translation files into src/engine/i18n/fr/catalog.json.
-//   npx tsx tools/catalog/merge.ts
+// Merges the French translation files into src/engine/i18n/fr/<game>/catalog.json.
+//   npx tsx tools/catalog/merge.ts [--game zork2]
 import { readFileSync, readdirSync, writeFileSync, existsSync } from 'node:fs'
+import { gamePaths, toolGame } from '../game'
 
-const dir = new URL('../../src/engine/i18n/fr/', import.meta.url)
+const dir = gamePaths(toolGame()).french
 const parts = new URL('parts/', dir)
 const catalog = { groups: {} as Record<string, string>, strings: {} as Record<string, string>, melee: {} as Record<string, string>, objects: {} as Record<string, unknown> }
 for (const f of readdirSync(parts).filter((x) => x.endsWith('.json')).sort()) {

@@ -4,8 +4,9 @@
 // the game repeats a word typed by the player, it shows the French text.
 
 import type { InputContext, InputTranslator, TranslatedInput } from '../game'
+import type { GameId } from '../games'
 import type { ParseEntry } from '../zmachine/vm'
-import { VERBS, DEFAULT_P2, DIRECTIONS, ARTICLES, WORDS, PRONOUNS, MAGIC, PREP_DISPLAY, type VerbDef } from './verbs'
+import { VERBS, DEFAULT_P2, DIRECTIONS, ARTICLES, WORDS, PRONOUNS, MAGIC, PREP_DISPLAY, GAME_WORDS, type VerbDef } from './verbs'
 
 export interface FrObjectWords {
   nom?: string
@@ -78,7 +79,13 @@ export class FrenchInput implements InputTranslator {
   private maxPrep = 1
   private display = new Map<string, string>()
 
-  constructor(private objects: Record<string, FrObjectWords>) {
+  constructor(
+    private objects: Record<string, FrObjectWords>,
+    game: GameId = 'zork1',
+  ) {
+    const extra = GAME_WORDS[game]
+    // the game's own verbs come first: they may give a common French verb another meaning
+    const verbs = [...(extra.verbs ?? []), ...VERBS]
     const add = (phrase: string, kind: Kind, en: string, obj = 0) => {
       const k = keyOf(phrase)
       if (!k) return
@@ -94,9 +101,9 @@ export class FrenchInput implements InputTranslator {
     }
     for (const [fr, en] of Object.entries(DIRECTIONS)) add(fr, 'dir', en)
     for (const [fr, en] of Object.entries(WORDS)) add(fr, 'word', en)
-    for (const [fr, en] of Object.entries(MAGIC)) add(fr, 'magic', en)
-    for (const v of VERBS) for (const f of v.forms) if (!this.verbForms.has(f)) this.verbForms.set(f, v)
-    for (const p of [...Object.keys(DEFAULT_P2), ...VERBS.flatMap((v) => [...Object.keys(v.p1 ?? {}), ...Object.keys(v.p2 ?? {})])]) {
+    for (const [fr, en] of Object.entries({ ...MAGIC, ...extra.magic })) add(fr, 'magic', en)
+    for (const v of verbs) for (const f of v.forms) if (!this.verbForms.has(f)) this.verbForms.set(f, v)
+    for (const p of [...Object.keys(DEFAULT_P2), ...verbs.flatMap((v) => [...Object.keys(v.p1 ?? {}), ...Object.keys(v.p2 ?? {})])]) {
       const k = keyOf(p)
       this.preps.add(k)
       this.maxPrep = Math.max(this.maxPrep, k.split(' ').length)
@@ -106,7 +113,7 @@ export class FrenchInput implements InputTranslator {
       const k = en.toLowerCase().slice(0, 6)
       if (!this.display.has(k)) this.display.set(k, fr)
     }
-    for (const v of VERBS) show(v.en.split(' ')[0], v.inf)
+    for (const v of verbs) show(v.en.split(' ')[0], v.inf)
     for (const [en, fr] of Object.entries(PREP_DISPLAY)) show(en, fr)
     for (const o of Object.values(objects)) {
       for (const [fr, en] of Object.entries(o.mots ?? {})) show(en, fr)
@@ -227,8 +234,8 @@ export class FrenchInput implements InputTranslator {
     const launch = whole.match(/^(mettre|mets|mettez)( (le|ce) (bateau|canot))? a l' ?eau$/)
     if (launch) return [{ en: 'launch', pos: t[0].start + 1, len: t[0].raw.length, echo: 'mettre à l\u2019eau' }]
 
-    // a direction alone
-    const dir = this.matchAt(t, 0)
+    // a direction alone ("nord" may also be an adjective, of a wall or a door)
+    const dir = this.matchAt(t, 0, 'dir')
     if (dir && dir.kind === 'dir' && dir.end === t.length) return [this.out(dir, t, ctx)]
 
     // "où est la lampe ?"
@@ -263,7 +270,7 @@ export class FrenchInput implements InputTranslator {
     if (verb.en === 'walk' || verb.alone === 'up' || verb.alone === 'down' || verb.alone === 'enter' || verb.alone === 'exit') {
       const skip = rest.findIndex((x) => !['vers', 'au', 'a', "l'", 'le', 'la', 'en', 'direction', 'de', 'du', 'par', 'droit'].includes(x.norm))
       if (skip >= 0) {
-        const m = this.matchAt(rest, skip)
+        const m = this.matchAt(rest, skip, 'dir')
         if (m && m.kind === 'dir' && m.end === rest.length) return [this.out(m, rest, ctx)]
       }
     }
@@ -362,14 +369,14 @@ export class FrenchInput implements InputTranslator {
     )
   }
 
-  /** Longest lexicon phrase starting at token i. */
-  private matchAt(t: Token[], i: number): Match | undefined {
+  /** Longest lexicon phrase starting at token i (of the `prefer`red kind when it can be one). */
+  private matchAt(t: Token[], i: number, prefer?: Kind): Match | undefined {
     for (let n = Math.min(this.maxPhrase, t.length - i); n >= 1; n--) {
       const k = t.slice(i, i + n).map((x) => x.norm).join(' ')
       const list = this.phrases.get(k)
       if (!list) continue
       // prefer nouns, then adjectives, then other words
-      for (const kind of ['noun', 'adj', 'dir', 'magic', 'word'] as Kind[]) {
+      for (const kind of [...(prefer ? [prefer] : []), 'noun', 'adj', 'dir', 'magic', 'word'] as Kind[]) {
         const c = list.filter((x) => x.kind === kind)
         if (c.length) return { kind, candidates: c, start: i, end: i + n }
       }

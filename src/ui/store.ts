@@ -1,9 +1,11 @@
 // Application state (zustand). The Game instance lives outside React state.
 import { create } from 'zustand'
 import type { Game, Lang, Status } from '../engine/game'
-import { createGame, loadStory } from './engine'
-import { AUTOSAVE, SLOT_COUNT, allSlots, deleteSlot, readPref, readSlot, writePref, writeSlot, type SlotData, type TranscriptEntry } from './saves'
+import { isGameId, type GameId } from '../engine/games'
+import { createGame, loadGameData, type GameData } from './engine'
+import { AUTOSAVE, SLOT_COUNT, allSlots, deleteSlot, gamePref, readPref, readSlot, writePref, writeSlot, type SlotData, type TranscriptEntry } from './saves'
 import { computeAssist, type Assist, type Choice } from '../engine/assist/assist'
+import { hasGuide } from '../engine/assist/guide'
 import { inventoryOf, treasuresOf, type Item, type Treasures } from '../engine/assist/items'
 import { mapOf, pathTo, visitedRooms, type MapState } from '../engine/assist/map'
 import { hintsFor, type HintQuestion } from '../engine/assist/hints'
@@ -16,7 +18,7 @@ import { moodFor, turnCue, type Mood } from './sound/mood'
 import type { CueKind } from './sound/presets'
 
 export type Mode = 'classic' | 'noob' | 'hypernoob'
-export type Modal = null | 'menu' | 'saves' | 'settings' | 'help' | 'about' | 'welcome' | 'hints' | 'documents'
+export type Modal = null | 'menu' | 'saves' | 'settings' | 'help' | 'about' | 'welcome' | 'hints' | 'documents' | 'games'
 export type SideTab = 'actions' | 'map' | 'inventory' | 'treasures'
 
 export interface Settings {
@@ -60,6 +62,10 @@ const DEFAULT_SETTINGS: Settings = {
 
 interface State {
   ready: boolean
+  /** The game being played: Zork I, II or III. */
+  gameId: GameId
+  /** Downloading another game. */
+  switching: boolean
   settings: Settings
   transcript: TranscriptEntry[]
   status: Status | null
@@ -92,12 +98,15 @@ interface State {
   toast: string | null
 
   init(): Promise<void>
+  /** Plays another game of the trilogy (its autosave, or a new game). */
+  switchGame(id: GameId): Promise<void>
   newGame(): void
   submit(line: string): void
   playChoice(choice: Choice): void
   undo(): void
   saveTo(slot: number, name?: string): void
-  loadFrom(slot: number | typeof AUTOSAVE): void
+  /** Loads a save of the current game; false when there is none (or it cannot be read). */
+  loadFrom(slot: number | typeof AUTOSAVE): boolean
   removeSlot(slot: number): void
   refreshSlots(): void
   setSetting<K extends keyof Settings>(key: K, value: Settings[K]): void
@@ -116,7 +125,8 @@ interface State {
 
 let game: Game | null = null
 let initStarted = false
-let story: Uint8Array | null = null
+/** Story file and catalog of the current game. */
+let data: GameData | null = null
 let nextId = 1
 /** Transcript length before each command, to undo the screen as well. */
 let turnMarks: number[] = []
@@ -140,9 +150,9 @@ export const useGame = create<State>((set, get) => {
   const persistAuto = () => {
     if (!game) return
     const s = get()
-    const data: SlotData = { name: t(s.settings.lang, 'autosave'), date: new Date().toISOString(), save: game.save(''), transcript: s.transcript.slice(-60), visited: [...remembered] }
-    writeSlot(AUTOSAVE, data)
-    set({ autosave: data })
+    const slot: SlotData = { name: t(s.settings.lang, 'autosave'), date: new Date().toISOString(), save: game.save(''), transcript: s.transcript.slice(-60), visited: [...remembered] }
+    writeSlot(AUTOSAVE, slot, game.id)
+    set({ autosave: slot })
   }
 
   const refreshAssist = () => {
@@ -151,7 +161,8 @@ export const useGame = create<State>((set, get) => {
       set({ assist: null })
       return
     }
-    set({ assist: computeAssist(game, s.settings.mode === 'hypernoob') })
+    // the guide only knows Zork I: elsewhere hyper noob shows the choices without circling one
+    set({ assist: computeAssist(game, s.settings.mode === 'hypernoob' && hasGuide(game.id)) })
   }
 
   /** Plays one clickable choice (or one step of a walk on the map). */
@@ -192,8 +203,22 @@ export const useGame = create<State>((set, get) => {
     refreshAssist()
   }
 
+  const initialGame = ((g: unknown): GameId => (isGameId(g) ? g : 'zork1'))(readPref<string>('game', 'zork1'))
+
+  /** Shows a game: its autosave, or a new game (with the welcome screen when asked). */
+  const open = (welcome: boolean) => {
+    const id = data!.id
+    const auto = readSlot(AUTOSAVE, id)
+    set({ slots: allSlots(id), autosave: auto, revealed: readPref<Record<string, number>>(gamePref(id, 'hints'), {}) })
+    if (auto && get().loadFrom(AUTOSAVE)) return
+    get().newGame()
+    if (welcome) set({ modal: 'welcome' })
+  }
+
   return {
     ready: false,
+    gameId: initialGame,
+    switching: false,
     settings: { ...DEFAULT_SETTINGS, ...readPref<Partial<Settings>>('settings', {}) },
     transcript: [],
     status: null,
@@ -203,7 +228,7 @@ export const useGame = create<State>((set, get) => {
     side: null,
     traveling: false,
     mapLarge: false,
-    revealed: readPref<Record<string, number>>('hints', {}),
+    revealed: readPref<Record<string, number>>(gamePref(initialGame, 'hints'), {}),
     sideTab: readPref<SideTab>('sideTab', 'actions'),
     sideCollapsed: readPref<boolean>('sideCollapsed', false),
     titles: new Set(),
@@ -222,26 +247,37 @@ export const useGame = create<State>((set, get) => {
       // React's StrictMode runs effects twice in development: initialise only once
       if (initStarted) return
       initStarted = true
-      story = await loadStory()
-      const auto = readSlot(AUTOSAVE)
-      set({ slots: allSlots(), autosave: auto })
-      if (auto) {
-        get().loadFrom(AUTOSAVE)
-        set({ ready: true })
-      } else {
-        get().newGame()
-        set({ ready: true, modal: 'welcome' })
+      data = await loadGameData(get().gameId)
+      open(true)
+      set({ ready: true })
+    },
+
+    async switchGame(id) {
+      if (get().switching) return
+      if (id === get().gameId && data) return
+      stopTravel()
+      set({ switching: true })
+      try {
+        data = await loadGameData(id)
+      } catch {
+        set({ switching: false })
+        get().showToast(t(get().settings.lang, 'loadGameFailed'))
+        return
       }
+      // the game being left is already in its autosave (written at every turn)
+      writePref('game', id)
+      set({ gameId: id, switching: false, mood: null })
+      open(false)
     },
 
     newGame() {
-      if (!story) return
+      if (!data) return
       const { settings } = get()
       stopTravel()
-      game = createGame(story, settings.lang)
+      game = createGame(data, settings.lang)
       turnMarks = []
       remembered = new Set()
-      writePref('hints', {})
+      writePref(gamePref(data.id, 'hints'), {})
       set({ revealed: {} })
       set({ transcript: [], over: false, titles: roomTitles(game) })
       const turn = game.start()
@@ -313,28 +349,35 @@ export const useGame = create<State>((set, get) => {
         transcript: s.transcript.slice(-60),
         visited: [...remembered],
       }
-      if (!writeSlot(slot, data)) {
+      if (!writeSlot(slot, data, game.id)) {
         get().showToast(t(s.settings.lang, 'saveFailed'))
         return
       }
-      set({ slots: allSlots(), modal: null })
+      set({ slots: allSlots(game.id), modal: null })
       get().showToast(t(s.settings.lang, 'saved', slot))
     },
 
     loadFrom(slot) {
-      if (!story) return
-      const data = readSlot(slot)
-      if (!data) return
+      if (!data) return false
+      const saved = readSlot(slot, data.id)
+      if (!saved) return false
       const lang = get().settings.lang
       stopTravel()
-      game = createGame(story, lang)
-      game.load(data.save)
-      remembered = new Set(data.visited ?? [])
+      const g = createGame(data, lang)
+      try {
+        g.load(saved.save)
+      } catch {
+        // a snapshot of another game (an imported file put in the wrong place)
+        get().showToast(t(lang, 'wrongGame'))
+        return false
+      }
+      game = g
+      remembered = new Set(saved.visited ?? [])
       set({ titles: roomTitles(game) })
       turnMarks = []
-      nextId = Math.max(nextId, ...data.transcript.map((e) => e.id + 1))
+      nextId = Math.max(nextId, ...saved.transcript.map((e) => e.id + 1))
       set({
-        transcript: [...data.transcript, ...(slot === AUTOSAVE ? [] : [entry('sys', t(lang, 'loaded', data.name))])],
+        transcript: [...saved.transcript, ...(slot === AUTOSAVE ? [] : [entry('sys', t(lang, 'loaded', saved.name))])],
         status: game.status(),
         scene: sceneFor(game),
         side: sideOf(game),
@@ -345,25 +388,28 @@ export const useGame = create<State>((set, get) => {
         canUndo: false,
       })
       refreshAssist()
+      return true
     },
 
     removeSlot(slot) {
-      deleteSlot(slot)
-      set({ slots: allSlots() })
+      const id = get().gameId
+      deleteSlot(slot, id)
+      set({ slots: allSlots(id) })
     },
 
     refreshSlots() {
-      set({ slots: allSlots(), autosave: readSlot(AUTOSAVE) })
+      const id = get().gameId
+      set({ slots: allSlots(id), autosave: readSlot(AUTOSAVE, id) })
     },
 
     setSetting(key, value) {
       const settings = { ...get().settings, [key]: value }
       writePref('settings', settings)
       set({ settings })
-      if (key === 'lang' && game && story) {
+      if (key === 'lang' && game && data) {
         // the game state does not depend on the language: switch on the fly
         const snap = game.save('')
-        game = createGame(story, value as Lang)
+        game = createGame(data, value as Lang)
         game.load(snap)
         set({ status: game.status(), titles: roomTitles(game), side: sideOf(game) })
         persistAuto()
@@ -429,7 +475,7 @@ export const useGame = create<State>((set, get) => {
 
     reveal(id) {
       const revealed = { ...get().revealed, [id]: (get().revealed[id] ?? 0) + 1 }
-      writePref('hints', revealed)
+      writePref(gamePref(get().gameId, 'hints'), revealed)
       set({ revealed })
     },
 

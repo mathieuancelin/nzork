@@ -1,17 +1,22 @@
-// Play Zork in the terminal:  npm run play [-- --en] [-- --seed 1234]
+// Play Zork in the terminal:  npm run play [-- --en] [-- --seed 1234] [-- --game zork2]
 import { readFileSync } from 'node:fs'
 import { createInterface } from 'node:readline'
 import { Game } from './engine/game'
+import { GAMES, isGameId } from './engine/games'
 import { loadFrench } from './engine/i18n/fr'
 
 const args = process.argv.slice(2)
-const lang = args.includes('--en') ? 'en' : 'fr'
 const seedArg = args.indexOf('--seed')
 const seed = seedArg >= 0 ? Number(args[seedArg + 1]) : 0
+const gameArg = args.indexOf('--game')
+const id = gameArg >= 0 ? args[gameArg + 1] : 'zork1'
+if (!isGameId(id)) throw new Error(`Unknown game "${id}" (zork1, zork2 or zork3)`)
+// a game without a French translation plays in English
+const lang = args.includes('--en') || !GAMES[id].french ? 'en' : 'fr'
 
-const story = new Uint8Array(readFileSync(new URL('./engine/story/zork1.z3', import.meta.url)))
-const french = lang === 'fr' ? loadFrench() : undefined
-const game = new Game({ story, lang, seed, catalog: french?.catalog, input: french?.input })
+const story = new Uint8Array(readFileSync(new URL(`./engine/story/${id}/${GAMES[id].file}`, import.meta.url)))
+const french = lang === 'fr' ? loadFrench(id) : undefined
+const game = new Game({ game: id, story, lang, seed, catalog: french?.catalog, input: french?.input })
 
 const rl = createInterface({ input: process.stdin, output: process.stdout, terminal: process.stdin.isTTY })
 const show = (text: string) => {

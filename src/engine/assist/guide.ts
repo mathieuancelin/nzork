@@ -7,10 +7,7 @@
 // adapts when the player does things in another order, when the thief steals something or
 // when a fight goes badly.
 
-import symbols from '../story/symbols.json'
 import { World, DIRECTIONS, DIR_COMMAND, type Direction } from './world'
-
-const WORDS = symbols.words as Record<string, string>
 
 export interface GuideStep {
   command: string
@@ -37,9 +34,12 @@ interface Goal {
   act: (w: World) => GuideStep | null
 }
 
+/** Games the guide knows how to finish. */
+export const hasGuide = (game: string) => game === 'zork1'
+
 // ------------------------------------------------------------------ helpers
 
-const word = (w: World, name: string) => WORDS[String(w.obj(name))] ?? name.toLowerCase()
+const word = (w: World, name: string) => w.word(w.obj(name)) ?? name.toLowerCase()
 
 function verbStep(w: World, verb: string, obj: string | undefined, why: [string, string], prep?: string, obj2?: string): GuideStep {
   let command = verb
@@ -53,7 +53,7 @@ function takeStep(w: World, obj: string, why: [string, string]): GuideStep {
   const o = w.obj(obj)
   const parent = w.vm.parent(o)
   const container = w.name(parent)
-  if (parent && w.attrOf(parent, 'CONTBIT') && !w.attrOf(parent, 'OPENBIT') && !w.attrOf(parent, 'TRANSBIT') && WORDS[String(parent)]) {
+  if (parent && w.attrOf(parent, 'CONTBIT') && !w.attrOf(parent, 'OPENBIT') && !w.attrOf(parent, 'TRANSBIT') && w.word(parent)) {
     return verbStep(w, 'open', container, why)
   }
   return verbStep(w, 'take', obj, why)
@@ -64,7 +64,7 @@ const say = (command: string, why: [string, string], verb = command) => (_w?: Wo
 
 const inCase = (w: World, t: string) => w.within(t, 'TROPHY-CASE')
 /** The player's wounds (0 = healthy, negative = wounded). */
-const health = (w: World) => (w.vm.getProp(w.obj('ADVENTURER'), symbols.properties.STRENGTH) << 16) >> 16
+const health = (w: World) => (w.vm.getProp(w.obj('ADVENTURER'), w.game.symbols.properties.STRENGTH) << 16) >> 16
 /** Carried directly while boarding, these puncture the boat. */
 const SHARP = ['SCEPTRE', 'KNIFE', 'SWORD', 'RUSTY-KNIFE', 'AXE', 'STILETTO']
 
@@ -411,7 +411,7 @@ function reachable(w: World, target: string): boolean {
 // ------------------------------------------------------------------ load management
 
 function weight(w: World, obj: number): number {
-  let total = w.vm.getProp(obj, symbols.properties.SIZE)
+  let total = w.vm.getProp(obj, w.game.symbols.properties.SIZE)
   for (const c of w.children(obj)) total += weight(w, c)
   return total
 }
@@ -433,7 +433,9 @@ function dropCandidate(w: World, keep: Set<string>): string | null {
 
 // ------------------------------------------------------------------ main
 
+/** The guide's next step, or null when it has nothing to suggest (it only knows Zork I). */
 export function guideStep(w: World): GuideStep | null {
+  if (!hasGuide(w.id)) return null
   const step = plan(w)
   // save the lamp's battery when the torch (or daylight) is enough for the next step
   const here = w.here()

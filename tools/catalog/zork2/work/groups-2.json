@@ -1,0 +1,873 @@
+[
+ {
+  "key": "gb0db",
+  "en": "open.",
+  "args": [],
+  "routine": "CRYPT-ANTEROOM-FCN",
+  "zil": "<TELL \"open.\">"
+ },
+ {
+  "key": "gb0e3",
+  "en": "closed.",
+  "args": [],
+  "routine": "CRYPT-ANTEROOM-FCN",
+  "zil": "<TELL \"closed.\">"
+ },
+ {
+  "key": "gb0ea",
+  "en": " Above the door is the cryptic inscription: \"Feel Free\".\n",
+  "args": [],
+  "routine": "CRYPT-ANTEROOM-FCN",
+  "zil": "<TELL \" Above the door is the cryptic inscription: \\\"Feel Free\\\".\" CR>"
+ },
+ {
+  "key": "gb129",
+  "en": "The room contains the earthly remains of the mighty Flatheads, twelve somewhat flat heads mounted securely on poles. While the room might be expected to contain funerary urns or other evidence of the ritual practices of the ancient Zorkers, it is empty of all such objects. There is writing carved on the crypt. The only apparent exit is to the north through the door to the anteroom. The door is ",
+  "args": [],
+  "routine": "CRYPT-ROOM-FCN",
+  "zil": "<TELL \"The room contains the earthly remains of the mighty Flatheads, twelve somewhat flat heads mounted securely on poles. While the room might be expected to contain funerary urns or other evidence of the ritual practices of the ancient Zorkers, it is empty of all such objects. There is writing carved on the crypt. The only apparent exit is to the north through the door to the anteroom. The door is \">"
+ },
+ {
+  "key": "gb20a",
+  "en": "open.",
+  "args": [],
+  "routine": "CRYPT-ROOM-FCN",
+  "zil": "<TELL \"open.\">"
+ },
+ {
+  "key": "gb212",
+  "en": "closed.",
+  "args": [],
+  "routine": "CRYPT-ROOM-FCN",
+  "zil": "<TELL \"closed.\">"
+ },
+ {
+  "key": "gb21f",
+  "en": "Looking closely at the south wall, you can see the dim outline of a secret door labelled with the letter \"F\".\n",
+  "args": [],
+  "routine": "CRYPT-ROOM-FCN",
+  "zil": "<TELL \"Looking closely at the south wall, you can see the dim outline of a secret door labelled with the letter \\\"F\\\".\" CR>"
+ },
+ {
+  "key": "gb28b",
+  "en": "It is dark, but on the south wall is a faint outline of a rectangle, as though light were shining around a doorway. You can also make out a faintly glowing letter in the center of this area. It might be an \"F\".\n",
+  "args": [],
+  "routine": "DIM-DOOR-APPEARS",
+  "zil": "<TELL \"It is dark, but on the south wall is a faint outline of a rectangle, as though light were shining around a doorway. You can also make out a faintly glowing letter in the center of this area. It might be an \\\"F\\\".\" CR>"
+ },
+ {
+  "key": "gb307",
+  "en": "The crypt is sealed for all time.\n",
+  "args": [],
+  "routine": "CRYPT-OBJECT",
+  "zil": "<TELL \"The crypt is sealed for all time.\" CR>"
+ },
+ {
+  "key": "gb320",
+  "en": "The marble is cool.\n",
+  "args": [],
+  "routine": "CRYPT-OBJECT",
+  "zil": "<TELL \"The marble is cool.\" CR>"
+ },
+ {
+  "key": "gb351",
+  "en": "A hollow echo responds.\n",
+  "args": [],
+  "routine": "DIM-DOOR-FCN",
+  "zil": "<TELL \"A hollow echo responds.\" CR>"
+ },
+ {
+  "key": "gb388",
+  "en": "The can seems empty.\n",
+  "args": [],
+  "routine": "REPELLENT-FCN",
+  "zil": "<TELL \"The can seems empty.\" CR>"
+ },
+ {
+  "key": "gb393",
+  "en": "There is a sloshing sound from inside.\n",
+  "args": [],
+  "routine": "REPELLENT-FCN",
+  "zil": "<TELL \"There is a sloshing sound from inside.\" CR>"
+ },
+ {
+  "key": "gb3b7",
+  "en": "The repellent is all gone.\n",
+  "args": [],
+  "routine": "REPELLENT-FCN",
+  "zil": "<TELL \"The repellent is all gone.\" CR>"
+ },
+ {
+  "key": "gb3ce",
+  "en": "The spray stinks amazingly for a few moments, then drifts away.\n",
+  "args": [],
+  "routine": "REPELLENT-FCN",
+  "zil": "<TELL \"The spray stinks amazingly for a few moments, then drifts away.\" CR>"
+ },
+ {
+  "key": "gb40e",
+  "en": "The spray smells like a mixture of old socks and burning rubber. If I were a grue I'd sure stay clear!\n",
+  "args": [],
+  "routine": "REPELLENT-FCN",
+  "zil": "<TELL \"The spray smells like a mixture of old socks and burning rubber. If I were a grue I'd sure stay clear!\" CR>"
+ },
+ {
+  "key": "gb456",
+  "en": "That horrible smell is much less pungent now.\n",
+  "args": [],
+  "routine": "I-SPRAY",
+  "zil": "<TELL \"That horrible smell is much less pungent now.\" CR>"
+ },
+ {
+  "key": "gb47d",
+  "en": "Beyond the door is a roughly hewn staircase leading down into darkness. The landing on which you stand is covered with carefully drawn magical runes like those sketched upon the workbench of the Wizard of Frobozz. These have been overlaid with sweeping green lines of enormous power, which undulate back and forth across the landing. ",
+  "args": [],
+  "routine": "ZORK3-FCN",
+  "zil": "<TELL \"Beyond the door is a roughly hewn staircase leading down into darkness. The landing on which you stand is covered with carefully drawn magical runes like those sketched upon the workbench of the Wizard of Frobozz. These have been overlaid with sweeping green lines of enormous power, which undulate back and forth across the landing. \">"
+ },
+ {
+  "key": "gb539",
+  "en": "The wand begins to vibrate in harmony with the motion of the lines. You feel yourself compelled downward, and you yield, stepping onto the staircase. As you pass the green lines, they flare and disappear with a burst of light, and you tumble down the staircase!\n\nAt the bottom, a vast red-lit hall stretches off into the distance. Sinister statues guard the entrance to a dimly visible room far ahead. With courage and cunning you have conquered the Wizard of Frobozz and become the master of his domain, but the final challenge awaits!\n\n(The ultimate adventure concludes in \"Zork III: The Dungeon Master\".)\n\n\n",
+  "args": [],
+  "routine": "ZORK3-FCN",
+  "zil": "<TELL \"The wand begins to vibrate in harmony with the motion of the lines. You feel yourself compelled downward, and you yield, stepping onto the staircase. As you pass the green lines, they flare and disappear with a burst of light, and you tumble down the staircase!\\n \\n At the bottom, a vast red-lit hall stretches off into the distance. Sinister statues guard the entrance to a dimly visible room far ahead. With courage and cunning you have conquered the Wizard of Frobozz and become the master of his domain, but the final challenge awaits!\\n \\n (The ultimate adventure concludes in \\\"Zork III: The Dungeon Master\\\".)\\n \\n \" CR>"
+ },
+ {
+  "key": "gb799",
+  "en": "The teapot is now full of water.\n",
+  "args": [],
+  "routine": "WATER-FCN",
+  "zil": "<TELL \"The teapot is now full of water.\" CR>"
+ },
+ {
+  "key": "gb7ae",
+  "en": "The teapot isn't currently empty.\n",
+  "args": [],
+  "routine": "WATER-FCN",
+  "zil": "<TELL \"The teapot isn't currently empty.\" CR>"
+ },
+ {
+  "key": "gb7f3",
+  "en": "Nice try.\n",
+  "args": [],
+  "routine": "WATER-FCN",
+  "zil": "<TELL \"Nice try.\" CR>"
+ },
+ {
+  "key": "gb810",
+  "en": "You don't have any water.\n",
+  "args": [],
+  "routine": "WATER-FCN",
+  "zil": "<TELL \"You don't have any water.\" CR>"
+ },
+ {
+  "key": "gb84a",
+  "en": "The water splashes on the walls and evaporates.\n",
+  "args": [],
+  "routine": "WATER-FCN",
+  "zil": "<TELL \"The water splashes on the walls and evaporates.\" CR>"
+ },
+ {
+  "key": "gb89e",
+  "en": "The bucket is fireproof, and won't burn.\n",
+  "args": [],
+  "routine": "BUCKET-FCN",
+  "zil": "<TELL \"The bucket is fireproof, and won't burn.\" CR>"
+ },
+ {
+  "key": "gb8d2",
+  "en": "The bucket swiftly rises up, and is gone.\n",
+  "args": [],
+  "routine": "BUCKET-FCN",
+  "zil": "<TELL \"The bucket swiftly rises up, and is gone.\" CR>"
+ },
+ {
+  "key": "gb91d",
+  "en": "The bucket rises and comes to a stop.\n\n",
+  "args": [],
+  "routine": "BUCKET-FCN",
+  "zil": "<TELL \"The bucket rises and comes to a stop.\" CR CR>"
+ },
+ {
+  "key": "gb95a",
+  "en": "The last of the water evaporates, and the bucket descends.\n\n",
+  "args": [],
+  "routine": "BUCKET-FCN",
+  "zil": "<TELL \"The last of the water evaporates, and the bucket descends.\" CR CR>"
+ },
+ {
+  "key": "gb982",
+  "en": "The bucket descends and comes to a stop.\n\n",
+  "args": [],
+  "routine": "BUCKET-FCN",
+  "zil": "<TELL \"The bucket descends and comes to a stop.\" CR CR>"
+ },
+ {
+  "key": "gb9d5",
+  "en": "The {0} is now much larger than you are. You have no hope of taking it.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "POSTS-ROOM-FCN",
+  "zil": "<TELL \"The \" D ,PRSO \" is now much larger than you are. You have no hope of taking it.\" CR>"
+ },
+ {
+  "key": "gba16",
+  "en": "Suddenly, the room appears to have become very large (although everything you are carrying seems to be its normal size).\n\n",
+  "args": [],
+  "routine": "EATME-FCN",
+  "zil": "<TELL \"Suddenly, the room appears to have become very large (although everything you are carrying seems to be its normal size).\" CR CR>"
+ },
+ {
+  "key": "gbab8",
+  "en": "The {0} has crumbled to dust.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "CAKE-CRUMBLE",
+  "zil": "<TELL \"The \" D .CAKE \" has crumbled to dust.\" CR>"
+ },
+ {
+  "key": "gbada",
+  "en": "The cake is much too tall now for you to read the lettering.\n",
+  "args": [],
+  "routine": "CAKE-FCN",
+  "zil": "<TELL \"The cake is much too tall now for you to read the lettering.\" CR>"
+ },
+ {
+  "key": "gbb15",
+  "en": "The letters, now visible, say \"",
+  "args": [],
+  "routine": "CAKE-FCN",
+  "zil": "<TELL \"The letters, now visible, say \\\"\">"
+ },
+ {
+  "key": "gbb2e",
+  "en": "Evaporate",
+  "args": [],
+  "routine": "CAKE-FCN",
+  "zil": "<TELL \"Evaporate\">"
+ },
+ {
+  "key": "gbb3e",
+  "en": "Explode",
+  "args": [],
+  "routine": "CAKE-FCN",
+  "zil": "<TELL \"Explode\">"
+ },
+ {
+  "key": "gbb48",
+  "en": "Enlarge",
+  "args": [],
+  "routine": "CAKE-FCN",
+  "zil": "<TELL \"Enlarge\">"
+ },
+ {
+  "key": "gbb4f",
+  "en": "\".\n",
+  "args": [],
+  "routine": "CAKE-FCN",
+  "zil": "<TELL \"\\\".\" CR>"
+ },
+ {
+  "key": "gbb54",
+  "en": "You can't see through that!\n",
+  "args": [],
+  "routine": "CAKE-FCN",
+  "zil": "<TELL \"You can't see through that!\" CR>"
+ },
+ {
+  "key": "gbb5f",
+  "en": "The first letter is a capital E. The rest is too small to read.\n",
+  "args": [],
+  "routine": "CAKE-FCN",
+  "zil": "<TELL \"The first letter is a capital E. The rest is too small to read.\" CR>"
+ },
+ {
+  "key": "gbbb1",
+  "en": "The room around you seems to be getting smaller.\n\n",
+  "args": [],
+  "routine": "CAKE-FCN",
+  "zil": "<TELL \"The room around you seems to be getting smaller.\" CR CR>"
+ },
+ {
+  "key": "gbc3e",
+  "en": "The cake sinks majestically into the pool.\n",
+  "args": [],
+  "routine": "CAKE-FCN",
+  "zil": "<TELL \"The cake sinks majestically into the pool.\" CR>"
+ },
+ {
+  "key": "gbc60",
+  "en": "Most of the pool evaporates, revealing a (slightly damp but still valuable) package of rare candies. The red cake must be pretty strong stuff, since it remains intact!\n",
+  "args": [],
+  "routine": "CAKE-FCN",
+  "zil": "<TELL \"Most of the pool evaporates, revealing a (slightly damp but still valuable) package of rare candies. The red cake must be pretty strong stuff, since it remains intact!\" CR>"
+ },
+ {
+  "key": "gbce3",
+  "en": "       Frobozz Magic Candy Company\n         >>Special Assortment<<\n          Candied Grasshoppers\n             Chocolated Ants\n              Worms Glacee\n(By Appointment to His Majesty, Dimwit I)\n",
+  "args": [],
+  "routine": "CANDY-FCN",
+  "zil": "<TELL \"       Frobozz Magic Candy Company\\n          >>Special Assortment<<\\n           Candied Grasshoppers\\n              Chocolated Ants\\n               Worms Glacee\\n (By Appointment to His Majesty, Dimwit I)\\n \">"
+ },
+ {
+  "key": "gbd86",
+  "en": "Such rich food would probably not be good for you.\n",
+  "args": [],
+  "routine": "CANDY-FCN",
+  "zil": "<TELL \"Such rich food would probably not be good for you.\" CR>"
+ },
+ {
+  "key": "gbdac",
+  "en": "       o  b  o\n   r             z\nf   M  A  G  I  C   z\nc    W  E   L  L    y\n   o             n\n       m  p  a\n",
+  "args": [],
+  "routine": "TOP-ETCHINGS-F",
+  "zil": "<TELL \"       o  b  o\\n    r             z\\n f   M  A  G  I  C   z\\n c    W  E   L  L    y\\n    o             n\\n        m  p  a\\n \">"
+ },
+ {
+  "key": "gbe14",
+  "en": "       o  b  o\n\n       A  G  I\n        E   L\n\n       m  p  a\n",
+  "args": [],
+  "routine": "BOTTOM-ETCHINGS-F",
+  "zil": "<TELL \"       o  b  o\\n \\n        A  G  I\\n         E   L\\n \\n        m  p  a\\n \">"
+ },
+ {
+  "key": "gbe58",
+  "en": "              Bank of Zork\n                   VAULT\n                 *722 GUE*\n        Frobozz Magic Vault Company\n",
+  "args": [],
+  "routine": "CUBE-F",
+  "zil": "<TELL \"              Bank of Zork\\n                    VAULT\\n                  *722 GUE*\\n         Frobozz Magic Vault Company\\n \">"
+ },
+ {
+  "key": "gbee1",
+  "en": "The water is extremely salty.\n",
+  "args": [],
+  "routine": "POOL-FCN",
+  "zil": "<TELL \"The water is extremely salty.\" CR>"
+ },
+ {
+  "key": "gbef8",
+  "en": "You'd probably have to enter the pool to see what's below the surface.\n",
+  "args": [],
+  "routine": "POOL-FCN",
+  "zil": "<TELL \"You'd probably have to enter the pool to see what's below the surface.\" CR>"
+ },
+ {
+  "key": "gbf34",
+  "en": "You notice that objects behind the flask appear to be magnified. You might try looking at something through the flask.\n",
+  "args": [],
+  "routine": "FLASK-FCN",
+  "zil": "<TELL \"You notice that objects behind the flask appear to be magnified. You might try looking at something through the flask.\" CR>"
+ },
+ {
+  "key": "gbf7b",
+  "en": "The flask distorts and magnifies the {0}, showing details not noticed earlier.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "FLASK-FCN",
+  "zil": "<TELL \"The flask distorts and magnifies the \" D ,PRSO \", showing details not noticed earlier.\" CR>"
+ },
+ {
+  "key": "gbfca",
+  "en": "The flask breaks into pieces.\n",
+  "args": [],
+  "routine": "FLASK-FCN",
+  "zil": "<TELL \"The flask breaks into pieces.\" CR>"
+ },
+ {
+  "key": "gbffb",
+  "en": "The leak is too high above you to reach.\n",
+  "args": [],
+  "routine": "PLEAK",
+  "zil": "<TELL \"The leak is too high above you to reach.\" CR>"
+ },
+ {
+  "key": "gc02b",
+  "en": "You are in a circular room with a low ceiling. There are exits to the east and southeast.\n",
+  "args": [],
+  "routine": "MAGNET-ROOM-FCN",
+  "zil": "<TELL \"You are in a circular room with a low ceiling. There are exits to the east and southeast.\" CR>"
+ },
+ {
+  "key": "gc07e",
+  "en": "As you enter, your compass starts spinning wildly.\n",
+  "args": [],
+  "routine": "MAGNET-ROOM-FCN",
+  "zil": "<TELL \"As you enter, your compass starts spinning wildly.\" CR>"
+ },
+ {
+  "key": "gc0a3",
+  "en": "What compass, you ask? The one which allows you to specify compass directions for movement.",
+  "args": [],
+  "routine": "MAGNET-ROOM-FCN",
+  "zil": "<TELL \"What compass, you ask? The one which allows you to specify compass directions for movement.\">"
+ },
+ {
+  "key": "gc0e8",
+  "en": "You cannot get your bearings...\n\n",
+  "args": [],
+  "routine": "MAGNET-ROOM-EXIT",
+  "zil": "<TELL \"You cannot get your bearings...\" CR CR>"
+ },
+ {
+  "key": "gc13c",
+  "en": "Nothing seems to happen.\n",
+  "args": [],
+  "routine": "BUTTONS",
+  "zil": "<TELL \"Nothing seems to happen.\" CR>"
+ },
+ {
+  "key": "gc14a",
+  "en": "The whirring increases in intensity.\n",
+  "args": [],
+  "routine": "BUTTONS",
+  "zil": "<TELL \"The whirring increases in intensity.\" CR>"
+ },
+ {
+  "key": "gc16d",
+  "en": "The whirring decreases in intensity.\n",
+  "args": [],
+  "routine": "BUTTONS",
+  "zil": "<TELL \"The whirring decreases in intensity.\" CR>"
+ },
+ {
+  "key": "gc186",
+  "en": "Nothing seems to happen.\n",
+  "args": [],
+  "routine": "BUTTONS",
+  "zil": "<TELL \"Nothing seems to happen.\" CR>"
+ },
+ {
+  "key": "gc1a8",
+  "en": "A dull thump is heard in the distance.\n",
+  "args": [],
+  "routine": "BUTTONS",
+  "zil": "<TELL \"A dull thump is heard in the distance.\" CR>"
+ },
+ {
+  "key": "gc1d7",
+  "en": "Click.\n",
+  "args": [],
+  "routine": "BUTTONS",
+  "zil": "<TELL \"Click.\" CR>"
+ },
+ {
+  "key": "gc1fd",
+  "en": "As you reach for the sphere, a solid steel cage falls from the ceiling to entrap you. To make matters worse, poisonous gas starts coming into the room.\n\n",
+  "args": [],
+  "routine": "SPHERE-FCN",
+  "zil": "<TELL \"As you reach for the sphere, a solid steel cage falls from the ceiling to entrap you. To make matters worse, poisonous gas starts coming into the room.\" CR CR>"
+ },
+ {
+  "key": "gc2da",
+  "en": "\"My memory circuits are not that advanced. I can move as directed, though.\"\n",
+  "args": [],
+  "routine": "ROBOT-FCN",
+  "zil": "<TELL \"\\\"My memory circuits are not that advanced. I can move as directed, though.\\\"\" CR>"
+ },
+ {
+  "key": "gc316",
+  "en": "The cage shakes and is hurled across the room. It's hard to say, but the robot appears to be smiling.\n\n",
+  "args": [],
+  "routine": "ROBOT-FCN",
+  "zil": "<TELL \"The cage shakes and is hurled across the room. It's hard to say, but the robot appears to be smiling.\" CR CR>"
+ },
+ {
+  "key": "gc381",
+  "en": "\"I am sorry but that is difficult for a being with no mouth.\"\n",
+  "args": [],
+  "routine": "ROBOT-FCN",
+  "zil": "<TELL \"\\\"I am sorry but that is difficult for a being with no mouth.\\\"\" CR>"
+ },
+ {
+  "key": "gc3b8",
+  "en": "\"Buzz! Buzz! Buzz! My circuits are getting rusty. Try again.\"\n",
+  "args": [],
+  "routine": "ROBOT-FCN",
+  "zil": "<TELL \"\\\"Buzz! Buzz! Buzz! My circuits are getting rusty. Try again.\\\"\" CR>"
+ },
+ {
+  "key": "gc3f9",
+  "en": "\"My vision is not sufficiently acute to do that.\"\n",
+  "args": [],
+  "routine": "ROBOT-FCN",
+  "zil": "<TELL \"\\\"My vision is not sufficiently acute to do that.\\\"\" CR>"
+ },
+ {
+  "key": "gc430",
+  "en": "\"Whirr, buzz, click!\"\n",
+  "args": [],
+  "routine": "ROBOT-FCN",
+  "zil": "<TELL \"\\\"Whirr, buzz, click!\\\"\" CR>"
+ },
+ {
+  "key": "gc445",
+  "en": "\"Click! I don't have that. Buzz! Whirr!\"\n",
+  "args": [],
+  "routine": "ROBOT-FCN",
+  "zil": "<TELL \"\\\"Click! I don't have that. Buzz! Whirr!\\\"\" CR>"
+ },
+ {
+  "key": "gc483",
+  "en": "\"Whirr, buzz, click!\"\n",
+  "args": [],
+  "routine": "ROBOT-FCN",
+  "zil": "<TELL \"\\\"Whirr, buzz, click!\\\"\" CR>"
+ },
+ {
+  "key": "gc498",
+  "en": "\"Buzz, click, whirr!\"\n",
+  "args": [],
+  "routine": "ROBOT-FCN",
+  "zil": "<TELL \"\\\"Buzz, click, whirr!\\\"\" CR>"
+ },
+ {
+  "key": "gc4b7",
+  "en": "\"My programming is insufficient to allow me to perform that task.\"\n",
+  "args": [],
+  "routine": "ROBOT-FCN",
+  "zil": "<TELL \"\\\"My programming is insufficient to allow me to perform that task.\\\"\" CR>"
+ },
+ {
+  "key": "gc4eb",
+  "en": "There's no access panel or door on the robot.\n",
+  "args": [],
+  "routine": "ROBOT-FCN",
+  "zil": "<TELL \"There's no access panel or door on the robot.\" CR>"
+ },
+ {
+  "key": "gc513",
+  "en": "The robot gladly takes the {0} and nods his head-like appendage in thanks.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "ROBOT-FCN",
+  "zil": "<TELL \"The robot gladly takes the \" D ,PRSO \" and nods his head-like appendage in thanks.\" CR>"
+ },
+ {
+  "key": "gc547",
+  "en": "The robot falls to the ground and (being of shoddy construction) disintegrates before your eyes.\n",
+  "args": [],
+  "routine": "ROBOT-FCN",
+  "zil": "<TELL \"The robot falls to the ground and (being of shoddy construction) disintegrates before your eyes.\" CR>"
+ },
+ {
+  "key": "gc5a6",
+  "en": "Nothing like having money to burn!\n",
+  "args": [],
+  "routine": "BILLS-OBJECT",
+  "zil": "<TELL \"Nothing like having money to burn!\" CR>"
+ },
+ {
+  "key": "gc5bf",
+  "en": "Talk about eating rich foods!\n",
+  "args": [],
+  "routine": "BILLS-OBJECT",
+  "zil": "<TELL \"Talk about eating rich foods!\" CR>"
+ },
+ {
+  "key": "gc5e7",
+  "en": "An alarm rings briefly, and an invisible force bars your way.\n",
+  "args": [],
+  "routine": "BKLEAVEE",
+  "zil": "<TELL \"An alarm rings briefly, and an invisible force bars your way.\" CR>"
+ },
+ {
+  "key": "gc633",
+  "en": "You are in a small room, which was used by a bank officer who retrieved safety deposit boxes for the customer. On the north side of the room is a sign which reads  \"Viewing Room\". On the ",
+  "args": [],
+  "routine": "TELLER-ROOM",
+  "zil": "<TELL \"You are in a small room, which was used by a bank officer who retrieved safety deposit boxes for the customer. On the north side of the room is a sign which reads  \\\"Viewing Room\\\". On the \">"
+ },
+ {
+  "key": "gc69c",
+  "en": "west",
+  "args": [],
+  "routine": "TELLER-ROOM",
+  "zil": "<TELL \"west\">"
+ },
+ {
+  "key": "gc6a4",
+  "en": "east",
+  "args": [],
+  "routine": "TELLER-ROOM",
+  "zil": "<TELL \"east\">"
+ },
+ {
+  "key": "gc6a9",
+  "en": " side of the room, above an open door, is a sign reading:\n\n          BANK PERSONNEL ONLY\n\n",
+  "args": [],
+  "routine": "TELLER-ROOM",
+  "zil": "<TELL \" side of the room, above an open door, is a sign reading:\\n \\n           BANK PERSONNEL ONLY\\n \" CR>"
+ },
+ {
+  "key": "gc6fc",
+  "en": "As you try, your hand seems to go through it.\n",
+  "args": [],
+  "routine": "SCOL-OBJECT",
+  "zil": "<TELL \"As you try, your hand seems to go through it.\" CR>"
+ },
+ {
+  "key": "gc718",
+  "en": "The {0} goes through it.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "SCOL-OBJECT",
+  "zil": "<TELL \"The \" D ,PRSI \" goes through it.\" CR>"
+ },
+ {
+  "key": "gc7b7",
+  "en": "The {0} passes through the wall and vanishes.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "SCOL-OBJ",
+  "zil": "<TELL \"The \" D .OBJ \" passes through the wall and vanishes.\" CR>"
+ },
+ {
+  "key": "gc7cf",
+  "en": "The curtain dims slightly as the {0} passes through.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "SCOL-OBJ",
+  "zil": "<TELL \"The curtain dims slightly as the \" D .OBJ \" passes through.\" CR>"
+ },
+ {
+  "key": "gc808",
+  "en": "You feel somewhat disoriented as you pass through...\n\n",
+  "args": [],
+  "routine": "SCOL-THROUGH",
+  "zil": "<TELL \"You feel somewhat disoriented as you pass through...\" CR CR>"
+ },
+ {
+  "key": "gc84b",
+  "en": "You hear a faint voice say \"Curtain Door Closed.\"\n",
+  "args": [],
+  "routine": "I-CURTAIN",
+  "zil": "<TELL \"You hear a faint voice say \\\"Curtain Door Closed.\\\"\" CR>"
+ },
+ {
+  "key": "gc89c",
+  "en": "An epicene gnome of Zurich wearing a three-piece suit and carrying a safety deposit box materializes in the room.",
+  "args": [],
+  "routine": "I-ZGNOME",
+  "zil": "<TELL \"An epicene gnome of Zurich wearing a three-piece suit and carrying a safety deposit box materializes in the room.\">"
+ },
+ {
+  "key": "gc8e9",
+  "en": " He notices the wand and dematerializes speedily.\n",
+  "args": [],
+  "routine": "I-ZGNOME",
+  "zil": "<TELL \" He notices the wand and dematerializes speedily.\" CR>"
+ },
+ {
+  "key": "gc908",
+  "en": " \"You seem to have forgotten to deposit your valuables,\" he says, tapping the lid of the box impatiently. \"We don't usually allow customers to use the boxes here, but we can make this ONE exception, I suppose...\" He looks askance at you over his wire-rimmed bifocals.\n",
+  "args": [],
+  "routine": "I-ZGNOME",
+  "zil": "<TELL \" \\\"You seem to have forgotten to deposit your valuables,\\\" he says, tapping the lid of the box impatiently. \\\"We don't usually allow customers to use the boxes here, but we can make this ONE exception, I suppose...\\\" He looks askance at you over his wire-rimmed bifocals.\" CR>"
+ },
+ {
+  "key": "gc9af",
+  "en": "The gnome clutches it possessively.\n",
+  "args": [],
+  "routine": "BOX-F",
+  "zil": "<TELL \"The gnome clutches it possessively.\" CR>"
+ },
+ {
+  "key": "gc9d1",
+  "en": "The gnome appears increasingly impatient.\n",
+  "args": [],
+  "routine": "ZGNOME-FCN",
+  "zil": "<TELL \"The gnome appears increasingly impatient.\" CR>"
+ },
+ {
+  "key": "gc9fe",
+  "en": "The gnome carefully places the {0} in the deposit box. \"Let me show you the way out,\" he says, making it clear he will be pleased to see the last of you. Then, you are momentarily disoriented, and when you recover you are back at the Bank Entrance.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "ZGNOME-FCN",
+  "zil": "<TELL \"The gnome carefully places the \" D ,PRSO \" in the deposit box. \\\"Let me show you the way out,\\\" he says, making it clear he will be pleased to see the last of you. Then, you are momentarily disoriented, and when you recover you are back at the Bank Entrance.\" CR>"
+ },
+ {
+  "key": "gcad5",
+  "en": "\"You are so very gracious. I really cannot accept.\" he says. He disappears, a wry smile on his lips.\n",
+  "args": [],
+  "routine": "ZGNOME-FCN",
+  "zil": "<TELL \"\\\"You are so very gracious. I really cannot accept.\\\" he says. He disappears, a wry smile on his lips.\" CR>"
+ },
+ {
+  "key": "gcb0c",
+  "en": "\"I wouldn't put THAT in a safety deposit box,\" remarks the gnome with disdain, tossing it over his shoulder, where it disappears with an understated \"pop\".\n",
+  "args": [],
+  "routine": "ZGNOME-FCN",
+  "zil": "<TELL \"\\\"I wouldn't put THAT in a safety deposit box,\\\" remarks the gnome with disdain, tossing it over his shoulder, where it disappears with an understated \\\"pop\\\".\" CR>"
+ },
+ {
+  "key": "gcb7a",
+  "en": "The gnome says \"Well, I never...\" and disappears with a snap of his fingers, leaving you alone.\n",
+  "args": [],
+  "routine": "ZGNOME-FCN",
+  "zil": "<TELL \"The gnome says \\\"Well, I never...\\\" and disappears with a snap of his fingers, leaving you alone.\" CR>"
+ },
+ {
+  "key": "gcbc3",
+  "en": "The gnome appears increasingly impatient.\n",
+  "args": [],
+  "routine": "ZGNOME-FCN",
+  "zil": "<TELL \"The gnome appears increasingly impatient.\" CR>"
+ },
+ {
+  "key": "gcbe3",
+  "en": "The gnome looks impatient: \"I may have another customer waiting; you'll just have to fend for yourself, I'm afraid.\" He disappears, leaving you alone.\n",
+  "args": [],
+  "routine": "I-ZGNOME-OUT",
+  "zil": "<TELL \"The gnome looks impatient: \\\"I may have another customer waiting; you'll just have to fend for yourself, I'm afraid.\\\" He disappears, leaving you alone.\" CR>"
+ },
+ {
+  "key": "gcc92",
+  "en": "This is a tiny room carved out of the wall of the ravine. There is an exit down a precarious climb. ",
+  "args": [],
+  "routine": "TINY-ROOM-FCN",
+  "zil": "<TELL \"This is a tiny room carved out of the wall of the ravine. There is an exit down a precarious climb. \">"
+ },
+ {
+  "key": "gcce6",
+  "en": "This is a small and rather dreary room, eerily illuminated by a red glow emanating from a crack in one wall. The light falls upon a dusty wooden table in the center of the room. ",
+  "args": [],
+  "routine": "DREARY-ROOM-FCN",
+  "zil": "<TELL \"This is a small and rather dreary room, eerily illuminated by a red glow emanating from a crack in one wall. The light falls upon a dusty wooden table in the center of the room. \">"
+ },
+ {
+  "key": "gcd9a",
+  "en": "On the {0} side of the room is a massive wooden door, which has a small window barred with iron. A formidable bolt lock is set within the door frame. A keyhole ",
+  "args": [
+   "s"
+  ],
+  "routine": "P-DOOR",
+  "zil": "<TELL \"On the \" .STR \" side of the room is a massive wooden door, which has a small window barred with iron. A formidable bolt lock is set within the door frame. A keyhole \">"
+ },
+ {
+  "key": "gcdf6",
+  "en": "covered by a thin metal lid ",
+  "args": [],
+  "routine": "P-DOOR",
+  "zil": "<TELL \"covered by a thin metal lid \">"
+ },
+ {
+  "key": "gce09",
+  "en": "lies within the lock.",
+  "args": [],
+  "routine": "P-DOOR",
+  "zil": "<TELL \"lies within the lock.\">"
+ },
+ {
+  "key": "gce1c",
+  "en": " A {0} is in place within the keyhole.",
+  "args": [
+   "o"
+  ],
+  "routine": "P-DOOR",
+  "zil": "<TELL \" A \" D .F \" is in place within the keyhole.\">"
+ },
+ {
+  "key": "gce39",
+  "en": " The edge of a place mat is visible under the door.",
+  "args": [],
+  "routine": "P-DOOR",
+  "zil": "<TELL \" The edge of a place mat is visible under the door.\">"
+ },
+ {
+  "key": "gce5b",
+  "en": " Lying on the place mat is a {0}.",
+  "args": [
+   "o"
+  ],
+  "routine": "P-DOOR",
+  "zil": "<TELL \" Lying on the place mat is a \" D ,MATOBJ \".\">"
+ },
+ {
+  "key": "gcecf",
+  "en": "You can see a lighted room at the other end.\n",
+  "args": [],
+  "routine": "PKH-FCN",
+  "zil": "<TELL \"You can see a lighted room at the other end.\" CR>"
+ },
+ {
+  "key": "gcee8",
+  "en": "No light can be seen through the keyhole.\n",
+  "args": [],
+  "routine": "PKH-FCN",
+  "zil": "<TELL \"No light can be seen through the keyhole.\" CR>"
+ },
+ {
+  "key": "gcf16",
+  "en": "The keyhole is blocked.\n",
+  "args": [],
+  "routine": "PKH-FCN",
+  "zil": "<TELL \"The keyhole is blocked.\" CR>"
+ },
+ {
+  "key": "gcf36",
+  "en": "There is a faint noise from behind the door and a small cloud of dust rises from beneath it.\n",
+  "args": [],
+  "routine": "PKH-FCN",
+  "zil": "<TELL \"There is a faint noise from behind the door and a small cloud of dust rises from beneath it.\" CR>"
+ },
+ {
+  "key": "gcf75",
+  "en": "The {0} doesn't fit.\n",
+  "args": [
+   "o"
+  ],
+  "routine": "PKH-FCN",
+  "zil": "<TELL \"The \" D ,PRSO \" doesn't fit.\" CR>"
+ },
+ {
+  "key": "gcf81",
+  "en": "The lid is in the way.\n",
+  "args": [],
+  "routine": "PKH-FCN",
+  "zil": "<TELL \"The lid is in the way.\" CR>"
+ },
+ {
+  "key": "gcfa6",
+  "en": "The lid is now open.\n",
+  "args": [],
+  "routine": "PLID-FCN",
+  "zil": "<TELL \"The lid is now open.\" CR>"
+ },
+ {
+  "key": "gcfcf",
+  "en": "The keyhole is occupied.\n",
+  "args": [],
+  "routine": "PLID-FCN",
+  "zil": "<TELL \"The keyhole is occupied.\" CR>"
+ },
+ {
+  "key": "gcfe0",
+  "en": "The lid covers the keyhole.\n",
+  "args": [],
+  "routine": "PLID-FCN",
+  "zil": "<TELL \"The lid covers the keyhole.\" CR>"
+ },
+ {
+  "key": "gcffa",
+  "en": "There's a keyhole behind the lid.\n",
+  "args": [],
+  "routine": "PLID-FCN",
+  "zil": "<TELL \"There's a keyhole behind the lid.\" CR>"
+ },
+ {
+  "key": "gd05f",
+  "en": "There is something misty in the sphere. Perhaps if you were to look into it...\n",
+  "args": [],
+  "routine": "PALANTIR",
+  "zil": "<TELL \"There is something misty in the sphere. Perhaps if you were to look into it...\" CR>"
+ }
+]

@@ -1,0 +1,1768 @@
+[
+ {
+  "key": "o1",
+  "en": "round button",
+  "name": "ROUND-BUTTON",
+  "synonyms": [
+   "BUTTON"
+  ],
+  "adjectives": [
+   "ROUND"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o2",
+  "en": "Vault",
+  "name": "VAULT",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o3",
+  "en": "golden dragon statuette",
+  "name": "STATUETTE",
+  "synonyms": [
+   "TREASURE",
+   "STATUETTE",
+   "DRAGON"
+  ],
+  "adjectives": [
+   "GOLD"
+  ],
+  "flags": [
+   "STAGGERED",
+   "TAKEBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o4",
+  "en": "triangular button",
+  "name": "TRIANGULAR-BUTTON",
+  "synonyms": [
+   "BUTTON"
+  ],
+  "adjectives": [
+   "TRIANGULAR"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o6",
+  "en": "well",
+  "name": "WELL",
+  "synonyms": [
+   "WELL"
+  ],
+  "adjectives": [
+   "MAGIC"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o7",
+  "en": "stone door",
+  "name": "RIDDLE-DOOR",
+  "synonyms": [
+   "DOOR"
+  ],
+  "adjectives": [
+   "GREAT",
+   "STONE"
+  ],
+  "flags": [
+   "DOORBIT",
+   "CONTBIT",
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o8",
+  "en": "Top of Well",
+  "name": "WELL-TOP",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "NONLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o9",
+  "en": "wall with etchings",
+  "name": "BOTTOM-ETCHINGS",
+  "synonyms": [
+   "ETCHINGS",
+   "WALL"
+  ],
+  "adjectives": [],
+  "flags": [
+   "READBIT",
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o10",
+  "en": "nicked swords",
+  "name": "TROPHY-SWORD",
+  "synonyms": [
+   "SWORD",
+   "SWORDS"
+  ],
+  "adjectives": [
+   "DULL",
+   "NICKED"
+  ],
+  "flags": [
+   "NDESCBIT",
+   "TRYTAKEBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o11",
+  "en": "solid steel cage",
+  "name": "CAGE",
+  "synonyms": [
+   "CAGE"
+  ],
+  "adjectives": [
+   "STEEL",
+   "SOLID"
+  ],
+  "flags": [
+   "INVISIBLE"
+  ],
+  "room": false
+ },
+ {
+  "key": "o13",
+  "en": "Narrow Ledge",
+  "name": "LEDGE-1",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "NONLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o14",
+  "en": "rusty iron key",
+  "name": "KEY",
+  "synonyms": [
+   "KEY"
+  ],
+  "adjectives": [
+   "IRON",
+   "RUSTY"
+  ],
+  "flags": [
+   "TAKEBIT",
+   "NDESCBIT",
+   "TURNBIT",
+   "TOOLBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o15",
+  "en": "Lava Room",
+  "name": "LAVA-ROOM",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o16",
+  "en": "Gazebo",
+  "name": "GAZEBO-ROOM",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o17",
+  "en": "dead sea serpent",
+  "name": "DEAD-SERPENT",
+  "synonyms": [
+   "SERPENT",
+   "SNAKE"
+  ],
+  "adjectives": [
+   "DEAD",
+   "BABY",
+   "SEA"
+  ],
+  "flags": [
+   "TAKEBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o18",
+  "en": "Wizard of Frobozz",
+  "name": "WIZARD",
+  "synonyms": [
+   "WIZARD",
+   "MAGICIAN",
+   "SORCEROR",
+   "MAN"
+  ],
+  "adjectives": [
+   "STRANGE",
+   "LITTLE",
+   "FROBOZZ",
+   "OLD"
+  ],
+  "flags": [
+   "ACTORBIT",
+   "CONTBIT",
+   "OPENBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o19",
+  "en": "Oddly-angled Room",
+  "name": "DIAMOND-5",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o20",
+  "en": "shimmering curtain of light",
+  "name": "CURTAIN",
+  "synonyms": [
+   "CURTAIN",
+   "LIGHT"
+  ],
+  "adjectives": [
+   "SHIMMERING"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o21",
+  "en": "Foot Bridge",
+  "name": "FOOT-BRIDGE",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o22",
+  "en": "steel box",
+  "name": "IRON-BOX",
+  "synonyms": [
+   "BOX"
+  ],
+  "adjectives": [
+   "STEEL",
+   "DENTED"
+  ],
+  "flags": [
+   "CONTBIT",
+   "TAKEBIT",
+   "INVISIBLE"
+  ],
+  "room": false
+ },
+ {
+  "key": "o24",
+  "en": "Wizard's magic wand",
+  "name": "WAND",
+  "synonyms": [
+   "WAND"
+  ],
+  "adjectives": [
+   "MAGIC"
+  ],
+  "flags": [
+   "STAGGERED",
+   "NDESCBIT",
+   "TAKEBIT",
+   "TRYTAKEBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o26",
+  "en": "unicorn",
+  "name": "UNICORN",
+  "synonyms": [
+   "UNICORN",
+   "ANIMAL"
+  ],
+  "adjectives": [
+   "BEAUTIFUL",
+   "WHITE"
+  ],
+  "flags": [
+   "ACTORBIT",
+   "TRYTAKEBIT",
+   "OPENBIT",
+   "CONTBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o27",
+  "en": "square button",
+  "name": "SQUARE-BUTTON",
+  "synonyms": [
+   "BUTTON"
+  ],
+  "adjectives": [
+   "SQUARE"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o28",
+  "en": "Guarded Room",
+  "name": "GUARDIAN-ROOM",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o29",
+  "en": "red crystal sphere",
+  "name": "PALANTIR-1",
+  "synonyms": [
+   "SPHERE",
+   "BALL",
+   "PALANTIR"
+  ],
+  "adjectives": [
+   "CRYSTAL",
+   "RED"
+  ],
+  "flags": [
+   "STAGGERED",
+   "TAKEBIT",
+   "TRANSBIT",
+   "TRYTAKEBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o30",
+  "en": "Marble Hall",
+  "name": "MARBLE-HALL",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o31",
+  "en": "clear crystal sphere",
+  "name": "PALANTIR-3",
+  "synonyms": [
+   "PALANTIR",
+   "SPHERE"
+  ],
+  "adjectives": [
+   "CRYSTAL",
+   "WHITE",
+   "CLEAR"
+  ],
+  "flags": [
+   "STAGGERED",
+   "TAKEBIT",
+   "NDESCBIT",
+   "TRANSBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o32",
+  "en": "baby sea serpent",
+  "name": "SERPENT",
+  "synonyms": [
+   "SERPENT",
+   "SNAKE"
+  ],
+  "adjectives": [
+   "BABY",
+   "SEA"
+  ],
+  "flags": [
+   "ACTORBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o33",
+  "en": "blue crystal sphere",
+  "name": "PALANTIR-2",
+  "synonyms": [
+   "PALANTIR",
+   "SPHERE"
+  ],
+  "adjectives": [
+   "CRYSTAL",
+   "BLUE"
+  ],
+  "flags": [
+   "STAGGERED",
+   "TAKEBIT",
+   "TRANSBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o34",
+  "en": "Volcano Core",
+  "name": "VAIR-1",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "NONLANDBIT",
+   "NWALLBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o35",
+  "en": "cake frosted with orange letters",
+  "name": "ORANGE-ICING",
+  "synonyms": [
+   "CAKE",
+   "CAKES",
+   "ICING",
+   "LETTER"
+  ],
+  "adjectives": [
+   "ORANGE",
+   "FROSTED"
+  ],
+  "flags": [
+   "READBIT",
+   "TAKEBIT",
+   "FOODBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o36",
+  "en": "black crystal sphere",
+  "name": "PALANTIR-4",
+  "synonyms": [
+   "SPHERE",
+   "BALL",
+   "PALANTIR"
+  ],
+  "adjectives": [
+   "CRYSTAL",
+   "STRANGE",
+   "BLACK"
+  ],
+  "flags": [
+   "STAGGERED",
+   "TAKEBIT",
+   "TRANSBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o38",
+  "en": "Pearl Room",
+  "name": "PEARL-ROOM",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o39",
+  "en": "pool of tears",
+  "name": "POOL",
+  "synonyms": [
+   "POOL",
+   "TEARS"
+  ],
+  "adjectives": [
+   "LARGE"
+  ],
+  "flags": [],
+  "room": false
+ },
+ {
+  "key": "o41",
+  "en": "green book",
+  "name": "GREEN-BOOK",
+  "synonyms": [
+   "BOOK",
+   "COVER",
+   "BOOKS"
+  ],
+  "adjectives": [
+   "HANDSOME",
+   "GREEN",
+   "LEATHER"
+  ],
+  "flags": [
+   "READBIT",
+   "TAKEBIT",
+   "CONTBIT",
+   "BURNBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o42",
+  "en": "stoppered glass flask filled with liquid",
+  "name": "FLASK",
+  "synonyms": [
+   "FLASK"
+  ],
+  "adjectives": [
+   "GLASS"
+  ],
+  "flags": [
+   "TAKEBIT",
+   "TRANSBIT",
+   "READBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o43",
+  "en": "door partly covered in cobwebs",
+  "name": "WIZ-DOOR",
+  "synonyms": [
+   "DOOR"
+  ],
+  "adjectives": [
+   "COBWEBBED",
+   "WOODEN",
+   "OAK"
+  ],
+  "flags": [
+   "DOORBIT",
+   "CONTBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o45",
+  "en": "Wizard's Workshop",
+  "name": "WIZARDS-WORKSHOP",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o46",
+  "en": "Tiny Room",
+  "name": "TINY-ROOM",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o48",
+  "en": "roses",
+  "name": "ROSE-BUSH",
+  "synonyms": [
+   "ROSES",
+   "BUSH",
+   "ARBOR"
+  ],
+  "adjectives": [
+   "ROSE"
+  ],
+  "flags": [
+   "NDESCBIT",
+   "TRYTAKEBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o49",
+  "en": "Chairman's Office",
+  "name": "OFFICE",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o50",
+  "en": "north wall",
+  "name": "SNWL",
+  "synonyms": [
+   "WALL"
+  ],
+  "adjectives": [
+   "NORTH",
+   "NORTHE"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o51",
+  "en": "Inside the Barrow",
+  "name": "INSIDE-BARROW",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o52",
+  "en": "wooden bucket",
+  "name": "BUCKET",
+  "synonyms": [
+   "BUCKET"
+  ],
+  "adjectives": [
+   "WOODEN"
+  ],
+  "flags": [
+   "VEHBIT",
+   "OPENBIT",
+   "CONTBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o53",
+  "en": "Shallow Ford",
+  "name": "SHALLOW-FORD",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o54",
+  "en": "Dingy Closet",
+  "name": "CAGE-ROOM",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "ONBIT",
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o55",
+  "en": "card",
+  "name": "CARD",
+  "synonyms": [
+   "CARD",
+   "NOTE"
+  ],
+  "adjectives": [],
+  "flags": [
+   "READBIT",
+   "TAKEBIT",
+   "BURNBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o56",
+  "en": "portrait of J. Pierpont Flathead",
+  "name": "PORTRAIT",
+  "synonyms": [
+   "PORTRAIT",
+   "PAINTING",
+   "ART",
+   "TREASURE"
+  ],
+  "adjectives": [
+   "FLATHEAD"
+  ],
+  "flags": [
+   "STAGGERED",
+   "TAKEBIT",
+   "BURNBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o57",
+  "en": "huge dead dragon",
+  "name": "DEAD-DRAGON",
+  "synonyms": [
+   "DRAGON",
+   "SMAUG",
+   "WORM"
+  ],
+  "adjectives": [
+   "RED",
+   "HUGE",
+   "DEAD"
+  ],
+  "flags": [],
+  "room": false
+ },
+ {
+  "key": "o58",
+  "en": "three-headed dog",
+  "name": "CERBERUS",
+  "synonyms": [
+   "CERBERUS",
+   "DOG",
+   "HOUND",
+   "MONSTER"
+  ],
+  "adjectives": [
+   "HUGE",
+   "GIANT",
+   "THREE",
+   "HEADED"
+  ],
+  "flags": [
+   "ACTORBIT",
+   "OPENBIT",
+   "CONTBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o59",
+  "en": "Dreary Room",
+  "name": "DREARY-ROOM",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o60",
+  "en": "broken balloon",
+  "name": "DEAD-BALLOON",
+  "synonyms": [
+   "BALLOON",
+   "BASKET"
+  ],
+  "adjectives": [
+   "BROKEN"
+  ],
+  "flags": [],
+  "room": false
+ },
+ {
+  "key": "o61",
+  "en": "blue book",
+  "name": "BLUE-BOOK",
+  "synonyms": [
+   "BOOK",
+   "COVER",
+   "BOOKS"
+  ],
+  "adjectives": [
+   "BLUE"
+  ],
+  "flags": [
+   "READBIT",
+   "TAKEBIT",
+   "CONTBIT",
+   "BURNBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o63",
+  "en": "Trophy Room",
+  "name": "TROPHY-ROOM",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o64",
+  "en": "Small Room",
+  "name": "SMALL-ROOM",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o65",
+  "en": "hook",
+  "name": "HOOK-2",
+  "synonyms": [
+   "HOOK"
+  ],
+  "adjectives": [
+   "SMALL"
+  ],
+  "flags": [],
+  "room": false
+ },
+ {
+  "key": "o67",
+  "en": "smashed trophy cabinet",
+  "name": "BROKEN-CASE",
+  "synonyms": [
+   "CASE",
+   "CABINET"
+  ],
+  "adjectives": [
+   "BROKEN",
+   "TROPHY",
+   "WIZARD"
+  ],
+  "flags": [
+   "CONTBIT",
+   "OPENBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o68",
+  "en": "wooden club",
+  "name": "BAT",
+  "synonyms": [
+   "CLUB",
+   "BAT"
+  ],
+  "adjectives": [
+   "WOODEN",
+   "BASEBALL"
+  ],
+  "flags": [
+   "INVISIBLE",
+   "TAKEBIT",
+   "WEAPONBIT",
+   "READBIT",
+   "BURNBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o69",
+  "en": "Wizard's Quarters",
+  "name": "WIZARDS-QUARTERS",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o70",
+  "en": "beautiful princess",
+  "name": "GLOBAL-PRINCESS",
+  "synonyms": [
+   "PRINCESS",
+   "WOMAN",
+   "LADY"
+  ],
+  "adjectives": [
+   "BEAUTIFUL",
+   "YOUNG"
+  ],
+  "flags": [
+   "ACTORBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o72",
+  "en": "gigantic dog collar",
+  "name": "COLLAR",
+  "synonyms": [
+   "COLLAR",
+   "TREASURE"
+  ],
+  "adjectives": [
+   "HUGE",
+   "GIANT",
+   "DOG"
+  ],
+  "flags": [
+   "STAGGERED",
+   "TAKEBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o73",
+  "en": "ribbon",
+  "name": "RIBBON",
+  "synonyms": [
+   "RIBBON"
+  ],
+  "adjectives": [
+   "VELVET",
+   "SATIN"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o74",
+  "en": "bridge",
+  "name": "BRIDGE",
+  "synonyms": [
+   "BRIDGE"
+  ],
+  "adjectives": [
+   "STONE",
+   "WOODEN",
+   "RICKETY"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o75",
+  "en": "Oddly-angled Room",
+  "name": "DIAMOND-8",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o76",
+  "en": "Wizard's workbench",
+  "name": "WORKBENCH",
+  "synonyms": [
+   "WORKBENCH",
+   "BENCH",
+   "TABLE"
+  ],
+  "adjectives": [
+   "WORK",
+   "HEAVY",
+   "WOODEN",
+   "WIZARD"
+  ],
+  "flags": [
+   "NDESCBIT",
+   "SURFACEBIT",
+   "CONTBIT",
+   "OPENBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o77",
+  "en": "narrow crack",
+  "name": "PCRACK",
+  "synonyms": [
+   "CRACK"
+  ],
+  "adjectives": [
+   "NARROW"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o78",
+  "en": "Flathead stamp",
+  "name": "STAMP",
+  "synonyms": [
+   "STAMP",
+   "TREASURE"
+  ],
+  "adjectives": [
+   "FLATHEAD"
+  ],
+  "flags": [
+   "STAGGERED",
+   "READBIT",
+   "TAKEBIT",
+   "BURNBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o79",
+  "en": "lizard",
+  "name": "DOOR-KEEPER",
+  "synonyms": [
+   "KEEPER",
+   "GUARDIAN",
+   "LIZARD",
+   "HEAD"
+  ],
+  "adjectives": [
+   "NASTY"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o80",
+  "en": "Stone Bridge",
+  "name": "STONE-BRIDGE",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o81",
+  "en": "rotten wooden chest",
+  "name": "CHEST",
+  "synonyms": [
+   "CHEST",
+   "TRUNK"
+  ],
+  "adjectives": [
+   "WOODEN",
+   "OLD",
+   "ROTTEN"
+  ],
+  "flags": [
+   "CONTBIT",
+   "TAKEBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o82",
+  "en": "Pool Room",
+  "name": "POOL-ROOM",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o83",
+  "en": "cake frosted with green letters",
+  "name": "EAT-ME-CAKE",
+  "synonyms": [
+   "CAKE",
+   "ICING",
+   "CAKES",
+   "LETTER"
+  ],
+  "adjectives": [
+   "GREEN",
+   "FROSTED"
+  ],
+  "flags": [
+   "READBIT",
+   "TAKEBIT",
+   "FOODBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o84",
+  "en": "enormous menhir",
+  "name": "GLOBAL-MENHIR",
+  "synonyms": [
+   "MENHIR",
+   "ROCK",
+   "STONE"
+  ],
+  "adjectives": [
+   "HUGE",
+   "HEAVY",
+   "ENORMOUS"
+  ],
+  "flags": [
+   "NDESCBIT",
+   "READBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o85",
+  "en": "small bottles",
+  "name": "TROPHY-BOTTLES",
+  "synonyms": [
+   "BOTTLE"
+  ],
+  "adjectives": [
+   "SMALL"
+  ],
+  "flags": [
+   "NDESCBIT",
+   "TRYTAKEBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o86",
+  "en": "Volcano by Viewing Ledge",
+  "name": "VAIR-3",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "NONLANDBIT",
+   "NWALLBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o88",
+  "en": "hook",
+  "name": "HOOK-1",
+  "synonyms": [
+   "HOOK"
+  ],
+  "adjectives": [
+   "SMALL"
+  ],
+  "flags": [],
+  "room": false
+ },
+ {
+  "key": "o89",
+  "en": "ruby stand",
+  "name": "STAND-1",
+  "synonyms": [
+   "STAND",
+   "STANDS"
+  ],
+  "adjectives": [
+   "CRYSTAL",
+   "RUBY"
+  ],
+  "flags": [
+   "NDESCBIT",
+   "SURFACEBIT",
+   "CONTBIT",
+   "OPENBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o90",
+  "en": "south wall",
+  "name": "SOUTH-WALL",
+  "synonyms": [
+   "WALL"
+  ],
+  "adjectives": [
+   "SOUTH",
+   "SOUTHE"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o91",
+  "en": "Pentagram Room",
+  "name": "PENTAGRAM-ROOM",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o92",
+  "en": "Bank Entrance",
+  "name": "BANK-ENTRANCE",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o93",
+  "en": "cloth bag",
+  "name": "CLOTH-BAG",
+  "synonyms": [
+   "BAG"
+  ],
+  "adjectives": [
+   "CLOTH"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o94",
+  "en": "Wizard's Workroom",
+  "name": "WORKBENCH-ROOM",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o95",
+  "en": "Oddly-angled Room",
+  "name": "DIAMOND-9",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o96",
+  "en": "set of used wands",
+  "name": "WANDS",
+  "synonyms": [
+   "WANDS",
+   "WAND",
+   "RACK",
+   "SET"
+  ],
+  "adjectives": [
+   "WORN",
+   "USED"
+  ],
+  "flags": [
+   "NDESCBIT",
+   "TRYTAKEBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o97",
+  "en": "ruby",
+  "name": "RUBY",
+  "synonyms": [
+   "RUBY",
+   "TREASURE"
+  ],
+  "adjectives": [
+   "MOBY"
+  ],
+  "flags": [
+   "STAGGERED",
+   "TAKEBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o98",
+  "en": "robot",
+  "name": "ROBOT",
+  "synonyms": [
+   "ROBOT",
+   "R2D2",
+   "C3PO",
+   "ROBBY"
+  ],
+  "adjectives": [],
+  "flags": [
+   "ACTORBIT",
+   "CONTBIT",
+   "OPENBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o99",
+  "en": "diamond stand",
+  "name": "STAND-3",
+  "synonyms": [
+   "STAND",
+   "STANDS"
+  ],
+  "adjectives": [
+   "DIAMOND",
+   "CRYSTAL"
+  ],
+  "flags": [
+   "NDESCBIT",
+   "SURFACEBIT",
+   "OPENBIT",
+   "CONTBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o100",
+  "en": "place mat",
+  "name": "PLACE-MAT",
+  "synonyms": [
+   "MAT",
+   "PLACEM"
+  ],
+  "adjectives": [
+   "PLACE"
+  ],
+  "flags": [
+   "TAKEBIT",
+   "SURFACEBIT",
+   "CONTBIT",
+   "OPENBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o101",
+  "en": "debris from an explosion",
+  "name": "EXPLOSION",
+  "synonyms": [
+   "KREBF"
+  ],
+  "adjectives": [],
+  "flags": [],
+  "room": false
+ },
+ {
+  "key": "o102",
+  "en": "East Viewing Room",
+  "name": "VIEWING-EAST",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o103",
+  "en": "cake frosted with blue letters",
+  "name": "BLUE-ICING",
+  "synonyms": [
+   "CAKE",
+   "ICING",
+   "CAKES",
+   "LETTER"
+  ],
+  "adjectives": [
+   "BLUE",
+   "FROSTED"
+  ],
+  "flags": [
+   "READBIT",
+   "TAKEBIT",
+   "FOODBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o104",
+  "en": "stream",
+  "name": "STREAM",
+  "synonyms": [
+   "STREAM"
+  ],
+  "adjectives": [
+   "FLOWING",
+   "SMALL"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o105",
+  "en": "chasm",
+  "name": "CHASM",
+  "synonyms": [
+   "CHASM",
+   "RAVINE"
+  ],
+  "adjectives": [
+   "DEEP"
+  ],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o106",
+  "en": "Cage",
+  "name": "IN-CAGE",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "NWALLBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o107",
+  "en": "china teapot",
+  "name": "TEAPOT",
+  "synonyms": [
+   "TEAPOT",
+   "POT"
+  ],
+  "adjectives": [
+   "CHINA",
+   "TEA"
+  ],
+  "flags": [
+   "TAKEBIT",
+   "TRANSBIT",
+   "CONTBIT",
+   "OPENBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o108",
+  "en": "keyhole",
+  "name": "KEYHOLE-2",
+  "synonyms": [
+   "KEYHOLE",
+   "HOLE"
+  ],
+  "adjectives": [],
+  "flags": [
+   "NDESCBIT",
+   "OPENBIT",
+   "SEARCHBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o109",
+  "en": "metal lid",
+  "name": "LID-2",
+  "synonyms": [
+   "LID"
+  ],
+  "adjectives": [
+   "METAL"
+  ],
+  "flags": [
+   "NDESCBIT",
+   "CONTBIT",
+   "OPENBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o110",
+  "en": "perfect rose",
+  "name": "ROSE",
+  "synonyms": [
+   "ROSE"
+  ],
+  "adjectives": [
+   "BEAUTIFUL",
+   "RED",
+   "PERFECT"
+  ],
+  "flags": [
+   "TAKEBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o111",
+  "en": "glacier",
+  "name": "ICE",
+  "synonyms": [
+   "ICE",
+   "MASS",
+   "GLACIER"
+  ],
+  "adjectives": [
+   "COLD",
+   "ICY"
+  ],
+  "flags": [],
+  "room": false
+ },
+ {
+  "key": "o112",
+  "en": "metal lid",
+  "name": "LID-1",
+  "synonyms": [
+   "LID"
+  ],
+  "adjectives": [
+   "METAL"
+  ],
+  "flags": [
+   "NDESCBIT",
+   "CONTBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o113",
+  "en": "Volcano Near Small Ledge",
+  "name": "VAIR-2",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "NONLANDBIT",
+   "NWALLBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o115",
+  "en": "safety deposit box",
+  "name": "DEPOSIT-BOX",
+  "synonyms": [
+   "BOX"
+  ],
+  "adjectives": [
+   "DEPOSIT",
+   "SAFETY"
+  ],
+  "flags": [
+   "NDESCBIT",
+   "TAKEBIT",
+   "TRYTAKEBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o116",
+  "en": "marble crypt",
+  "name": "CRYPT",
+  "synonyms": [
+   "TOMB",
+   "CRYPT",
+   "GRAVE"
+  ],
+  "adjectives": [
+   "MARBLE"
+  ],
+  "flags": [
+   "NDESCBIT",
+   "READBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o117",
+  "en": "Volcano View",
+  "name": "VOLCANO-VIEW",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o118",
+  "en": "set of poled heads",
+  "name": "HEADS",
+  "synonyms": [
+   "HEADS",
+   "HEAD",
+   "POLE",
+   "POLES"
+  ],
+  "adjectives": [],
+  "flags": [
+   "NDESCBIT",
+   "TRYTAKEBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o119",
+  "en": "Circular Room",
+  "name": "WELL-BOTTOM",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "NONLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o120",
+  "en": "hedge",
+  "name": "HEDGES",
+  "synonyms": [
+   "HEDGE",
+   "HEDGES"
+  ],
+  "adjectives": [],
+  "flags": [
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o121",
+  "en": "Oddly-angled Room",
+  "name": "DIAMOND-2",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o122",
+  "en": "Posts Room",
+  "name": "POSTS-ROOM",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT",
+   "ONBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o124",
+  "en": "Ledge in Ravine",
+  "name": "RAVINE-LEDGE",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o125",
+  "en": "Crypt",
+  "name": "CRYPT-ROOM",
+  "synonyms": [],
+  "adjectives": [],
+  "flags": [
+   "RLANDBIT"
+  ],
+  "room": true
+ },
+ {
+  "key": "o126",
+  "en": "receptacle",
+  "name": "RECEPTACLE",
+  "synonyms": [
+   "RECEPTACLE"
+  ],
+  "adjectives": [
+   "METAL"
+  ],
+  "flags": [
+   "CONTBIT",
+   "SEARCHBIT",
+   "NDESCBIT"
+  ],
+  "room": false
+ },
+ {
+  "key": "o127",
+  "en": "delicate gold key",
+  "name": "GOLD-KEY",
+  "synonyms": [
+   "KEY",
+   "TREASURE"
+  ],
+  "adjectives": [
+   "DELICATE",
+   "GOLD"
+  ],
+  "flags": [
+   "STAGGERED",
+   "NDESCBIT",
+   "TAKEBIT",
+   "TRYTAKEBIT"
+  ],
+  "room": false
+ }
+]

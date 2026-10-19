@@ -1,0 +1,352 @@
+{
+ "size": [
+  13,
+  18
+ ],
+ "rooms": {
+  "AQUARIUM-ROOM": [
+   1,
+   14
+  ],
+  "BANK-ENTRANCE": [
+   2,
+   5
+  ],
+  "CAGE-ROOM": [
+   11,
+   14
+  ],
+  "CAROUSEL-ROOM": [
+   7,
+   8
+  ],
+  "CERBERUS-ROOM": [
+   3,
+   15
+  ],
+  "COBWEBBY-CORRIDOR": [
+   4,
+   9
+  ],
+  "COOL-ROOM": [
+   6,
+   8
+  ],
+  "CRYPT-ANTEROOM": [
+   4,
+   14
+  ],
+  "CRYPT-ROOM": [
+   4,
+   15
+  ],
+  "DARK-TUNNEL": [
+   8,
+   5
+  ],
+  "DEAD-PALANTIR-1": [
+   12,
+   1
+  ],
+  "DEAD-PALANTIR-2": [
+   12,
+   0
+  ],
+  "DEAD-PALANTIR-3": [
+   11,
+   0
+  ],
+  "DEAD-PALANTIR-4": [
+   10,
+   0
+  ],
+  "DEEP-FORD": [
+   6,
+   5
+  ],
+  "DEPOSITORY": [
+   3,
+   3
+  ],
+  "DIAMOND-1": [
+   6,
+   11
+  ],
+  "DIAMOND-2": [
+   5,
+   11
+  ],
+  "DIAMOND-3": [
+   8,
+   12
+  ],
+  "DIAMOND-4": [
+   4,
+   12
+  ],
+  "DIAMOND-5": [
+   6,
+   12
+  ],
+  "DIAMOND-6": [
+   7,
+   13
+  ],
+  "DIAMOND-7": [
+   5,
+   12
+  ],
+  "DIAMOND-8": [
+   6,
+   13
+  ],
+  "DIAMOND-9": [
+   7,
+   12
+  ],
+  "DRAGON-LAIR": [
+   5,
+   4
+  ],
+  "DRAGON-ROOM": [
+   5,
+   5
+  ],
+  "DREARY-ROOM": [
+   7,
+   2
+  ],
+  "FOOT-BRIDGE": [
+   9,
+   3
+  ],
+  "FORMAL-GARDEN": [
+   8,
+   7
+  ],
+  "FRESCO-ROOM": [
+   4,
+   5
+  ],
+  "GARDEN-NORTH": [
+   8,
+   6
+  ],
+  "GAZEBO-ROOM": [
+   10,
+   6
+  ],
+  "GLACIER-ROOM": [
+   5,
+   8
+  ],
+  "GREAT-CAVERN": [
+   9,
+   4
+  ],
+  "GUARDIAN-ROOM": [
+   4,
+   10
+  ],
+  "IN-AQUARIUM": [
+   1,
+   12
+  ],
+  "IN-CAGE": [
+   12,
+   17
+  ],
+  "INSIDE-BARROW": [
+   10,
+   1
+  ],
+  "KENNEL": [
+   6,
+   10
+  ],
+  "LAVA-ROOM": [
+   3,
+   7
+  ],
+  "LAVA-TUBE": [
+   4,
+   8
+  ],
+  "LEDGE-1": [
+   1,
+   10
+  ],
+  "LEDGE-2": [
+   1,
+   6
+  ],
+  "LEDGE-TUNNEL": [
+   6,
+   4
+  ],
+  "LIBRARY": [
+   1,
+   11
+  ],
+  "MACHINE-ROOM": [
+   11,
+   13
+  ],
+  "MAGNET-ROOM": [
+   10,
+   13
+  ],
+  "MARBLE-HALL": [
+   6,
+   6
+  ],
+  "MENHIR-ROOM": [
+   7,
+   9
+  ],
+  "NARROW-TUNNEL": [
+   9,
+   2
+  ],
+  "OFFICE": [
+   3,
+   5
+  ],
+  "PEARL-ROOM": [
+   8,
+   11
+  ],
+  "PENTAGRAM-ROOM": [
+   2,
+   14
+  ],
+  "POOL-ROOM": [
+   11,
+   16
+  ],
+  "POSTS-ROOM": [
+   11,
+   15
+  ],
+  "RAVINE-LEDGE": [
+   7,
+   4
+  ],
+  "RIDDLE-ROOM": [
+   8,
+   10
+  ],
+  "ROOM-8": [
+   6,
+   7
+  ],
+  "SAFE-ROOM": [
+   2,
+   7
+  ],
+  "SHALLOW-FORD": [
+   9,
+   5
+  ],
+  "SMALL-ROOM": [
+   2,
+   2
+  ],
+  "STAIRWAY-TOP": [
+   7,
+   11
+  ],
+  "STONE-BRIDGE": [
+   5,
+   6
+  ],
+  "STREAM-PATH": [
+   7,
+   6
+  ],
+  "TEA-ROOM": [
+   10,
+   15
+  ],
+  "TELLER-EAST": [
+   2,
+   4
+  ],
+  "TELLER-WEST": [
+   2,
+   3
+  ],
+  "TINY-ROOM": [
+   7,
+   3
+  ],
+  "TOPIARY-ROOM": [
+   8,
+   8
+  ],
+  "TROPHY-ROOM": [
+   3,
+   13
+  ],
+  "VAIR-1": [
+   0,
+   8
+  ],
+  "VAIR-2": [
+   1,
+   9
+  ],
+  "VAIR-3": [
+   1,
+   8
+  ],
+  "VAIR-4": [
+   0,
+   7
+  ],
+  "VAULT": [
+   3,
+   2
+  ],
+  "VIEWING-EAST": [
+   3,
+   4
+  ],
+  "VIEWING-WEST": [
+   1,
+   3
+  ],
+  "VOLCANO-BOTTOM": [
+   2,
+   8
+  ],
+  "VOLCANO-VIEW": [
+   3,
+   8
+  ],
+  "WELL-BOTTOM": [
+   9,
+   11
+  ],
+  "WELL-TOP": [
+   9,
+   13
+  ],
+  "WIZARDS-QUARTERS": [
+   1,
+   15
+  ],
+  "WIZARDS-WORKSHOP": [
+   3,
+   12
+  ],
+  "WORKBENCH-ROOM": [
+   2,
+   13
+  ],
+  "ZORK3": [
+   3,
+   16
+  ]
+ }
+}

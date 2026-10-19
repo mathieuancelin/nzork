@@ -2116,19 +2116,22 @@
   "g8f67": {
    "en": "Swimming isn't usually allowed in the ",
    "args": [],
-   "routine": "V-SWIM"
+   "routine": "V-SWIM",
+   "zil": "<TELL \"Swimming isn't usually allowed in the \">"
   },
   "g8f88": {
    "en": "{0}.\n",
    "args": [
     "o"
    ],
-   "routine": "V-SWIM"
+   "routine": "V-SWIM",
+   "zil": "<TELL D ,PRSO \".\">"
   },
   "g8f8d": {
    "en": "dungeon.\n",
    "args": [],
-   "routine": "V-SWIM"
+   "routine": "V-SWIM",
+   "zil": "<TELL \"dungeon.\">"
   },
   "g8f9c": {
    "en": "Go jump in a lake!\n",
@@ -6033,7 +6036,8 @@
   "s1121c": {
    "en": "An old leather bag, bulging with coins, is here.",
    "uses": [
-    "BAG-OF-COINS.LDESC"
+    "BAG-OF-COINS.LDESC",
+    "table"
    ],
    "zil": "BAG-OF-COINS.LDESC (1dungeon.zil:539)"
   },
@@ -6059,7 +6063,8 @@
   "s113e8": {
    "en": "You have entered the Land of the Living Dead. Thousands of lost souls can be heard weeping and moaning. In the corner are stacked the remains of dozens of previous adventurers less fortunate than yourself. A passage exits to the north.",
    "uses": [
-    "LAND-OF-LIVING-DEAD.LDESC"
+    "LAND-OF-LIVING-DEAD.LDESC",
+    "table"
    ],
    "zil": "LAND-OF-LIVING-DEAD.LDESC (1dungeon.zil:2043)"
   },
@@ -6112,7 +6117,8 @@
    "en": "Storm-tossed trees block your way.",
    "uses": [
     "CANYON-VIEW.SOUTH",
-    "FOREST-3.SOUTH"
+    "FOREST-3.SOUTH",
+    "table"
    ],
    "zil": "CANYON-VIEW.SOUTH (1dungeon.zil:2401)"
   },
@@ -6141,14 +6147,16 @@
   "s11556": {
    "en": "On the ground is a red hot bell.",
    "uses": [
-    "HOT-BELL.LDESC"
+    "HOT-BELL.LDESC",
+    "table"
    ],
    "zil": "HOT-BELL.LDESC (1dungeon.zil:178)"
   },
   "s11568": {
    "en": "On the altar is a large black book, open to page 569.",
    "uses": [
-    "BOOK.FDESC"
+    "BOOK.FDESC",
+    "table"
    ],
    "zil": "BOOK.FDESC (1dungeon.zil:219)"
   },
@@ -6267,7 +6275,8 @@
   "s116c4": {
    "en": "\"Flood Control Dam #3\n\nFCD#3 was constructed in year 783 of the Great Underground Empire to harness the mighty Frigid River. This work was supported by a grant of 37 million zorkmids from your omnipotent local tyrant Lord Dimwit Flathead the Excessive. This impressive structure is composed of 370,000 cubic feet of concrete, is 256 feet tall at the center, and 193 feet wide at the top. The lake created behind the dam has a volume of 1.7 billion cubic feet, an area of 12 million square feet, and a shore line of 36 thousand feet.\n\nThe construction of FCD#3 took 112 days from ground breaking to the dedication. It required a work force of 384 slaves, 34 slave drivers, 12 engineers, 2 turtle doves, and a partridge in a pear tree. The work was managed by a command team composed of 2345 bureaucrats, 2347 secretaries (at least two of whom could type), 12,256 paper shufflers, 52,469 rubber stampers, 245,193 red tape processors, and nearly one million dead trees.\n\nWe will now point out some of the more interesting features of FCD#3 as we conduct you on a guided tour of the facilities:\n\n        1) You start your tour here in the Dam Lobby. You will notice on your right that....",
    "uses": [
-    "GUIDE.TEXT"
+    "GUIDE.TEXT",
+    "table"
    ]
   },
   "s119d6": {
@@ -6351,7 +6360,8 @@
   "s11ac4": {
    "en": "This is a forest, with trees in all directions. To the east, there appears to be sunlight.",
    "uses": [
-    "FOREST-1.LDESC"
+    "FOREST-1.LDESC",
+    "table"
    ],
    "zil": "FOREST-1.LDESC (1dungeon.zil:1312)"
   },
@@ -6367,28 +6377,32 @@
   "s11b12": {
    "en": "This is a path winding through a dimly lit forest. The path heads north-south here. One particularly large tree with some low branches stands at the edge of the path.",
    "uses": [
-    "PATH.LDESC"
+    "PATH.LDESC",
+    "table"
    ],
    "zil": "PATH.LDESC (1dungeon.zil:1366)"
   },
   "s11b6a": {
    "en": "This is the attic. The only exit is a stairway leading down.",
    "uses": [
-    "ATTIC.LDESC"
+    "ATTIC.LDESC",
+    "table"
    ],
    "zil": "ATTIC.LDESC (1dungeon.zil:1445)"
   },
   "s11b88": {
    "en": "This is a small room with passages to the east and south and a forbidding hole leading west. Bloodstains and deep scratches (perhaps made by an axe) mar the walls.",
    "uses": [
-    "TROLL-ROOM.LDESC"
+    "TROLL-ROOM.LDESC",
+    "table"
    ],
    "zil": "TROLL-ROOM.LDESC (1dungeon.zil:1482)"
   },
   "s11bda": {
    "en": "The chasm probably leads straight to the infernal regions.",
    "uses": [
-    "EAST-OF-CHASM.DOWN"
+    "EAST-OF-CHASM.DOWN",
+    "table"
    ],
    "zil": "EAST-OF-CHASM.DOWN (1dungeon.zil:1503)"
   },
@@ -6439,20 +6453,24 @@
   },
   "s11d92": {
    "en": "The cyclops doesn't look like he'll let you past.",
-   "uses": [],
+   "uses": [
+    "table"
+   ],
    "zil": "CYCLOPS-ROOM.UP (1dungeon.zil:1735)"
   },
   "s11daa": {
    "en": "This is a long passage. To the west is one entrance. On the east there is an old wooden door, with a large opening in it (about cyclops sized).",
    "uses": [
-    "STRANGE-PASSAGE.LDESC"
+    "STRANGE-PASSAGE.LDESC",
+    "table"
    ],
    "zil": "STRANGE-PASSAGE.LDESC (1dungeon.zil:1743)"
   },
   "s11df2": {
    "en": "This is a large room, whose east wall is solid granite. A number of discarded bags, which crumble at your touch, are scattered about on the floor. There is an exit down a staircase.",
    "uses": [
-    "TREASURE-ROOM.LDESC"
+    "TREASURE-ROOM.LDESC",
+    "table"
    ],
    "zil": "TREASURE-ROOM.LDESC (1dungeon.zil:1755)"
   },
@@ -6525,7 +6543,8 @@
   "s11fa8": {
    "en": "This is a circular stone room with passages in all directions. Several of them have unfortunately been blocked by cave-ins.",
    "uses": [
-    "ROUND-ROOM.LDESC"
+    "ROUND-ROOM.LDESC",
+    "table"
    ],
    "zil": "ROUND-ROOM.LDESC (1dungeon.zil:1955)"
   },
@@ -6548,7 +6567,8 @@
   "s12054": {
    "en": "This is a room which looks like an Egyptian tomb. There is an ascending staircase to the west.",
    "uses": [
-    "EGYPT-ROOM.LDESC"
+    "EGYPT-ROOM.LDESC",
+    "table"
    ],
    "zil": "EGYPT-ROOM.LDESC (1dungeon.zil:2069)"
   },
@@ -6587,7 +6607,8 @@
   "s1226c": {
    "en": "This is a sand-filled cave whose exit is to the southwest.",
    "uses": [
-    "SANDY-CAVE.LDESC"
+    "SANDY-CAVE.LDESC",
+    "table"
    ],
    "zil": "SANDY-CAVE.LDESC (1dungeon.zil:2314)"
   },
@@ -6602,14 +6623,16 @@
   "s1230e": {
    "en": "This is a small nondescript room. However, from the direction of a small descending staircase a foul odor can be detected. To the south is a narrow tunnel.",
    "uses": [
-    "SMELLY-ROOM.LDESC"
+    "SMELLY-ROOM.LDESC",
+    "table"
    ],
    "zil": "SMELLY-ROOM.LDESC (1dungeon.zil:2466)"
   },
   "s1235a": {
    "en": "This is a small room which smells strongly of coal gas. There is a short climb up some stairs and a narrow tunnel leading east.",
    "uses": [
-    "GAS-ROOM.LDESC"
+    "GAS-ROOM.LDESC",
+    "table"
    ],
    "zil": "GAS-ROOM.LDESC (1dungeon.zil:2479)"
   },
@@ -6632,7 +6655,8 @@
   "s1242c": {
    "en": "This is a long and narrow passage, which is cluttered with broken timbers. A wide passage comes from the east and turns at the west end of the room into a very narrow passageway. From the west comes a strong draft.",
    "uses": [
-    "TIMBER-ROOM.LDESC"
+    "TIMBER-ROOM.LDESC",
+    "table"
    ],
    "zil": "TIMBER-ROOM.LDESC (1dungeon.zil:2524)"
   },
@@ -6650,7 +6674,8 @@
     "MINE-1.LDESC",
     "MINE-2.LDESC",
     "MINE-3.LDESC",
-    "MINE-4.LDESC"
+    "MINE-4.LDESC",
+    "table"
    ],
    "zil": "MINE-4.LDESC (1dungeon.zil:2594)"
   },
@@ -6763,14 +6788,16 @@
   "s12730": {
    "en": "The deceased adventurer's useless lantern is here.",
    "uses": [
-    "BURNED-OUT-LANTERN.FDESC"
+    "BURNED-OUT-LANTERN.FDESC",
+    "table"
    ],
    "zil": "BURNED-OUT-LANTERN.FDESC (1dungeon.zil:530)"
   },
   "s12750": {
    "en": "\"WELCOME TO ZORK!\n\nZORK is a game of adventure, danger, and low cunning. In it you will explore some of the most amazing territory ever seen by mortals. No computer should be without one!\"",
    "uses": [
-    "ADVERTISEMENT.TEXT"
+    "ADVERTISEMENT.TEXT",
+    "table"
    ],
    "zil": "ADVERTISEMENT.TEXT (1dungeon.zil:573)"
   },
@@ -6785,13 +6812,16 @@
   "s1290c": {
    "en": "The door is boarded and you can't remove the boards.",
    "uses": [
-    "WEST-OF-HOUSE.EAST"
+    "WEST-OF-HOUSE.EAST",
+    "table"
    ],
    "zil": "WEST-OF-HOUSE.EAST (1dungeon.zil:1247)"
   },
   "s12926": {
    "en": "The door is nailed shut.",
-   "uses": [],
+   "uses": [
+    "table"
+   ],
    "zil": "LIVING-ROOM.WEST (1dungeon.zil:1455)"
   },
   "s12934": {
@@ -6833,7 +6863,8 @@
   "s12994": {
    "en": "The engravings translate to \"This space intentionally left blank.\"",
    "uses": [
-    "WOODEN-DOOR.TEXT"
+    "WOODEN-DOOR.TEXT",
+    "table"
    ],
    "zil": "WOODEN-DOOR.TEXT (1dungeon.zil:913)"
   },
@@ -6870,7 +6901,8 @@
    "en": "The forest becomes impenetrable to the north.",
    "uses": [
     "FOREST-2.NORTH",
-    "GRATING-CLEARING.NORTH"
+    "GRATING-CLEARING.NORTH",
+    "table"
    ],
    "zil": "GRATING-CLEARING.NORTH (1dungeon.zil:1391)"
   },
@@ -7077,7 +7109,8 @@
   "s12dc8": {
    "en": "Fortunately, there is still one chance for you to be a vandal, for on the far wall is a painting of unparalleled beauty.",
    "uses": [
-    "PAINTING.FDESC"
+    "PAINTING.FDESC",
+    "table"
    ],
    "zil": "PAINTING.FDESC (1dungeon.zil:663)"
   },
@@ -7092,7 +7125,8 @@
   "s12e1e": {
    "en": "Beside you on the branch is a small bird's nest.",
    "uses": [
-    "NEST.FDESC"
+    "NEST.FDESC",
+    "table"
    ],
    "zil": "NEST.FDESC (1dungeon.zil:1151)"
   },
@@ -7114,7 +7148,8 @@
   "s12e5c": {
    "en": "You wouldn't fit and would die if you could.",
    "uses": [
-    "SHAFT-ROOM.DOWN"
+    "SHAFT-ROOM.DOWN",
+    "table"
    ],
    "zil": "SHAFT-ROOM.DOWN (1dungeon.zil:2457)"
   },
@@ -7150,7 +7185,8 @@
   "s12eae": {
    "en": "Just in time you steer away from the rocks.",
    "uses": [
-    "RIVER-2.WEST"
+    "RIVER-2.WEST",
+    "table"
    ],
    "zil": "RIVER-2.WEST (1dungeon.zil:2215)"
   },
@@ -7273,19 +7309,23 @@
   "s130aa": {
    "en": "Congratulations!\n\nYou are the privileged owner of ZORK I: The Great Underground Empire, a self-contained and self-maintaining universe. If used and maintained in accordance with normal operating practices for small universes, ZORK will provide many months of trouble-free operation.",
    "uses": [
-    "OWNERS-MANUAL.TEXT"
+    "OWNERS-MANUAL.TEXT",
+    "table"
    ],
    "zil": "OWNERS-MANUAL.TEXT (1dungeon.zil:1108)"
   },
   "s13162": {
    "en": "Only Santa Claus climbs down chimneys.",
-   "uses": [],
+   "uses": [
+    "table"
+   ],
    "zil": "KITCHEN.DOWN (1dungeon.zil:1437)"
   },
   "s1317e": {
    "en": "It's a long way...",
    "uses": [
-    "ARAGAIN-FALLS.DOWN"
+    "ARAGAIN-FALLS.DOWN",
+    "table"
    ],
    "zil": "ARAGAIN-FALLS.DOWN (1dungeon.zil:2323)"
   },
@@ -7327,14 +7367,16 @@
   "s13248": {
    "en": "A battery-powered brass lantern is on the trophy case.",
    "uses": [
-    "LAMP.FDESC"
+    "LAMP.FDESC",
+    "table"
    ],
    "zil": "LAMP.FDESC (1dungeon.zil:552)"
   },
   "s1326c": {
    "en": "The prayer is inscribed in an ancient script, rarely used today. It seems to be a philippic against small insects, absent-mindedness, and the picking up and dropping of small objects. The final verse consigns trespassers to the land of the dead. All evidence indicates that the beliefs of the ancient Zorkers were obscure.",
    "uses": [
-    "PRAYER.TEXT"
+    "PRAYER.TEXT",
+    "table"
    ],
    "zil": "PRAYER.TEXT (1dungeon.zil:754)"
   },
@@ -7422,7 +7464,8 @@
   "s1350c": {
    "en": "The river is running faster here and the sound ahead appears to be that of rushing water. On the east shore is a sandy beach. A small area of beach can also be seen below the cliffs on the west shore.",
    "uses": [
-    "RIVER-4.LDESC"
+    "RIVER-4.LDESC",
+    "table"
    ],
    "zil": "RIVER-4.LDESC (1dungeon.zil:2261)"
   },
@@ -7529,7 +7572,8 @@
   "s136c8": {
    "en": "The solid-gold coffin used for the burial of Ramses II is here.",
    "uses": [
-    "COFFIN.LDESC"
+    "COFFIN.LDESC",
+    "table"
    ],
    "zil": "COFFIN.LDESC (1dungeon.zil:468)"
   },
@@ -7544,7 +7588,8 @@
   "s1370c": {
    "en": "The sound of rushing water is nearly unbearable here. On the east shore is a large landing area.",
    "uses": [
-    "RIVER-5.LDESC"
+    "RIVER-5.LDESC",
+    "table"
    ],
    "zil": "RIVER-5.LDESC (1dungeon.zil:2277)"
   },
@@ -7611,14 +7656,16 @@
   "s1386a": {
    "en": "There is a matchbook whose cover says \"Visit Beautiful FCD#3\" here.",
    "uses": [
-    "MATCH.LDESC"
+    "MATCH.LDESC",
+    "table"
    ],
    "zil": "MATCH.LDESC (1dungeon.zil:622)"
   },
   "s13896": {
    "en": "There is a folded pile of plastic here which has a small valve attached.",
    "uses": [
-    "INFLATABLE-BOAT.LDESC"
+    "INFLATABLE-BOAT.LDESC",
+    "table"
    ],
    "zil": "INFLATABLE-BOAT.LDESC (1dungeon.zil:721)"
   },
@@ -7633,7 +7680,8 @@
   "s138d2": {
    "en": "There is a suspicious-looking individual, holding a large bag, leaning against one wall. He is armed with a deadly stiletto.",
    "uses": [
-    "THIEF.LDESC"
+    "THIEF.LDESC",
+    "table"
    ],
    "zil": "THIEF.LDESC (1dungeon.zil:976)"
   },
@@ -7648,7 +7696,8 @@
   "s1394e": {
    "en": "There is an old trunk here, bulging with assorted jewels.",
    "uses": [
-    "TRUNK.LDESC"
+    "TRUNK.LDESC",
+    "table"
    ],
    "zil": "TRUNK.LDESC (1dungeon.zil:1056)"
   },
@@ -7663,21 +7712,24 @@
   "s13990": {
    "en": "There are old engravings on the walls here.",
    "uses": [
-    "ENGRAVINGS.LDESC"
+    "ENGRAVINGS.LDESC",
+    "table"
    ],
    "zil": "ENGRAVINGS.LDESC (1dungeon.zil:1091)"
   },
   "s139a6": {
    "en": "There is a somewhat ruined egg here.",
    "uses": [
-    "BROKEN-EGG.LDESC"
+    "BROKEN-EGG.LDESC",
+    "table"
    ],
    "zil": "BROKEN-EGG.LDESC (1dungeon.zil:1178)"
   },
   "s139ba": {
    "en": "There is a golden clockwork canary nestled in the egg. It has ruby eyes and a silver beak. Through a crystal window below its left wing you can see intricate machinery inside. It appears to have wound down.",
    "uses": [
-    "CANARY.FDESC"
+    "CANARY.FDESC",
+    "table"
    ],
    "zil": "CANARY.FDESC (1dungeon.zil:1198)"
   },
@@ -7717,7 +7769,8 @@
   "s13b60": {
    "en": "There is no safe landing spot here.",
    "uses": [
-    "RIVER-2.LAND"
+    "RIVER-2.LAND",
+    "table"
    ],
    "zil": "RIVER-2.LAND (1dungeon.zil:2213)"
   },
@@ -8244,14 +8297,16 @@
   "s14392": {
    "en": "A sceptre, possibly that of ancient Egypt itself, is in the coffin. The sceptre is ornamented with colored enamel, and tapers to a sharp point.",
    "uses": [
-    "SCEPTRE.FDESC"
+    "SCEPTRE.FDESC",
+    "table"
    ],
    "zil": "SCEPTRE.FDESC (1dungeon.zil:249)"
   },
   "s143e8": {
    "en": "A chasm runs southwest to northeast and the path follows it. You are on the south side of the chasm, where a crack opens into a passage.",
    "uses": [
-    "CHASM-ROOM.LDESC"
+    "CHASM-ROOM.LDESC",
+    "table"
    ],
    "zil": "CHASM-ROOM.LDESC (1dungeon.zil:2011)"
   },
@@ -8329,7 +8384,8 @@
   "s14510": {
    "en": "It is too narrow for most insects.",
    "uses": [
-    "DAMP-CAVE.SOUTH"
+    "DAMP-CAVE.SOUTH",
+    "table"
    ],
    "zil": "DAMP-CAVE.SOUTH (1dungeon.zil:1984)"
   },
@@ -8466,7 +8522,8 @@
   "s147ea": {
    "en": "You are facing the north side of a white house. There is no door here, and all the windows are boarded up. To the north a narrow path winds through the trees.",
    "uses": [
-    "NORTH-OF-HOUSE.LDESC"
+    "NORTH-OF-HOUSE.LDESC",
+    "table"
    ],
    "zil": "NORTH-OF-HOUSE.LDESC (1dungeon.zil:1267)"
   },
@@ -8497,7 +8554,8 @@
   "s148d8": {
    "en": "You are standing on a path beside a gently flowing stream. The path follows the stream, which flows from west to east.",
    "uses": [
-    "STREAM-VIEW.LDESC"
+    "STREAM-VIEW.LDESC",
+    "table"
    ],
    "zil": "STREAM-VIEW.LDESC (1dungeon.zil:1810)"
   },
@@ -8512,14 +8570,16 @@
   "s14976": {
    "en": "You are at the base of Flood Control Dam #3, which looms above you and to the north. The river Frigid is flowing by here. Along the river are the White Cliffs which seem to form giant walls stretching from north to south along the shores of the river as it winds its way downstream.",
    "uses": [
-    "DAM-BASE.LDESC"
+    "DAM-BASE.LDESC",
+    "table"
    ],
    "zil": "DAM-BASE.LDESC (1dungeon.zil:2179)"
   },
   "s14a0a": {
    "en": "You are on the Frigid River in the vicinity of the Dam. The river flows quietly here. There is a landing on the west shore.",
    "uses": [
-    "RIVER-1.LDESC"
+    "RIVER-1.LDESC",
+    "table"
    ],
    "zil": "RIVER-1.LDESC (1dungeon.zil:2193)"
   },
@@ -8534,14 +8594,16 @@
   "s14aa4": {
    "en": "You are on a rocky, narrow strip of beach beside the Cliffs. A narrow path leads north along the shore.",
    "uses": [
-    "WHITE-CLIFFS-SOUTH.LDESC"
+    "WHITE-CLIFFS-SOUTH.LDESC",
+    "table"
    ],
    "zil": "WHITE-CLIFFS-SOUTH.LDESC (1dungeon.zil:2249)"
   },
   "s14ad8": {
    "en": "You are on the east shore of the river. The water here seems somewhat treacherous. A path travels from north to south here, the south end quickly turning around a sharp corner.",
    "uses": [
-    "SHORE.LDESC"
+    "SHORE.LDESC",
+    "table"
    ],
    "zil": "SHORE.LDESC (1dungeon.zil:2289)"
   },
@@ -8556,14 +8618,16 @@
   "s14b8e": {
    "en": "You are on top of a rainbow (I bet you never thought you would walk on a rainbow), with a magnificent view of the Falls. The rainbow travels east-west here.",
    "uses": [
-    "ON-RAINBOW.LDESC"
+    "ON-RAINBOW.LDESC",
+    "table"
    ],
    "zil": "ON-RAINBOW.LDESC (1dungeon.zil:2333)"
   },
   "s14be8": {
    "en": "You are on a small, rocky beach on the continuation of the Frigid River past the Falls. The beach is narrow due to the presence of the White Cliffs. The river canyon opens here and sunlight shines in from above. A rainbow crosses over the falls to the east and a narrow path continues to the southwest.",
    "uses": [
-    "END-OF-RAINBOW.LDESC"
+    "END-OF-RAINBOW.LDESC",
+    "table"
    ],
    "zil": "END-OF-RAINBOW.LDESC (1dungeon.zil:2345)"
   },
@@ -8578,14 +8642,16 @@
   "s14cdc": {
    "en": "You are on a ledge about halfway up the wall of the river canyon. You can see from here that the main flow from Aragain Falls twists along a passage which it is impossible for you to enter. Below you is the canyon bottom. Above you is more cliff, which appears climbable.",
    "uses": [
-    "CLIFF-MIDDLE.LDESC"
+    "CLIFF-MIDDLE.LDESC",
+    "table"
    ],
    "zil": "CLIFF-MIDDLE.LDESC (1dungeon.zil:2373)"
   },
   "s14d5c": {
    "en": "You are at the top of the Great Canyon on its west wall. From here there is a marvelous view of the canyon and parts of the Frigid River upstream. Across the canyon, the walls of the White Cliffs join the mighty ramparts of the Flathead Mountains to the east. Following the Canyon upstream to the north, Aragain Falls may be seen, complete with rainbow. The mighty Frigid River flows out from a great dark cavern. To the west and south can be seen an immense forest, stretching for miles around. A path leads northwest. It is possible to climb down into the canyon from here.",
    "uses": [
-    "CANYON-VIEW.LDESC"
+    "CANYON-VIEW.LDESC",
+    "table"
    ],
    "zil": "CANYON-VIEW.LDESC (1dungeon.zil:2387)"
   },
@@ -8600,7 +8666,8 @@
   "s14eec": {
    "en": "You are in a small room. Strange squeaky sounds may be heard coming from the passage at the north end. You may also escape to the east.",
    "uses": [
-    "SQUEEKY-ROOM.LDESC"
+    "SQUEEKY-ROOM.LDESC",
+    "table"
    ],
    "zil": "SQUEEKY-ROOM.LDESC (1dungeon.zil:2434)"
   },
@@ -8656,19 +8723,23 @@
   "s1506e": {
    "en": "You cannot climb any higher.",
    "uses": [
-    "UP-A-TREE.UP"
+    "UP-A-TREE.UP",
+    "table"
    ],
    "zil": "UP-A-TREE.UP (1dungeon.zil:1383)"
   },
   "s1507e": {
    "en": "You cannot go down without fracturing many bones.",
-   "uses": [],
+   "uses": [
+    "table"
+   ],
    "zil": "DOME-ROOM.DOWN (1dungeon.zil:2082)"
   },
   "s1509a": {
    "en": "You cannot reach the rope.",
    "uses": [
-    "TORCH-ROOM.UP"
+    "TORCH-ROOM.UP",
+    "table"
    ],
    "zil": "TORCH-ROOM.UP (1dungeon.zil:2090)"
   },
@@ -8687,7 +8758,8 @@
   "s150c0": {
    "en": "You can land either to the east or the west.",
    "uses": [
-    "RIVER-4.LAND"
+    "RIVER-4.LAND",
+    "table"
    ],
    "zil": "RIVER-4.LAND (1dungeon.zil:2267)"
   },
@@ -8790,7 +8862,8 @@
   "s15218": {
    "en": "In the trophy case is an ancient parchment which appears to be a map.",
    "uses": [
-    "MAP.FDESC"
+    "MAP.FDESC",
+    "table"
    ],
    "zil": "MAP.FDESC (1dungeon.zil:934)"
   },

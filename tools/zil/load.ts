@@ -1,13 +1,19 @@
-// Loads the Zork I ZIL sources in compilation order, resolving the compile-time conditionals
-// for ZORK-NUMBER = 1 (and a production build, where PREDGEN is assigned).
+// Loads the ZIL sources of a game in compilation order (the INSERT-FILE list of zork<n>.zil),
+// resolving the compile-time conditionals for its ZORK-NUMBER (and a production build, where
+// PREDGEN is assigned).
 
 import { existsSync, readFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { readZil, isForm, atomName, walk, zilText, type Node } from './reader'
+import { GAMES, type GameId } from '../../src/engine/games'
 
-// the historical sources are a git submodule (github.com/historicalsource/zork1)
-const SOURCE_DIR = new URL('../../vendor/zork1/', import.meta.url)
-const ORDER = ['gmacros', 'gsyntax', '1dungeon', 'gglobals', 'gclock', 'gmain', 'gparser', 'gverbs', '1actions']
+// the historical sources are git submodules (github.com/historicalsource/zork1, zork2, zork3)
+const sourceDir = (id: GameId) => new URL(`../../vendor/${id}/`, import.meta.url)
+const ORDER: Record<GameId, string[]> = {
+  zork1: ['gmacros', 'gsyntax', '1dungeon', 'gglobals', 'gclock', 'gmain', 'gparser', 'gverbs', '1actions'],
+  zork2: ['gmacros', 'gsyntax', '2dungeon', 'gglobals', 'gclock', 'gmain', 'gparser', 'gverbs', '2actions'],
+  zork3: ['gsyntax', 'gmacros', 'gclock', 'gmain', 'gparser', '3dungeon', 'gglobals', 'gverbs', '3actions'],
+}
 
 export interface ZilRoutine {
   name: string
@@ -37,14 +43,20 @@ export interface ZilProgram {
   topForms: Node[]
 }
 
+/** ZORK-NUMBER of the game being loaded. */
+let zorkNumber = 1
+
 function cteTest(n: Node): boolean {
   if (n.t === 'atom') return n.v === 'T' || n.v === 'ELSE'
   if (isForm(n, '==?') || isForm(n, 'N==?')) {
     const a = n.items[1]
     const b = n.items[2]
     const isZn = a.t === 'prefix' && atomName(a.v) === 'ZORK-NUMBER'
-    if (isZn && b.t === 'num') return isForm(n, '==?') ? b.v === 1 : b.v !== 1
+    if (isZn && b.t === 'num') return isForm(n, '==?') ? b.v === zorkNumber : b.v !== zorkNumber
   }
+  const head = n.t === 'form' ? atomName(n.items[0]) : undefined
+  if (n.t === 'form' && head === 'OR') return n.items.slice(1).some(cteTest)
+  if (n.t === 'form' && head === 'AND') return n.items.slice(1).every(cteTest)
   if (isForm(n, 'GASSIGNED?')) return ['PREDGEN', 'ZILCH'].includes(atomName(n.items[1]) ?? '')
   return false
 }
@@ -84,13 +96,15 @@ function topLevel(nodes: Node[], out: Node[]): void {
   }
 }
 
-export function loadZil(): ZilProgram {
-  if (!existsSync(new URL('zork1.zil', SOURCE_DIR))) {
-    throw new Error(`ZIL sources not found in ${fileURLToPath(SOURCE_DIR)}: run "git submodule update --init"`)
+export function loadZil(id: GameId = 'zork1'): ZilProgram {
+  const dir = sourceDir(id)
+  if (!existsSync(new URL(`${id}.zil`, dir))) {
+    throw new Error(`ZIL sources not found in ${fileURLToPath(dir)}: run "git submodule update --init"`)
   }
+  zorkNumber = GAMES[id].number
   const topForms: Node[] = []
-  for (const f of ORDER) {
-    const src = readFileSync(new URL(`${f}.zil`, SOURCE_DIR), 'latin1')
+  for (const f of ORDER[id]) {
+    const src = readFileSync(new URL(`${f}.zil`, dir), 'latin1')
     topLevel(readZil(src, f), topForms)
   }
   const routines: ZilRoutine[] = []
