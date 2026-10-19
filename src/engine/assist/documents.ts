@@ -39,7 +39,12 @@ const DOCUMENTS: Record<GameId, DocumentDef[]> = {
     { obj: 'WARNING-LABEL', style: 'manual', room: 'TROPHY-ROOM' },
     { obj: 'CRYPT', style: 'stone', room: 'CRYPT-ROOM' },
   ],
-  zork3: [],
+  zork3: [
+    { obj: 'WARNING-NOTE', style: 'leaflet' },
+    { obj: 'REPELLENT', style: 'tube' },
+    { obj: 'ROYAL-SEAL', style: 'stone', room: 'WIDE-HALL' },
+    { obj: 'LORE-BOOK', style: 'book' },
+  ],
 }
 
 /** Whether the game has documents to collect. */

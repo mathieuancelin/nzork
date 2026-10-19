@@ -31,7 +31,22 @@ const SPECIAL: Record<GameId, Special[]> = {
     { from: 'DEPOSITORY', dir: 'EAST', to: 'TELLER-EAST', open: (w) => !w.carried('BILLS') && !w.carried('PORTRAIT') },
     { from: 'DEPOSITORY', dir: 'WEST', to: 'TELLER-WEST', open: (w) => !w.carried('BILLS') && !w.carried('PORTRAIT') },
   ],
-  zork3: [],
+  zork3: [
+    // into the Royal Puzzle: no way back up until it is solved, so never used to travel
+    { from: 'CP-ANTE', dir: 'DOWN', to: 'CP', open: () => false },
+    // the long hallway of the mirror (MRGO): the wooden box blocks the hallway where it stands,
+    // and the Guardians crush whoever walks past them
+    { from: 'MREYE', dir: 'NORTH', to: 'MRA', open: (w) => w.global('MLOC') !== w.obj('MRA') },
+    { from: 'MRA', dir: 'NORTH', to: 'MRB', open: (w) => w.global('MLOC') !== w.obj('MRB') },
+    { from: 'MRB', dir: 'NORTH', to: 'MRC', open: (w) => w.global('MLOC') !== w.obj('MRC') },
+    { from: 'MRC', dir: 'NORTH', to: 'MRG', open: () => false },
+    { from: 'MRG', dir: 'NORTH', to: 'MRD', open: () => false },
+    { from: 'FRONT-DOOR', dir: 'SOUTH', to: 'MRD', open: (w) => w.global('MLOC') !== w.obj('MRD') },
+    { from: 'MRD', dir: 'SOUTH', to: 'MRG', open: () => false },
+    { from: 'MRG', dir: 'SOUTH', to: 'MRC', open: () => false },
+    { from: 'MRC', dir: 'SOUTH', to: 'MRB', open: (w) => w.global('MLOC') !== w.obj('MRB') },
+    { from: 'MRB', dir: 'SOUTH', to: 'MRA', open: (w) => w.global('MLOC') !== w.obj('MRA') },
+  ],
 }
 
 export interface RoomExit {

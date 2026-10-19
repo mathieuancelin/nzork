@@ -1,5 +1,5 @@
-// Zork II in the side panel and the interface: its map, inventory, treasures, documents,
-// lantern, sounds and choices, read from its own symbol table.
+// Zork II and Zork III in the side panel and the interface: their map, inventory, treasures,
+// documents, lantern, sounds and choices, read from their own symbol table.
 import { describe, it, expect } from 'vitest'
 import { Game } from '../src/engine/game'
 import { World } from '../src/engine/assist/world'
@@ -14,6 +14,7 @@ import { PLACES } from '../src/ui/sound/presets'
 import zork2Map from '../src/data/zork2/map.json'
 import zork3Map from '../src/data/zork3/map.json'
 import zork2Scenes from '../src/data/zork2/scenes.json'
+import zork3Scenes from '../src/data/zork3/scenes.json'
 import { loadStory } from './helpers/plain'
 import { frenchGame } from './helpers/french'
 import { playWalkthrough } from './helpers/walkthrough'
@@ -147,17 +148,78 @@ describe('Zork II', () => {
   })
 })
 
-describe('Zork III (English only for now)', () => {
-  it('plays, and the side panel and the soundtrack read its state', () => {
+describe('Zork III', () => {
+  const EN3 = new URL('./walkthrough/zork3/en.txt', import.meta.url)
+  const played = () => {
+    const run = playWalkthrough(EN3, 'en', 1234, 'zork3')
     const game = english('zork3')
+    for (const c of run.commands) game.send(c)
+    return game
+  }
+
+  it('plays in French, and lists its inventory', () => {
+    const game = frenchGame(1234, 'zork3')
+    game.start()
     expect(game.status().roomId).toBe('ZORK2-STAIR')
-    for (const c of ['take lamp', 'turn on lamp', 's']) game.send(c)
-    expect(() => moodFor(game)).not.toThrow()
-    expect(inventoryOf(game).map((i) => i.id)).toEqual(['LAMP'])
-    expect(treasuresOf(game).slots).toEqual([])
+    for (const c of ['prends la lanterne', 'allume la lanterne', 's']) game.send(c)
+    expect(inventoryOf(game).map((i) => [i.name, i.kind, i.lit])).toEqual([['Lanterne', 'light', true]])
+    expect(game.info.maxScore).toBe(7)
+  })
+
+  it('has no treasures, but collects its documents, read in French', () => {
     expect(hasTreasures('zork3')).toBe(false)
-    expect(documentsOf(game, visitedRooms(game))).toEqual([])
-    expect(mapOf(game, visitedRooms(game)).rooms.length).toBeGreaterThan(1)
-    expect(computeAssist(game, true).choices.length).toBeGreaterThan(3)
+    const run = playWalkthrough(new URL('./walkthrough/zork3/fr.txt', import.meta.url), 'fr', 1234, 'zork3')
+    const game = frenchGame(1234, 'zork3')
+    game.start()
+    for (const c of run.commands) game.send(c)
+    const found = documentsOf(game, visitedRooms(game)).filter((d) => d.found)
+    expect(found.map((d) => d.id)).toEqual(['REPELLENT', 'ROYAL-SEAL', 'LORE-BOOK'])
+    for (const d of found) expect(d.text, d.id).not.toMatch(/(?<!\p{L})(the|and|of|is)(?!\p{L})/u)
+  })
+
+  it('draws the hallway of the mirror, without leading the player past the Guardians', () => {
+    const game = played()
+    const map = mapOf(game, visitedRooms(game))
+    expect(map.rooms).toEqual(expect.arrayContaining(['MREYE', 'MRA', 'FRONT-DOOR', 'NIRVANA']))
+    expect(map.links).toContainEqual(expect.arrayContaining(['MREYE', 'MRA']))
+    for (const r of allRooms(new World(game))) expect((zork3Map.rooms as Record<string, number[]>)[r], r).toBeDefined()
+  })
+
+  it('plays the ambience of each place, the danger of the hooded figure and the victory', () => {
+    for (const s of zork3Scenes.scenes) expect(PLACES, s.id).toContain(s.ambience)
+    const run = playWalkthrough(EN3, 'en', 1234, 'zork3')
+    const game = english('zork3')
+    const seen = new Map<string, Mood>()
+    const cues: string[] = []
+    let before = moodFor(game)
+    let shadow = false
+    for (const cmd of run.commands) {
+      game.send(cmd)
+      const after = moodFor(game)
+      const over = game.state === 'quit' || game.inputRoutineName() === 'FINISH'
+      const cue = turnCue(before, after, over)
+      if (cue) cues.push(cue)
+      const room = game.status().roomId
+      if (!seen.has(room)) seen.set(room, after)
+      if (room.startsWith('SHADOW') && after.danger) shadow = true
+      before = after
+      if (over) break
+    }
+    expect(seen.get('CLIFF')?.place).toBe('surface')
+    expect(seen.get('LAKE-SHORE')?.place).toBe('water')
+    expect(seen.get('MUSEUM-ENTRANCE')?.place).toBe('house')
+    expect(seen.get('SHADOW-8')?.place).toBe('hades')
+    expect(shadow).toBe(true)
+    expect(cues.filter((c) => c === 'score')).toHaveLength(7)
+    expect(cues.at(-1)).toBe('victory')
+  })
+
+  it('has no hints nor guide yet: hyper noob shows the choices without circling one', () => {
+    const game = english('zork3')
+    expect(hasHints('zork3')).toBe(false)
+    expect(hasGuide('zork3')).toBe(false)
+    const assist = computeAssist(game, true)
+    expect(assist.hint).toBeNull()
+    expect(assist.choices.map((c) => c.command)).toEqual(expect.arrayContaining(['take brass lamp', 'south']))
   })
 })

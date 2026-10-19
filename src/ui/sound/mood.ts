@@ -8,7 +8,7 @@ export interface Mood {
   place: PlaceId
   /** No light: the grue is near. */
   dark: boolean
-  /** A villain is in the room: the troll, the thief or the cyclops (the dragon, Cerberus or the Wizard in Zork II). */
+  /** A villain is in the room: the troll, the thief or the cyclops (the dragon, Cerberus or the Wizard in Zork II, the hooded figure in Zork III). */
   danger: boolean
   score: number
   deaths: number
@@ -27,7 +27,8 @@ export function moodFor(game: Game): Mood {
     danger: threatened(w, w.here()),
     score: st.score,
     deaths: g('DEATHS'),
-    won: g('WON-FLAG') !== 0,
+    // Zork III has no WON-FLAG: the game is won in the Treasury of Zork
+    won: g('WON-FLAG') !== 0 || (game.id === 'zork3' && st.roomId === 'NIRVANA'),
   }
 }
 
@@ -38,6 +39,8 @@ function threatened(w: World, here: string): boolean {
     // the Wizard shows up now and then to cast a spell
     return w.loc('WIZARD') === here && !w.attr('WIZARD', 'INVISIBLE')
   }
+  // the hooded figure of the Land of Shadow, until it is defeated or unmasked
+  if (w.id === 'zork3') return w.loc('SHADOW') === here && !w.flag('SHADOW-GONE')
   if (w.id !== 'zork1') return false
   if (w.loc('TROLL') === here && !w.flag('TROLL-FLAG')) return true
   // the thief wanders unseen until he shows himself

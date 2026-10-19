@@ -84,3 +84,41 @@ describe('Zork II, full game (French)', () => {
     expect(englishLines(run.transcript)).toEqual([])
   })
 })
+
+describe('Zork III, full game (English)', () => {
+  const EN = new URL('./walkthrough/zork3/en.txt', import.meta.url)
+  const run = playWalkthrough(EN, 'en', 1234, 'zork3')
+
+  it('wins with the 7 points of potential', () => {
+    expect(run.status.score).toBe(7)
+    expect(run.status.roomId).toBe('NIRVANA')
+    expect(run.transcript).toContain('Your potential is 7 of a possible 7')
+  })
+
+  it.skipIf(!HAS_DFROTZ)('is identical to the original interpreter (dfrotz), word for word', () => {
+    const ours = flatten(playPlain(run.commands, 1234, 'zork3'))
+    const ref = flatten(dfrotzTranscript(run.commands, 1234, 'zork3'))
+    expect(firstDiff(ours, ref)).toBeNull()
+  })
+})
+
+describe('Zork III, full game (French)', () => {
+  const FR = new URL('./walkthrough/zork3/fr.txt', import.meta.url)
+  const run = playWalkthrough(FR, 'fr', 1234, 'zork3')
+
+  it('wins with the 7 points of potential with French commands', () => {
+    expect(run.status.score).toBe(7)
+    expect(run.status.roomId).toBe('NIRVANA')
+    expect(run.transcript).toContain('Votre potentiel est de 7 sur un total possible de 7')
+  })
+
+  it('takes the same path as the English game', () => {
+    const en = playWalkthrough(new URL('./walkthrough/zork3/en.txt', import.meta.url), 'en', 1234, 'zork3')
+    expect(run.status.moves).toBe(en.status.moves)
+    expect(run.commands.length).toBe(en.commands.length)
+  })
+
+  it('shows no English text', () => {
+    expect(englishLines(run.transcript)).toEqual([])
+  })
+})

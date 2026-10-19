@@ -1,0 +1,217 @@
+# Zork III : Le Maître du donjon, 7 points de potentiel (graine 1234), mêmes coups que en.txt
+# la lanterne éclaire les passages obscurs jusqu'à la torche du Panorama
+prends la lanterne
+allume la lanterne
+s
+o
+o
+prends le pain
+# la corniche (1 point) : attacher le coffre à la corde, faire confiance à l'homme, et recevoir son bâton
+descends
+attache la corde au coffre
+until /coffre est soulevé/ :: attends
+until /corde descend jusqu/ :: attends
+prends la corde
+# le Pays de l'Ombre : la silhouette encapuchonnée (1 point), combattue à l'épée (1 point) jusqu'à ce
+# qu'elle soit sans défense, puis démasquée
+so
+until /personne vêtue d'une cape|silhouette vêtue d'une cape et d'un capuchon apparaît/ :: regarde
+until /grièvement blessée et sans défense|mortellement/ :: attaque la silhouette avec l'épée
+prends le capuchon
+prends la cape
+# le vieil homme de la salle des gravures reçoit le pain de route et montre la porte secrète
+n
+e
+e
+e
+ne
+réveille le vieil homme
+donne le pain au vieil homme
+ouvre la porte
+# le lac (1 point) : seul ce qu'on porte reste au sec ; l'amulette est au fond
+so
+o
+s
+s
+s
+pose la lanterne
+pose l'épée
+pose le bâton
+saute dans le lac
+descends
+until /amulette/ :: prends l'objet brillant
+o
+s
+# le Panorama (1 point) : la salle 8 pour le répulsif à grue, le passage humide pour la torche
+prends la torche
+frotte la table
+prends la bombe
+attends
+frotte la table
+pose la torche
+attends
+# retraverser le lac avec le répulsif, passer les grues jusqu'à la salle de la clé, et descendre
+# l'aqueduc avant que le tremblement de terre ne le brise
+n
+saute dans le lac
+descends
+until /Pris/ :: prends la bombe
+s
+vaporise le répulsif sur moi
+s
+s
+e
+prends la clé
+déplace la plaque d'égout
+b
+n
+n
+n
+prends la torche
+o
+s
+s
+s
+prends le bâton
+prends l'épée
+# le tremblement de terre ouvre une faille vers le Musée royal
+n
+n
+e
+e
+s
+s
+until /faille s'ouvre/ :: attends
+e
+pose la bombe
+# le Casse-tête royal (1 point à la première poussée) et son livre
+s
+b
+pousse le mur est
+s
+s
+se
+pousse le mur sud
+n
+ne
+pousse le mur sud
+prends le livre
+pousse le mur sud
+e
+ne
+pousse le mur ouest
+so
+no
+ne
+pousse le mur sud
+so
+pousse le mur est
+ne
+pousse le mur sud
+no
+n
+n
+n
+pousse le mur est
+so
+s
+se
+ne
+n
+pousse le mur ouest
+no
+pousse le mur sud
+encore
+o
+no
+no
+pousse le mur sud
+se
+se
+se
+ne
+pousse le mur ouest
+encore
+so
+pousse le mur nord
+encore
+encore
+no
+monte
+# la machine à remonter le temps (1 point pour l'année 776), poussée jusqu'à la salle des joyaux :
+# l'anneau de 776, caché sous le siège pour le retour
+n
+n
+pousse la machine en or vers le sud
+ouvre la porte de pierre
+pousse la machine en or vers l'est
+monte dans la machine en or
+règle le cadran sur 776
+appuie sur le bouton
+until /gardes s'éloigner au pas/ :: attends
+prends l'anneau
+ouvre la porte
+o
+ouvre la porte en bois
+n
+monte dans la machine en or
+mets l'anneau sous le siège
+règle le cadran sur 948
+appuie sur le bouton
+regarde sous le siège
+descends de la machine en or
+ouvre la porte en bois
+s
+ouvre la porte de pierre
+e
+prends tout sauf l'épée
+# retour à la porte secrète ; la torche coupe le rayon, la boîte à miroir glisse vers le nord
+# devant les Gardiens jusqu'à l'entrée du Donjon
+o
+o
+n
+n
+o
+o
+n
+e
+ne
+n
+n
+pose la torche
+s
+appuie sur le bouton
+n
+n
+n
+lève la perche courte
+pousse le panneau rouge
+pousse le panneau rouge
+abaisse la perche courte
+pousse le panneau en acajou
+pousse le panneau en acajou
+pousse le panneau en acajou
+lève la perche courte
+pousse le panneau rouge
+pousse le panneau rouge
+pousse le panneau rouge
+pousse le panneau rouge
+pousse le panneau de pin
+n
+# vêtu comme le Maître du donjon : la cellule 4 et sa porte de bronze
+frappe à la porte
+n
+e
+n
+n
+tourne le cadran sur 4
+appuie sur le bouton
+s
+ouvre la porte de la cellule
+maître, va au nord
+s
+maître, tourne le cadran sur 1
+maître, appuie sur le bouton
+déverrouille la porte de bronze avec la clé
+ouvre la porte de bronze
+s

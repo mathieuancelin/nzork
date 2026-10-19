@@ -1,0 +1,217 @@
+# Zork III: The Dungeon Master, 7 points of potential (seed 1234)
+# the lamp lights the dark passages until the torch of the Scenic Vista
+take lamp
+turn on lamp
+s
+w
+w
+take bread
+# the cliff ledge (1 point): tie the chest to the rope, trust the man, and get his staff
+down
+tie rope to chest
+until /chest is lifted/ :: wait
+until /rope drops/ :: wait
+take rope
+# the Land of Shadow: the hooded figure (1 point), fought with the sword (1 point) until it is
+# defenseless, then unmasked
+sw
+until /hooded person|hooded figure appears/ :: look
+until /badly hurt and defenseless|fatally/ :: attack figure with sword
+take hood
+take cloak
+# the old man of the Engravings Room gets the waybread and shows the secret door
+n
+e
+e
+e
+ne
+wake man
+give bread to man
+open door
+# the lake (1 point): only what is worn stays dry; the amulet lies on the bottom
+sw
+w
+s
+s
+s
+drop lamp
+drop sword
+drop staff
+jump in lake
+down
+until /golden amulet/ :: take shiny object
+w
+s
+# the Scenic Vista (1 point): Room 8 for the grue repellent, the Damp Passage for the torch
+take torch
+rub table
+take can
+wait
+rub table
+drop torch
+wait
+# back across the lake with the repellent, past the grues to the Key Room, and down the
+# aqueduct before the earthquake breaks it
+n
+jump in lake
+down
+until /Taken/ :: take can
+s
+spray repellent on me
+s
+s
+e
+take key
+move cover
+d
+n
+n
+n
+take torch
+w
+s
+s
+s
+take staff
+take sword
+# the earthquake opens a cleft into the Royal Museum
+n
+n
+e
+e
+s
+s
+until /cleft opens/ :: wait
+e
+drop can
+# the Royal Puzzle (1 point at the first push) and its book
+s
+d
+push east wall
+s
+s
+se
+push south wall
+n
+ne
+push south wall
+take book
+push south wall
+e
+ne
+push west wall
+sw
+nw
+ne
+push south wall
+sw
+push east wall
+ne
+push south wall
+nw
+n
+n
+n
+push east wall
+sw
+s
+se
+ne
+n
+push west wall
+nw
+push south wall
+again
+w
+nw
+nw
+push south wall
+se
+se
+se
+ne
+push west wall
+again
+sw
+push north wall
+again
+again
+nw
+up
+# the time machine (1 point for the year 776), pushed to the Jewel Room: the ring of 776,
+# hidden under the seat on the way back
+n
+n
+push gold machine south
+open stone door
+push gold machine east
+get in gold machine
+turn dial to 776
+push button
+until /guards marching away/ :: wait
+take ring
+open door
+w
+open wooden door
+n
+get in gold machine
+put ring under seat
+turn dial to 948
+push button
+look under seat
+get out of gold machine
+open wooden door
+s
+open stone door
+e
+take all except sword
+# back to the secret door; the torch breaks the beam, the mirror box rolls north past the
+# Guardians to the Dungeon Entrance
+w
+w
+n
+n
+w
+w
+n
+e
+ne
+n
+n
+drop torch
+s
+push button
+n
+n
+n
+raise short pole
+push red panel
+push red panel
+lower short pole
+push mahogany panel
+push mahogany panel
+push mahogany panel
+raise short pole
+push red panel
+push red panel
+push red panel
+push red panel
+push pine panel
+n
+# dressed as the Dungeon Master: the cell 4 and its bronze door
+knock on door
+n
+e
+n
+n
+turn dial to 4
+push button
+s
+open cell door
+tell master "go north"
+s
+tell master "turn dial to 1"
+tell master "push button"
+unlock bronze door with key
+open bronze door
+s
