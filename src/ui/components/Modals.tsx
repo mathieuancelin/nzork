@@ -539,7 +539,7 @@ function HelpModal() {
       <Modal title="Help">
         <p>Type commands such as <kbd>open mailbox</kbd>, <kbd>north</kbd> (or <kbd>n</kbd>), <kbd>take lamp</kbd>, <kbd>inventory</kbd> (<kbd>i</kbd>), <kbd>look</kbd> (<kbd>l</kbd>).</p>
         <p>The interface also understands <kbd>save</kbd>, <kbd>load</kbd>, <kbd>undo</kbd> (<kbd>Ctrl+Z</kbd>) and <kbd>restart</kbd>.</p>
-        <p>In the Noob modes, click the suggested actions; in Hyper noob mode the right one is circled in gold.</p>
+        <p>In Normal mode, click the suggested actions; in Easy mode the right one is circled in gold.</p>
       </Modal>
     )
   }
@@ -562,7 +562,7 @@ function HelpModal() {
       </p>
       <h3>Modes de jeu</h3>
       <p>
-        En mode Noob, des actions à cliquer sont proposées à chaque tour. En mode Hyper noob, la bonne action est cerclée de doré et « Pourquoi ? » vous explique l'idée.
+        En mode Normal, des actions à cliquer sont proposées à chaque tour. En mode Facile, la bonne action est cerclée de doré et « Pourquoi ? » vous explique l'idée.
       </p>
     </Modal>
   )

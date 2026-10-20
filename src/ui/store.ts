@@ -53,7 +53,8 @@ const DEFAULT_SETTINGS: Settings = {
   images: true,
   sound: true,
   volume: 0.6,
-  sidebar: true,
+  // the side panel goes with the mode: hidden in Classic, shown in Normal and Easy
+  sidebar: false,
   treasures: true,
   narrator: false,
   narratorRate: 1,
@@ -161,7 +162,7 @@ export const useGame = create<State>((set, get) => {
       set({ assist: null })
       return
     }
-    // the guide only knows Zork I: elsewhere hyper noob shows the choices without circling one
+    // a game without a guide: the Easy mode shows the choices without circling one
     set({ assist: computeAssist(game, s.settings.mode === 'hypernoob' && hasGuide(game.id)) })
   }
 
@@ -404,6 +405,8 @@ export const useGame = create<State>((set, get) => {
 
     setSetting(key, value) {
       const settings = { ...get().settings, [key]: value }
+      // choosing a mode shows the side panel, except in Classic (the button still toggles it)
+      if (key === 'mode') settings.sidebar = value !== 'classic'
       writePref('settings', settings)
       set({ settings })
       if (key === 'lang' && game && data) {

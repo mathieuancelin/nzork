@@ -36,7 +36,7 @@ export function StatusBar() {
       )}
       <button className="icon-btn" onClick={() => setSetting('sidebar', !sidebar)} aria-label={sideLabel} aria-pressed={sidebar} title={sideLabel}>
         <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="square" aria-hidden="true">
-          <path d={sidebar ? 'M1 2h14v12H1zM10 2v12' : 'M1 2h14v12H1z'} />
+          <path d={sidebar ? 'M1 2h14v12H1z' : 'M1 2h14v12H1zM10 2v12'} />
         </svg>
       </button>
       <FullscreenButton lang={lang} />
