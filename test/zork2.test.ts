@@ -99,13 +99,13 @@ describe('Zork II', () => {
     expect(found[0].text).not.toMatch(/\b(the|and|of)\b/)
   })
 
-  it('has hints, but no guide yet: hyper noob shows the choices without circling one', () => {
+  it('has hints, and a guide: the Easy mode circles the next step', () => {
     const game = english()
     expect(hasHints('zork2')).toBe(true)
-    expect(hasGuide('zork2')).toBe(false)
+    expect(hasGuide('zork2')).toBe(true)
     expect(hintsFor(game, visitedRooms(game)).map((q) => q.id)).toEqual(['lamp'])
     const assist = computeAssist(game, true)
-    expect(assist.hint).toBeNull()
+    expect(assist.hint).not.toBeNull()
     expect(assist.choices.map((c) => c.command)).toEqual(expect.arrayContaining(['south', 'take elvish sword', 'take brass lamp', 'look']))
   })
 

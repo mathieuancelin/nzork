@@ -142,12 +142,13 @@ export class World {
   /** Room lit independently of what the player carries: daylight, or a light source lying there. */
   roomLit(room: string): boolean {
     if (this.attr(room, 'ONBIT')) return true
+    // (what the player carries does not count, even in a vehicle standing in the room)
     const winner = this.vm.global(this.G.WINNER)
     const stack = this.children(this.obj(room)).filter((c) => c !== winner)
     while (stack.length) {
       const o = stack.pop()!
       if (this.attrOf(o, 'ONBIT') && (this.attrOf(o, 'LIGHTBIT') || this.attrOf(o, 'FLAMEBIT'))) return true
-      if (this.attrOf(o, 'OPENBIT') || this.attrOf(o, 'TRANSBIT') || this.attrOf(o, 'SURFACEBIT')) stack.push(...this.children(o))
+      if (this.attrOf(o, 'OPENBIT') || this.attrOf(o, 'TRANSBIT') || this.attrOf(o, 'SURFACEBIT') || this.attrOf(o, 'VEHBIT')) stack.push(...this.children(o).filter((c) => c !== winner))
     }
     return false
   }
