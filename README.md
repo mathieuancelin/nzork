@@ -24,9 +24,9 @@ status bar). Each game keeps its own game in progress, its ten save slots and it
 
 | Game | Story file | In French | What the interface adds |
 |---|---|---|---|
-| **Zork I: The Great Underground Empire** (1980) | Release 119 | yes | everything below: illustrations, icons, the guide of the Easy mode, hints, map, treasures, documents |
-| **Zork II: The Wizard of Frobozz** (1981) | Release 63 | yes | everything below: illustrations, icons, the guide, hints, map, the ten treasures of the demon, thirteen documents |
-| **Zork III: The Dungeon Master** (1982) | Release 25 | yes | everything below: illustrations, icons, the guide, hints, map, the seven pieces of the Dungeon Master's outfit as treasures, four documents |
+| **Zork I: The Great Underground Empire** (1980) | Release 119 | yes | everything below: illustrations, icons, portraits, the guide of the Easy mode, hints, map, treasures, documents |
+| **Zork II: The Wizard of Frobozz** (1981) | Release 63 | yes | everything below: illustrations, icons, portraits, the guide, hints, map, the ten treasures of the demon, thirteen documents |
+| **Zork III: The Dungeon Master** (1982) | Release 25 | yes | everything below: illustrations, icons, portraits, the guide, hints, map, the seven pieces of the Dungeon Master's outfit as treasures, four documents |
 
 > **Unofficial fan project.** Zork in the browser is a non-commercial tribute, made out of love for the
 > game. It is not affiliated with, endorsed by or sponsored by Infocom, Activision or
@@ -51,11 +51,11 @@ status bar). Each game keeps its own game in progress, its ten save slots and it
   figure in the Land of Shadow…). Dark rooms stay dark, except for two eyes that light up
   if you linger. Underground, the scene is lit by your lantern: its halo narrows as the
   batteries run down and flickers when they are nearly dead, a torch gives a warm, unsteady
-  light, and dust drifts or water ripples on top. The characters (the troll, the Wizard of
-  Frobozz, the Dungeon Master and twenty others) are ready to appear in portrait in a corner of
-  the scene while they are there, in their current state (the troll knocked out, the dragon
-  angry, the hooded figure weakened): their prompts are written, their images are still to be
-  generated.
+  light, and dust drifts or water ripples on top.
+- **Characters in portrait.** The troll, the Wizard of Frobozz, the Dungeon Master and twenty
+  others appear in a framed close-up in a corner of the scene while they are there, in their
+  current state (the troll knocked out, the cyclops asleep, the dragon angry, Cerberus tamed,
+  the hooded figure weakened…), and fade away when they leave.
 - **A soundtrack that gets under your skin.** Go down the trap door and the wind gives way to a
   deep drone and water dripping somewhere in the dark. Let your lantern die and a heartbeat
   rises while something breathes close by. Walk into the troll's room and a war drum starts. The
@@ -172,7 +172,7 @@ npm run bot -- 1234 --fr --verbose
 
 ## Illustrations
 
-The images of the trilogy in [public/scenes/](public/scenes) and [public/items/](public/items) were generated with AI image models from the
+The images of the trilogy in [public/scenes/](public/scenes), [public/items/](public/items) and [public/portraits/](public/portraits) were generated with AI image models from the
 prompts of this repository, then reduced to the pixel grid and palette by a post-processing
 step. The whole pipeline is included, to regenerate a scene or the full set with your own API
 key. The art direction is described in [tools/images/style-bible.md](tools/images/style-bible.md)

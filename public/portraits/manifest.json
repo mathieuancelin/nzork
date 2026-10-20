@@ -1,3 +1,37 @@
 {
- "portraits": []
+ "portraits": [
+  "bat",
+  "bat--garlic",
+  "cyclops",
+  "cyclops--asleep",
+  "spirits",
+  "thief",
+  "thief--unconscious",
+  "troll",
+  "troll--unconscious",
+  "zork2-cerberus",
+  "zork2-cerberus--tamed",
+  "zork2-demon",
+  "zork2-dragon",
+  "zork2-dragon--angry",
+  "zork2-gnome-of-zurich",
+  "zork2-lizard",
+  "zork2-lizard--asleep",
+  "zork2-princess",
+  "zork2-princess--trance",
+  "zork2-robot",
+  "zork2-serpent",
+  "zork2-unicorn",
+  "zork2-volcano-gnome",
+  "zork2-wizard",
+  "zork3-cliff-man",
+  "zork3-dungeon-master",
+  "zork3-flathead",
+  "zork3-guardians",
+  "zork3-hooded-figure",
+  "zork3-hooded-figure--weakened",
+  "zork3-old-man",
+  "zork3-old-man--asleep",
+  "zork3-viking"
+ ]
 }

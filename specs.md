@@ -565,7 +565,8 @@ the mailbox offers its actions): the point & click spirit without the 3D.
 | 9 | **Atmosphere and extras** | ✅ Lantern halo and scene animations, map with walking, InvisiClues hints, documents (feelies), storyteller |
 | 10 | **Zork II** | ✅ Plays to the end in French (400/400, identical to `dfrotz`), game picker, saves per game, map, inventory, treasures, documents, ambiences, 104 scenes and 46 icons, 28 InvisiClues questions. Guide: the bot finishes 56 games out of 60 (46 with the 400 points; the 4 others are lost by chance in the original too) |
 | 11 | **Zork III** | ✅ Plays to the end in French (7/7 in 234 moves, identical to `dfrotz`), map with the hallway of the mirror, inventory, the Dungeon Master's outfit as treasures, four documents, ambiences, danger of the hooded figure, 90 scenes and 19 icons, 22 InvisiClues questions. Guide: the bot wins 60 games out of 60, the Royal Puzzle solved by search |
-| 12 | **Next** | 2.5D parallax, clickable hotspots |
+| 12 | **Portraits** | ✅ 23 characters of the trilogy and 10 of their states, 128×128, shown in a corner of the scene while they are on stage; **all 33 generated and chosen** |
+| 13 | **Next** | 2.5D parallax, clickable hotspots |
 
 ## 12. Decisions
 
