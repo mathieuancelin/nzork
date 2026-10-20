@@ -1,11 +1,11 @@
 // Re-runs the pixel post-processing of every approved image (after a palette change):
-//   npm run images:postprocess [-- --items] [-- --dither atkinson|floyd-steinberg|sierra-lite|nearest]
+//   npm run images:postprocess [-- --items | --portraits] [-- --dither atkinson|floyd-steinberg|sierra-lite|nearest]
 // And builds the shared palette from the approved keystone scenes:
 //   npm run images:palette
 import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { IMAGES, KINDS, arg, ensureDir, flag, kindFromArgs, readManifest, writeManifest } from './lib/common'
-import { buildPalette, loadPalette, pixelize, pixelizeItem, type Dither } from './lib/pixel'
+import { buildPalette, loadPalette, pixelize, pixelizeItem, pixelizePortrait, type Dither } from './lib/pixel'
 
 if (flag('palette')) {
   const refs = KINDS.scenes.references
@@ -20,7 +20,7 @@ if (flag('palette')) {
 const kind = kindFromArgs()
 const palette = loadPalette()
 const dither = (arg('dither') ?? (kind.name === 'items' ? 'nearest' : 'atkinson')) as Dither
-const convert = kind.name === 'items' ? pixelizeItem : pixelize
+const convert = { scenes: pixelize, items: pixelizeItem, portraits: pixelizePortrait }[kind.name]
 const files = existsSync(kind.approved) ? readdirSync(kind.approved).filter((f) => /\.png$/i.test(f)) : []
 const manifest = readManifest(kind)
 ensureDir(kind.public)

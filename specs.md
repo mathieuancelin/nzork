@@ -444,12 +444,36 @@ The 60 objects that can be taken get **48×48 icons**, shown pixel for pixel in 
 - until an icon is approved, a 12×12 pixel glyph of the object's kind (treasure, light,
   weapon, paper, food, container, tool, thing) stands in, scaled ×4.
 
+### Character portraits
+
+The characters appear **in portrait**, a 128×128 close-up framed in a corner of the scene, while
+they are on stage; the portrait fades in when they arrive and out when they leave:
+
+- the same pipeline with `--portraits`: prompts in `tools/images[/<game>]/portrait-prompts.json`,
+  the "Portraits" tab of the review page, `public/portraits/` and its manifest;
+- `src/data/<game>/portraits.json` lists the characters (23) with their French and English
+  names, the conditions that bring them on stage and their state variants (10). A condition
+  combines: the object in sight (`present`, which also covers the scenery of the room, as the
+  Guardians of Zork), the player's room, flags set or cleared, an object in a place, an object
+  carried or lying in the room (the bat's garlic), a numeric global (the dragon's anger, the
+  hooded figure's strength) or a numeric property (a villain's STRENGTH, negative while he is
+  knocked out). Characters only heard (Lord Flathead in 776) are on stage in the rooms where
+  their voice carries, once it has been heard;
+- the keystones (troll, thief, Wizard, dragon, Dungeon Master) become the style references of
+  the others; until they are chosen, Zork I's keystone scenes stand in. The approved scenes
+  that already show a character are sent too, so that the troll looks the same in his room and
+  in his portrait;
+- the Dungeon Master's disguises (the old man, the man at the cliff, the hooded figure) share his
+  keen pale grey eyes with a silvery glint, a hint the player only understands at the end;
+- post-processing: square crop, 128×128, the shared palette with dithering, like the scenes;
+- no portrait in the dark, none without an image, none when the illustrations are turned off.
+
 ### Cost
 
 ~90 images × 3–4 candidates ≈ 350 generations. Depending on the model, from ~0.003 USD to
 ~0.05 USD per image, that is **between ~2 and ~20 USD in total** (up to ~60 USD with the most
-expensive models). The 60 icons add about 180 generations, ~7 USD. **Images are not the
-expensive part.**
+expensive models). The 60 icons add about 180 generations, ~7 USD, and the 33 portraits about
+100 generations, ~4 USD. **Images are not the expensive part.**
 
 ## 8. What about 3D?
 

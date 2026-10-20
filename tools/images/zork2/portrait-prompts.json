@@ -1,0 +1,89 @@
+{
+ "style": "Hand-crafted pixel art character portrait from an early-1990s VGA point-and-click adventure game (LucasArts / Sierra style, like the close-up talking portraits of Loom, King's Quest V or Monkey Island 2), 256-color look, limited palette, subtle dithering, painterly pixel shading, crisp edges, a single character or creature in close-up, head and shoulders, three-quarter view turned toward the viewer, the face large and expressive in the upper middle of a square frame, lit by a warm light coming from the viewer (their lantern) with deep shadows behind, a dark, simple background that only hints at the character's surroundings, no text, no letters, no UI, no border.",
+ "negative": "text, letters, words, inscription, watermark, signature, logo, UI, frame, border, speech bubble, photograph, photorealistic, 3D render, smooth gradients, blur, bokeh, anime, manga, chibi, modern clothes, modern objects, full body, tiny figure, crowd, player character, hands in the foreground, gore",
+ "portraits": {
+  "zork2-wizard": {
+   "prompt": "The Wizard of Frobozz: a strange little old man, pale and dwarfish, with a long, stringy and unkempt grey beard, a crooked nose, bushy eyebrows and twinkling, mischievous eyes, wearing a long dark blue cloak and a high pointed hat embroidered with golden stars, moons and astrological signs. He holds up a magic wand whose tip sparkles and eyes the viewer warily, half amused, half annoyed. Behind him, dim cave walls lit by the glow of the wand. Deep blues, purples, gold, whimsical and slightly sinister.",
+   "keystone": true
+  },
+  "zork2-demon": {
+   "prompt": "The demon summoned in the pentagram: a large and somewhat formidable demon floating in midair, his lower body dissolving into greasy black smoke, massive arms crossed, curved horns, glowing yellow eyes, a vile grin full of enormous fangs and a forked tongue, looking greedily at the viewer as if appraising a treasure. Lit from below by candlelight. Dark stone, smoky greys, deep purples, candle gold, menacing yet greedy.",
+   "scenes": [
+    "zork2-pentagram-room--demon"
+   ]
+  },
+  "zork2-dragon": {
+   "prompt": "The huge red dragon: its giant head and neck in close-up, crimson and bronze scales, horns and frills, slitted yellow cat's eyes watching the viewer, smoke curling from its nostrils and between its sword-sharp teeth, a sly, almost amused gaze. Behind, a cavern scorched black. Crimson, bronze, soot black, ember orange, menacing and majestic.",
+   "keystone": true,
+   "scenes": [
+    "zork2-dragon-room--dragon"
+   ]
+  },
+  "zork2-dragon--angry": {
+   "prompt": "The same huge red dragon with crimson and bronze scales, now enraged: head reared, jaws wide open over rows of sword-sharp teeth, fire glowing in its throat, yellow eyes blazing, scales and frills bristling, black smoke billowing around it. Crimson, bronze, fiery orange, soot black, terrifying but not gory.",
+   "scenes": [
+    "zork2-dragon-room--dragon"
+   ]
+  },
+  "zork2-princess": {
+   "prompt": "The princess rescued from the dragon's lair: a beautiful young woman with long golden hair, still unkempt, in a dirty and bedraggled pale gown, now awake and smiling gratefully at the viewer, her eyes bright and warm. Behind her a dark cavern softened by a hint of warm light. Pale gown, golden hair, soot blacks, hopeful and gentle.",
+   "scenes": [
+    "zork2-dragon-lair--princess"
+   ]
+  },
+  "zork2-princess--trance": {
+   "prompt": "The same beautiful young princess with long unkempt golden hair and a dirty, bedraggled pale gown, still in a trance: sitting on a rock, staring blankly past the viewer with glassy, unfocused eyes, her face pale and still, oblivious to everything. Behind her, the blackened walls of the dragon's lair. Soot blacks, charred browns, pale gown and golden hair, melancholic.",
+   "scenes": [
+    "zork2-dragon-lair--princess"
+   ]
+  },
+  "zork2-unicorn": {
+   "prompt": "The unicorn of the underground garden: a beautiful pure white unicorn, head and neck in close-up, a long gleaming spiral horn, soft dark eyes, a flowing silvery mane, a red satin ribbon around its neck holding a tiny golden key. Behind, the green hedges and roses of a garden lit like a cloudy day. Pure white, rose red, muted greens, enchanted and shy.",
+   "scenes": [
+    "zork2-garden-north--unicorn"
+   ]
+  },
+  "zork2-cerberus": {
+   "prompt": "Cerberus, the three-headed dog guarding the crypt: three huge black-furred heads side by side in close-up, hackles raised, all three snarling with bared fangs and glowing red eyes. Behind them, a monumental gateway of black and white stone. Black fur, dark reds, pale marble, menacing but not gory.",
+   "scenes": [
+    "zork2-cerberus-room--cerberus"
+   ]
+  },
+  "zork2-cerberus--tamed": {
+   "prompt": "The same three-headed dog, now tamed: three huge black-furred heads side by side, all grinning insipidly, tongues lolling, ears flopping, a gigantic studded collar around its neck. Behind them, a monumental gateway of black and white stone. Black fur, pink tongues, pale marble, absurdly friendly.",
+   "scenes": [
+    "zork2-cerberus-room--tamed"
+   ]
+  },
+  "zork2-robot": {
+   "prompt": "The robot of the Frobozz Magic Robot Company: a late-model household robot, head and torso in close-up, a boxy, slightly dented riveted metal body, a head-like appendage with round glowing lens eyes, a little antenna and a speaker grille for a mouth, articulated arms ending in grippers, tilting its head as if awaiting orders. Behind, the copper coils of a low circular room with faint blue sparks. Iron greys, copper, pale blue, quaintly helpful.",
+   "scenes": [
+    "zork2-low-room--robot"
+   ]
+  },
+  "zork2-volcano-gnome": {
+   "prompt": "The Volcano Gnome who walks straight out of the rock wall: a short, nervous gnome with a big round nose, a bushy white beard, pointed ears and a peaked red cap, half emerging from the black volcanic rock, anxiously glancing at the gold pocket watch in his hand, a busy, impatient look. Behind, the dark wall of an old volcano with a glimpse of rust-red crater. Black rock, rust-red, warm skin tones, gold, nervous and hurried."
+  },
+  "zork2-gnome-of-zurich": {
+   "prompt": "The Gnome of Zurich: an epicene little gnome with a neatly trimmed beard and small round spectacles, wearing an impeccable grey three-piece suit with a watch chain, holding a safety deposit box under one arm, with the polite but impatient smile of a banker, shimmering slightly as if he had just materialized. Behind, a bank vault of marble and brass bathed in a soft golden light. Marble, brass, grey suit, golden light, prim and impatient."
+  },
+  "zork2-serpent": {
+   "prompt": "The baby sea serpent of the aquarium: a scaly green serpent head already as big as a horse, seen up close through the thick glass of a huge aquarium, beady suspicious green eyes, dagger-like teeth, finned frills, bubbles rising through the murky water. Murky greens, blue-greys, iron frame, menacing but not gory.",
+   "scenes": [
+    "zork2-aquarium-room--serpent"
+   ]
+  },
+  "zork2-lizard": {
+   "prompt": "The lizard head that lives in the oak door of the guarded room: a nasty-looking, scaly dull-green lizard head embedded in the middle of a battered, iron-banded oak door, alive, with sharp teeth and beady yellow eyes that follow the viewer, a forked tongue flicking out. Cobwebs and dust around it. Greys, dusty browns, sickly green, watchful.",
+   "scenes": [
+    "zork2-guarded-room"
+   ]
+  },
+  "zork2-lizard--asleep": {
+   "prompt": "The same scaly dull-green lizard head embedded in the battered oak door, now fast asleep after a good meal: eyes closed, jaws slack, a contented look, digesting peacefully. Cobwebs and dust around it. Greys, dusty browns, dull green, a hushed relief.",
+   "scenes": [
+    "zork2-guarded-room--asleep"
+   ]
+  }
+ }
+}

@@ -1,6 +1,7 @@
-// Shared helpers for the image tools. Two kinds of images go through the same pipeline: the
-// scenes (480×270 illustrations of the rooms) and the items (48×48 icons of the objects, on a
-// transparent background). The tools work on the scenes by default, on the items with --items,
+// Shared helpers for the image tools. Three kinds of images go through the same pipeline: the
+// scenes (480×270 illustrations of the rooms), the items (48×48 icons of the objects, on a
+// transparent background) and the portraits (128×128 close-ups of the characters). The tools
+// work on the scenes by default, on the items with --items, on the portraits with --portraits,
 // and on Zork I by default, on another game with --game zork2.
 //
 // Zork I's prompts live at the root of tools/images/, the other games' in tools/images/<game>/.
@@ -16,7 +17,7 @@ import { isGameId, type GameId } from '../../../src/engine/games'
 export const ROOT = fileURLToPath(new URL('../../../', import.meta.url))
 export const IMAGES = join(ROOT, 'tools/images')
 
-export type KindName = 'scenes' | 'items'
+export type KindName = 'scenes' | 'items' | 'portraits'
 
 export interface Kind {
   name: KindName
@@ -57,6 +58,15 @@ export function kinds(game: GameId = 'zork1'): Record<KindName, Kind> {
       references: sub(join(IMAGES, 'references-items')),
       public: join(ROOT, 'public/items'),
     },
+    portraits: {
+      name: 'portraits',
+      game,
+      prompts: join(gameDir(game), 'portrait-prompts.json'),
+      out: join(IMAGES, 'out-portraits'),
+      approved: join(IMAGES, 'approved-portraits'),
+      references: sub(join(IMAGES, 'references-portraits')),
+      public: join(ROOT, 'public/portraits'),
+    },
   }
 }
 
@@ -69,27 +79,40 @@ export function gameFromArgs(): GameId {
   return g
 }
 
-/** The kind chosen on the command line (--items, else the scenes), for the chosen game. */
+/** The kind chosen on the command line (--items, --portraits, else the scenes), for the chosen game. */
 export function kindFromArgs(): Kind {
-  return kinds(gameFromArgs())[flag('items') ? 'items' : 'scenes']
+  return kinds(gameFromArgs())[flag('items') ? 'items' : flag('portraits') ? 'portraits' : 'scenes']
 }
 
-/** Style references for a game: Zork I's keystones (the art direction), then the game's own. */
+const pngs = (dirs: string[]) => dirs.filter((d) => existsSync(d)).flatMap((d) => readdirSync(d).filter((f) => /\.png$/i.test(f)).map((f) => join(d, f)))
+
+/**
+ * Style references for a game: Zork I's keystones (the art direction), then the game's own. The
+ * portraits fall back on Zork I's keystone scenes until their own keystones are approved.
+ */
 export function styleReferences(kind: Kind): string[] {
-  const dirs = [kinds('zork1')[kind.name].references, ...(kind.game === 'zork1' ? [] : [kind.references])]
-  return dirs.filter((d) => existsSync(d)).flatMap((d) => readdirSync(d).filter((f) => /\.png$/i.test(f)).map((f) => join(d, f)))
+  const refs = pngs([kinds('zork1')[kind.name].references, ...(kind.game === 'zork1' ? [] : [kind.references])])
+  return refs.length || kind.name !== 'portraits' ? refs : pngs([KINDS.scenes.references])
+}
+
+/** The approved scenes that already show a character (raw images), to keep its looks in its portrait. */
+export function sceneReferences(kind: Kind, id: string, prompts: Prompts = loadPrompts(kind)): string[] {
+  const scenes = kinds(kind.game).scenes
+  return (prompts.entries[id]?.scenes ?? []).map((s) => join(scenes.approved, `${s}.png`)).filter((f) => existsSync(f))
 }
 
 export interface PromptEntry {
   prompt: string
   keystone?: boolean
   creatures?: boolean
+  /** Portraits: the scenes that show the character, sent as references when they are approved. */
+  scenes?: string[]
 }
 
 export interface Prompts {
   style: string
   negative: string
-  /** Scenes or items, by id. */
+  /** Scenes, items or portraits, by id. */
   entries: Record<string, PromptEntry>
 }
 
@@ -109,9 +132,13 @@ export function loadDotEnv(): void {
   }
 }
 
-export function fullPrompt(p: Prompts, id: string, kind: Kind = KINDS.scenes): string {
+export function fullPrompt(p: Prompts, id: string, kind: Kind = KINDS.scenes, withScenes = false): string {
   const s = p.entries[id]
   if (kind.name === 'items') return `${p.style}\n\nObject: ${s.prompt}\n\nAvoid: ${p.negative}`
+  if (kind.name === 'portraits') {
+    const looks = withScenes ? '\n\nThe character also appears, smaller, in some of the reference images (a scene of the game): keep exactly the same design, colors and outfit, seen up close.' : ''
+    return `${p.style}\n\nCharacter: ${s.prompt}${looks}\n\nAvoid: ${p.negative}`
+  }
   // scenes that show a creature must not forbid characters
   const style = s.creatures ? p.style.replace(/,?\s*no characters/i, '') : p.style
   const negative = s.creatures ? p.negative.replace(/,?\s*people/i, '').replace(/,?\s*player character/i, '') : p.negative

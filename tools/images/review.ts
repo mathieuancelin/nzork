@@ -1,20 +1,29 @@
 // Local review page for the generated candidates:  npm run images:review  → http://localhost:5180
-// One tab per game (/?game=zork2), each with its scenes and its object icons (&kind=items). One
-// foldable block per image: the prompt, the current image, the candidates (raw and pixelized).
-// Choosing a candidate publishes it in public/scenes/ (or public/items/), folds the block and
-// opens the next one still to choose, without reloading the page.
+// One tab per game (/?game=zork2), each with its scenes, its object icons (&kind=items) and its
+// character portraits (&kind=portraits). One foldable block per image: the prompt, the current
+// image, the candidates (raw and pixelized). Choosing a candidate publishes it in public/scenes/
+// (public/items/, public/portraits/), folds the block and opens the next one still to choose,
+// without reloading the page.
 import { createServer } from 'node:http'
 import { copyFileSync, existsSync, readFileSync, statSync, unlinkSync, writeFileSync } from 'node:fs'
 import { join, resolve } from 'node:path'
-import { KINDS, candidates, ensureDir, kinds, loadPrompts, readManifest, writeManifest, type Kind, type KindName } from './lib/common'
-import { loadPalette, pixelize, pixelizeItem } from './lib/pixel'
+import { KINDS, candidates, ensureDir, kinds, loadPrompts, readManifest, sceneReferences, writeManifest, type Kind, type KindName } from './lib/common'
+import { PORTRAIT_SIZE, loadPalette, pixelize, pixelizeItem, pixelizePortrait } from './lib/pixel'
 import { GAMES, GAME_IDS, isGameId } from '../../src/engine/games'
 
 const PORT = Number(process.env.PORT ?? 5180)
 // candidates, approved and published images are shared by the games
 const ALLOWED = Object.values(KINDS).flatMap((k) => [k.out, k.public, k.approved].map((d) => resolve(d)))
-const kindOf = (name: string | null | undefined, game?: string | null): Kind => kinds(isGameId(game) ? game : 'zork1')[(name === 'items' ? 'items' : 'scenes') as KindName]
-const pixelizeFor = (kind: Kind) => (kind.name === 'items' ? pixelizeItem : pixelize)
+const kindOf = (name: string | null | undefined, game?: string | null): Kind =>
+  kinds(isGameId(game) ? game : 'zork1')[(name === 'items' || name === 'portraits' ? name : 'scenes') as KindName]
+const pixelizeFor = (kind: Kind) => ({ scenes: pixelize, items: pixelizeItem, portraits: pixelizePortrait })[kind.name]
+
+/** How the page talks about each kind of image. */
+const WORDS: Record<KindName, { tab: string; key: string; hide: string; next: string; preview: string }> = {
+  scenes: { tab: 'Scènes', key: 'scène clé', hide: 'les scènes choisies', next: 'Scène suivante à choisir', preview: '480×270' },
+  items: { tab: 'Objets', key: 'objet clé', hide: 'les objets choisis', next: 'Objet suivant à choisir', preview: 'icône 48×48 détourée, agrandie ×4' },
+  portraits: { tab: 'Portraits', key: 'portrait clé', hide: 'les portraits choisis', next: 'Portrait suivant à choisir', preview: `portrait ${PORTRAIT_SIZE}×${PORTRAIT_SIZE}, agrandi ×2` },
+}
 
 function safe(path: string): string | null {
   const p = resolve(path)
@@ -41,7 +50,9 @@ function tally(kind: Kind): string {
 }
 
 function page(kind: Kind): string {
-  const items = kind.name === 'items'
+  const words = WORDS[kind.name]
+  const kindArg = kind.name === 'scenes' ? '' : `--${kind.name} `
+  const kindParam = kind.name === 'scenes' ? '' : `&kind=${kind.name}`
   const gameArg = kind.game === 'zork1' ? '' : `--game ${kind.game} `
   const prompts = loadPrompts(kind)
   const done = readManifest(kind)
@@ -56,29 +67,32 @@ function page(kind: Kind): string {
       const isDone = done.has(id)
       const chosen = isDone ? chosenCandidate(kind, id, cands) : null
       const finalUrl = `${fileUrl(join(kind.public, id + '.png'))}&t=${now}`
+      // a portrait shows the scenes of its character (sent as references when generating it)
+      const refs = kind.name === 'portraits' ? sceneReferences(kind, id, prompts) : []
       return `<details class="scene" id="${id}" data-done="${isDone}" data-count="${cands.length}"${id === firstPending ? ' open' : ''}>
   <summary>
     <span class="chev">▸</span>
     <img class="thumb" ${isDone ? `src="${finalUrl}"` : ''} alt="">
     <span class="name">${esc(id)}</span>
-    ${s.keystone ? `<span class="key">${items ? 'objet clé' : 'scène clé'}</span>` : ''}
+    ${s.keystone ? `<span class="key">${words.key}</span>` : ''}
     <span class="status"></span>
   </summary>
   <div class="body">
     <details class="prompt"><summary>Prompt</summary><p>${esc(s.prompt)}</p></details>
+    ${refs.length ? `<p class="refs">Scènes de référence : ${refs.map((r) => `<img src="${fileUrl(r)}" alt="" loading="lazy">`).join('')}</p>` : ''}
     ${isDone ? `<p class="current">Image actuelle : <img class="final" src="${finalUrl}" alt=""></p>` : ''}
     <div class="grid">${cands
       .map(
         (c) => `<figure${c === chosen ? ' class="chosen"' : ''} data-path="${encodeURIComponent(c)}">
         <img src="${fileUrl(c)}" loading="lazy" alt="">
-        <img class="px" src="/preview?kind=${kind.name}&path=${encodeURIComponent(c)}" loading="lazy" title="Aperçu après post-traitement" alt="">
+        <img class="px" src="/preview?kind=${kind.name}&game=${kind.game}&path=${encodeURIComponent(c)}" loading="lazy" title="Aperçu après post-traitement" alt="">
         <figcaption>
           <button class="choose">${c === chosen ? '✓ Choisie' : 'Choisir'}</button>
           <button class="del">Supprimer</button>
         </figcaption></figure>`,
       )
       .join('')}</div>
-    ${cands.length ? '' : `<p class="none">Aucun candidat : npm run images:generate -- ${gameArg}${items ? '--items ' : ''}--ids ${id}</p>`}
+    ${cands.length ? '' : `<p class="none">Aucun candidat : npm run images:generate -- ${gameArg}${kindArg}--ids ${id}</p>`}
   </div>
 </details>`
     })
@@ -122,19 +136,23 @@ nav a{color:#a39679;text-decoration:none;padding:4px 10px;border:1px solid #3b32
 .items .grid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}
 .items .thumb{width:54px;height:54px;object-fit:contain}
 .items img.px,.items .current img{width:192px;max-width:192px;background:repeating-conic-gradient(#2b241c 0 25%,#1d1912 0 50%) 0 0/16px 16px;border-radius:4px}
+.portraits .grid{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.portraits .thumb{width:54px;height:54px}
+.portraits img.px,.portraits .current img{width:256px;max-width:256px}
+.refs{color:#a39679;display:flex;flex-wrap:wrap;align-items:center;gap:8px}.refs img{width:160px;border-radius:4px}
 label{cursor:pointer;color:#a39679}
 .toast{position:fixed;bottom:16px;left:50%;transform:translateX(-50%);background:#1d1912;border:1px solid #e3a83c;border-radius:8px;padding:8px 14px;display:none}
 </style></head><body class="${kind.name}">
 <header>
   <h1>Atelier des illustrations</h1>
-  <nav>${GAME_IDS.map((g) => `<a href="/?game=${g}${items ? '&kind=items' : ''}" class="${g === kind.game ? 'on' : ''}">${GAMES[g].title} <small>${tally(kinds(g)[kind.name])}</small></a>`).join(' ')}</nav>
-  <nav><a href="/?game=${kind.game}" class="${items ? '' : 'on'}">Scènes <small>${tally(kinds(kind.game).scenes)}</small></a> <a href="/?game=${kind.game}&kind=items" class="${items ? 'on' : ''}">Objets <small>${tally(kinds(kind.game).items)}</small></a></nav>
+  <nav>${GAME_IDS.map((g) => `<a href="/?game=${g}${kindParam}" class="${g === kind.game ? 'on' : ''}">${GAMES[g].title} <small>${tally(kinds(g)[kind.name])}</small></a>`).join(' ')}</nav>
+  <nav>${(Object.keys(WORDS) as KindName[]).map((k) => `<a href="/?game=${kind.game}${k === 'scenes' ? '' : `&kind=${k}`}" class="${k === kind.name ? 'on' : ''}">${WORDS[k].tab} <small>${tally(kinds(kind.game)[k])}</small></a>`).join(' ')}</nav>
   <div class="progress"><span id="count"></span><div class="bar"><i id="bar"></i></div></div>
-  <label><input type="checkbox" id="hide"> Masquer ${items ? 'les objets choisis' : 'les scènes choisies'}</label>
-  <button id="next">${items ? 'Objet suivant à choisir' : 'Scène suivante à choisir'} ↓</button>
+  <label><input type="checkbox" id="hide"> Masquer ${words.hide}</label>
+  <button id="next">${words.next} ↓</button>
 </header>
 <main>
-<p class="palette">Palette : ${loadPalette().length} couleurs. Chaque candidat montre l'image brute puis l'aperçu pixelisé (${items ? 'icône 48×48 détourée, agrandie ×4' : '480×270'}, palette commune). Choisir une image la publie, replie le bloc et ouvre le suivant.</p>
+<p class="palette">Palette : ${loadPalette().length} couleurs. Chaque candidat montre l'image brute puis l'aperçu pixelisé (${words.preview}, palette commune). Choisir une image la publie, replie le bloc et ouvre le suivant.</p>
 ${blocks || `<p class="none">Aucun prompt pour ${GAMES[kind.game].title} : voir ${esc(kind.prompts)}</p>`}
 </main>
 <div class="toast" id="toast"></div>
@@ -245,7 +263,7 @@ createServer(async (req, res) => {
     if (url.pathname === '/file' || url.pathname === '/preview') {
       const p = safe(url.searchParams.get('path') ?? '')
       if (!p) return res.writeHead(404).end()
-      const body = url.pathname === '/file' ? readFileSync(p) : await pixelizeFor(kindOf(url.searchParams.get('kind')))(readFileSync(p), loadPalette())
+      const body = url.pathname === '/file' ? readFileSync(p) : await pixelizeFor(kindOf(url.searchParams.get('kind'), url.searchParams.get('game')))(readFileSync(p), loadPalette())
       res.writeHead(200, { 'Content-Type': 'image/png', 'Cache-Control': 'no-store' })
       return res.end(body)
     }

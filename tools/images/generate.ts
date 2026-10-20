@@ -1,25 +1,28 @@
-// Generates candidate images for the scenes, or with --items for the object icons, of Zork I
-// or, with --game zork2, of another game.
+// Generates candidate images for the scenes, or with --items for the object icons, or with
+// --portraits for the character portraits, of Zork I or, with --game zork2, of another game.
 //
 //   npm run images:generate -- --provider openai --keystones --count 4          (plan + cost only)
 //   npm run images:generate -- --provider openai --keystones --count 4 --yes    (really generates)
 //   npm run images:generate -- --items --provider openai --keystones --count 3 --yes
+//   npm run images:generate -- --portraits --provider openai --keystones --count 3 --yes
 //   npm run images:generate -- --game zork2 --provider openai --keystones --count 4 --yes
 //
 // Selection: --keystones | --ids id1,id2 (or --scenes) | --missing (no approved image yet) | --all
 // Options: --count N (candidates each, default 4) · --no-refs (do not send the style
 //          references) · --concurrency N (default 2)
-// Candidates go to tools/images/out/<id>/ (out-items/ for the icons); choose them with
-// `npm run images:review`.
+// Candidates go to tools/images/out/<id>/ (out-items/ for the icons, out-portraits/ for the
+// portraits); choose them with `npm run images:review`. A portrait also gets, as references, the
+// approved scenes where its character already appears (its "scenes" in the prompts file).
 
 import { readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { PROVIDERS } from './lib/providers'
-import { arg, candidates, ensureDir, flag, fullPrompt, kindFromArgs, loadDotEnv, loadPrompts, readManifest, styleReferences } from './lib/common'
+import { arg, candidates, ensureDir, flag, fullPrompt, kindFromArgs, loadDotEnv, loadPrompts, readManifest, sceneReferences, styleReferences } from './lib/common'
 
 loadDotEnv()
 const kind = kindFromArgs()
 const items = kind.name === 'items'
+const LABEL = { scenes: ['scene', 'Scenes'], items: ['item', 'Items'], portraits: ['portrait', 'Portraits'] }[kind.name]
 const prompts = loadPrompts(kind)
 const providerName = arg('provider') ?? 'openai'
 const make = PROVIDERS[providerName]
@@ -40,13 +43,16 @@ else {
   console.log(`Choose ${kind.name}: --keystones | --ids a,b | --missing | --all`)
   process.exit(1)
 }
-for (const id of ids) if (!prompts.entries[id]) throw new Error(`Unknown ${items ? 'item' : 'scene'} ${id}`)
+for (const id of ids) if (!prompts.entries[id]) throw new Error(`Unknown ${LABEL[0]} ${id}`)
 
 const refs = flag('no-refs') ? [] : styleReferences(kind).map((f) => readFileSync(f))
-const shape = items ? 'square' : 'wide'
+// the scenes where a character already appears, for its portrait
+const sceneRefs = new Map(ids.map((id) => [id, flag('no-refs') ? [] : sceneReferences(kind, id, prompts).map((f) => readFileSync(f))]))
+const shape = kind.name === 'scenes' ? 'wide' : 'square'
 const total = ids.length * count
+const withScenes = ids.filter((id) => sceneRefs.get(id)!.length).length
 console.log(`Game: ${kind.game} · provider: ${provider.name} (${provider.model})`)
-console.log(`${items ? 'Items' : 'Scenes'}: ${ids.length} × ${count} candidates = ${total} images, ${refs.length} style reference(s)`)
+console.log(`${LABEL[1]}: ${ids.length} × ${count} candidates = ${total} images, ${refs.length} style reference(s)${kind.name === 'portraits' ? `, ${withScenes} portrait(s) with their scenes as references` : ''}`)
 console.log(`Estimated cost: ~${(total * provider.estimatedCost[shape]).toFixed(2)} $ (rough estimate, check the provider's prices)`)
 if (!flag('yes')) {
   console.log('\nDry run. Add --yes to generate.')
@@ -62,7 +68,8 @@ async function run(job: { id: string; n: number }) {
   const dir = ensureDir(join(kind.out, job.id))
   for (let attempt = 1; attempt <= 4; attempt++) {
     try {
-      const img = await provider.generate({ prompt: fullPrompt(prompts, job.id, kind), references: refs, shape, transparent: items })
+      const own = sceneRefs.get(job.id)!
+      const img = await provider.generate({ prompt: fullPrompt(prompts, job.id, kind, own.length > 0), references: [...own, ...refs], shape, transparent: items })
       const file = join(dir, `${Date.now()}-${provider.name}-${job.n}.png`)
       writeFileSync(file, img)
       done++
@@ -88,4 +95,5 @@ await Promise.all(
   }),
 )
 console.log(`\nDone: ${done} image(s), ${failed} failure(s). Candidates: ${ids.map((id) => `${id}=${candidates(id, kind).length}`).join(', ')}`)
-console.log(`Next: npm run images:review${items ? ' (then the "Objets" tab)' : ''}${kind.game === 'zork1' ? '' : ` (game ${kind.game})`}`)
+const tab = { scenes: '', items: ' (then the "Objets" tab)', portraits: ' (then the "Portraits" tab)' }[kind.name]
+console.log(`Next: npm run images:review${tab}${kind.game === 'zork1' ? '' : ` (game ${kind.game})`}`)

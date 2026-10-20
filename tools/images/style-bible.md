@@ -72,3 +72,22 @@ images** given to the generator for all the others:
 3. `troll-room--troll` — the troll room (underground, lantern, creature)
 4. `dam` — the dam (large underground space, water)
 5. `temple` — the temple (stone, gold, mystery)
+
+## Character portraits
+
+The close-ups of the characters (`portrait-prompts.json`) follow the same rules, framed like the
+talking portraits of *Loom*, *King's Quest V* or *Monkey Island 2*:
+
+- **One character in close-up**, head and shoulders, three-quarter view turned toward the
+  viewer, the face large and expressive in the upper middle of a **square** frame (128 × 128
+  after post-processing, same palette, same dithering as the scenes).
+- Lit by the **viewer's lantern**, deep shadows behind; a dark, simple background that only
+  hints at the place (the troll's cave, the Wizard's glow, the marble of the Dungeon Master).
+- **The same looks as in the scenes**: a character already drawn in an approved scene gets that
+  scene as a reference image.
+- **States** are separate portraits (the troll knocked out, the cyclops asleep, the dragon
+  angry, Cerberus tamed, the hooded figure weakened…), described as "the same … now …".
+- The Dungeon Master's three disguises (the old man, the man at the cliff, the hooded figure)
+  share **his keen pale grey eyes with a faint silvery glint**, discreet enough to go unnoticed.
+- Keystones: `troll` and `thief` (Zork I), `zork2-wizard` and `zork2-dragon`,
+  `zork3-dungeon-master`.

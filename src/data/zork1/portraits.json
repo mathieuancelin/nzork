@@ -1,0 +1,106 @@
+{
+ "portraits": [
+  {
+   "id": "troll",
+   "name": [
+    "Le troll",
+    "The troll"
+   ],
+   "when": [
+    {
+     "present": "TROLL"
+    }
+   ],
+   "variants": [
+    {
+     "id": "troll--unconscious",
+     "when": {
+      "prop": [
+       "TROLL",
+       "STRENGTH",
+       "<",
+       0
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "thief",
+   "name": [
+    "Le voleur",
+    "The thief"
+   ],
+   "when": [
+    {
+     "present": "THIEF"
+    }
+   ],
+   "variants": [
+    {
+     "id": "thief--unconscious",
+     "when": {
+      "prop": [
+       "THIEF",
+       "STRENGTH",
+       "<",
+       0
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "cyclops",
+   "name": [
+    "Le cyclope",
+    "The cyclops"
+   ],
+   "when": [
+    {
+     "present": "CYCLOPS"
+    }
+   ],
+   "variants": [
+    {
+     "id": "cyclops--asleep",
+     "when": {
+      "flag": "CYCLOPS-FLAG"
+     }
+    }
+   ]
+  },
+  {
+   "id": "bat",
+   "name": [
+    "La chauve-souris vampire",
+    "The vampire bat"
+   ],
+   "when": [
+    {
+     "present": "BAT"
+    }
+   ],
+   "variants": [
+    {
+     "id": "bat--garlic",
+     "when": {
+      "near": "GARLIC"
+     }
+    }
+   ]
+  },
+  {
+   "id": "spirits",
+   "name": [
+    "Les esprits",
+    "The spirits"
+   ],
+   "when": [
+    {
+     "present": "GHOSTS"
+    }
+   ]
+  }
+ ]
+}

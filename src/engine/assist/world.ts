@@ -116,6 +116,16 @@ export class World {
     return a !== undefined && this.vm.hasAttr(num, a)
   }
 
+  /** A numeric property of an object, signed (a villain's STRENGTH is negative while he is knocked out). */
+  prop(name: string, prop: string): number {
+    const p = this.P[prop]
+    if (p === undefined) throw new Error(`Unknown property ${prop}`)
+    const o = this.obj(name)
+    const v = this.vm.getProp(o, p)
+    // a one-byte property is signed on 8 bits
+    return this.vm.getPropLen(this.vm.getPropAddr(o, p)) === 1 ? (v << 24) >> 24 : (v << 16) >> 16
+  }
+
   children(num: number): number[] {
     const out: number[] = []
     for (let c = this.vm.child(num); c; c = this.vm.sibling(c)) out.push(c)

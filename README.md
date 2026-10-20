@@ -51,7 +51,11 @@ status bar). Each game keeps its own game in progress, its ten save slots and it
   figure in the Land of Shadow…). Dark rooms stay dark, except for two eyes that light up
   if you linger. Underground, the scene is lit by your lantern: its halo narrows as the
   batteries run down and flickers when they are nearly dead, a torch gives a warm, unsteady
-  light, and dust drifts or water ripples on top.
+  light, and dust drifts or water ripples on top. The characters (the troll, the Wizard of
+  Frobozz, the Dungeon Master and twenty others) are ready to appear in portrait in a corner of
+  the scene while they are there, in their current state (the troll knocked out, the dragon
+  angry, the hooded figure weakened): their prompts are written, their images are still to be
+  generated.
 - **A soundtrack that gets under your skin.** Go down the trap door and the wind gives way to a
   deep drone and water dripping somewhere in the dark. Let your lantern die and a heartbeat
   rises while something breathes close by. Walk into the troll's room and a war drum starts. The
@@ -284,6 +288,47 @@ background, which the post-processing removes. After a palette change,
 `npm run images:postprocess -- --items` publishes them again. Until an icon exists, a small pixel
 glyph of the object's kind stands in for it. Count about 7 USD for 3 candidates of each object.
 
+### Character portraits
+
+23 characters of the trilogy get a 128×128 portrait, plus 10 of their states (33 images): the
+troll, the thief, the cyclops, the vampire bat and the spirits of Hades in Zork I; the Wizard of
+Frobozz, the demon, the dragon, the princess, the unicorn, Cerberus, the robot, the two gnomes,
+the sea serpent and the lizard in Zork II; the Dungeon Master, the old man, the man at the
+cliff, the hooded figure (the three of them share his pale grey eyes with a silvery glint), the
+Guardians of Zork, the Viking sailor and Lord Dimwit Flathead in Zork III. Their prompts are in
+[tools/images/portrait-prompts.json](tools/images/portrait-prompts.json) (and in
+`tools/images/zork2/`, `tools/images/zork3/`), and
+[src/data/zork1/portraits.json](src/data/zork1/portraits.json) says when each one is on stage
+(the character is in sight, or the player is in a given place with some flags set) and which
+state applies. The steps are the same, with `--portraits` (and `--game`):
+
+```bash
+npm run images:generate -- --portraits --provider openai --keystones --count 3 --yes
+```
+
+Choose them in the "Portraits" tab of the review page (`npm run images:review`, then
+http://localhost:5180/?kind=portraits). The keystones (the troll and the thief, the Wizard and
+the dragon, the Dungeon Master) become the style references of the others; until they are
+chosen, Zork I's keystone scenes stand in. A character already drawn in a scene (the troll in
+his room, the dragon before his tunnel) gets that approved scene as an extra reference, to keep
+the same looks up close.
+
+```bash
+npm run images:generate -- --portraits --provider openai --missing --count 3 --yes
+```
+
+```bash
+npm run images:generate -- --game zork2 --portraits --provider openai --keystones --count 3 --yes
+```
+
+```bash
+npm run images:generate -- --game zork2 --portraits --provider openai --missing --count 3 --yes
+```
+
+and the same for `--game zork3`. After a palette change, `npm run images:postprocess --
+--portraits` publishes them again. A portrait without an image is simply not shown. Count about
+4 USD for 3 candidates of each portrait.
+
 ## Soundtrack
 
 There is not a single audio file in the game. Everything you hear is synthesized on the fly with
@@ -331,7 +376,7 @@ git submodule update --init
 | `src/engine/i18n/` | text rendering: templates, French grammar, catalogs in `fr/<game>/catalog.json` |
 | `src/engine/input/` | French command parser |
 | `src/engine/assist/` | clickable choices, the guides of the Easy mode (`guide.ts`, `guide-zork2.ts`, `guide-zork3.ts` with the Royal Puzzle solver), inventory, treasures, map, hints, documents |
-| `src/data/<game>/` | map layout, scenes and ambiences, item icons |
+| `src/data/<game>/` | map layout, scenes and ambiences, item icons, character portraits |
 | `src/ui/` | the React application |
 | `tools/` | symbols, catalog extraction, reuse and merge, `dfrotz` oracle, images, map layout, bot |
 | `vendor/zork1/`, `zork2/`, `zork3/` | the original ZIL sources (git submodules) |

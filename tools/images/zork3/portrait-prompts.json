@@ -1,0 +1,60 @@
+{
+ "style": "Hand-crafted pixel art character portrait from an early-1990s VGA point-and-click adventure game (LucasArts / Sierra style, like the close-up talking portraits of Loom, King's Quest V or Monkey Island 2), 256-color look, limited palette, subtle dithering, painterly pixel shading, crisp edges, a single character or creature in close-up, head and shoulders, three-quarter view turned toward the viewer, the face large and expressive in the upper middle of a square frame, lit by a warm light coming from the viewer (their lantern) with deep shadows behind, a dark, simple background that only hints at the character's surroundings, no text, no letters, no UI, no border.",
+ "negative": "text, letters, words, inscription, watermark, signature, logo, UI, frame, border, speech bubble, photograph, photorealistic, 3D render, smooth gradients, blur, bokeh, anime, manga, chibi, modern clothes, modern objects, full body, tiny figure, crowd, player character, hands in the foreground, gore",
+ "portraits": {
+  "zork3-dungeon-master": {
+   "prompt": "The Dungeon Master: an old yet oddly youthful man with long silver hair and a deeply lined, kindly but stern face, keen pale grey eyes with a faint silvery glint, dressed simply in a grey hood and cloak, a golden amulet on his chest, leaning on a plain wooden staff, with a gaze that seems to know everything about the viewer. Behind, a corridor of pale marble lit by a steady warm light. Pale marble, greys, gold, dignified and mysterious.",
+   "keystone": true,
+   "scenes": [
+    "zork3-narrow-corridor--master",
+    "zork3-cell--master"
+   ]
+  },
+  "zork3-old-man": {
+   "prompt": "The old man of the engravings room, now awake: a very old and wizened man with a long, stringy white beard, in a worn grey robe, weak, tired and frail, looking hungrily and hopefully at the viewer; yet his eyes, oddly keen, pale grey with a faint silvery glint, seem far younger than the rest of him. Behind, a wall carved with strange runes and flames. Browns, ochre and grey, mysterious and pitiful.",
+   "scenes": [
+    "zork3-engravings-room--old-man"
+   ]
+  },
+  "zork3-old-man--asleep": {
+   "prompt": "The same very old and wizened man with a long, stringy white beard and a worn grey robe, huddled asleep in a corner, eyes closed, mouth open, snoring loudly, looking weak and frail. Behind, a wall carved with strange runes. Browns, ochre and grey, pitiful.",
+   "scenes": [
+    "zork3-engravings-room--old-man"
+   ]
+  },
+  "zork3-cliff-man": {
+   "prompt": "The man at the cliff: a stocky man of medium height with several days' growth of stubble, in rough patched traveling clothes, a coil of knotted rope over his shoulder, with a cheeky, crafty grin; his pale grey eyes have an odd silvery glint. Behind him, giant trees and bright sunshine pouring from a hole far above. Lush greens, golden sunlight, grey rock, mischievous, a mix of hope and mistrust.",
+   "scenes": [
+    "zork3-cliff--man",
+    "zork3-cliff-ledge--man"
+   ]
+  },
+  "zork3-hooded-figure": {
+   "prompt": "The hooded figure of the land of shadow: a tall silhouette in a dark hooded cloak, the face hidden in the deep shadow of the hood, where only a faint silvery glint shows the eyes, holding up close to the hood a brightly glowing elvish sword, its cold blue light the only lighting. Misty darkness behind. Deep violets, dark greys, cold blue highlights, tense and uncanny.",
+   "scenes": [
+    "zork3-shadow-hills--figure"
+   ]
+  },
+  "zork3-hooded-figure--weakened": {
+   "prompt": "The same tall hooded figure in a dark cloak, now badly weakened: kneeling and swaying, the glowing elvish sword lowered and dimming, the hood slipped slightly back to show the lower half of a weary, deeply lined face and a glimpse of keen pale grey eyes with a silvery glint. Misty darkness behind. Deep violets, dark greys, fading blue light, moving and pitiful.",
+   "scenes": [
+    "zork3-shadow-hills--figure"
+   ]
+  },
+  "zork3-guardians": {
+   "prompt": "One of the Guardians of Zork in close-up: an immense stone statue of a heavily armored warrior of an ancient military order, a closed helmet with a narrow visor slit, carved armor glinting in torchlight, clasping a formidable bludgeon raised against its shoulder, poised as if ready to strike yet impassive; its perfectly identical twin looms in the darkness behind it. Grey granite, warm torchlight, deep shadows, perfect and terrifying symmetry.",
+   "scenes": [
+    "zork3-guardians"
+   ]
+  },
+  "zork3-viking": {
+   "prompt": "The old Viking sailor: an old and crusty sailor with a weathered, ruddy face, a thick braided grey beard, bushy eyebrows and narrowed eyes, a simple iron helmet and furs over a red and white striped tunic, standing at the carved dragon-headed prow of his ancient ship and peering out over a misty ocean. Grey-blue sea, silvery mist, weathered wood, red and white stripes, legendary.",
+   "scenes": [
+    "zork3-flathead-ocean--ship"
+   ]
+  },
+  "zork3-flathead": {
+   "prompt": "Lord Dimwit Flathead the Excessive, ruler of the Great Underground Empire in the year 776: a pompous king with a strikingly flat-topped head, a ridiculously huge jewelled crown balanced on it, small self-satisfied eyes, a big nose and a curled moustache, in an extravagant ermine-trimmed purple robe dripping with gold chains and medals, one finger raised as he loudly explains yet another tremendous idea. Behind, the unfinished vaults of a grand museum under construction. Purple, gold, ermine white, grey stone, pompous and absurd."
+  }
+ }
+}

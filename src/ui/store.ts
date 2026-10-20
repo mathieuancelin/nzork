@@ -14,6 +14,7 @@ import { Labeler } from '../engine/assist/labels'
 import { World, DIR_COMMAND } from '../engine/assist/world'
 import { t } from './i18n'
 import { sceneFor, roomTitles, type SceneInfo } from './scenes'
+import { portraitsFor, type PortraitInfo } from './portraits'
 import { moodFor, turnCue, type Mood } from './sound/mood'
 import type { CueKind } from './sound/presets'
 
@@ -71,6 +72,8 @@ interface State {
   transcript: TranscriptEntry[]
   status: Status | null
   scene: SceneInfo | null
+  /** The characters on stage, shown in portrait next to the scene. */
+  portraits: PortraitInfo[]
   /** What the soundtrack plays. */
   mood: Mood | null
   /** Last short sound to play (score, death, victory). */
@@ -193,6 +196,7 @@ export const useGame = create<State>((set, get) => {
       transcript: [...s.transcript, ...(text ? [entry('out', text)] : [])].slice(-MAX_TRANSCRIPT),
       status: st,
       scene: sceneFor(g),
+      portraits: portraitsFor(g),
       side: sideOf(g),
       mood,
       ...(cue ? { cue: { id: nextId++, kind: cue } } : {}),
@@ -224,6 +228,7 @@ export const useGame = create<State>((set, get) => {
     transcript: [],
     status: null,
     scene: null,
+    portraits: [],
     mood: null,
     cue: null,
     side: null,
@@ -329,6 +334,7 @@ export const useGame = create<State>((set, get) => {
         transcript: [...(mark !== undefined ? st.transcript.slice(0, mark) : st.transcript), entry('sys', t(st.settings.lang, 'undone'))],
         status,
         scene: sceneFor(game!),
+        portraits: portraitsFor(game!),
         side: sideOf(game!),
         mood: moodFor(game!),
         over: false,
@@ -381,6 +387,7 @@ export const useGame = create<State>((set, get) => {
         transcript: [...saved.transcript, ...(slot === AUTOSAVE ? [] : [entry('sys', t(lang, 'loaded', saved.name))])],
         status: game.status(),
         scene: sceneFor(game),
+        portraits: portraitsFor(game),
         side: sideOf(game),
         mood: moodFor(game),
         waitingFor: turnWaiting(game),

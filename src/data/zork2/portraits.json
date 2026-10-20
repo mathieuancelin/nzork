@@ -1,0 +1,172 @@
+{
+ "portraits": [
+  {
+   "id": "zork2-wizard",
+   "name": [
+    "Le Sorcier de Frobozz",
+    "The Wizard of Frobozz"
+   ],
+   "when": [
+    {
+     "present": "WIZARD"
+    }
+   ]
+  },
+  {
+   "id": "zork2-demon",
+   "name": [
+    "Le démon",
+    "The demon"
+   ],
+   "when": [
+    {
+     "present": "GENIE"
+    }
+   ]
+  },
+  {
+   "id": "zork2-dragon",
+   "name": [
+    "Le dragon rouge",
+    "The red dragon"
+   ],
+   "when": [
+    {
+     "present": "DRAGON"
+    }
+   ],
+   "variants": [
+    {
+     "id": "zork2-dragon--angry",
+     "when": {
+      "global": [
+       "DRAGON-ANGER",
+       ">",
+       0
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "zork2-princess",
+   "name": [
+    "La princesse",
+    "The princess"
+   ],
+   "when": [
+    {
+     "present": "PRINCESS"
+    }
+   ],
+   "variants": [
+    {
+     "id": "zork2-princess--trance",
+     "when": {
+      "notFlag": "PRINCESS-AWAKE"
+     }
+    }
+   ]
+  },
+  {
+   "id": "zork2-unicorn",
+   "name": [
+    "La licorne",
+    "The unicorn"
+   ],
+   "when": [
+    {
+     "present": "UNICORN"
+    }
+   ]
+  },
+  {
+   "id": "zork2-cerberus",
+   "name": [
+    "Cerbère",
+    "Cerberus"
+   ],
+   "when": [
+    {
+     "present": "CERBERUS"
+    }
+   ],
+   "variants": [
+    {
+     "id": "zork2-cerberus--tamed",
+     "when": {
+      "flag": "CERBERUS-LEASHED"
+     }
+    }
+   ]
+  },
+  {
+   "id": "zork2-robot",
+   "name": [
+    "Le robot",
+    "The robot"
+   ],
+   "when": [
+    {
+     "present": "ROBOT"
+    }
+   ]
+  },
+  {
+   "id": "zork2-volcano-gnome",
+   "name": [
+    "Le Gnome du volcan",
+    "The Volcano Gnome"
+   ],
+   "when": [
+    {
+     "present": "GNOME"
+    }
+   ]
+  },
+  {
+   "id": "zork2-gnome-of-zurich",
+   "name": [
+    "Le Gnome de Zurich",
+    "The Gnome of Zurich"
+   ],
+   "when": [
+    {
+     "present": "GNOME-OF-ZURICH"
+    }
+   ]
+  },
+  {
+   "id": "zork2-serpent",
+   "name": [
+    "Le bébé serpent de mer",
+    "The baby sea serpent"
+   ],
+   "when": [
+    {
+     "present": "SERPENT"
+    }
+   ]
+  },
+  {
+   "id": "zork2-lizard",
+   "name": [
+    "Le lézard",
+    "The lizard"
+   ],
+   "when": [
+    {
+     "present": "DOOR-KEEPER"
+    }
+   ],
+   "variants": [
+    {
+     "id": "zork2-lizard--asleep",
+     "when": {
+      "flag": "GUARDIAN-FED"
+     }
+    }
+   ]
+  }
+ ]
+}

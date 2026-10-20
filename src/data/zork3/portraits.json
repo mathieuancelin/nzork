@@ -1,0 +1,141 @@
+{
+ "portraits": [
+  {
+   "id": "zork3-dungeon-master",
+   "name": [
+    "Le Maître du donjon",
+    "The Dungeon Master"
+   ],
+   "when": [
+    {
+     "present": "DUNGEON-MASTER"
+    },
+    {
+     "rooms": [
+      "CELL"
+     ],
+     "objectIn": [
+      "DUNGEON-MASTER",
+      "PARAPET"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zork3-old-man",
+   "name": [
+    "Le vieil homme",
+    "The old man"
+   ],
+   "when": [
+    {
+     "present": "OLD-MAN"
+    }
+   ],
+   "variants": [
+    {
+     "id": "zork3-old-man--asleep",
+     "when": {
+      "notFlag": "OLD-MAN-AWAKE"
+     }
+    }
+   ]
+  },
+  {
+   "id": "zork3-cliff-man",
+   "name": [
+    "L'homme de la falaise",
+    "The man at the cliff"
+   ],
+   "when": [
+    {
+     "present": "MAN"
+    },
+    {
+     "rooms": [
+      "CLIFF-LEDGE"
+     ],
+     "flag": "MAN-FLAG"
+    }
+   ]
+  },
+  {
+   "id": "zork3-hooded-figure",
+   "name": [
+    "La silhouette encapuchonnée",
+    "The hooded figure"
+   ],
+   "when": [
+    {
+     "present": "SHADOW"
+    }
+   ],
+   "variants": [
+    {
+     "id": "zork3-hooded-figure--weakened",
+     "when": {
+      "global": [
+       "S-STRENGTH",
+       "<",
+       3
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "id": "zork3-guardians",
+   "name": [
+    "Les Gardiens de Zork",
+    "The Guardians of Zork"
+   ],
+   "when": [
+    {
+     "rooms": [
+      "MRG",
+      "MRGE",
+      "MRGW",
+      "MRC",
+      "MRCE",
+      "MRCW",
+      "MRD",
+      "MRDE",
+      "MRDW"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "zork3-viking",
+   "name": [
+    "Le vieux marin viking",
+    "The old Viking sailor"
+   ],
+   "when": [
+    {
+     "present": "VIKING-SHIP"
+    }
+   ]
+  },
+  {
+   "id": "zork3-flathead",
+   "name": [
+    "Lord Dimwit Flathead",
+    "Lord Dimwit Flathead"
+   ],
+   "when": [
+    {
+     "rooms": [
+      "OLD-TECH-MUSEUM",
+      "OLD-JEWEL-ROOM",
+      "OLD-MUSEUM-ENTRANCE"
+     ],
+     "flag": [
+      "FLATHEAD-HEARD",
+      "GUARDS-PRESENT"
+     ]
+    }
+   ]
+  }
+ ]
+}

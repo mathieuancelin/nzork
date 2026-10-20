@@ -1,10 +1,12 @@
 // The illustration of the current room (or a placeholder while images are not generated),
 // under the light that shows it: underground, the lantern's halo narrows as its batteries run
 // down and flickers when they are nearly dead; a flame gives a warm, unsteady light. A few
-// motes of dust or ripples of water move on top.
-import { useEffect, useState, type CSSProperties } from 'react'
+// motes of dust or ripples of water move on top. The characters on stage show in portrait in a
+// corner of the scene, fading in when they arrive and out when they leave.
+import { useEffect, useRef, useState, type CSSProperties } from 'react'
 import { useGame } from '../store'
 import { sceneManifest, type SceneInfo } from '../scenes'
+import { portraitManifest } from '../portraits'
 import { t } from '../i18n'
 import type { PlaceId } from '../sound/presets'
 
@@ -49,6 +51,60 @@ function Motes({ seed }: { seed: string }) {
   )
 }
 
+interface Shown {
+  /** The character (its base portrait), stable across its states. */
+  key: string
+  img: string
+  name: [string, string]
+}
+
+/** How long a portrait takes to fade out (see .portrait.leaving in styles.css). */
+const FADE_OUT_MS = 700
+
+/** The characters on stage that have a portrait, framed in a corner of the scene. */
+function Portraits() {
+  const portraits = useGame((s) => s.portraits)
+  const lang = useGame((s) => s.settings.lang)
+  const [available, setAvailable] = useState<Set<string> | null>(null)
+  const [leaving, setLeaving] = useState<Shown[]>([])
+  const last = useRef<Shown[]>([])
+
+  useEffect(() => {
+    portraitManifest().then(setAvailable)
+  }, [])
+
+  const shown: Shown[] = available
+    ? portraits.flatMap((p) => {
+        const img = available.has(p.id) ? p.id : available.has(p.base) ? p.base : null
+        return img ? [{ key: p.base, img, name: p.name }] : []
+      })
+    : []
+  const signature = shown.map((p) => p.img).join()
+
+  // the characters who just left fade out (once per change of the portraits on stage)
+  useEffect(() => {
+    const gone = last.current.filter((p) => !shown.some((q) => q.key === p.key))
+    last.current = shown
+    if (!gone.length) return
+    setLeaving((l) => [...l.filter((x) => !gone.some((g) => g.key === x.key)), ...gone])
+    setTimeout(() => setLeaving((l) => l.filter((x) => !gone.includes(x))), FADE_OUT_MS)
+  }, [signature])
+
+  const back = leaving.filter((p) => !shown.some((q) => q.key === p.key))
+  if (!shown.length && !back.length) return null
+  const name = (p: Shown) => p.name[lang === 'fr' ? 0 : 1]
+  return (
+    <div className="portraits">
+      {[...shown.map((p) => ({ p, out: false })), ...back.map((p) => ({ p, out: true }))].map(({ p, out }) => (
+        <figure key={p.key} className={`portrait ${out ? 'leaving' : ''}`} aria-hidden={out}>
+          <img src={`${import.meta.env.BASE_URL}portraits/${p.img}.png`} alt={name(p)} title={name(p)} />
+          <figcaption>{name(p)}</figcaption>
+        </figure>
+      ))}
+    </div>
+  )
+}
+
 export function Scene() {
   const status = useGame((s) => s.status)
   const scene = useGame((s) => s.scene)
@@ -88,6 +144,7 @@ export function Scene() {
         {DUSTY.has(scene.ambience) && <Motes seed={scene.base} />}
       </div>
       {scene.light !== 'day' && <div className="halo" style={haloStyle(scene)} aria-hidden="true" />}
+      <Portraits />
     </section>
   )
 }

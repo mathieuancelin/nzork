@@ -48,10 +48,10 @@ function toPalette(hex: string[]): iq.utils.Palette {
 
 export type Dither = 'nearest' | 'atkinson' | 'floyd-steinberg' | 'sierra-lite'
 
-/** Crops to 16:9, resizes to the pixel grid and maps every pixel to the palette. */
-export async function pixelize(input: Buffer, palette: string[], dither: Dither = 'atkinson'): Promise<Buffer> {
+/** Crops to 16:9 (or to the given grid), resizes to the pixel grid and maps every pixel to the palette. */
+export async function pixelize(input: Buffer, palette: string[], dither: Dither = 'atkinson', width = WIDTH, height = HEIGHT): Promise<Buffer> {
   const { data, info } = await sharp(input)
-    .resize(WIDTH, HEIGHT, { fit: 'cover', position: 'centre', kernel: 'lanczos3' })
+    .resize(width, height, { fit: 'cover', position: 'centre', kernel: 'lanczos3' })
     .removeAlpha()
     .ensureAlpha()
     .raw()
@@ -184,3 +184,11 @@ export async function pixelizeItem(input: Buffer, palette: string[], dither: Dit
     .png({ palette: true, colours: 64, compressionLevel: 9, effort: 10 })
     .toBuffer()
 }
+
+// ------------------------------------------------------------------ character portraits
+
+/** Side of a character portrait: a square close-up, at about the pixel density of the scenes. */
+export const PORTRAIT_SIZE = 128
+
+/** Portrait of a character: cropped to a square, resized to the grid, mapped to the palette. */
+export const pixelizePortrait = (input: Buffer, palette: string[], dither: Dither = 'atkinson') => pixelize(input, palette, dither, PORTRAIT_SIZE, PORTRAIT_SIZE)

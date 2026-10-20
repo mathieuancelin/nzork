@@ -1,0 +1,50 @@
+{
+ "style": "Hand-crafted pixel art character portrait from an early-1990s VGA point-and-click adventure game (LucasArts / Sierra style, like the close-up talking portraits of Loom, King's Quest V or Monkey Island 2), 256-color look, limited palette, subtle dithering, painterly pixel shading, crisp edges, a single character or creature in close-up, head and shoulders, three-quarter view turned toward the viewer, the face large and expressive in the upper middle of a square frame, lit by a warm light coming from the viewer (their lantern) with deep shadows behind, a dark, simple background that only hints at the character's surroundings, no text, no letters, no UI, no border.",
+ "negative": "text, letters, words, inscription, watermark, signature, logo, UI, frame, border, speech bubble, photograph, photorealistic, 3D render, smooth gradients, blur, bokeh, anime, manga, chibi, modern clothes, modern objects, full body, tiny figure, crowd, player character, hands in the foreground, gore",
+ "portraits": {
+  "troll": {
+   "prompt": "The troll of the Troll Room: a massive, menacing troll seen from the chest up, so big he fills the frame, hulking grey-green body, warty hide, jutting lower tusks, a broad flat nose, small furious eyes under a heavy brow, a crude leather strap across his chest. He brandishes a huge notched battle axe raised beside his head and snarls at the viewer. Behind him, the rough-hewn walls of a small cave scored with axe gouges sink into darkness. Browns, greys, ochre and sickly green, threatening but not gory.",
+   "keystone": true,
+   "scenes": [
+    "troll-room--troll"
+   ]
+  },
+  "troll--unconscious": {
+   "prompt": "The same massive grey-green troll with jutting tusks and warty hide, now knocked out: slumped against the rock wall, head lolling to one side, eyes rolled up and half closed, mouth hanging open between his tusks, a big bump swelling on his brow. His battle axe has slipped out of his hand. The same small cave behind him. Browns, greys, sickly green, comical and pitiful.",
+   "scenes": [
+    "troll-room--troll"
+   ]
+  },
+  "thief": {
+   "prompt": "The thief who haunts the Great Underground Empire: a seedy-looking, wiry gentleman of indeterminate age, a sharp narrow face, a hooked nose, a thin black moustache and stubble, dark darting eyes and a sly, mocking smile, wearing a battered wide-brimmed dark hat and a dark patched cloak. A large, bulging sack is slung over his shoulder, and he holds a vicious thin stiletto close to his chest. Behind him, the dim walls of an underground passage. Charcoal, dark browns, dull purple, a glint of steel, sinister, amused and oddly well-mannered.",
+   "keystone": true
+  },
+  "thief--unconscious": {
+   "prompt": "The same seedy-looking thief with a thin black moustache and a battered wide-brimmed hat, now unconscious: slumped against the rock wall, eyes closed, hat askew, mouth open, his large bag fallen at his side and his stiletto dropped. Charcoal, dark browns, dull purple, a rare moment of peace."
+  },
+  "cyclops": {
+   "prompt": "The cyclops guarding the stairs: a gigantic one-eyed humanoid seen from the chest up, so huge he barely fits the frame, enormous muscular shoulders, a single bulging eye in the middle of his forehead, ragged hair, a wide hungry mouth with crooked teeth, licking his lips as if looking at his next meal. Behind him, a stone chamber and a worn staircase in darkness. Browns, greys, ochre, menacing yet slightly comical.",
+   "scenes": [
+    "cyclops-room--cyclops"
+   ]
+  },
+  "cyclops--asleep": {
+   "prompt": "The same gigantic one-eyed cyclops, now fast asleep sitting against the wall: his single eye closed, his huge mouth wide open, snoring blissfully, his face still flushed red from very hot peppers. Browns, greys, ochre, peaceful and comical.",
+   "scenes": [
+    "cyclops-room--cyclops"
+   ]
+  },
+  "bat": {
+   "prompt": "The vampire bat of the Bat Room: a large, deranged vampire bat hanging upside down from the rocky ceiling, leathery wings half spread, huge pointed ears, tiny furious eyes, fangs bared, about to swoop down at the viewer. Behind it, crevices and stalactites of a cramped cave streaked with guano. Coal black, rust and dark browns, creepy and slightly absurd."
+  },
+  "bat--garlic": {
+   "prompt": "The same large vampire bat, hanging upside down in a corner of the ceiling, obviously deranged and holding its nose shut with the tip of one wing, eyes squeezed shut, face screwed up in disgust as if it smelled garlic. Coal black, rust and dark browns, comical."
+  },
+  "spirits": {
+   "prompt": "The evil spirits barring the gate of Hades: a swirling throng of translucent, jeering wraiths, the nearest one in close-up with hollow glowing eyes and a gaping, mocking mouth, its ragged form trailing into wisps of pale mist, other leering faces half-formed behind it. Lit by a hellish red glow from beyond the gate. Dark reds, purples, ashen whites, terrifying but not gory.",
+   "scenes": [
+    "entrance-to-hades"
+   ]
+  }
+ }
+}
