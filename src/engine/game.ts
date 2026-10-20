@@ -1,6 +1,6 @@
 // The game facade used by the UI and the CLI: one playing session of Zork I, II or III.
 
-import { ZMachine, type ParseEntry, type Snapshot } from './zmachine/vm'
+import { ZMachine, FatalError, type ParseEntry, type Snapshot } from './zmachine/vm'
 import { Presenter, type Catalog } from './i18n/presenter'
 import { frenchCleanup } from './i18n/cleanup'
 import { GAMES, type GameId, type GameInfo } from './games'
@@ -245,7 +245,23 @@ export class Game {
   private runUntilInput(): Turn {
     let text = ''
     for (;;) {
-      const y = this.vm.run()
+      let y
+      try {
+        y = this.vm.run()
+      } catch (e) {
+        if (!(e instanceof FatalError)) throw e
+        // a bug of the original game (Frotz would stop here): back to just before the command
+        this.presenter.take()
+        const before = this.undoStack.pop()
+        if (before) this.vm.restore(before)
+        // and chance takes another course, so that the same command may go through this time
+        this.vm.rng.next(32767)
+        return this.turn(
+          this.lang === 'fr'
+            ? `[Le jeu d'origine vient de rencontrer une erreur fatale (« ${e.message} », un bug d'Infocom). La partie revient juste avant votre dernière commande : essayez autre chose.]`
+            : `[The original game just hit a fatal error ("${e.message}", a bug of Infocom's). The game goes back to just before your last command: try something else.]`,
+        )
+      }
       text += this.presenter.take()
       if (y.kind === 'input') break
       if (y.kind === 'restart') {

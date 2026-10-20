@@ -57,6 +57,9 @@ export type Interceptor = (vm: ZMachine, pc: number) => boolean
 
 const toSigned = (v: number) => (v & 0x8000 ? v - 0x10000 : v)
 
+/** An error the game itself makes, which ends a real interpreter (Frotz's runtime errors). */
+export class FatalError extends Error {}
+
 export class ZMachine {
   readonly story: Uint8Array
   mem: Uint8Array
@@ -758,12 +761,19 @@ export class ZMachine {
         this.callRoutine(a[0], a.slice(1), storeVar)
         return null
       }
-      case 1:
-        this.setWord((a[0] + 2 * a[1]) & 0xffff, a[2])
+      case 1: {
+        const addr = (a[0] + 2 * a[1]) & 0xffff
+        // Zork II can do it (a spell of the Wizard in the balloon): Frotz stops with this error
+        if (addr + 1 >= this.staticBase) throw new FatalError('Store out of dynamic memory')
+        this.setWord(addr, a[2])
         return null
-      case 2:
-        this.mem[(a[0] + a[1]) & 0xffff] = a[2] & 0xff
+      }
+      case 2: {
+        const addr = (a[0] + a[1]) & 0xffff
+        if (addr >= this.staticBase) throw new FatalError('Store out of dynamic memory')
+        this.mem[addr] = a[2] & 0xff
         return null
+      }
       case 3:
         this.putProp(a[0], a[1], a[2])
         return null
