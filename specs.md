@@ -223,13 +223,15 @@ The English version stays playable (language setting): it is used by the tests a
 
 | Mode | Input | Help |
 |---|---|---|
-| **Classic** | Text field (history with ↑/↓) | None |
-| **Noob** | Multiple choices, free typing still available | None |
-| **Hyper noob** | Multiple choices | The right answer is **circled in a dedicated color** (gold), with a foldable "Why?" |
+| **Classic** (« Classique ») | Text field (history with ↑/↓) | None |
+| **Normal** | Multiple choices, free typing still available | None |
+| **Easy** (« Facile ») | Multiple choices | The right answer is **circled in a dedicated color** (gold), with a foldable "Why?" |
 
-The mode can be changed at any time, including in the middle of a game. The guide only knows
-Zork I for now: in Zork II and III, hyper noob shows the choices without circling one (and the
-settings say so).
+(In the code, the modes keep their first names: `classic`, `noob`, `hypernoob`.) The mode can be
+changed at any time, including in the middle of a game. Choosing a mode hides the side panel in
+Classic and shows it in the other two; its button in the status bar still toggles it. Each game
+has its guide (Zork II's in `guide-zork2.ts`, Zork III's in `guide-zork3.ts`, with the same
+design as Zork I's below); a game without one would show the choices without circling one.
 
 ### Choice generator (noob modes)
 
@@ -267,6 +269,27 @@ A **goal-based** hint engine rather than a fixed list of commands, because the g
 currently wins 24 games out of 30 seeds and ends 3 more between 330 and 340 points; the failures
 are the lamp running out after the thief takes the torch, and deaths in combat. In the browser,
 undo gets the player out of these.
+
+### The guides of Zork II and Zork III
+
+- **Zork II** (`guide-zork2.ts`): the same design, with the Wizard of Frobozz as the main
+  uncertainty: under a spell the guide waits it out, picks up what a spell made the player drop,
+  and keeps small treasures on the place mat, out of reach of "Filch". It also saves the lamp
+  (off wherever there is light: it lasts 650 turns). The bot finishes 56 games out of 60, 46 of
+  them with the 400 points; a treasure locked in the Wizard's cabinet, or a death, costs a few
+  points; the 4 others are lost in the original game too (the crown buried with the Dusty Room,
+  the lamp dead after 700 turns, the gold key gone).
+- **Zork III** (`guide-zork3.ts`): the goals cross the lake, the Scenic Vista and the aqueduct
+  first, before the earthquake breaks it (70 to 140 turns), then the man at the cliff, the hooded
+  figure (retreat and heal when wounded, unmask it when defenseless), the old man (in and out of
+  the Engravings Room until he shows up), the Royal Puzzle, the time machine, the mirror box and
+  the Dungeon. The Royal Puzzle is modelled in `royal-puzzle.ts` (the rules of CPEXIT and
+  CPWALL-OBJECT): a breadth-first search over the pushes finds the way back to the InvisiClues
+  solution from wherever the player got lost. The bot wins 60 games out of 60.
+- **A bug of the original Zork II**: a spell of the Wizard in the balloon can write past the
+  dynamic memory; Frotz then stops with "Store out of dynamic memory". The engine raises a
+  `FatalError` instead of corrupting memory: the game goes back to just before the command, says
+  so, and chance takes another course (the same command usually goes through on the next try).
 
 ### Side panel
 
@@ -502,7 +525,7 @@ the mailbox offers its actions): the point & click spirit without the 3D.
 - **Sound lab** (`/sound-lab.html`, development only): every ambience with sliders, level
   measurement and balancing, export of the tuned values.
 
-## 11. Status (2026-10-19)
+## 11. Status (2026-10-20)
 
 | # | Phase | Status |
 |---|---|---|
@@ -516,8 +539,8 @@ the mailbox offers its actions): the point & click spirit without the 3D.
 | 7 | **Soundtrack** | ✅ Procedural Web Audio ambiences per place, darkness and danger overlays, cues, sound lab |
 | 8 | **Side panel** | ✅ Tabs for actions, map, inventory and treasure tracker; object icons generated |
 | 9 | **Atmosphere and extras** | ✅ Lantern halo and scene animations, map with walking, InvisiClues hints, documents (feelies), storyteller |
-| 10 | **Zork II** | ✅ Plays to the end in French (400/400, identical to `dfrotz`), game picker, saves per game, map, inventory, treasures, documents, ambiences; scene and icon prompts written (104 + 46). To do: generating the illustrations and icons, InvisiClues hints, the guide |
-| 11 | **Zork III** | ✅ Plays to the end in French (7/7 in 234 moves, identical to `dfrotz`), map with the hallway of the mirror, inventory, four documents, ambiences, danger of the hooded figure; scene and icon prompts written (90 + 19). No treasures. To do: generating the illustrations and icons, InvisiClues hints, the guide |
+| 10 | **Zork II** | ✅ Plays to the end in French (400/400, identical to `dfrotz`), game picker, saves per game, map, inventory, treasures, documents, ambiences, 104 scenes and 46 icons, 28 InvisiClues questions. Guide: the bot finishes 56 games out of 60 (46 with the 400 points; the 4 others are lost by chance in the original too) |
+| 11 | **Zork III** | ✅ Plays to the end in French (7/7 in 234 moves, identical to `dfrotz`), map with the hallway of the mirror, inventory, the Dungeon Master's outfit as treasures, four documents, ambiences, danger of the hooded figure, 90 scenes and 19 icons, 22 InvisiClues questions. Guide: the bot wins 60 games out of 60, the Royal Puzzle solved by search |
 | 12 | **Next** | 2.5D parallax, clickable hotspots |
 
 ## 12. Decisions

@@ -4,7 +4,7 @@
 with the sights and sounds the originals never had.** Zork I: The Great Underground Empire,
 Zork II: The Wizard of Frobozz and Zork III: The Dungeon Master are fully translated.
 
-![West of House, in Hyper noob mode: the pixel-art scene, the French text and the suggested action circled in gold](docs/screenshot.jpg)
+![West of House, in Easy mode: the pixel-art scene, the French text and the suggested action circled in gold](docs/screenshot.jpg)
 
 You are standing in an open field west of a white house… and this time you can see it, and
 hear the wind in the trees.
@@ -24,9 +24,9 @@ status bar). Each game keeps its own game in progress, its ten save slots and it
 
 | Game | Story file | In French | What the interface adds |
 |---|---|---|---|
-| **Zork I: The Great Underground Empire** (1980) | Release 119 | yes | everything below: illustrations, icons, the Hyper noob guide, hints, map, treasures, documents |
-| **Zork II: The Wizard of Frobozz** (1981) | Release 63 | yes | map, inventory, the ten treasures of the demon, thirteen documents, ambiences; choices in the Noob modes (the guide and the hints are still to come; the prompts of the illustrations and icons are written, the images are not generated yet) |
-| **Zork III: The Dungeon Master** (1982) | Release 25 | yes | map, inventory, four documents, ambiences; choices in the Noob modes (no treasures in this one: the guide and the hints are still to come, and the illustrations are at the same stage as Zork II's) |
+| **Zork I: The Great Underground Empire** (1980) | Release 119 | yes | everything below: illustrations, icons, the guide of the Easy mode, hints, map, treasures, documents |
+| **Zork II: The Wizard of Frobozz** (1981) | Release 63 | yes | everything below: illustrations, icons, the guide, hints, map, the ten treasures of the demon, thirteen documents |
+| **Zork III: The Dungeon Master** (1982) | Release 25 | yes | everything below: illustrations, icons, the guide, hints, map, the seven pieces of the Dungeon Master's outfit as treasures, four documents |
 
 > **Unofficial fan project.** Zork in the browser is a non-commercial tribute, made out of love for the
 > game. It is not affiliated with, endorsed by or sponsored by Infocom, Activision or
@@ -45,9 +45,10 @@ status bar). Each game keeps its own game in progress, its ten save slots and it
   The Wizard of Frobozz casts his spells in French too, and you can cast them back
   (`agite la baguette vers le menhir`, then `dis « flotte »`), and the Dungeon Master takes his
   orders in French (`maître, tourne le cadran sur 1`). The original English is one setting away.
-- **Illustrations** (Zork I). 93 pixel-art scenes cover the 110 rooms, drawn on a 480×270 grid with a
-  shared 64-color palette, including state variants (the troll in his room, the drained
-  reservoir, the rainbow made solid…). Dark rooms stay dark, except for two eyes that light up
+- **Illustrations.** Pixel-art scenes cover every room of the trilogy (93 in Zork I, 104 in Zork
+  II, 90 in Zork III), drawn on a 480×270 grid with a shared 64-color palette, including state
+  variants (the troll in his room, the drained reservoir, the dragon in his lair, the hooded
+  figure in the Land of Shadow…). Dark rooms stay dark, except for two eyes that light up
   if you linger. Underground, the scene is lit by your lantern: its halo narrows as the
   batteries run down and flickers when they are nearly dead, a torch gives a warm, unsteady
   light, and dust drifts or water ripples on top.
@@ -64,24 +65,24 @@ status bar). Each game keeps its own game in progress, its ten save slots and it
 
   | Mode | How you play |
   |---|---|
-  | Classic | Type your commands, as in 1980. |
-  | Noob | Click on actions computed from the game state at every turn (moves, objects, special actions). Typing is still available. |
-  | Hyper noob | Same choices, and the right one is circled in gold, with a "Why?" that explains it. A goal-based guide adapts to the thief and to fights. |
+  | Classic (« Classique ») | Type your commands, as in 1980. |
+  | Normal | Click on actions computed from the game state at every turn (moves, objects, special actions). Typing is still available. |
+  | Easy (« Facile ») | Same choices, and the right one is circled in gold, with a "Why?" that explains it. A goal-based guide adapts to chance: the thief and the fights of Zork I, the Wizard's spells in Zork II, the hooded figure and the Royal Puzzle (solved from wherever you got lost) in Zork III. |
 
-  You can switch modes at any time, even in the middle of a game. The guide only knows Zork I so
-  far: in the other games, Hyper noob shows the choices without circling one.
+  You can switch modes at any time, even in the middle of a game. The side panel is hidden in
+  Classic and shown in the other modes (its button still shows or hides it).
 - **Inventory and treasures at a glance.** A side panel shows what you carry, with a pixel-art
-  icon for each object and the contents of open containers; in the Noob modes, click an object
-  to see what you can do with it. The treasure tracker has 19 slots in Zork I that reveal
-  themselves as you find the treasures and turn gold once they are in the trophy case, and 10 in
-  Zork II, the treasures that will pay a certain fee. It never tells you where to look, and can be
-  turned off.
+  icon for each object and the contents of open containers; in the Normal and Easy modes, click
+  an object to see what you can do with it. The treasure tracker has 19 slots in Zork I that
+  reveal themselves as you find the treasures and turn gold once they are in the trophy case, 10
+  in Zork II, the treasures that will pay a certain fee, and 7 in Zork III, which has no
+  treasures but an outfit to gather. It never tells you where to look, and can be turned off.
 - **A map that draws itself.** Every room you have seen appears with a thumbnail of its
   illustration, linked to its neighbors, with short dashes for the exits you have not taken.
   Rest the pointer on a room (or touch it) to see its picture again; pick one and the game
   walks you there, one step at a time, after a confirmation. It opens large above everything
   when you need the whole picture. The maze finally becomes bearable.
-- **Hints, the InvisiClues way** (Zork I). Infocom's hint booklets were printed in invisible ink: you
+- **Hints, the InvisiClues way** (twenty to thirty questions in each game). Infocom's hint booklets were printed in invisible ink: you
   revealed one answer at a time with a special marker. Here, questions about the places you
   have seen offer three hints each, from vague to explicit, revealed one by one.
 - **Documents to collect.** Infocom boxes came with "feelies". The documents of the game (the
@@ -152,7 +153,8 @@ npm test
 
 They check, among other things, that the full games (350 points in Zork I, 400 in Zork II, 7 in
 Zork III) are identical to `dfrotz` word for word, that they can also be played with French commands without a
-single English word on screen, and that the Hyper noob guide finishes Zork I on its own. The
+single English word on screen, and that the guide of the Easy mode finishes each game on its own
+(on many seeds, the randomness of the fights and of the Wizard's spells included). The
 comparison tests need `dfrotz` (from the `frotz` package) and are skipped when it is missing.
 The walkthroughs are in [test/walkthrough/](test/walkthrough), one folder per game.
 
@@ -162,9 +164,11 @@ The guide can also be watched playing alone:
 npm run bot -- 1234 --fr --verbose
 ```
 
+(`--game zork2` or `--game zork3` for the other games.)
+
 ## Illustrations
 
-The images of Zork I in [public/scenes/](public/scenes) were generated with AI image models from the
+The images of the trilogy in [public/scenes/](public/scenes) and [public/items/](public/items) were generated with AI image models from the
 prompts of this repository, then reduced to the pixel grid and palette by a post-processing
 step. The whole pipeline is included, to regenerate a scene or the full set with your own API
 key. The art direction is described in [tools/images/style-bible.md](tools/images/style-bible.md)
@@ -172,9 +176,8 @@ and the prompts are in [tools/images/prompts.json](tools/images/prompts.json).
 
 Zork II and Zork III have their scenes ([src/data/zork2/scenes.json](src/data/zork2/scenes.json),
 [src/data/zork3/scenes.json](src/data/zork3/scenes.json): 104 and 90 images with their state
-variants) and their icons (46 and 19, the others borrowed from Zork I) ready, with their prompts
-in [tools/images/zork2/](tools/images/zork2) and [tools/images/zork3/](tools/images/zork3); their
-images are not generated yet. Every command below takes `--game zork2` or `--game zork3` (Zork I
+variants) and their icons (46 and 19, the others borrowed from Zork I), with their prompts in
+[tools/images/zork2/](tools/images/zork2) and [tools/images/zork3/](tools/images/zork3). Every command below takes `--game zork2` or `--game zork3` (Zork I
 by default). Their ids start with the game (`zork2-dragon-room`), so the three games share the
 folders of candidates and published images; Zork I's approved keystones are the style
 references of the whole trilogy, joined by each game's own keystones.
@@ -327,7 +330,7 @@ git submodule update --init
 | `src/engine/story/<game>/` | the story file, its license and its symbol table (ZIL names of objects, attributes, globals, routines) |
 | `src/engine/i18n/` | text rendering: templates, French grammar, catalogs in `fr/<game>/catalog.json` |
 | `src/engine/input/` | French command parser |
-| `src/engine/assist/` | clickable choices, the Hyper noob guide, inventory, treasures, map, hints, documents |
+| `src/engine/assist/` | clickable choices, the guides of the Easy mode (`guide.ts`, `guide-zork2.ts`, `guide-zork3.ts` with the Royal Puzzle solver), inventory, treasures, map, hints, documents |
 | `src/data/<game>/` | map layout, scenes and ambiences, item icons |
 | `src/ui/` | the React application |
 | `tools/` | symbols, catalog extraction, reuse and merge, `dfrotz` oracle, images, map layout, bot |
